@@ -37,27 +37,3 @@ class BlogIndexPage(Page):
         blogpages = self.get_children().live().order_by("-first_published_at")
         context["blogpages"] = blogpages
         return context
-
-
-class BlogPage(Page):
-    """Individual blog post page."""
-    template = "blog/blog_page.html"
-    date = models.DateField("Post date")
-    intro = models.CharField(max_length=255)
-    body = RichTextField(blank=True)
-    search_fields = Page.search_fields + [
-        index.SearchField('intro'),
-        index.SearchField('body'),
-    ]
-
-    content_panels = Page.content_panels + [
-        FieldPanel("date"),
-        FieldPanel("intro"),
-        FieldPanel("body", classname="full")
-    ]
-
-    class Meta:
-        """Metadata Class
-        Implement this to explicitly set the metadata."""
-        verbose_name = "Blog Post"
-        verbose_name_plural = "Blog Posts"
