@@ -15,6 +15,8 @@ from wagtail.search import index
 class BlogIndexPage(Page):
     """Blog index served at /blog"""
     template = "blog/blog_index_page.html"
+    max_count = 1
+
     intro = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [

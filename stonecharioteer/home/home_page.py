@@ -14,6 +14,8 @@ from wagtail.admin.edit_handlers import FieldPanel
 class HomePage(Page):
     """Home page class definition"""
     template = "home/home.html"
+    max_count = 1
+
     body = RichTextField(blank=True)
     content_panels = Page.content_panels + [
         FieldPanel('body', classname="full"),
