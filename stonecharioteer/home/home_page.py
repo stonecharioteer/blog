@@ -13,7 +13,7 @@ from wagtail.admin.edit_handlers import FieldPanel
 
 class HomePage(Page):
     """Home page class definition"""
-    template = "home/home.html"
+    template = "home/home_page.html"
     max_count = 1
 
     body = RichTextField(blank=True)
