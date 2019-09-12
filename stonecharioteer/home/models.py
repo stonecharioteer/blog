@@ -1,16 +1,6 @@
-from django.db import models
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-from wagtail.core.models import Page
-from wagtail.core.fields import RichTextField
-from wagtail.admin.edit_handlers import FieldPanel
+"""Models for use with the home application"""
 
-# from wagtailmarkdown.edit_handlers import MarkdownPanel
-# from wagtailmarkdown.fields import MarkdownField
-
-class HomePage(Page):
-    body = RichTextField(blank=True)
-
-    content_panels = Page.content_panels + [
-        FieldPanel('body', classname="full"),
-        # MarkdownPanel("body"),
-    ]
+from .home_page import HomePage
