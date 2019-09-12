@@ -2,9 +2,5 @@
 {% load wagtailcore_tags %}
 {% block body_class %}template-homepage{%endblock%}
 {%block content%}
-{% comment %} {{ page.body|richtext }} {% endcomment %}
-    {% load wagtailmarkdown %}
-    <article>
-    {{ self.body|markdown }}
-</article>
+    {{ page.body|richtext }}
 {% endblock %}
