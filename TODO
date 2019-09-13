@@ -1,16 +1,19 @@
 
 Website:
-  ✔ Buy domains stonecharioteer.(com|net|in|org) @high @created(19-09-12 18:19) @done(19-09-12 18:19)
-  ☐ Buy AWS server @high @created(19-09-09 12:44)
-  ☐ Publish to AWS @high @created(19-09-09 12:45)
-  ☐ Map domains to server @critical @created(19-09-09 12:44)
+  Server:
+    ✔ Buy domains stonecharioteer.(com|net|in|org) @high @created(19-09-12 18:19) @done(19-09-12 18:19)
+    ✘ Buy AWS server @high @created(19-09-09 12:44) @cancelled(19-09-13 10:35)
+    ✘ Publish to AWS @high @created(19-09-09 12:45) @cancelled(19-09-13 10:36)
+    ✔ @critical Buy DigitalOcean Droplet @created(19-09-13 10:36) @done(19-09-13 10:36)
+    ✔ Map domains to server @critical @created(19-09-09 12:44) @done(19-09-13 10:36)
+    ☐ @low ansible playbook for server reconfiguration @created(19-09-13 10:37)
   ☐ Setup markdown editing @low @created(19-09-09 12:44)
-  ☐ Add about page @low  @created(19-09-09 12:44)
-  ✔ Navbar @today @created(19-09-12 18:04) @done(19-09-12 18:20)
-  ☐ Footer @today @created(19-09-12 18:04)
-  ☐ Home page @today @created(19-09-12 18:04)
+  ✔ @low Add about page @low  @created(19-09-09 12:44) @done(19-09-12 22:11)
+  ✔ @low Add navbar @today @created(19-09-12 18:04) @done(19-09-12 18:20)
+  ✔ @low Add footer @today @created(19-09-12 18:04) @done(19-09-12 22:11)
+  ☐ Home page @high @today @created(19-09-12 18:04)
   ☐ List inventory @low @created(19-09-12 18:06)
-    ☐ Define what each item in the inventory looks like, metadata wise. @created(19-09-12 18:06)
+    ☐ Inventory StreamContent @created(19-09-12 18:06)
 
 Writing:
   ☐ @low Create chapter StreamContent @created(19-09-12 18:05)
