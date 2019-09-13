@@ -124,3 +124,6 @@ dmypy.json
 .pyre/
 
 .vscode/
+local.py
+*.*~
+
