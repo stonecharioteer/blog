@@ -9,6 +9,7 @@ verify_ssl = true
 wagtail = "*"
 wagtail-markdown = "*"
 psycopg2 = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"
