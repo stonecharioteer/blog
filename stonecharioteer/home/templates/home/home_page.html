@@ -2,5 +2,17 @@
 {% load wagtailcore_tags %}
 {% block body_class %}template-homepage{%endblock%}
 {%block content%}
-    {{ page.body|richtext }}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome</h1>
+    {% comment %} <p class="lead"></p> {% endcomment %}
+    <hr class="my-4">
+    <p>
+        {{ page.body|richtext }}
+    </p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">
+            Learn more
+        </a>
+    </p>
+</div>
 {% endblock %}
