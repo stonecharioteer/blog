@@ -1,19 +1,12 @@
 
 Website:
   Server:
-    ✔ Buy domains stonecharioteer.(com|net|in|org) @high @created(19-09-12 18:19) @done(19-09-12 18:19)
-    ✘ Buy AWS server @high @created(19-09-09 12:44) @cancelled(19-09-13 10:35)
-    ✘ Publish to AWS @high @created(19-09-09 12:45) @cancelled(19-09-13 10:36)
-    ✔ @critical Buy DigitalOcean Droplet @created(19-09-13 10:36) @done(19-09-13 10:36)
-    ✔ Map domains to server @critical @created(19-09-09 12:44) @done(19-09-13 10:36)
     ☐ @low ansible playbook for server reconfiguration @created(19-09-13 10:37)
-    ✔ @high install postgres @created(19-09-13 11:45) @done(19-09-13 11:45)
-    ☐ Configure wagtail to use postgres. @created(19-09-13 11:46)
-    ☐ @critical install nginx @created(19-09-13 11:45)
+    ✔ Configure wagtail to use postgres. @created(19-09-13 11:46) @done(19-09-14 13:23)
+    ✔ @critical install nginx @created(19-09-13 11:45) @done(19-09-14 13:23)
+    ☐ @critical reverse proxy application through nginx using gunicorn. @created(19-09-14 13:23)
   ☐ Setup markdown editing @low @created(19-09-09 12:44)
-  ✔ @low Add about page @low  @created(19-09-09 12:44) @done(19-09-12 22:11)
-  ✔ @low Add navbar @today @created(19-09-12 18:04) @done(19-09-12 18:20)
-  ✔ @low Add footer @today @created(19-09-12 18:04) @done(19-09-12 22:11)
+  ☐ @critical Check how to embed github gists and asciinema files. @created(19-09-14 13:23)
   ☐ @low Fix footer stickiness @created(19-09-14 09:23)
   ☐ @high Home page @today @created(19-09-12 18:04)
   ☐ @low List inventory @created(19-09-12 18:06)
@@ -25,10 +18,9 @@ Writing:
   ☐ @low Write css for chapters @created(19-09-09 12:44)
 
 Blog:
-  ☐ @high Blog home page @created(19-09-09 12:44)
-  ✔ @high cards view @created(19-09-14 09:23) @done(19-09-14 09:23)
   ☐ @high Pagination @created(19-09-12 21:11)
-  ☐ @high tagging @created(19-09-12 21:11)
+  ✔ @high tagging @created(19-09-12 21:11) @done(19-09-14 13:22)
+  ☐ @critical social media buttons @created(19-09-14 13:26)
   Articles:
     ☐ @low Setting up Python @created(19-09-12 18:08)
     ☐ @low Creating Virtualenvs @created(19-09-12 18:09)
@@ -49,3 +41,17 @@ Blog:
     ☐ @low Raspberry Pi Tips and Tricks @created(19-09-12 18:14)
     ☐ @critical Shelfie Details @created(19-09-12 18:14)
     ☐ @critical Write Pycon Presentation page @created(19-09-09 12:45)
+
+Archive:
+  ✔ Buy domains stonecharioteer.(com|net|in|org) @high @created(19-09-12 18:19) @done(19-09-12 18:19) @project(Website.Server)
+  ✘ Buy AWS server @high @created(19-09-09 12:44) @cancelled(19-09-13 10:35) @project(Website.Server)
+  ✘ Publish to AWS @high @created(19-09-09 12:45) @cancelled(19-09-13 10:36) @project(Website.Server)
+  ✔ @critical Buy DigitalOcean Droplet @created(19-09-13 10:36) @done(19-09-13 10:36) @project(Website.Server)
+  ✔ Map domains to server @critical @created(19-09-09 12:44) @done(19-09-13 10:36) @project(Website.Server)
+  ✔ @high install postgres @created(19-09-13 11:45) @done(19-09-13 11:45) @project(Website.Server)
+  ✔ @low Add about page @low  @created(19-09-09 12:44) @done(19-09-12 22:11) @project(Website)
+  ✔ @low Add navbar @today @created(19-09-12 18:04) @done(19-09-12 18:20) @project(Website)
+  ✔ @low Add footer @today @created(19-09-12 18:04) @done(19-09-12 22:11) @project(Website)
+  ✔ @low Add site settings to show social media links. @created(19-09-14 12:46) @done(19-09-14 12:46) @project(Website)
+  ✔ @high Blog home page @created(19-09-09 12:44) @done(19-09-14 12:46) @project(Blog)
+  ✔ @high cards view @created(19-09-14 09:23) @done(19-09-14 09:23) @project(Blog)
