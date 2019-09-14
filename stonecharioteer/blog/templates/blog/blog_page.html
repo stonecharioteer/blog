@@ -9,7 +9,7 @@
     <p class="meta">{{ page.date }}</p>
     <div class="intro">{{ page.intro }}</div>
     <hr />
-    <p>{% for tag in post.specific.tags.all %}
+    <p>{% for tag in page.tags.all %}
     <a href="{% pageurl page %}?tag={{tag}}">
         <span class="badge badge-pill badge-primary">{{tag}}</span>
     </a>
