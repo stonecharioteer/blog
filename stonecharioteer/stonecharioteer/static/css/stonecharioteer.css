@@ -29,6 +29,11 @@ body {
     background-color: #f5f5f5;
 }
 
+.readable {
+    width: 65%;
+
+}
+
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
 #footer {
@@ -36,5 +41,9 @@ body {
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.readable {
+    width: 100%;
 }
 }
