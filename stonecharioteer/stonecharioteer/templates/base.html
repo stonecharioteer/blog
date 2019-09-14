@@ -39,6 +39,7 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
+        <div id="wrap">
         {% wagtailuserbar %}
         {% block bsnavbar %}
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -90,25 +91,23 @@
         {% endblock bsnavbar %}
         <div class="container">
             {% block content %}{% endblock %}
+            <div id="push"></div>
         </div>
-
         {% block footer %}
-        <div class="container">
-            <footer id="footer">
+        <footer id="footer">
+            <div class="container">
                 <div class="row">
-                <div class="col-lg-12">
-
+                  <div class="col-lg-12">
                     <ul class="list-unstyled">
-                    <li class="float-lg-right"><a href="#top">Back to top</a></li>
-                    <li><a href="/blog" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
-                    <li><a href="/rss/">RSS</a></li>
-                    <li><a href="https://twitter.com/vinay87">Twitter</a></li>
-                    <li><a href="https://github.com/vinay87/">GitHub</a></li>
+                        <li class="float-lg-right"><a href="#top">Back to top</a></li>
+                        <li><a href="/blog" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
+                        <li><a href="/rss/">RSS</a></li>
+                        <li><a href="https://twitter.com/vinay87">Twitter</a></li>
+                        <li><a href="https://github.com/vinay87/">GitHub</a></li>
                     </ul>
                 </div>
-                </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
         {% endblock footer %}
         {# Global javascript #}
         <script
@@ -133,5 +132,6 @@
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
         {% endblock %}
+        </div>
     </body>
 </html>
