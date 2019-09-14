@@ -6,11 +6,19 @@
 {% block content %}
     <h1>{{page.title}}</h1>
     <div class="intro">{{page.intro| richtext}}</div>
+    <div class="row">
     {%for post in blogpages %}
-        <h2><a href="{% pageurl post %}">{{ post.title}}</a></h2>
-        {{ post.specific.date }}
-        {{ post.specific.intro }}
-        {{ post.specific.body|richtext }}
+        <div class="col-sm-4">
+            <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">{{post.specific.title}}</h3>
+                <date><b>{{ post.specific.date }}</b></date>
+                <p class="card-text">{{ post.specific.intro }}</p>
+                <a href="{% pageurl post %}" class="btn btn-primary">Read More</a>
+            </div>
+            </div>
+        </div>
     {% endfor %}
+    </div>
 
 {% endblock %}
