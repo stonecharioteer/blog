@@ -4,6 +4,7 @@
 """Blog Index Page
 """
 
+
 from django.db import models
 
 from wagtail.core.models import Page
@@ -29,7 +30,6 @@ class BlogIndexPage(Page):
         verbose_name = "Blog Index Page"
         verbose_name_plural = "Blog Index Pages"
 
-
     def get_context(self, request):
         """Modify QuerySet by implementing get_context
         Use this method to update the context to only
@@ -39,3 +39,19 @@ class BlogIndexPage(Page):
         blogpages = self.get_children().live().order_by("-first_published_at")
         context["blogpages"] = blogpages
         return context
+
+    def serve(self, request):
+        """Serve list of blog posts"""
+        from django.shortcuts import render
+        from .blog_page import BlogPage
+        blogs = BlogPage.objects.child_of(self).live()
+        # blogs = self.get_children().live().order_by("-first_published_at")
+
+        tag = request.GET.get('tag')
+        if tag:
+            blogs = blogs.filter(tags__name=tag)
+
+        return render(request, self.template, {
+            'page': self,
+            'blogpages': blogs,
+        })
