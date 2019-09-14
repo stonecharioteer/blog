@@ -14,8 +14,9 @@ Website:
   ✔ @low Add about page @low  @created(19-09-09 12:44) @done(19-09-12 22:11)
   ✔ @low Add navbar @today @created(19-09-12 18:04) @done(19-09-12 18:20)
   ✔ @low Add footer @today @created(19-09-12 18:04) @done(19-09-12 22:11)
-  ☐ Home page @high @today @created(19-09-12 18:04)
-  ☐ List inventory @low @created(19-09-12 18:06)
+  ☐ @low Fix footer stickiness @created(19-09-14 09:23)
+  ☐ @high Home page @today @created(19-09-12 18:04)
+  ☐ @low List inventory @created(19-09-12 18:06)
     ☐ Inventory StreamContent @created(19-09-12 18:06)
 
 Writing:
@@ -24,7 +25,8 @@ Writing:
   ☐ @low Write css for chapters @created(19-09-09 12:44)
 
 Blog:
-  ☐ @high Blog page @created(19-09-09 12:44)
+  ☐ @high Blog home page @created(19-09-09 12:44)
+  ✔ @high cards view @created(19-09-14 09:23) @done(19-09-14 09:23)
   ☐ @high Pagination @created(19-09-12 21:11)
   ☐ @high tagging @created(19-09-12 21:11)
   Articles:
