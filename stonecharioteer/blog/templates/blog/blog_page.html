@@ -8,6 +8,11 @@
     <h1>{{ page.title }}</h1>
     <p class="meta">{{ page.date }}</p>
     <div class="intro">{{ page.intro }}</div>
+    <hr />
+    <p>{% for tag in post.specific.tags.all %}
+    <a href="{% pageurl page %}?tag={{tag}}">
+        <span class="badge badge-pill badge-primary">{{tag}}</span>
+    </a>
+    {% endfor %}</p>
     {{ page.body|richtext }}
-    <p><a href="{{ page.get_parent.url }}">Return to Blog</a></p>
 {% endblock  %}
