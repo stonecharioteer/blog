@@ -2,5 +2,7 @@
 {% load wagtailcore_tags %}
 {% block body_class %}template-aboutpage{%endblock%}
 {%block content%}
+    <div class="container readable">
     {{ page.body|richtext }}
+    </div>
 {% endblock %}
