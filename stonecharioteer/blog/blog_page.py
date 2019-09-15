@@ -28,7 +28,13 @@ class BlogPage(Page):
     template = "blog/blog_page.html"
     date = models.DateField("Post date")
     intro = models.CharField(max_length=255)
-    body = RichTextField(blank=True)
+    body = RichTextField(
+        blank=True,
+        features=[
+            "h2","h3","bold","italic","link",
+            "ol", "ul", "hr", "link", "document-link", "image", "embed", "code",
+            "blockquote", "superscript", "subscript", "strikethrough"
+            ])
     tags = ClusterTaggableManager(through=BlogPageTag, blank=True)
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
