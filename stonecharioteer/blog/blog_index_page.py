@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Blog Index Page
-"""
-
+"""Blog Index Page"""
 
 from django.db import models
 
