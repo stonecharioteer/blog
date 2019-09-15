@@ -167,3 +167,20 @@ WAGTAIL_SITE_NAME = "stonecharioteer"
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'https://stonecharioteer.com'
+
+
+from wagtail.embeds.oembed_providers import (
+    spotify, twitter,
+    slideshare, meetup,
+    github_gist, youtube, instagram,
+)
+
+WAGTAILEMBEDS_FINDERS = [
+    {
+        'class': 'wagtail.embeds.finders.oembed',
+        'providers': [
+            spotify, twitter, slideshare,
+            meetup, youtube, instagram
+            ],
+    }
+ ]
