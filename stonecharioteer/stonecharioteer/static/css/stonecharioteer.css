@@ -1,6 +1,11 @@
-* {
+
+h1, h2, h3, h4, h5, h6, li, p {
     font-family: 'Crimson Pro', serif;
-    font-size: 0.9rem;
+    /* font-size: rem; */
+}
+
+li.nav-item {
+    font-size: 1.1rem;
 }
 
 /* Sticky footer styles */
@@ -34,6 +39,7 @@ body {
     padding-top: 20px;
     margin-top: 20px;
     width: 600px;
+    font-size: 1.2rem;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
