@@ -5,11 +5,11 @@
 
 {% block content %}
     <h1>{{page.title}}</h1>
-    <div class="intro">{{page.intro| richtext}}</div>
+    <h4>{{page.intro| richtext}}</h4>
     <div class="row">
     {%for post in blogpages %}
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card mx-1 my-1">
             <div class="card-body">
                 <h3 class="card-title">
                     <a href='{% pageurl post %}'>{{post.specific.title}}</a></h3>
