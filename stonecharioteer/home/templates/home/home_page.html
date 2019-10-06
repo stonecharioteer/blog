@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags %}
 {% block body_class %}template-homepage{%endblock%}
-{%block content%}
+{% block nav_active_home %} active{% endblock %}
+{% block nav_span_home %}
+<span class="sr-only">
+    (current)
+</span>
+{% endblock %}
+{% block content %}
+
 <div class="jumbotron">
     <h1 class="display-4">Welcome</h1>
     {% comment %} <p class="lead"></p> {% endcomment %}

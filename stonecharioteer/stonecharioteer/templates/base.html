@@ -78,35 +78,29 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item{% block nav_active_home %}{% endblock %}">
                         <a
                             class="nav-link" href="/">Home
-                            <span class="sr-only">
-                                (current)
-                            </span>
+                            {% block nav_span_home %}
+                            {% endblock %}
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item{% block nav_active_blog %}{% endblock %}">
                         <a class="nav-link" href="/blog">Blog</a>
+                        {% block nav_span_blog %}
+                        {% endblock %}
                     </li>
-                    <li class="nav-item">
+                    {% comment %} <li class="nav-item">
                         <a class="nav-link" href="/writing">Writing</a>
-                    </li>
-                    <li class="nav-item">
+                        {% block nav_active_writing %}
+                        {% endblock  %}
+                    </li> {% endcomment %}
+                    <li class="nav-item{% block nav_active_about %}{% endblock %}">
                         <a class="nav-link" href="/about">About</a>
+                        {% block nav_span_about %}
+                        {% endblock %}
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input
-                        class="form-control mr-sm-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search">
-                    <button
-                        class="btn btn-outline-success my-2 my-sm-0"
-                        type="submit">Search
-                    </button>
-                </form>
             </div>
         </nav>
         {% endblock bsnavbar %}

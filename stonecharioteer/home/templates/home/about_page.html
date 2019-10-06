@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags %}
-{% block body_class %}template-aboutpage{%endblock%}
-{%block content%}
+{% block body_class %}template-aboutpage{% endblock %}
+{% block nav_active_about %} active{% endblock %}
+{% block nav_span_about %}
+<span class="sr-only">
+    (current)
+</span>
+{% endblock %}
+{% block content %}
     <div class="container readable">
     <p class="lead">{{ page.body|richtext }}</p>
     </div>

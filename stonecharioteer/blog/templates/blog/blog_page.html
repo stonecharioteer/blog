@@ -3,7 +3,12 @@
 {% load wagtailcore_tags %}
 
 {% block body_class %}template-blogpage{% endblock%}
-
+{% block nav_active_blog %} active{% endblock %}
+{% block nav_span_blog %}
+<span class="sr-only">
+    (current)
+</span>
+{% endblock %}
 {% block content %}
     <div class="container readable">
     <h1>{{ page.title }}</h1>
