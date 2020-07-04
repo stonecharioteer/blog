@@ -4,7 +4,6 @@ categories: [programming, pip, conda, python]
 show_edit_on_github: false
 ---
 
-## Managing Multiple Python Installations
 
 If you are running a Linux or Mac machine and would like to run multiple
 versions of Python, you probably have been told that you need to stop trying

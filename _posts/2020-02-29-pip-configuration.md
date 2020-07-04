@@ -3,8 +3,6 @@ title: Configuring Pip to Work in Enterprise Environments
 categories: [programming, python, pip]
 ---
 
-## Configuring Pip to Work in Enterprise Environments
-
 The hardest thing about using package managers within
 an enterprise is getting them to download the packages
 you need on the office network. Oftentimes, you are

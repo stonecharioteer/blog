@@ -3,7 +3,6 @@ title: No Leaf Clover
 categories: hearing-loss
 ---
 
-## No Leaf Clover
 
 [Continued from Part 1: The Sound of Music.]({% post_url 2020-02-02-no-leaf-clover %})
 

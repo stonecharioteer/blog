@@ -1,9 +1,7 @@
 ---
-title: BangPypers Flask Workshop
+title: Bangalore Python Meetup Group - Flask Workshop
 categories: [talks, meetups, workshop, flask, python, programming]
 ---
-
-# Bangalore Python Meetup Group - Flask Workshop
 
 I have been meaning to do a Flask workshop for quite some time now. The guys
 at the BangPypers meetup have been asking me to do this as well. So we finally

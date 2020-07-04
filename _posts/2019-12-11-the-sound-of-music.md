@@ -3,7 +3,6 @@ title: The Sound of Music
 categories: hearing-loss
 ---
 
-## The Sound of Music
 
 I don't know the first thing about music.
 
