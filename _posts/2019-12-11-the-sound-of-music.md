@@ -109,4 +109,4 @@ If I stand closer, it could be because we are in an open space and I cannot hear
 
 I am **deaf** in one ear. I can hear 50% of the world. I just cannot tell where the music comes from anymore.
 
-[Continued in part 2: No Leaf Clover.]({% post_url 2020-02-02-2020-02-02-no-leaf-clover.md %})
+[Continued in part 2: No Leaf Clover.]({% post_url 2020-02-02-no-leaf-clover %})
