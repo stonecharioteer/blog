@@ -1,3 +1,4 @@
 pages:
   - {name: 'About', url: 'about.html'}
   - {name: 'Archive', url: 'archive.html'}
+  - {name: 'Categories', url: '/categories'}

@@ -1,7 +1,6 @@
 ---
 title: Managing Multiple Python Installations
-categories: [programming]
-tags: [pip, conda, python]
+categories: [programming, pip, conda, python]
 show_edit_on_github: false
 ---
 

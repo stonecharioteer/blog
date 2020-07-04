@@ -1,8 +1,6 @@
 ---
 title: Configuring Pip to Work in Enterprise Environments
-categories: [programming]
-tags: [pip, ssl, python]
-show_edit_on_github: false
+categories: [programming, python, pip]
 ---
 
 The hardest thing about using package managers within
@@ -46,4 +44,3 @@ do that, however, ensure you have updated pip to the latest version.
 ```bash
 python3 -m pip install -U pip
 ```
-
