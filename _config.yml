@@ -20,10 +20,10 @@ text_skin: "default" # "default" (default), "dark", "forest", "ocean", "chocolat
 highlight_theme: "tomorrow-night-bright" # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : "https://stonecharioteer.com" # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : Stonecharioteer's Blog 
+title   : Stonecharioteer's Blog
 description: > # this means to ignore newlines until "Language & timezone"
     This is my personal blog where I write (infrequently) about
-    programming, Python, MicroPython, Rust, mechanical keyboards, 
+    programming, Python, MicroPython, Rust, mechanical keyboards,
     general tech, books, Hampi and writing advice.
 
 ## => Language and Timezone
@@ -36,7 +36,7 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : Vinay Keerthi 
+  name      : Vinay Keerthi
   url       :
   avatar    : # path or url of avatar image (square)
   bio       : I am Vinay Keerthi. I go by Stonecharioteer online.
@@ -56,7 +56,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: stonecharioteer/blog
 repository_tree: master
 
 
