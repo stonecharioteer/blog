@@ -4,7 +4,7 @@ analytics-id: #leave blank to not use Analytics
 #Subtitle
 subtitle:
   active: true
-  text: A blog about programming and life as a self-taught developer.
+  text: Programming and Life as a Self-Taught Dev.
 
 #Nav
 nav:
