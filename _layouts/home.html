@@ -1,42 +1,52 @@
 ---
-layout: articles
-titles:
-  # @start locale config
-  en      : &EN       Home
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  主页
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  主頁
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       홈
-  ko-KR   : *KO
-  fr      : &FR       Accueil
-  fr-BE   : *FR
-  fr-CA   : *FR
-  fr-CH   : *FR
-  fr-FR   : *FR
-  fr-LU   : *FR
-  # @end locale config
-show_title: false
-articles:
-  data_source: paginator.posts
-  article_type: BlogPosting
-  show_cover: false
-  show_excerpt: true
-  show_readmore: true
-  show_info: true
+layout: default
+title: Home
 ---
-<div class="layout--home">
-  {%- include paginator.html -%}
-</div>
-<script>
-  {%- include scripts/home.js -%}
-</script>
+{% for post in paginator.posts %}
 
-{{ content }}
+<div class="post">
+    <h2 id = "post-title"><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
+
+    {% if site.data.settings.date-under-post.active %} 
+    <div class = "post-info">
+        <span>
+            <i class="far fa-calendar" aria-hidden="true"></i>
+            <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time> - <i class="far fa-clock"></i> 
+            {% include reading_time.html %}
+        </span>
+    </div>
+    {% endif %}
+
+    {% if site.data.settings.featured-img.active %}
+    <div class = "featured-img-container">
+    {% if post.image %}
+        <a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}"/></a>
+    {% endif %}
+    {% if post.gif %}
+        {% include gif.html file = post.gif %}
+    {% endif %}
+    </div>
+    {% endif %}
+
+    <p>
+        {% if post.customexcerpt %}
+            {{post.customexcerpt | strip_html | truncatewords:50}}
+        {% else %}
+            {{ post.content | strip_html | truncatewords:50 }}
+        {% endif %}
+        <span class = "continue-reading"><a href="{{ post.url | relative_url }}">Continue reading...</a></span>
+    </p> 
+</div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class = "paginator">
+    {% if paginator.total_pages > 1 %}
+    {% if paginator.next_page %}
+      <a class = "older paginate-button" href="{{ paginator.next_page_path | relative_url }}">Older Posts</a>
+    {% endif %}
+    {% if paginator.previous_page %}
+    <a class = "newer paginate-button" href="{{ paginator.previous_page_path | relative_url }}">Newer Posts</a>
+  {% endif %}
+  {% endif %}
+</div>
