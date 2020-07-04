@@ -3,6 +3,8 @@ title: K3S on the 8GB Raspberry Pi 4 with Docker-CE
 categories: [programming, raspberry-pi, kubernetes, homelab]
 ---
 
+## K3S on the 8GB Raspberry Pi 4 with Docker-CE
+
 I finally managed to fix the issue I was having with K3S on the Raspberry Pi 4.
 Turns out, there is an issue with how Docker does IP configurations.
 

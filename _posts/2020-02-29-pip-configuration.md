@@ -3,13 +3,15 @@ title: Configuring Pip to Work in Enterprise Environments
 categories: [programming, python, pip]
 ---
 
+## Configuring Pip to Work in Enterprise Environments
+
 The hardest thing about using package managers within
 an enterprise is getting them to download the packages
 you need on the office network. Oftentimes, you are
 hindered by SSL errors, and other times you get
 bogged by DNS errors.
 
-## Downloading External Packages
+### Downloading External Packages
 
 Most of us either disable SSL verification at this point
 or contact IT about getting trusted certificates. The
