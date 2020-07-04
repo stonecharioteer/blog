@@ -1,72 +1,127 @@
+Post-Ideas:
+  Reading:
+    ☐ @created(20-07-04 17:39)  Thoughts on Brandon Sanderson and the Stormlight Archive
+    ☐ @created(20-07-04 17:40) Slow Reading
+    ☐ @created(20-07-04 17:47) Bibek Debroy's Mahabharata
+    ☐ @created(20-07-04 17:48) Bibek Debroy's Harivamsha
+    ☐ @created(20-07-04 17:48) Bibek Debroy's Ramayana
+    ☐ @created(20-07-04 17:48) The Complete Histories of Middle-Earth
+    ☐ @created(20-07-04 17:48) Thoughts on Mechanical Keyboards
 
-Blog Post Ideas:
-  ☐ Deploying a Flask App using systemctl @created(20-07-04 16:59)
-  ☐ Creating a Multipage application using Dash and Flask @created(20-07-04 17:00)
-  ☐ Python Scopes and Closures @created(20-07-04 17:00)
-  ☐ Setting up the ReSpeaker 4-Mic Array Hat for the Raspberry Pi 3B+ @created(20-07-04 17:00)
-  ☐ PyCon Talk @created(20-07-04 17:00)
-  ☐ BangPypers Workshop on Flask @created(20-07-04 17:01)
-  ☐ Wifi and Network Configuration on the ESP8266 @created(20-07-04 17:01)
-  ☐ Raspberry Pi Short Story Printer @created(20-07-04 17:01)
-  ☐ Atomic Habits using a Raspberry Pi Zero and an OLED HAT @created(20-07-04 17:01)
-  ☐ Visualizing Childhood Creative Influences @created(20-07-04 17:02)
-  ☐ Visualizing Childhood Creative Influences using CSS @created(20-07-04 17:02)
-  ☐ Writing a Novel in Sphinx @created(20-07-04 17:02)
-  ☐ DasBlinkenLights: A Cake Jar with MicroPython-powered LEDs @created(20-07-04 17:03)
-  ☐ Getting Started with MicroPython @created(20-07-04 17:03)
-  ☐ Dash Pro-Tips @created(20-07-04 17:03)
-  ☐ Shelfie: Searching for a Book when you own 1500 @created(20-07-04 17:03)
-  ☐ Writing an Alexa Skill @created(20-07-04 17:04)
-  ☐ Studying for Interviews as a self-taught programmer @created(20-07-04 17:04)
-  ☐ Reading the Postgres Documentation (Multipart) @created(20-07-04 17:04)
-  ☐ Reading the Redis Source Code (Multipart) @created(20-07-04 17:04)
-  ☐ Book Review: Atomic Habits @created(20-07-04 17:04)
-  ☐ Book Review: CPython Internals @created(20-07-04 17:05)
-  ☐ Reading Cracking the Coding Interview in 2020 @created(20-07-04 17:05)
-  ☐ Rust Learning Notes @created(20-07-04 17:05)
-  ☐ About Sudden Senso-Neural Hearing Loss @created(20-07-04 17:32)
-  ☐ About bone conduction headphones @created(20-07-04 17:33)
-  ☐ Review: AfterShokz Wireless and Wired Headphones @created(20-07-04 17:33)
-  ☐ Review: TP-Link Mesh Router @created(20-07-04 17:33)
-  ☐ ClusterHat for the Raspberry Pi 3B+ @created(20-07-04 17:33)
-  ☐ Raspberry Pi PiFaceCAD HAT @created(20-07-04 17:34)
-  ☐ Raspberry Pi e-Paper HAT @created(20-07-04 17:34)
-  ☐ Raspberry Pi Piano Hat @created(20-07-04 17:34)
-  ☐ Raspberry Pi Official 7" Display @created(20-07-04 17:34)
-  ☐ Python Click Pro-Tips and Cookiecutter Template @created(20-07-04 17:34)
-  ☐ Flask Learning Resources @created(20-07-04 17:35)
-  ☐ Why Averages are useless @created(20-07-04 17:35)
-  ☐ My favourite scenes from the Asterix Comics @created(20-07-04 17:35)
-  ☐ Writing Notes Journal @created(20-07-04 17:35)
-  ☐ Hampi Memories @created(20-07-04 17:35)
-  ☐ What does the name Rama mean to you? @created(20-07-04 17:36)
-  ☐ 3000 Ramayanas? @created(20-07-04 17:36)
-  ☐ Re-reading Wheel of Time @created(20-07-04 17:36)
-  ☐ Work From Home @created(20-07-04 17:36)
-  ☐ My Work Setup @created(20-07-04 17:37)
-  ☐ Daisy 40% Keyboard Build Log @created(20-07-04 17:37)
-  ☐ Corne Keyboard Build Log @created(20-07-04 17:37)
-  ☐ Lily58 Keyboard Build Log @created(20-07-04 17:37)
-  ☐ The Koolertron One-Handed Keyboard @created(20-07-04 17:37)
-  ☐ Mango Jam Recipe @created(20-07-04 17:37)
-  ☐ Plum Jam Recipe @created(20-07-04 17:38)
-  ☐ Relearning how to type @created(20-07-04 17:38)
-  ☐ Nail Biting Log @created(20-07-04 17:38)
-  ☐ Review: Robot Building For Beginners @created(20-07-04 17:38)
-  ☐ Review: Intermediate Robot Building @created(20-07-04 17:38)
-  ☐ Review: Campaign Cartographer 3+ @created(20-07-04 17:39)
-  ☐ Thoughts on Brandon Sanderson and the Stormlight Archive @created(20-07-04 17:39)
-  ☐ Slow Reading @created(20-07-04 17:40)
-  ☐ An Elephant Named Puttu @created(20-07-04 17:40)
-  ☐ World: Meet Subbi! @created(20-07-04 17:40)
-  ☐ Subbi Growth Log @created(20-07-04 17:41)
-  ☐ Honey Cake and Ginger Ale @created(20-07-04 17:41)
-  ☐ How to tell if you are being tricked in an interview @created(20-07-04 17:41)
-  ☐ Do not undersell yourself @created(20-07-04 17:41)
-  ☐ Thoughts on my earliest code @created(20-07-04 17:42)
-  ☐ Some fascinating Python libraries @created(20-07-04 17:42)
-  ☐ Intermediate Content @created(20-07-04 17:42)
-  ☐ Python Learning Resources in 2020 @created(20-07-04 17:42)
-  ☐ Thoughts on Working from Home @created(20-07-04 17:42)
-  ☐ My Favourite Podcasts in 2020 @created(20-07-04 17:42)
-  ☐ Reading List @created(20-07-04 17:45)
+  Personal:
+    ☐ @created(20-07-04 17:35) Hampi Memories
+    ☐ @created(20-07-04 17:35) My favourite scenes from the Asterix Comics
+    ☐ @created(20-07-04 17:36) Re-reading Wheel of Time
+    ☐ @created(20-07-04 17:36) Work From Home
+    ☐ @created(20-07-04 17:37) My Work Setup
+    ☐ @created(20-07-04 17:38) Nail Biting Log
+    ☐ @created(20-07-04 17:38) Relearning how to type
+    ☐ @created(20-07-04 17:40) An Elephant Named Puttu
+    ☐ @created(20-07-04 17:41) Do not undersell yourself
+    ☐ @created(20-07-04 17:41) How to tell if you are being tricked in an interview
+    ☐ @created(20-07-04 17:42) My Favourite Podcasts in 2020
+    ☐ @created(20-07-04 17:42) Thoughts on Working from Home
+    ☐ @created(20-07-04 17:45) Reading List
+
+  Animals:
+    ☐ @created(20-07-04 17:40) World: Meet Subbi!
+    ☐ @created(20-07-04 17:41) Honey Cake and Ginger Ale
+    ☐ @created(20-07-04 17:41) Subbi Growth Log
+
+
+  Hearing Loss:
+    ☐ @created(20-07-04 17:32) About Sudden Senso-Neural Hearing Loss
+    ☐ @created(20-07-04 17:33) About bone conduction headphones
+    ☐ @created(20-07-04 17:33) Review: AfterShokz Wireless and Wired Headphones
+    ☐ @created(20-07-04 18:00) Converting Stereo Sound to partially-mono for bone conduction headphones
+    ☐ @created(20-07-04 18:00) I cannot hear you, can you speak louder?
+    ☐ @created(20-07-04 18:00) Review: Boat Stone 1400 Bluetooth Speaker
+    ☐ @created(20-07-04 18:01) Hearing Loss Resources
+
+  Talks:
+    ☐ @created(20-07-04 17:00) PyCon Talk
+    ☐ @created(20-07-04 17:01) BangPypers Workshop on Flask
+    ☐ @created(20-07-04 17:59) Accessibility in Conference Talks
+    ☐ @created(20-07-04 17:59) Creating a CFP
+
+  Rust:
+    ☐ @created(20-07-04 17:05) Rust Learning Notes
+    ☐ @created(20-07-04 17:49) Programming in Rust for the STM32F401 Boards
+
+  IoT:
+    ☐ @created(20-07-04 17:03) DasBlinkenLights: A Cake Jar with MicroPython-powered LEDs
+    ☐ @created(20-07-04 17:03) Getting Started with MicroPython
+    ☐ @created(20-07-04 17:36) 3000 Ramayanas?
+
+  Writing:
+    ☐ @created(20-07-04 17:02) Writing a Novel in Sphinx
+    ☐ @created(20-07-04 17:35) Writing Notes Journal
+    ☐ @created(20-07-04 17:36) What does the name Rama mean to you?
+    ☐ @created(20-07-04 17:39) Review: Campaign Cartographer 3+
+
+  Cooking:
+    ☐ @created(20-07-04 17:37) Mango Jam Recipe
+    ☐ @created(20-07-04 17:38) Plum Jam Recipe
+
+  Programming:
+    ☐ @created(20-07-04 17:04) Reading the Postgres Documentation (Multipart)
+    ☐ @created(20-07-04 17:04) Reading the Redis Source Code (Multipart)
+    ☐ @created(20-07-04 17:04) Studying for Interviews as a self-taught programmer
+    ☐ @created(20-07-04 17:05) Reading Cracking the Coding Interview in 2020
+    ☐ @created(20-07-04 17:33) Review: TP-Link Mesh Router
+    ☐ @created(20-07-04 17:42) Thoughts on my earliest code
+    ☐ @created(20-07-04 17:49) Leetcode Adventures (Multipart)
+
+  Raspberry Pi:
+    ☐ @created(20-07-04 17:00) Setting up the ReSpeaker 4-Mic Array Hat for the Raspberry Pi 3B+
+    ☐ @created(20-07-04 17:33) ClusterHat for the Raspberry Pi 3B+
+    ☐ @created(20-07-04 17:34) Raspberry Pi e-Paper HAT
+    ☐ @created(20-07-04 17:34) Raspberry Pi Official 7" Display
+    ☐ @created(20-07-04 17:34) Raspberry Pi Piano Hat
+    ☐ @created(20-07-04 17:34) Raspberry Pi PiFaceCAD HAT
+    ☐ @created(20-07-04 17:58) My first Raspberry Pi
+
+  Python:
+    ☐ @created(20-07-04 16:59) Deploying a Flask App using systemctl
+    ☐ @created(20-07-04 17:00) Creating a Multipage application using Dash and Flask
+    ☐ @created(20-07-04 17:00) Python Scopes and Closures
+    ☐ @created(20-07-04 17:01) Atomic Habits using a Raspberry Pi Zero and an OLED HAT
+    ☐ @created(20-07-04 17:01) Raspberry Pi Short Story Printer
+    ☐ @created(20-07-04 17:01) Wifi and Network Configuration on the ESP8266
+    ☐ @created(20-07-04 17:02) Visualizing Childhood Creative Influences
+    ☐ @created(20-07-04 17:02) Visualizing Childhood Creative Influences using CSS
+    ☐ @created(20-07-04 17:03) Dash Pro-Tips
+    ☐ @created(20-07-04 17:03) Shelfie: Searching for a Book when you own 1500
+    ☐ @created(20-07-04 17:04) Book Review: Atomic Habits
+    ☐ @created(20-07-04 17:04) Writing an Alexa Skill
+    ☐ @created(20-07-04 17:05) Book Review: CPython Internals
+    ☐ @created(20-07-04 17:34) Python Click Pro-Tips and Cookiecutter Template
+    ☐ @created(20-07-04 17:35) Flask Learning Resources
+    ☐ @created(20-07-04 17:38) Review: Intermediate Robot Building
+    ☐ @created(20-07-04 17:38) Review: Robot Building For Beginners
+    ☐ @created(20-07-04 17:42) Intermediate Content
+    ☐ @created(20-07-04 17:42) Python Learning Resources in 2020
+    ☐ @created(20-07-04 17:42) Some fascinating Python libraries
+    ☐ @created(20-07-04 17:47) A Little Pythonista (like A Little Schemer)
+
+  Statistics:
+    ☐ @created(20-07-04 17:35) Why Averages are useless
+    ☐ @created(20-07-04 17:45) Control Charts
+    ☐ @created(20-07-04 17:46) Edward Deming
+    ☐ @created(20-07-04 17:47) Taichi Ohno
+
+  Mechanical Keyboards:
+    ☐ @created(20-07-04 17:37) Corne Keyboard Build Log
+    ☐ @created(20-07-04 17:37) Daisy 40% Keyboard Build Log
+    ☐ @created(20-07-04 17:37) Lily58 Keyboard Build Log
+    ☐ @created(20-07-04 17:37) The Koolertron One-Handed Keyboard
+    ☐ @created(20-07-04 17:57) Zebronics Max Plus
+
+
+Meta:
+  ☐ Add Logo to favicon @created(20-07-04 18:05)
+  ☐ Add logo to about page @created(20-07-04 18:05)
+  ☐ Add disqus comments @created(20-07-04 18:05)
+  ☐ Add search with google @created(20-07-04 18:05)
+  ☐ Track visits with cloudflare (ask Krishna) @created(20-07-04 18:06)
+  ☐ Add darktheme toggle @created(20-07-04 18:06)
