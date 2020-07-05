@@ -4,7 +4,7 @@ categories: hearing-loss
 ---
 
 
-[Continued from Part 1: The Sound of Music.]({% post_url 2020-02-02-no-leaf-clover %})
+[Continued from Part 1: The Sound of Music.]({% post_url 2019-12-11-the-sound-of-music %})
 
 I do not believe in luck. There is no such thing. Things happen and we must
 accept them or reject them. What we do defines us.
