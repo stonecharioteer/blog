@@ -11,6 +11,5 @@ to use package managers to run Python.
 
 That is correct.
 
-
 I recommend installing miniconda at the user level and then using conda to
 install the version of Python you like.
