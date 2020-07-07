@@ -101,3 +101,30 @@ the map task *where* the data chunks were for network efficiency? That makes
 sense because the map job packet size must be *much lower* than the data that
 it operates on. This is good. Helps me understand what the heck is going on
 with Hadoop.
+
+Map stores its output on the disk of the machine that it executes on. But to
+group together all the values associated to a key and then to **reduce** them
+on a separate machine, they need to be moved later. So the row-wise data of say,
+words in a word count dictionary, would have to be converted to a columnar
+dataset of words and their counts as opposed to a collection of different words
+and their individual counts across different files.
+
+Say:
+
+```python
+# again, don't try to run this.
+
+
+map_output_1 = {
+    "cat": 10,
+    "dog": 20
+}
+
+map_output_2 = {
+    "elephant": 2,
+    "dog": 29
+}
+```
+
+This would then need to be turned into *3 reduce jobs*. One for the key "cat",
+one for "dog" and one for "elephant" across these two outputs.
