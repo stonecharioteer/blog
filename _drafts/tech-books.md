@@ -1,6 +1,6 @@
 ---
 title: Books on Tech for 2020
-categories: [books, programming]
+categories: [books]
 ---
 
 
