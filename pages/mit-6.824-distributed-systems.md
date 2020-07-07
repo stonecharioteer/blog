@@ -2,6 +2,7 @@
 title: Notes MIT 6.824 - Distributed Systems
 layout: post
 categories: [distributed-systems, learning]
+permalink: /distributed-systems.html
 description: "Notes on the MIT 6.824 course on Distributed Systems"
 customexcerpt: "I began taking the course on Distributed Systems (available for free on YouTube). These are my notes."
 ---
