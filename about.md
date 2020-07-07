@@ -11,4 +11,9 @@ Conferences.
 
 I also write about hearing loss and single-sided deafness, and how to cope with it.
 
+## Why Stonecharioteer?
+
+![Stonecharioteer Logo](/assets/images/logo/stonecharioteer-large.png)
+I was born in Hampi, Karnataka, India, and I often write about it as well. I was lucky enough to find the domain, and the ID in all my frequent portals.
+
 [Contact me via twitter.](https://twitter.com/stonecharioteer)
