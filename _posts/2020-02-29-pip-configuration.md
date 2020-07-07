@@ -1,6 +1,6 @@
 ---
 title: Configuring Pip to Work in Enterprise Environments
-categories: [programming, python, pip]
+categories: [python, pip]
 ---
 
 The hardest thing about using package managers within

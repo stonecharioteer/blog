@@ -7,8 +7,10 @@ description: "A continuation of my post on single-sided deafness, and life with 
 customexcerpt: "I have not yet recovered any of my hearing in my left ear, and it does not look like I ever will."
 ---
 
+![Hearing Aids](/assets/images/posts/hearing-loss/hearing-aid.png)
 
 [Continued from Part 1: The Sound of Music.]({% post_url 2019-12-11-the-sound-of-music %})
+
 
 I do not believe in luck. There is no such thing. Things happen and we must
 accept them or reject them. What we do defines us.
