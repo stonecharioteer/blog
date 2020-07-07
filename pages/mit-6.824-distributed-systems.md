@@ -145,3 +145,20 @@ could operate like that.
 I like journalling as I watch the course. This way I both concentrate, and
 I have copious notes as well. I will rewatch this lecture later, and make
 sure that I update my notes. Watch this space.
+
+
+## Getting the Tests for the Labs
+
+[Ugh, the CSS in the Labs pages is so horrible for accessibility.](https://pdos.csail.mit.edu/6.824/labs/lab-mr.html) I cannot
+read the code snippets either. I love the course, but whoever made the webpages
+did not care a bit about accessibility or design of an interface.
+
+
+```bash
+git clone git://g.csail.mit.edu/6.824-golabs-2020 6.824
+cd 6.824
+```
+
+I've cloned this repo. Apparently this one lecture is enough to get started.
+The course does recommend golang, but I am going to try some rudimentary
+stuff with Python, and I will get around to golang later, once I learn it.
