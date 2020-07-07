@@ -1,5 +1,5 @@
 ---
-title: Notes MIT 6.824 - Distributed Systems
+title: Notes on MIT 6.824 - Distributed Systems
 layout: post
 categories: [distributed-systems, learning]
 permalink: /distributed-systems.html
