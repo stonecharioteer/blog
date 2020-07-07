@@ -128,3 +128,20 @@ map_output_2 = {
 
 This would then need to be turned into *3 reduce jobs*. One for the key "cat",
 one for "dog" and one for "elephant" across these two outputs.
+
+Huh. How would you do sorting in MapReduce? Wouldn't you need to know where
+something would appear? Perhaps split large arrays and sort sections and then
+sort those again? There was an algorithm for that, I think. I had watched
+some animation that showed this.
+
+<!-- TODO: add link to that video. -->
+
+
+Chaining together MapReduce seems to be a normal procedure. I suppose sorting
+could operate like that.
+
+### End Thoughts
+
+I like journalling as I watch the course. This way I both concentrate, and
+I have copious notes as well. I will rewatch this lecture later, and make
+sure that I update my notes. Watch this space.
