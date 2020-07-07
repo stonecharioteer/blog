@@ -1,6 +1,10 @@
 ---
 title: No Leaf Clover
-categories: hearing-loss
+layout: post
+categories: [hearing-loss]
+image: /assets/images/posts/hearing-loss/hearing-aid.png
+description: "A continuation of my post on single-sided deafness, and life with hearing loss."
+customexcerpt: "I have not yet recovered any of my hearing in my left ear, and it does not look like I ever will."
 ---
 
 
