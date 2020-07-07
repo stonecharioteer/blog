@@ -11,4 +11,5 @@
 
 .banner {
     margin-top: 5px;
+    max-height: 70px;
 }
