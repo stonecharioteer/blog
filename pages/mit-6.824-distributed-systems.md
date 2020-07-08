@@ -168,7 +168,7 @@ stuff with Python, and I will get around to golang later, once I learn it.
 #### Golang!
 
 I would *prefer* using Python or Rust to complete this course, but I think
-learning Golang to push myself would ge a good way to get myself out of this
+learning Golang to push myself would be a good way to get myself out of this
 rut and keep my interest.
 
 Also, the professor taking this course is [Robert Morris](https://pdos.csail.mit.edu/~rtm/).
@@ -359,3 +359,9 @@ float32 float64
 
 complex64 complex128
 ```
+
+Go sets initial values to variables. They are either `0`, `false` or `""` depending
+upon the type.
+
+Go assignment between items of different type requires an **explicit conversion**.
+This is done through the type functions that perform the type casting.
