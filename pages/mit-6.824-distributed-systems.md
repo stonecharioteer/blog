@@ -265,6 +265,97 @@ func main() {
 }
 ```
 
-Huh. The output remains constant everytime I execute. So true random number
+Huh. The output remains constant every time I execute. So true random number
 generation is not possible here? I wonder what Python does. I guess it uses
 something the timestamp to generate the seed each time. You learn something new!
+
+Go uses tabs! Not spaces. Heh. Pied Piper should have used Golang.
+
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	fmt.Println(math.Pi)
+}
+
+```
+
+So Go only exposes those variables that start with a capital first letter?
+Works for me.
+
+
+[Go's types come **after** the variable name.](https://blog.golang.org/declaration-syntax) I like this, to be honest.
+
+Oh wow. That article on declarations is **insane**. I can see why Python's
+type hints took the `x: int` form now.
+
+`a, b := 1, 2` seems to be the way to define variable without declaring their
+type. The types are implied from the variables on the right. This is not
+usable outside of a function since every statement *must* begin with a keyword.
+
+```go
+package main
+
+import "fmt"
+
+func split(sum int) (x, y int) {
+	x = sum * 4 / 9
+	y = sum - x
+	return
+}
+
+func main() {
+	fmt.Println(split(17))
+}
+```
+
+Naming the return variables allows you to return them implicitly. I am not so
+certain I would use that. Cannot see what it is useful. Perhaps in a way so I
+can keep track of the returnable variable(s).
+
+Go's types are interesting.
+
+```go
+package main
+
+import (
+	"fmt"
+	"math/cmplx"
+)
+
+var (
+	ToBe   bool       = false
+	MaxInt uint64     = 1<<64 - 1
+	z      complex128 = cmplx.Sqrt(-5 + 12i)
+)
+
+func main() {
+	fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
+	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
+	fmt.Printf("Type: %T Value: %v\n", z, z)
+}
+
+```
+
+```
+bool
+
+string
+
+int  int8  int16  int32  int64
+uint uint8 uint16 uint32 uint64 uintptr
+
+byte // alias for uint8
+
+rune // alias for int32
+     // represents a Unicode code point
+
+float32 float64
+
+complex64 complex128
+```
