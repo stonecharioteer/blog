@@ -89,14 +89,14 @@ Makes sense. I guess that is why it is used with Hadoop. Hadoop is a joint
 filesystem that enables such a mechanism, especially when you'd need to process
 actual *files*.
 
-[@1h9m](https://www.youtube.com/watch?v=cQP8WApzIQQ?t=4000) *Aha!*
+[@1h9m](https://www.youtube.com/watch?v=cQP8WApzIQQ?t=4000s) *Aha!*
 So Hadoop came out of a necessity to *facilitate* MapReduce. Google File
 System, huh? That makes sense. Having a network file system that enables
 splitting a huge file and saving it across servers makes so much sense if you
 operate like this. And this also comes with data safety guarantees. Hadoop
 naturally has data backup guarantees and replications (3 is default, I think)
 
-[@1h12m](https://www.youtube.com/watch?v=cQP8WApzIQQ?t=4260) GFS would schedule
+[@1h12m](https://www.youtube.com/watch?v=cQP8WApzIQQ?t=4260s) GFS would schedule
 the map task *where* the data chunks were for network efficiency? That makes
 sense because the map job packet size must be *much lower* than the data that
 it operates on. This is good. Helps me understand what the heck is going on
@@ -198,7 +198,7 @@ I will shelve perfection and completion in the language (for now),
 and [I will focus on the official tutorial.](https://tour.golang.org/)
 
 
-I am going to store all the code I write for this project on the same github repo as this blog. I might move it later. [Access it here.]()
+I am going to store all the code I write for this project on the same github repo as this blog. I might move it later. [Access it here.](https://github.com/stonecharioteer/blog/tree/master/pages/mit-6.824)
 
 In the folder golang, I am going to store all the go code I write
 to learn the language. It won't have anything to do with this course, but well.
