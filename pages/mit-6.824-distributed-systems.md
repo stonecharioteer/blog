@@ -342,6 +342,8 @@ func main() {
 
 ```
 
+And the supported types are:
+
 ```
 bool
 
@@ -365,3 +367,17 @@ upon the type.
 
 Go assignment between items of different type requires an **explicit conversion**.
 This is done through the type functions that perform the type casting.
+
+
+The `:=` and the `var =` ways of declaring variables perform type inferrence,
+as noted above.
+
+
+Go supports immutable `const`s. These can infer types as well. Constants can be character, string, boolean, or numeric values.
+
+#### End Thoughts
+
+I'll be spending another day on this tutorial. There's a lot to cover and
+I don't want to rush it. I would like to master enough Go to try going through
+the Algorithms course and implementing common algorithms in Go. That would be
+fun!
