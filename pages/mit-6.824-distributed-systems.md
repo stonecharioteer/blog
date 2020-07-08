@@ -140,14 +140,14 @@ some animation that showed this.
 Chaining together MapReduce seems to be a normal procedure. I suppose sorting
 could operate like that.
 
-### End Thoughts
+#### End Thoughts
 
 I like journalling as I watch the course. This way I both concentrate, and
 I have copious notes as well. I will rewatch this lecture later, and make
 sure that I update my notes. Watch this space.
 
 
-## Getting the Tests for the Labs
+### Getting the Tests for the Labs
 
 [Ugh, the CSS in the Labs pages is so horrible for accessibility.](https://pdos.csail.mit.edu/6.824/labs/lab-mr.html) I cannot
 read the code snippets either. I love the course, but whoever made the webpages
@@ -162,3 +162,109 @@ cd 6.824
 I've cloned this repo. Apparently this one lecture is enough to get started.
 The course does recommend golang, but I am going to try some rudimentary
 stuff with Python, and I will get around to golang later, once I learn it.
+
+### 2020-07-08 Watching Lecture 2: RPC and Threads
+
+#### Golang!
+
+I would *prefer* using Python or Rust to complete this course, but I think
+learning Golang to push myself would ge a good way to get myself out of this
+rut and keep my interest.
+
+Also, the professor taking this course is [Robert Morris](https://pdos.csail.mit.edu/~rtm/).
+I love how he teaches. Also, his [pre-MIT papers section is lit!](https://pdos.csail.mit.edu/~rtm/old-papers.html)
+
+It is funny how he says you *could* use Python for this course. But I will avoid
+the temptation.
+
+#### Observations on Golang
+
+* Type-Safe
+* Memory-Safe
+* Garbage-Collected
+* The combination of threads and garbage-collection is particularly interesting.
+  * You don't need to figure out when a thread was using an object.
+* Golang has always been said to be simple. What, 50 keywords?
+
+#### The Golang Tutorial
+
+[@3m](https://www.youtube.com/watch?v=gA4YXUJX7t8&?t=180s) So I am supposed to take the Golang tutorial and then read Effective Go before
+I proceed. Will do that.
+
+My friend [Karthikeyan](https://tirkarthi.github.io/) recommended
+[Caleb Doxsey's An Introduction to Programming in Go](https://www.golang-book.com/books/intro),
+which is available for free at that link. However,
+I will shelve perfection and completion in the language (for now),
+and [I will focus on the official tutorial.](https://tour.golang.org/)
+
+
+I am going to store all the code I write for this project on the same github repo as this blog. I might move it later. [Access it here.]()
+
+In the folder golang, I am going to store all the go code I write
+to learn the language. It won't have anything to do with this course, but well.
+
+
+```go
+
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Printf("hello, world\n")
+}
+```
+
+##### Observations as a Pythonista:
+
+* W00t! I am not writing semi-colons.
+* Braces are okay. I can live with those.
+* `import` uses *quotes*. I was *just* telling someone about this yesterday.
+* [There is an interactive tutorial website!!](https://tour.golang.org/welcome/)
+* 2009-11-10 23:00:00 UTC is Golang's Birthday, apparently.
+* The way go prints out the timestamp when I use `time.Now()` is so weird. What are those extra numbers? It has the timezone, and that is great. But it also has something akin to `m=+0.00086191`. What is that?
+* Every Go Program is made up of Packages?
+  * Not everyone realizes that Python is so similar. *Every* python "object" is an "object", complete with its own constructor and all.
+  * Note to self: You can preach all the language agnosticism you want, but you cannot take the snake out of the snake charmer's basket.
+
+
+```go
+
+package main
+
+
+import (
+	"fmt"
+	"math/rand"
+)
+
+func main() {
+	fmt.Println("My favorite number is ", rand.Intn(10))
+}
+```
+
+Wait. The output is *always* the same! The tour page says this:
+
+> Note: The environment in which these programs are executed is deterministic, so each time you run the example program rand.Intn will return the same number.
+> (To see a different number, seed the number generator; see rand.Seed. Time is constant in the playground, so you will need to use something else as the seed.)
+
+Also, so importing `math/rand` allows me to use rand at the global level.
+
+```go
+package main
+
+
+import (
+	"fmt"
+	"math/rand"
+)
+
+func main() {
+	rand.Seed(1091234017)
+	fmt.Println("My favorite number is ", rand.Intn(10))
+}
+```
+
+Huh. The output remains constant everytime I execute. So true random number
+generation is not possible here? I wonder what Python does. I guess it uses
+something the timestamp to generate the seed each time. You learn something new!
