@@ -381,3 +381,86 @@ I'll be spending another day on this tutorial. There's a lot to cover and
 I don't want to rush it. I would like to master enough Go to try going through
 the Algorithms course and implementing common algorithms in Go. That would be
 fun!
+
+### 2020-07-12 Continuing the Golang Journey
+
+I am taking slightly longer than I hoped for with this. Let me try to finish
+it tonight. (Current time is 23:00)
+
+#### Looney Loopy Looping
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	sum := 0
+	for i := 0; i < 10; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
+}
+```
+
+Ah, those old C-variety loops. Braces are always required. No parentheses.
+
+Interesting. The `for` can be turned into a `while`-varient by just omitting
+the instantiation and the increment.
+
+> C's `while` is spelled `for` in Go,
+
+LOL.
+
+#### Conditionals
+
+Interesting why loops are introduced *before* conditionals. Is it easier to
+grok?
+
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func sqrt(x float64) string {
+	if x < 0 {
+		return sqrt(-x) + "i"
+	} else {
+		return fmt.Sprint(math.Sqrt(x))
+	}
+}
+
+func main() {
+	fmt.Println(sqrt(2), sqrt(-16))
+}
+```
+
+Hmm. `fmt.Sprint()` does string typecasting, does it?
+
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func pow(x, n, lim float64) float64 {
+	if v := math.Pow(x, n); v < lim {
+		return v
+	}
+	return lim
+}
+
+func main() {
+	fmt.Println(
+		pow(3, 2, 10),
+		pow(3, 3, 20),
+	)
+}
+```
+
+Wait, so `:=` is sort of the walrus operator!! W00t.
