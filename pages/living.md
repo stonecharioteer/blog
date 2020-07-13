@@ -17,3 +17,4 @@ these updates.
 These are largely tech-oriented. Right now, there is only one tech journal.
 
 1. [Notes on MIT 6.824 - Distributed Systems](/distributed-systems.html)
+2. [Today I Learned](/til.html)
