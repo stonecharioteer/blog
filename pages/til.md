@@ -27,4 +27,4 @@ bot that manages this page for me.
 6. [Flit for Python](https://flit.readthedocs.io/en/latest/index.html)
 7. [enscons is a library for building Python packages with SCons - the Software Construction Tool](https://bitbucket.org/dholth/enscons)
 8. [SCons](https://scons.org/)
-9. [Poetry for Python Projects](https://github.com/python-poetry/poetry)
+9. [Poetry for Python Projects - Manage environments for Python, as well as project dependency information.](https://github.com/python-poetry/poetry)
