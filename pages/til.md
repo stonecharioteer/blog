@@ -29,3 +29,4 @@ bot that manages this page for me.
 8. [SCons](https://scons.org/)
 9. [Poetry for Python Projects - Manage environments for Python, as well as project dependency information.](https://github.com/python-poetry/poetry)
 10. [`ss` is a tool to inspect sockets on Linux](https://www.redhat.com/sysadmin/ss-command)
+11. [`sphinx-tabs` is a great way to add tabbed views in Sphinx](https://github.com/djungelorm/sphinx-tabs)
