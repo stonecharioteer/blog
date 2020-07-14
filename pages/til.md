@@ -28,3 +28,4 @@ bot that manages this page for me.
 7. [enscons is a library for building Python packages with SCons - the Software Construction Tool](https://bitbucket.org/dholth/enscons)
 8. [SCons](https://scons.org/)
 9. [Poetry for Python Projects - Manage environments for Python, as well as project dependency information.](https://github.com/python-poetry/poetry)
+10. [`ss` is a tool to inspect sockets on Linux](https://www.redhat.com/sysadmin/ss-command)
