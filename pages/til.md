@@ -34,7 +34,7 @@ bot that manages this page for me.
 
 ## 2020-07-15
 
-1. [Common List: A Gentle Introduction by David S. Touretzky is a great book on functional programming](https://www.cs.cmu.edu/~dst/LispBook/book.pdf)
+1. [Common Lisp: A Gentle Introduction by David S. Touretzky is a great book on functional programming](https://www.cs.cmu.edu/~dst/LispBook/book.pdf)
 2. [The Nokia N9 Alarm Clock app had a great design](http://nition.momentstudio.co.nz/2014/08/the-nokia-n9-alarm-clock/)
 3. [Micro is a tiny editor for Linux](https://github.com/zyedidia/micro)
 4. [Understanding and writing a JPEG decoder in Python](https://yasoob.me/posts/understanding-and-writing-jpeg-decoder-in-python/)
@@ -44,4 +44,4 @@ bot that manages this page for me.
 8. [Jitsi for running your own self-hosted video call and chat](https://jitsi.org/)
 9. [The Ethernet PAUSE frame](http://jeffq.com/blog/the-ethernet-pause-frame/)
 10. [Flask's Method Views are so simple to implement. They're better for when the code gets really long](https://flask.palletsprojects.com/en/1.1.x/views/)
-11. [Flask's' later docs seem to cover some insane stuff. Ex: Signals using the blinker library](https://flask.palletsprojects.com/en/1.1.x/signals/)
+11. [Flask's later docs seem to cover some insane stuff. Ex: Signals using the blinker library](https://flask.palletsprojects.com/en/1.1.x/signals/)
