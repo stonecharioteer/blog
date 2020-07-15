@@ -13,7 +13,7 @@ bot that manages this page for me.
 
 ## 2020-07-13
 1. [Flask-JWT-Extended has a great bunch of patterns and examples on expiring and blacklisting JWTs](https://flask-jwt-extended.readthedocs.io/en/stable/blacklist_and_token_revoking/)
-2. [Learn Rust in the same way you'd learn Golang through the tour](https://tourofrust.com/)
+2. [Learn Rust in the same way you'd learn Golang through the tour! This covers almost the entire Rust Book](https://tourofrust.com/)
 3. [Real Python's article on Learn IP Address Concepts through Python](https://realpython.com/python-ipaddress-module/)
 4. [Linux From Scratch is a great resource on learning Linux from first principles](http://www.linuxfromscratch.org/~bdubbs/cross2-lfs-book/index.html)
 5. [Py-Spy is Top for Python!](https://github.com/benfred/py-spy)
