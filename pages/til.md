@@ -30,6 +30,7 @@ bot that manages this page for me.
 9. [Poetry for Python Projects - Manage environments for Python, as well as project dependency information.](https://github.com/python-poetry/poetry)
 10. [`ss` is a tool to inspect sockets on Linux](https://www.redhat.com/sysadmin/dss-command)
 11. [`sphinx-tabs` is a great way to add tabbed views in Sphinx](https://github.com/djungelorm/sphinx-tabs)
+12. [The Baader-Meinhof Phenomenon or Frequency Illusion is when you discover something and see it everywhere](https://en.m.wikipedia.org/wiki/List_of_cognitive_biases#Frequency_illusion)
 
 ## 2020-07-15
 
