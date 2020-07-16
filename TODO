@@ -40,8 +40,8 @@ Post-Ideas:
     ✔ @created(20-07-04 20:09) No Leaf Clover @done(20-07-04 20:10)
 
   Talks:
-    ☐ @created(20-07-04 17:00) PyCon Talk
-    ☐ @created(20-07-04 17:01) BangPypers Workshop on Flask
+    ✔ @created(20-07-04 17:00) PyCon Talk @done(20-07-10 14:21)
+    ✔ @created(20-07-04 17:01) BangPypers Workshop on Flask @done(20-07-10 14:21)
     ☐ @created(20-07-04 17:59) Accessibility in Conference Talks
     ☐ @created(20-07-04 17:59) Creating a CFP
 
@@ -84,6 +84,7 @@ Post-Ideas:
 
   Python:
     ☐ @created(20-07-04 16:59) Deploying a Flask App using systemctl
+    ☐ @created(20-07-10 14:20) Best Practises with Flask's create_app
     ☐ @created(20-07-04 17:00) Creating a Multipage application using Dash and Flask
     ☐ @created(20-07-04 17:00) Python Scopes and Closures
     ☐ @created(20-07-04 17:01) Atomic Habits using a Raspberry Pi Zero and an OLED HAT
