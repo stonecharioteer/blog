@@ -45,3 +45,14 @@ bot that manages this page for me.
 9. [The Ethernet PAUSE frame](http://jeffq.com/blog/the-ethernet-pause-frame/)
 10. [Flask's Method Views are so simple to implement. They're better for when the code gets really long](https://flask.palletsprojects.com/en/1.1.x/views/)
 11. [Flask's' later docs seem to cover some insane stuff. Ex: Signals using the blinker library](https://flask.palletsprojects.com/en/1.1.x/signals/)
+
+
+## 2020-07-16
+
+1. [MyPaint is MSPaint for Linux (not quite but more like PaintShopPro)](https://github.com/mypaint/mypaint)
+2. [Jon Gjengset's Blog is a great resource. Check out his article on MIT6.824 and RAFT](https://thesquareplanet.com/)
+3. [Jon Gjengset has a YouTube channel where he discusses intermediate Rust](https://www.youtube.com/channel/UC_iD0xppBwwsrM9DegC5cQQ)
+4. [Crust of Rust on YouTube - Again, Jon Gjengset](https://youtu.be/rAl-9HwD858)
+5. [OBS Project (Open Broadcaster Software) for recording and live-streaming, useful for my eventual youtube channel](https://obsproject.com/)
+6. [PolyBar is a Status bar for i3m and Linux](https://github.com/polybar/polybar)
+7. [xmonad is a tiling manager (like i3wm) but it uses haskell files for configs](https://xmonad.org/)
