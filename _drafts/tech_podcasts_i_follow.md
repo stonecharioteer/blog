@@ -83,15 +83,32 @@ Tobias Macey has some of the *best* guests on his podcast. I cannot state this e
 
 ## Vim Tips with Ben
 
-[Site]() \| [Episodes RSS]()
+[Site](https://www.briefs.fm/vim-tips-with-ben)
 
-This podcast is no longer maintained, and the last episode was on 2016, but if you are trying to learn Vim, this is absolutely high up there in what you need to listen to.
+This podcast is no longer maintained, and the last episode was on 2016, but
+if you are trying to learn Vim, this is absolutely high up there in what you need to listen to.
 
 I recommend listening to *all* the episodes, since there are only a few.
 
 ## VimCasts.org with Drew Neil
 
-[Site]() \| [Episodes RSS]()
+[Site](http://vimcasts.org/)
+
+This is yet another unmaintained but great podcast on Vim.
+
+## Go Time
+
+[Site](https://changelog.com/gotime) \| [RSS](https://changelog.com/gotime/feed)
+
+Go Time is a *joy* to listen to. It's about Golang, but it is also about *so much more*
+that I cannot stop fanboying about it. I am *just* getting into Go as of July 2020,
+and this Podcast is teaching me so much.
+
+### Favorites
+
+1. [#137 Focusing in on PostgreSQL](https://changelog.com/news/gO9z/visit)
+2. [#130 Challenges of Distributed Messaging Systems](https://changelog.com/news/WRNg/visit)
+
 
 ## Misc. Favourite Episodes
 
@@ -99,4 +116,3 @@ These are not podcasts I follow regularly, but I've stumbled upon these episodes
 
 
 1. [Artificial Intelligence with Lex Fridman](https://lexfridman.com/ai/) \| [RSS](https://lexfridman.com/wordpress/wp-content/themes/twentytwelve-child/podcast/rss.png) \| [Guido van Rossum: Python](https://lexfridman.com/guido-van-rossum)
-2. []
