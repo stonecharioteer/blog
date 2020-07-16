@@ -49,7 +49,19 @@ and **how much harder** it is to find an AMD machine that runs Linux.
 
 I love the innovation Asus is doing with its laptops. I *love* the idea of the
 Zenbook Pro Duos and the Zephyrus Pro Duos. However, both of them are Intel
-and NVIDIA only.
+and NVIDIA only. Dual screens! On a laptop! That would add to my productivity
+so hard because I could have a terminal open in the bottom screen at all times.
+
+My options are limited, I agree, but let's look at the laptop options I do have.
 
 
 ![Asus Zephyrus](/assets/images/posts/amd/asus-gaming-laptops.png)
+
+
+## Dell
+
+
+## Lenovo
+
+
+## Independent Vendors
