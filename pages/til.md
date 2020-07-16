@@ -34,7 +34,7 @@ bot that manages this page for me.
 
 ## 2020-07-15
 
-1. [Common List: A Gentle Introduction by David S. Touretzky is a great book on functional programming](https://www.cs.cmu.edu/~dst/LispBook/book.pdf)
+1. [Common Lisp: A Gentle Introduction by David S. Touretzky is a great book on functional programming](https://www.cs.cmu.edu/~dst/LispBook/book.pdf)
 2. [The Nokia N9 Alarm Clock app had a great design](http://nition.momentstudio.co.nz/2014/08/the-nokia-n9-alarm-clock/)
 3. [Micro is a tiny editor for Linux](https://github.com/zyedidia/micro)
 4. [Understanding and writing a JPEG decoder in Python](https://yasoob.me/posts/understanding-and-writing-jpeg-decoder-in-python/)
