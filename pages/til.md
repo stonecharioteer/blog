@@ -20,6 +20,7 @@ bot that manages this page for me.
 5. [PEP-508 is ... insanely detailed with what can be added to each line in requirements.txt](https://www.python.org/dev/peps/pep-0508/)
 6. [Google Season of Docs is a program to get more people to contribute to documentation.](https://developers.google.com/season-of-docs)
 7. [What Nobody Tells You about Documentation - the greatest video on how to structure docs that I have seen](https://www.youtube.com/watch?v=t4vKPhjcMZg)
+8. [docker-compose has *no* docstrings](https://github.com/docker/compose/blob/master/compose/cli/main.py)
 
 ## 2020-07-16
 
