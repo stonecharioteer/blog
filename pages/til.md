@@ -23,7 +23,7 @@ bot that manages this page for me.
 9. [windows terminal](https://github.com/microsoft/terminal)
 10. [BangPypers Meetup Youtube Link - Code Quality, Interfaces, Complexity and Unit Testing](http://www.youtube.com/watch?v=eVYdPdvS2nQ)
 11. [Python Static Code analysis with Prospector](http://prospector.landscape.io)
-
+12. [Python isort for sorting imports automatically](https://pypi.org/project/isort/)
 
 ## 2020-07-17
 
