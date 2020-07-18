@@ -36,7 +36,11 @@ bot that manages this page for me.
 22. [Python Implements library](https://pypi.org/project/implements/)
 23. [PEP 622 Structural Pattern Matching in Python](https://www.python.org/dev/peps/pep-0622/)
 24. [Playground for PEP 622](https://mybinder.org/v2/gh/gvanrossum/patma/master?urlpath=lab/tree/playground-622.ipynb)
-    
+25. [Commitizen enforces how commit messages and changelogs are written](https://github.com/commitizen-tools/commitizen)
+26. [PEP 618 Add Optional Length-Checking to zip](https://www.python.org/dev/peps/pep-0618/)
+27. [Python Bytes #190: Anthony Shaw: Pylance is named after Sir Lancelot](https://pythonbytes.fm/episodes/show/190/you-will-now-be-notified-if-the-python-zipper-is-broken)
+28. [Easier File Watching in Linux Hackaday Blog Post](https://hackaday.com/2019/01/31/linux-fu-easier-file-watching/)
+
 ## 2020-07-17
 
 1. [Pickle's Nine Flaws](https://nedbatchelder.com/blog/202006/pickles_nine_flaws.html)
