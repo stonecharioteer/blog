@@ -31,6 +31,9 @@ bot that manages this page for me.
 17. [Internals of CPython by Prashanth Raghu](https://intopythoncom.files.wordpress.com/2017/04/internalsofcpython3-6-1.pdf)
 18. [Advanced Internals of CPython by Prashanth Raghu](https://intopythoncom.files.wordpress.com/2017/04/merged.pdf)
 19. [Pablo Salgado - Soul of the Beast EuroPython 2019 Talk on CPython](https://www.youtube.com/watch?v=1_23AVsiQEc)
+20. [CPython Internals Links](https://cpython-core-tutorial.readthedocs.io/en/latest/internals.html)
+21. [CPython Internals: 10 Hour Codewalk through the Python Interpreter Source Code](http://pgbovine.net/cpython-internals.htm)
+22. [Python Implements library](https://pypi.org/project/implements/)
 
 ## 2020-07-17
 
