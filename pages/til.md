@@ -25,7 +25,7 @@ bot that manages this page for me.
 11. [Python Static Code analysis with Prospector](http://prospector.landscape.io)
 12. [Python isort for sorting imports automatically](https://pypi.org/project/isort/)
 13. [Python Code Quality Authority](https://github.com/PyCQA)
-
+14. [Python Quality Link by Abhiram](https://github.com/abhiramr/pyquality)
 
 ## 2020-07-17
 
