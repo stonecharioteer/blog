@@ -34,7 +34,9 @@ bot that manages this page for me.
 20. [CPython Internals Links](https://cpython-core-tutorial.readthedocs.io/en/latest/internals.html)
 21. [CPython Internals: 10 Hour Codewalk through the Python Interpreter Source Code](http://pgbovine.net/cpython-internals.htm)
 22. [Python Implements library](https://pypi.org/project/implements/)
-
+23. [PEP 622 Structural Pattern Matching in Python](https://www.python.org/dev/peps/pep-0622/)
+24. [Playground for PEP 622](https://mybinder.org/v2/gh/gvanrossum/patma/master?urlpath=lab/tree/playground-622.ipynb)
+    
 ## 2020-07-17
 
 1. [Pickle's Nine Flaws](https://nedbatchelder.com/blog/202006/pickles_nine_flaws.html)
