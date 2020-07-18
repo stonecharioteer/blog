@@ -11,6 +11,18 @@ Right now, I am structuring this as a page with a list of links I encounter.
 Since this new, it will have an overload of links. I want to build a Telegram
 bot that manages this page for me.
 
+## 2020-07-18
+
+1. [Cyclomatic Complexity of Code or McCabe Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
+2. [mccabe is a Python module to analyse the McCabe's Complexity for a Python module or file](https://github.com/pycqa/mccabe)
+4. [Python line-profiler](https://github.com/pyutils/line_profiler)
+5. [Python Guppy / Heapy for Profiling Code](https://github.com/zhuyifei1999/guppy3)
+6. [`entr` for running commands in posix systems when file(s) change](https://github.com/clibs/entr)
+7. [pylint-flask](https://pypi.org/project/pylint-flask/)
+8. [pylint-flask-sqlalchemy](https://pypi.org/project/pylint-flask-sqlalchemy/)
+9. [windows terminal](https://github.com/microsoft/terminal)
+10. [BangPypers Meetup Youtube Link - Code Quality, Interfaces, Complexity and Unit Testing](http://www.youtube.com/watch?v=eVYdPdvS2nQ)
+
 ## 2020-07-17
 
 1. [Pickle's Nine Flaws](https://nedbatchelder.com/blog/202006/pickles_nine_flaws.html)
