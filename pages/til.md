@@ -26,6 +26,11 @@ bot that manages this page for me.
 12. [Python isort for sorting imports automatically](https://pypi.org/project/isort/)
 13. [Python Code Quality Authority](https://github.com/PyCQA)
 14. [Python Quality Link by Abhiram](https://github.com/abhiramr/pyquality)
+15. [CPython Internals RealPython Article by Anthony Shaw]()
+16. [CPython Internals Book by Anthony Shaw](https://realpython.com/products/cpython-internals-book/)
+17. [Internals of CPython by Prashanth Raghu](https://intopythoncom.files.wordpress.com/2017/04/internalsofcpython3-6-1.pdf)
+18. [Advanced Internals of CPython by Prashanth Raghu](https://intopythoncom.files.wordpress.com/2017/04/merged.pdf)
+19. [Pablo Salgado - Soul of the Beast PyCon](https://www.youtube.com/watch?v=1_23AVsiQEc)
 
 ## 2020-07-17
 
