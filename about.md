@@ -21,19 +21,19 @@ Here's a small gallery of my work.
 
 #### Workspace
 
-![Workspace](photos/workspace.jpg)
+![Workspace](/assets/images/about/workspace.jpeg)
 
 #### Corne Keyboard (Cherry MX Blue)
 
-![CorneKeyboard](photos/corne_keyboard.jpg)
+![CorneKeyboard](/assets/images/about/corne_keyboard.jpg)
 
 #### Daisy 40% (Cherry MX Green)
 
-![Workspace](photos/daisy_keyboard.jpg)
+![Workspace](/assets/images/about/daisy_keyboard.jpg)
 
 #### Lily58 Keyboard (Cherry MX Blue)
 
-![Lily58](photos/lily58_keyboard.jpg)
+![Lily58](/assets/images/about/lily58_keyboard.jpeg)
 
 ## Why Stonecharioteer?
 
@@ -45,10 +45,8 @@ The logo was designed by my sister Sthuthi Kiran.
 
 [Contact me via twitter.](https://twitter.com/stonecharioteer)
 
-
-
 ## Dog Tax
 
 Meet my dog: her royal highness "Subbalakshmi" (Subbi).
 
-![Subbi](photos/subbi.jpg
+![Subbi](/assets/images/about/subbi.jpg)
