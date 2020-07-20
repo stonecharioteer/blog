@@ -10,7 +10,7 @@ customexcerpt: "I bought an ESP8266 based watch. This thing can technically run 
 
 ![Watch](/assets/images/posts/iot/esp8266-watch.png)
 
-A while ago I bought this amazing watch. Well, it isn't really a watch, more of a WiFi DeAuth device that has an ESP8266 underneath. I am going to flash MicroPython on this thing and hook it to the K3S cluster through MQTT. 
+A while ago I bought this amazing watch. Well, it isn't really a watch, more of a WiFi DeAuth devicstme that has an ESP8266 underneath. I am going to flash MicroPython on this thing and hook it to the K3S cluster through MQTT. 
 
 Here's a preview video of this watch. I didn't test what it can do (yet), but I will do so on my spare Wi-Fi router.
 
