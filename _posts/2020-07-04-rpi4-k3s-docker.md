@@ -1,6 +1,8 @@
 ---
 title: K3S on the 8GB Raspberry Pi 4 with Docker-CE
 categories: [raspberry-pi, kubernetes, homelab]
+description: "Running a k8s cluster in my room on Raspberry Pi 4 boards with 8GB RAM each"
+customexcerpt: "I am running Kubernetes on a Raspberry Pi 4 cluster in my bedroom!"
 ---
 
 I finally managed to fix the issue I was having with K3S on the Raspberry Pi 4.
