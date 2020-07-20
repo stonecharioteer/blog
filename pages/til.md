@@ -11,6 +11,15 @@ Right now, I am structuring this as a page with a list of links I encounter.
 Since this new, it will have an overload of links. I want to build a Telegram
 bot that manages this page for me.
 
+## 2020-07-20
+
+1. [Python: `breakpoint` in empty `except` clause does not have access to the bound exception even if it is aliased](https://stackoverflow.com/questions/62796591/breakpoint-in-except-clause-doesnt-have-access-to-the-bound-exception)
+2. [MIT OCW: Statistics for Applications](https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/lecture-videos/)
+3. [Microsoft AI Lab](https://github.com/microsoft/ailab)
+4. [Matplotlib for Google Maps](https://github.com/gmplot/gmplot)
+5. [Github Coding Interview University](https://github.com/jwasham/coding-interview-university)
+6. [ossu Computer Science Curriculum](https://github.com/ossu/computer-science)
+
 ## 2020-07-18
 
 1. [Cyclomatic Complexity of Code or McCabe Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
