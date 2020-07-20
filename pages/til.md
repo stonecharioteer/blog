@@ -35,6 +35,7 @@ bot that manages this page for me.
 20. [Awesome Design Resources](https://github.com/gztchan/awesome-design)
 21. [Awesome Programming Falsehoods](https://github.com/kdeldycke/awesome-falsehood)
 22. [Vim Galore](https://github.com/mhinz/vim-galore)
+23. [Golang Bangalore Meetup 56](https://www.youtube.com/watch?v=KJRIR5vuNIQ)
  
 ## 2020-07-18
 
