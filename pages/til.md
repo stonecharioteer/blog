@@ -19,7 +19,23 @@ bot that manages this page for me.
 4. [Matplotlib for Google Maps](https://github.com/gmplot/gmplot)
 5. [Github Coding Interview University](https://github.com/jwasham/coding-interview-university)
 6. [ossu Computer Science Curriculum](https://github.com/ossu/computer-science)
-
+7. [Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
+8. [The Book of Secret Knowledge (CLIs, tools, manuals, cheatsheets etc)](https://github.com/trimstray/the-book-of-secret-knowledge)
+9. [Frontend Dev Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks)
+10. [Patterns of Scalability](https://github.com/binhnguyennus/awesome-scalability)
+11. [Awesome Design Tools](https://github.com/LisaDziuba/Awesome-Design-Tools)
+12. [Awesome Shell](https://github.com/alebcay/awesome-shell)
+13. [Awesome Remote Job](https://github.com/lukasz-madon/awesome-remote-job)
+14. [Awesome VS Code](https://github.com/viatsko/awesome-vscode)
+15. [Awesome Docker](https://github.com/veggiemonk/awesome-docker)
+16. [Awesome Rust](https://github.com/rust-unofficial/awesome-rust)
+17. [Awesome CSS Protips](https://github.com/AllThingsSmitty/css-protips)
+18. [Space Vim](https://github.com/SpaceVim/SpaceVim)
+19. [Awesome Penetration Test](https://github.com/enaqx/awesome-pentest)
+20. [Awesome Design Resources](https://github.com/gztchan/awesome-design)
+21. [Awesome Programming Falsehoods](https://github.com/kdeldycke/awesome-falsehood)
+22. [Vim Galore](https://github.com/mhinz/vim-galore)
+ 
 ## 2020-07-18
 
 1. [Cyclomatic Complexity of Code or McCabe Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
