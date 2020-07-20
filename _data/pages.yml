@@ -1,6 +1,6 @@
 pages:
-  - {name: 'Categories', url: '/categories'}
-  - {name: 'Journals', url: '/journals.html'}
-  - {name: 'TIL', url: '/til.html'}
-  - {name: 'Archive', url: 'archive.html'}
   - {name: 'About', url: 'about.html'}
+  - {name: 'TIL', url: '/til.html'}
+  - {name: 'Journals', url: '/journals.html'}
+  - {name: 'Categories', url: '/categories'}
+  - {name: 'Archive', url: 'archive.html'}
