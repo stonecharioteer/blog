@@ -15,25 +15,27 @@ I also write about hearing loss and single-sided deafness, and how to cope with 
 
 I am a certified geek. I build mechanical keyboards, run Kubernetes on a 4 node Raspberry Pi 4 bramble (a smaller cluster), have about 18 Raspberry Pi boards in all, and I also do a lot of MicroPython and IoT work.
 
-Here's a small gallery of my work.
+Here's a small gallery of my workspace.
 
-### Keyboard and Workspace
+## Keyboards
 
-#### Workspace
+I assembled these keyboards and flashed the QMK framework on them, programming them to suit my preferred layout.
 
-![Workspace](/assets/images/about/workspace.jpeg)
-
-#### Corne Keyboard (Cherry MX Blue)
+### Corne Keyboard (Cherry MX Blue)
 
 ![CorneKeyboard](/assets/images/about/corne_keyboard.jpg)
 
-#### Daisy 40% (Cherry MX Green)
+### Daisy 40% (Cherry MX Green)
 
 ![Workspace](/assets/images/about/daisy_keyboard.jpg)
 
-#### Lily58 Keyboard (Cherry MX Blue)
+### Lily58 Keyboard (Cherry MX Blue)
 
 ![Lily58](/assets/images/about/lily58_keyboard.jpeg)
+
+## Workspace
+
+![Workspace](/assets/images/about/workspace.jpeg)
 
 ## Why Stonecharioteer?
 
