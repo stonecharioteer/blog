@@ -7,9 +7,8 @@ description: "A list of things I learn every day."
 customexcerpt: "A list of things I learn every day."
 ---
 
-Right now, I am structuring this as a page with a list of links I encounter.
-Since this new, it will have an overload of links. I want to build a Telegram
-bot that manages this page for me.
+This is a page of things I learn/encounter daily. Some are links to blogs, others to github. I usually structure this with some helpful description so I can find it later. To be honest, this is mainly so I can track links in a way that is not reliant on external services. I plan to build a Telegram
+bot that manages this page for me. I can then introduce tagging and search, through the bot, of course.
 
 ## 2020-07-21
 
