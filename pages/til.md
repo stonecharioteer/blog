@@ -11,7 +11,8 @@ Right now, I am structuring this as a page with a list of links I encounter.
 Since this new, it will have an overload of links. I want to build a Telegram
 bot that manages this page for me.
 
-## 2020-07-20
+## 2020-07-21
+
 1. [pytest has a flag to hide traceback `--tb=no`, useful with `entr`](https://docs.pytest.org/en/stable/usage.html#modifying-python-traceback-printing)
 2. [Testing Dash Applications using Pytest and Selenium](https://dash.plotly.com/testing)
 3. [Al Sweigart - Scratch Course on Udemy](https://www.udemy.com/scratch-game-programming/)
