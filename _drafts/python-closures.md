@@ -42,9 +42,7 @@ Let's take a look.
 ```python
 
 def some_func():
-    x = 10
-    y = lambda s: s**2
-    something_to_return = y(x)
+    something_to_return = 10
     print(f"id(something_to_return) = {id(something_to_return)}")
     return something_to_return
 ```
@@ -62,8 +60,10 @@ id(something_to_return) = 10917664
 10917664
 ```
 
-Of course this number will vary, and it could be the same, but for objects with non-overlapping lifetime. In other words, during one specific *scope*, these
-numbers are guaranteed to be representative of a specific object.
+Of course this number will vary, and it could be the same, but for objects with non-overlapping lifetime.
+In other words, during one specific *scope*, these numbers are guaranteed to be representative of a specific object.
+
+## Scopes
 
 The *scope* that I just brought up is, in very simple terms, like a space for your code to run in. In python, variables are shared from an outer scope to an inner
 scope.
@@ -98,6 +98,8 @@ In this example, scope 0 *contains* scope 1. Scope 1 *contains* scope 2. However
 Scope 0 is the outermost scope. Scope 1 is inside scope 0. Scope 1 is outside of scope 2. Scope 2 is inside scope 1.
 
 This will become clearer in time.
+
+## Sniffing around returned values
 
 Now, let's look back at our closures. We saw that the `id` value of the integer that was returned is the same. which means, technically, that the same object was returned into the outer scope from the inner scope.
 
@@ -170,6 +172,8 @@ AssertionError: the objects are not the same
 ```
 
 This doesn't work. Why? Let's take it apart using another tool in the python standard library, the `dis` module.
+
+## Disassembling our snippets
 
 ```python
 import dis
@@ -358,3 +362,28 @@ Disassembly of <code object func2 at 0x7f000e81c4b0, file "<dis>", line 10>:
 ```
 
 Look at the first half, which says "disassembling the first snippet".
+
+
+## Let's return a dictionary instead!
+
+## Nested Functions - Finally
+
+## Overdrive: Nested classes
+
+## Bonus Bonus: Returning Static Methods
+
+## We Get the Idea: So what?
+
+## `__closure__` and what it means
+
+## End Note
+
+## A Personal Story
+
+The conversation at the beginning of this article came about because I had just come out of an interview where the interviewer asked me to explain Python closures.
+I had faltered, not because I didn't know, but because, oddly enough, I thought there was nothing special about how you can essentially play ping pong with objects
+in Python. Most languages do this. Python does this only because C does it. You can return pointers, can't you?
+
+All in all, a confusing interview let me to understand something in depth, and helped me learn.
+
+
