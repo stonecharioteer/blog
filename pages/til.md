@@ -10,11 +10,34 @@ customexcerpt: "A list of things I learn every day."
 This is a page of things I learn/encounter daily. Some are links to blogs, others to github. I usually structure this with some helpful description so I can find it later. To be honest, this is mainly so I can track links in a way that is not reliant on external services. I plan to build a Telegram
 bot that manages this page for me. I can then introduce tagging and search, through the bot, of course.
 
+## 2020-07-23
+
+1. [It is possible to memoize dash callback responses with flask-caching](http://dash.plotly.com/testing)
+2. pytest-dash has been abandoned since the official dash repo supports selenium via pytest now
+3. Always ensure that the dash registration in a Flask-Dash app is configurable. Might want to not load dash when testing backend only.
+
+# 2020-07-22
+
+1. [Tips for faster Rust Compile Times](https://endler.dev/2020/rust-compile-times/)
+
 ## 2020-07-21
 
 1. [pytest has a flag to hide traceback `--tb=no`, useful with `entr`](https://docs.pytest.org/en/stable/usage.html#modifying-python-traceback-printing)
 2. [Testing Dash Applications using Pytest and Selenium](https://dash.plotly.com/testing)
 3. [Al Sweigart - Scratch Course on Udemy](https://www.udemy.com/scratch-game-programming/)
+4. [`kubectx` is a wrapper around `kubectl` and allows configuring namespaces](https://github.com/ahmetb/kubectx)
+5. [Rust's Module System](http://www.sheshbabu.com/posts/rust-module-system/)
+6. [How I write Backends](https://github.com/fpereiro/backendlore)
+7. [Essays on Programmings](https://news.ycombinator.com/item?id=23903737)
+8. [System Design for Advanced Beginners](https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/)
+9. [Alex Ellis's Blog](https://blog.alexellis.io/tag/raspberry-pi/)
+10. [Made a 8-bit CPU](https://www.reddit.com/r/engineering/comments/huu38v/made_an_8bit_cpu_if_youve_ever_wondered_how_a/)
+11. [Pi-Hole Unbound](https://docs.pi-hole.net/guides/unbound/)
+12. [Pi-Hole Tips](https://www.reddit.com/r/pihole/comments/dezyvy/into_the_pihole_you_should_go_8_months_later/)
+13. [Waveshare released a 7 color e-ink display](https://www.waveshare.com/5.65inch-e-paper-module-f.htm)
+14. [Dijo - Terminal Habit Tracker written in Rust](https://github.com/NerdyPepper/dijo)
+15. [Spotify TUI written in Rust](https://www.reddit.com/r/unixporn/comments/dekj2i/oc_a_spotify_terminal_user_interface_written_in/)
+16. [Computer Productivity: Why it is important that software projects fail](https://www.berglas.org/Articles/ImportantThatSoftwareFails/ImportantThatSoftwareFails.html)
 
 ## 2020-07-20
 
