@@ -19,6 +19,8 @@ I can then introduce tagging and search, through the bot, of course.
 2. Resource | [Gary Explains: Rust: What is Ownership and Borrowing?](https://www.youtube.com/watch?v=79phqVpE7cU&feature=youtu.be)
 3. Article | [Adding a Volume Control to xmonad](http://dmwit.com/volume/)
 4. Tool | [Ghosd - Transparent System Notifications](http://neugierig.org/software/ghosd/)
+5. Tool | [Fusuma for Mouse Gestures in Linux](https://github.com/iberianpig/fusuma)
+6. Tool | [How to Use Fusuma](https://italolelis.com/posts/multitouch-gestures-ubuntu-fusuma/)
 
 ## 2020-07-28
 1. Article | [Najeem's article on Analysing Google Photos](https://medium.com/@najeem/analyzing-my-google-photos-library-with-python-and-pandas-bcb746c2d0f2)
