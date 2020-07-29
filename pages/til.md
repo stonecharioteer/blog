@@ -7,15 +7,18 @@ description: "A list of things I learn every day."
 customexcerpt: "A list of things I learn every day."
 ---
 
-This is a page of things I learn/encounter daily. Some are links to blogs, others to github.
+This is a page of things I learn/encounter daily. I am trying to organize these so that I can classify them better.
+Some are links to blogs, others to github or to other websites where I learn something interesting every day.
 I usually structure this with some helpful description so I can find it later.
-To be honest, this is mainly so I can track links in a way that is not reliant on external services. I plan to build a Telegram
-bot that manages this page for me. I can then introduce tagging and search, through the bot, of course.
+To be honest, this is mainly so I can track links in a way that is not reliant on external services.
+I plan to build a Telegram bot that manages this page for me.
+I can then introduce tagging and search, through the bot, of course.
 
 ## 2020-07-28
 1. RTFM | [Disabling Turbo Boost on AMD Laptops](https://www.kernel.org/doc/Documentation/cpu-freq/boost.txt)
 2. Resource | [Gary Explains: Rust: What is Ownership and Borrowing?](https://www.youtube.com/watch?v=79phqVpE7cU&feature=youtu.be)
 3. Article | [Adding a Volume Control to xmonad](http://dmwit.com/volume/)
+4. Tool | [Ghosd - Transparent System Notifications](http://neugierig.org/software/ghosd/)
 
 ## 2020-07-28
 1. Article | [Najeem's article on Analysing Google Photos](https://medium.com/@najeem/analyzing-my-google-photos-library-with-python-and-pandas-bcb746c2d0f2)
