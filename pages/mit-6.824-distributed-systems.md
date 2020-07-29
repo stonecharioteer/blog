@@ -464,3 +464,72 @@ func main() {
 ```
 
 Wait, so `:=` is sort of the walrus operator!! W00t.
+
+### 2020-07-29 The Tour Continues!
+
+Note: *I took quite some time off from this course, but I am back now and I plan to finish this soon.*
+
+So the last time, I was looking at loops. Loops don't need parentheses here. That's good.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	sum := 0
+	for i := 0; i < 10; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
+
+	for sum < 1000 {
+		sum += 100
+	}
+	fmt.Println(sum)
+
+	for {
+		fmt.Println("lol infinite loops")
+	}
+}
+
+```
+
+The initialization and increment are optional, so there is no need for a while or a do-while loop here. Good.
+
+>  [C's *while* is spelled *for* in Go.](https://tour.golang.org/flowcontrol/3)
+
+That's hilarious. If only my old CS teacher Vasanth could see my face now.
+
+[**Go's Conditional's have the *walrus operator*?!**](https://tour.golang.org/flowcontrol/6)
+
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func pow(x, n, lim float64) float64 {
+	if v := math.Pow(x, n); v < lim {
+		return v
+	}
+	return lim
+}
+
+func main() {
+	fmt.Println(
+		pow(3, 2, 10),
+		pow(3, 3, 10),
+	)
+}
+
+```
+
+I am sold.
+
+
+The variable defined in the `if` statement isn't accessible outside the statement,
+but variables defined within the blocks are accessible outside the blog.
+Such a weird decision. I mean, even Python does this but it is very weird.
