@@ -21,6 +21,7 @@ I can then introduce tagging and search, through the bot, of course.
 4. Tool | [Ghosd - Transparent System Notifications](http://neugierig.org/software/ghosd/)
 5. Tool | [Fusuma for Mouse Gestures in Linux](https://github.com/iberianpig/fusuma)
 6. Tool | [How to Use Fusuma](https://italolelis.com/posts/multitouch-gestures-ubuntu-fusuma/)
+7. Thread | [4 Rules to Getting Better](https://www.reddit.com/r/getdisciplined/comments/1q96b5/i_just_dont_care_about_myself/cdah4af/)
 
 ## 2020-07-28
 1. Article | [Najeem's article on Analysing Google Photos](https://medium.com/@najeem/analyzing-my-google-photos-library-with-python-and-pandas-bcb746c2d0f2)
