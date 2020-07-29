@@ -7,8 +7,47 @@ description: "A list of things I learn every day."
 customexcerpt: "A list of things I learn every day."
 ---
 
-This is a page of things I learn/encounter daily. Some are links to blogs, others to github. I usually structure this with some helpful description so I can find it later. To be honest, this is mainly so I can track links in a way that is not reliant on external services. I plan to build a Telegram
+This is a page of things I learn/encounter daily. Some are links to blogs, others to github.
+I usually structure this with some helpful description so I can find it later.
+To be honest, this is mainly so I can track links in a way that is not reliant on external services. I plan to build a Telegram
 bot that manages this page for me. I can then introduce tagging and search, through the bot, of course.
+
+## 2020-07-28
+1. RTFM | [Disabling Turbo Boost on AMD Laptops](https://www.kernel.org/doc/Documentation/cpu-freq/boost.txt)
+2. Resource | [Gary Explains: Rust: What is Ownership and Borrowing?](https://www.youtube.com/watch?v=79phqVpE7cU&feature=youtu.be)
+3. Article | [Adding a Volume Control to xmonad](http://dmwit.com/volume/)
+
+## 2020-07-28
+1. Article | [Najeem's article on Analysing Google Photos](https://medium.com/@najeem/analyzing-my-google-photos-library-with-python-and-pandas-bcb746c2d0f2)
+2. RTFM | [Linux Kernel Documentation](https://www.kernel.org/doc/html/)
+3. Tool | [Cubic is a tool to make customized Ubuntu or Linux Mint images](https://launchpad.net/cubic)
+4. Tool | [`ubuntu-mainline-kernel.sh` is a tool to update or manage the Kernel version with ease](https://github.com/pimlie/ubuntu-mainline-kernel.sh)
+5. Tool | [Drivers for TP-Link Wifi Dongles](https://github.com/lwfinger/rtl8188eu)
+6. Tool | [RyzenAdj is a tool to adjust AMD's Ryzen processor settings](https://github.com/FlyGoat/RyzenAdj)
+7. Tool | [`radeontop` is not quite `nvidia-smi` but it is something, for now](https://github.com/clbr/radeontop)
+8. Thread | [Trying to find `nvidia-smi` for AMD Radeon Cards](https://www.reddit.com/r/linuxquestions/comments/af8sdl/something_as_sophisticated_as_nvidiasmi_or_nvtop/)
+9. Book | [Tiny Python Projects](https://www.manning.com/books/tiny-python-projects?a_aid=bnpodcasts&utm_source=rss&utm_medium=rss#toc)
+10. Article | [Writing a file system in Rust](https://news.ycombinator.com/item?id=23967016)
+11. Resource | [Data Science Interview Questions in Python and SQL](https://news.ycombinator.com/item?id=23966752)
+12. Course | [Bartosz Milewski - School of Haskell](https://www.schoolofhaskell.com/user/bartosz/basics-of-haskell)
+13. Course | [Code and Exercises from Bartosz's School of Haskell](https://github.com/raviksharma/bartosz-basics-of-haskell)
+14. Tool | [Kardius - Find People Like You Near You](https://www.kardius.com/)
+15. Thead | [HN Comment on How CLIs Work](https://news.ycombinator.com/item?id=23960062)
+16. Article | [Sweet Expressions For Racket](https://github.com/takikawa/sweet-racket)
+17. Course | Coursera - Programming Languages [Course A](https://www.coursera.org/learn/programming-languages) | [Course B](https://www.coursera.org/learn/programming-languages-part-b)
+18. Tool | [Racketlang is 25](https://news.ycombinator.com/item?id=23132621)
+19. Thread | [DashMap - Fast, Concurrent Hashmap in Rust](https://news.ycombinator.com/item?id=22699176)
+20. Thread | [A GPU Hash Table](https://news.ycombinator.com/item?id=22541925)
+21. Book | [A Job To Love](https://www.theschooloflife.com/shop/tsol-press-a-job-to-love/)
+22. Article | [What Should Truly Motivate Us At Work](https://www.theschooloflife.com/thebookoflife/what-should-truly-motivate-us-at-work/)
+23. Tool | A Viewer for Git and Diff Output](https://github.com/dandavison/delta)
+24. Article | [Attack of Pythons : Gotchas](https://gist.githubusercontent.com/manojpandey/41b90cba1fd62095e247d1b2448ef85b/raw/0413c4805336b8030efc7de1e9fa0e229ca9903d/gotchas.md)
+25. RTFM | [Python Gotchas](https://docs.python-guide.org/writing/gotchas/#late-binding-closures)
+26. Tool | [Featuretools: Python Framework for Automated Feature Engineering](https://www.featuretools.com/)
+27. Blog | [Learning Rust in 2020](https://github.com/pretzelhammer/rust-blog/blob/master/posts/learning-rust-in-2020.md)
+28. Course | [Advent of Code]()
+29. Resource | [BurntSushi's Rust Solutions to Advent of Code 2018](https://github.com/bcmyers/aoc2019)
+30. Resource | [bcmyers's Rust Solutions to Advent of Code 2019](https://github.com/bcmyers/aoc2019) | [Youtube Livestream](https://www.youtube.com/watch?v=_JXpxmuR3ZE&feature=youtu.be&app=desktop#dialog)
 
 ## 2020-07-23
 
@@ -64,7 +103,7 @@ bot that manages this page for me. I can then introduce tagging and search, thro
 21. [Awesome Programming Falsehoods](https://github.com/kdeldycke/awesome-falsehood)
 22. [Vim Galore](https://github.com/mhinz/vim-galore)
 23. [Golang Bangalore Meetup 56](https://www.youtube.com/watch?v=KJRIR5vuNIQ)
- 
+
 ## 2020-07-18
 
 1. [Cyclomatic Complexity of Code or McCabe Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
