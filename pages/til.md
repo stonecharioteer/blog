@@ -10,6 +10,20 @@ customexcerpt: "A list of things I learn every day."
 This is a page of things I learn/encounter daily. Some are links to blogs, others to github. I usually structure this with some helpful description so I can find it later. To be honest, this is mainly so I can track links in a way that is not reliant on external services. I plan to build a Telegram
 bot that manages this page for me. I can then introduce tagging and search, through the bot, of course.
 
+## 2020-07-26
+
+1. [`arandr` is a great frontend for `xrandr`, a tool to set monitor configs in tiling window managers.]
+2. [Debian Content Indices are interesting.]
+3. [The `sorted` function in Python has a `reverse` flag.]
+4. [`collections.defaultdict` is amazing and has a slightly better performance than checking `{}.get`]
+
+
+
+## 2020-07-24
+1. [`pihole`'s Faster than light engine is a fork of dnsmasq]
+2. [`argparse` *does* support sub-commands]()
+3.
+
 ## 2020-07-23
 
 1. [It is possible to memoize dash callback responses with flask-caching](http://dash.plotly.com/testing)
@@ -64,7 +78,7 @@ bot that manages this page for me. I can then introduce tagging and search, thro
 21. [Awesome Programming Falsehoods](https://github.com/kdeldycke/awesome-falsehood)
 22. [Vim Galore](https://github.com/mhinz/vim-galore)
 23. [Golang Bangalore Meetup 56](https://www.youtube.com/watch?v=KJRIR5vuNIQ)
- 
+
 ## 2020-07-18
 
 1. [Cyclomatic Complexity of Code or McCabe Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
