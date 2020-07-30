@@ -14,7 +14,38 @@ To be honest, this is mainly so I can track links in a way that is not reliant o
 I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
+## 2020-07-30
+
+1. Thread | [Unix Domain Sockets are "sockets" on a single machine. This is what gunicorn uses. Thread on Unix Sockets vs Networking Sockets](https://serverfault.com/questions/124517/whats-the-difference-between-unix-socket-and-tcp-ip-socket)
+2. Article | [Everything in Linux is a File](https://www.tecmint.com/explanation-of-everything-is-a-file-and-types-of-files-in-linux/#:~:text=If%20you%20are%20new%20to,%2C%20everything%20is%20a%20File%E2%80%9D.&text=That%20is%20in%20fact%20true,is%20considered%20as%20a%20file.)
+3. Thread | [Everything is a File](https://unix.stackexchange.com/a/225542) | Note: See the `ISSOCK` check.
+4. Thread | [Use `os.stat(path).st_mode.S_ISSOCK` to check if a file is a socket](https://stackoverflow.com/questions/17877296/checking-if-path-is-a-socket-in-python-2-7)
+5. Article | [A TCP Request also has a port on the client]()
+6. Thought | UAT's should not be run in CICDs, it should be done completely external to the setup and bringing up an application.
+7. Tool | [`osquery` is a tool to snoop around a Linux system's OS in an SQL syntax](https://linuxhint.com/install_osquery_ubuntu/)
+8. Article | [Karla Burnett - SSL: It's hard to do right](https://recompilermag.com/issues/issue-1/ssl-its-hard-to-do-right/)
+9. Paper | [Maglev: Google's Custom Load Balancer](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/44824.pdf)
+10. Paper | [MapReduce: Simplified Data Processing on Large Clusters](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/16cb30b4b92fd4989b8619a61752a2387c6dd474.pdf)
+11. Paper | [Google Technical Publications](https://research.google/pubs/)
+12. Tool | [`lwan` - Lightweight Asynchronous Multi-Threaded Event-Based Web-Server](https://lwan.ws/)
+13. Article | [How to Read a Technical Paper](http://www.cs.jhu.edu/~jason/advice/how-to-read-a-paper.html)
+14. Paper | [S. Keshav - How to Read a Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
+15. Blog | [The Morning Paper: Blog on Reading a CS Paper Every Week](https://blog.acolyer.org/)
+16. RTFM | [Container Networking](https://docs.docker.com/config/containers/container-networking/)
+17. Article | [Julia Evans: How do HTTP Requests Get Sent to the Right Place?](https://jvns.ca/blog/2016/07/14/whats-sni/)
+18. Article | [Julia Evans: A Few Things I've Learnt about Kubernetes](https://jvns.ca/blog/2017/06/04/learning-about-kubernetes/)
+19. Article | [Julia Evans: A Few Things I've Learnt about Computer Networking](https://jvns.ca/blog/2018/03/05/things-ive-learned-networking/)
+20. Blog | [Kamal Marhubi](http://kamalmarhubi.com)
+21. Article | [Kamal Marhubi - Kubernetes from the Ground Up: What Even is a Kubelet](http://kamalmarhubi.com/blog/2015/08/27/what-even-is-a-kubelet/)
+22. Article | [Kamal Marhubi - Kubernetes from the Ground Up: the API Server](http://kamalmarhubi.com/blog/2015/09/06/kubernetes-from-the-ground-up-the-api-server/)
+23. Article | [Kamal Marhubi - Kubernetes from the Ground Up: The Scheduler](http://kamalmarhubi.com/blog/2015/11/17/kubernetes-from-the-ground-up-the-scheduler/)
+24. Video | [Jérôme Petazzoni - Cgroups, namespaces, and beyond: what are containers made from?](https://www.youtube.com/watch?v=sK5i-N34im8&feature=youtu.be)
+25. Article | [Brutally Honest Guide to Docker Graphdrivers](https://blog.jessfraz.com/post/the-brutally-honest-guide-to-docker-graphdrivers/)
+26. Blog | [Sumana Harihareshwara](https://www.harihareswara.net/ces.shtml)
+27.
+
 ## 2020-07-28
+
 1. RTFM | [Disabling Turbo Boost on AMD Laptops](https://www.kernel.org/doc/Documentation/cpu-freq/boost.txt)
 2. Resource | [Gary Explains: Rust: What is Ownership and Borrowing?](https://www.youtube.com/watch?v=79phqVpE7cU&feature=youtu.be)
 3. Article | [Adding a Volume Control to xmonad](http://dmwit.com/volume/)
@@ -23,7 +54,8 @@ I can then introduce tagging and search, through the bot, of course.
 6. Tool | [How to Use Fusuma](https://italolelis.com/posts/multitouch-gestures-ubuntu-fusuma/)
 7. Thread | [4 Rules to Getting Better](https://www.reddit.com/r/getdisciplined/comments/1q96b5/i_just_dont_care_about_myself/cdah4af/)
 
-## 2020-07-28
+## 2020-07-27
+
 1. Article | [Najeem's article on Analysing Google Photos](https://medium.com/@najeem/analyzing-my-google-photos-library-with-python-and-pandas-bcb746c2d0f2)
 2. RTFM | [Linux Kernel Documentation](https://www.kernel.org/doc/html/)
 3. Tool | [Cubic is a tool to make customized Ubuntu or Linux Mint images](https://launchpad.net/cubic)
