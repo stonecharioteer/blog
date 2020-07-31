@@ -43,7 +43,9 @@ I can then introduce tagging and search, through the bot, of course.
 25. Article \| [Brutally Honest Guide to Docker Graphdrivers](https://blog.jessfraz.com/post/the-brutally-honest-guide-to-docker-graphdrivers/)
 26. Blog \| [Sumana Harihareshwara](https://www.harihareswara.net/ces.shtml)
 27. Speech \| [Richard Hamming - You and Your Research](https://www.youtube.com/watch?v=a1zDuOPkMSw) [Transcript](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
-28. Blog \| [Paul Graham - Co-Founder of Y Combinator](http://paulgraham.com/)
+28. Book \| [Richard Hamming - The Art of Doing Science and Engineering](https://www.amazon.com/Art-Doing-Science-Engineering-Learning/dp/1732265178)
+29. Blog \| [Paul Graham - Co-Founder of Y Combinator](http://paulgraham.com/)
+30. Article \| [Paul Graham - Good and Bad Procrastination](http://www.paulgraham.com/procrastination.html)
 
 ## 2020-07-28
 
