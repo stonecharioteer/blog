@@ -88,6 +88,18 @@ I can then introduce tagging and search, through the bot, of course.
 29. Resource \| [BurntSushi's Rust Solutions to Advent of Code 2018](https://github.com/bcmyers/aoc2019)
 30. Resource \| [bcmyers's Rust Solutions to Advent of Code 2019](https://github.com/bcmyers/aoc2019) \| [Youtube Livestream](https://www.youtube.com/watch?v=_JXpxmuR3ZE&feature=youtu.be&app=desktop#dialog)
 
+## 2020-07-26
+
+1. `arandr` is a great frontend for `xrandr`, a tool to set monitor configs in tiling window managers.
+2. Debian Content Indices are interesting.]
+3. The `sorted` function in Python has a `reverse` flag.
+4. `collections.defaultdict` is amazing and has a slightly better performance than checking `{}.get`
+
+## 2020-07-24
+
+1. `pihole`'s Faster than light engine is a fork of dnsmasq
+2. `argparse` *does* support sub-commands
+
 ## 2020-07-23
 
 1. [It is possible to memoize dash callback responses with flask-caching](http://dash.plotly.com/testing)
