@@ -14,6 +14,12 @@ To be honest, this is mainly so I can track links in a way that is not reliant o
 I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
+## 2020-08-01
+1. Tidbit \| `git log --format="%H" -n 1 | cat` outputs the last commit ID.
+2. Tidbit \| `collections.defaultdict` takes a *type* not a value. It will initialize based on the default value for that type.
+3. Tidbit \| `nodejs` just uses `process` to get command line arguments.
+
+
 ## 2020-07-30
 
 1. Thread \| [Unix Domain Sockets are "sockets" on a single machine. This is what gunicorn uses. Thread on Unix Sockets vs Networking Sockets](https://serverfault.com/questions/124517/whats-the-difference-between-unix-socket-and-tcp-ip-socket)
