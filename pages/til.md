@@ -15,7 +15,10 @@ I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
 ## 2020-08-06
+
 1. Tool | [Phoronix Test Suite is a bunch of open source hardware benchmarking tools for all platforms](https://www.phoronix-test-suite.com/)
+2. Tidbit | [Python's `raise` statement has a `from` clause, to preserve full tracebacks.](https://stackoverflow.com/questions/24752395/python-raise-from-usage)
+3. RTFM | [Python `raise` statement](https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement)
 
 ## 2020-08-05
 
@@ -23,8 +26,7 @@ I can then introduce tagging and search, through the bot, of course.
 2. Tool | [xanmod](https://xanmod.org/) and [liqourix](https://liquorix.net/) are custom kernels for Linux desktops and workstations.
 3. Linux Kernel 5.8 has a lot of hardware level optimizations.
 4. Tool | [Grub Customizer to customize what the grub menu looks like](https://itsfoss.com/grub-customizer-ubuntu/)
-5. Tidbit | [Python's `raise` statement has a `from` clause, to preserve full tracebacks.](https://stackoverflow.com/questions/24752395/python-raise-from-usage)
-6. RTFM | [Python `raise` statement](https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement)
+
 
 ## 2020-08-02
 
@@ -33,10 +35,10 @@ I can then introduce tagging and search, through the bot, of course.
 3. EC2 has a Free tier! I can request a bunch of machines here.
 
 ## 2020-08-01
+
 1. Tidbit \| `git log --format="%H" -n 1 | cat` outputs the last commit ID.
 2. Tidbit \| `collections.defaultdict` takes a *type* not a value. It will initialize based on the default value for that type.
 3. Tidbit \| `nodejs` just uses `process` to get command line arguments.
-
 
 ## 2020-07-30
 
