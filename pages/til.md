@@ -14,6 +14,24 @@ To be honest, this is mainly so I can track links in a way that is not reliant o
 I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
+## 2020-08-06
+1. Tool | [Phoronix Test Suite is a bunch of open source hardware benchmarking tools for all platforms](https://www.phoronix-test-suite.com/)
+
+## 2020-08-05
+
+1. Tidbit | You can install more than one kernel into a Linux installation and choose which to boot from in Grub.
+2. Tool | [xanmod](https://xanmod.org/) and [liqourix](https://liquorix.net/) are custom kernels for Linux desktops and workstations.
+3. Linux Kernel 5.8 has a lot of hardware level optimizations.
+4. Tool | [Grub Customizer to customize what the grub menu looks like](https://itsfoss.com/grub-customizer-ubuntu/)
+5. Tidbit | [Python's `raise` statement has a `from` clause, to preserve full tracebacks.](https://stackoverflow.com/questions/24752395/python-raise-from-usage)
+6. RTFM | [Python `raise` statement](https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement)
+
+## 2020-08-02
+
+1. Juju is a tool that helps manage server providers, whether they are GCP, AWS, your own servers or Azure, among others, giving you one way to start, setup and run your servers.
+2. Juju's configurations are called charms. These are written in Python.
+3. EC2 has a Free tier! I can request a bunch of machines here.
+
 ## 2020-08-01
 1. Tidbit \| `git log --format="%H" -n 1 | cat` outputs the last commit ID.
 2. Tidbit \| `collections.defaultdict` takes a *type* not a value. It will initialize based on the default value for that type.
@@ -92,7 +110,7 @@ I can then introduce tagging and search, through the bot, of course.
 25. RTFM \| [Python Gotchas](https://docs.python-guide.org/writing/gotchas/#late-binding-closures)
 26. Tool \| [Featuretools: Python Framework for Automated Feature Engineering](https://www.featuretools.com/)
 27. Blog \| [Learning Rust in 2020](https://github.com/pretzelhammer/rust-blog/blob/master/posts/learning-rust-in-2020.md)
-28. Course \| [Advent of Code]()
+28. Course \| [Advent of Code is a bunch of programming exercises that are more fun than Leetcode, with annual sprints](https://adventofcode.com/)
 29. Resource \| [BurntSushi's Rust Solutions to Advent of Code 2018](https://github.com/bcmyers/aoc2019)
 30. Resource \| [bcmyers's Rust Solutions to Advent of Code 2019](https://github.com/bcmyers/aoc2019) \| [Youtube Livestream](https://www.youtube.com/watch?v=_JXpxmuR3ZE&feature=youtu.be&app=desktop#dialog)
 
@@ -107,6 +125,7 @@ I can then introduce tagging and search, through the bot, of course.
 
 1. `pihole`'s Faster than light engine is a fork of dnsmasq
 2. `argparse` *does* support sub-commands
+
 
 ## 2020-07-23
 
