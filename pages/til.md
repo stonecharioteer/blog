@@ -16,16 +16,16 @@ I can then introduce tagging and search, through the bot, of course.
 
 ## 2020-08-06
 
-1. Tool | [Phoronix Test Suite is a bunch of open source hardware benchmarking tools for all platforms](https://www.phoronix-test-suite.com/)
-2. Tidbit | [Python's `raise` statement has a `from` clause, to preserve full tracebacks.](https://stackoverflow.com/questions/24752395/python-raise-from-usage)
-3. RTFM | [Python `raise` statement](https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement)
+1. Tool \| [Phoronix Test Suite is a bunch of open source hardware benchmarking tools for all platforms](https://www.phoronix-test-suite.com/)
+2. Tidbit \| [Python's `raise` statement has a `from` clause, to preserve full tracebacks.](https://stackoverflow.com/questions/24752395/python-raise-from-usage)
+3. RTFM \| [Python `raise` statement](https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement)
 
 ## 2020-08-05
 
-1. Tidbit | You can install more than one kernel into a Linux installation and choose which to boot from in Grub.
-2. Tool | [xanmod](https://xanmod.org/) and [liqourix](https://liquorix.net/) are custom kernels for Linux desktops and workstations.
+1. Tidbit \| You can install more than one kernel into a Linux installation and choose which to boot from in Grub.
+2. Tool \| [xanmod](https://xanmod.org/) and [liqourix](https://liquorix.net/) are custom kernels for Linux desktops and workstations.
 3. Linux Kernel 5.8 has a lot of hardware level optimizations.
-4. Tool | [Grub Customizer to customize what the grub menu looks like](https://itsfoss.com/grub-customizer-ubuntu/)
+4. Tool \| [Grub Customizer to customize what the grub menu looks like](https://itsfoss.com/grub-customizer-ubuntu/)
 
 
 ## 2020-08-02
