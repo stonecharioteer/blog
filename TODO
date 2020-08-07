@@ -44,6 +44,14 @@ Post-Ideas:
     ✔ @created(20-07-04 17:01) BangPypers Workshop on Flask @done(20-07-10 14:21)
     ☐ @created(20-07-04 17:59) Accessibility in Conference Talks
     ☐ @created(20-07-04 17:59) Creating a CFP
+    ☐ @created(20-08-07 15:22) @high PyCon IN 2020 CFP:
+      ☐ @created(20-08-07 15:22) Post on Dash SPA
+      ☐ @created(20-08-07 15:22) Sample Video
+      ☐ @created(20-08-07 15:22) Post on Sample Video
+      ☐ @created(20-08-07 15:23) Livestream for Application
+      ☐ @created(20-08-07 15:23) Create cookiecutter template
+      ☐ @created(20-08-07 15:23) Post for Cookiecutter Template
+      ☐ @created(20-08-07 15:23) Github Repo for Dash SPA
 
   Rust:
     ☐ @created(20-07-04 17:05) Rust Learning Notes
@@ -119,11 +127,10 @@ Post-Ideas:
     ☐ @created(20-07-04 17:37) The Koolertron One-Handed Keyboard
     ☐ @created(20-07-04 17:57) Zebronics Max Plus
 
-
 Meta:
-  ☐ Add Logo to favicon @created(20-07-04 18:05)
-  ☐ Add logo to about page @created(20-07-04 18:05)
+  ✔ Add Logo to favicon @created(20-07-04 18:05) @done(20-08-07 15:19)
+  ✔ Add logo to about page @created(20-07-04 18:05) @done(20-08-07 15:19)
   ☐ Add disqus comments @created(20-07-04 18:05)
   ☐ Add search with google @created(20-07-04 18:05)
-  ☐ Track visits with cloudflare (ask Krishna) @created(20-07-04 18:06)
+  ✔ Track visits with cloudflare (ask Krishna) @created(20-07-04 18:06) @done(20-08-07 15:19)
   ☐ Add darktheme toggle @created(20-07-04 18:06)
