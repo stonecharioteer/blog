@@ -2,6 +2,7 @@
 title: Building Single Page Applications in React using Dash and Python
 layout: post
 categories: [python, react, learning]
+permalink: /dash-spa.html
 description: "How to build Single Page web applications without any Javascript"
 customexcerpt: "The `dash` library from Plotly allows you to build webpages that internally serve React components. Let's see how to use this to build a SPA with authentication, multiple pages and **zero** Javascript."
 ---
@@ -20,6 +21,8 @@ the application and build a full stack application purely in Python.
 
 Note that by saying we are writing Python for the UI, I don't mean that we are using WASM. This approach has nothing
 to do with Web Assembly. Instead, it is a simpler way to just take Python code and generate Javascript.
+
+<!-- TODO: Link to Livestream here -->
 
 ## Prerequisites
 
@@ -44,7 +47,6 @@ Resources for all these can be found at the end of this article.
 
 ### Testing the Utilities
 
-
 ### Testing the Flask API
 
 ### Testing the Dash UI with Selenium
@@ -58,7 +60,6 @@ Resources for all these can be found at the end of this article.
 ### Using `systemctl` and `gunicorn`
 
 ### Using `docker`
-
 
 #### Using `docker-compose`
 
