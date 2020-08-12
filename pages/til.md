@@ -63,8 +63,8 @@ I can then introduce tagging and search, through the bot, of course.
 
 ## 2020-08-05
 
-1. Tidbit | You can install more than one kernel into a Linux installation and choose which to boot from in Grub.
-2. Tool | [xanmod](https://xanmod.org/) and [liqourix](https://liquorix.net/) are custom kernels for Linux desktops and workstations.
+1. Tidbit \| You can install more than one kernel into a Linux installation and choose which to boot from in Grub.
+2. Tool \| [xanmod](https://xanmod.org/) and [liqourix](https://liquorix.net/) are custom kernels for Linux desktops and workstations.
 3. Linux Kernel 5.8 has a lot of hardware level optimizations.
 4. Tool | [Grub Customizer to customize what the grub menu looks like](https://itsfoss.com/grub-customizer-ubuntu/)
 5. Resource \| [The Laws of UX](https://lawsofux.com/)
