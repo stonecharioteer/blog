@@ -14,11 +14,52 @@ To be honest, this is mainly so I can track links in a way that is not reliant o
 I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
+## 2020-08-12
+
+1. Article \| [Books for Tech Leads](https://sourcelevel.io/blog/3-classic-books-for-tech-leads-or-those-aspiring-to-be)
+2. Article \| [Becoming a 10x Developer](https://www.kateheddleston.com/blog/becoming-a-10x-developer)
+3. Article \| [How to Stop Procrastinating by Using the Fogg Behavior Model](https://www.deprocrastination.co/blog/how-to-stop-procrastinating-by-using-the-fogg-behavior-model)
+4. Article \| [How to build a web application completely in Rust](https://github.com/saschagrunert/webapp.rs)
+5. Tool \| [Diff Highlight Tool for Javascript](https://prismjs.com/plugins/diff-highlight/)
+
+## 2020-08-11
+
+1. Article \| [SPAs using Rust](http://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/)
+2. Tool \| [Use `last` to check login history in Linx](https://www.2daygeek.com/how-to-check-user-login-history-in-linux-using-last-lastb-lastlog-command/)
+3. Language \| [`arc` is a Programming Language written in `Racket`](http://www.arclanguage.org/)
+4. Finding \| HN Server is implemented in `arc`
+5.  Thread \| [Why are there so many implementations of Lisp?](https://stackoverflow.com/questions/2114819/why-is-the-lisp-community-so-fragmented)
+6.  Language \| [Bigloo Lisp Implementation](https://www-sop.inria.fr/mimosa/fp/Bigloo/)
+7.  Language \| [`guile` Programming Language](https://www.gnu.org/software/guile/)
+8.  Tool \| [A Baseline compuler for `guile`](https://wingolog.org/archives/2020/06/03/a-baseline-compiler-for-guile)
+9.  Book \| [Bartosz Milewski - Category Theory for Programmers](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) \| [PDF](https://github.com/hmemcpy/milewski-ctfp-pdf)
+10. Tool \| [Wingolog](https://wingolog.org/)
+11. Book \| [Structure and Interpretation of Computer Programs](https://github.com/mngu2382/sicp)
+12. Github \| [List of Donations to OSS](https://github.com/joshtronic/donate)
+13. Book \| [How to Design Programs](https://htdp.org/2003-09-26/Book/)
+14. Language \| [The `gambit` `scheme` system](https://github.com/gambit/gambit)
+15. Thread \| [What does Process Accounting mean in Linux](https://unix.stackexchange.com/questions/468909/what-does-process-accounting-mean-in-linux)
+16. Article \| [The Difficulties of Tracking Running Processes on Linux](https://natanyellin.com/posts/tracking-running-processes-on-linux/)
+17. Thread \| [The Correct Way to Learn Linux Internals](https://www.reddit.com/r/devops/comments/i76cyj/what_is_the_correct_way_to_learn_linux_internals/)
+18.
+
+## 2020-08-08
+
+1. Tool \| [`broot` is a better alternative to `tree` written in Rust.](https://dystroy.org/broot/install/)
+2. Book \| [Structure and Interpretation of Computer Programs](https://sarabander.github.io/sicp/html/index.xhtml)
+3. Thread \| [Linux Networking](https://www.reddit.com/r/ITCareerQuestions/comments/i669yn/ive_been_in_tech_for_8_years_and_dont_know_shit/)
+4. Resources \| [Geeks for Geeks PDFs](https://github.com/dufferzafar/geeksforgeeks.pdf/releases)
+5. Tool \| [`missingno` can be used to visualize missing data in Python](https://github.com/ResidentMario/missingno)
+6. Tool \| [Apache `Samza`](https://samza.apache.org/)
+7. Resources \| [Awesome System Design](https://github.com/madd86/awesome-system-design)
+8. Tool \| [`plumber` is a CLI for Kafka, RabbitMQ and other messaging systems](https://github.com/batchcorp/plumber)
+9. Tool \| [`mdr` Renders Markdown in the Terminal](https://github.com/MichaelMure/mdr)
+10. Tool \| [`origin` is a monitoring and alert server based on `ZeroMQ` and `JSON` messaging](https://git.sr.ht/~chiefnoah/origin/tree/master/README.md)
+
 ## 2020-08-06
 
-1. Tool | [Phoronix Test Suite is a bunch of open source hardware benchmarking tools for all platforms](https://www.phoronix-test-suite.com/)
-2. Tidbit | [Python's `raise` statement has a `from` clause, to preserve full tracebacks.](https://stackoverflow.com/questions/24752395/python-raise-from-usage)
-3. RTFM | [Python `raise` statement](https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement)
+1. Tidbit | [Python's `raise` statement has a `from` clause, to preserve full tracebacks.](https://stackoverflow.com/questions/24752395/python-raise-from-usage)
+2. RTFM | [Python `raise` statement](https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement)
 
 ## 2020-08-05
 
@@ -26,6 +67,10 @@ I can then introduce tagging and search, through the bot, of course.
 2. Tool | [xanmod](https://xanmod.org/) and [liqourix](https://liquorix.net/) are custom kernels for Linux desktops and workstations.
 3. Linux Kernel 5.8 has a lot of hardware level optimizations.
 4. Tool | [Grub Customizer to customize what the grub menu looks like](https://itsfoss.com/grub-customizer-ubuntu/)
+5. Resource \| [The Laws of UX](https://lawsofux.com/)
+6. Tool \| [Glitterly Video Editing Tool](https://glitterly.app/)
+7. Blog \| [Personal Blog of Matthias Endler](https://endler.dev/)
+8. Tool | [`phoronix-test-suite` is a bunch of open source hardware benchmarking tools for all platforms](https://www.phoronix-test-suite.com/)
 
 
 ## 2020-08-02
