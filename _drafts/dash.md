@@ -37,7 +37,43 @@ Resources for all these can be found at the end of this article.
 
 ## Setup and Installation
 
+Get the source code for this repository. Make sure you get all the tags.
+
+```bash
+git clone https://github.com/stonecharioteer/dash-spa
+cd dash-spa
+git fetch --all --tags --prune
+```
+
+Then, checkout the first version of this application.
+
+```bash
+git checkout v0.1
+```
+
+First, as you always should, make a virtual environment using a Python 3 (I use 3.8).
+
+```bash
+python3 -m venv env
+pip install -r requirements.txt
+```
+
+## Running the Application
+
+This application uses `gunicorn` for deployment. I have provided a sample `wsgi.py` file
+for use with `gunicorn`. So go ahead and use it.
+
+```bash
+gunicorn -w 6 -b 0.0.0.0:10000 wsgi:app
+```
+
+
 ## Structure of the Application
+
+This application is broken into two portions. The first portion is the Flask application,
+while the other portion is the Dash application. Dash builds up an application *above* a Flask app by default. However, it can be explicitly attached to a Flask application.
+
+I personally recommend the latter method.
 
 ### Flask Structure
 
