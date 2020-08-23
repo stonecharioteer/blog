@@ -14,6 +14,64 @@ To be honest, this is mainly so I can track links in a way that is not reliant o
 I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
+## 2020-08-23
+
+1. Tool \| [`moreutils` - Additional Commands for Linux Daily Use](https://joeyh.name/code/moreutils/)
+2. Tool \| [`pv` is a tool to redirect Linux STDIN and add an event to it. There's also `progress`.](https://www.howtogeek.com/428654/how-to-monitor-the-progress-of-linux-commands-with-pv-and-progress/)
+
+## 2020-08-22
+
+1. Resources \| [Fast.ai Deep Learning Course and Book](https://www.fast.ai/2020/08/21/fastai2-launch/)
+
+
+## 2020-08-21
+
+1. Language \| [Elena Programming Language](https://elena-lang.github.io/)
+2. Tool \| [Pony: Lock-less data-race-free concurrency](https://news.ycombinator.com/item?id=24201754)
+
+
+## 2020-08-20
+
+1. Tool \| [Netflix Conductor Workflows](https://netflix.github.io/conductor/)
+2. Articles \| [Explanations on the X11 Window System and Protocol (and other errata)](https://magcius.github.io/xplain/article/)
+3. Thread \| [Telemetry in Linux and BSD](https://www.reddit.com/r/linuxhardware/comments/icoc6c/telemetry_in_linux_and_bsd_why_is_it_important/)
+4. Article \| [Running Selenium Tests on Docker Containers](https://medium.com/@magesh_n/running-selenium-tests-on-docker-containers-3e4a08802bf1)
+
+## 2020-08-19
+
+1. Resource \| [HTTP Status Code Cheatsheet](https://httpstatuses.com/)
+2. Tool \| [HTTP API for Cats](https://http.cat/)
+3. Concept \| [Chesterton's Fence - Implementations might exist for a reason.](https://en.m.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence)
+4. Tool \| [Nerves: Add Agility to your IoT Development Cycle](https://www.nerves-project.org/)
+5. Elixir \| [Implementation of a Retro Finnish Game in Elixir](https://gitlab.com/Nicd/ex_speed_game/)
+
+
+## 2020-08-18
+
+1. Article \| [Haskell Mini Patterns](https://kowainik.github.io/posts/haskell-mini-patterns)
+2. Article \| [Laying the Foundation for Rust's Future](https://blog.rust-lang.org/2020/08/18/laying-the-foundation-for-rusts-future.html)
+3. Article \| [Playbooks: A Manager's Essential Guide to Holding Regular Check-Ins](https://www.muchskills.com/playbooks/check-ins)
+4. Book \| [Essential Coding Theory - Guruswami, Rudra, Madhusudan Dept CSE @ Buffalo](https://cse.buffalo.edu/faculty/atri/courses/coding-theory/book/web-coding-book.pdf)
+5. Book \| [Using, Understanding, and Unravelling the OCaml Language from Practice to Theory and Vice-Versa](http://caml.inria.fr/pub/docs/u3-ocaml/index.html)
+6. Book \| [Real World OCaml](https://dev.realworldocaml.org/)
+7. Tool \| [Mnemonic - CLI App for remembering](https://github.com/codesections/mnemonic)
+8. Tool \| [`cheat` is a command to make and use a global pool of *offline* cheatsheets](https://github.com/cheat/cheat)
+9. Blog \| [Amos Loves to Tinker - Blog on Computers and Rust](https://fasterthanli.me/)
+
+## 2020-08-15
+
+1. Book \| [Write you own Virtual Machine](https://justinmeiners.github.io/lc3-vm/)
+
+## 2020-08-14
+1. Resource \| [You Need a Budget](https://www.youneedabudget.com/)
+2. Resource \| [SFML - Simple and Fast Multimedia Library](https://www.sfml-dev.org/)
+3. Article \| [Epigrams in Programming by Alan Perlis](http://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+4. Video \| [Growing a Language by Guy Steele](https://www.youtube.com/watch?v=_ahvzDzKdB0&feature=youtu.be)
+5. Video \| [Every Clojure Talk Ever - Alex Engelberg and Derek Slager](https://www.youtube.com/watch?v=jlPaby7suOc&feature=youtu.be)
+6. Thread \| [Stock Market Chart Landscape Art](https://www.reddit.com/r/dataisbeautiful/comments/i8saks/ive_been_taking_stock_market_chart_and_turning/)
+7. Resource \| [Developer Roadmap](https://roadmap.sh/)
+8. Book \| [J. E. Gordon - Structures: Or Why Things Don't Fall Down](https://www.amazon.in/Structures-J-Gordon/dp/0306812835/ref=sr_1_1?crid=XOO26UJ0TC0X&dchild=1&keywords=structures+or+why+things+don%27t+fall+down&qid=1597327321&sprefix=structure%2Caps%2C284&sr=8-1)
+
 ## 2020-08-12
 
 1. Article \| [Books for Tech Leads](https://sourcelevel.io/blog/3-classic-books-for-tech-leads-or-those-aspiring-to-be)
@@ -41,7 +99,6 @@ I can then introduce tagging and search, through the bot, of course.
 15. Thread \| [What does Process Accounting mean in Linux](https://unix.stackexchange.com/questions/468909/what-does-process-accounting-mean-in-linux)
 16. Article \| [The Difficulties of Tracking Running Processes on Linux](https://natanyellin.com/posts/tracking-running-processes-on-linux/)
 17. Thread \| [The Correct Way to Learn Linux Internals](https://www.reddit.com/r/devops/comments/i76cyj/what_is_the_correct_way_to_learn_linux_internals/)
-18.
 
 ## 2020-08-08
 
