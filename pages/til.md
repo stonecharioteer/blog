@@ -14,6 +14,45 @@ To be honest, this is mainly so I can track links in a way that is not reliant o
 I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
+## 2020-08-28
+
+1. Article \| [Optimizing Rust Struct Size: A 6 Month Compiler Development Program](https://camlorn.net/posts/April%202017/rust-struct-field-reordering/)
+
+
+## 2020-08-27
+
+1. Article \| [Vim-like Layer for Xorg and Wayland](https://cedaei.com/posts/vim-like-layer-for-xorg-wayland/)
+2. Article \| [Learn D3: Introduction](https://observablehq.com/@d3/learn-d3)
+3. Article \| [D3Js Observerable Gallery Notebook](https://observablehq.com/@d3/gallery)
+4. Article \| [D3 Selection Join](https://observablehq.com/@d3/selection-join)
+5. Article \| [D3: Thinking With Joins](https://bost.ocks.org/mike/join/)
+
+
+## 2020-08-26
+
+1. Article \| [What Happens When You Load an URL?](https://danluu.com/navigate-url/)
+2. Book \| [OCaml Scientific Computing](https://ocaml.xyz/book/)
+3. Article \| [Hands-on Web Assembly: Try the Basics - Martian Chronicles](https://evilmartians.com/chronicles/hands-on-webassembly-try-the-basics)
+
+## 2020-08-25
+
+1. VSCode \| [Howard Zue - Favorites Plugin](https://marketplace.visualstudio.com/items?itemName=howardzuo.vscode-favorites)
+2. Article \| [Async Python is Not Better](http://calpaterson.com/async-python-is-not-faster.html)
+3. Tool \| [NuShell is a shell written in Rust](https://www.nushell.sh/)
+4. Article \| [How to ask questions of experts and gain more than just an answer](https://josh.works/better-questions)
+5. Article \| [Golang Cost Type Enums](https://blog.learngoprogramming.com/golang-const-type-enums-iota-bc4befd096d3)
+6. Book \| [Go 101](https://go101.org)
+7. Resource \| [Algorithms and Data Structures implemented in TypeScript with Video lectures](https://github.com/jeffzh4ng/algorithms-and-data-structures)
+
+## 2020-08-24
+
+1. Article \| [Never Run `python` in your Downloads folder](https://glyph.twistedmatrix.com/2020/08/never-run-python-in-your-downloads-folder.html)
+2. Article \| [Grow Skills with Work not Extra-Curriculars](https://staysaasy.com/management/2020/08/01/Growth-Paths.html)
+3. Tool \| [Rust Command Line Macros and Utilities](https://github.com/rust-shell-script/rust_cmd_lib)
+4. Tool \| [Lazarus IDE for Free Pascal](https://www.lazarus-ide.org/)
+
+
+
 ## 2020-08-23
 
 1. Tool \| [`moreutils` - Additional Commands for Linux Daily Use](https://joeyh.name/code/moreutils/)
