@@ -99,7 +99,7 @@ I can then introduce tagging and search, through the bot, of course.
 
 ## 2020-08-15
 
-1. Book \| [Write you own Virtual Machine](https://justinmeiners.github.io/lc3-vm/)
+1. Book \| [Write your own Virtual Machine](https://justinmeiners.github.io/lc3-vm/)
 
 ## 2020-08-14
 1. Resource \| [You Need a Budget](https://www.youneedabudget.com/)
