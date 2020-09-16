@@ -21,6 +21,7 @@ I can then introduce tagging and search, through the bot, of course.
 2. Article \| [Ned Batchelder - How to be Helpful Online](https://nedbatchelder.com//blog/202009/how_to_be_helpful_online.html)
 3. Blog \| [Mango.pdf.zone - Finding Passport Number Online](https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram)
 4. TIL \| [`functools.singledispatch` can be used to created *overloaded* functions in Python, but only for the first argument](https://docs.python.org/3.4/library/functools.html?highlight=singledispatch)
+
 ## 2020-09-15
 
 1. Article \| [Rosie the Robot: Social Accountability, One Tweet at a Time](https://blogs.worldbank.org/governance/rosie-robot-social-accountability-one-tweet-time)
@@ -64,26 +65,28 @@ I can then introduce tagging and search, through the bot, of course.
 
 
 ## 2020-09-05
+
 1. Article \| [Mastering the Hard Parts of Javascript](https://dev.to/ryanameri/mastering-hard-parts-of-javascript-callbacks-i-3aj0)
 
-
 ## 2020-09-04
+
 1. Video \| [Ben Root - Anatomy of Matplotlib](https://youtu.be/rARMKS8jE9g)
 2. TIL \| It is a *lot* faster to use Pandas' filters with the `&` and `|` operators than it is to do a `zip` to combine several conditions into one. If needed, save intermediate dataframes and do `.loc` multiple times instead. That is also a LOT faster. Do not do the `zip` method that uses `any` or `all`.
 3. Shiny \| [Interactive Github Readme](https://github.com/veggiedefender/typing#)
 4. Shiny \| [Github Readme Chess](https://github.com/timburgan/timburgan)
 
-
 ## 2020-09-03
+
 1. Resource \| [ReactJS docs with hooks](https://kickstartcoding.online/learn/articles/i-converted-reactjs-org-to-use-hooks/)
 2. Tool \| [Regexr](https://regexr.com/)
 3. Tool \| [Regex101](https://regex101.com/)
 
 ## 2020-09-02
+
 1. Article \| [Effectively Using Matplotlib](https://pbpython.com/effective-matplotlib.html)
 
-
 ## 2020-09-01
+
 1. Game \| [OSS Game - FreeCol: A Turn-Based Strategy Game based on Colonization](https://github.com/FreeCol/freecol)
 2. Thread \| [HN: Best Way to Learn Modern C++](https://news.ycombinator.com/item?id=16535886)
 3. Game and Resource \| [FlexBox Defense](http://www.flexboxdefense.com/)
@@ -92,6 +95,7 @@ I can then introduce tagging and search, through the bot, of course.
 6. Article \| [The One Reason SW Developers Should Write](https://www.karllhughes.com/posts/engineers-should-write)
 
 ## 2020-08-31
+
 1. Tool \| [Asciimatics: Full Screen `ncurses` Animations and Effects in Python](https://github.com/peterbrittain/asciimatics)
 2. Tool \| [urwid - Console UI Library for Python](https://github.com/urwid/urwid)
 3. Resource \| [Awesome Lock-Free: Resources on Wait-Lock and Lock-Free Programming](https://github.com/rigtorp/awesome-lockfree)
@@ -101,6 +105,7 @@ I can then introduce tagging and search, through the bot, of course.
 7. Book \| [Essentials of Programming Languages](http://eopl3.com/)
 
 ## 2020-08-30
+
 1. Tool \| [Visualizing Daily Promotional Email Distribution](https://github.com/syaffers/maildist/blob/master/MailDist.ipynb)
 2. Tool \| [Software Commit Distribution Over 8 Years](http://l.kehn.io/2g2k312S2O0H)
 3. Book \| [Objective Rust](https://belkadan.com/blog/2020/08/Objective-Rust/)
@@ -114,6 +119,7 @@ I can then introduce tagging and search, through the bot, of course.
 11. Tool \| [Vimium for macOS](https://github.com/dexterleng/vimac/)
 
 ## 2020-08-29
+
 1. Article \| [Surprising New Features in AMD Ryzen 3000](https://www.agner.org/forum/viewtopic.php?t=41)
 2. Article \| [Lynn Conway's Career Retrospective](https://ai.eecs.umich.edu/people/conway/RetrospectiveT.html)
 
