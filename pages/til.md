@@ -23,7 +23,7 @@ I can then introduce tagging and search, through the bot, of course.
 4. TIL \| [`functools.singledispatch` can be used to created *overloaded* functions in Python, but only for the first argument](https://docs.python.org/3.4/library/functools.html?highlight=singledispatch)
 ## 2020-09-15
 
-1. Article \| [Roiie the Robot: Social Accountability, One Tweet at a Time](https://blogs.worldbank.org/governance/rosie-robot-social-accountability-one-tweet-time)
+1. Article \| [Rosie the Robot: Social Accountability, One Tweet at a Time](https://blogs.worldbank.org/governance/rosie-robot-social-accountability-one-tweet-time)
 
 ## 2020-09-14
 
