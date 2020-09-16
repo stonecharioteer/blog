@@ -14,10 +14,113 @@ To be honest, this is mainly so I can track links in a way that is not reliant o
 I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
+
+## 2020-09-16
+
+1. Thread \| [Empathy for those who don't know LaTeX well](https://tex.meta.stackexchange.com/questions/8467/empathy-for-those-who-dont-know-latex-well/8472#8472)
+2. Article \| [Ned Batchelder - How to be Helpful Online](https://nedbatchelder.com//blog/202009/how_to_be_helpful_online.html)
+3. Blog \| [Mango.pdf.zone - Finding Passport Number Online](https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram)
+
+## 2020-09-15
+
+1. Article \| [Roiie the Robot: Social Accountability, One Tweet at a Time](https://blogs.worldbank.org/governance/rosie-robot-social-accountability-one-tweet-time)
+
+## 2020-09-14
+
+1. Blog \| [Naomi Ceder's Blog](https://naomiceder.tech/blog/)
+2. Design Pattern \| [Visitor Pattern](https://en.wikipedia.org/wiki/Visitor_pattern)
+4. Video \| [Super Mario Speed Run: Pretty good explanation of the stack, underflows and how Mario works](https://www.youtube.com/watch?v=WWbZFj-cLvk&app=desktop)
+5. Video \| [SNES Code Injection: Flappy Bird in Super Mario World](https://www.youtube.com/watch?v=hB6eY73sLV0)
+6. Article \| [Bootstrapping a FORTH in 40 Lines of Lua Code](http://angg.twu.net/miniforth-article.html)
+7. Article \| [A Minimal FORTH Compiler for Linux / i386 Systems](https://github.com/nornagon/jonesforth/blob/master/jonesforth.S)
+
+## 2020-09-13
+
+1. Resource \| [Ultimate Python Study Guide](https://github.com/huangsam/ultimate-python)
+2. Career Resource \| [/r/cscareerquestions resume FAQ and Wiki](https://www.reddit.com/r/cscareerquestions/wiki/faq_resumes)
+3. Career Resource Thread \| [Reddit thread from a recruiter](https://www.reddit.com/r/cscareerquestions/comments/inrex1/ive_reviewed_thousands_of_applications_for/) \| [Part 2](https://www.reddit.com/r/cscareerquestions/comments/irjodn/ive_reviewed_thousands_of_applications_for/)
+
+
+## 2020-09-12
+
+1. Article \| [Peter Norvig - Teach Yourself Programming in 10 Years](https://norvig.com/21-days.html)
+2. Video \| [Ben Eater - Learn How Computers Add Numbers and Build a 4-bit Added Circuit](https://www.youtube.com/watch?v=wvJc9CZcvBc&feature=youtu.be)
+
+
+## 2020-09-11
+
+1. Article \| [The Tragic Tale of the Deadlocking Python queue](https://codewithoutrules.com/2017/08/16/concurrency-python/)
+
+## 2020-09-10
+
+1. Video \| [How to Market Haskell](https://www.youtube.com/watch?v=fNpsgTIpODA&app=desktop)
+2. Article \| [What Killed Haskell Could Kill Rust Too](https://gist.github.com/graninas/22ab535d2913311e47a742c70f1d2f2b)
+3. Article \| [Journal of Statistical Software - Tiny Date](/assets/documents/pages/til/tiny-data.pdf)
+
+## 2020-09-09
+
+1. Tool \| [Scalene - Python CPU and Memory Profiler](https://github.com/emeryberger/scalene)
+2. Conference Video \| [James Powell - Fast and Furious Python 7: Writing Fast Python Code](https://www.youtube.com/watch?v=Ix04KpZiUA8&t=1580s)
+
+
+## 2020-09-05
+1. Article \| [Mastering the Hard Parts of Javascript](https://dev.to/ryanameri/mastering-hard-parts-of-javascript-callbacks-i-3aj0)
+
+
+## 2020-09-04
+1. Video \| [Ben Root - Anatomy of Matplotlib](https://youtu.be/rARMKS8jE9g)
+2. TIL \| It is a *lot* faster to use Pandas' filters with the `&` and `|` operators than it is to do a `zip` to combine several conditions into one. If needed, save intermediate dataframes and do `.loc` multiple times instead. That is also a LOT faster. Do not do the `zip` method that uses `any` or `all`.
+3. Shiny \| [Interactive Github Readme](https://github.com/veggiedefender/typing#)
+4. Shiny \| [Github Readme Chess](https://github.com/timburgan/timburgan)
+
+
+## 2020-09-03
+1. Resource \| [ReactJS docs with hooks](https://kickstartcoding.online/learn/articles/i-converted-reactjs-org-to-use-hooks/)
+2. Tool \| [Regexr](https://regexr.com/)
+3. Tool \| [Regex101](https://regex101.com/)
+
+## 2020-09-02
+1. Article \| [Effectively Using Matplotlib](https://pbpython.com/effective-matplotlib.html)
+
+
+## 2020-09-01
+1. Game \| [OSS Game - FreeCol: A Turn-Based Strategy Game based on Colonization](https://github.com/FreeCol/freecol)
+2. Thread \| [HN: Best Way to Learn Modern C++](https://news.ycombinator.com/item?id=16535886)
+3. Game and Resource \| [FlexBox Defense](http://www.flexboxdefense.com/)
+4. Tool \| [Headcrab: Rust Debugging Library](https://github.com/headcrab-rs/headcrab)
+5. Resource \| [Peter Norvig - PyTudes: Python Programs of Considerable Difficulty to Perfect Particular Skills](https://github.com/norvig/pytudes)
+6. Article \| [The One Reason SW Developers Should Write](https://www.karllhughes.com/posts/engineers-should-write)
+
+## 2020-08-31
+1. Tool \| [Asciimatics: Full Screen `ncurses` Animations and Effects in Python](https://github.com/peterbrittain/asciimatics)
+2. Tool \| [urwid - Console UI Library for Python](https://github.com/urwid/urwid)
+3. Resource \| [Awesome Lock-Free: Resources on Wait-Lock and Lock-Free Programming](https://github.com/rigtorp/awesome-lockfree)
+4. Book \| [Fullstack D3 and Data Visualization](https://www.newline.co/fullstack-d3)
+5. Tool \| [Ranger - Vim-inspired File Manager for the Console](https://github.com/ranger/ranger)
+6. Resource \| [The Internet Explained from First Principles](https://explained-from-first-principles.com/internet/)
+7. Book \| [Essentials of Programming Languages](http://eopl3.com/)
+
+## 2020-08-30
+1. Tool \| [Visualizing Daily Promotional Email Distribution](https://github.com/syaffers/maildist/blob/master/MailDist.ipynb)
+2. Tool \| [Software Commit Distribution Over 8 Years](http://l.kehn.io/2g2k312S2O0H)
+3. Book \| [Objective Rust](https://belkadan.com/blog/2020/08/Objective-Rust/)
+4. Resource \| [Learn VIM While Playing a Game](https://vim-adventures.com/)
+5. TIL \| [The Cobra Effect](https://en.m.wikipedia.org/wiki/Cobra_effect)
+6. Anecdote \| [-2000 Lines of Code](https://www.folklore.org/StoryView.py?project=Macintosh&story=Negative_2000_Lines_Of_Code.txt&sortOrder=Sort%20by%20Date&detail=medium)
+7. Game \| [Lord of the Manor: OSS Game](http://www.lordofthemanor.io/) \| [Reddit Thread](https://www.reddit.com/r/WebGames/comments/e9mpd1/lord_of_the_manor_a_medieval_city_builder_im/)
+8. Article \| [Web RTC For the Curious](https://webrtcforthecurious.com/)
+9. Tool \| [DearPyGUI: GPU Acceleration Python GUI Framework](https://github.com/hoffstadt/DearPyGui)
+10. Resource \| [RustC Development Guide](https://rustc-dev-guide.rust-lang.org/)
+11. Tool \| [Vimium for macOS](https://github.com/dexterleng/vimac/)
+
+## 2020-08-29
+1. Article \| [Surprising New Features in AMD Ryzen 3000](https://www.agner.org/forum/viewtopic.php?t=41)
+2. Article \| [Lynn Conway's Career Retrospective](https://ai.eecs.umich.edu/people/conway/RetrospectiveT.html)
+
 ## 2020-08-28
 
 1. Article \| [Optimizing Rust Struct Size: A 6 Month Compiler Development Program](https://camlorn.net/posts/April%202017/rust-struct-field-reordering/)
-
+2. TIL \| [Disabling Gatekeeper and allow apps from anywhere on MacOS Sierra](https://www.techjunkie.com/gatekeeper-macos-sierra/) TLDR: Run `sudo spctl --master-disable` and be prepared for an email from corporate IT.
 
 ## 2020-08-27
 
