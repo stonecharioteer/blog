@@ -20,7 +20,7 @@ I can then introduce tagging and search, through the bot, of course.
 1. Thread \| [Empathy for those who don't know LaTeX well](https://tex.meta.stackexchange.com/questions/8467/empathy-for-those-who-dont-know-latex-well/8472#8472)
 2. Article \| [Ned Batchelder - How to be Helpful Online](https://nedbatchelder.com//blog/202009/how_to_be_helpful_online.html)
 3. Blog \| [Mango.pdf.zone - Finding Passport Number Online](https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram)
-
+4. TIL \| [`functools.singledispatch` can be used to created *overloaded* functions in Python, but only for the first argument](https://docs.python.org/3.4/library/functools.html?highlight=singledispatch)
 ## 2020-09-15
 
 1. Article \| [Roiie the Robot: Social Accountability, One Tweet at a Time](https://blogs.worldbank.org/governance/rosie-robot-social-accountability-one-tweet-time)
