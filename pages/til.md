@@ -21,6 +21,18 @@ I can then introduce tagging and search, through the bot, of course.
 2. Article \| [Ned Batchelder - How to be Helpful Online](https://nedbatchelder.com//blog/202009/how_to_be_helpful_online.html)
 3. Blog \| [Mango.pdf.zone - Finding Passport Number Online](https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram)
 4. TIL \| [`functools.singledispatch` can be used to created *overloaded* functions in Python, but only for the first argument](https://docs.python.org/3.4/library/functools.html?highlight=singledispatch)
+4. Thread \| [What Exactly is LLVM?](https://stackoverflow.com/questions/2354725/what-exactly-is-llvm)
+5. Book \| [Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) \| [LLVM Chapter](https://www.aosabook.org/en/llvm.html)
+6. Article \| [Write your own programmer and compiler with Python](https://blog.usejournal.com/writing-your-own-programming-language-and-compiler-with-python-a468970ae6df)
+7. Article \| [Writing a basic x86 JIT Compiler from scratch in stock Python](https://csl.name/post/python-jit/)
+8. Article \| [So You Want to Be a Compiler Wizard](http://belkadan.com/blog/2016/05/So-You-Want-To-Be-A-Compiler-Wizard/)
+9. Article \| [How to implement a programming language in JavaScript](http://lisperator.net/pltut/)
+10. TIL \| [Small-C](https://en.wikipedia.org/wiki/Small-C) \| [Source](https://github.com/ncb85/SmallC-85)
+11. Articles \| [Articles on Writing a Compiler](https://notes.eatonphil.com/tags/compiler.html)
+12. Tool \| [Cannoli - A Compiler for a Subset of Python, Written in Rust](https://github.com/joncatanio/cannoli)
+13. Tool \| [Oil - An Unix Shell Written in OPy - A Tiny Subset of Python](https://www.oilshell.org/)
+14. Video \| [PyCon AU - Damian George - MicroPython: A Journey from Kickstarter to Space](https://www.youtube.com/watch?v=Zm08hXeuv-I)
+15. TIL \| Python provides *no* way to override the `and` or `or` keywords actions on a new/custom datatype. This is why you get the `ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()` in Pandas (this actually comes from numpy).
 
 ## 2020-09-15
 
