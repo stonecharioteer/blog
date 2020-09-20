@@ -48,7 +48,8 @@ not Hadoop.
 
 #### MapReduce
 
-[MapReduce: Simplified Data Processing on Large Clusters](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf) is the publication that talks about MapReduce and
+[MapReduce: Simplified Data Processing on Large Clusters](/assets/documents/pages/mit-6.824/mapreduce-osdi04.pdf)
+is the publication that talks about MapReduce and
 what it means for computing in general. It is in the required reading.
 I will read it after video one.
 
