@@ -5,7 +5,7 @@ for the layout and the themes.
 
 
 ## Snippet for Title Block for markdown files
-```json
+```
 {
 	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
