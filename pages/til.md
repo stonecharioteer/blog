@@ -21,7 +21,7 @@ I can then introduce tagging and search, through the bot, of course.
 2. Article \| [Ned Batchelder - How to be Helpful Online](https://nedbatchelder.com//blog/202009/how_to_be_helpful_online.html)
 3. Blog \| [Mango.pdf.zone - Finding Passport Number Online](https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram)
 4. TIL \| [`functools.singledispatch` can be used to created *overloaded* functions in Python, but only for the first argument](https://docs.python.org/3.4/library/functools.html?highlight=singledispatch)
-4. Thread \| [What Exactly is LLVM?](https://stackoverflow.com/questions/2354725/what-exactly-is-llvm)
+4. Thread \| [What Exactly is LLVM?](https://staackoverflow.com/questions/2354725/what-exactly-is-llvm)
 5. Book \| [Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) \| [LLVM Chapter](https://www.aosabook.org/en/llvm.html)
 6. Article \| [Write your own programmer and compiler with Python](https://blog.usejournal.com/writing-your-own-programming-language-and-compiler-with-python-a468970ae6df)
 7. Article \| [Writing a basic x86 JIT Compiler from scratch in stock Python](https://csl.name/post/python-jit/)
