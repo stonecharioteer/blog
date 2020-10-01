@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2020-10-01T03:20:37.719Z" agent="5.0 (X11)" etag="TR48musphNbfrt4gJ5Q0" version="13.7.7" type="github"><diagram id="ADbIuRsIv5Hx8pPA25rk" name="Page-1">7Vdtb5swEP41+bgJcKHNx4a03apNmhpN2z46cAGvBjNj8tJfv7Mxb4Fmq9ZuqjRQAvecX457/BxmRsJsfyNpkX4UMfCZ58T7GVnOPM91HQ8vGjnUSOA6NZBIFttGHbBiD2DBplnFYigHDZUQXLFiCEYizyFSA4xKKXbDZhvBh7MWNIERsIooH6NfWKzSGr3wnQ5/ByxJVfvA1pPRprEFypTGYteDyNWMhFIIVd9l+xC4Tl6Tl7rf9SPeNjAJufqdDsXtnXeXrebL4ObzGcluszXJ3xBSD7OlvLJPbKNVhyYFEGNGrAl8LXZXHbCQospj0FO4aAmpUpGInPIPQhQW/A5KHSyztFICoVRl3Hohjy81T2jmIocauWZc+x20SiXFPYSCC2nCIXNztJ6GFaKnL2jElF5pRHetn0SH/2jKLFSKSkZwIk/emV17VCagTiXUa6lFTYDIQMkDdpTAqWLbYSTULs6kbdfxhzeWwifQ2YR5kk7OUTw60buUKVhhzrRnh/odMkPLolbUhu01w4uNyFWPiI05NI5sNbjlcMiNN8Wje6nPlqYtSAX700SN02o7ED+ou9gq451b0e06zTYVJe3L1XkhIsjZX5cRhv3VasYY37Tx1m/M5b7vXB5a61XIb/465Dcfye8Gw8W4U8j0hPhbQnmvkFTP+RSO1shwGfxCnyNqwnPiO86k+voS1dKlwYVp+aikEW8Wq/sMAnWbt6AVKHEmBBpMKJS8mELdEVd3gsYZLcw2QeL/e1SKiKuI5YklL0wZ7h/0FkTzJ0UiaZYZ9xGRmCl1VE05S3K8jzBjgOle6Hwy3GhcWkfG4riuBVCyB7o2Q2mOCsFyZR7fX8z8pR4L5V/WlcB9ngJ6MaTHnaifbZs+Pd6L0eP9f5MZO/jXbzJ/goiA69Uds62e0a5fRH9UejO74LBRnYV3ib2aXmt5jGBcZqgG/fOi2NDlTnN6LD1djyd4XZjzeXgdFUB/gtcphbn+05lFs/uuML7e1xm5+gk=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-10-01T03:21:53.859Z" agent="5.0 (X11)" etag="hSKRNJ7i4XGhaigPXBQn" version="13.7.7" type="github">
+  <diagram id="ADbIuRsIv5Hx8pPA25rk" name="Page-1">
+    <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-33" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;opacity=30;" parent="1" source="pJR2RmS9D6GU43mJmb3n-24" target="pJR2RmS9D6GU43mJmb3n-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-24" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
+          <mxGeometry x="356" y="270" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-34" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;opacity=30;" parent="1" source="pJR2RmS9D6GU43mJmb3n-29" target="pJR2RmS9D6GU43mJmb3n-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-29" value="Get them a Desktop PC" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C73500;strokeWidth=2;fillColor=#fa6800;fontColor=#ffffff;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="120" y="300" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-31" value="Roadmap for Introducing a Child to Programming" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="170" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-32" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
+          <mxGeometry x="356" y="360" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-35" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=none;verticalAlign=top;strokeColor=#B3B3B3;align=left;" parent="1" vertex="1">
+          <mxGeometry x="120" y="350" width="180" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
