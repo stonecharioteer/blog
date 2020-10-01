@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-01T03:21:53.859Z" agent="5.0 (X11)" etag="hSKRNJ7i4XGhaigPXBQn" version="13.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-01T03:25:52.713Z" agent="5.0 (X11)" etag="FQOoi47psPyGgifU7hTl" version="13.7.7" type="github">
   <diagram id="ADbIuRsIv5Hx8pPA25rk" name="Page-1">
     <mxGraphModel dx="1102" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -22,8 +22,8 @@
         <mxCell id="pJR2RmS9D6GU43mJmb3n-32" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
           <mxGeometry x="356" y="360" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="pJR2RmS9D6GU43mJmb3n-35" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=none;verticalAlign=top;strokeColor=#B3B3B3;align=left;" parent="1" vertex="1">
-          <mxGeometry x="120" y="350" width="180" height="150" as="geometry" />
+        <mxCell id="dCMkaDBT27g6itsRyK8f-1" value="&lt;ul&gt;&lt;li&gt;Don&#39;t give them a shared desktop or a laptop.&lt;/li&gt;&lt;li&gt;Encourage them to use it however they want.&lt;/li&gt;&lt;li&gt;Use https://www.typing.com/ to help them learn typing with all 10 fingers.&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="100" y="350" width="180" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
