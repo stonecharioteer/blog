@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-01T03:33:20.629Z" agent="5.0 (X11)" etag="gqloU7xh0wX9f0_fwdt4" version="13.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-06T16:28:52.488Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="f4hVXXZCi_Dr5X8xp4_d" version="13.7.7" type="github">
   <diagram id="ADbIuRsIv5Hx8pPA25rk" name="Page-1">
-    <mxGraphModel dx="1102" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,28 +8,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pJR2RmS9D6GU43mJmb3n-24" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
-          <mxGeometry x="356" y="270" width="10" height="10" as="geometry" />
+          <mxGeometry x="401" y="100" width="10" height="10" as="geometry" />
         </mxCell>
         <mxCell id="pJR2RmS9D6GU43mJmb3n-34" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;opacity=30;" parent="1" source="pJR2RmS9D6GU43mJmb3n-29" target="pJR2RmS9D6GU43mJmb3n-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pJR2RmS9D6GU43mJmb3n-29" value="Get them a Desktop PC" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C73500;strokeWidth=2;fillColor=#fa6800;fontColor=#ffffff;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="120" y="300" width="160" height="30" as="geometry" />
+          <mxGeometry x="165" y="130" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="pJR2RmS9D6GU43mJmb3n-31" value="&lt;h2&gt;Roadmap for Introducing a Child to Programming&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Helvetica;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="36" y="80" width="650" height="70" as="geometry" />
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-31" value="&lt;h2&gt;Roadmap for Providing a Foundation in Technology&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Helvetica;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="50" y="10" width="680" height="70" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-4" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontFamily=Helvetica;fontSize=18;opacity=30;" parent="1" source="pJR2RmS9D6GU43mJmb3n-32" target="dCMkaDBT27g6itsRyK8f-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pJR2RmS9D6GU43mJmb3n-32" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
-          <mxGeometry x="356" y="360" width="10" height="10" as="geometry" />
+          <mxGeometry x="401" y="190" width="10" height="10" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-1" value="&lt;ul&gt;&lt;li&gt;Don&#39;t give them a shared desktop or a laptop.&lt;/li&gt;&lt;li&gt;Let them learn ownership.&lt;br&gt;&lt;/li&gt;&lt;li&gt;Encourage them to use it however they want.&lt;/li&gt;&lt;li&gt;Teach them to clean the dust inside the CPU once in 4 months.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" parent="1" vertex="1">
-          <mxGeometry x="100" y="350" width="180" height="140" as="geometry" />
+          <mxGeometry x="145" y="180" width="180" height="140" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-2" value="Y1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="75" y="300" width="40" height="30" as="geometry" />
+          <mxGeometry x="120" y="130" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-6" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontFamily=Helvetica;fontSize=18;opacity=30;" parent="1" source="dCMkaDBT27g6itsRyK8f-3" target="dCMkaDBT27g6itsRyK8f-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -38,19 +38,45 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
-          <mxGeometry x="356" y="450" width="10" height="10" as="geometry" />
+          <mxGeometry x="401" y="280" width="10" height="10" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-5" value="Touch Typing" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C73500;strokeWidth=2;fillColor=#fa6800;fontColor=#ffffff;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="480" y="390" width="160" height="30" as="geometry" />
+          <mxGeometry x="525" y="220" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-7" value="&lt;ul&gt;&lt;li&gt;Use https://www.typing.com/ to help them learn typing with all 10 fingers.&lt;/li&gt;&lt;li&gt;Kids will be acquainted with touchscreens more than keyboards. Learning how to type with 10 fingers will teach them to be fast on the computer.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" parent="1" vertex="1">
-          <mxGeometry x="480" y="440" width="180" height="150" as="geometry" />
+          <mxGeometry x="525" y="270" width="180" height="150" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-8" value="Y1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="645" y="390" width="40" height="30" as="geometry" />
+          <mxGeometry x="690" y="220" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#999999;opacity=30;endArrow=none;endFill=0;" edge="1" parent="1" source="dCMkaDBT27g6itsRyK8f-9" target="T3fCoR8DOI1882rIEYq2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-4" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;opacity=30;strokeColor=#999999;endArrow=none;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dCMkaDBT27g6itsRyK8f-9" target="T3fCoR8DOI1882rIEYq2-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="265" y="400" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-9" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
-          <mxGeometry x="356" y="540" width="10" height="10" as="geometry" />
+          <mxGeometry x="401" y="370" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-9" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-1" target="T3fCoR8DOI1882rIEYq2-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="401" y="460" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-5" value="Let them use it for a year" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C73500;strokeWidth=2;fillColor=#fa6800;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="155" y="400" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-6" value="Y1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="105" y="400" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-7" value="&lt;ul&gt;&lt;li&gt;Computer literacy takes time. Don&#39;t make it the primary goal.&lt;/li&gt;&lt;li&gt;Let them use MS Word, Paint, and whatever they need to be creative. Let them watch YouTube on this as well.&lt;/li&gt;&lt;li&gt;Let them realise fully that the desktop is theirs and theirs alone.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="135" y="450" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-8" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="401" y="550" width="10" height="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
