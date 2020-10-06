@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-06T16:28:52.488Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="f4hVXXZCi_Dr5X8xp4_d" version="13.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-06T16:55:21.291Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="UYLCbJB2Ocg4kfmVhnH4" version="13.7.7" type="github">
   <diagram id="ADbIuRsIv5Hx8pPA25rk" name="Page-1">
     <mxGraphModel dx="1422" dy="810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="pJR2RmS9D6GU43mJmb3n-33" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;opacity=30;" parent="1" source="pJR2RmS9D6GU43mJmb3n-24" target="pJR2RmS9D6GU43mJmb3n-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pJR2RmS9D6GU43mJmb3n-24" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-24" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=#f0a30a;strokeWidth=2;strokeColor=#BD7000;" parent="1" vertex="1">
           <mxGeometry x="401" y="100" width="10" height="10" as="geometry" />
         </mxCell>
         <mxCell id="pJR2RmS9D6GU43mJmb3n-34" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;opacity=30;" parent="1" source="pJR2RmS9D6GU43mJmb3n-29" target="pJR2RmS9D6GU43mJmb3n-32" edge="1">
@@ -16,13 +16,13 @@
         <mxCell id="pJR2RmS9D6GU43mJmb3n-29" value="Get them a Desktop PC" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C73500;strokeWidth=2;fillColor=#fa6800;fontColor=#ffffff;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="165" y="130" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="pJR2RmS9D6GU43mJmb3n-31" value="&lt;h2&gt;Roadmap for Providing a Foundation in Technology&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Helvetica;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="50" y="10" width="680" height="70" as="geometry" />
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-31" value="&lt;h2&gt;Roadmap for Providing Kids Foundation in Technology&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Helvetica;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="46" y="10" width="720" height="70" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-4" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontFamily=Helvetica;fontSize=18;opacity=30;" parent="1" source="pJR2RmS9D6GU43mJmb3n-32" target="dCMkaDBT27g6itsRyK8f-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pJR2RmS9D6GU43mJmb3n-32" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
+        <mxCell id="pJR2RmS9D6GU43mJmb3n-32" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=#f0a30a;strokeWidth=2;strokeColor=#BD7000;" parent="1" vertex="1">
           <mxGeometry x="401" y="190" width="10" height="10" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-1" value="&lt;ul&gt;&lt;li&gt;Don&#39;t give them a shared desktop or a laptop.&lt;/li&gt;&lt;li&gt;Let them learn ownership.&lt;br&gt;&lt;/li&gt;&lt;li&gt;Encourage them to use it however they want.&lt;/li&gt;&lt;li&gt;Teach them to clean the dust inside the CPU once in 4 months.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" parent="1" vertex="1">
@@ -37,7 +37,7 @@
         <mxCell id="dCMkaDBT27g6itsRyK8f-10" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontFamily=Helvetica;fontSize=18;opacity=30;" parent="1" source="dCMkaDBT27g6itsRyK8f-3" target="dCMkaDBT27g6itsRyK8f-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dCMkaDBT27g6itsRyK8f-3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
+        <mxCell id="dCMkaDBT27g6itsRyK8f-3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=#f0a30a;strokeWidth=2;strokeColor=#BD7000;" parent="1" vertex="1">
           <mxGeometry x="401" y="280" width="10" height="10" as="geometry" />
         </mxCell>
         <mxCell id="dCMkaDBT27g6itsRyK8f-5" value="Touch Typing" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C73500;strokeWidth=2;fillColor=#fa6800;fontColor=#ffffff;fontStyle=1" parent="1" vertex="1">
@@ -57,13 +57,16 @@
             <mxPoint x="265" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dCMkaDBT27g6itsRyK8f-9" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" parent="1" vertex="1">
+        <mxCell id="dCMkaDBT27g6itsRyK8f-9" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=#f0a30a;strokeWidth=2;strokeColor=#BD7000;" parent="1" vertex="1">
           <mxGeometry x="401" y="370" width="10" height="10" as="geometry" />
         </mxCell>
         <mxCell id="T3fCoR8DOI1882rIEYq2-9" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-1" target="T3fCoR8DOI1882rIEYq2-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="T3fCoR8DOI1882rIEYq2-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" vertex="1" parent="1">
+        <mxCell id="T3fCoR8DOI1882rIEYq2-13" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-1" target="T3fCoR8DOI1882rIEYq2-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;strokeWidth=2;strokeColor=#A50040;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="401" y="460" width="10" height="10" as="geometry" />
         </mxCell>
         <mxCell id="T3fCoR8DOI1882rIEYq2-5" value="Let them use it for a year" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#C73500;strokeWidth=2;fillColor=#fa6800;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
@@ -72,11 +75,152 @@
         <mxCell id="T3fCoR8DOI1882rIEYq2-6" value="Y1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="105" y="400" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="T3fCoR8DOI1882rIEYq2-7" value="&lt;ul&gt;&lt;li&gt;Computer literacy takes time. Don&#39;t make it the primary goal.&lt;/li&gt;&lt;li&gt;Let them use MS Word, Paint, and whatever they need to be creative. Let them watch YouTube on this as well.&lt;/li&gt;&lt;li&gt;Let them realise fully that the desktop is theirs and theirs alone.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
-          <mxGeometry x="135" y="450" width="180" height="170" as="geometry" />
+        <mxCell id="T3fCoR8DOI1882rIEYq2-7" value="&lt;ul&gt;&lt;li&gt;Computer literacy takes time. Don&#39;t make it the primary goal.&lt;/li&gt;&lt;li&gt;Let them use MS Word, Paint, and whatever they need to be creative. Let them watch YouTube on this as well.&lt;/li&gt;&lt;li&gt;Guide them through installing software. Stand by them, but they are the ones operating it and clicking &quot;Next&quot;.&lt;/li&gt;&lt;li&gt;Let them realise fully that the desktop is theirs and theirs alone.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="135" y="450" width="180" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="T3fCoR8DOI1882rIEYq2-8" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=none;strokeWidth=2;strokeColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="401" y="550" width="10" height="10" as="geometry" />
+        <mxCell id="T3fCoR8DOI1882rIEYq2-21" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-8" target="T3fCoR8DOI1882rIEYq2-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-23" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-8" target="T3fCoR8DOI1882rIEYq2-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-8" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=#d80073;strokeWidth=2;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="401" y="760" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-10" value="A Foundation" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#432D57;strokeWidth=2;fillColor=#76608a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="512.5" y="510" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-11" value="&lt;ul&gt;&lt;li&gt;Get them started on MIT&#39;s Scratch.&lt;/li&gt;&lt;li&gt;MIT Scratch teaches the fundamentals of coding without the need to type complex code.&lt;/li&gt;&lt;li&gt;Help them find amazing things built using Scratch on YouTube and on the MIT Website.&lt;/li&gt;&lt;li&gt;Get them a copy of Scratch Programming Playground by Al Sweigart&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="512.5" y="560" width="180" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-12" value="Y2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="677.5" y="510" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-17" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-14" target="T3fCoR8DOI1882rIEYq2-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-14" value="Finding Information" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#432D57;strokeWidth=2;fillColor=#76608a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="142.5" y="710" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-15" value="&lt;ul&gt;&lt;li&gt;Teach them how to use the Internet to find things.&lt;/li&gt;&lt;li&gt;They might already have discovered a lot, but show them the true power of Google.&lt;/li&gt;&lt;li&gt;Show them how they can find articles on Wikipedia, and videos on YouTube.&lt;/li&gt;&lt;li&gt;Show them how they can find more Scratch Projects.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="142.5" y="760" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-16" value="Y2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="95" y="710" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-18" value="Security and Privacy" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#432D57;strokeWidth=2;fillColor=#76608a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="502.5" y="790" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-19" value="&lt;ul&gt;&lt;li&gt;Teach Kids how to be aware of strangers on the internet.&lt;/li&gt;&lt;li&gt;Teach them to never share photographs or videos.&lt;/li&gt;&lt;li&gt;Teach them to never put their personal details online.&lt;/li&gt;&lt;li&gt;Teach them to never give any information, even their Pet&#39;s name, online.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="502.5" y="840" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-20" value="Y2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="667.5" y="790" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-27" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-22" target="T3fCoR8DOI1882rIEYq2-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-29" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-22" target="T3fCoR8DOI1882rIEYq2-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-22" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=#d80073;strokeWidth=2;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="401" y="1000" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-24" value="Minecraft" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#432D57;strokeWidth=2;fillColor=#76608a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="1060" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-25" value="&lt;ul&gt;&lt;li&gt;If your kid hasn&#39;t already, introduce them to Minecraft.&lt;/li&gt;&lt;li&gt;Let them build imaginary worlds in the computer.&lt;/li&gt;&lt;li&gt;Minecraft is Lego on a computer.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="1110" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-26" value="Y2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1060" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-33" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-28" target="T3fCoR8DOI1882rIEYq2-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-35" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-28" target="T3fCoR8DOI1882rIEYq2-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-28" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#ffffff;fillColor=#d80073;strokeWidth=2;strokeColor=#A50040;" vertex="1" parent="1">
+          <mxGeometry x="401" y="1090" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-30" value="Programming with Minecraft" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#432D57;strokeWidth=2;fillColor=#76608a;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="502.5" y="1050" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-31" value="&lt;ul&gt;&lt;li&gt;After spending at least a month with Minecraft, and at least 3-6 on Scratch, introduce them to a book called Coding with Minecraft by Al Sweigart.&lt;/li&gt;&lt;li&gt;This is not a joke.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="502.5" y="1100" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-32" value="Y2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#d0cee2;strokeColor=#56517e;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="667.5" y="1050" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-42" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-34" target="T3fCoR8DOI1882rIEYq2-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-34" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1ba1e2;strokeWidth=2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="401" y="1360" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-40" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-37" target="T3fCoR8DOI1882rIEYq2-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-37" value="Python" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#001DBC;strokeWidth=2;fillColor=#0050ef;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="1300" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-38" value="&lt;ul&gt;&lt;li&gt;Once your child has spent 2 years with their computer, and at least 1 with scratch and coding with Minecraft, it is time for Python.&lt;/li&gt;&lt;li&gt;inventwithpython.com is the best resource to introduce kids to Python.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1350" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-39" value="Y3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#e3c800;strokeColor=#B09500;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1300" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-46" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-41" target="T3fCoR8DOI1882rIEYq2-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-49" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-41" target="T3fCoR8DOI1882rIEYq2-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-41" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1ba1e2;strokeWidth=2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="401" y="1450" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-43" value="Relearn Math with Python" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#001DBC;strokeWidth=2;fillColor=#0050ef;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="495" y="1320" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-44" value="&lt;ul&gt;&lt;li&gt;Let your child explore what they&#39;ve learned for the rest of the year.&lt;/li&gt;&lt;li&gt;Help your child learn mathematics through Python.&lt;/li&gt;&lt;li&gt;Build a Calculator.&lt;/li&gt;&lt;li&gt;Build a game.&lt;/li&gt;&lt;li&gt;At this point, help them understand logic. Logic is a hard subject that needs understanding.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="497.5" y="1370" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-45" value="Y3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#e3c800;strokeColor=#B09500;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="667.5" y="1320" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-57" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-58" target="T3fCoR8DOI1882rIEYq2-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-59" value="" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-48" target="T3fCoR8DOI1882rIEYq2-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-48" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="401" y="1620" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-53" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeColor=#999999;strokeWidth=3;fontColor=#FFFFFF;opacity=30;" edge="1" parent="1" source="T3fCoR8DOI1882rIEYq2-50" target="T3fCoR8DOI1882rIEYq2-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-50" value="Electronics" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#A50040;strokeWidth=2;fillColor=#d80073;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="125" y="1530" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-51" value="&lt;ul&gt;&lt;li&gt;Remember that tech literacy is what is important, and not perfect coding skills.&lt;/li&gt;&lt;li&gt;Introduce your child to electronics. This is the time to get them their first kit.&lt;/li&gt;&lt;li&gt;Get them a bunch of LEDs, a breadboard, some wire, a tester, battery kit and a multimeter.&lt;/li&gt;&lt;li&gt;And a screwdriver set.&lt;/li&gt;&lt;li&gt;Tip: Earlier on, get your child a Mechanix kit. Preferably earlier to even starting this journey.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="112.5" y="1580" width="180" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-52" value="Y4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="72.5" y="1530" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-54" value="The Raspberry Pi" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#A50040;strokeWidth=2;fillColor=#d80073;fontColor=#ffffff;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="495" y="1600" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-55" value="&lt;ul&gt;&lt;li&gt;This is the time you get your child their first, and maybe not their first Raspberry Pi.&lt;/li&gt;&lt;li&gt;Get them a Raspberry Pi Zero W.&lt;/li&gt;&lt;li&gt;Also get a Raspberry Pi Enviro pHat.&lt;/li&gt;&lt;li&gt;Finally, get them a soldering iron and some lead free-solder and some jumper cables.&lt;/li&gt;&lt;li&gt;They should be able to figure out how to do something with the Pi by themselves.&lt;/li&gt;&lt;li&gt;At this point, your child knows enough tech, or you know that your child has given it a go and is not interested in a life in technology.&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;align=left;strokeColor=none;fillColor=#E6E6E6;verticalAlign=top;spacing=0;spacingLeft=-23;spacingRight=4;" vertex="1" parent="1">
+          <mxGeometry x="495" y="1650" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-56" value="Y4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=18;fontFamily=Helvetica;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="672.5" y="1600" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T3fCoR8DOI1882rIEYq2-58" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="401" y="1710" width="10" height="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
