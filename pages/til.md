@@ -14,6 +14,64 @@ To be honest, this is mainly so I can track links in a way that is not reliant o
 I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
+## 2020-10-10
+1. Tool \ | [ox - Text editor written in Rust](https://github.com/curlpipe/ox)
+
+## 2020-10-09
+
+1. Article \| [antirez/Kilo - Learn how to write a small text editor in C](https://viewsourcecode.org/snaptoken/kilo/index.html)
+2. Article \| [Hecto - Learn how to write a small text editor in Rust](https://www.philippflenker.com/hecto/)
+3. Article \| [The Tau Manifesto - No, Pi is really wrong](https://tauday.com/tau-manifesto/)
+4. Library \| [Cargo/crossterm](https://crates.io/crates/crossterm)
+5. Library \| [Cargo/termium](https://crates.io/crates/crossterm)
+6. Library \| [Cargo/tui](https://crates.io/crates/crossterm)s
+7. Tool \| [TypeLit.io allows you to practise typing by typing classic novels](https://typelit.io)
+8. Tool \| [Wilo - Text Editor written in Rust](https://github.com/prabirshrestha/wilo)
+
+## 2020-10-07
+1. Learning Resource \| [Precalculus - Free Course on College Math Prerequisites](https://www.freecodecamp.org/news/precalculus-learn-college-math-prerequisites-with-this-free-5-hour-course/amp/?__twitter_impression=true)
+
+
+## 2020-10-02
+
+1. RFC \| [RFC1149 - Standard for the transmission of IP datagrams on avian carriers](https://tools.ietf.org/html/rfc1149)
+2. RFC \| [RFC2549 - IP over Avian Carriers with Quality of Service](https://tools.ietf.org/html/rfc2549)
+
+
+## 2020-09-30
+
+1. Learning Resource \| [Python for Kids](https://github.com/mytechnotalent/Python-For-Kids)
+
+
+## 2020-09-27
+
+1. Article \| [Finding your first remote job](https://joshwcomeau.com/career/remote-work/) \| [Part 2](https://joshwcomeau.com/career/remote-work-pt2/)
+
+## 2020-09-25
+
+1. Book Thread \| [How Facism Works](https://www.reddit.com/r/books/comments/iyu3nz/how_facism_works_should_be_part_of_every/)
+2. Tip \| [How to Ignore binaries withou extensions using gitignore](https://stackoverflow.com/questions/5711120/gitignore-without-binary-files/25592735#25592735)
+3. Article \| [TL:DR Rust](https://christine.website/blog/TLDR-rust-2020-09-19)
+4. Tool \| [WASM Video Compressor/Transcoder](https://modfy.video/)
+5. Learning Resource \| [Learn Git Branching (interactively)](https://learngitbranching.js.org/)
+
+
+## 2020-09-24
+
+1. Hearing Loss \| [Personal Sound Amplifier CS50+](https://www.soundworldsolutions.com/product/personal-sound-amplifier-cs50/)
+
+## 2020-09-21
+
+1. TIL \| [There are other Pyramids in Africa: The Forgotten Pyramids of Meroe](https://amp.theatlantic.com/amp/photo/392312/)
+2. Article \| [John Cleese discusses creativity, political correctness, Monty Python, and artichokes](https://www.newyorker.com/culture/the-new-yorker-interview/john-cleese-discusses-creativity-political-correctness-monty-python-and-artichokes)
+3. Video \| [John Cleese on Creativity in management](https://www.youtube.com/watch?v=Pb5oIIPO62g)
+4. Article \| [Ciofeca Forensics - Revisiting Apple Notes : The Protobuf](https://ciofecaforensics.com/2020/09/18/apple-notes-revisited-protobuf/)
+
+
+## 2020-09-17
+
+1. Video \| [Miguel Grinberg - Video Conferencing App with Python, Flask and Twilio](https://youtu.be/5hdrW6yEwro)
+
 
 ## 2020-09-16
 
