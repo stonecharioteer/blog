@@ -14,8 +14,19 @@ To be honest, this is mainly so I can track links in a way that is not reliant o
 I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
+
+## 2020-11-01
+
+1. `command` | `tr` can *translate* `stdin` from one format to another.
+   Example: `tr a-z A-Z` will convert all `stdin` to UPPERCASE.
+
+## 2020-10-31
+
+1. TIL \| `/dev/urandom` and `/dev/random` can be used to generate random
+   characters.
+
 ## 2020-10-10
-1. Tool \ | [ox - Text editor written in Rust](https://github.com/curlpipe/ox)
+1. Tool \| [ox - Text editor written in Rust](https://github.com/curlpipe/ox)
 
 ## 2020-10-09
 
