@@ -15,6 +15,15 @@ I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
 
+## 2020-11-02
+
+1. TIL \| When running the `selenium/standalone-chrome` ensure that the docker
+   proxy is configured correctly so that it can find the pages it needs to,
+   especially with company-internal pages.
+2. TIL \| Docker images will by default be able to reach any server that the
+   host can reach.
+
+
 ## 2020-11-01
 
 1. `command` | `tr` can *translate* `stdin` from one format to another.
