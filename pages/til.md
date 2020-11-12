@@ -14,6 +14,38 @@ To be honest, this is mainly so I can track links in a way that is not reliant o
 I plan to build a Telegram bot that manages this page for me.
 I can then introduce tagging and search, through the bot, of course.
 
+## 2020-11-12
+
+1. Resource \| [Advanced System-On-Chip Lecture Notes](https://iis-people.ee.ethz.ch/~gmichi/asocd/lecturenotes/)
+
+## 2020-11-11
+
+1. Resource \| [OWASP Cheat Sheets](https://github.com/OWASP/CheatSheetSeries)
+2. Resource \| [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/v41/)
+3. Resource \| [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
+
+## 2020-11-09
+
+1. Course \| [MIT 6.042J - Mathematics for Computer Science](https://www.youtube.com/playlist?list=PLB7540DEDD482705B)
+2. Course \| [MIT 6.006 - Introduction to Algorithms](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+3. RFC \| [DoD RFC 760 - Internet Protocol](https://tools.ietf.org/html/rfc760)
+
+## 2020-11-08
+1. Article \| [Customizing my Postgres shell using psqlrc](https://www.citusdata.com/blog/2017/07/16/customizing-my-postgres-shell-using-psqlrc/)
+2. Whitepaper \| [Looking Back at Postgres](assets/../../assets/files/looking-back-at-postgres.pdf)
+
+## 2020-11-06
+2. Resource \| [OWASP Secure Headers](https://owasp.org/www-project-secure-headers/)
+3. Resource \| [HTTP Status Codes Cheatsheet](https://devhints.io/http-status)
+4. Python Library \| [`secure.py`](https://secure.readthedocs.io/en/latest/index.html)
+5. Book \| [Secure by Design - Book on Security best practices by Manning Publications](https://www.manning.com/books/secure-by-design)
+6. Tool \| [`hsecscan` - Python Tool to Check Headers of an API](https://github.com/riramar/hsecscan)
+7. Tool \| [`pidof` can be used to snoop the PID of a process matching a regex.](https://manpages.ubuntu.com/manpages/focal/en/man8/pidof.8.html)
+
+## 2020-11-03
+
+1. Tool \| Use `lsof` to scan processes running in a given path.
+2. Tool \| `kill` can take verbose commands, such as `-KILL`, `-TSTP` or `-CONT`. Check `man kill` for more.
 
 ## 2020-11-02
 
@@ -22,6 +54,7 @@ I can then introduce tagging and search, through the bot, of course.
    especially with company-internal pages.
 2. TIL \| Docker images will by default be able to reach any server that the
    host can reach.
+3. Book \| [How Linux Works by No Starch Code is a good book on the internals of Linux](https://nostarch.com/howlinuxworks2)
 
 
 ## 2020-11-01
@@ -703,3 +736,4 @@ I can then introduce tagging and search, through the bot, of course.
 74. [The Turing Pi - Raspberry Pi Compute Node Cluster](https://turingpi.com/)
 75. [Generate Fake Data in Python using `mimesis`](https://github.com/lk-geimfari/mimesis)
 76. [Setting up K3S with Cluster Monitoring on the Raspberry Pi](https://github.com/carlosedp/)
+77. [Why's Poignant Guide to Ruby](https://poignant.guide/book/)
