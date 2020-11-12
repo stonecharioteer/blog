@@ -233,7 +233,7 @@ follows the OWASP Secure Headers guidelines to a T.
 Let's try this out.
 
 ```bash
-$curl -s -D - localhost:5000
+$ curl -s -D - localhost:5000
 
 HTTP/1.0 200 OK
 Content-Type: text/html; charset=utf-8
