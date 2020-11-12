@@ -19,7 +19,7 @@ I mean secure web headers, predominantly, as defined by the [OWASP Secure Header
 
 ## OWASP
 
-The [Open Web Applciation Security Project®](https://owasp.org/) (OWASP) is a nonprofit foundation that works to improve the security of software.
+The [Open Web Application Security Project®](https://owasp.org/) (OWASP) is a nonprofit foundation that works to improve the security of software.
 It provides resources and guidelines about web application security, and holds educational and training conferences.
 
 If you're concerning yourself with writing a web application, I highly recommend going through the OWASP guidelines
