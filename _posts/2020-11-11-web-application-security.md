@@ -29,7 +29,7 @@ This particular post will be centered around the OWASP guidelines on HTTP Header
 
 ## A Little Bit About HTTP Headers
 
-HTTP Headers are the sort of things that don't *often* concern developers. We don't think about them, until we encounter
+[HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) are the sort of things that don't *often* concern developers. We don't think about them, until we encounter
 some issue with Cross-Site Requests or something similar. However, knowledge of headers gives you a lot to think about.
 
 How do you even *see* the headers, anyway?

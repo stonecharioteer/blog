@@ -17,6 +17,7 @@ I can then introduce tagging and search, through the bot, of course.
 ## 2020-11-12
 
 1. Resource \| [Advanced System-On-Chip Lecture Notes](https://iis-people.ee.ethz.ch/~gmichi/asocd/lecturenotes/)
+2. Resource \| [MDN HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
 
 ## 2020-11-11
 
