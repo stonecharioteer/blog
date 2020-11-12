@@ -386,3 +386,4 @@ While this offers the same output, it also does this by default, and adds some n
 5. [`httpie` - Python Alternative for CURL](https://httpie.io/)
 6. [OWASP Cheat Sheets](https://github.com/OWASP/CheatSheetSeries)
 7. [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/v41/)
+8. [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
