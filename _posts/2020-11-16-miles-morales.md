@@ -18,7 +18,7 @@ I read somewhere, how *heroic* music is very prominently composed
 of horns, trumpets and other instruments that are *very* prominent.
 
 Superman has the John Williams theme, as majestic as Christopher Reeve
-himself. Of all of the Batman themes, the Dan Elfman theme comes
+himself. Of all of the Batman themes, the Danny Elfman theme comes
 to mind first, being the fan of *Batman: The Animated Series* that I am,
 but even with the Hans Zimmer themes, you get similar notes.
 
