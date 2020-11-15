@@ -2,13 +2,13 @@
 title: The Song of a Hero - Insomniac's Spider-Man Miles Morales
 layout: post
 categories: [gaming, comics]
-image: /assets/images/posts/miles-morales/miles-01.jpg
+image: /assets/images/posts/miles/miles-01.jpg
 description: "The music of Spider-Man Miles Morales teaches you what a hero's theme means."
-customexcerpt: "I used a Raspberry Pi to teach me Japanese letters"
+customexcerpt: "Of all the differences between the first Spider-Man game for the PS4 and Spider-Man Miles Morales, I did not expect to be wowed by the music."
 ---
 
 
-![Image 1](/assets/images/posts/miles-morales/miles-01.jpg)
+![Image 1](/assets/images/posts/miles/miles-01.jpg)
 
 Of all the differences between the first Spider-Man game for the
 PS4 and Spider-Man Miles Morales, I did not expect to be wowed
@@ -83,7 +83,7 @@ time for him to be his own Spider-Man. Not one who has years
 of heritage behind him, heritage that is not his own, but one
 who has to make his own unique webs.
 
-![Miles Comes into his own](/assets/images/posts/miles-morales/miles-02.jpg)
+![Miles Comes into his own](/assets/images/posts/miles/miles-02.jpg)
 
 And spin them he does. As the game veers to its ending, pieces of
 the original theme meld with Miles' unique spin on them, choosing
