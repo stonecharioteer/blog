@@ -44,10 +44,8 @@ Now, create this script and save it in your home folder.
 
 
 ```python
-
 import keyboard
-
-keyboard.write(keyboard.F14)
+keyboard.press_and_release("f14")
 
 ```
 
@@ -70,18 +68,14 @@ Note that the location of the environment will depend on where you installed
 Miniconda/Anaconda on your laptop. I usually install it into the `$HOME`
 directory.
 
-
 Now, ensure that your directory is *sourced* in your shell's *rc* file.
 
 Add `source ~/.profile` to the end of your `.bashrc` or `.zshrc` or the *rc*
 file of your chosen shell.
-
 
 ## Final Notes
 
 The `keyboard` module can be used to do a lot of interesting things, such
 as making shortcuts and adding hotkeys for altered behaviour. Do explore more
 and `@` me on Twitter if you build something amazing.
-
-
 
