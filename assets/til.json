@@ -1,0 +1,50 @@
+[
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "git",
+            "programming",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://gitpython.readthedocs.io/en/stable/index.html"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "browser",
+            "cli",
+            "non-web"
+        ],
+        "type": "url",
+        "value": "https://bombadillo.colorfield.space/"
+    },
+    {
+        "added_on": "2020-11-21",
+        "repeated_added_on": [
+            "2020-11-29"
+        ],
+        "categories": [
+            "linux",
+            "programming"
+        ],
+        "type": "factoid",
+        "value": "`kill` takes readable arguments. Use `kill -KILL` or `kill -TSTP` instead of the numbers."
+    },
+    {
+        "added_on": "2019-11-28",
+        "repeated_added_on": [
+            "2020-11-29"
+        ],
+        "categories": [
+            "programming",
+            "toml",
+            "files"
+        ],
+        "type": "url",
+        "value": "https://toml.io/en/",
+        "title": "TOML: Tom's Obvious Minimal Language"
+    }
+]
