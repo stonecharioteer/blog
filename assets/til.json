@@ -3,23 +3,13 @@
         "added_on": "2020-11-29",
         "repeated_added_on": [],
         "categories": [
-            "git",
+            "linux",
             "programming",
-            "python"
+            "python",
+            "systemd"
         ],
         "type": "url",
-        "value": "https://gitpython.readthedocs.io/en/stable/index.html"
-    },
-    {
-        "added_on": "2020-11-29",
-        "repeated_added_on": [],
-        "categories": [
-            "browser",
-            "cli",
-            "non-web"
-        ],
-        "type": "url",
-        "value": "https://bombadillo.colorfield.space/"
+        "value": "https://github.com/torfsen/python-systemd-tutorial"
     },
     {
         "added_on": "2020-11-21",
