@@ -19,6 +19,6 @@ not reliant on external services.
 
 {% for date in dates %}## {{ date }}
 
-{% for til in til_json[date] %}{{loop.index}}. {% if til["type"] == "url" %}[{{til["title"]}}]({{ til["value"] }}){% else %}{{til["value"]}}{% endif %}
+{% for til in til_json[date] %}{{loop.index}}. {% if til["type"] == "url" %}[{{til["title"].replace("|", "\|")}}]({{ til["value"] }}){% else %}{{til["value"].replace("|", "\|")}}{% endif %}
 {% endfor %}
 {% endfor %}
