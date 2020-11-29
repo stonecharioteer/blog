@@ -2,7 +2,6 @@
 title: Sarathi - My Discord Bot
 layout: post
 categories: [discord, python, til, meta]
-permalink: "/sarathi.html"
 description: "I built a discord bot to help me manage and query my TIL page."
 customexcerpt: "I've been maintaining a TIL page for a while now, and while the idea is great, I have had some issues updating the sheet daily."
 ---
