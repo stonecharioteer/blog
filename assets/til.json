@@ -59,7 +59,8 @@
             "developers"
         ],
         "type": "url",
-        "value": "http://paulgraham.com/think.html"
+        "value": "http://paulgraham.com/think.html",
+        "title": "How to Think for Yourself"
     },
     {
         "added_on": "2020-11-29",
