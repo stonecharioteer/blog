@@ -48,6 +48,19 @@
         "value": "In python, *everything* is an object. This doesn't make complete sense until later. When it does, you'll see that the way `__doc__` is used in a *module* is the same way it is used in a *class definition* or in a *function*."
     },
     {
+        "added_on": "2020-11-30",
+        "repeated_added_on": [],
+        "categories": [
+            "containers",
+            "devtools",
+            "docker",
+            "programming"
+        ],
+        "type": "url",
+        "value": "https://www.portainer.io/",
+        "title": "Simple Container Management | Kubernetes, Docker, Docker Swarm & ACI UI"
+    },
+    {
         "added_on": "2020-11-29",
         "repeated_added_on": [],
         "categories": [
