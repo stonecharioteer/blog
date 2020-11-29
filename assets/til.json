@@ -254,6 +254,19 @@
         "value": "https://blog.sumtypeofway.com/posts/existential-haskell.html"
     },
     {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "library",
+            "programming",
+            "python",
+            "urllib"
+        ],
+        "type": "url",
+        "value": "https://github.com/urllib3/urllib3",
+        "title": "Malicious SHA-1"
+    },
+    {
         "added_on": "2020-11-21",
         "repeated_added_on": [
             "2020-11-29"
@@ -284,7 +297,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md)",
+        "value": "https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md",
         "title": "You Don't Know JS is one of the best resources on learning Javascript"
     },
     {
@@ -292,7 +305,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/ant-design/ant-design)",
+        "value": "https://github.com/ant-design/ant-design",
         "title": "ANTDesign (ANTD) is better than Material for React, IMO"
     },
     {
@@ -300,7 +313,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/AlDanial/cloc)",
+        "value": "https://github.com/AlDanial/cloc",
         "title": "cloc counts lines of code"
     },
     {
@@ -308,7 +321,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://cookiecutter.readthedocs.io)",
+        "value": "https://cookiecutter.readthedocs.io",
         "title": "cookiecutter can use Jinja to generate scaffolding for code"
     },
     {
@@ -316,7 +329,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/junegunn/fzf)",
+        "value": "https://github.com/junegunn/fzf",
         "title": "fzf is amazing for searching through linux history"
     },
     {
@@ -324,7 +337,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/sharkdp/bat)",
+        "value": "https://github.com/sharkdp/bat",
         "title": "Bat is better than the cat command."
     },
     {
@@ -332,7 +345,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/jakubroztocil/httpie)",
+        "value": "https://github.com/jakubroztocil/httpie",
         "title": "httpie is curl for humans"
     },
     {
@@ -340,7 +353,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/getsentry/responses)",
+        "value": "https://github.com/getsentry/responses",
         "title": "responses lets you mock requests calls safely"
     },
     {
@@ -348,7 +361,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/jbasko/pytest-random-order)",
+        "value": "https://github.com/jbasko/pytest-random-order",
         "title": "Run pytest in random order"
     },
     {
@@ -356,7 +369,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "http://lmgtfy.com)",
+        "value": "http://lmgtfy.com",
         "title": "Let me google that for you"
     },
     {
@@ -364,7 +377,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://curiosityquills.com/limyaael/)",
+        "value": "https://curiosityquills.com/limyaael/",
         "title": "Limyaeel's Rants are the best commentary on the Fantasy fiction tropes"
     },
     {
@@ -372,7 +385,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/XAMPPRocky/tokei)",
+        "value": "https://github.com/XAMPPRocky/tokei",
         "title": "Tokei is better than cloc"
     },
     {
@@ -380,7 +393,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/BurntSushi/ripgrep)",
+        "value": "https://github.com/BurntSushi/ripgrep",
         "title": "ripgrep is grep on steroids"
     },
     {
@@ -397,7 +410,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/ytdl-org/youtube-dl)",
+        "value": "https://github.com/ytdl-org/youtube-dl",
         "title": "youtube-dl allows you to download youtube videos easily and convert them"
     },
     {
@@ -405,7 +418,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/MrS0m30n3/youtube-dl-gui)",
+        "value": "https://github.com/MrS0m30n3/youtube-dl-gui",
         "title": "GUI for youtube-dl"
     },
     {
@@ -413,7 +426,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/tapio/live-server)",
+        "value": "https://github.com/tapio/live-server",
         "title": "node's live-server module is good for live reloading static html"
     },
     {
@@ -421,7 +434,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/nikhita/tech-conferences-india)",
+        "value": "https://github.com/nikhita/tech-conferences-india",
         "title": "Tech conferences in India"
     },
     {
@@ -429,7 +442,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://secure.readthedocs.io/en/latest/)",
+        "value": "https://secure.readthedocs.io/en/latest/",
         "title": "Secure Headers for Flask and other Python Web Frameworks"
     },
     {
@@ -437,7 +450,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/PyCQA/bandit)",
+        "value": "https://github.com/PyCQA/bandit",
         "title": "Use Bandit for security in python applications"
     },
     {
@@ -445,7 +458,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://pre-commit.com/)",
+        "value": "https://pre-commit.com/",
         "title": "pre-commit allows you to setup version control for your hooks"
     },
     {
@@ -453,7 +466,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://fastapi.tiangolo.com/)",
+        "value": "https://fastapi.tiangolo.com/",
         "title": "fast-api is asynchronous flask on steroids"
     },
     {
@@ -461,7 +474,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://lucumr.pocoo.org/)",
+        "value": "https://lucumr.pocoo.org/",
         "title": "Armin Ronacher's Blog"
     },
     {
@@ -469,7 +482,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://nedbatchelder.com/blog/201803/is_python_interpreted_or_compiled_yes.html)",
+        "value": "https://nedbatchelder.com/blog/201803/is_python_interpreted_or_compiled_yes.html",
         "title": "Ned Batchelder's Blog - Is Python Interpreted or Compiled? Yes."
     },
     {
@@ -477,7 +490,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://www.artima.com/insidejvm/whyCAFEBABE.html)",
+        "value": "https://www.artima.com/insidejvm/whyCAFEBABE.html",
         "title": "The first 4 bytes of every Java class file has the magic value 0xCAFEBABE"
     },
     {
@@ -485,7 +498,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://docs.python.org/3/library/codeop.html)",
+        "value": "https://docs.python.org/3/library/codeop.html",
         "title": "Compiling Python Code"
     },
     {
@@ -493,7 +506,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://wiki.python.org/moin/ByteplayDoc)",
+        "value": "https://wiki.python.org/moin/ByteplayDoc",
         "title": "`byteplay` - play with python bytecode"
     },
     {
@@ -501,7 +514,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://rhettinger.wordpress.com/)",
+        "value": "https://rhettinger.wordpress.com/",
         "title": "Raymond Hettinger's Blog"
     },
     {
@@ -509,7 +522,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://realpython.com/pygame-a-primer/)",
+        "value": "https://realpython.com/pygame-a-primer/",
         "title": "Real Python PyGame Primer"
     },
     {
@@ -517,7 +530,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://doc.rust-lang.org/stable/rust-by-example/)",
+        "value": "https://doc.rust-lang.org/stable/rust-by-example/",
         "title": "Rust By Example"
     },
     {
@@ -525,7 +538,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://cstheory.stackexchange.com/questions/19759/core-algorithms-deployed/19773#19773)",
+        "value": "https://cstheory.stackexchange.com/questions/19759/core-algorithms-deployed/19773#19773",
         "title": "Core Algorithms Deployed - Stack Overflow Question"
     },
     {
@@ -533,7 +546,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://revel.github.io/)",
+        "value": "https://revel.github.io/",
         "title": "`revel` Web Framework for Go"
     },
     {
@@ -541,7 +554,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://astaxie.gitbooks.io/build-web-application-with-golang/en/02.7.html)",
+        "value": "https://astaxie.gitbooks.io/build-web-application-with-golang/en/02.7.html",
         "title": "Build Web Application with Golang Astaxie"
     },
     {
@@ -549,7 +562,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://css-tricks.com/a-complete-guide-to-calc-in-css/)",
+        "value": "https://css-tricks.com/a-complete-guide-to-calc-in-css/",
         "title": "Complete Guide to `calc()` in CSS"
     },
     {
@@ -557,7 +570,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://www.nytimes.com/2020/07/12/business/matt-mullenweg-automattic-corner-office.html)",
+        "value": "https://www.nytimes.com/2020/07/12/business/matt-mullenweg-automattic-corner-office.html",
         "title": "Matt Mullenweg on Remote Work"
     },
     {
@@ -565,7 +578,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://azeria-labs.com/the-importance-of-deep-work-the-30-hour-method-for-learning-a-new-skill/)",
+        "value": "https://azeria-labs.com/the-importance-of-deep-work-the-30-hour-method-for-learning-a-new-skill/",
         "title": "The Importance of Deep Work and the 30-hour method for learning a new skill"
     },
     {
@@ -573,7 +586,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/getify/Functional-Light-JS/blob/master/manuscript/foreword.md)",
+        "value": "https://github.com/getify/Functional-Light-JS/blob/master/manuscript/foreword.md",
         "title": "Functional Light Javascript"
     },
     {
@@ -581,7 +594,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/MostlyAdequate/mostly-adequate-guide)",
+        "value": "https://github.com/MostlyAdequate/mostly-adequate-guide",
         "title": "Professor Frisby's Mostly Adequate Guide to Functional Programming"
     },
     {
@@ -589,7 +602,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://frontendmasters.com/books/front-end-handbook/2019/#1)",
+        "value": "https://frontendmasters.com/books/front-end-handbook/2019/#1",
         "title": "Front End Developer Handbook"
     },
     {
@@ -597,7 +610,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://css-tricks.com/the-css-ah-ha-moment/)",
+        "value": "https://css-tricks.com/the-css-ah-ha-moment/",
         "title": "The CSS 'Ah-ha!' moment"
     },
     {
@@ -605,7 +618,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://css-tricks.com/well-documented-css-codebase-look-like/)",
+        "value": "https://css-tricks.com/well-documented-css-codebase-look-like/",
         "title": "What does a Well-Documented CSS Codebase Look Like?"
     },
     {
@@ -613,7 +626,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://css-tricks.com/moment-css-started-making-sense/)",
+        "value": "https://css-tricks.com/moment-css-started-making-sense/",
         "title": "The moment CSS started making 'Sense'"
     },
     {
@@ -621,7 +634,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://css-tricks.com/multi-line-padded-text/)",
+        "value": "https://css-tricks.com/multi-line-padded-text/",
         "title": "Multi-Line Padded Text"
     },
     {
@@ -629,7 +642,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://css-tricks.com/dont-overthink-it-grids/)",
+        "value": "https://css-tricks.com/dont-overthink-it-grids/",
         "title": "Don't Overthink It Grids"
     },
     {
@@ -637,7 +650,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "http://www.csszengarden.com/)",
+        "value": "http://www.csszengarden.com/",
         "title": "CSS Zen Garden"
     },
     {
@@ -645,7 +658,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://bradfrost.com/blog/post/anatomy-of-a-pattern-in-a-pattern-library/)",
+        "value": "https://bradfrost.com/blog/post/anatomy-of-a-pattern-in-a-pattern-library/",
         "title": "The Anatomy of a Reference Site Component Detail Page"
     },
     {
@@ -653,7 +666,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://www.smashingmagazine.com/taking-pattern-libraries-next-level/)",
+        "value": "https://www.smashingmagazine.com/taking-pattern-libraries-next-level/",
         "title": "Taking the Pattern Library to the Next Level"
     },
     {
@@ -661,7 +674,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://www.w3.org/TR/WCAG20/)",
+        "value": "https://www.w3.org/TR/WCAG20/",
         "title": "W3C Web Content Accessibility Guidelines"
     },
     {
@@ -669,7 +682,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://html5forwebdesigners.com/)",
+        "value": "https://html5forwebdesigners.com/",
         "title": "HTML5 for Web Designers"
     },
     {
@@ -677,7 +690,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)",
+        "value": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes",
         "title": "CSS Pseudo-Classes"
     },
     {
@@ -685,7 +698,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/lydiahallie/javascript-questions)",
+        "value": "https://github.com/lydiahallie/javascript-questions",
         "title": "Javascript Questions"
     },
     {
@@ -693,7 +706,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://www.pika.dev/cdn)",
+        "value": "https://www.pika.dev/cdn",
         "title": "Pika cdn for npm"
     },
     {
@@ -701,7 +714,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://joyofelixir.com/)",
+        "value": "https://joyofelixir.com/",
         "title": "Joy of Elixir"
     },
     {
@@ -709,7 +722,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://waterlinejs.org/)",
+        "value": "https://waterlinejs.org/",
         "title": "Waterline.js ORM for Node"
     },
     {
@@ -717,15 +730,15 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://en.m.wikipedia.org/wiki/Conflict-free_replicated_data_type)",
-        "title": "Conflict-Free Replicated Data Type (CRDT)"
+        "value": "https://en.m.wikipedia.org/wiki/Conflict-free_replicated_data_type",
+        "title": "Conflict-Free Replicated Data Type (CRDT"
     },
     {
         "added_on": "2019-01-01",
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://www.nerves-project.org/)",
+        "value": "https://www.nerves-project.org/",
         "title": "Nerves IoT Platform"
     },
     {
@@ -733,7 +746,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://opensource.com/article/17/4/grok-gil)",
+        "value": "https://opensource.com/article/17/4/grok-gil",
         "title": "Grok the GIL: How to Write Fast and Thread-Safe Python"
     },
     {
@@ -741,7 +754,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://stackoverflow.com/questions/49005651/how-does-asyncio-actually-work/51116910#51116910)",
+        "value": "https://stackoverflow.com/questions/49005651/how-does-asyncio-actually-work/51116910#51116910",
         "title": "How Does `asyncio` work?"
     },
     {
@@ -749,7 +762,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://stackoverflow.com/questions/20886565/using-multiprocessing-process-with-a-maximum-number-of-simultaneous-processes)",
+        "value": "https://stackoverflow.com/questions/20886565/using-multiprocessing-process-with-a-maximum-number-of-simultaneous-processes",
         "title": "Using `multiprocessing.Process` with a maximum number of simultaneous processes"
     },
     {
@@ -757,7 +770,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://devrel.net/developer-experience/designing-a-delightful-command-line-interface)",
+        "value": "https://devrel.net/developer-experience/designing-a-delightful-command-line-interface",
         "title": "Designing a delightful command line interface"
     },
     {
@@ -765,7 +778,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/)",
+        "value": "https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/",
         "title": "Introducing Linux Network Namespaces"
     },
     {
@@ -773,7 +786,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://docs.wagtail.io/en/v2.6.1/getting_started/tutorial.html)",
+        "value": "https://docs.wagtail.io/en/v2.6.1/getting_started/tutorial.html",
         "title": "Wagtail CMS and Site Framework"
     },
     {
@@ -781,7 +794,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://docs.djangoproject.com/en/2.2/topics/class-based-views/intro/)",
+        "value": "https://docs.djangoproject.com/en/2.2/topics/class-based-views/intro/",
         "title": "Django Class Based Views"
     },
     {
@@ -789,7 +802,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://medium.com/@nnja/the-ultimate-guide-to-memorable-tech-talks-e7c350778d4b)",
+        "value": "https://medium.com/@nnja/the-ultimate-guide-to-memorable-tech-talks-e7c350778d4b",
         "title": "Nina Zakharenko - The Ultimate Guide to Memorable Tech Talks"
     },
     {
@@ -797,7 +810,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://www.hillelwayne.com/post/intermediate-vim/)",
+        "value": "https://www.hillelwayne.com/post/intermediate-vim/",
         "title": "Intermediate Vim"
     },
     {
@@ -805,7 +818,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "http://cliffle.com/p/dangerust/)",
+        "value": "http://cliffle.com/p/dangerust/",
         "title": "Learn Rust the Dangerous Way"
     },
     {
@@ -813,7 +826,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://www.linuxjournal.com/article/4681)",
+        "value": "https://www.linuxjournal.com/article/4681",
         "title": "Debugging Memory on Linux"
     },
     {
@@ -821,7 +834,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://nathangrigg.com/)",
+        "value": "https://nathangrigg.com/",
         "title": "Nathan Grigg's Blog - Vim and Linux"
     },
     {
@@ -829,7 +842,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://www.reddit.com/r/explainlikeimfive/comments/kpoz3/eli5_what_is_virtual_memory_why_we_need_it/)",
+        "value": "https://www.reddit.com/r/explainlikeimfive/comments/kpoz3/eli5_what_is_virtual_memory_why_we_need_it/",
         "title": "ELI5: What is Virtual Memory? Why do we Need it?"
     },
     {
@@ -837,7 +850,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://python-patterns.guide/)",
+        "value": "https://python-patterns.guide/",
         "title": "Python Design Patterns"
     },
     {
@@ -845,7 +858,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://sanxiyn.blogspot.com/2016/06/problem-in-rust-adoption.html?m=1)",
+        "value": "https://sanxiyn.blogspot.com/2016/06/problem-in-rust-adoption.html?m=1",
         "title": "Problems in Rust Adoption"
     },
     {
@@ -853,7 +866,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://en.m.wikisource.org/wiki/The_Paging_Game)",
+        "value": "https://en.m.wikisource.org/wiki/The_Paging_Game",
         "title": "The Paging Game - Game on Learning the Virtual Memory Paging Process"
     },
     {
@@ -861,7 +874,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://www.erlang-solutions.com/blog/an-introduction-to-rabbitmq-what-is-rabbitmq.html)",
+        "value": "https://www.erlang-solutions.com/blog/an-introduction-to-rabbitmq-what-is-rabbitmq.html",
         "title": "What is RabbitMQ?"
     },
     {
@@ -869,7 +882,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://turingpi.com/)",
+        "value": "https://turingpi.com/",
         "title": "The Turing Pi - Raspberry Pi Compute Node Cluster"
     },
     {
@@ -877,7 +890,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/lk-geimfari/mimesis)",
+        "value": "https://github.com/lk-geimfari/mimesis",
         "title": "Generate Fake Data in Python using `mimesis`"
     },
     {
@@ -885,7 +898,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://github.com/carlosedp/)",
+        "value": "https://github.com/carlosedp/cluster-monitoring",
         "title": "Setting up K3S with Cluster Monitoring on the Raspberry Pi"
     },
     {
@@ -893,7 +906,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "url",
-        "value": "https://poignant.guide/book/)",
+        "value": "https://poignant.guide/book/",
         "title": "Why's Poignant Guide to Ruby"
     }
 ]
