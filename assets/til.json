@@ -178,7 +178,7 @@
         ],
         "type": "url",
         "value": "https://www.reddit.com/r/Python/comments/k2kbs4/sillynium_auto_generate_working_python_selenium/",
-        "title": "\"Sillynium\" - Auto generate working Python Selenium scripts by drawing coloured rectangles around web elements on a page that you want to automate : Python"
+        "title": "Sillynium - Auto generate working Python Selenium scripts by drawing coloured rectangles around web elements on a page that you want to automate : Python"
     },
     {
         "added_on": "2020-11-29",
@@ -218,7 +218,7 @@
         ],
         "type": "url",
         "value": "https://leetcode.com/discuss/interview-experience/942008/google-l4-zurich-sept-nov-2020-reject",
-        "title": "Loading..."
+        "title": "Leetcode Interview Experience Google L4 Zurich Sept-Nov 2020 [Rejected]"
     },
     {
         "added_on": "2020-11-29",
@@ -286,7 +286,7 @@
         ],
         "type": "url",
         "value": "https://blog.sumtypeofway.com/posts/existential-haskell.html",
-        "title": "\n            adventures in uncertainty: Existential Haskell\n        "
+        "title": "adventures in uncertainty: Existential Haskell"
     },
     {
         "added_on": "2020-11-29",
@@ -4303,7 +4303,7 @@
         "categories": [],
         "type": "url",
         "value": "https://github.com/sharkdp/bat",
-        "title": "Bat is better than the cat command."
+        "title": "`bat` is better than the `cat` command."
     },
     {
         "added_on": "2019-01-01",
@@ -4311,7 +4311,7 @@
         "categories": [],
         "type": "url",
         "value": "https://github.com/jakubroztocil/httpie",
-        "title": "httpie is curl for humans"
+        "title": "`httpie` is `curl` for humans"
     },
     {
         "added_on": "2019-01-01",
@@ -4319,7 +4319,7 @@
         "categories": [],
         "type": "url",
         "value": "https://github.com/getsentry/responses",
-        "title": "responses lets you mock requests calls safely"
+        "title": "`responses` lets you mock `requests` calls safely"
     },
     {
         "added_on": "2019-01-01",
@@ -4327,7 +4327,7 @@
         "categories": [],
         "type": "url",
         "value": "https://github.com/jbasko/pytest-random-order",
-        "title": "Run pytest in random order"
+        "title": "Run `pytest` in random order"
     },
     {
         "added_on": "2019-01-01",
@@ -4351,7 +4351,7 @@
         "categories": [],
         "type": "url",
         "value": "https://github.com/XAMPPRocky/tokei",
-        "title": "Tokei is better than cloc"
+        "title": "`Tokei` is better than `cloc`"
     },
     {
         "added_on": "2019-01-01",
@@ -4359,7 +4359,7 @@
         "categories": [],
         "type": "url",
         "value": "https://github.com/BurntSushi/ripgrep",
-        "title": "ripgrep is grep on steroids"
+        "title": "`ripgrep` is `grep` on steroids"
     },
     {
         "added_on": "2019-01-01",
