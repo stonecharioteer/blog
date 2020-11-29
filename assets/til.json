@@ -9,7 +9,8 @@
             "systemd"
         ],
         "type": "url",
-        "value": "https://github.com/torfsen/python-systemd-tutorial"
+        "value": "https://github.com/torfsen/python-systemd-tutorial",
+        "title": "GitHub - torfsen/python-systemd-tutorial: A tutorial for writing a systemd service in Python"
     },
     {
         "added_on": "2020-11-29",
@@ -21,7 +22,8 @@
             "python"
         ],
         "type": "url",
-        "value": "https://gitpython.readthedocs.io/en/stable/index.html"
+        "value": "https://gitpython.readthedocs.io/en/stable/index.html",
+        "title": "GitPython Documentation \u2014 GitPython 3.1.11 documentation"
     },
     {
         "added_on": "2020-11-29",
@@ -33,7 +35,8 @@
             "programming"
         ],
         "type": "url",
-        "value": "https://github.com/google/lisp-koans"
+        "value": "https://github.com/google/lisp-koans",
+        "title": "GitHub - google/lisp-koans: Common Lisp Koans is a language learning exercise in the same vein as the ruby koans, python koans and others.   It is a port of the prior koans with some modifications to highlight lisp-specific features.  Structured as ordered groups of broken unit tests, the project guides the learner progressively through many Common Lisp language features."
     },
     {
         "added_on": "2020-11-29",
@@ -44,7 +47,8 @@
             "rust"
         ],
         "type": "url",
-        "value": "https://github.com/phiresky/ripgrep-all"
+        "value": "https://github.com/phiresky/ripgrep-all",
+        "title": "GitHub - phiresky/ripgrep-all: rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc."
     },
     {
         "added_on": "2020-11-29",
@@ -68,7 +72,8 @@
             "unix"
         ],
         "type": "url",
-        "value": "https://github.com/susam/tucl"
+        "value": "https://github.com/susam/tucl",
+        "title": "GitHub - susam/tucl: The first-ever paper on the Unix shell written by Ken Thompson in 1976, scanned, transcribed, and redistributed with permission"
     },
     {
         "added_on": "2020-11-29",
@@ -77,7 +82,8 @@
             "on-writing"
         ],
         "type": "url",
-        "value": "https://limitlesscuriosity.com/the-purpose-of-writing/"
+        "value": "https://limitlesscuriosity.com/the-purpose-of-writing/",
+        "title": "The Purpose Of Writing"
     },
     {
         "added_on": "2020-11-29",
@@ -88,7 +94,8 @@
             "philosophy"
         ],
         "type": "url",
-        "value": "https://www.brainpickings.org/2017/08/07/diary-of-alice-james-death/"
+        "value": "https://www.brainpickings.org/2017/08/07/diary-of-alice-james-death/",
+        "title": "How to Live to the Full While Dying: The Extraordinary Diary of Alice James, William and Henry James\u2019s Brilliant Sister \u2013 Brain Pickings"
     },
     {
         "added_on": "2020-11-29",
@@ -101,7 +108,8 @@
             "studying"
         ],
         "type": "url",
-        "value": "https://www.jackkinsella.ie/articles/Janki-method"
+        "value": "https://www.jackkinsella.ie/articles/Janki-method",
+        "title": "The page you were looking for doesn't exist (404)"
     },
     {
         "added_on": "2020-11-29",
@@ -115,7 +123,8 @@
             "tools"
         ],
         "type": "url",
-        "value": "https://varkor.github.io/blog/2020/11/25/announcing-quiver.html"
+        "value": "https://varkor.github.io/blog/2020/11/25/announcing-quiver.html",
+        "title": "Announcing quiver: a new commutative diagram editor for the web | varkor\u2019s blog"
     },
     {
         "added_on": "2020-11-29",
@@ -138,7 +147,8 @@
             "sponsorships"
         ],
         "type": "url",
-        "value": "https://sponsorgap.com/companies-buying-ads-and-sponsorships"
+        "value": "https://sponsorgap.com/companies-buying-ads-and-sponsorships",
+        "title": "Get your sponsor"
     },
     {
         "added_on": "2020-11-29",
@@ -151,7 +161,8 @@
             "selenium"
         ],
         "type": "url",
-        "value": "https://www.reddit.com/r/Python/comments/k2kbs4/sillynium_auto_generate_working_python_selenium/"
+        "value": "https://www.reddit.com/r/Python/comments/k2kbs4/sillynium_auto_generate_working_python_selenium/",
+        "title": "\"Sillynium\" - Auto generate working Python Selenium scripts by drawing coloured rectangles around web elements on a page that you want to automate : Python"
     },
     {
         "added_on": "2020-11-29",
@@ -162,7 +173,8 @@
             "programming"
         ],
         "type": "url",
-        "value": "https://stackoverflow.com/questions/6976473/what-does-the-term-porcelain-mean-in-git"
+        "value": "https://stackoverflow.com/questions/6976473/what-does-the-term-porcelain-mean-in-git",
+        "title": "terminology - What does the term \"porcelain\" mean in Git? - Stack Overflow"
     },
     {
         "added_on": "2020-11-29",
@@ -175,7 +187,8 @@
             "programming"
         ],
         "type": "url",
-        "value": "https://aws.amazon.com/message/11201/"
+        "value": "https://aws.amazon.com/message/11201/",
+        "title": "Summary of the Amazon Kinesis Event in the Northern Virginia (US-EAST-1) Region"
     },
     {
         "added_on": "2020-11-29",
@@ -188,7 +201,8 @@
             "studying"
         ],
         "type": "url",
-        "value": "https://leetcode.com/discuss/interview-experience/942008/google-l4-zurich-sept-nov-2020-reject"
+        "value": "https://leetcode.com/discuss/interview-experience/942008/google-l4-zurich-sept-nov-2020-reject",
+        "title": "Loading..."
     },
     {
         "added_on": "2020-11-29",
@@ -200,7 +214,8 @@
             "unix"
         ],
         "type": "url",
-        "value": "https://docstore.mik.ua/orelly/unix/upt/ch06_02.htm"
+        "value": "https://docstore.mik.ua/orelly/unix/upt/ch06_02.htm",
+        "title": "[Chapter 6] 6.2 Parent-Child Relationships "
     },
     {
         "added_on": "2020-11-29",
@@ -210,7 +225,8 @@
             "productivity"
         ],
         "type": "url",
-        "value": "https://blog.abnry.online/2020/11/18/digital-file-management.html"
+        "value": "https://blog.abnry.online/2020/11/18/digital-file-management.html",
+        "title": "Digital File Management"
     },
     {
         "added_on": "2020-11-29",
@@ -225,7 +241,8 @@
             "studying"
         ],
         "type": "url",
-        "value": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2017/"
+        "value": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2017/",
+        "title": "Computation Structures | Electrical Engineering and Computer Science | MIT OpenCourseWare"
     },
     {
         "added_on": "2020-11-29",
@@ -240,7 +257,8 @@
             "studying"
         ],
         "type": "url",
-        "value": "https://www.youtube.com/watch?v=c23MThWhXMw"
+        "value": "https://www.youtube.com/watch?v=c23MThWhXMw",
+        "title": "MIT 6.004 L14: Implementing RISC-V Processor in Hardware - YouTube"
     },
     {
         "added_on": "2020-11-29",
@@ -251,7 +269,8 @@
             "programming"
         ],
         "type": "url",
-        "value": "https://blog.sumtypeofway.com/posts/existential-haskell.html"
+        "value": "https://blog.sumtypeofway.com/posts/existential-haskell.html",
+        "title": "\n            adventures in uncertainty: Existential Haskell\n        "
     },
     {
         "added_on": "2020-11-29",
@@ -264,6 +283,7 @@
         ],
         "type": "url",
         "value": "https://github.com/urllib3/urllib3",
+        "title": "GitHub - urllib3/urllib3: Python HTTP library with thread-safe connection pooling, file post support, user friendly, and more."
     },
     {
         "added_on": "2020-11-29",
