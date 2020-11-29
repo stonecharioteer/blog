@@ -12,6 +12,185 @@
         "value": "https://github.com/torfsen/python-systemd-tutorial"
     },
     {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "cicd",
+            "git",
+            "programming",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://gitpython.readthedocs.io/en/stable/index.html"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "fun",
+            "koans",
+            "lisp",
+            "programming"
+        ],
+        "type": "url",
+        "value": "https://github.com/google/lisp-koans"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "programming",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://github.com/phiresky/ripgrep-all"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "advice",
+            "career",
+            "developers"
+        ],
+        "type": "url",
+        "value": "http://paulgraham.com/think.html"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "book-extract",
+            "developers",
+            "kenthompson",
+            "programming",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://github.com/susam/tucl"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "on-writing"
+        ],
+        "type": "url",
+        "value": "https://limitlesscuriosity.com/the-purpose-of-writing/"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "book",
+            "death",
+            "philosophy"
+        ],
+        "type": "url",
+        "value": "https://www.brainpickings.org/2017/08/07/diary-of-alice-james-death/"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "anki",
+            "developers",
+            "learning",
+            "spaced-repetition",
+            "studying"
+        ],
+        "type": "url",
+        "value": "https://www.jackkinsella.ie/articles/Janki-method"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "art",
+            "devtools",
+            "diagram",
+            "drawing",
+            "studying",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://varkor.github.io/blog/2020/11/25/announcing-quiver.html"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "linux",
+            "tools",
+            "unix"
+        ],
+        "type": "factoid",
+        "value": "for determining \u201chow many processes to run\u201d: use `nproc`, don\u2019t `grep` `lscpu` or `/proc/cpuinfo`"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "funding",
+            "meta",
+            "money",
+            "sponsorships"
+        ],
+        "type": "url",
+        "value": "https://sponsorgap.com/companies-buying-ads-and-sponsorships"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "fancy",
+            "followup",
+            "programming",
+            "python",
+            "selenium"
+        ],
+        "type": "url",
+        "value": "https://www.reddit.com/r/Python/comments/k2kbs4/sillynium_auto_generate_working_python_selenium/"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "dev-tools",
+            "git",
+            "programming"
+        ],
+        "type": "url",
+        "value": "https://stackoverflow.com/questions/6976473/what-does-the-term-porcelain-mean-in-git"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "casestudy",
+            "operations",
+            "outage",
+            "production",
+            "programming"
+        ],
+        "type": "url",
+        "value": "https://aws.amazon.com/message/11201/"
+    },
+    {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "algods",
+            "interview",
+            "learning",
+            "leetcode",
+            "studying"
+        ],
+        "type": "url",
+        "value": "https://leetcode.com/discuss/interview-experience/942008/google-l4-zurich-sept-nov-2020-reject"
+    },
+    {
         "added_on": "2020-11-21",
         "repeated_added_on": [
             "2020-11-29"
