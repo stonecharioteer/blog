@@ -19,13 +19,14 @@ not reliant on external services.
 
 ## 2020-11-30
 
-1. [GitHub - emilast/vscode-logfile-highlighter: A Visual Studio Code extension for color highlighting log files](https://github.com/emilast/vscode-logfile-highlighter)
-2. [jinja2 - How to output loop.counter in python jinja template? - Stack Overflow](https://stackoverflow.com/questions/12145434/how-to-output-loop-counter-in-python-jinja-template)
+1. [GitHub - an-tao/drogon: Drogon: A C++14/17 based HTTP web application framework running on Linux/macOS/Unix/Windows](https://github.com/an-tao/drogon)
+2. [GitHub - emilast/vscode-logfile-highlighter: A Visual Studio Code extension for color highlighting log files](https://github.com/emilast/vscode-logfile-highlighter)
+3. [jinja2 - How to output loop.counter in python jinja template? - Stack Overflow](https://stackoverflow.com/questions/12145434/how-to-output-loop-counter-in-python-jinja-template)
 
 ## 2020-11-29
 
-1. [Announcing quiver: a new commutative diagram editor for the web | varkor’s blog](https://varkor.github.io/blog/2020/11/25/announcing-quiver.html)
-2. [Computation Structures | Electrical Engineering and Computer Science | MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2017/)
+1. [Announcing quiver: a new commutative diagram editor for the web \| varkor’s blog](https://varkor.github.io/blog/2020/11/25/announcing-quiver.html)
+2. [Computation Structures \| Electrical Engineering and Computer Science \| MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2017/)
 3. [Digital File Management](https://blog.abnry.online/2020/11/18/digital-file-management.html)
 4. [Get your sponsor](https://sponsorgap.com/companies-buying-ads-and-sponsorships)
 5. [GitHub - google/lisp-koans: Common Lisp Koans is a language learning exercise in the same vein as the ruby koans, python koans and others.   It is a port of the prior koans with some modifications to highlight lisp-specific features.  Structured as ordered groups of broken unit tests, the project guides the learner progressively through many Common Lisp language features.](https://github.com/google/lisp-koans)
@@ -96,7 +97,7 @@ not reliant on external services.
 
 ## 2020-11-01
 
-1. `command` | `tr` can *translate* `stdin` from one format to another.
+1. `command` \| `tr` can *translate* `stdin` from one format to another.
 
 ## 2020-10-31
 
@@ -224,7 +225,7 @@ not reliant on external services.
 1. [Ben Root - Anatomy of Matplotlib](https://youtu.be/rARMKS8jE9g)
 2. [Github Readme Chess](https://github.com/timburgan/timburgan)
 3. [Interactive Github Readme](https://github.com/veggiedefender/typing#)
-4. It is a *lot* faster to use Pandas' filters with the `&` and `|` operators than it is to do a `zip` to combine several conditions into one. If needed, save intermediate dataframes and do `.loc` multiple times instead. That is also a LOT faster. Do not do the `zip` method that uses `any` or `all`.
+4. It is a *lot* faster to use Pandas' filters with the `&` and `\|` operators than it is to do a `zip` to combine several conditions into one. If needed, save intermediate dataframes and do `.loc` multiple times instead. That is also a LOT faster. Do not do the `zip` method that uses `any` or `all`.
 
 ## 2020-09-03
 
@@ -416,13 +417,13 @@ not reliant on external services.
 
 1. [Glitterly Video Editing Tool](https://glitterly.app/)
 2. [Grub Customizer to customize what the grub menu looks like](https://itsfoss.com/grub-customizer-ubuntu/)
-3. [Personal Blog of Matthias Endler](https://endler.dev/)
-4. [The Laws of UX](https://lawsofux.com/)
-5. [`phoronix-test-suite` is a bunch of open source hardware benchmarking tools for all platforms](https://www.phoronix-test-suite.com/)
-6. Linux Kernel 5.8 has a lot of hardware level optimizations.
-7. You can install more than one kernel into a Linux installation and choose which to boot from in Grub.
-8. [](https://liquorix.net/)
-9. [](https://xanmod.org/)
+3. [Liquorix Kernel](https://liquorix.net/)
+4. [Personal Blog of Matthias Endler](https://endler.dev/)
+5. [Releases - XanMod Kernel](https://xanmod.org/)
+6. [The Laws of UX](https://lawsofux.com/)
+7. [`phoronix-test-suite` is a bunch of open source hardware benchmarking tools for all platforms](https://www.phoronix-test-suite.com/)
+8. Linux Kernel 5.8 has a lot of hardware level optimizations.
+9. You can install more than one kernel into a Linux installation and choose which to boot from in Grub.
 
 ## 2020-08-02
 
@@ -433,7 +434,7 @@ not reliant on external services.
 ## 2020-08-01
 
 1. `collections.defaultdict` takes a *type* not a value. It will initialize based on the default value for that type.
-2. `git log --format="%H" -n 1 | cat` outputs the last commit ID.
+2. `git log --format="%H" -n 1 \| cat` outputs the last commit ID.
 3. `nodejs` just uses `process` to get command line arguments.
 
 ## 2020-07-30
