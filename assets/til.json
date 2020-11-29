@@ -243,6 +243,17 @@
         "value": "https://www.youtube.com/watch?v=c23MThWhXMw"
     },
     {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "functional-programming",
+            "haskell",
+            "programming"
+        ],
+        "type": "url",
+        "value": "https://blog.sumtypeofway.com/posts/existential-haskell.html"
+    },
+    {
         "added_on": "2020-11-21",
         "repeated_added_on": [
             "2020-11-29"
