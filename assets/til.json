@@ -264,7 +264,6 @@
         ],
         "type": "url",
         "value": "https://github.com/urllib3/urllib3",
-        "title": "Malicious SHA-1"
     },
     {
         "added_on": "2020-11-29",
