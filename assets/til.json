@@ -169,7 +169,7 @@
         "added_on": "2020-11-29",
         "repeated_added_on": [],
         "categories": [
-            "dev-tools",
+            "devtools",
             "git",
             "programming"
         ],
@@ -941,5 +941,3922 @@
         "type": "url",
         "value": "https://poignant.guide/book/",
         "title": "Why's Poignant Guide to Ruby"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-11-12",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://iis-people.ee.ethz.ch/~gmichi/asocd/lecturenotes/",
+        "title": "Advanced System-On-Chip Lecture Notes"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-11-12",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers",
+        "title": "MDN HTTP Headers"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-11-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/OWASP/CheatSheetSeries",
+        "title": "OWASP Cheat Sheets"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-11-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://owasp.org/www-project-web-security-testing-guide/v41/",
+        "title": "OWASP Web Security Testing Guide"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-11-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://owasp.org/www-project-top-ten/",
+        "title": "OWASP Top 10 Web Application Security Risks"
+    },
+    {
+        "categories": [
+            "course"
+        ],
+        "added_on": "2020-11-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/playlist?list=PLB7540DEDD482705B",
+        "title": "MIT 6.042J - Mathematics for Computer Science"
+    },
+    {
+        "categories": [
+            "course"
+        ],
+        "added_on": "2020-11-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb",
+        "title": "MIT 6.006 - Introduction to Algorithms"
+    },
+    {
+        "categories": [
+            "rfc"
+        ],
+        "added_on": "2020-11-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://tools.ietf.org/html/rfc760",
+        "title": "DoD RFC 760 - Internet Protocol"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-11-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.citusdata.com/blog/2017/07/16/customizing-my-postgres-shell-using-psqlrc/",
+        "title": "Customizing my Postgres shell using psqlrc"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-11-06",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://owasp.org/www-project-secure-headers/",
+        "title": "OWASP Secure Headers"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-11-06",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://devhints.io/http-status",
+        "title": "HTTP Status Codes Cheatsheet"
+    },
+    {
+        "categories": [
+            "python-library"
+        ],
+        "added_on": "2020-11-06",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://secure.readthedocs.io/en/latest/index.html",
+        "title": "`secure.py`"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-11-06",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.manning.com/books/secure-by-design",
+        "title": "Secure by Design - Book on Security best practices by Manning Publications"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-11-06",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/riramar/hsecscan",
+        "title": "`hsecscan` - Python Tool to Check Headers of an API"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-11-06",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://manpages.ubuntu.com/manpages/focal/en/man8/pidof.8.html",
+        "title": "`pidof` can be used to snoop the PID of a process matching a regex."
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-11-03",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "Use `lsof` to scan processes running in a given path."
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-11-03",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "`kill` can take verbose commands, such as `-KILL`, `-TSTP` or `-CONT`. Check `man kill` for more."
+    },
+    {
+        "categories": [
+            "til"
+        ],
+        "added_on": "2020-11-02",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "When running the `selenium/standalone-chrome` ensure that the docker"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-11-02",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "roxy is configured correctly so that it can find the pages it needs to,"
+    },
+    {
+        "categories": [
+            "til"
+        ],
+        "added_on": "2020-11-02",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "Docker images will by default be able to reach any server that the"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-11-02",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://nostarch.com/howlinuxworks2",
+        "title": "How Linux Works by No Starch Code is a good book on the internals of Linux"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-11-01",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "`command` | `tr` can *translate* `stdin` from one format to another."
+    },
+    {
+        "categories": [
+            "til"
+        ],
+        "added_on": "2020-10-31",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "`/dev/urandom` and `/dev/random` can be used to generate random"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-10-10",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/curlpipe/ox",
+        "title": "ox - Text editor written in Rust"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-10-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://viewsourcecode.org/snaptoken/kilo/index.html",
+        "title": "antirez/Kilo - Learn how to write a small text editor in C"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-10-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.philippflenker.com/hecto/",
+        "title": "Hecto - Learn how to write a small text editor in Rust"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-10-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://tauday.com/tau-manifesto/",
+        "title": "The Tau Manifesto - No, Pi is really wrong"
+    },
+    {
+        "categories": [
+            "library"
+        ],
+        "added_on": "2020-10-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://crates.io/crates/crossterm",
+        "title": "Cargo/crossterm"
+    },
+    {
+        "categories": [
+            "library"
+        ],
+        "added_on": "2020-10-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://crates.io/crates/termium",
+        "title": "Cargo/termium"
+    },
+    {
+        "categories": [
+            "library"
+        ],
+        "added_on": "2020-10-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "title": "Cargo/tui",
+        "value": "https://crates.io/crates/tui"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-10-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://typelit.io",
+        "title": "TypeLit.io allows you to practise typing by typing classic novels"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-10-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/prabirshrestha/wilo",
+        "title": "Wilo - Text Editor written in Rust"
+    },
+    {
+        "categories": [
+            "learning-resource"
+        ],
+        "added_on": "2020-10-07",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.freecodecamp.org/news/precalculus-learn-college-math-prerequisites-with-this-free-5-hour-course/amp/?__twitter_impression=true",
+        "title": "Precalculus - Free Course on College Math Prerequisites"
+    },
+    {
+        "categories": [
+            "rfc"
+        ],
+        "added_on": "2020-10-02",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://tools.ietf.org/html/rfc1149",
+        "title": "RFC1149 - Standard for the transmission of IP datagrams on avian carriers"
+    },
+    {
+        "categories": [
+            "rfc"
+        ],
+        "added_on": "2020-10-02",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://tools.ietf.org/html/rfc2549",
+        "title": "RFC2549 - IP over Avian Carriers with Quality of Service"
+    },
+    {
+        "categories": [
+            "learning-resource"
+        ],
+        "added_on": "2020-09-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/mytechnotalent/Python-For-Kids",
+        "title": "Python for Kids"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://joshwcomeau.com/career/remote-work/",
+        "title": "Finding your first remote job - Part 1"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://joshwcomeau.com/career/remote-work-pt2/",
+        "title": "Finding your first remote job - Part 2"
+    },
+    {
+        "categories": [
+            "book-thread"
+        ],
+        "added_on": "2020-09-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/books/comments/iyu3nz/how_facism_works_should_be_part_of_every/",
+        "title": "How Facism Works"
+    },
+    {
+        "categories": [
+            "tip"
+        ],
+        "added_on": "2020-09-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://stackoverflow.com/questions/5711120/gitignore-without-binary-files/25592735#25592735",
+        "title": "How to Ignore binaries withou extensions using gitignore"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://christine.website/blog/TLDR-rust-2020-09-19",
+        "title": "TL:DR Rust"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-09-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://modfy.video/",
+        "title": "WASM Video Compressor/Transcoder"
+    },
+    {
+        "categories": [
+            "learning-resource"
+        ],
+        "added_on": "2020-09-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://learngitbranching.js.org/",
+        "title": "Learn Git Branching (interactively)"
+    },
+    {
+        "categories": [
+            "hearing-loss"
+        ],
+        "added_on": "2020-09-24",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.soundworldsolutions.com/product/personal-sound-amplifier-cs50/",
+        "title": "Personal Sound Amplifier CS50+"
+    },
+    {
+        "categories": [
+            "til"
+        ],
+        "added_on": "2020-09-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://amp.theatlantic.com/amp/photo/392312/",
+        "title": "There are other Pyramids in Africa: The Forgotten Pyramids of Meroe"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.newyorker.com/culture/the-new-yorker-interview/john-cleese-discusses-creativity-political-correctness-monty-python-and-artichokes",
+        "title": "John Cleese discusses creativity, political correctness, Monty Python, and artichokes"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-09-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=Pb5oIIPO62g",
+        "title": "John Cleese on Creativity in management"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://ciofecaforensics.com/2020/09/18/apple-notes-revisited-protobuf/",
+        "title": "Ciofeca Forensics - Revisiting Apple Notes : The Protobuf"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-09-17",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://youtu.be/5hdrW6yEwro",
+        "title": "Miguel Grinberg - Video Conferencing App with Python, Flask and Twilio"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://tex.meta.stackexchange.com/questions/8467/empathy-for-those-who-dont-know-latex-well/8472#8472",
+        "title": "Empathy for those who don't know LaTeX well"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://nedbatchelder.com//blog/202009/how_to_be_helpful_online.html",
+        "title": "Ned Batchelder - How to be Helpful Online"
+    },
+    {
+        "categories": [
+            "blog"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram",
+        "title": "Mango.pdf.zone - Finding Passport Number Online"
+    },
+    {
+        "categories": [
+            "til"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://docs.python.org/3.4/library/functools.html?highlight=singledispatch",
+        "title": "`functools.singledispatch` can be used to created *overloaded* functions in Python, but only for the first argument"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://stackoverflow.com/questions/2354725/what-exactly-is-llvm",
+        "title": "What Exactly is LLVM?"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.aosabook.org/en/index.html",
+        "title": "Architecture of Open Source Applications"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://blog.usejournal.com/writing-your-own-programming-language-and-compiler-with-python-a468970ae6df",
+        "title": "Write your own programmer and compiler with Python"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://csl.name/post/python-jit/",
+        "title": "Writing a basic x86 JIT Compiler from scratch in stock Python"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://belkadan.com/blog/2016/05/So-You-Want-To-Be-A-Compiler-Wizard/",
+        "title": "So You Want to Be a Compiler Wizard"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://lisperator.net/pltut/",
+        "title": "How to implement a programming language in JavaScript"
+    },
+    {
+        "categories": [
+            "til"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://en.wikipedia.org/wiki/Small-C",
+        "title": "Small-C"
+    },
+    {
+        "categories": [
+            "articles"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://notes.eatonphil.com/tags/compiler.html",
+        "title": "Articles on Writing a Compiler"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/joncatanio/cannoli",
+        "title": "Cannoli - A Compiler for a Subset of Python, Written in Rust"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.oilshell.org/",
+        "title": "Oil - An Unix Shell Written in OPy - A Tiny Subset of Python"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=Zm08hXeuv-I",
+        "title": "PyCon AU - Damian George - MicroPython: A Journey from Kickstarter to Space"
+    },
+    {
+        "categories": [
+            "til"
+        ],
+        "added_on": "2020-09-16",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "Python provides *no* way to override the `and` or `or` keywords actions on a new/custom datatype. This is why you get the `ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()` in Pandas (this actually comes from numpy)."
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://blogs.worldbank.org/governance/rosie-robot-social-accountability-one-tweet-time",
+        "title": "Rosie the Robot: Social Accountability, One Tweet at a Time"
+    },
+    {
+        "categories": [
+            "blog"
+        ],
+        "added_on": "2020-09-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://naomiceder.tech/blog/",
+        "title": "Naomi Ceder's Blog"
+    },
+    {
+        "categories": [
+            "design-pattern"
+        ],
+        "added_on": "2020-09-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://en.wikipedia.org/wiki/Visitor_pattern",
+        "title": "Visitor Pattern"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-09-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=WWbZFj-cLvk&app=desktop",
+        "title": "Super Mario Speed Run: Pretty good explanation of the stack, underflows and how Mario works"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-09-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=hB6eY73sLV0",
+        "title": "SNES Code Injection: Flappy Bird in Super Mario World"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://angg.twu.net/miniforth-article.html",
+        "title": "Bootstrapping a FORTH in 40 Lines of Lua Code"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/nornagon/jonesforth/blob/master/jonesforth.S",
+        "title": "A Minimal FORTH Compiler for Linux / i386 Systems"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-09-13",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/huangsam/ultimate-python",
+        "title": "Ultimate Python Study Guide"
+    },
+    {
+        "categories": [
+            "career-resource"
+        ],
+        "added_on": "2020-09-13",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/cscareerquestions/wiki/faq_resumes",
+        "title": "/r/cscareerquestions resume FAQ and Wiki"
+    },
+    {
+        "categories": [
+            "career-resource-thread"
+        ],
+        "added_on": "2020-09-13",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/cscareerquestions/comments/inrex1/ive_reviewed_thousands_of_applications_for/",
+        "title": "Reddit thread from a recruiter"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-12",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://norvig.com/21-days.html",
+        "title": "Peter Norvig - Teach Yourself Programming in 10 Years"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-09-12",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=wvJc9CZcvBc&feature=youtu.be",
+        "title": "Ben Eater - Learn How Computers Add Numbers and Build a 4-bit Added Circuit"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://codewithoutrules.com/2017/08/16/concurrency-python/",
+        "title": "The Tragic Tale of the Deadlocking Python queue"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-09-10",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=fNpsgTIpODA&app=desktop",
+        "title": "How to Market Haskell"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-10",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://gist.github.com/graninas/22ab535d2913311e47a742c70f1d2f2b",
+        "title": "What Killed Haskell Could Kill Rust Too"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-09-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/emeryberger/scalene",
+        "title": "Scalene - Python CPU and Memory Profiler"
+    },
+    {
+        "categories": [
+            "conference-video"
+        ],
+        "added_on": "2020-09-09",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=Ix04KpZiUA8&t=1580s",
+        "title": "James Powell - Fast and Furious Python 7: Writing Fast Python Code"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-05",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://dev.to/ryanameri/mastering-hard-parts-of-javascript-callbacks-i-3aj0",
+        "title": "Mastering the Hard Parts of Javascript"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-09-04",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://youtu.be/rARMKS8jE9g",
+        "title": "Ben Root - Anatomy of Matplotlib"
+    },
+    {
+        "categories": [
+            "til"
+        ],
+        "added_on": "2020-09-04",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "It is a *lot* faster to use Pandas' filters with the `&` and `|` operators than it is to do a `zip` to combine several conditions into one. If needed, save intermediate dataframes and do `.loc` multiple times instead. That is also a LOT faster. Do not do the `zip` method that uses `any` or `all`."
+    },
+    {
+        "categories": [
+            "shiny"
+        ],
+        "added_on": "2020-09-04",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/veggiedefender/typing#",
+        "title": "Interactive Github Readme"
+    },
+    {
+        "categories": [
+            "shiny"
+        ],
+        "added_on": "2020-09-04",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/timburgan/timburgan",
+        "title": "Github Readme Chess"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-09-03",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://kickstartcoding.online/learn/articles/i-converted-reactjs-org-to-use-hooks/",
+        "title": "ReactJS docs with hooks"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-09-03",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://regexr.com/",
+        "title": "Regexr"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-09-03",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://regex101.com/",
+        "title": "Regex101"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-02",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://pbpython.com/effective-matplotlib.html",
+        "title": "Effectively Using Matplotlib"
+    },
+    {
+        "categories": [
+            "game"
+        ],
+        "added_on": "2020-09-01",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/FreeCol/freecol",
+        "title": "OSS Game - FreeCol: A Turn-Based Strategy Game based on Colonization"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-09-01",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://news.ycombinator.com/item?id=16535886",
+        "title": "HN: Best Way to Learn Modern C++"
+    },
+    {
+        "categories": [
+            "game-and-resource"
+        ],
+        "added_on": "2020-09-01",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://www.flexboxdefense.com/",
+        "title": "FlexBox Defense"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-09-01",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/headcrab-rs/headcrab",
+        "title": "Headcrab: Rust Debugging Library"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-09-01",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/norvig/pytudes",
+        "title": "Peter Norvig - PyTudes: Python Programs of Considerable Difficulty to Perfect Particular Skills"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-09-01",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.karllhughes.com/posts/engineers-should-write",
+        "title": "The One Reason SW Developers Should Write"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-31",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/peterbrittain/asciimatics",
+        "title": "Asciimatics: Full Screen `ncurses` Animations and Effects in Python"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-31",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/urwid/urwid",
+        "title": "urwid - Console UI Library for Python"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-08-31",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/rigtorp/awesome-lockfree",
+        "title": "Awesome Lock-Free: Resources on Wait-Lock and Lock-Free Programming"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-31",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.newline.co/fullstack-d3",
+        "title": "Fullstack D3 and Data Visualization"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-31",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/ranger/ranger",
+        "title": "Ranger - Vim-inspired File Manager for the Console"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-08-31",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://explained-from-first-principles.com/internet/",
+        "title": "The Internet Explained from First Principles"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-31",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://eopl3.com/",
+        "title": "Essentials of Programming Languages"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/syaffers/maildist/blob/master/MailDist.ipynb",
+        "title": "Visualizing Daily Promotional Email Distribution"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://l.kehn.io/2g2k312S2O0H",
+        "title": "Software Commit Distribution Over 8 Years"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://belkadan.com/blog/2020/08/Objective-Rust/",
+        "title": "Objective Rust"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://vim-adventures.com/",
+        "title": "Learn VIM While Playing a Game"
+    },
+    {
+        "categories": [
+            "til"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://en.m.wikipedia.org/wiki/Cobra_effect",
+        "title": "The Cobra Effect"
+    },
+    {
+        "categories": [
+            "anecdote"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.folklore.org/StoryView.py?project=Macintosh&story=Negative_2000_Lines_Of_Code.txt&sortOrder=Sort%20by%20Date&detail=medium",
+        "title": "-2000 Lines of Code"
+    },
+    {
+        "categories": [
+            "game"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://www.lordofthemanor.io/",
+        "title": "Lord of the Manor: OSS Game"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://webrtcforthecurious.com/",
+        "title": "Web RTC For the Curious"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/hoffstadt/DearPyGui",
+        "title": "DearPyGUI: GPU Acceleration Python GUI Framework"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://rustc-dev-guide.rust-lang.org/",
+        "title": "RustC Development Guide"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/dexterleng/vimac/",
+        "title": "Vimium for macOS"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-29",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.agner.org/forum/viewtopic.php?t=41",
+        "title": "Surprising New Features in AMD Ryzen 3000"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-29",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://ai.eecs.umich.edu/people/conway/RetrospectiveT.html",
+        "title": "Lynn Conway's Career Retrospective"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-28",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://camlorn.net/posts/April%202017/rust-struct-field-reordering/",
+        "title": "Optimizing Rust Struct Size: A 6 Month Compiler Development Program"
+    },
+    {
+        "categories": [
+            "mac",
+            "apple",
+            "gatekeeper"
+        ],
+        "added_on": "2020-08-28",
+        "repeated_added_on": [],
+        "type": "url",
+        "title": "Disabling Gatekeeper and allow apps from anywhere on MacOS Sierra (TLDR: Run `sudo spctl --master-disable` and be prepared for an email from corporate IT)",
+        "value": "https://www.techjunkie.com/gatekeeper-macos-sierra/"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://cedaei.com/posts/vim-like-layer-for-xorg-wayland/",
+        "title": "Vim-like Layer for Xorg and Wayland"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://observablehq.com/@d3/learn-d3",
+        "title": "Learn D3: Introduction"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://observablehq.com/@d3/gallery",
+        "title": "D3Js Observerable Gallery Notebook"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://observablehq.com/@d3/selection-join",
+        "title": "D3 Selection Join"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://bost.ocks.org/mike/join/",
+        "title": "D3: Thinking With Joins"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-26",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://danluu.com/navigate-url/",
+        "title": "What Happens When You Load an URL?"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-26",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://ocaml.xyz/book/",
+        "title": "OCaml Scientific Computing"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-26",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://evilmartians.com/chronicles/hands-on-webassembly-try-the-basics",
+        "title": "Hands-on Web Assembly: Try the Basics - Martian Chronicles"
+    },
+    {
+        "categories": [
+            "vscode"
+        ],
+        "added_on": "2020-08-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://marketplace.visualstudio.com/items?itemName=howardzuo.vscode-favorites",
+        "title": "Howard Zue - Favorites Plugin"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://calpaterson.com/async-python-is-not-faster.html",
+        "title": "Async Python is Not Better"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.nushell.sh/",
+        "title": "NuShell is a shell written in Rust"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://josh.works/better-questions",
+        "title": "How to ask questions of experts and gain more than just an answer"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://blog.learngoprogramming.com/golang-const-type-enums-iota-bc4befd096d3",
+        "title": "Golang Cost Type Enums"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://go101.org",
+        "title": "Go 101"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-08-25",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/jeffzh4ng/algorithms-and-data-structures",
+        "title": "Algorithms and Data Structures implemented in TypeScript with Video lectures"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-24",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://glyph.twistedmatrix.com/2020/08/never-run-python-in-your-downloads-folder.html",
+        "title": "Never Run `python` in your Downloads folder"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-24",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://staysaasy.com/management/2020/08/01/Growth-Paths.html",
+        "title": "Grow Skills with Work not Extra-Curriculars"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-24",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/rust-shell-script/rust_cmd_lib",
+        "title": "Rust Command Line Macros and Utilities"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-24",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.lazarus-ide.org/",
+        "title": "Lazarus IDE for Free Pascal"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-23",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://joeyh.name/code/moreutils/",
+        "title": "`moreutils` - Additional Commands for Linux Daily Use"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-23",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.howtogeek.com/428654/how-to-monitor-the-progress-of-linux-commands-with-pv-and-progress/",
+        "title": "`pv` is a tool to redirect Linux STDIN and add an event to it. There's also `progress`."
+    },
+    {
+        "categories": [
+            "resources"
+        ],
+        "added_on": "2020-08-22",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.fast.ai/2020/08/21/fastai2-launch/",
+        "title": "Fast.ai Deep Learning Course and Book"
+    },
+    {
+        "categories": [
+            "language"
+        ],
+        "added_on": "2020-08-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://elena-lang.github.io/",
+        "title": "Elena Programming Language"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://news.ycombinator.com/item?id=24201754",
+        "title": "Pony: Lock-less data-race-free concurrency"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://netflix.github.io/conductor/",
+        "title": "Netflix Conductor Workflows"
+    },
+    {
+        "categories": [
+            "articles"
+        ],
+        "added_on": "2020-08-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://magcius.github.io/xplain/article/",
+        "title": "Explanations on the X11 Window System and Protocol (and other errata)"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-08-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/linuxhardware/comments/icoc6c/telemetry_in_linux_and_bsd_why_is_it_important/",
+        "title": "Telemetry in Linux and BSD"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://medium.com/@magesh_n/running-selenium-tests-on-docker-containers-3e4a08802bf1",
+        "title": "Running Selenium Tests on Docker Containers"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-08-19",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://httpstatuses.com/",
+        "title": "HTTP Status Code Cheatsheet"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-19",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://http.cat/",
+        "title": "HTTP API for Cats"
+    },
+    {
+        "categories": [
+            "concept"
+        ],
+        "added_on": "2020-08-19",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://en.m.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence",
+        "title": "Chesterton's Fence - Implementations might exist for a reason."
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-19",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.nerves-project.org/",
+        "title": "Nerves: Add Agility to your IoT Development Cycle"
+    },
+    {
+        "categories": [
+            "elixir"
+        ],
+        "added_on": "2020-08-19",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://gitlab.com/Nicd/ex_speed_game/",
+        "title": "Implementation of a Retro Finnish Game in Elixir"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://kowainik.github.io/posts/haskell-mini-patterns",
+        "title": "Haskell Mini Patterns"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://blog.rust-lang.org/2020/08/18/laying-the-foundation-for-rusts-future.html",
+        "title": "Laying the Foundation for Rust's Future"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.muchskills.com/playbooks/check-ins",
+        "title": "Playbooks: A Manager's Essential Guide to Holding Regular Check-Ins"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://cse.buffalo.edu/faculty/atri/courses/coding-theory/book/web-coding-book.pdf",
+        "title": "Essential Coding Theory - Guruswami, Rudra, Madhusudan Dept CSE @ Buffalo"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://caml.inria.fr/pub/docs/u3-ocaml/index.html",
+        "title": "Using, Understanding, and Unravelling the OCaml Language from Practice to Theory and Vice-Versa"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://dev.realworldocaml.org/",
+        "title": "Real World OCaml"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/codesections/mnemonic",
+        "title": "Mnemonic - CLI App for remembering"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/cheat/cheat",
+        "title": "`cheat` is a command to make and use a global pool of *offline* cheatsheets"
+    },
+    {
+        "categories": [
+            "blog"
+        ],
+        "added_on": "2020-08-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://fasterthanli.me/",
+        "title": "Amos Loves to Tinker - Blog on Computers and Rust"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://justinmeiners.github.io/lc3-vm/",
+        "title": "Write your own Virtual Machine"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-08-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youneedabudget.com/",
+        "title": "You Need a Budget"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-08-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.sfml-dev.org/",
+        "title": "SFML - Simple and Fast Multimedia Library"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://www.cs.yale.edu/homes/perlis-alan/quotes.html",
+        "title": "Epigrams in Programming by Alan Perlis"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-08-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=_ahvzDzKdB0&feature=youtu.be",
+        "title": "Growing a Language by Guy Steele"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-08-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=jlPaby7suOc&feature=youtu.be",
+        "title": "Every Clojure Talk Ever - Alex Engelberg and Derek Slager"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-08-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/dataisbeautiful/comments/i8saks/ive_been_taking_stock_market_chart_and_turning/",
+        "title": "Stock Market Chart Landscape Art"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-08-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://roadmap.sh/",
+        "title": "Developer Roadmap"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.amazon.in/Structures-J-Gordon/dp/0306812835/ref=sr_1_1?crid=XOO26UJ0TC0X&dchild=1&keywords=structures+or+why+things+don%27t+fall+down&qid=1597327321&sprefix=structure%2Caps%2C284&sr=8-1",
+        "title": "J. E. Gordon - Structures: Or Why Things Don't Fall Down"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-12",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://sourcelevel.io/blog/3-classic-books-for-tech-leads-or-those-aspiring-to-be",
+        "title": "Books for Tech Leads"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-12",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.kateheddleston.com/blog/becoming-a-10x-developer",
+        "title": "Becoming a 10x Developer"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-12",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.deprocrastination.co/blog/how-to-stop-procrastinating-by-using-the-fogg-behavior-model",
+        "title": "How to Stop Procrastinating by Using the Fogg Behavior Model"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-12",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/saschagrunert/webapp.rs",
+        "title": "How to build a web application completely in Rust"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-12",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://prismjs.com/plugins/diff-highlight/",
+        "title": "Diff Highlight Tool for Javascript"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/",
+        "title": "SPAs using Rust"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.2daygeek.com/how-to-check-user-login-history-in-linux-using-last-lastb-lastlog-command/",
+        "title": "Use `last` to check login history in Linx"
+    },
+    {
+        "categories": [
+            "language"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://www.arclanguage.org/",
+        "title": "`arc` is a Programming Language written in `Racket`"
+    },
+    {
+        "categories": [
+            "finding"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "HN Server is implemented in `arc`"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://stackoverflow.com/questions/2114819/why-is-the-lisp-community-so-fragmented",
+        "title": "Why are there so many implementations of Lisp?"
+    },
+    {
+        "categories": [
+            "language"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www-sop.inria.fr/mimosa/fp/Bigloo/",
+        "title": "Bigloo Lisp Implementation"
+    },
+    {
+        "categories": [
+            "language"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.gnu.org/software/guile/",
+        "title": "`guile` Programming Language"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://wingolog.org/archives/2020/06/03/a-baseline-compiler-for-guile",
+        "title": "A Baseline compuler for `guile`"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/",
+        "title": "Bartosz Milewski - Category Theory for Programmers"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://wingolog.org/",
+        "title": "Wingolog"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/mngu2382/sicp",
+        "title": "Structure and Interpretation of Computer Programs"
+    },
+    {
+        "categories": [
+            "github"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/joshtronic/donate",
+        "title": "List of Donations to OSS"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://htdp.org/2003-09-26/Book/",
+        "title": "How to Design Programs"
+    },
+    {
+        "categories": [
+            "language"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/gambit/gambit",
+        "title": "The `gambit` `scheme` system"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://unix.stackexchange.com/questions/468909/what-does-process-accounting-mean-in-linux",
+        "title": "What does Process Accounting mean in Linux"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://natanyellin.com/posts/tracking-running-processes-on-linux/",
+        "title": "The Difficulties of Tracking Running Processes on Linux"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-08-11",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/devops/comments/i76cyj/what_is_the_correct_way_to_learn_linux_internals/",
+        "title": "The Correct Way to Learn Linux Internals"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://dystroy.org/broot/install/",
+        "title": "`broot` is a better alternative to `tree` written in Rust."
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-08-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://sarabander.github.io/sicp/html/index.xhtml",
+        "title": "Structure and Interpretation of Computer Programs"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-08-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/ITCareerQuestions/comments/i669yn/ive_been_in_tech_for_8_years_and_dont_know_shit/",
+        "title": "Linux Networking"
+    },
+    {
+        "categories": [
+            "resources"
+        ],
+        "added_on": "2020-08-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/dufferzafar/geeksforgeeks.pdf/releases",
+        "title": "Geeks for Geeks PDFs"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/ResidentMario/missingno",
+        "title": "`missingno` can be used to visualize missing data in Python"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://samza.apache.org/",
+        "title": "Apache `Samza`"
+    },
+    {
+        "categories": [
+            "resources"
+        ],
+        "added_on": "2020-08-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/madd86/awesome-system-design",
+        "title": "Awesome System Design"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/batchcorp/plumber",
+        "title": "`plumber` is a CLI for Kafka, RabbitMQ and other messaging systems"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/MichaelMure/mdr",
+        "title": "`mdr` Renders Markdown in the Terminal"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-08",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://git.sr.ht/~chiefnoah/origin/tree/master/README.md",
+        "title": "`origin` is a monitoring and alert server based on `ZeroMQ` and `JSON` messaging"
+    },
+    {
+        "categories": [
+            "python",
+            "error-handling"
+        ],
+        "added_on": "2020-08-06",
+        "repeated_added_on": [],
+        "type": "url",
+        "title": "Python's `raise` statement has a `from` clause, to preserve full tracebacks.",
+        "value": "https://stackoverflow.com/questions/24752395/python-raise-from-usage"
+    },
+    {
+        "categories": [
+            "rtfm",
+            "documentation",
+            "python",
+            "error-handling"
+        ],
+        "added_on": "2020-08-06",
+        "repeated_added_on": [],
+        "type": "url",
+        "title": "The Python `raise` statement",
+        "value": "https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement"
+    },
+    {
+        "categories": [
+            "tidbit"
+        ],
+        "added_on": "2020-08-05",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "You can install more than one kernel into a Linux installation and choose which to boot from in Grub."
+    },
+    {
+        "categories": [
+            "tool",
+            "kernel",
+            "linux"
+        ],
+        "added_on": "2020-08-05",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://xanmod.org/"
+    },
+    {
+        "categories": [
+            "tool",
+            "kernel",
+            "linux"
+        ],
+        "added_on": "2020-08-05",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://liquorix.net/"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-08-05",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "Linux Kernel 5.8 has a lot of hardware level optimizations."
+    },
+    {
+        "categories": [
+            "linux",
+            "grub",
+            "tools",
+            "devtools"
+        ],
+        "added_on": "2020-08-05",
+        "repeated_added_on": [],
+        "type": "url",
+        "title": "Grub Customizer to customize what the grub menu looks like",
+        "value": "https://itsfoss.com/grub-customizer-ubuntu/"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-08-05",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://lawsofux.com/",
+        "title": "The Laws of UX"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-08-05",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://glitterly.app/",
+        "title": "Glitterly Video Editing Tool"
+    },
+    {
+        "categories": [
+            "blog"
+        ],
+        "added_on": "2020-08-05",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://endler.dev/",
+        "title": "Personal Blog of Matthias Endler"
+    },
+    {
+        "categories": [
+            "tools",
+            "sysadmin",
+            "performance",
+            "benchmarking"
+        ],
+        "added_on": "2020-08-05",
+        "repeated_added_on": [],
+        "type": "url",
+        "title": "`phoronix-test-suite` is a bunch of open source hardware benchmarking tools for all platforms",
+        "value": "https://www.phoronix-test-suite.com/"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-08-02",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "Juju is a tool that helps manage server providers, whether they are GCP, AWS, your own servers or Azure, among others, giving you one way to start, setup and run your servers."
+    },
+    {
+        "categories": [],
+        "added_on": "2020-08-02",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "Juju's configurations are called charms. These are written in Python."
+    },
+    {
+        "categories": [],
+        "added_on": "2020-08-02",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "EC2 has a Free tier! I can request a bunch of machines here."
+    },
+    {
+        "categories": [
+            "tidbit"
+        ],
+        "added_on": "2020-08-01",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "`git log --format=\"%H\" -n 1 | cat` outputs the last commit ID."
+    },
+    {
+        "categories": [
+            "tidbit"
+        ],
+        "added_on": "2020-08-01",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "`collections.defaultdict` takes a *type* not a value. It will initialize based on the default value for that type."
+    },
+    {
+        "categories": [
+            "tidbit"
+        ],
+        "added_on": "2020-08-01",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "`nodejs` just uses `process` to get command line arguments."
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://serverfault.com/questions/124517/whats-the-difference-between-unix-socket-and-tcp-ip-socket",
+        "title": "Unix Domain Sockets are \"sockets\" on a single machine. This is what gunicorn uses. Thread on Unix Sockets vs Networking Sockets"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.tecmint.com/explanation-of-everything-is-a-file-and-types-of-files-in-linux/#:~:text=If%20you%20are%20new%20to,%2C%20everything%20is%20a%20File%E2%80%9D.&text=That%20is%20in%20fact%20true,is%20considered%20as%20a%20file.",
+        "title": "Everything in Linux is a File"
+    },
+    {
+        "categories": [
+            "thread",
+            "linux",
+            "file-management",
+            "file-systems",
+            "unix"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "title": "Everything is a File. Note: See the `ISSOCK` check.",
+        "value": "https://unix.stackexchange.com/a/225542"
+    },
+    {
+        "categories": [
+            "thread",
+            "linux",
+            "unix",
+            "python",
+            "socket"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://stackoverflow.com/questions/17877296/checking-if-path-is-a-socket-in-python-2-7",
+        "title": "Use `os.stat(path).st_mode.S_ISSOCK` to check if a file is a socket"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "A TCP Request also has a port on the client"
+    },
+    {
+        "categories": [
+            "thought"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "UAT's should not be run in CICDs, it should be done completely external to the setup and bringing up an application."
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://linuxhint.com/install_osquery_ubuntu/",
+        "title": "`osquery` is a tool to snoop around a Linux system's OS in an SQL syntax"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://recompilermag.com/issues/issue-1/ssl-its-hard-to-do-right/",
+        "title": "Karla Burnett - SSL: It's hard to do right"
+    },
+    {
+        "categories": [
+            "paper"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://storage.googleapis.com/pub-tools-public-publication-data/pdf/44824.pdf",
+        "title": "Maglev: Google's Custom Load Balancer"
+    },
+    {
+        "categories": [
+            "paper"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://storage.googleapis.com/pub-tools-public-publication-data/pdf/16cb30b4b92fd4989b8619a61752a2387c6dd474.pdf",
+        "title": "MapReduce: Simplified Data Processing on Large Clusters"
+    },
+    {
+        "categories": [
+            "paper"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://research.google/pubs/",
+        "title": "Google Technical Publications"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://lwan.ws/",
+        "title": "`lwan` - Lightweight Asynchronous Multi-Threaded Event-Based Web-Server"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://www.cs.jhu.edu/~jason/advice/how-to-read-a-paper.html",
+        "title": "How to Read a Technical Paper"
+    },
+    {
+        "categories": [
+            "paper"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://ccr.sigcomm.org/online/files/p83-keshavA.pdf",
+        "title": "S. Keshav - How to Read a Paper"
+    },
+    {
+        "categories": [
+            "blog"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://blog.acolyer.org/",
+        "title": "The Morning Paper: Blog on Reading a CS Paper Every Week"
+    },
+    {
+        "categories": [
+            "rtfm"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://docs.docker.com/config/containers/container-networking/",
+        "title": "Container Networking"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://jvns.ca/blog/2016/07/14/whats-sni/",
+        "title": "Julia Evans: How do HTTP Requests Get Sent to the Right Place?"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://jvns.ca/blog/2017/06/04/learning-about-kubernetes/",
+        "title": "Julia Evans: A Few Things I've Learnt about Kubernetes"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://jvns.ca/blog/2018/03/05/things-ive-learned-networking/",
+        "title": "Julia Evans: A Few Things I've Learnt about Computer Networking"
+    },
+    {
+        "categories": [
+            "blog"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://kamalmarhubi.com",
+        "title": "Kamal Marhubi"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://kamalmarhubi.com/blog/2015/08/27/what-even-is-a-kubelet/",
+        "title": "Kamal Marhubi - Kubernetes from the Ground Up: What Even is a Kubelet"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://kamalmarhubi.com/blog/2015/09/06/kubernetes-from-the-ground-up-the-api-server/",
+        "title": "Kamal Marhubi - Kubernetes from the Ground Up: the API Server"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://kamalmarhubi.com/blog/2015/11/17/kubernetes-from-the-ground-up-the-scheduler/",
+        "title": "Kamal Marhubi - Kubernetes from the Ground Up: The Scheduler"
+    },
+    {
+        "categories": [
+            "video"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=sK5i-N34im8&feature=youtu.be",
+        "title": "J\u00e9r\u00f4me Petazzoni - Cgroups, namespaces, and beyond: what are containers made from?"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://blog.jessfraz.com/post/the-brutally-honest-guide-to-docker-graphdrivers/",
+        "title": "Brutally Honest Guide to Docker Graphdrivers"
+    },
+    {
+        "categories": [
+            "blog"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.harihareswara.net/ces.shtml",
+        "title": "Sumana Harihareshwara"
+    },
+    {
+        "categories": [
+            "speech"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=a1zDuOPkMSw",
+        "title": "Richard Hamming - You and Your Research"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.amazon.com/Art-Doing-Science-Engineering-Learning/dp/1732265178",
+        "title": "Richard Hamming - The Art of Doing Science and Engineering"
+    },
+    {
+        "categories": [
+            "blog"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://paulgraham.com/",
+        "title": "Paul Graham - Co-Founder of Y Combinator"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-30",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://www.paulgraham.com/procrastination.html",
+        "title": "Paul Graham - Good and Bad Procrastination"
+    },
+    {
+        "categories": [
+            "rtfm"
+        ],
+        "added_on": "2020-07-28",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.kernel.org/doc/Documentation/cpu-freq/boost.txt",
+        "title": "Disabling Turbo Boost on AMD Laptops"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-07-28",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=79phqVpE7cU&feature=youtu.be",
+        "title": "Gary Explains: Rust: What is Ownership and Borrowing?"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-28",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://dmwit.com/volume/",
+        "title": "Adding a Volume Control to xmonad"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-28",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://neugierig.org/software/ghosd/",
+        "title": "Ghosd - Transparent System Notifications"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-28",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/iberianpig/fusuma",
+        "title": "Fusuma for Mouse Gestures in Linux"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-28",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://italolelis.com/posts/multitouch-gestures-ubuntu-fusuma/",
+        "title": "How to Use Fusuma"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-07-28",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/getdisciplined/comments/1q96b5/i_just_dont_care_about_myself/cdah4af/",
+        "title": "4 Rules to Getting Better"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://medium.com/@najeem/analyzing-my-google-photos-library-with-python-and-pandas-bcb746c2d0f2",
+        "title": "Najeem's article on Analysing Google Photos"
+    },
+    {
+        "categories": [
+            "rtfm"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.kernel.org/doc/html/",
+        "title": "Linux Kernel Documentation"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://launchpad.net/cubic",
+        "title": "Cubic is a tool to make customized Ubuntu or Linux Mint images"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/pimlie/ubuntu-mainline-kernel.sh",
+        "title": "`ubuntu-mainline-kernel.sh` is a tool to update or manage the Kernel version with ease"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/lwfinger/rtl8188eu",
+        "title": "Drivers for TP-Link Wifi Dongles"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/FlyGoat/RyzenAdj",
+        "title": "RyzenAdj is a tool to adjust AMD's Ryzen processor settings"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/clbr/radeontop",
+        "title": "`radeontop` is not quite `nvidia-smi` but it is something, for now"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/linuxquestions/comments/af8sdl/something_as_sophisticated_as_nvidiasmi_or_nvtop/",
+        "title": "Trying to find `nvidia-smi` for AMD Radeon Cards"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.manning.com/books/tiny-python-projects?a_aid=bnpodcasts&utm_source=rss&utm_medium=rss#toc",
+        "title": "Tiny Python Projects"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://news.ycombinator.com/item?id=23967016",
+        "title": "Writing a file system in Rust"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://news.ycombinator.com/item?id=23966752",
+        "title": "Data Science Interview Questions in Python and SQL"
+    },
+    {
+        "categories": [
+            "course"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.schoolofhaskell.com/user/bartosz/basics-of-haskell",
+        "title": "Bartosz Milewski - School of Haskell"
+    },
+    {
+        "categories": [
+            "course"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/raviksharma/bartosz-basics-of-haskell",
+        "title": "Code and Exercises from Bartosz's School of Haskell"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.kardius.com/",
+        "title": "Kardius - Find People Like You Near You"
+    },
+    {
+        "categories": [
+            "thead"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://news.ycombinator.com/item?id=23960062",
+        "title": "HN Comment on How CLIs Work"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/takikawa/sweet-racket",
+        "title": "Sweet Expressions For Racket"
+    },
+    {
+        "categories": [
+            "course"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "title": "Coursera - Programming Languages [Course A]",
+        "value": "https://www.coursera.org/learn/programming-languages"
+    },
+    {
+        "categories": [
+            "course"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "title": "Coursera - Programming Languages [Course B]",
+        "value": "https://www.coursera.org/learn/programming-languages-part-b"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://news.ycombinator.com/item?id=23132621",
+        "title": "Racketlang is 25"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://news.ycombinator.com/item?id=22699176",
+        "title": "DashMap - Fast, Concurrent Hashmap in Rust"
+    },
+    {
+        "categories": [
+            "thread"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://news.ycombinator.com/item?id=22541925",
+        "title": "A GPU Hash Table"
+    },
+    {
+        "categories": [
+            "book"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.theschooloflife.com/shop/tsol-press-a-job-to-love/",
+        "title": "A Job To Love"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.theschooloflife.com/thebookoflife/what-should-truly-motivate-us-at-work/",
+        "title": "What Should Truly Motivate Us At Work"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/dandavison/delta",
+        "title": "A Viewer for Git and Diff Output"
+    },
+    {
+        "categories": [
+            "article"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://gist.githubusercontent.com/manojpandey/41b90cba1fd62095e247d1b2448ef85b/raw/0413c4805336b8030efc7de1e9fa0e229ca9903d/gotchas.md",
+        "title": "Attack of Pythons : Gotchas"
+    },
+    {
+        "categories": [
+            "rtfm"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://docs.python-guide.org/writing/gotchas/#late-binding-closures",
+        "title": "Python Gotchas"
+    },
+    {
+        "categories": [
+            "tool"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.featuretools.com/",
+        "title": "Featuretools: Python Framework for Automated Feature Engineering"
+    },
+    {
+        "categories": [
+            "blog"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/pretzelhammer/rust-blog/blob/master/posts/learning-rust-in-2020.md",
+        "title": "Learning Rust in 2020"
+    },
+    {
+        "categories": [
+            "course"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://adventofcode.com/",
+        "title": "Advent of Code is a bunch of programming exercises that are more fun than Leetcode, with annual sprints"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/bcmyers/aoc2019",
+        "title": "BurntSushi's Rust Solutions to Advent of Code 2018"
+    },
+    {
+        "categories": [
+            "resource"
+        ],
+        "added_on": "2020-07-27",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/bcmyers/aoc2019",
+        "title": "bcmyers's Rust Solutions to Advent of Code 2019"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-26",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "`arandr` is a great frontend for `xrandr`, a tool to set monitor configs in tiling window managers."
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-26",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "Debian Content Indices are interesting.]"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-26",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "The `sorted` function in Python has a `reverse` flag."
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-26",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "`collections.defaultdict` is amazing and has a slightly better performance than checking `{}.get`"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-24",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "`pihole`'s Faster than light engine is a fork of dnsmasq"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-24",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "`argparse` *does* support sub-commands"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-23",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://dash.plotly.com/testing",
+        "title": "It is possible to memoize dash callback responses with flask-caching"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-23",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "pytest-dash has been abandoned since the official dash repo supports selenium via pytest now"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-23",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "Always ensure that the dash registration in a Flask-Dash app is configurable. Might want to not load dash when testing backend only."
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-22",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://endler.dev/2020/rust-compile-times/",
+        "title": "Tips for faster Rust Compile Times"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://docs.pytest.org/en/stable/usage.html#modifying-python-traceback-printing",
+        "title": "pytest has a flag to hide traceback `--tb=no`, useful with `entr`"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://dash.plotly.com/testing",
+        "title": "Testing Dash Applications using Pytest and Selenium"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.udemy.com/scratch-game-programming/",
+        "title": "Al Sweigart - Scratch Course on Udemy"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/ahmetb/kubectx",
+        "title": "`kubectx` is a wrapper around `kubectl` and allows configuring namespaces"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://www.sheshbabu.com/posts/rust-module-system/",
+        "title": "Rust's Module System"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/fpereiro/backendlore",
+        "title": "How I write Backends"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://news.ycombinator.com/item?id=23903737",
+        "title": "Essays on Programmings"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/",
+        "title": "System Design for Advanced Beginners"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://blog.alexellis.io/tag/raspberry-pi/",
+        "title": "Alex Ellis's Blog"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/engineering/comments/huu38v/made_an_8bit_cpu_if_youve_ever_wondered_how_a/",
+        "title": "Made a 8-bit CPU"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://docs.pi-hole.net/guides/unbound/",
+        "title": "Pi-Hole Unbound"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/pihole/comments/dezyvy/into_the_pihole_you_should_go_8_months_later/",
+        "title": "Pi-Hole Tips"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.waveshare.com/5.65inch-e-paper-module-f.htm",
+        "title": "Waveshare released a 7 color e-ink display"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/NerdyPepper/dijo",
+        "title": "Dijo - Terminal Habit Tracker written in Rust"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.reddit.com/r/unixporn/comments/dekj2i/oc_a_spotify_terminal_user_interface_written_in/",
+        "title": "Spotify TUI written in Rust"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-21",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.berglas.org/Articles/ImportantThatSoftwareFails/ImportantThatSoftwareFails.html",
+        "title": "Computer Productivity: Why it is important that software projects fail"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://stackoverflow.com/questions/62796591/breakpoint-in-except-clause-doesnt-have-access-to-the-bound-exception",
+        "title": "Python: `breakpoint` in empty `except` clause does not have access to the bound exception even if it is aliased"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/lecture-videos/",
+        "title": "MIT OCW: Statistics for Applications"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/microsoft/ailab",
+        "title": "Microsoft AI Lab"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/gmplot/gmplot",
+        "title": "Matplotlib for Google Maps"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/jwasham/coding-interview-university",
+        "title": "Github Coding Interview University"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/ossu/computer-science",
+        "title": "ossu Computer Science Curriculum"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/MaximAbramchuck/awesome-interview-questions",
+        "title": "Awesome Interview Questions"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/trimstray/the-book-of-secret-knowledge",
+        "title": "The Book of Secret Knowledge (CLIs, tools, manuals, cheatsheets etc)"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/dypsilon/frontend-dev-bookmarks",
+        "title": "Frontend Dev Bookmarks"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/binhnguyennus/awesome-scalability",
+        "title": "Patterns of Scalability"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/LisaDziuba/Awesome-Design-Tools",
+        "title": "Awesome Design Tools"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/alebcay/awesome-shell",
+        "title": "Awesome Shell"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/lukasz-madon/awesome-remote-job",
+        "title": "Awesome Remote Job"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/viatsko/awesome-vscode",
+        "title": "Awesome VS Code"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/veggiemonk/awesome-docker",
+        "title": "Awesome Docker"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/rust-unofficial/awesome-rust",
+        "title": "Awesome Rust"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/AllThingsSmitty/css-protips",
+        "title": "Awesome CSS Protips"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/SpaceVim/SpaceVim",
+        "title": "Space Vim"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/enaqx/awesome-pentest",
+        "title": "Awesome Penetration Test"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/gztchan/awesome-design",
+        "title": "Awesome Design Resources"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/kdeldycke/awesome-falsehood",
+        "title": "Awesome Programming Falsehoods"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/mhinz/vim-galore",
+        "title": "Vim Galore"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-20",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=KJRIR5vuNIQ",
+        "title": "Golang Bangalore Meetup 56"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://en.wikipedia.org/wiki/Cyclomatic_complexity",
+        "title": "Cyclomatic Complexity of Code or McCabe Complexity"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/pycqa/mccabe",
+        "title": "mccabe is a Python module to analyse the McCabe's Complexity for a Python module or file"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/pyutils/line_profiler",
+        "title": "Python line-profiler"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/zhuyifei1999/guppy3",
+        "title": "Python Guppy / Heapy for Profiling Code"
+    },
+    {
+        "categories": [
+            "devtools",
+            "tools",
+            "programming"
+        ],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/clibs/entr",
+        "title": "`entr` for running commands in posix systems when file(s) change"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://pypi.org/project/pylint-flask/",
+        "title": "pylint-flask"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://pypi.org/project/pylint-flask-sqlalchemy/",
+        "title": "pylint-flask-sqlalchemy"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/microsoft/terminal",
+        "title": "windows terminal"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://www.youtube.com/watch?v=eVYdPdvS2nQ",
+        "title": "BangPypers Meetup Youtube Link - Code Quality, Interfaces, Complexity and Unit Testing"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://prospector.landscape.io",
+        "title": "Python Static Code analysis with Prospector"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://pypi.org/project/isort/",
+        "title": "Python isort for sorting imports automatically"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/PyCQA",
+        "title": "Python Code Quality Authority"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/abhiramr/pyquality",
+        "title": "Python Quality Link by Abhiram"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://realpython.com/cpython-source-code-guide/",
+        "title": "CPython Internals RealPython Article by Anthony Shaw"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://realpython.com/products/cpython-internals-book/",
+        "title": "CPython Internals Book by Anthony Shaw"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://intopythoncom.files.wordpress.com/2017/04/internalsofcpython3-6-1.pdf",
+        "title": "Internals of CPython by Prashanth Raghu"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://intopythoncom.files.wordpress.com/2017/04/merged.pdf",
+        "title": "Advanced Internals of CPython by Prashanth Raghu"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=1_23AVsiQEc",
+        "title": "Pablo Salgado - Soul of the Beast EuroPython 2019 Talk on CPython"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://cpython-core-tutorial.readthedocs.io/en/latest/internals.html",
+        "title": "CPython Internals Links"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://pgbovine.net/cpython-internals.htm",
+        "title": "CPython Internals: 10 Hour Codewalk through the Python Interpreter Source Code"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://pypi.org/project/implements/",
+        "title": "Python Implements library"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.python.org/dev/peps/pep-0622/",
+        "title": "PEP 622 Structural Pattern Matching in Python"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://mybinder.org/v2/gh/gvanrossum/patma/master?urlpath=lab/tree/playground-622.ipynb",
+        "title": "Playground for PEP 622"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/commitizen-tools/commitizen",
+        "title": "Commitizen enforces how commit messages and changelogs are written"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.python.org/dev/peps/pep-0618/",
+        "title": "PEP 618 Add Optional Length-Checking to zip"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://pythonbytes.fm/episodes/show/190/you-will-now-be-notified-if-the-python-zipper-is-broken",
+        "title": "Python Bytes #190: Anthony Shaw: Pylance is named after Sir Lancelot"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-18",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://hackaday.com/2019/01/31/linux-fu-easier-file-watching/",
+        "title": "Easier File Watching in Linux Hackaday Blog Post"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-17",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://nedbatchelder.com/blog/202006/pickles_nine_flaws.html",
+        "title": "Pickle's Nine Flaws"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-17",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://blog.ionelmc.ro/2014/05/25/python-packaging",
+        "title": "Using the src folder with python"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-17",
+        "repeated_added_on": [],
+        "type": "factoid",
+        "value": "When mocking python functions in a flask test, ensure you reference the module where the function is called, not where it originates from."
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-17",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/Flask-Middleware/flask-security/",
+        "title": "Flask-Security-Too includes common patterns for flask security"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-17",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.python.org/dev/peps/pep-0508/",
+        "title": "PEP-508 is ... insanely detailed with what can be added to each line in requirements.txt"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-17",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://developers.google.com/season-of-docs",
+        "title": "Google Season of Docs is a program to get more people to contribute to documentation."
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-17",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=t4vKPhjcMZg",
+        "title": "What Nobody Tells You about Documentation - the greatest video on how to structure docs that I have seen"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-17",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.divio.com/blog/documentation/",
+        "title": "Divio's Documentation System - Amazing 4 Part System discussed in the video above"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-17",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/docker/compose/blob/master/compose/cli/main.py",
+        "title": "docker-compose has *no* docstrings"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/mypaint/mypaint",
+        "title": "MyPaint is MSPaint for Linux (not quite but more like PaintShopPro)"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://thesquareplanet.com/",
+        "title": "Jon Gjengset's Blog is a great resource. Check out his article on MIT6.824 and RAFT"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/channel/UC_iD0xppBwwsrM9DegC5cQQ",
+        "title": "Jon Gjengset has a YouTube channel where he discusses intermediate Rust"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://youtu.be/rAl-9HwD858",
+        "title": "Crust of Rust on YouTube - Again, Jon Gjengset"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://obsproject.com/",
+        "title": "OBS Project (Open Broadcaster Software) for recording and live-streaming"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/polybar/polybar",
+        "title": "PolyBar is a Status bar for i3m and Linux"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://xmonad.org/",
+        "title": "xmonad is a tiling manager (like i3wm) but it uses haskell files for configs"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://danielkeep.github.io/tlborm/book/index.html",
+        "title": "Little Book of Rust Macros"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://livebook.manning.com/book/real-world-cryptography/welcome/v-7/",
+        "title": "Book on Real World Cryptography"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://malicioussha1.github.io/",
+        "title": "Malicious SHA1"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.maximintegrated.com/en/design/technical-documents/app-notes/7/7015.html",
+        "title": "Understanding SHA Algorithms"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/in3rsha/sha256-animation",
+        "title": "SHA256 Animation"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://sp19.datastructur.es/",
+        "title": "CS 61B Data Structures, Spring 2019"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.semicolonandsons.com/",
+        "title": "Semicolon&Sons Intermediate Screencasts"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://foundations-of-applied-mathematics.github.io/",
+        "title": "Foundations of Applied Mathematics - Lots of Python and Data Science resources"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://missing.csail.mit.edu/",
+        "title": "Missing Semester of Your CS Education"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://learnaifromscratch.github.io",
+        "title": "Learn AI from Scratch"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://papl.cs.brown.edu/2020/",
+        "title": "Brown University: Programming and Programming Languages"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-16",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.poodr.com/",
+        "title": "Practical Object Oriented Design in Ruby - Sandi Metz"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.cs.cmu.edu/~dst/LispBook/book.pdf",
+        "title": "Common Lisp: A Gentle Introduction by David S. Touretzky is a great book on functional programming"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://nition.momentstudio.co.nz/2014/08/the-nokia-n9-alarm-clock/",
+        "title": "The Nokia N9 Alarm Clock app had a great design"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/zyedidia/micro",
+        "title": "Micro is a tiny editor for Linux"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://yasoob.me/posts/understanding-and-writing-jpeg-decoder-in-python/",
+        "title": "Understanding and writing a JPEG decoder in Python"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://docs.pritunl.com/docs/installation",
+        "title": "pritunl is a simple home OpenVPN implentation"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/tuvtran/project-based-learning",
+        "title": "Resource for project based learning"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/miiohio/succinct",
+        "title": "Succinct/compact/compressed data structures for data-intensive Python programs"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://jitsi.org/",
+        "title": "Jitsi for running your own self-hosted video call and chat"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://jeffq.com/blog/the-ethernet-pause-frame/",
+        "title": "The Ethernet PAUSE frame"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://flask.palletsprojects.com/en/1.1.x/views/",
+        "title": "Flask's Method Views are so simple to implement. They're better for when the code gets really long"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-15",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://flask.palletsprojects.com/en/1.1.x/signals/",
+        "title": "Flask's' later docs seem to cover some insane stuff. Ex: Signals using the blinker library"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://squidfunk.github.io/mkdocs-material/",
+        "title": "mkdocs-material is a real cool MaterialUI-based theme for mkdocs"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "github.com/cfernandi/gumshoe",
+        "title": "Gumshoe is a great scrolling effect for sidebars etc in vanilla JS"
+    },
+    {
+        "categories": [
+            "python",
+            "music",
+            "fun",
+            "zen-of-python",
+            "programming"
+        ],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=i6G6dmVJy74&feature=youtu.be",
+        "title": "Barry Warsaw adapted the Zen of Python into a Song!"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://gist.github.com/stonecharioteer/23cbba9f0a8ff7520cb07372dd56ef4a",
+        "title": "Profiling Flask Apps using werkzeug.contrib.profiler.ProfilerMiddleware"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://snarky.ca/what-the-heck-is-pyproject-toml/",
+        "title": "What the heck is Pyproject.toml?"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://flit.readthedocs.io/en/latest/index.html",
+        "title": "Flit for Python"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://bitbucket.org/dholth/enscons",
+        "title": "enscons is a library for building Python packages with SCons - the Software Construction Tool"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://scons.org/",
+        "title": "SCons"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/python-poetry/poetry",
+        "title": "Poetry for Python Projects - Manage environments for Python, as well as project dependency information."
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://www.redhat.com/sysadmin/dss-command",
+        "title": "`ss` is a tool to inspect sockets on Linux"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/djungelorm/sphinx-tabs",
+        "title": "`sphinx-tabs` is a great way to add tabbed views in Sphinx"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-14",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://en.m.wikipedia.org/wiki/List_of_cognitive_biases#Frequency_illusion",
+        "title": "The Baader-Meinhof Phenomenon or Frequency Illusion is when you discover something and see it everywhere"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-13",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://flask-jwt-extended.readthedocs.io/en/stable/blacklist_and_token_revoking/",
+        "title": "Flask-JWT-Extended has a great bunch of patterns and examples on expiring and blacklisting JWTs"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-13",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://tourofrust.com/",
+        "title": "Learn Rust in the same way you'd learn Golang through the tour! This covers almost the entire Rust Book"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-13",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://realpython.com/python-ipaddress-module/",
+        "title": "Real Python's article on Learn IP Address Concepts through Python"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-13",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "http://www.linuxfromscratch.org/~bdubbs/cross2-lfs-book/index.html",
+        "title": "Linux From Scratch is a great resource on learning Linux from first principles"
+    },
+    {
+        "categories": [],
+        "added_on": "2020-07-13",
+        "repeated_added_on": [],
+        "type": "url",
+        "value": "https://github.com/benfred/py-spy",
+        "title": "Py-Spy is Top for Python!"
     }
 ]
