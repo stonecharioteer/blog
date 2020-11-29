@@ -213,6 +213,21 @@
         "value": "https://blog.abnry.online/2020/11/18/digital-file-management.html"
     },
     {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "course",
+            "learning",
+            "mit",
+            "mit-6.004",
+            "ocw",
+            "programming",
+            "studying"
+        ],
+        "type": "url",
+        "value": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2017/"
+    },
+    {
         "added_on": "2020-11-21",
         "repeated_added_on": [
             "2020-11-29"
