@@ -267,6 +267,19 @@
         "title": "Malicious SHA-1"
     },
     {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "gui",
+            "programming",
+            "pyqt",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://realpython.com/python-pyqt-layout/",
+        "title": "PyQt Layouts: Create Professional-Looking GUI Applications \u2013 Real Python"
+    },
+    {
         "added_on": "2020-11-21",
         "repeated_added_on": [
             "2020-11-29"
