@@ -41,6 +41,13 @@
         "title": "GitHub - an-tao/drogon: Drogon: A C++14/17 based HTTP web application framework running on Linux/macOS/Unix/Windows"
     },
     {
+        "added_on": "2020-11-30",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "factoid",
+        "value": "In python, *everything* is an object. This doesn't make complete sense until later. When it does, you'll see that the way `__doc__` is used in a *module* is the same way it is used in a *class definition* or in a *function*."
+    },
+    {
         "added_on": "2020-11-29",
         "repeated_added_on": [],
         "categories": [
