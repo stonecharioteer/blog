@@ -228,6 +228,21 @@
         "value": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2017/"
     },
     {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "RISCV",
+            "learning",
+            "mit",
+            "mit-6.004",
+            "mit-ocw",
+            "programming",
+            "studying"
+        ],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=c23MThWhXMw"
+    },
+    {
         "added_on": "2020-11-21",
         "repeated_added_on": [
             "2020-11-29"
