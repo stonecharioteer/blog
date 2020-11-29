@@ -191,6 +191,18 @@
         "value": "https://leetcode.com/discuss/interview-experience/942008/google-l4-zurich-sept-nov-2020-reject"
     },
     {
+        "added_on": "2020-11-29",
+        "repeated_added_on": [],
+        "categories": [
+            "child-process",
+            "linux",
+            "processes",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://docstore.mik.ua/orelly/unix/upt/ch06_02.htm"
+    },
+    {
         "added_on": "2020-11-21",
         "repeated_added_on": [
             "2020-11-29"
