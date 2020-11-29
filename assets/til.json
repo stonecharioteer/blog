@@ -2402,7 +2402,8 @@
         "added_on": "2020-08-05",
         "repeated_added_on": [],
         "type": "url",
-        "value": "https://xanmod.org/"
+        "value": "https://xanmod.org/",
+        "title": "Releases - XanMod Kernel"
     },
     {
         "categories": [
@@ -2413,7 +2414,8 @@
         "added_on": "2020-08-05",
         "repeated_added_on": [],
         "type": "url",
-        "value": "https://liquorix.net/"
+        "value": "https://liquorix.net/",
+        "title": "Liquorix Kernel"
     },
     {
         "categories": [],
