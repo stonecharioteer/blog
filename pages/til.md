@@ -29,7 +29,8 @@ not reliant on external services.
 8. In python, *everything* is an object. This doesn't make complete sense until later. When it does, you'll see that the way `__doc__` is used in a *module* is the same way it is used in a *class definition* or in a *function*.
 9. The Paxos Distributed consensus paper is written like it is a novel about a greco-roman senate
 10. [jinja2 - How to output loop.counter in python jinja template? - Stack Overflow](https://stackoverflow.com/questions/12145434/how-to-output-loop-counter-in-python-jinja-template)
-11. [useful commands: `pstree` (beginner - intermediate) anthony explains #159 - YouTube](https://youtu.be/Omu4tXtlULU)
+11. [talent-plan/courses/rust at master · pingcap/talent-plan · GitHub](https://github.com/pingcap/talent-plan/tree/master/courses/rust)
+12. [useful commands: `pstree` (beginner - intermediate) anthony explains #159 - YouTube](https://youtu.be/Omu4tXtlULU)
 
 ## 2020-11-29
 
