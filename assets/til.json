@@ -61,6 +61,19 @@
         "title": "Simple Container Management | Kubernetes, Docker, Docker Swarm & ACI UI"
     },
     {
+        "added_on": "2020-11-30",
+        "repeated_added_on": [],
+        "categories": [
+            "anthonywritescode",
+            "python",
+            "screencast",
+            "youtube"
+        ],
+        "type": "url",
+        "value": "https://youtu.be/oQxTSDh-ECk",
+        "title": "don't use os.system!  (beginner - intermediate) anthony explains #160 - YouTube"
+    },
+    {
         "added_on": "2020-11-29",
         "repeated_added_on": [],
         "categories": [
