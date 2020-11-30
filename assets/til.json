@@ -26,6 +26,20 @@
         "title": "https://kutt.it/Pq33h1"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "packaging",
+            "pip",
+            "programming",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://pip.pypa.io/en/stable/user_guide/",
+        "title": "User Guide - pip documentation v20.3"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
