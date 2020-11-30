@@ -87,6 +87,20 @@
         "title": "Nomad by HashiCorp"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "deluge",
+            "linux",
+            "python",
+            "sarathi-todo",
+            "torrents"
+        ],
+        "type": "url",
+        "value": "https://forum.deluge-torrent.org/viewtopic.php?t=35201",
+        "title": "Script to add torrent and change tracker with Python - Deluge Forum"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
