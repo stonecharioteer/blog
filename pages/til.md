@@ -24,12 +24,13 @@ not reliant on external services.
 3. [How To Use the Linux Fuser Command \| DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-the-linux-fuser-command)
 4. [How to install Linux on a dead badger - Everything2.com](https://everything2.com/title/How+to+install+Linux+on+a+dead+badger)
 5. [MobileRead](https://wiki.mobileread.com/wiki/Main_Page)
-6. [Nomad by HashiCorp](https://www.nomadproject.io/)
-7. [Script to add torrent and change tracker with Python - Deluge Forum](https://forum.deluge-torrent.org/viewtopic.php?t=35201)
-8. [Socket Programming HOWTO — Python 3.9.1rc1 documentation](https://docs.python.org/3/howto/sockets.html)
-9. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
-10. Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios
-11. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
+6. [My Business Card Runs Linux • &> /dev/null](https://www.thirtythreeforty.net/posts/2019/12/my-business-card-runs-linux/)
+7. [Nomad by HashiCorp](https://www.nomadproject.io/)
+8. [Script to add torrent and change tracker with Python - Deluge Forum](https://forum.deluge-torrent.org/viewtopic.php?t=35201)
+9. [Socket Programming HOWTO — Python 3.9.1rc1 documentation](https://docs.python.org/3/howto/sockets.html)
+10. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
+11. Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios
+12. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
 
 ## 2020-11-30
 
