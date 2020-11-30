@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "fuser",
+            "linux",
+            "networking",
+            "ports"
+        ],
+        "type": "url",
+        "value": "https://www.digitalocean.com/community/tutorials/how-to-use-the-linux-fuser-command",
+        "title": "How To Use the Linux Fuser Command | DigitalOcean"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
