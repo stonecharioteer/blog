@@ -20,7 +20,8 @@ not reliant on external services.
 ## 2020-12-01
 
 1. [How To Use the Linux Fuser Command \| DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-the-linux-fuser-command)
-2. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
+2. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
+3. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
 
 ## 2020-11-30
 
