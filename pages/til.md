@@ -23,7 +23,8 @@ not reliant on external services.
 2. [How To Use the Linux Fuser Command \| DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-the-linux-fuser-command)
 3. [Socket Programming HOWTO — Python 3.9.1rc1 documentation](https://docs.python.org/3/howto/sockets.html)
 4. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
-5. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
+5. Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios
+6. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
 
 ## 2020-11-30
 
