@@ -21,10 +21,11 @@ not reliant on external services.
 
 1. [GitHub - an-tao/drogon: Drogon: A C++14/17 based HTTP web application framework running on Linux/macOS/Unix/Windows](https://github.com/an-tao/drogon)
 2. [GitHub - emilast/vscode-logfile-highlighter: A Visual Studio Code extension for color highlighting log files](https://github.com/emilast/vscode-logfile-highlighter)
-3. [Simple Container Management \| Kubernetes, Docker, Docker Swarm & ACI UI](https://www.portainer.io/)
-4. [don't use os.system!  (beginner - intermediate) anthony explains #160 - YouTube](https://youtu.be/oQxTSDh-ECk)
-5. In python, *everything* is an object. This doesn't make complete sense until later. When it does, you'll see that the way `__doc__` is used in a *module* is the same way it is used in a *class definition* or in a *function*.
-6. [jinja2 - How to output loop.counter in python jinja template? - Stack Overflow](https://stackoverflow.com/questions/12145434/how-to-output-loop-counter-in-python-jinja-template)
+3. [How to write an essay well](https://www.julian.com/guide/write/intro?s=09)
+4. [Simple Container Management \| Kubernetes, Docker, Docker Swarm & ACI UI](https://www.portainer.io/)
+5. [don't use os.system!  (beginner - intermediate) anthony explains #160 - YouTube](https://youtu.be/oQxTSDh-ECk)
+6. In python, *everything* is an object. This doesn't make complete sense until later. When it does, you'll see that the way `__doc__` is used in a *module* is the same way it is used in a *class definition* or in a *function*.
+7. [jinja2 - How to output loop.counter in python jinja template? - Stack Overflow](https://stackoverflow.com/questions/12145434/how-to-output-loop-counter-in-python-jinja-template)
 
 ## 2020-11-29
 
