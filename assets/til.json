@@ -64,6 +64,16 @@
         "title": "Socket Programming HOWTO \u2014 Python 3.9.1rc1 documentation"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "python",
+            "rtfm"
+        ],
+        "type": "factoid",
+        "value": "Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
