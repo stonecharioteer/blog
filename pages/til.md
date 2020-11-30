@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-01
+
+1. [How To Use the Linux Fuser Command \| DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-the-linux-fuser-command)
+
 ## 2020-11-30
 
 1. [GitHub - an-tao/drogon: Drogon: A C++14/17 based HTTP web application framework running on Linux/macOS/Unix/Windows](https://github.com/an-tao/drogon)
