@@ -116,6 +116,19 @@
         "title": "403 Forbidden"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "funny",
+            "linux",
+            "meta",
+            "programming"
+        ],
+        "type": "url",
+        "value": "https://everything2.com/title/How+to+install+Linux+on+a+dead+badger",
+        "title": "How to install Linux on a dead badger - Everything2.com"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
