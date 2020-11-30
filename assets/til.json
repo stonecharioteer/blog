@@ -122,6 +122,17 @@
         "title": "useful commands: `pstree` (beginner - intermediate) anthony explains #159 - YouTube"
     },
     {
+        "added_on": "2020-11-30",
+        "repeated_added_on": [],
+        "categories": [
+            "distributed-systems/",
+            "paxos",
+            "programming"
+        ],
+        "type": "factoid",
+        "value": "The Paxos Distributed consensus paper is written like it is a novel about a greco-roman senate"
+    },
+    {
         "added_on": "2020-11-29",
         "repeated_added_on": [],
         "categories": [
