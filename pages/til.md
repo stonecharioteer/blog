@@ -28,6 +28,7 @@ not reliant on external services.
 7. [don't use os.system!  (beginner - intermediate) anthony explains #160 - YouTube](https://youtu.be/oQxTSDh-ECk)
 8. In python, *everything* is an object. This doesn't make complete sense until later. When it does, you'll see that the way `__doc__` is used in a *module* is the same way it is used in a *class definition* or in a *function*.
 9. [jinja2 - How to output loop.counter in python jinja template? - Stack Overflow](https://stackoverflow.com/questions/12145434/how-to-output-loop-counter-in-python-jinja-template)
+10. [useful commands: `pstree` (beginner - intermediate) anthony explains #159 - YouTube](https://youtu.be/Omu4tXtlULU)
 
 ## 2020-11-29
 
