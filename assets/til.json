@@ -101,6 +101,21 @@
         "title": "Script to add torrent and change tracker with Python - Deluge Forum"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "data-extraction",
+            "early-influence",
+            "flipkart",
+            "programming",
+            "scraping",
+            "web-scraping"
+        ],
+        "type": "url",
+        "value": "https://www.import.io/",
+        "title": "403 Forbidden"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
