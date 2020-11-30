@@ -144,6 +144,20 @@
         "title": "MobileRead"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "I-made-a-thing",
+            "IoT",
+            "cool",
+            "linux",
+            "over-engineering"
+        ],
+        "type": "url",
+        "value": "https://www.thirtythreeforty.net/posts/2019/12/my-business-card-runs-linux/",
+        "title": "My Business Card Runs Linux \u2022 &> /dev/null"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
