@@ -52,6 +52,18 @@
         "title": "Helvetica (2007)         - IMDb"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "howto",
+            "network",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://docs.python.org/3/howto/sockets.html",
+        "title": "Socket Programming HOWTO \u2014 Python 3.9.1rc1 documentation"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
