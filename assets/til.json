@@ -110,6 +110,18 @@
         "title": "GitHub - asottile/git-code-debt: A dashboard for monitoring code debt in a git repository."
     },
     {
+        "added_on": "2020-11-30",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "devtools",
+            "process-monitoring"
+        ],
+        "type": "url",
+        "value": "https://youtu.be/Omu4tXtlULU",
+        "title": "useful commands: `pstree` (beginner - intermediate) anthony explains #159 - YouTube"
+    },
+    {
         "added_on": "2020-11-29",
         "repeated_added_on": [],
         "categories": [
