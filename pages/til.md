@@ -31,9 +31,10 @@ not reliant on external services.
 10. [Nomad by HashiCorp](https://www.nomadproject.io/)
 11. [Script to add torrent and change tracker with Python - Deluge Forum](https://forum.deluge-torrent.org/viewtopic.php?t=35201)
 12. [Socket Programming HOWTO — Python 3.9.1rc1 documentation](https://docs.python.org/3/howto/sockets.html)
-13. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
-14. Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios
-15. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
+13. [The complete guide to using localStorage in JavaScript apps - LogRocket Blog](https://blog.logrocket.com/the-complete-guide-to-using-localstorage-in-javascript-apps-ba44edb53a36/)
+14. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
+15. Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios
+16. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
 
 ## 2020-11-30
 
