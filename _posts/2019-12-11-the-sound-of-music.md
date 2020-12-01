@@ -156,7 +156,7 @@ I need to choose a seat in a meeting room wisely. Because I need to always sit
 at the leftmost corner of any audience so as to let my good ear hear you.
 
 If I turn my head away from you while you speak now, it is not because I am
-trying to ignore you
+trying to ignore you.
 
 Indeed, it could be because I am trying to hear you better.
 

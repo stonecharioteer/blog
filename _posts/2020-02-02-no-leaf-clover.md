@@ -165,3 +165,9 @@ However, that does not stop me. It does not have to.
 
 I picked up a “no leaf clover”. What I choose to do with it is how I define who
 I am.
+
+---
+
+**Update** : The hearing aid does not help me hear everything. It gives me *a sense* of sounds to my left. It's very, very low, because of how much nerve damage there has been to my ear. That has not dismayed me, and WFH is a blessing.
+
+[Read the 1 Year update of my experience to understand more.](https://stonecharioteer.com/2020/09/01/ear-one.html)
