@@ -158,6 +158,19 @@
         "title": "My Business Card Runs Linux \u2022 &> /dev/null"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "cooking",
+            "fastfood",
+            "food",
+            "recipes"
+        ],
+        "type": "url",
+        "value": "https://www.atlasobscura.com/articles/original-mcdonalds-french-fry-recipe",
+        "title": "My Hunt for the Original McDonald's French-Fry Recipe - Gastro Obscura"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
