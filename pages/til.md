@@ -20,18 +20,19 @@ not reliant on external services.
 ## 2020-12-01
 
 1. [403 Forbidden](https://www.import.io/)
-2. [Helvetica (2007)         - IMDb](https://m.imdb.com/title/tt0847817/)
-3. [How To Use the Linux Fuser Command \| DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-the-linux-fuser-command)
-4. [How to install Linux on a dead badger - Everything2.com](https://everything2.com/title/How+to+install+Linux+on+a+dead+badger)
-5. [MobileRead](https://wiki.mobileread.com/wiki/Main_Page)
-6. [My Business Card Runs Linux • &> /dev/null](https://www.thirtythreeforty.net/posts/2019/12/my-business-card-runs-linux/)
-7. [My Hunt for the Original McDonald's French-Fry Recipe - Gastro Obscura](https://www.atlasobscura.com/articles/original-mcdonalds-french-fry-recipe)
-8. [Nomad by HashiCorp](https://www.nomadproject.io/)
-9. [Script to add torrent and change tracker with Python - Deluge Forum](https://forum.deluge-torrent.org/viewtopic.php?t=35201)
-10. [Socket Programming HOWTO — Python 3.9.1rc1 documentation](https://docs.python.org/3/howto/sockets.html)
-11. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
-12. Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios
-13. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
+2. [GitHub - AgentD/diy-linux-guide: An LFS like guide for cross-bootstrapping a small system for the Raspberry Pi](https://github.com/AgentD/diy-linux-guide)
+3. [Helvetica (2007)         - IMDb](https://m.imdb.com/title/tt0847817/)
+4. [How To Use the Linux Fuser Command \| DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-the-linux-fuser-command)
+5. [How to install Linux on a dead badger - Everything2.com](https://everything2.com/title/How+to+install+Linux+on+a+dead+badger)
+6. [MobileRead](https://wiki.mobileread.com/wiki/Main_Page)
+7. [My Business Card Runs Linux • &> /dev/null](https://www.thirtythreeforty.net/posts/2019/12/my-business-card-runs-linux/)
+8. [My Hunt for the Original McDonald's French-Fry Recipe - Gastro Obscura](https://www.atlasobscura.com/articles/original-mcdonalds-french-fry-recipe)
+9. [Nomad by HashiCorp](https://www.nomadproject.io/)
+10. [Script to add torrent and change tracker with Python - Deluge Forum](https://forum.deluge-torrent.org/viewtopic.php?t=35201)
+11. [Socket Programming HOWTO — Python 3.9.1rc1 documentation](https://docs.python.org/3/howto/sockets.html)
+12. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
+13. Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios
+14. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
 
 ## 2020-11-30
 
