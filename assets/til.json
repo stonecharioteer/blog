@@ -252,6 +252,20 @@
         "title": "Welcome to the world of Statecharts - Statecharts"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "how-to",
+            "programming",
+            "react",
+            "redux",
+            "state-machines"
+        ],
+        "type": "url",
+        "value": "https://www.freecodecamp.org/news/how-to-model-the-behavior-of-redux-apps-using-statecharts-5e342aad8f66/",
+        "title": "How to model the behavior of Redux apps using statecharts"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
