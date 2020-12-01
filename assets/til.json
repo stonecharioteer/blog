@@ -238,6 +238,20 @@
         "title": "The TLA+ Home Page"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "computer-science",
+            "learning",
+            "programming",
+            "state-machines",
+            "studying"
+        ],
+        "type": "url",
+        "value": "https://statecharts.github.io/",
+        "title": "Welcome to the world of Statecharts - Statecharts"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
