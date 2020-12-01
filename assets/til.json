@@ -11,7 +11,7 @@
         ],
         "type": "url",
         "value": "https://www.digitalocean.com/community/tutorials/how-to-use-the-linux-fuser-command",
-        "title": "How To Use the Linux Fuser Command | DigitalOcean"
+        "title": "Use `fuser` to find processes running on a port in Linux"
     },
     {
         "added_on": "2020-12-01",
@@ -22,8 +22,8 @@
             "rust"
         ],
         "type": "url",
-        "value": "https://kutt.it/Pq33h1",
-        "title": "https://kutt.it/Pq33h1"
+        "value": "https://dev.to/bkolobara/writing-rust-the-elixir-way-2lm8",
+        "title": "Writing Rust the Elixir Way"
     },
     {
         "added_on": "2020-12-01",
@@ -49,7 +49,7 @@
         ],
         "type": "url",
         "value": "https://m.imdb.com/title/tt0847817/",
-        "title": "Helvetica (2007)         - IMDb"
+        "title": "Helvetica (2007) - IMDb (Documentary about Typography)"
     },
     {
         "added_on": "2020-12-01",
@@ -98,7 +98,7 @@
         ],
         "type": "url",
         "value": "https://forum.deluge-torrent.org/viewtopic.php?t=35201",
-        "title": "Script to add torrent and change tracker with Python - Deluge Forum"
+        "title": "Use Python to add a torrent in Deluge"
     },
     {
         "added_on": "2020-12-01",
@@ -113,7 +113,7 @@
         ],
         "type": "url",
         "value": "https://www.import.io/",
-        "title": "403 Forbidden"
+        "title": "import.io browser automation framework"
     },
     {
         "added_on": "2020-12-01",
@@ -126,7 +126,7 @@
         ],
         "type": "url",
         "value": "https://everything2.com/title/How+to+install+Linux+on+a+dead+badger",
-        "title": "How to install Linux on a dead badger - Everything2.com"
+        "title": "How to install Linux on a dead badger"
     },
     {
         "added_on": "2020-12-01",
@@ -141,7 +141,7 @@
         ],
         "type": "url",
         "value": "https://wiki.mobileread.com/wiki/Main_Page",
-        "title": "MobileRead"
+        "title": "MobileRead - Tools and Resources for Mobile e-Reader Devices"
     },
     {
         "added_on": "2020-12-01",
@@ -196,7 +196,7 @@
         ],
         "type": "url",
         "value": "https://graphics.pixar.com/usd/docs/index.html",
-        "title": "Introduction to USD"
+        "title": "Pixar - Introduction to USD"
     },
     {
         "added_on": "2020-12-01",
@@ -221,7 +221,7 @@
         ],
         "type": "url",
         "value": "https://localforage.github.io/localForage/",
-        "title": "localForage"
+        "title": "localForage - Tool for using the Browser's localstorage"
     },
     {
         "added_on": "2020-12-01",
@@ -249,7 +249,7 @@
         ],
         "type": "url",
         "value": "https://statecharts.github.io/",
-        "title": "Welcome to the world of Statecharts - Statecharts"
+        "title": "Welcome to the world of Statecharts"
     },
     {
         "added_on": "2020-12-01",
@@ -277,6 +277,18 @@
         "type": "url",
         "value": "https://realpython.com/python-sockets/",
         "title": "Socket Programming in Python (Guide) \u2013 Real Python"
+    },
+    {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "hardware",
+            "raspberry-pi",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://www.clockworkpi.com/devterm",
+        "title": "DevTerm | ClockworkPi"
     },
     {
         "added_on": "2020-11-30",
@@ -337,7 +349,7 @@
         ],
         "type": "url",
         "value": "https://www.portainer.io/",
-        "title": "Simple Container Management | Kubernetes, Docker, Docker Swarm & ACI UI"
+        "title": "Portainer - A Tool for Managing Containers"
     },
     {
         "added_on": "2020-11-30",
@@ -404,7 +416,7 @@
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
-            "distributed-systems/",
+            "distributed-systems",
             "paxos",
             "programming"
         ],
@@ -534,8 +546,8 @@
             "studying"
         ],
         "type": "url",
-        "value": "https://www.jackkinsella.ie/articles/Janki-method",
-        "title": "The page you were looking for doesn't exist (404)"
+        "value": "https://www.jackkinsella.ie/articles/janki-method-refined",
+        "title": "Jack Kinsella - The Janki Method for Spaced-Repetition Learning using Flash Cards"
     },
     {
         "added_on": "2020-11-29",
@@ -574,7 +586,7 @@
         ],
         "type": "url",
         "value": "https://sponsorgap.com/companies-buying-ads-and-sponsorships",
-        "title": "Get your sponsor"
+        "title": "How to get your sponsor"
     },
     {
         "added_on": "2020-11-29",
@@ -641,7 +653,7 @@
         ],
         "type": "url",
         "value": "https://docstore.mik.ua/orelly/unix/upt/ch06_02.htm",
-        "title": "[Chapter 6] 6.2 Parent-Child Relationships "
+        "title": "O'Reilly - [Chapter 6] 6.2 Parent-Child Relationships "
     },
     {
         "added_on": "2020-11-29",
