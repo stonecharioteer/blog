@@ -199,6 +199,19 @@
         "title": "Introduction to USD"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "howto",
+            "javascript",
+            "programming",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://blog.logrocket.com/the-complete-guide-to-using-localstorage-in-javascript-apps-ba44edb53a36/",
+        "title": "The complete guide to using localStorage in JavaScript apps - LogRocket Blog"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
