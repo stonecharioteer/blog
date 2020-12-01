@@ -25,7 +25,7 @@ As you can see, the problems with this approach are many:
 And I've been meaning to leverage a Telegram bot for this task for quite some time.
 
 However, I have not gotten back to the task in ages, necessitating the use of my rudimentary manual method for months on end.
-So this weekend, as I prep myself to shift my body clock to attend [David Beazley's RAFT Course](),
+So this weekend, as I prep myself to shift my body clock to attend [David Beazley's RAFT Course](http://dabeaz.com/raft.html),
 I decided to use the midnight oil to write my own bot, one that I could add to.
 
 ## Why Discord?
