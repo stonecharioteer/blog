@@ -266,6 +266,19 @@
         "title": "How to model the behavior of Redux apps using statecharts"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "network-programming",
+            "programming",
+            "python",
+            "socket-programming"
+        ],
+        "type": "url",
+        "value": "https://realpython.com/python-sockets/",
+        "title": "Socket Programming in Python (Guide) \u2013 Real Python"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
