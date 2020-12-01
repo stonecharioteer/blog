@@ -212,6 +212,18 @@
         "title": "The complete guide to using localStorage in JavaScript apps - LogRocket Blog"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "javascript",
+            "rtfm",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://localforage.github.io/localForage/",
+        "title": "localForage"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
