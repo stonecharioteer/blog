@@ -32,13 +32,14 @@ not reliant on external services.
 11. [Nomad by HashiCorp](https://www.nomadproject.io/)
 12. [Script to add torrent and change tracker with Python - Deluge Forum](https://forum.deluge-torrent.org/viewtopic.php?t=35201)
 13. [Socket Programming HOWTO — Python 3.9.1rc1 documentation](https://docs.python.org/3/howto/sockets.html)
-14. [The TLA+ Home Page](https://lamport.azurewebsites.net/tla/tla.html)
-15. [The complete guide to using localStorage in JavaScript apps - LogRocket Blog](https://blog.logrocket.com/the-complete-guide-to-using-localstorage-in-javascript-apps-ba44edb53a36/)
-16. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
-17. [Welcome to the world of Statecharts - Statecharts](https://statecharts.github.io/)
-18. Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios
-19. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
-20. [localForage](https://localforage.github.io/localForage/)
+14. [Socket Programming in Python (Guide) – Real Python](https://realpython.com/python-sockets/)
+15. [The TLA+ Home Page](https://lamport.azurewebsites.net/tla/tla.html)
+16. [The complete guide to using localStorage in JavaScript apps - LogRocket Blog](https://blog.logrocket.com/the-complete-guide-to-using-localstorage-in-javascript-apps-ba44edb53a36/)
+17. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
+18. [Welcome to the world of Statecharts - Statecharts](https://statecharts.github.io/)
+19. Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios
+20. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
+21. [localForage](https://localforage.github.io/localForage/)
 
 ## 2020-11-30
 
