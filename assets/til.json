@@ -224,6 +224,20 @@
         "title": "localForage"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "computer-sciece",
+            "devtools",
+            "distributed-systems",
+            "raft",
+            "state-mchines"
+        ],
+        "type": "url",
+        "value": "https://lamport.azurewebsites.net/tla/tla.html",
+        "title": "The TLA+ Home Page"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
