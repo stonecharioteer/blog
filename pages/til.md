@@ -35,6 +35,7 @@ not reliant on external services.
 14. [User Guide - pip documentation v20.3](https://pip.pypa.io/en/stable/user_guide/)
 15. Python's `str.split` supports the split result maxsize. It has a default of `-1`, which returns a list of any length. However, giving it different numbers is useful in some scenarios
 16. [https://kutt.it/Pq33h1](https://kutt.it/Pq33h1)
+17. [localForage](https://localforage.github.io/localForage/)
 
 ## 2020-11-30
 
