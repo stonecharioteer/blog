@@ -185,6 +185,20 @@
         "title": "GitHub - AgentD/diy-linux-guide: An LFS like guide for cross-bootstrapping a small system for the Raspberry Pi"
     },
     {
+        "added_on": "2020-12-01",
+        "repeated_added_on": [],
+        "categories": [
+            "OSS",
+            "animation",
+            "disney",
+            "open-source",
+            "programming"
+        ],
+        "type": "url",
+        "value": "https://graphics.pixar.com/usd/docs/index.html",
+        "title": "Introduction to USD"
+    },
+    {
         "added_on": "2020-11-30",
         "repeated_added_on": [],
         "categories": [
