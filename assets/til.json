@@ -1,5 +1,18 @@
 [
     {
+        "added_on": "2020-12-03",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "linux",
+            "shell",
+            "ssh"
+        ],
+        "type": "url",
+        "value": "https://mosh.org/",
+        "title": "Mosh: the mobile shell"
+    },
+    {
         "added_on": "2020-12-02",
         "repeated_added_on": [],
         "categories": [
