@@ -104,6 +104,18 @@
         "title": "The Road to the JIT \u2013 A Blog from the Erlang/OTP team \u2013 The Erlang/OTP team at Ericsson, the implementors and maintainers of Erlang/OTP."
     },
     {
+        "added_on": "2020-12-02",
+        "repeated_added_on": [],
+        "categories": [
+            "operating-systems",
+            "raspberry-pi",
+            "systems-programming"
+        ],
+        "type": "url",
+        "value": "https://github.com/dddrrreee/cs140e-20win",
+        "title": "GitHub - dddrrreee/cs140e-20win: cs140e course materials."
+    },
+    {
         "added_on": "2020-12-01",
         "repeated_added_on": [],
         "categories": [
