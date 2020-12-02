@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-03
+
+1. [Mosh: the mobile shell](https://mosh.org/)
+
 ## 2020-12-02
 
 1. [About the course - Java Programming](https://java-programming.mooc.fi/)
