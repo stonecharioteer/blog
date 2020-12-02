@@ -22,8 +22,9 @@ not reliant on external services.
 1. [About the course - Java Programming](https://java-programming.mooc.fi/)
 2. [GitHub - monicahq/monica: Personal CRM. Remember everything about your friends, family and business relationships.](https://github.com/monicahq/monica)
 3. [How to Write Usefully](http://paulgraham.com/useful.html)
-4. [https://12days.cmdchallenge.com/](https://12days.cmdchallenge.com/)
-5. [windows - How to use ffmpeg to add jpeg image before and after the video - Super User](https://superuser.com/questions/1031879/how-to-use-ffmpeg-to-add-jpeg-image-before-and-after-the-video)
+4. [How to use ffmpeg to combine multiple videos to one](https://ma.ttias.be/use-ffmpeg-combine-multiple-videos/)
+5. [https://12days.cmdchallenge.com/](https://12days.cmdchallenge.com/)
+6. [windows - How to use ffmpeg to add jpeg image before and after the video - Super User](https://superuser.com/questions/1031879/how-to-use-ffmpeg-to-add-jpeg-image-before-and-after-the-video)
 
 ## 2020-12-01
 
