@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2020-12-02",
+        "repeated_added_on": [],
+        "categories": [
+            "crm",
+            "relationships",
+            "tool"
+        ],
+        "type": "url",
+        "value": "https://github.com/monicahq/monica",
+        "title": "GitHub - monicahq/monica: Personal CRM. Remember everything about your friends, family and business relationships."
+    },
+    {
         "added_on": "2020-12-01",
         "repeated_added_on": [],
         "categories": [
