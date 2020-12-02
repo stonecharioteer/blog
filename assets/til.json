@@ -90,6 +90,20 @@
         "title": "Table of Contents - Rust Cookbook"
     },
     {
+        "added_on": "2020-12-02",
+        "repeated_added_on": [],
+        "categories": [
+            "blog",
+            "compilers",
+            "erlang",
+            "not-compiling",
+            "rtfm"
+        ],
+        "type": "url",
+        "value": "http://blog.erlang.org/the-road-to-the-jit/",
+        "title": "The Road to the JIT \u2013 A Blog from the Erlang/OTP team \u2013 The Erlang/OTP team at Ericsson, the implementors and maintainers of Erlang/OTP."
+    },
+    {
         "added_on": "2020-12-01",
         "repeated_added_on": [],
         "categories": [
