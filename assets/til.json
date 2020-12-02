@@ -64,6 +64,17 @@
         "title": "windows - How to use ffmpeg to add jpeg image before and after the video - Super User"
     },
     {
+        "added_on": "2020-12-02",
+        "repeated_added_on": [],
+        "categories": [
+            "tools",
+            "video-editing"
+        ],
+        "type": "url",
+        "value": "https://ma.ttias.be/use-ffmpeg-combine-multiple-videos/",
+        "title": "How to use ffmpeg to combine multiple videos to one"
+    },
+    {
         "added_on": "2020-12-01",
         "repeated_added_on": [],
         "categories": [
