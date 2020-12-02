@@ -39,6 +39,20 @@
         "title": "How to Write Usefully"
     },
     {
+        "added_on": "2020-12-02",
+        "repeated_added_on": [],
+        "categories": [
+            "Java",
+            "course",
+            "learning",
+            "programming",
+            "resource"
+        ],
+        "type": "url",
+        "value": "https://java-programming.mooc.fi/",
+        "title": "About the course - Java Programming"
+    },
+    {
         "added_on": "2020-12-01",
         "repeated_added_on": [],
         "categories": [
