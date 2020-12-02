@@ -26,6 +26,19 @@
         "title": "https://12days.cmdchallenge.com/"
     },
     {
+        "added_on": "2020-12-02",
+        "repeated_added_on": [],
+        "categories": [
+            "blog",
+            "developers",
+            "meta",
+            "writing"
+        ],
+        "type": "url",
+        "value": "http://paulgraham.com/useful.html",
+        "title": "How to Write Usefully"
+    },
+    {
         "added_on": "2020-12-01",
         "repeated_added_on": [],
         "categories": [
