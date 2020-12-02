@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-02
+
+1. [GitHub - monicahq/monica: Personal CRM. Remember everything about your friends, family and business relationships.](https://github.com/monicahq/monica)
+
 ## 2020-12-01
 
 1. [DevTerm \| ClockworkPi](https://www.clockworkpi.com/devterm)
