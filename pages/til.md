@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2020-12-02
 
 1. [GitHub - monicahq/monica: Personal CRM. Remember everything about your friends, family and business relationships.](https://github.com/monicahq/monica)
+2. [https://12days.cmdchallenge.com/](https://12days.cmdchallenge.com/)
 
 ## 2020-12-01
 
