@@ -24,8 +24,9 @@ not reliant on external services.
 3. [How to Write Usefully](http://paulgraham.com/useful.html)
 4. [How to use ffmpeg to combine multiple videos to one](https://ma.ttias.be/use-ffmpeg-combine-multiple-videos/)
 5. [Table of Contents - Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
-6. [https://12days.cmdchallenge.com/](https://12days.cmdchallenge.com/)
-7. [windows - How to use ffmpeg to add jpeg image before and after the video - Super User](https://superuser.com/questions/1031879/how-to-use-ffmpeg-to-add-jpeg-image-before-and-after-the-video)
+6. [The Road to the JIT – A Blog from the Erlang/OTP team – The Erlang/OTP team at Ericsson, the implementors and maintainers of Erlang/OTP.](http://blog.erlang.org/the-road-to-the-jit/)
+7. [https://12days.cmdchallenge.com/](https://12days.cmdchallenge.com/)
+8. [windows - How to use ffmpeg to add jpeg image before and after the video - Super User](https://superuser.com/questions/1031879/how-to-use-ffmpeg-to-add-jpeg-image-before-and-after-the-video)
 
 ## 2020-12-01
 
