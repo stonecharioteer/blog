@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2020-12-03
 
-1. [Mosh: the mobile shell](https://mosh.org/)
-2. [rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. - phiresky's blog](https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/)
+1. [Grain Blog \| The Founder’s Guide to Actually Understanding Users](https://grain.co/blog/the-founders-guide-to-understanding-users)
+2. [Mosh: the mobile shell](https://mosh.org/)
+3. [rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. - phiresky's blog](https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/)
 
 ## 2020-12-02
 
