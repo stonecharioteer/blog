@@ -19,9 +19,10 @@ not reliant on external services.
 
 ## 2020-12-03
 
-1. [Grain Blog \| The Founder’s Guide to Actually Understanding Users](https://grain.co/blog/the-founders-guide-to-understanding-users)
-2. [Mosh: the mobile shell](https://mosh.org/)
-3. [rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. - phiresky's blog](https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/)
+1. [GitHub - hanslub42/rlwrap: A readline wrapper](https://github.com/hanslub42/rlwrap)
+2. [Grain Blog \| The Founder’s Guide to Actually Understanding Users](https://grain.co/blog/the-founders-guide-to-understanding-users)
+3. [Mosh: the mobile shell](https://mosh.org/)
+4. [rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. - phiresky's blog](https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/)
 
 ## 2020-12-02
 
