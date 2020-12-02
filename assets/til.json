@@ -35,6 +35,18 @@
         "title": "Grain Blog | The Founder\u2019s Guide to Actually Understanding Users"
     },
     {
+        "added_on": "2020-12-03",
+        "repeated_added_on": [],
+        "categories": [
+            "Linux",
+            "devtools",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/hanslub42/rlwrap",
+        "title": "GitHub - hanslub42/rlwrap: A readline wrapper"
+    },
+    {
         "added_on": "2020-12-02",
         "repeated_added_on": [],
         "categories": [
