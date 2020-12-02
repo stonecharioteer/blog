@@ -12,6 +12,20 @@
         "title": "GitHub - monicahq/monica: Personal CRM. Remember everything about your friends, family and business relationships."
     },
     {
+        "added_on": "2020-12-02",
+        "repeated_added_on": [],
+        "categories": [
+            "bash",
+            "learning",
+            "linux",
+            "shell",
+            "tool"
+        ],
+        "type": "url",
+        "value": "https://12days.cmdchallenge.com/",
+        "title": "https://12days.cmdchallenge.com/"
+    },
+    {
         "added_on": "2020-12-01",
         "repeated_added_on": [],
         "categories": [
