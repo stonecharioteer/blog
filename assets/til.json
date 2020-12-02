@@ -53,6 +53,17 @@
         "title": "About the course - Java Programming"
     },
     {
+        "added_on": "2020-12-02",
+        "repeated_added_on": [],
+        "categories": [
+            "tools",
+            "video-editing"
+        ],
+        "type": "url",
+        "value": "https://superuser.com/questions/1031879/how-to-use-ffmpeg-to-add-jpeg-image-before-and-after-the-video",
+        "title": "windows - How to use ffmpeg to add jpeg image before and after the video - Super User"
+    },
+    {
         "added_on": "2020-12-01",
         "repeated_added_on": [],
         "categories": [
