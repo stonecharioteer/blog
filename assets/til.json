@@ -75,6 +75,21 @@
         "title": "How to use ffmpeg to combine multiple videos to one"
     },
     {
+        "added_on": "2020-12-02",
+        "repeated_added_on": [],
+        "categories": [
+            "Rust",
+            "coding",
+            "languages",
+            "learning",
+            "programming",
+            "resources"
+        ],
+        "type": "url",
+        "value": "https://rust-lang-nursery.github.io/rust-cookbook/",
+        "title": "Table of Contents - Rust Cookbook"
+    },
+    {
         "added_on": "2020-12-01",
         "repeated_added_on": [],
         "categories": [
