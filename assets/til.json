@@ -13,6 +13,17 @@
         "title": "Mosh: the mobile shell"
     },
     {
+        "added_on": "2020-12-03",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "search"
+        ],
+        "type": "url",
+        "value": "https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/",
+        "title": "rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. - phiresky's blog"
+    },
+    {
         "added_on": "2020-12-02",
         "repeated_added_on": [],
         "categories": [
