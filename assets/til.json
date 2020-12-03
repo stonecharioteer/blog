@@ -2553,7 +2553,9 @@
             "tool"
         ],
         "added_on": "2020-08-18",
-        "repeated_added_on": [],
+        "repeated_added_on": [
+            "2020-12-04"
+        ],
         "type": "url",
         "value": "https://github.com/cheat/cheat",
         "title": "`cheat` is a command to make and use a global pool of *offline* cheatsheets"
