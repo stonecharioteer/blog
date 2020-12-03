@@ -15,6 +15,20 @@
         "title": "Parinfer - simpler Lisp editing"
     },
     {
+        "added_on": "2020-12-04",
+        "repeated_added_on": [],
+        "categories": [
+            "OBS",
+            "obstudio",
+            "streaming",
+            "tools",
+            "video"
+        ],
+        "type": "url",
+        "value": "https://obs.ninja/",
+        "title": "OBS.Ninja"
+    },
+    {
         "added_on": "2020-12-03",
         "repeated_added_on": [],
         "categories": [
