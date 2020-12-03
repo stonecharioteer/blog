@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-04
+
+1. [Parinfer - simpler Lisp editing](https://shaunlebron.github.io/parinfer/)
+
 ## 2020-12-03
 
 1. [GitHub - hanslub42/rlwrap: A readline wrapper](https://github.com/hanslub42/rlwrap)
