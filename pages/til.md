@@ -23,7 +23,8 @@ not reliant on external services.
 2. [Grain Blog \| The Founder’s Guide to Actually Understanding Users](https://grain.co/blog/the-founders-guide-to-understanding-users)
 3. [Mastering Vim Quickly: Newsletter](https://masteringvim.com/?s=09)
 4. [Mosh: the mobile shell](https://mosh.org/)
-5. [rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. - phiresky's blog](https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/)
+5. [The DMOTE \| VE](https://viktor.eikman.se/article/the-dmote/)
+6. [rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. - phiresky's blog](https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/)
 
 ## 2020-12-02
 
