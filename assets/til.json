@@ -29,6 +29,22 @@
         "title": "OBS.Ninja"
     },
     {
+        "added_on": "2020-12-04",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "linux",
+            "obs",
+            "screen-recording",
+            "streaming",
+            "tools",
+            "youtube"
+        ],
+        "type": "url",
+        "value": "https://gitlab.com/screenkey/screenkey",
+        "title": "screenkey / screenkey \u00b7 GitLab"
+    },
+    {
         "added_on": "2020-12-03",
         "repeated_added_on": [],
         "categories": [
