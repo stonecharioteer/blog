@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2020-12-04
 
-1. [Parinfer - simpler Lisp editing](https://shaunlebron.github.io/parinfer/)
+1. [OBS.Ninja](https://obs.ninja/)
+2. [Parinfer - simpler Lisp editing](https://shaunlebron.github.io/parinfer/)
 
 ## 2020-12-03
 
