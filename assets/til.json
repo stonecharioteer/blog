@@ -61,6 +61,21 @@
         "title": "Mastering Vim Quickly: Newsletter"
     },
     {
+        "added_on": "2020-12-03",
+        "repeated_added_on": [],
+        "categories": [
+            "diy",
+            "ergonomics",
+            "keyboards",
+            "mechanical-keyboards",
+            "programming",
+            "qmk"
+        ],
+        "type": "url",
+        "value": "https://viktor.eikman.se/article/the-dmote/",
+        "title": "The DMOTE | VE"
+    },
+    {
         "added_on": "2020-12-02",
         "repeated_added_on": [],
         "categories": [
