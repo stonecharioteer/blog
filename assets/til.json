@@ -1,5 +1,20 @@
 [
     {
+        "added_on": "2020-12-04",
+        "repeated_added_on": [],
+        "categories": [
+            "clojure",
+            "devtool",
+            "editing",
+            "lisp",
+            "parenthesis",
+            "tool"
+        ],
+        "type": "url",
+        "value": "https://shaunlebron.github.io/parinfer/",
+        "title": "Parinfer - simpler Lisp editing"
+    },
+    {
         "added_on": "2020-12-03",
         "repeated_added_on": [],
         "categories": [
