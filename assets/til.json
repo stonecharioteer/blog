@@ -47,6 +47,20 @@
         "title": "GitHub - hanslub42/rlwrap: A readline wrapper"
     },
     {
+        "added_on": "2020-12-03",
+        "repeated_added_on": [],
+        "categories": [
+            "editors",
+            "linux",
+            "newsletters",
+            "protips",
+            "vim"
+        ],
+        "type": "url",
+        "value": "https://masteringvim.com/?s=09",
+        "title": "Mastering Vim Quickly: Newsletter"
+    },
+    {
         "added_on": "2020-12-02",
         "repeated_added_on": [],
         "categories": [
