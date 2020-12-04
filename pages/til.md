@@ -19,10 +19,11 @@ not reliant on external services.
 
 ## 2020-12-04
 
-1. [OBS.Ninja](https://obs.ninja/)
-2. [Parinfer - simpler Lisp editing](https://shaunlebron.github.io/parinfer/)
-3. [Run a program on your dedicated AMD graphics card on Linux \| Stardust \| Starbeamrainbowlabs](https://starbeamrainbowlabs.com/blog/article.php?article=posts%2F254-run-program-on-amd-dedicated-graphics-card.html)
-4. [screenkey / screenkey · GitLab](https://gitlab.com/screenkey/screenkey)
+1. [GitHub - TeXitoi/keyberon: A rust crate to create a pure rust keyboard firmware.](https://github.com/TeXitoi/keyberon)
+2. [OBS.Ninja](https://obs.ninja/)
+3. [Parinfer - simpler Lisp editing](https://shaunlebron.github.io/parinfer/)
+4. [Run a program on your dedicated AMD graphics card on Linux \| Stardust \| Starbeamrainbowlabs](https://starbeamrainbowlabs.com/blog/article.php?article=posts%2F254-run-program-on-amd-dedicated-graphics-card.html)
+5. [screenkey / screenkey · GitLab](https://gitlab.com/screenkey/screenkey)
 
 ## 2020-12-03
 
