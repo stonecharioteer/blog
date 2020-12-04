@@ -45,6 +45,21 @@
         "title": "screenkey / screenkey \u00b7 GitLab"
     },
     {
+        "added_on": "2020-12-04",
+        "repeated_added_on": [],
+        "categories": [
+            "amd",
+            "devtools",
+            "gpu",
+            "programming",
+            "radeon",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://starbeamrainbowlabs.com/blog/article.php?article=posts%2F254-run-program-on-amd-dedicated-graphics-card.html",
+        "title": "Run a program on your dedicated AMD graphics card on Linux | Stardust | Starbeamrainbowlabs"
+    },
+    {
         "added_on": "2020-12-03",
         "repeated_added_on": [],
         "categories": [
