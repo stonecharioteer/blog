@@ -21,7 +21,8 @@ not reliant on external services.
 
 1. [OBS.Ninja](https://obs.ninja/)
 2. [Parinfer - simpler Lisp editing](https://shaunlebron.github.io/parinfer/)
-3. [screenkey / screenkey · GitLab](https://gitlab.com/screenkey/screenkey)
+3. [Run a program on your dedicated AMD graphics card on Linux \| Stardust \| Starbeamrainbowlabs](https://starbeamrainbowlabs.com/blog/article.php?article=posts%2F254-run-program-on-amd-dedicated-graphics-card.html)
+4. [screenkey / screenkey · GitLab](https://gitlab.com/screenkey/screenkey)
 
 ## 2020-12-03
 
