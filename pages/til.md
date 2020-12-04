@@ -19,15 +19,19 @@ not reliant on external services.
 
 ## 2020-12-04
 
-1. [GitHub - TeXitoi/keyberon: A rust crate to create a pure rust keyboard firmware.](https://github.com/TeXitoi/keyberon)
-2. [OBS.Ninja](https://obs.ninja/)
-3. [Parinfer - simpler Lisp editing](https://shaunlebron.github.io/parinfer/)
-4. [Run a program on your dedicated AMD graphics card on Linux \| Stardust \| Starbeamrainbowlabs](https://starbeamrainbowlabs.com/blog/article.php?article=posts%2F254-run-program-on-amd-dedicated-graphics-card.html)
-5. [Ubuntu Manpage:
+1. [
+How to Design Programs: 
+An Introduction to Computing and Programming
+](http://htdp.org/2003-09-26/Book/curriculum.html)
+2. [GitHub - TeXitoi/keyberon: A rust crate to create a pure rust keyboard firmware.](https://github.com/TeXitoi/keyberon)
+3. [OBS.Ninja](https://obs.ninja/)
+4. [Parinfer - simpler Lisp editing](https://shaunlebron.github.io/parinfer/)
+5. [Run a program on your dedicated AMD graphics card on Linux \| Stardust \| Starbeamrainbowlabs](https://starbeamrainbowlabs.com/blog/article.php?article=posts%2F254-run-program-on-amd-dedicated-graphics-card.html)
+6. [Ubuntu Manpage:
 
        unclutter - remove idle cursor image from screen
     ](http://manpages.ubuntu.com/manpages/bionic/man1/unclutter.1.html)
-6. [screenkey / screenkey · GitLab](https://gitlab.com/screenkey/screenkey)
+7. [screenkey / screenkey · GitLab](https://gitlab.com/screenkey/screenkey)
 
 ## 2020-12-03
 
