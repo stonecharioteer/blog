@@ -75,6 +75,22 @@
         "title": "GitHub - TeXitoi/keyberon: A rust crate to create a pure rust keyboard firmware."
     },
     {
+        "added_on": "2020-12-04",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "linux",
+            "mouse",
+            "ocd",
+            "productivity",
+            "tools",
+            "ubuntu"
+        ],
+        "type": "url",
+        "value": "http://manpages.ubuntu.com/manpages/bionic/man1/unclutter.1.html",
+        "title": "Ubuntu Manpage:\n\n       unclutter - remove idle cursor image from screen\n    "
+    },
+    {
         "added_on": "2020-12-03",
         "repeated_added_on": [],
         "categories": [
