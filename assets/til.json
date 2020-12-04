@@ -16,6 +16,20 @@
         "title": "DWIM"
     },
     {
+        "added_on": "2020-12-05",
+        "repeated_added_on": [],
+        "categories": [
+            "coding-humor",
+            "comedy",
+            "developers",
+            "humor",
+            "programming-humor"
+        ],
+        "type": "url",
+        "value": "http://www.catb.org/~esr/jargon/html/index.html",
+        "title": "The Jargon File"
+    },
+    {
         "added_on": "2020-12-04",
         "repeated_added_on": [],
         "categories": [
