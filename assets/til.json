@@ -30,6 +30,19 @@
         "title": "The Jargon File"
     },
     {
+        "added_on": "2020-12-05",
+        "repeated_added_on": [],
+        "categories": [
+            "distributed-systems",
+            "learning",
+            "raft",
+            "tutorial"
+        ],
+        "type": "url",
+        "value": "http://thesecretlivesofdata.com/raft/",
+        "title": "Raft"
+    },
+    {
         "added_on": "2020-12-04",
         "repeated_added_on": [],
         "categories": [
