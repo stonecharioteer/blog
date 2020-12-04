@@ -106,6 +106,21 @@
         "title": "\nHow to Design Programs: \nAn Introduction to Computing and Programming\n"
     },
     {
+        "added_on": "2020-12-04",
+        "repeated_added_on": [],
+        "categories": [
+            "12-factor-apps",
+            "advice",
+            "cli",
+            "command-line",
+            "design",
+            "programming"
+        ],
+        "type": "url",
+        "value": "https://clig.dev/",
+        "title": "CLI Guidelines"
+    },
+    {
         "added_on": "2020-12-03",
         "repeated_added_on": [],
         "categories": [
