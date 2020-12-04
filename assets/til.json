@@ -91,6 +91,21 @@
         "title": "Ubuntu Manpage:\n\n       unclutter - remove idle cursor image from screen\n    "
     },
     {
+        "added_on": "2020-12-04",
+        "repeated_added_on": [],
+        "categories": [
+            "SICP",
+            "learning",
+            "lisp",
+            "programming",
+            "racket",
+            "scheme"
+        ],
+        "type": "url",
+        "value": "http://htdp.org/2003-09-26/Book/curriculum.html",
+        "title": "\nHow to Design Programs: \nAn Introduction to Computing and Programming\n"
+    },
+    {
         "added_on": "2020-12-03",
         "repeated_added_on": [],
         "categories": [
