@@ -60,6 +60,21 @@
         "title": "Run a program on your dedicated AMD graphics card on Linux | Stardust | Starbeamrainbowlabs"
     },
     {
+        "added_on": "2020-12-04",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "keyboard",
+            "mechanical-keyboard",
+            "qmk",
+            "rust",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/TeXitoi/keyberon",
+        "title": "GitHub - TeXitoi/keyberon: A rust crate to create a pure rust keyboard firmware."
+    },
+    {
         "added_on": "2020-12-03",
         "repeated_added_on": [],
         "categories": [
