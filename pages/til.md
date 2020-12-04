@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2020-12-05
 
 1. [DWIM](http://www.catb.org/~esr/jargon/html/D/DWIM.html)
+2. [The Jargon File](http://www.catb.org/~esr/jargon/html/index.html)
 
 ## 2020-12-04
 
