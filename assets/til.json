@@ -43,6 +43,24 @@
         "title": "Raft"
     },
     {
+        "added_on": "2020-12-05",
+        "repeated_added_on": [],
+        "categories": [
+            "SQL",
+            "analysis",
+            "aws",
+            "cloud",
+            "database",
+            "postgres",
+            "programming",
+            "time-series",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://blog.timescale.com/blog/timescaledb-vs-amazon-timestream-6000x-higher-inserts-175x-faster-queries-220x-cheaper/",
+        "title": "TimescaleDB vs. Amazon Timestream: 6000x faster inserts, 5-175x query speed"
+    },
+    {
         "added_on": "2020-12-04",
         "repeated_added_on": [],
         "categories": [
