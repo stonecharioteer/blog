@@ -22,6 +22,7 @@ not reliant on external services.
 1. [DWIM](http://www.catb.org/~esr/jargon/html/D/DWIM.html)
 2. [Raft](http://thesecretlivesofdata.com/raft/)
 3. [The Jargon File](http://www.catb.org/~esr/jargon/html/index.html)
+4. [TimescaleDB vs. Amazon Timestream: 6000x faster inserts, 5-175x query speed](https://blog.timescale.com/blog/timescaledb-vs-amazon-timestream-6000x-higher-inserts-175x-faster-queries-220x-cheaper/)
 
 ## 2020-12-04
 
