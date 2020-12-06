@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-06
+
+1. [Is there a way to disable a laptop's internal keyboard? - Ask Ubuntu](https://askubuntu.com/questions/160945/is-there-a-way-to-disable-a-laptops-internal-keyboard#178741)
+
 ## 2020-12-05
 
 1. [DWIM](http://www.catb.org/~esr/jargon/html/D/DWIM.html)
