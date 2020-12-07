@@ -17,6 +17,12 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-07
+
+1. [
+Generating fantasy maps
+](http://mewo2.com/notes/terrain/?utm_source=mybridge&utm_medium=email&utm_campaign=read_more)
+
 ## 2020-12-06
 
 1. [Is there a way to disable a laptop's internal keyboard? - Ask Ubuntu](https://askubuntu.com/questions/160945/is-there-a-way-to-disable-a-laptops-internal-keyboard#178741)
