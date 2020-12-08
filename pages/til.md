@@ -20,8 +20,9 @@ not reliant on external services.
 ## 2020-12-08
 
 1. [Distributed Systems lecture series - YouTube](https://youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB)
-2. [How to Make Your Code Reviewer Fall in Love with You · mtlynch.io](https://mtlynch.io/code-review-love/)
-3. [The Modern JavaScript Tutorial](https://javascript.info/)
+2. [EmacsConf -  2020](https://emacsconf.org/2020/)
+3. [How to Make Your Code Reviewer Fall in Love with You · mtlynch.io](https://mtlynch.io/code-review-love/)
+4. [The Modern JavaScript Tutorial](https://javascript.info/)
 
 ## 2020-12-07
 
