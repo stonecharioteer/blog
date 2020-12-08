@@ -59,6 +59,14 @@
         "title": "EmacsConf -  2020"
     },
     {
+        "added_on": "2020-12-08",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://book.pythontips.com/en/latest/",
+        "title": "Intermediate Python \u2014 Python Tips 0.1 documentation"
+    },
+    {
         "added_on": "2020-12-07",
         "repeated_added_on": [],
         "categories": [
