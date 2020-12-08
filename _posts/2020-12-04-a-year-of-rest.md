@@ -1,7 +1,7 @@
 ---
-layout:    "default"
+layout:    "post"
 date:      "2020-12-04 18:21:11+05:30"
-title:     "a year of rest"
+title:     A Year Of Rest
 tags:      ['hobbies','coding','hearing-loss']
 ---
 
@@ -83,3 +83,5 @@ I began the last decade depressed. I was unable to find a publisher for my book.
 This career does not offer much in time for doing these things. Coding projects are cool, but Tolkienian fantasy is not. Doesn't get much more annoying than that. I want to write again, maybe self-publish (for free, I don't need the money from my book.)
 
 Towards the end of this month, I'll collect my thoughts and put together a goals post for 2021. If I can dare look that far ahead.
+
+I have high hopes for getting back on track, and I hope I can do this. I will reevaluate my situation in 4 months and see how to correct the process, if that becomes necessary.
