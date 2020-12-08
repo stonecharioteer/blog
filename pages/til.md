@@ -22,7 +22,8 @@ not reliant on external services.
 1. [Distributed Systems lecture series - YouTube](https://youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB)
 2. [EmacsConf -  2020](https://emacsconf.org/2020/)
 3. [How to Make Your Code Reviewer Fall in Love with You · mtlynch.io](https://mtlynch.io/code-review-love/)
-4. [The Modern JavaScript Tutorial](https://javascript.info/)
+4. [Intermediate Python — Python Tips 0.1 documentation](https://book.pythontips.com/en/latest/)
+5. [The Modern JavaScript Tutorial](https://javascript.info/)
 
 ## 2020-12-07
 
