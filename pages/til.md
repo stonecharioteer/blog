@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2020-12-08
 
 1. [How to Make Your Code Reviewer Fall in Love with You · mtlynch.io](https://mtlynch.io/code-review-love/)
+2. [The Modern JavaScript Tutorial](https://javascript.info/)
 
 ## 2020-12-07
 
