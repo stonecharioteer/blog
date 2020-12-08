@@ -67,6 +67,23 @@
         "title": "Intermediate Python \u2014 Python Tips 0.1 documentation"
     },
     {
+        "added_on": "2020-12-08",
+        "repeated_added_on": [],
+        "categories": [
+            "UI",
+            "UX",
+            "a11y",
+            "accessibility",
+            "css",
+            "front-end",
+            "html",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://benmyers.dev/blog/aria-labels-and-descriptions/",
+        "title": "aria-label, aria-labelledby, and aria-describedby: What's the Difference?"
+    },
+    {
         "added_on": "2020-12-07",
         "repeated_added_on": [],
         "categories": [
