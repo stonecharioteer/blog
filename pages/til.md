@@ -24,6 +24,7 @@ not reliant on external services.
 3. [How to Make Your Code Reviewer Fall in Love with You · mtlynch.io](https://mtlynch.io/code-review-love/)
 4. [Intermediate Python — Python Tips 0.1 documentation](https://book.pythontips.com/en/latest/)
 5. [The Modern JavaScript Tutorial](https://javascript.info/)
+6. [aria-label, aria-labelledby, and aria-describedby: What's the Difference?](https://benmyers.dev/blog/aria-labels-and-descriptions/)
 
 ## 2020-12-07
 
