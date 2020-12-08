@@ -21,10 +21,11 @@ not reliant on external services.
 
 1. [Distributed Systems lecture series - YouTube](https://youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB)
 2. [EmacsConf -  2020](https://emacsconf.org/2020/)
-3. [How to Make Your Code Reviewer Fall in Love with You · mtlynch.io](https://mtlynch.io/code-review-love/)
-4. [Intermediate Python — Python Tips 0.1 documentation](https://book.pythontips.com/en/latest/)
-5. [The Modern JavaScript Tutorial](https://javascript.info/)
-6. [aria-label, aria-labelledby, and aria-describedby: What's the Difference?](https://benmyers.dev/blog/aria-labels-and-descriptions/)
+3. [Gerald Jay Sussman on Flexible Systems, The Power of Generic Operations - YouTube](https://youtu.be/cblhgNUoX9M)
+4. [How to Make Your Code Reviewer Fall in Love with You · mtlynch.io](https://mtlynch.io/code-review-love/)
+5. [Intermediate Python — Python Tips 0.1 documentation](https://book.pythontips.com/en/latest/)
+6. [The Modern JavaScript Tutorial](https://javascript.info/)
+7. [aria-label, aria-labelledby, and aria-describedby: What's the Difference?](https://benmyers.dev/blog/aria-labels-and-descriptions/)
 
 ## 2020-12-07
 
