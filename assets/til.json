@@ -29,6 +29,22 @@
         "title": "The Modern JavaScript Tutorial"
     },
     {
+        "added_on": "2020-12-08",
+        "repeated_added_on": [],
+        "categories": [
+            "coding",
+            "course",
+            "distributed-systems",
+            "interviews",
+            "learning",
+            "studying",
+            "theory"
+        ],
+        "type": "url",
+        "value": "https://youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB",
+        "title": "Distributed Systems lecture series - YouTube"
+    },
+    {
         "added_on": "2020-12-07",
         "repeated_added_on": [],
         "categories": [
