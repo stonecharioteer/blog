@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-09
+
+1. [Ask HN: What's the best paper you've read in 2020? \| Hacker News](https://news.ycombinator.com/item?id=25346456)
+
 ## 2020-12-08
 
 1. [Distributed Systems lecture series - YouTube](https://youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB)
