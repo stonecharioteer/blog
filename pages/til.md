@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2020-12-09
 
-1. [Ask HN: What's the best paper you've read in 2020? \| Hacker News](https://news.ycombinator.com/item?id=25346456)
-2. [oso Documentation — oso Documentation](https://docs.osohq.com/index.html)
+1. [5 good books for a lousy year \| Bill Gates](https://www.gatesnotes.com/About-Bill-Gates/Holiday-Books-2020)
+2. [Ask HN: What's the best paper you've read in 2020? \| Hacker News](https://news.ycombinator.com/item?id=25346456)
+3. [oso Documentation — oso Documentation](https://docs.osohq.com/index.html)
 
 ## 2020-12-08
 
