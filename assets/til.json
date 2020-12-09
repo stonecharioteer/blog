@@ -12,6 +12,23 @@
         "title": "Ask HN: What's the best paper you've read in 2020? | Hacker News"
     },
     {
+        "added_on": "2020-12-09",
+        "repeated_added_on": [],
+        "categories": [
+            "application-development",
+            "auth",
+            "authorization",
+            "library",
+            "permissions",
+            "python",
+            "rust",
+            "web-application"
+        ],
+        "type": "url",
+        "value": "https://docs.osohq.com/index.html",
+        "title": "oso Documentation \u2014 oso Documentation"
+    },
+    {
         "added_on": "2020-12-08",
         "repeated_added_on": [],
         "categories": [
