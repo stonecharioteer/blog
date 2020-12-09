@@ -1,8 +1,8 @@
 ---
-layout:    "post"
+layout:    post
 date:      "2020-12-09 22:21:47+05:30"
-title:     "BangPypers Screencast On Security Headers"
-tags:      ['webdev', 'python', 'meetup', 'videos', 'tutorial', 'screencast', 'bangpypers']
+title:     BangPypers Screencast On Security Headers
+tags:      [webdev, python, meetup, videos, tutorial, screencast, bangpypers]
 ---
 
 The video for my screencast has finally been uploaded. This was a screencast conducted by BangPypers.
@@ -10,8 +10,8 @@ Here, I covered the topics I blogged about in [this article]({% post_url 2020-11
 
 
 <iframe
-    width="158"
-    height="218"
+    width="280"
+    height="158"
     src="https://www.youtube.com/embed/xickNijifOs"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

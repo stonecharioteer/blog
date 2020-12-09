@@ -1,8 +1,8 @@
 ---
-layout:    "post"
+layout:    post
 date:      "2020-12-04 18:21:11+05:30"
 title:     A Year Of Rest
-tags:      ['hobbies','coding','hearing-loss']
+tags:      [hobbies, coding, hearing-loss]
 ---
 
 I have been taking it easy for a year.
