@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2020-12-09
 
 1. [Ask HN: What's the best paper you've read in 2020? \| Hacker News](https://news.ycombinator.com/item?id=25346456)
+2. [oso Documentation — oso Documentation](https://docs.osohq.com/index.html)
 
 ## 2020-12-08
 
