@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2020-12-09",
+        "repeated_added_on": [],
+        "categories": [
+            "computer-science",
+            "papers",
+            "research"
+        ],
+        "type": "url",
+        "value": "https://news.ycombinator.com/item?id=25346456",
+        "title": "Ask HN: What's the best paper you've read in 2020? | Hacker News"
+    },
+    {
         "added_on": "2020-12-08",
         "repeated_added_on": [],
         "categories": [
