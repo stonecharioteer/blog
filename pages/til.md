@@ -21,7 +21,8 @@ not reliant on external services.
 
 1. [5 good books for a lousy year \| Bill Gates](https://www.gatesnotes.com/About-Bill-Gates/Holiday-Books-2020)
 2. [Ask HN: What's the best paper you've read in 2020? \| Hacker News](https://news.ycombinator.com/item?id=25346456)
-3. [oso Documentation — oso Documentation](https://docs.osohq.com/index.html)
+3. [The Untold Story Of The Invention Of The Game Cartridge](https://www.fastcompany.com/3040889/the-untold-story-of-the-invention-of-the-game-cartridge)
+4. [oso Documentation — oso Documentation](https://docs.osohq.com/index.html)
 
 ## 2020-12-08
 
