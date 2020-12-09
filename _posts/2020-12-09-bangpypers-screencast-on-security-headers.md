@@ -6,7 +6,7 @@ tags:      ['webdev', 'python', 'meetup', 'videos', 'tutorial', 'screencast', 'b
 ---
 
 The video for my screencast has finally been uploaded. This was a screencast conducted by BangPypers.
-Here, I covered the topics I blogged about in [this article]({% post_url 2020-11-11-web-application-security.md %}).
+Here, I covered the topics I blogged about in [this article]({% post_url 2020-11-11-web-application-security %}).
 
 
 <iframe
