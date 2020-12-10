@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2020-12-10",
+        "repeated_added_on": [],
+        "categories": [
+            "camera",
+            "cool",
+            "learning",
+            "photography",
+            "theory"
+        ],
+        "type": "url",
+        "value": "https://ciechanow.ski/cameras-and-lenses/",
+        "title": "Cameras and Lenses \u2013 Bartosz Ciechanowski"
+    },
+    {
         "added_on": "2020-12-09",
         "repeated_added_on": [],
         "categories": [
