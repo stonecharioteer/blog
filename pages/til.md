@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-11
+
+1. [VSCode Tinder - YouTube](https://youtu.be/bfd8RyAJh6c)
+
 ## 2020-12-10
 
 1. [Cameras and Lenses – Bartosz Ciechanowski](https://ciechanow.ski/cameras-and-lenses/)
