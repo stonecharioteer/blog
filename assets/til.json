@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2020-12-11",
+        "repeated_added_on": [],
+        "categories": [
+            "funny",
+            "humor",
+            "spoof",
+            "tinder",
+            "vscode"
+        ],
+        "type": "url",
+        "value": "https://youtu.be/bfd8RyAJh6c",
+        "title": "VSCode Tinder - YouTube"
+    },
+    {
         "added_on": "2020-12-10",
         "repeated_added_on": [],
         "categories": [
