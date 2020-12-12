@@ -14,6 +14,14 @@
         "title": "CS 6120: The Self-Guided Course"
     },
     {
+        "added_on": "2020-12-12",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://tenthousandmeters.com/blog/python-behind-the-scenes-1-how-the-cpython-vm-works/",
+        "title": "Python behind the scenes #1: how the CPython VM works"
+    },
+    {
         "added_on": "2020-12-11",
         "repeated_added_on": [],
         "categories": [
