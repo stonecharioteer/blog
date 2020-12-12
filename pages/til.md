@@ -25,6 +25,7 @@ not reliant on external services.
 4. [Python behind the scenes #3: stepping through the CPython source code](https://tenthousandmeters.com/blog/python-behind-the-scenes-3-stepping-through-the-cpython-source-code/)
 5. [Python behind the scenes #4: how Python bytecode is executed](https://tenthousandmeters.com/blog/python-behind-the-scenes-4-how-python-bytecode-is-executed/)
 6. [Python behind the scenes #5: how variables are implemented in CPython](https://tenthousandmeters.com/blog/python-behind-the-scenes-5-how-variables-are-implemented-in-cpython/)
+7. [Python behind the scenes #6: how Python object system works](https://tenthousandmeters.com/blog/python-behind-the-scenes-6-how-python-object-system-works/)
 
 ## 2020-12-11
 
