@@ -26,7 +26,8 @@ not reliant on external services.
 5. [Python behind the scenes #4: how Python bytecode is executed](https://tenthousandmeters.com/blog/python-behind-the-scenes-4-how-python-bytecode-is-executed/)
 6. [Python behind the scenes #5: how variables are implemented in CPython](https://tenthousandmeters.com/blog/python-behind-the-scenes-5-how-variables-are-implemented-in-cpython/)
 7. [Python behind the scenes #6: how Python object system works](https://tenthousandmeters.com/blog/python-behind-the-scenes-6-how-python-object-system-works/)
-8. [The Boron Letters: Halbert, Gary C., Halbert, Bond: 9781484825983: Amazon.com: Books](https://www.amazon.com/Boron-Letters-Gary-C-Halbert/dp/1484825985)
+8. [Surfraw - Wikipedia](https://en.wikipedia.org/wiki/Surfraw)
+9. [The Boron Letters: Halbert, Gary C., Halbert, Bond: 9781484825983: Amazon.com: Books](https://www.amazon.com/Boron-Letters-Gary-C-Halbert/dp/1484825985)
 
 ## 2020-12-11
 
