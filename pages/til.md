@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-12
+
+1. [CS 6120: The Self-Guided Course](https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/)
+
 ## 2020-12-11
 
 1. [VSCode Tinder - YouTube](https://youtu.be/bfd8RyAJh6c)
