@@ -38,6 +38,14 @@
         "title": "Python behind the scenes #3: stepping through the CPython source code"
     },
     {
+        "added_on": "2020-12-12",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://tenthousandmeters.com/blog/python-behind-the-scenes-4-how-python-bytecode-is-executed/",
+        "title": "Python behind the scenes #4: how Python bytecode is executed"
+    },
+    {
         "added_on": "2020-12-11",
         "repeated_added_on": [],
         "categories": [
