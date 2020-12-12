@@ -30,6 +30,14 @@
         "title": "Python behind the scenes #2: how the CPython compiler works"
     },
     {
+        "added_on": "2020-12-12",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://tenthousandmeters.com/blog/python-behind-the-scenes-3-stepping-through-the-cpython-source-code/",
+        "title": "Python behind the scenes #3: stepping through the CPython source code"
+    },
+    {
         "added_on": "2020-12-11",
         "repeated_added_on": [],
         "categories": [
