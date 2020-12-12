@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2020-12-12",
+        "repeated_added_on": [],
+        "categories": [
+            "Cornell",
+            "computer-science",
+            "education",
+            "resources",
+            "studying"
+        ],
+        "type": "url",
+        "value": "https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/",
+        "title": "CS 6120: The Self-Guided Course"
+    },
+    {
         "added_on": "2020-12-11",
         "repeated_added_on": [],
         "categories": [
