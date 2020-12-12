@@ -22,6 +22,7 @@ not reliant on external services.
 1. [CS 6120: The Self-Guided Course](https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/)
 2. [Python behind the scenes #1: how the CPython VM works](https://tenthousandmeters.com/blog/python-behind-the-scenes-1-how-the-cpython-vm-works/)
 3. [Python behind the scenes #2: how the CPython compiler works](https://tenthousandmeters.com/blog/python-behind-the-scenes-2-how-the-cpython-compiler-works/)
+4. [Python behind the scenes #3: stepping through the CPython source code](https://tenthousandmeters.com/blog/python-behind-the-scenes-3-stepping-through-the-cpython-source-code/)
 
 ## 2020-12-11
 
