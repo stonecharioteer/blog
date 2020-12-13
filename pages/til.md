@@ -22,14 +22,16 @@ not reliant on external services.
 1. [
     All Startup Jobs in tech hubs in Europe - JobFluent
   ](https://www.jobfluent.com/)
-2. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
-3. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
-4. [Deis Labs](https://deislabs.io/posts/introducing-yo-wasm/)
-5. [Pieter Levels](https://levels.io/)
-6. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
-7. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
-8. [Writing Program](http://rlstine.com/writing-program)
-9. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
+2. [Bison
+- GNU Project - Free Software Foundation](https://www.gnu.org/software/bison/)
+3. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
+4. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
+5. [Deis Labs](https://deislabs.io/posts/introducing-yo-wasm/)
+6. [Pieter Levels](https://levels.io/)
+7. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
+8. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
+9. [Writing Program](http://rlstine.com/writing-program)
+10. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
 
 ## 2020-12-12
 
