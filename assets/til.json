@@ -183,6 +183,19 @@
         "title": "CS 4410/6410: Compiler Design"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "blog",
+            "learning",
+            "programming-languages",
+            "ruby"
+        ],
+        "type": "url",
+        "value": "http://patshaughnessy.net/ruby-under-a-microscope",
+        "title": "Ruby Under a Microscope - Pat Shaughnessy"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
