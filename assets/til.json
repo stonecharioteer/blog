@@ -208,6 +208,22 @@
         "title": "index | TIOBE - The Software Quality Company"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "documentation",
+            "linux",
+            "posix",
+            "rtfm",
+            "shell",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18",
+        "title": "Shell Command Language"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
