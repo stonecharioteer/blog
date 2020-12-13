@@ -156,6 +156,19 @@
         "title": "Crafting Interpreters"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "compilers",
+            "computer-science",
+            "meta",
+            "programming-languages"
+        ],
+        "type": "url",
+        "value": "https://ucsd-cse131-f19.github.io/",
+        "title": "Compiler Construction \u2013 CSE 131 F19"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
