@@ -142,6 +142,20 @@
         "title": "Bison\n- GNU Project - Free Software Foundation"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "book",
+            "compilers",
+            "computer-science",
+            "meta",
+            "programming-languages"
+        ],
+        "type": "url",
+        "value": "http://craftinginterpreters.com/",
+        "title": "Crafting Interpreters"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
