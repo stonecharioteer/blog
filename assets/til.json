@@ -28,6 +28,19 @@
         "title": "Writing Program"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "analytics",
+            "data",
+            "developers",
+            "meta"
+        ],
+        "type": "url",
+        "value": "https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/",
+        "title": "Can developer productivity be measured? - Stack Overflow Blog"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
