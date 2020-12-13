@@ -1,5 +1,20 @@
 [
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "UI",
+            "data",
+            "data-engineering",
+            "data-science",
+            "devtools",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://datasette.io/",
+        "title": "Datasette: An open source multi-tool for exploring and publishing data"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
