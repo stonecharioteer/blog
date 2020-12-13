@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-13
+
+1. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
+
 ## 2020-12-12
 
 1. [CS 6120: The Self-Guided Course](https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/)
