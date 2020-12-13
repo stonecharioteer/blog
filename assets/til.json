@@ -169,6 +169,20 @@
         "title": "Compiler Construction \u2013 CSE 131 F19"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "compilers",
+            "computer-science",
+            "course",
+            "meta",
+            "programming-languages"
+        ],
+        "type": "url",
+        "value": "https://course.ccs.neu.edu/cs4410/",
+        "title": "CS 4410/6410: Compiler Design"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
