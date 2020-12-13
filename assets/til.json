@@ -41,6 +41,21 @@
         "title": "Can developer productivity be measured? - Stack Overflow Blog"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "c",
+            "c-programming",
+            "compilers",
+            "computer-science",
+            "programming-languages",
+            "studying"
+        ],
+        "type": "url",
+        "value": "http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/",
+        "title": "Writing a Memory Allocator \u2013 Dmitry Soshnikov"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
