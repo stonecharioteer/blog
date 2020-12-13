@@ -56,6 +56,22 @@
         "title": "Writing a Memory Allocator \u2013 Dmitry Soshnikov"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "cool",
+            "devtools",
+            "front-end",
+            "tool",
+            "wasm",
+            "web-assembly",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://deislabs.io/posts/introducing-yo-wasm/",
+        "title": "Deis Labs"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
