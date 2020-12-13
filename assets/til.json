@@ -72,6 +72,21 @@
         "title": "Deis Labs"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "career",
+            "interview",
+            "job-portals",
+            "jobs",
+            "remote-jobs",
+            "remote-work"
+        ],
+        "type": "url",
+        "value": "https://remoteok.io/",
+        "title": "Remote Jobs in Programming, Design, Sales and more"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
