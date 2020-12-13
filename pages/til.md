@@ -22,22 +22,23 @@ not reliant on external services.
 1. [
     All Startup Jobs in tech hubs in Europe - JobFluent
   ](https://www.jobfluent.com/)
-2. [Bison
+2. [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/)
+3. [Bison
 - GNU Project - Free Software Foundation](https://www.gnu.org/software/bison/)
-3. [CS 4410/6410: Compiler Design](https://course.ccs.neu.edu/cs4410/)
-4. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
-5. [Compiler Construction – CSE 131 F19](https://ucsd-cse131-f19.github.io/)
-6. [Crafting Interpreters](http://craftinginterpreters.com/)
-7. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
-8. [Deis Labs](https://deislabs.io/posts/introducing-yo-wasm/)
-9. [Pieter Levels](https://levels.io/)
-10. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
-11. [Ruby Under a Microscope - Pat Shaughnessy](http://patshaughnessy.net/ruby-under-a-microscope)
-12. [Shell Command Language](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18)
-13. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
-14. [Writing Program](http://rlstine.com/writing-program)
-15. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
-16. [index \| TIOBE - The Software Quality Company](https://www.tiobe.com/tiobe-index/)
+4. [CS 4410/6410: Compiler Design](https://course.ccs.neu.edu/cs4410/)
+5. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
+6. [Compiler Construction – CSE 131 F19](https://ucsd-cse131-f19.github.io/)
+7. [Crafting Interpreters](http://craftinginterpreters.com/)
+8. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
+9. [Deis Labs](https://deislabs.io/posts/introducing-yo-wasm/)
+10. [Pieter Levels](https://levels.io/)
+11. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
+12. [Ruby Under a Microscope - Pat Shaughnessy](http://patshaughnessy.net/ruby-under-a-microscope)
+13. [Shell Command Language](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18)
+14. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
+15. [Writing Program](http://rlstine.com/writing-program)
+16. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
+17. [index \| TIOBE - The Software Quality Company](https://www.tiobe.com/tiobe-index/)
 
 ## 2020-12-12
 
