@@ -129,6 +129,19 @@
         "title": "Pieter Levels"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "compilers",
+            "computer-science",
+            "devtools",
+            "gnu"
+        ],
+        "type": "url",
+        "value": "https://www.gnu.org/software/bison/",
+        "title": "Bison\n- GNU Project - Free Software Foundation"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
