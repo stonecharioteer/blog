@@ -196,6 +196,18 @@
         "title": "Ruby Under a Microscope - Pat Shaughnessy"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "analytics",
+            "meta",
+            "programming-languages"
+        ],
+        "type": "url",
+        "value": "https://www.tiobe.com/tiobe-index/",
+        "title": "index | TIOBE - The Software Quality Company"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
