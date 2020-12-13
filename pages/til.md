@@ -23,8 +23,9 @@ not reliant on external services.
 2. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
 3. [Deis Labs](https://deislabs.io/posts/introducing-yo-wasm/)
 4. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
-5. [Writing Program](http://rlstine.com/writing-program)
-6. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
+5. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
+6. [Writing Program](http://rlstine.com/writing-program)
+7. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
 
 ## 2020-12-12
 
