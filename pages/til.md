@@ -24,16 +24,17 @@ not reliant on external services.
   ](https://www.jobfluent.com/)
 2. [Bison
 - GNU Project - Free Software Foundation](https://www.gnu.org/software/bison/)
-3. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
-4. [Compiler Construction – CSE 131 F19](https://ucsd-cse131-f19.github.io/)
-5. [Crafting Interpreters](http://craftinginterpreters.com/)
-6. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
-7. [Deis Labs](https://deislabs.io/posts/introducing-yo-wasm/)
-8. [Pieter Levels](https://levels.io/)
-9. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
-10. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
-11. [Writing Program](http://rlstine.com/writing-program)
-12. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
+3. [CS 4410/6410: Compiler Design](https://course.ccs.neu.edu/cs4410/)
+4. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
+5. [Compiler Construction – CSE 131 F19](https://ucsd-cse131-f19.github.io/)
+6. [Crafting Interpreters](http://craftinginterpreters.com/)
+7. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
+8. [Deis Labs](https://deislabs.io/posts/introducing-yo-wasm/)
+9. [Pieter Levels](https://levels.io/)
+10. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
+11. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
+12. [Writing Program](http://rlstine.com/writing-program)
+13. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
 
 ## 2020-12-12
 
