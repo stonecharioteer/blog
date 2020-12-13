@@ -22,6 +22,7 @@ not reliant on external services.
 1. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
 2. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
 3. [Writing Program](http://rlstine.com/writing-program)
+4. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
 
 ## 2020-12-12
 
