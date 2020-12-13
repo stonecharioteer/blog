@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2020-12-13
 
 1. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
+2. [Writing Program](http://rlstine.com/writing-program)
 
 ## 2020-12-12
 
