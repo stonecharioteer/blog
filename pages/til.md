@@ -36,6 +36,7 @@ not reliant on external services.
 12. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
 13. [Writing Program](http://rlstine.com/writing-program)
 14. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
+15. [index \| TIOBE - The Software Quality Company](https://www.tiobe.com/tiobe-index/)
 
 ## 2020-12-12
 
