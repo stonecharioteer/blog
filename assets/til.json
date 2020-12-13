@@ -224,6 +224,18 @@
         "title": "Shell Command Language"
     },
     {
+        "added_on": "2020-12-13",
+        "repeated_added_on": [],
+        "categories": [
+            "bash",
+            "scripting",
+            "shell"
+        ],
+        "type": "url",
+        "value": "https://tldp.org/LDP/abs/html/",
+        "title": "Advanced Bash-Scripting Guide"
+    },
+    {
         "added_on": "2020-12-12",
         "repeated_added_on": [],
         "categories": [
