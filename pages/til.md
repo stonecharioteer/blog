@@ -32,9 +32,10 @@ not reliant on external services.
 8. [Deis Labs](https://deislabs.io/posts/introducing-yo-wasm/)
 9. [Pieter Levels](https://levels.io/)
 10. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
-11. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
-12. [Writing Program](http://rlstine.com/writing-program)
-13. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
+11. [Ruby Under a Microscope - Pat Shaughnessy](http://patshaughnessy.net/ruby-under-a-microscope)
+12. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
+13. [Writing Program](http://rlstine.com/writing-program)
+14. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
 
 ## 2020-12-12
 
