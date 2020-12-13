@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2020-12-13
 
-1. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
-2. [Writing Program](http://rlstine.com/writing-program)
+1. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
+2. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
+3. [Writing Program](http://rlstine.com/writing-program)
 
 ## 2020-12-12
 
