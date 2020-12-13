@@ -19,13 +19,16 @@ not reliant on external services.
 
 ## 2020-12-13
 
-1. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
-2. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
-3. [Deis Labs](https://deislabs.io/posts/introducing-yo-wasm/)
-4. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
-5. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
-6. [Writing Program](http://rlstine.com/writing-program)
-7. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
+1. [
+    All Startup Jobs in tech hubs in Europe - JobFluent
+  ](https://www.jobfluent.com/)
+2. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
+3. [Datasette: An open source multi-tool for exploring and publishing data](https://datasette.io/)
+4. [Deis Labs](https://deislabs.io/posts/introducing-yo-wasm/)
+5. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
+6. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
+7. [Writing Program](http://rlstine.com/writing-program)
+8. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
 
 ## 2020-12-12
 
