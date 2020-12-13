@@ -33,10 +33,11 @@ not reliant on external services.
 9. [Pieter Levels](https://levels.io/)
 10. [Remote Jobs in Programming, Design, Sales and more](https://remoteok.io/)
 11. [Ruby Under a Microscope - Pat Shaughnessy](http://patshaughnessy.net/ruby-under-a-microscope)
-12. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
-13. [Writing Program](http://rlstine.com/writing-program)
-14. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
-15. [index \| TIOBE - The Software Quality Company](https://www.tiobe.com/tiobe-index/)
+12. [Shell Command Language](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18)
+13. [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup](https://www.workatastartup.com/)
+14. [Writing Program](http://rlstine.com/writing-program)
+15. [Writing a Memory Allocator – Dmitry Soshnikov](http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/)
+16. [index \| TIOBE - The Software Quality Company](https://www.tiobe.com/tiobe-index/)
 
 ## 2020-12-12
 
