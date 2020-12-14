@@ -39,6 +39,17 @@
         "title": "shell - What is the difference between sourcing ('.' or 'source') and executing a file in bash? - Unix & Linux Stack Exchange"
     },
     {
+        "added_on": "2020-12-14",
+        "repeated_added_on": [],
+        "categories": [
+            "book",
+            "css"
+        ],
+        "type": "url",
+        "value": "https://debuggingcss.com/",
+        "title": "Debugging CSS"
+    },
+    {
         "added_on": "2020-12-13",
         "repeated_added_on": [],
         "categories": [
