@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-14
+
+1. [The Python Language Reference — Python 3.9.1 documentation](https://docs.python.org/3/reference/index.html)
+
 ## 2020-12-13
 
 1. [
