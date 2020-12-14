@@ -19,9 +19,10 @@ not reliant on external services.
 
 ## 2020-12-14
 
-1. [The Architecture of Open Source Applications: LLVM](https://aosabook.org/en/llvm.html)
-2. [The Python Language Reference — Python 3.9.1 documentation](https://docs.python.org/3/reference/index.html)
-3. [shell - What is the difference between sourcing ('.' or 'source') and executing a file in bash? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/43885)
+1. [Debugging CSS](https://debuggingcss.com/)
+2. [The Architecture of Open Source Applications: LLVM](https://aosabook.org/en/llvm.html)
+3. [The Python Language Reference — Python 3.9.1 documentation](https://docs.python.org/3/reference/index.html)
+4. [shell - What is the difference between sourcing ('.' or 'source') and executing a file in bash? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/a/43885)
 
 ## 2020-12-13
 
