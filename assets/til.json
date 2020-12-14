@@ -25,6 +25,20 @@
         "title": "The Architecture of Open Source Applications: LLVM"
     },
     {
+        "added_on": "2020-12-14",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "linux",
+            "posix",
+            "shell",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://unix.stackexchange.com/a/43885",
+        "title": "shell - What is the difference between sourcing ('.' or 'source') and executing a file in bash? - Unix & Linux Stack Exchange"
+    },
+    {
         "added_on": "2020-12-13",
         "repeated_added_on": [],
         "categories": [
