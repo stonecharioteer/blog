@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2020-12-14",
+        "repeated_added_on": [],
+        "categories": [
+            "documentation",
+            "python",
+            "rtfm",
+            "spec",
+            "specification"
+        ],
+        "type": "url",
+        "value": "https://docs.python.org/3/reference/index.html",
+        "title": "The Python Language Reference \u2014 Python 3.9.1 documentation"
+    },
+    {
         "added_on": "2020-12-13",
         "repeated_added_on": [],
         "categories": [
