@@ -72,6 +72,19 @@
         "title": "usb drives with no phantom load"
     },
     {
+        "added_on": "2020-12-15",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "tools",
+            "usb",
+            "usb-hub"
+        ],
+        "type": "url",
+        "value": "https://github.com/mvp/uhubctl",
+        "title": "GitHub - mvp/uhubctl: uhubctl - USB hub per-port power control"
+    },
+    {
         "added_on": "2020-12-14",
         "repeated_added_on": [],
         "categories": [
