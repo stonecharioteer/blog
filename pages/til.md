@@ -19,9 +19,14 @@ not reliant on external services.
 
 ## 2020-12-15
 
-1. [GitHub - haimgel/display-switch: Turn a $30 USB switch into a full-featured multi-monitor KVM switch](https://github.com/haimgel/display-switch)
-2. [GitHub - winsw/winsw: A wrapper executable that can run any executable as a Windows service, in a permissive license.](https://github.com/winsw/winsw)
-3. [The 10 Most Interesting Features Of Linux 5.10 - Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.10-Feature-Recap)
+1. [
+    
+      How to hire smarter than the market: a toy model · Erik Bernhardsson
+    
+  ](https://erikbern.com/2020/01/13/how-to-hire-smarter-than-the-market-a-toy-model.html)
+2. [GitHub - haimgel/display-switch: Turn a $30 USB switch into a full-featured multi-monitor KVM switch](https://github.com/haimgel/display-switch)
+3. [GitHub - winsw/winsw: A wrapper executable that can run any executable as a Windows service, in a permissive license.](https://github.com/winsw/winsw)
+4. [The 10 Most Interesting Features Of Linux 5.10 - Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.10-Feature-Recap)
 
 ## 2020-12-14
 
