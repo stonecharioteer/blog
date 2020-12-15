@@ -20,10 +20,11 @@ not reliant on external services.
 ## 2020-12-15
 
 1. [GitHub - haimgel/display-switch: Turn a $30 USB switch into a full-featured multi-monitor KVM switch](https://github.com/haimgel/display-switch)
-2. [GitHub - winsw/winsw: A wrapper executable that can run any executable as a Windows service, in a permissive license.](https://github.com/winsw/winsw)
-3. [How to hire smarter than the market: a toy model · Erik Bernhardsson](https://erikbern.com/2020/01/13/how-to-hire-smarter-than-the-market-a-toy-model.html)
-4. [The 10 Most Interesting Features Of Linux 5.10 - Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.10-Feature-Recap)
-5. [usb drives with no phantom load](https://joeyh.name/blog/entry/usb_drives_with_no_phantom_load/)
+2. [GitHub - mvp/uhubctl: uhubctl - USB hub per-port power control](https://github.com/mvp/uhubctl)
+3. [GitHub - winsw/winsw: A wrapper executable that can run any executable as a Windows service, in a permissive license.](https://github.com/winsw/winsw)
+4. [How to hire smarter than the market: a toy model · Erik Bernhardsson](https://erikbern.com/2020/01/13/how-to-hire-smarter-than-the-market-a-toy-model.html)
+5. [The 10 Most Interesting Features Of Linux 5.10 - Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.10-Feature-Recap)
+6. [usb drives with no phantom load](https://joeyh.name/blog/entry/usb_drives_with_no_phantom_load/)
 
 ## 2020-12-14
 
