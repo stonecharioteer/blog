@@ -31,6 +31,19 @@
         "title": "GitHub - haimgel/display-switch: Turn a $30 USB switch into a full-featured multi-monitor KVM switch"
     },
     {
+        "added_on": "2020-12-15",
+        "repeated_added_on": [],
+        "categories": [
+            "kernel",
+            "linux",
+            "news",
+            "whats-new"
+        ],
+        "type": "url",
+        "value": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.10-Feature-Recap",
+        "title": "The 10 Most Interesting Features Of Linux 5.10 - Phoronix"
+    },
+    {
         "added_on": "2020-12-14",
         "repeated_added_on": [],
         "categories": [
