@@ -19,14 +19,11 @@ not reliant on external services.
 
 ## 2020-12-15
 
-1. [
-    
-      How to hire smarter than the market: a toy model · Erik Bernhardsson
-    
-  ](https://erikbern.com/2020/01/13/how-to-hire-smarter-than-the-market-a-toy-model.html)
-2. [GitHub - haimgel/display-switch: Turn a $30 USB switch into a full-featured multi-monitor KVM switch](https://github.com/haimgel/display-switch)
-3. [GitHub - winsw/winsw: A wrapper executable that can run any executable as a Windows service, in a permissive license.](https://github.com/winsw/winsw)
+1. [GitHub - haimgel/display-switch: Turn a $30 USB switch into a full-featured multi-monitor KVM switch](https://github.com/haimgel/display-switch)
+2. [GitHub - winsw/winsw: A wrapper executable that can run any executable as a Windows service, in a permissive license.](https://github.com/winsw/winsw)
+3. [How to hire smarter than the market: a toy model · Erik Bernhardsson](https://erikbern.com/2020/01/13/how-to-hire-smarter-than-the-market-a-toy-model.html)
 4. [The 10 Most Interesting Features Of Linux 5.10 - Phoronix](https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.10-Feature-Recap)
+5. [usb drives with no phantom load](https://joeyh.name/blog/entry/usb_drives_with_no_phantom_load/)
 
 ## 2020-12-14
 
@@ -41,8 +38,7 @@ not reliant on external services.
     All Startup Jobs in tech hubs in Europe - JobFluent
   ](https://www.jobfluent.com/)
 2. [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/)
-3. [Bison
-- GNU Project - Free Software Foundation](https://www.gnu.org/software/bison/)
+3. [Bison - GNU Project - Free Software Foundation](https://www.gnu.org/software/bison/)
 4. [CS 4410/6410: Compiler Design](https://course.ccs.neu.edu/cs4410/)
 5. [Can developer productivity be measured? - Stack Overflow Blog](https://stackoverflow.blog/2020/12/07/measuring-developer-productivity/)
 6. [Compiler Construction – CSE 131 F19](https://ucsd-cse131-f19.github.io/)
