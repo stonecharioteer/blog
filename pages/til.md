@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2020-12-15
 
-1. [GitHub - winsw/winsw: A wrapper executable that can run any executable as a Windows service, in a permissive license.](https://github.com/winsw/winsw)
+1. [GitHub - haimgel/display-switch: Turn a $30 USB switch into a full-featured multi-monitor KVM switch](https://github.com/haimgel/display-switch)
+2. [GitHub - winsw/winsw: A wrapper executable that can run any executable as a Windows service, in a permissive license.](https://github.com/winsw/winsw)
 
 ## 2020-12-14
 
