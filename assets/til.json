@@ -13,6 +13,24 @@
         "title": "GitHub - winsw/winsw: A wrapper executable that can run any executable as a Windows service, in a permissive license."
     },
     {
+        "added_on": "2020-12-15",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "kvm-switch",
+            "productivity",
+            "protips",
+            "rust",
+            "tools",
+            "usb",
+            "wfh",
+            "workflow"
+        ],
+        "type": "url",
+        "value": "https://github.com/haimgel/display-switch",
+        "title": "GitHub - haimgel/display-switch: Turn a $30 USB switch into a full-featured multi-monitor KVM switch"
+    },
+    {
         "added_on": "2020-12-14",
         "repeated_added_on": [],
         "categories": [
