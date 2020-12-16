@@ -1,5 +1,24 @@
 [
     {
+        "added_on": "2020-12-16",
+        "repeated_added_on": [],
+        "categories": [
+            "API",
+            "async",
+            "backend",
+            "demo",
+            "fastapi",
+            "learning",
+            "livestream",
+            "pycharm",
+            "python",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://youtu.be/sBVb4IB3O_U",
+        "title": "Let's Build a Fast, Modern Python API with FastAPI - YouTube"
+    },
+    {
         "added_on": "2020-12-15",
         "repeated_added_on": [],
         "categories": [
