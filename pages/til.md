@@ -31,7 +31,8 @@ not reliant on external services.
 10. [Pandoc - Getting started with pandoc](https://pandoc.org/getting-started.html)
 11. [Pandoc - Pandoc filters](https://pandoc.org/filters.html)
 12. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
-13. [markup.rocks](http://markup.rocks/)
+13. get HN replies here https://hnrss.org/replies?id=stonecharioteer
+14. [markup.rocks](http://markup.rocks/)
 
 ## 2020-12-15
 
