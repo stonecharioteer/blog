@@ -132,6 +132,21 @@
         "title": "GitHub - makerdiary/pitaya-go: An Open-Source IoT Development Platform with Multiprotocol Wireless Connectivity"
     },
     {
+        "added_on": "2020-12-16",
+        "repeated_added_on": [],
+        "categories": [
+            "IoT",
+            "circuit-python",
+            "makers",
+            "mechanical-keyboards",
+            "micro-python",
+            "mk"
+        ],
+        "type": "url",
+        "value": "https://github.com/makerdiary/python-keyboard",
+        "title": "GitHub - makerdiary/python-keyboard: A hand-wired USB & Bluetooth keyboard powered by Python and more"
+    },
+    {
         "added_on": "2020-12-15",
         "repeated_added_on": [],
         "categories": [
