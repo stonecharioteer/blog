@@ -21,11 +21,12 @@ not reliant on external services.
 
 1. [ How to Write a Man Page ](https://babbage.cs.qc.cuny.edu/courses/cs701/Handouts/man_pages.html)
 2. [BOB 2020 Albert Krewinkel  - The Lessons of 14 Years of Open Source Haskell - YouTube](https://youtu.be/JpNEIpLtCHs)
-3. [Let's Build a Fast, Modern Python API with FastAPI - YouTube](https://youtu.be/sBVb4IB3O_U)
-4. [Minimal safe Bash script template \| Better Dev](https://betterdev.blog/minimal-safe-bash-script-template/)
-5. [Pandoc - Getting started with pandoc](https://pandoc.org/getting-started.html)
-6. [Pandoc - Pandoc filters](https://pandoc.org/filters.html)
-7. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
+3. [Keybase](https://keybase.io/)
+4. [Let's Build a Fast, Modern Python API with FastAPI - YouTube](https://youtu.be/sBVb4IB3O_U)
+5. [Minimal safe Bash script template \| Better Dev](https://betterdev.blog/minimal-safe-bash-script-template/)
+6. [Pandoc - Getting started with pandoc](https://pandoc.org/getting-started.html)
+7. [Pandoc - Pandoc filters](https://pandoc.org/filters.html)
+8. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
 
 ## 2020-12-15
 
