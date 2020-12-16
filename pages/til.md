@@ -21,12 +21,13 @@ not reliant on external services.
 
 1. [ How to Write a Man Page ](https://babbage.cs.qc.cuny.edu/courses/cs701/Handouts/man_pages.html)
 2. [BOB 2020 Albert Krewinkel  - The Lessons of 14 Years of Open Source Haskell - YouTube](https://youtu.be/JpNEIpLtCHs)
-3. [Keybase](https://keybase.io/)
-4. [Let's Build a Fast, Modern Python API with FastAPI - YouTube](https://youtu.be/sBVb4IB3O_U)
-5. [Minimal safe Bash script template \| Better Dev](https://betterdev.blog/minimal-safe-bash-script-template/)
-6. [Pandoc - Getting started with pandoc](https://pandoc.org/getting-started.html)
-7. [Pandoc - Pandoc filters](https://pandoc.org/filters.html)
-8. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
+3. [GitHub - makerdiary/pitaya-go: An Open-Source IoT Development Platform with Multiprotocol Wireless Connectivity](https://github.com/makerdiary/pitaya-go)
+4. [Keybase](https://keybase.io/)
+5. [Let's Build a Fast, Modern Python API with FastAPI - YouTube](https://youtu.be/sBVb4IB3O_U)
+6. [Minimal safe Bash script template \| Better Dev](https://betterdev.blog/minimal-safe-bash-script-template/)
+7. [Pandoc - Getting started with pandoc](https://pandoc.org/getting-started.html)
+8. [Pandoc - Pandoc filters](https://pandoc.org/filters.html)
+9. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
 
 ## 2020-12-15
 
