@@ -86,6 +86,22 @@
         "title": "Pandoc - Pandoc filters"
     },
     {
+        "added_on": "2020-12-16",
+        "repeated_added_on": [],
+        "categories": [
+            "linux",
+            "man",
+            "manpages",
+            "manual",
+            "posix",
+            "rtfm",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://babbage.cs.qc.cuny.edu/courses/cs701/Handouts/man_pages.html",
+        "title": " How to Write a Man Page "
+    },
+    {
         "added_on": "2020-12-15",
         "repeated_added_on": [],
         "categories": [
