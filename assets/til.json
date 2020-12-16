@@ -19,6 +19,22 @@
         "title": "Let's Build a Fast, Modern Python API with FastAPI - YouTube"
     },
     {
+        "added_on": "2020-12-16",
+        "repeated_added_on": [],
+        "categories": [
+            "bash",
+            "command-line",
+            "design",
+            "linux",
+            "posix",
+            "scripting",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://betterdev.blog/minimal-safe-bash-script-template/",
+        "title": "Minimal safe Bash script template | Better Dev"
+    },
+    {
         "added_on": "2020-12-15",
         "repeated_added_on": [],
         "categories": [
