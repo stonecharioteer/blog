@@ -118,6 +118,20 @@
         "title": "Keybase"
     },
     {
+        "added_on": "2020-12-16",
+        "repeated_added_on": [],
+        "categories": [
+            "IoT",
+            "circuit-python",
+            "makers",
+            "micro-python",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://github.com/makerdiary/pitaya-go",
+        "title": "GitHub - makerdiary/pitaya-go: An Open-Source IoT Development Platform with Multiprotocol Wireless Connectivity"
+    },
+    {
         "added_on": "2020-12-15",
         "repeated_added_on": [],
         "categories": [
