@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2020-12-16
 
 1. [Let's Build a Fast, Modern Python API with FastAPI - YouTube](https://youtu.be/sBVb4IB3O_U)
+2. [Minimal safe Bash script template \| Better Dev](https://betterdev.blog/minimal-safe-bash-script-template/)
 
 ## 2020-12-15
 
