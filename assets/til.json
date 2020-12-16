@@ -53,6 +53,25 @@
         "title": "Pandoc - Getting started with pandoc"
     },
     {
+        "added_on": "2020-12-16",
+        "repeated_added_on": [],
+        "categories": [
+            "bash",
+            "build-tools",
+            "devops",
+            "devtools",
+            "gnu",
+            "linux",
+            "make",
+            "posix",
+            "scripting",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://www.gnu.org/software/make/manual/html_node/index.html",
+        "title": "Top (GNU make)"
+    },
+    {
         "added_on": "2020-12-15",
         "repeated_added_on": [],
         "categories": [
