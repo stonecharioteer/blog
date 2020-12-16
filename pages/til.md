@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-16
+
+1. [Let's Build a Fast, Modern Python API with FastAPI - YouTube](https://youtu.be/sBVb4IB3O_U)
+
 ## 2020-12-15
 
 1. [GitHub - haimgel/display-switch: Turn a $30 USB switch into a full-featured multi-monitor KVM switch](https://github.com/haimgel/display-switch)
