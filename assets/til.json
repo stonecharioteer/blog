@@ -72,6 +72,20 @@
         "title": "Top (GNU make)"
     },
     {
+        "added_on": "2020-12-16",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "linux",
+            "markdown",
+            "pandoc",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://pandoc.org/filters.html",
+        "title": "Pandoc - Pandoc filters"
+    },
+    {
         "added_on": "2020-12-15",
         "repeated_added_on": [],
         "categories": [
