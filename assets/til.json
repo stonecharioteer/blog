@@ -35,6 +35,24 @@
         "title": "Minimal safe Bash script template | Better Dev"
     },
     {
+        "added_on": "2020-12-16",
+        "repeated_added_on": [],
+        "categories": [
+            "converters",
+            "devtools",
+            "docx",
+            "latex",
+            "markdown",
+            "ms-word",
+            "pandoc",
+            "word",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://pandoc.org/getting-started.html",
+        "title": "Pandoc - Getting started with pandoc"
+    },
+    {
         "added_on": "2020-12-15",
         "repeated_added_on": [],
         "categories": [
