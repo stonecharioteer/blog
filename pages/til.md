@@ -25,10 +25,11 @@ not reliant on external services.
 4. [GitHub - makerdiary/python-keyboard: A hand-wired USB & Bluetooth keyboard powered by Python and more](https://github.com/makerdiary/python-keyboard)
 5. [Keybase](https://keybase.io/)
 6. [Let's Build a Fast, Modern Python API with FastAPI - YouTube](https://youtu.be/sBVb4IB3O_U)
-7. [Minimal safe Bash script template \| Better Dev](https://betterdev.blog/minimal-safe-bash-script-template/)
-8. [Pandoc - Getting started with pandoc](https://pandoc.org/getting-started.html)
-9. [Pandoc - Pandoc filters](https://pandoc.org/filters.html)
-10. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
+7. [Micah Elliot Halter Personal Website](https://mehalter.com)
+8. [Minimal safe Bash script template \| Better Dev](https://betterdev.blog/minimal-safe-bash-script-template/)
+9. [Pandoc - Getting started with pandoc](https://pandoc.org/getting-started.html)
+10. [Pandoc - Pandoc filters](https://pandoc.org/filters.html)
+11. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
 
 ## 2020-12-15
 
