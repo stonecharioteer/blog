@@ -187,6 +187,13 @@
         "title": "markup.rocks"
     },
     {
+        "added_on": "2020-12-16",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "factoid",
+        "value": "get HN replies here https://hnrss.org/replies?id=stonecharioteer"
+    },
+    {
         "added_on": "2020-12-15",
         "repeated_added_on": [],
         "categories": [
