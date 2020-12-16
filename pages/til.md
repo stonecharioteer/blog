@@ -21,15 +21,16 @@ not reliant on external services.
 
 1. [ How to Write a Man Page ](https://babbage.cs.qc.cuny.edu/courses/cs701/Handouts/man_pages.html)
 2. [BOB 2020 Albert Krewinkel  - The Lessons of 14 Years of Open Source Haskell - YouTube](https://youtu.be/JpNEIpLtCHs)
-3. [GitHub - makerdiary/pitaya-go: An Open-Source IoT Development Platform with Multiprotocol Wireless Connectivity](https://github.com/makerdiary/pitaya-go)
-4. [GitHub - makerdiary/python-keyboard: A hand-wired USB & Bluetooth keyboard powered by Python and more](https://github.com/makerdiary/python-keyboard)
-5. [Keybase](https://keybase.io/)
-6. [Let's Build a Fast, Modern Python API with FastAPI - YouTube](https://youtu.be/sBVb4IB3O_U)
-7. [Micah Elliot Halter Personal Website](https://mehalter.com)
-8. [Minimal safe Bash script template \| Better Dev](https://betterdev.blog/minimal-safe-bash-script-template/)
-9. [Pandoc - Getting started with pandoc](https://pandoc.org/getting-started.html)
-10. [Pandoc - Pandoc filters](https://pandoc.org/filters.html)
-11. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
+3. [GitHub - karlicoss/orger: Tool to convert data into searchable and interactive org-mode views](https://github.com/karlicoss/orger)
+4. [GitHub - makerdiary/pitaya-go: An Open-Source IoT Development Platform with Multiprotocol Wireless Connectivity](https://github.com/makerdiary/pitaya-go)
+5. [GitHub - makerdiary/python-keyboard: A hand-wired USB & Bluetooth keyboard powered by Python and more](https://github.com/makerdiary/python-keyboard)
+6. [Keybase](https://keybase.io/)
+7. [Let's Build a Fast, Modern Python API with FastAPI - YouTube](https://youtu.be/sBVb4IB3O_U)
+8. [Micah Elliot Halter Personal Website](https://mehalter.com)
+9. [Minimal safe Bash script template \| Better Dev](https://betterdev.blog/minimal-safe-bash-script-template/)
+10. [Pandoc - Getting started with pandoc](https://pandoc.org/getting-started.html)
+11. [Pandoc - Pandoc filters](https://pandoc.org/filters.html)
+12. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
 
 ## 2020-12-15
 
