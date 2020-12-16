@@ -170,6 +170,23 @@
         "title": "GitHub - karlicoss/orger: Tool to convert data into searchable and interactive org-mode views"
     },
     {
+        "added_on": "2020-12-16",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "docx",
+            "online-tools",
+            "pandoc",
+            "pdf",
+            "tools",
+            "word",
+            "writing"
+        ],
+        "type": "url",
+        "value": "http://markup.rocks/",
+        "title": "markup.rocks"
+    },
+    {
         "added_on": "2020-12-15",
         "repeated_added_on": [],
         "categories": [
