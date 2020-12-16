@@ -22,7 +22,8 @@ not reliant on external services.
 1. [Let's Build a Fast, Modern Python API with FastAPI - YouTube](https://youtu.be/sBVb4IB3O_U)
 2. [Minimal safe Bash script template \| Better Dev](https://betterdev.blog/minimal-safe-bash-script-template/)
 3. [Pandoc - Getting started with pandoc](https://pandoc.org/getting-started.html)
-4. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
+4. [Pandoc - Pandoc filters](https://pandoc.org/filters.html)
+5. [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/index.html)
 
 ## 2020-12-15
 
