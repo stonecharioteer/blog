@@ -39,6 +39,23 @@
         "title": "SREcon19 Europe/Middle East/Africa - Advanced Napkin Math: Estimating System... - YouTube"
     },
     {
+        "added_on": "2020-12-17",
+        "repeated_added_on": [],
+        "categories": [
+            "distributed-systems",
+            "interview",
+            "intuition",
+            "learning",
+            "napkin-math",
+            "production",
+            "scaling",
+            "system-design"
+        ],
+        "type": "url",
+        "value": "https://sirupsen.com/napkin/",
+        "title": "\n      Napkin Math\n    "
+    },
+    {
         "added_on": "2020-12-16",
         "repeated_added_on": [],
         "categories": [
