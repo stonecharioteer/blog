@@ -20,10 +20,13 @@ not reliant on external services.
 ## 2020-12-17
 
 1. [
+      Napkin Math
+    ](https://sirupsen.com/napkin/)
+2. [
       Shitlist Driven Development
     ](https://sirupsen.com/shitlists/)
-2. [SREcon19 Europe/Middle East/Africa - Advanced Napkin Math: Estimating System... - YouTube](https://www.youtube.com/watch?v=IxkSlnrRFqc)
-3. [Zettelkasten knowledge and info management • Zettelkasten Method](https://zettelkasten.de/)
+3. [SREcon19 Europe/Middle East/Africa - Advanced Napkin Math: Estimating System... - YouTube](https://www.youtube.com/watch?v=IxkSlnrRFqc)
+4. [Zettelkasten knowledge and info management • Zettelkasten Method](https://zettelkasten.de/)
 
 ## 2020-12-16
 
