@@ -56,6 +56,26 @@
         "title": "\n      Napkin Math\n    "
     },
     {
+        "added_on": "2020-12-17",
+        "repeated_added_on": [],
+        "categories": [
+            "GCP",
+            "Google",
+            "Google-cloud-platform",
+            "Jeff-Dean",
+            "Stanford",
+            "estimation",
+            "guesstimation",
+            "production",
+            "scalability",
+            "system-design",
+            "talk"
+        ],
+        "type": "url",
+        "value": "https://youtu.be/modXC5IWTJI",
+        "title": "Building Software Systems At Google and Lessons Learned - YouTube"
+    },
+    {
         "added_on": "2020-12-16",
         "repeated_added_on": [],
         "categories": [
