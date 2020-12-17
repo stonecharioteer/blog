@@ -22,6 +22,7 @@ not reliant on external services.
 1. [
       Shitlist Driven Development
     ](https://sirupsen.com/shitlists/)
+2. [Zettelkasten knowledge and info management • Zettelkasten Method](https://zettelkasten.de/)
 
 ## 2020-12-16
 
