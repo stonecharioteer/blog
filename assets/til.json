@@ -76,6 +76,23 @@
         "title": "Building Software Systems At Google and Lessons Learned - YouTube"
     },
     {
+        "added_on": "2020-12-17",
+        "repeated_added_on": [],
+        "categories": [
+            "Linux",
+            "coding",
+            "command-line",
+            "productivity",
+            "shell",
+            "terminal",
+            "tmux",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://thoughtbot.com/blog/templating-tmux-with-tmuxinator",
+        "title": "Templating tmux with tmuxinator"
+    },
+    {
         "added_on": "2020-12-16",
         "repeated_added_on": [],
         "categories": [
