@@ -1,5 +1,18 @@
 [
     {
+        "added_on": "2020-12-17",
+        "repeated_added_on": [],
+        "categories": [
+            "coding",
+            "meta",
+            "refactoring",
+            "software-development"
+        ],
+        "type": "url",
+        "value": "https://sirupsen.com/shitlists/",
+        "title": "\n      Shitlist Driven Development\n    "
+    },
+    {
         "added_on": "2020-12-16",
         "repeated_added_on": [],
         "categories": [
