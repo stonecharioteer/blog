@@ -17,6 +17,12 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-17
+
+1. [
+      Shitlist Driven Development
+    ](https://sirupsen.com/shitlists/)
+
 ## 2020-12-16
 
 1. [ How to Write a Man Page ](https://babbage.cs.qc.cuny.edu/courses/cs701/Handouts/man_pages.html)
