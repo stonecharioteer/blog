@@ -27,7 +27,8 @@ not reliant on external services.
     ](https://sirupsen.com/shitlists/)
 3. [Building Software Systems At Google and Lessons Learned - YouTube](https://youtu.be/modXC5IWTJI)
 4. [SREcon19 Europe/Middle East/Africa - Advanced Napkin Math: Estimating System... - YouTube](https://www.youtube.com/watch?v=IxkSlnrRFqc)
-5. [Zettelkasten knowledge and info management • Zettelkasten Method](https://zettelkasten.de/)
+5. [Templating tmux with tmuxinator](https://thoughtbot.com/blog/templating-tmux-with-tmuxinator)
+6. [Zettelkasten knowledge and info management • Zettelkasten Method](https://zettelkasten.de/)
 
 ## 2020-12-16
 
