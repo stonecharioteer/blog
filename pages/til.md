@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2020-12-18
 
 1. [Remove Background from Image – remove.bg](https://www.remove.bg/)
+2. [When Free Software Isn't (Practically) Superior - GNU Project - Free Software Foundation](https://www.gnu.org/philosophy/when-free-software-isnt-practically-superior.html)
 
 ## 2020-12-17
 
