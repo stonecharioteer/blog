@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-19
+
+1. [GitHub - heidihoward/distributed-consensus-reading-list: A long list of academic papers on the topic of distributed consensus](https://github.com/heidihoward/distributed-consensus-reading-list)
+
 ## 2020-12-18
 
 1. [Remove Background from Image – remove.bg](https://www.remove.bg/)
