@@ -1,5 +1,21 @@
 [
     {
+        "added_on": "2020-12-19",
+        "repeated_added_on": [],
+        "categories": [
+            "distributed-consensus",
+            "distributed-systems",
+            "learning",
+            "paxos",
+            "raft",
+            "studying",
+            "theory"
+        ],
+        "type": "url",
+        "value": "https://github.com/heidihoward/distributed-consensus-reading-list",
+        "title": "GitHub - heidihoward/distributed-consensus-reading-list: A long list of academic papers on the topic of distributed consensus"
+    },
+    {
         "added_on": "2020-12-18",
         "repeated_added_on": [],
         "categories": [
