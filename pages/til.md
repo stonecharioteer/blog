@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-21
+
+1. [Copy-on-write friendly Python garbage collection \| by Instagram Engineering \| Instagram Engineering](https://instagram-engineering.com/copy-on-write-friendly-python-garbage-collection-ad6ed5233ddf)
+
 ## 2020-12-19
 
 1. [GitHub - heidihoward/distributed-consensus-reading-list: A long list of academic papers on the topic of distributed consensus](https://github.com/heidihoward/distributed-consensus-reading-list)
