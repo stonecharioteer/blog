@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2020-12-21
 
-1. [Copy-on-write friendly Python garbage collection \| by Instagram Engineering \| Instagram Engineering](https://instagram-engineering.com/copy-on-write-friendly-python-garbage-collection-ad6ed5233ddf)
+1. [Breaking Eggs And Making Omelettes » Blog Archive  » Google’s YouTube Uses FFmpeg](https://multimedia.cx/eggs/googles-youtube-uses-ffmpeg/)
+2. [Copy-on-write friendly Python garbage collection \| by Instagram Engineering \| Instagram Engineering](https://instagram-engineering.com/copy-on-write-friendly-python-garbage-collection-ad6ed5233ddf)
 
 ## 2020-12-19
 
