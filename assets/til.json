@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2020-12-21",
+        "repeated_added_on": [],
+        "categories": [
+            "garbage-collection",
+            "gc",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://instagram-engineering.com/copy-on-write-friendly-python-garbage-collection-ad6ed5233ddf",
+        "title": "Copy-on-write friendly Python garbage collection | by Instagram Engineering | Instagram Engineering"
+    },
+    {
         "added_on": "2020-12-19",
         "repeated_added_on": [],
         "categories": [
