@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-22
+
+1. [403 Forbidden](https://www.microsoft.com/security/blog/2020/12/18/analyzing-solorigate-the-compromised-dll-file-that-started-a-sophisticated-cyberattack-and-how-microsoft-defender-helps-protect/)
+
 ## 2020-12-21
 
 1. [Breaking Eggs And Making Omelettes » Blog Archive  » Google’s YouTube Uses FFmpeg](https://multimedia.cx/eggs/googles-youtube-uses-ffmpeg/)
