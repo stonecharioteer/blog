@@ -8,6 +8,20 @@
         "title": "403 Forbidden"
     },
     {
+        "added_on": "2020-12-22",
+        "repeated_added_on": [],
+        "categories": [
+            "build-tools",
+            "cmake",
+            "dev-tools",
+            "make",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://pydoit.org/",
+        "title": "doit - Automation tool"
+    },
+    {
         "added_on": "2020-12-21",
         "repeated_added_on": [],
         "categories": [
