@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2020-12-22
 
 1. [403 Forbidden](https://www.microsoft.com/security/blog/2020/12/18/analyzing-solorigate-the-compromised-dll-file-that-started-a-sophisticated-cyberattack-and-how-microsoft-defender-helps-protect/)
+2. [doit - Automation tool](https://pydoit.org/)
 
 ## 2020-12-21
 
