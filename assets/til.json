@@ -1,5 +1,13 @@
 [
     {
+        "added_on": "2020-12-22",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://www.microsoft.com/security/blog/2020/12/18/analyzing-solorigate-the-compromised-dll-file-that-started-a-sophisticated-cyberattack-and-how-microsoft-defender-helps-protect/",
+        "title": "403 Forbidden"
+    },
+    {
         "added_on": "2020-12-21",
         "repeated_added_on": [],
         "categories": [
