@@ -25,7 +25,8 @@ not reliant on external services.
 4. [Introduction to Analytics Modeling \| edX](https://www.edx.org/course/introduction-to-analytics-modeling)
 5. [Parsing JSON at the CLI: A Practical Introduction to `jq` (and more!) \| Sequoia McDowell](https://sequoia.makes.software/parsing-json-at-the-cli-a-practical-introduction-to-jq-and-more/)
 6. [Power \| LOW←TECH MAGAZINE](https://solar.lowtechmagazine.com/power.html)
-7. [Supporting content decision makers with machine learning \| by Netflix Technology Blog \| Dec, 2020 \| Netflix TechBlog](https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f)
+7. [Principles of Technology Leadership \| Bryan Cantrill \| Monktoberfest 2017 - YouTube](https://www.youtube.com/watch?v=9QMGAtxUlAc)
+8. [Supporting content decision makers with machine learning \| by Netflix Technology Blog \| Dec, 2020 \| Netflix TechBlog](https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f)
 
 ## 2020-12-22
 
