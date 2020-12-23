@@ -23,10 +23,11 @@ not reliant on external services.
 2. [GitHub - pre-commit/identify: File identification library for Python](https://github.com/pre-commit/identify)
 3. [GitHub - tomnomnom/gron: Make JSON greppable!](https://github.com/tomnomnom/gron)
 4. [Introduction to Analytics Modeling \| edX](https://www.edx.org/course/introduction-to-analytics-modeling)
-5. [Parsing JSON at the CLI: A Practical Introduction to `jq` (and more!) \| Sequoia McDowell](https://sequoia.makes.software/parsing-json-at-the-cli-a-practical-introduction-to-jq-and-more/)
-6. [Power \| LOW←TECH MAGAZINE](https://solar.lowtechmagazine.com/power.html)
-7. [Principles of Technology Leadership \| Bryan Cantrill \| Monktoberfest 2017 - YouTube](https://www.youtube.com/watch?v=9QMGAtxUlAc)
-8. [Supporting content decision makers with machine learning \| by Netflix Technology Blog \| Dec, 2020 \| Netflix TechBlog](https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f)
+5. [Page not found · GitHub · GitHub](https://github.com/jlfwong/speeds)
+6. [Parsing JSON at the CLI: A Practical Introduction to `jq` (and more!) \| Sequoia McDowell](https://sequoia.makes.software/parsing-json-at-the-cli-a-practical-introduction-to-jq-and-more/)
+7. [Power \| LOW←TECH MAGAZINE](https://solar.lowtechmagazine.com/power.html)
+8. [Principles of Technology Leadership \| Bryan Cantrill \| Monktoberfest 2017 - YouTube](https://www.youtube.com/watch?v=9QMGAtxUlAc)
+9. [Supporting content decision makers with machine learning \| by Netflix Technology Blog \| Dec, 2020 \| Netflix TechBlog](https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f)
 
 ## 2020-12-22
 
