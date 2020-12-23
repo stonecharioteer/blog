@@ -125,6 +125,17 @@
         "title": "Page not found \u00b7 GitHub \u00b7 GitHub"
     },
     {
+        "added_on": "2020-12-23",
+        "repeated_added_on": [],
+        "categories": [
+            "conferences",
+            "speaking"
+        ],
+        "type": "url",
+        "value": "https://github.com/iheanyi/speakers-who-want-a-platform",
+        "title": "GitHub - iheanyi/speakers-who-want-a-platform: A directory of underrepresented speakers for Q&A panels/conferences/events. No more excuses."
+    },
+    {
         "added_on": "2020-12-22",
         "repeated_added_on": [],
         "categories": [],
