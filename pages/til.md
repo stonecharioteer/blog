@@ -19,16 +19,17 @@ not reliant on external services.
 
 ## 2020-12-23
 
-1. [GitHub - iheanyi/speakers-who-want-a-platform: A directory of underrepresented speakers for Q&A panels/conferences/events. No more excuses.](https://github.com/iheanyi/speakers-who-want-a-platform)
-2. [GitHub - miguelgrinberg/Flask-SocketIO-Chat: A simple chat application that demonstrates how to structure a Flask-SocketIO application.](https://github.com/miguelgrinberg/Flask-SocketIO-Chat)
-3. [GitHub - pre-commit/identify: File identification library for Python](https://github.com/pre-commit/identify)
-4. [GitHub - tomnomnom/gron: Make JSON greppable!](https://github.com/tomnomnom/gron)
-5. [Introduction to Analytics Modeling \| edX](https://www.edx.org/course/introduction-to-analytics-modeling)
-6. [Page not found · GitHub · GitHub](https://github.com/jlfwong/speeds)
-7. [Parsing JSON at the CLI: A Practical Introduction to `jq` (and more!) \| Sequoia McDowell](https://sequoia.makes.software/parsing-json-at-the-cli-a-practical-introduction-to-jq-and-more/)
-8. [Power \| LOW←TECH MAGAZINE](https://solar.lowtechmagazine.com/power.html)
-9. [Principles of Technology Leadership \| Bryan Cantrill \| Monktoberfest 2017 - YouTube](https://www.youtube.com/watch?v=9QMGAtxUlAc)
-10. [Supporting content decision makers with machine learning \| by Netflix Technology Blog \| Dec, 2020 \| Netflix TechBlog](https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f)
+1. [GitHub - dhylands/rshell: Remote Shell for MicroPython](https://github.com/dhylands/rshell)
+2. [GitHub - iheanyi/speakers-who-want-a-platform: A directory of underrepresented speakers for Q&A panels/conferences/events. No more excuses.](https://github.com/iheanyi/speakers-who-want-a-platform)
+3. [GitHub - miguelgrinberg/Flask-SocketIO-Chat: A simple chat application that demonstrates how to structure a Flask-SocketIO application.](https://github.com/miguelgrinberg/Flask-SocketIO-Chat)
+4. [GitHub - pre-commit/identify: File identification library for Python](https://github.com/pre-commit/identify)
+5. [GitHub - tomnomnom/gron: Make JSON greppable!](https://github.com/tomnomnom/gron)
+6. [Introduction to Analytics Modeling \| edX](https://www.edx.org/course/introduction-to-analytics-modeling)
+7. [Page not found · GitHub · GitHub](https://github.com/jlfwong/speeds)
+8. [Parsing JSON at the CLI: A Practical Introduction to `jq` (and more!) \| Sequoia McDowell](https://sequoia.makes.software/parsing-json-at-the-cli-a-practical-introduction-to-jq-and-more/)
+9. [Power \| LOW←TECH MAGAZINE](https://solar.lowtechmagazine.com/power.html)
+10. [Principles of Technology Leadership \| Bryan Cantrill \| Monktoberfest 2017 - YouTube](https://www.youtube.com/watch?v=9QMGAtxUlAc)
+11. [Supporting content decision makers with machine learning \| by Netflix Technology Blog \| Dec, 2020 \| Netflix TechBlog](https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f)
 
 ## 2020-12-22
 
