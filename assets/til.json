@@ -54,6 +54,21 @@
         "title": "GitHub - pre-commit/identify: File identification library for Python"
     },
     {
+        "added_on": "2020-12-23",
+        "repeated_added_on": [],
+        "categories": [
+            "chat",
+            "example",
+            "flask",
+            "miguel-grinberg",
+            "socket.io",
+            "websockets"
+        ],
+        "type": "url",
+        "value": "https://github.com/miguelgrinberg/Flask-SocketIO-Chat",
+        "title": "GitHub - miguelgrinberg/Flask-SocketIO-Chat: A simple chat application that demonstrates how to structure a Flask-SocketIO application."
+    },
+    {
         "added_on": "2020-12-22",
         "repeated_added_on": [],
         "categories": [],
