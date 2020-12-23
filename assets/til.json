@@ -1,5 +1,18 @@
 [
     {
+        "added_on": "2020-12-23",
+        "repeated_added_on": [],
+        "categories": [
+            "Netflix",
+            "machine-learning",
+            "metaflow",
+            "platform"
+        ],
+        "type": "url",
+        "value": "https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f",
+        "title": "Supporting content decision makers with machine learning | by Netflix Technology Blog | Dec, 2020 | Netflix TechBlog"
+    },
+    {
         "added_on": "2020-12-22",
         "repeated_added_on": [],
         "categories": [],
