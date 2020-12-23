@@ -20,7 +20,8 @@ not reliant on external services.
 ## 2020-12-23
 
 1. [GitHub - tomnomnom/gron: Make JSON greppable!](https://github.com/tomnomnom/gron)
-2. [Supporting content decision makers with machine learning \| by Netflix Technology Blog \| Dec, 2020 \| Netflix TechBlog](https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f)
+2. [Parsing JSON at the CLI: A Practical Introduction to `jq` (and more!) \| Sequoia McDowell](https://sequoia.makes.software/parsing-json-at-the-cli-a-practical-introduction-to-jq-and-more/)
+3. [Supporting content decision makers with machine learning \| by Netflix Technology Blog \| Dec, 2020 \| Netflix TechBlog](https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f)
 
 ## 2020-12-22
 
