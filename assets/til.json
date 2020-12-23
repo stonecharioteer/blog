@@ -149,6 +149,20 @@
         "title": "GitHub - dhylands/rshell: Remote Shell for MicroPython"
     },
     {
+        "added_on": "2020-12-23",
+        "repeated_added_on": [],
+        "categories": [
+            "debugger",
+            "docker",
+            "linux",
+            "python",
+            "sidecar"
+        ],
+        "type": "url",
+        "value": "https://blog.0x74696d.com/posts/debugging-python-containers-in-production/",
+        "title": "0x74696d | Debugging Python Containers in Production"
+    },
+    {
         "added_on": "2020-12-22",
         "repeated_added_on": [],
         "categories": [],
