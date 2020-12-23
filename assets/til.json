@@ -69,6 +69,18 @@
         "title": "GitHub - miguelgrinberg/Flask-SocketIO-Chat: A simple chat application that demonstrates how to structure a Flask-SocketIO application."
     },
     {
+        "added_on": "2020-12-23",
+        "repeated_added_on": [],
+        "categories": [
+            "Georgia-tech",
+            "course",
+            "data"
+        ],
+        "type": "url",
+        "value": "https://www.edx.org/course/introduction-to-analytics-modeling",
+        "title": "Introduction to Analytics Modeling | edX"
+    },
+    {
         "added_on": "2020-12-22",
         "repeated_added_on": [],
         "categories": [],
