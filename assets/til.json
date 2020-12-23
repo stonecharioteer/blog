@@ -1594,7 +1594,9 @@
     },
     {
         "added_on": "2020-12-01",
-        "repeated_added_on": [],
+        "repeated_added_on": [
+            "2020-12-23"
+        ],
         "categories": [
             "devtools",
             "distributed-systems",
