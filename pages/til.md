@@ -19,10 +19,11 @@ not reliant on external services.
 
 ## 2020-12-23
 
-1. [GitHub - pre-commit/identify: File identification library for Python](https://github.com/pre-commit/identify)
-2. [GitHub - tomnomnom/gron: Make JSON greppable!](https://github.com/tomnomnom/gron)
-3. [Parsing JSON at the CLI: A Practical Introduction to `jq` (and more!) \| Sequoia McDowell](https://sequoia.makes.software/parsing-json-at-the-cli-a-practical-introduction-to-jq-and-more/)
-4. [Supporting content decision makers with machine learning \| by Netflix Technology Blog \| Dec, 2020 \| Netflix TechBlog](https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f)
+1. [GitHub - miguelgrinberg/Flask-SocketIO-Chat: A simple chat application that demonstrates how to structure a Flask-SocketIO application.](https://github.com/miguelgrinberg/Flask-SocketIO-Chat)
+2. [GitHub - pre-commit/identify: File identification library for Python](https://github.com/pre-commit/identify)
+3. [GitHub - tomnomnom/gron: Make JSON greppable!](https://github.com/tomnomnom/gron)
+4. [Parsing JSON at the CLI: A Practical Introduction to `jq` (and more!) \| Sequoia McDowell](https://sequoia.makes.software/parsing-json-at-the-cli-a-practical-introduction-to-jq-and-more/)
+5. [Supporting content decision makers with machine learning \| by Netflix Technology Blog \| Dec, 2020 \| Netflix TechBlog](https://netflixtechblog.com/supporting-content-decision-makers-with-machine-learning-995b7b76006f)
 
 ## 2020-12-22
 
