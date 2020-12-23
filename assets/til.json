@@ -94,6 +94,18 @@
         "title": "Power | LOW\u2190TECH MAGAZINE"
     },
     {
+        "added_on": "2020-12-23",
+        "repeated_added_on": [],
+        "categories": [
+            "conference",
+            "leadership",
+            "video"
+        ],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=9QMGAtxUlAc",
+        "title": "Principles of Technology Leadership | Bryan Cantrill | Monktoberfest 2017 - YouTube"
+    },
+    {
         "added_on": "2020-12-22",
         "repeated_added_on": [],
         "categories": [],
