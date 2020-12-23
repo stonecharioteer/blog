@@ -136,6 +136,19 @@
         "title": "GitHub - iheanyi/speakers-who-want-a-platform: A directory of underrepresented speakers for Q&A panels/conferences/events. No more excuses."
     },
     {
+        "added_on": "2020-12-23",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "micropython",
+            "remote-debugger",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/dhylands/rshell",
+        "title": "GitHub - dhylands/rshell: Remote Shell for MicroPython"
+    },
+    {
         "added_on": "2020-12-22",
         "repeated_added_on": [],
         "categories": [],
