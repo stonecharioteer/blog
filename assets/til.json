@@ -1,5 +1,22 @@
 [
     {
+        "added_on": "2020-12-25",
+        "repeated_added_on": [],
+        "categories": [
+            "backend",
+            "flask",
+            "frontend",
+            "fullstack",
+            "javascript",
+            "python",
+            "web-development",
+            "websockets"
+        ],
+        "type": "url",
+        "value": "https://github.com/mikeabrahamsen/Flask-Meld",
+        "title": "GitHub - mikeabrahamsen/Flask-Meld: Meld is a full-stack framework for Flask that allows you to create dynamic frontends in Flask using Python and the Jinja2 templating engine."
+    },
+    {
         "added_on": "2020-12-23",
         "repeated_added_on": [],
         "categories": [
