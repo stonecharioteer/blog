@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-25
+
+1. [GitHub - mikeabrahamsen/Flask-Meld: Meld is a full-stack framework for Flask that allows you to create dynamic frontends in Flask using Python and the Jinja2 templating engine.](https://github.com/mikeabrahamsen/Flask-Meld)
+
 ## 2020-12-23
 
 1. [0x74696d \| Debugging Python Containers in Production](https://blog.0x74696d.com/posts/debugging-python-containers-in-production/)
