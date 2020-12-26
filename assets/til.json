@@ -50,6 +50,14 @@
         "title": "Organizing cookiecutters in directories (1.7+) \u2014 cookiecutter 1.7.2 documentation"
     },
     {
+        "added_on": "2020-12-26",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://cookiecutter.readthedocs.io/en/1.7.2/advanced/replay.html",
+        "title": "Replay Project Generation \u2014 cookiecutter 1.7.2 documentation"
+    },
+    {
         "added_on": "2020-12-25",
         "repeated_added_on": [],
         "categories": [
