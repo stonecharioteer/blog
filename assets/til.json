@@ -37,6 +37,19 @@
         "title": "psutil documentation \u2014 psutil 5.8.1 documentation"
     },
     {
+        "added_on": "2020-12-26",
+        "repeated_added_on": [],
+        "categories": [
+            "automation",
+            "bootstrapping",
+            "cookiecutter",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://cookiecutter.readthedocs.io/en/1.7.2/advanced/directories.html",
+        "title": "Organizing cookiecutters in directories (1.7+) \u2014 cookiecutter 1.7.2 documentation"
+    },
+    {
         "added_on": "2020-12-25",
         "repeated_added_on": [],
         "categories": [
