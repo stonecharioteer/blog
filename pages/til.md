@@ -20,8 +20,9 @@ not reliant on external services.
 ## 2020-12-26
 
 1. [Logging, Flask, and Gunicorn... the Manageable Way \| Thomas Stringer](https://trstringer.com/logging-flask-gunicorn-the-manageable-way/)
-2. [logging.handlers — Logging handlers — Python 3.9.1 documentation](https://docs.python.org/3/library/logging.handlers.html)
-3. [psutil documentation — psutil 5.8.1 documentation](https://psutil.readthedocs.io/en/latest/)
+2. [Organizing cookiecutters in directories (1.7+) — cookiecutter 1.7.2 documentation](https://cookiecutter.readthedocs.io/en/1.7.2/advanced/directories.html)
+3. [logging.handlers — Logging handlers — Python 3.9.1 documentation](https://docs.python.org/3/library/logging.handlers.html)
+4. [psutil documentation — psutil 5.8.1 documentation](https://psutil.readthedocs.io/en/latest/)
 
 ## 2020-12-25
 
