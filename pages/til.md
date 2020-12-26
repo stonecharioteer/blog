@@ -19,12 +19,13 @@ not reliant on external services.
 
 ## 2020-12-26
 
-1. [GitHub - pytest-dev/cookiecutter-pytest-plugin: A Cookiecutter template for pytest plugins 💻](https://github.com/pytest-dev/cookiecutter-pytest-plugin)
-2. [Logging, Flask, and Gunicorn... the Manageable Way \| Thomas Stringer](https://trstringer.com/logging-flask-gunicorn-the-manageable-way/)
-3. [Organizing cookiecutters in directories (1.7+) — cookiecutter 1.7.2 documentation](https://cookiecutter.readthedocs.io/en/1.7.2/advanced/directories.html)
-4. [Replay Project Generation — cookiecutter 1.7.2 documentation](https://cookiecutter.readthedocs.io/en/1.7.2/advanced/replay.html)
-5. [logging.handlers — Logging handlers — Python 3.9.1 documentation](https://docs.python.org/3/library/logging.handlers.html)
-6. [psutil documentation — psutil 5.8.1 documentation](https://psutil.readthedocs.io/en/latest/)
+1. [GitHub - mawww/kakoune: mawww's experiment for a better code editor](https://github.com/mawww/kakoune)
+2. [GitHub - pytest-dev/cookiecutter-pytest-plugin: A Cookiecutter template for pytest plugins 💻](https://github.com/pytest-dev/cookiecutter-pytest-plugin)
+3. [Logging, Flask, and Gunicorn... the Manageable Way \| Thomas Stringer](https://trstringer.com/logging-flask-gunicorn-the-manageable-way/)
+4. [Organizing cookiecutters in directories (1.7+) — cookiecutter 1.7.2 documentation](https://cookiecutter.readthedocs.io/en/1.7.2/advanced/directories.html)
+5. [Replay Project Generation — cookiecutter 1.7.2 documentation](https://cookiecutter.readthedocs.io/en/1.7.2/advanced/replay.html)
+6. [logging.handlers — Logging handlers — Python 3.9.1 documentation](https://docs.python.org/3/library/logging.handlers.html)
+7. [psutil documentation — psutil 5.8.1 documentation](https://psutil.readthedocs.io/en/latest/)
 
 ## 2020-12-25
 
