@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2020-12-26
 
-1. [logging.handlers — Logging handlers — Python 3.9.1 documentation](https://docs.python.org/3/library/logging.handlers.html)
+1. [Logging, Flask, and Gunicorn... the Manageable Way \| Thomas Stringer](https://trstringer.com/logging-flask-gunicorn-the-manageable-way/)
+2. [logging.handlers — Logging handlers — Python 3.9.1 documentation](https://docs.python.org/3/library/logging.handlers.html)
 
 ## 2020-12-25
 
