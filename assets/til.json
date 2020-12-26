@@ -58,6 +58,14 @@
         "title": "Replay Project Generation \u2014 cookiecutter 1.7.2 documentation"
     },
     {
+        "added_on": "2020-12-26",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://github.com/pytest-dev/cookiecutter-pytest-plugin",
+        "title": "GitHub - pytest-dev/cookiecutter-pytest-plugin: A Cookiecutter template for pytest plugins \ud83d\udcbb"
+    },
+    {
         "added_on": "2020-12-25",
         "repeated_added_on": [],
         "categories": [
