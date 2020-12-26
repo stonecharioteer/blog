@@ -66,6 +66,18 @@
         "title": "GitHub - pytest-dev/cookiecutter-pytest-plugin: A Cookiecutter template for pytest plugins \ud83d\udcbb"
     },
     {
+        "added_on": "2020-12-26",
+        "repeated_added_on": [],
+        "categories": [
+            "editor",
+            "tui",
+            "vim"
+        ],
+        "type": "url",
+        "value": "https://github.com/mawww/kakoune",
+        "title": "GitHub - mawww/kakoune: mawww's experiment for a better code editor"
+    },
+    {
         "added_on": "2020-12-25",
         "repeated_added_on": [],
         "categories": [
