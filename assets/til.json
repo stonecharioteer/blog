@@ -16,6 +16,18 @@
         "title": "GitHub - prasadgujar/low-level-design-primer: Dedicated Resources for the Low-Level System Design. Learn how to design and implement large-scale systems. Prep for the system design interview."
     },
     {
+        "added_on": "2020-12-27",
+        "repeated_added_on": [],
+        "categories": [
+            "basics",
+            "ip",
+            "tcp"
+        ],
+        "type": "url",
+        "value": "https://blog.dave.tf/post/ip-addr-parsing/",
+        "title": "Fun with IP address parsing \u00b7 blog.dave.tf"
+    },
+    {
         "added_on": "2020-12-26",
         "repeated_added_on": [],
         "categories": [
