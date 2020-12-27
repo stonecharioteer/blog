@@ -8,6 +8,14 @@
         "title": "Learn Linux Basics \u2013 Bash Command Tutorial for Beginners"
     },
     {
+        "added_on": "2020-12-27",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://github.com/prasadgujar/low-level-design-primer",
+        "title": "GitHub - prasadgujar/low-level-design-primer: Dedicated Resources for the Low-Level System Design. Learn how to design and implement large-scale systems. Prep for the system design interview."
+    },
+    {
         "added_on": "2020-12-26",
         "repeated_added_on": [],
         "categories": [
