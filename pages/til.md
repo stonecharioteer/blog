@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-27
+
+1. [Learn Linux Basics – Bash Command Tutorial for Beginners](https://www.freecodecamp.org/news/the-linux-commands-handbook/?s=09)
+
 ## 2020-12-26
 
 1. [GitHub - mawww/kakoune: mawww's experiment for a better code editor](https://github.com/mawww/kakoune)
