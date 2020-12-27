@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2020-12-27
 
-1. [Learn Linux Basics – Bash Command Tutorial for Beginners](https://www.freecodecamp.org/news/the-linux-commands-handbook/?s=09)
+1. [GitHub - prasadgujar/low-level-design-primer: Dedicated Resources for the Low-Level System Design. Learn how to design and implement large-scale systems. Prep for the system design interview.](https://github.com/prasadgujar/low-level-design-primer)
+2. [Learn Linux Basics – Bash Command Tutorial for Beginners](https://www.freecodecamp.org/news/the-linux-commands-handbook/?s=09)
 
 ## 2020-12-26
 
