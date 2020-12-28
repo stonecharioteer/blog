@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-28
+
+1. [Some of git internals (updated)](https://yurichev.com/news/20201220_git/)
+
 ## 2020-12-27
 
 1. [Fun with IP address parsing · blog.dave.tf](https://blog.dave.tf/post/ip-addr-parsing/)
