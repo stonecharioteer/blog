@@ -8,6 +8,21 @@
         "title": "A Complete Guide to LLVM for Programming Language Creators"
     },
     {
+        "added_on": "2020-12-29",
+        "repeated_added_on": [],
+        "categories": [
+            "documentation",
+            "markdown",
+            "pandoc",
+            "pdf",
+            "tools",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://github.com/tompollard/phd_thesis_markdown",
+        "title": "GitHub - tompollard/phd_thesis_markdown: Template for writing a PhD thesis in Markdown"
+    },
+    {
         "added_on": "2020-12-28",
         "repeated_added_on": [],
         "categories": [],
