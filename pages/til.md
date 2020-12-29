@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2020-12-29
 
 1. [A Complete Guide to LLVM for Programming Language Creators](https://mukulrathi.co.uk/create-your-own-programming-language/llvm-ir-cpp-api-tutorial/)
+2. [GitHub - tompollard/phd_thesis_markdown: Template for writing a PhD thesis in Markdown](https://github.com/tompollard/phd_thesis_markdown)
 
 ## 2020-12-28
 
