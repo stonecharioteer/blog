@@ -21,9 +21,10 @@ not reliant on external services.
 
 1. [A Complete Guide to LLVM for Programming Language Creators](https://mukulrathi.co.uk/create-your-own-programming-language/llvm-ir-cpp-api-tutorial/)
 2. [Bash HTTP monitoring dashboard - Raymii.org](https://raymii.org/s/software/Bash_HTTP_Monitoring_Dashboard.html)
-3. [GitHub - StylishThemes/GitHub-Dark: Dark GitHub style](https://github.com/StylishThemes/Github-Dark)
-4. [GitHub - kilimchoi/engineering-blogs: A curated list of engineering blogs](https://github.com/kilimchoi/engineering-blogs)
-5. [GitHub - tompollard/phd_thesis_markdown: Template for writing a PhD thesis in Markdown](https://github.com/tompollard/phd_thesis_markdown)
+3. [Experimenting On My Hearing Loss](https://0x90.psaux.io/2020/12/19/Experimenting-On-My-Hearing-Loss/)
+4. [GitHub - StylishThemes/GitHub-Dark: Dark GitHub style](https://github.com/StylishThemes/Github-Dark)
+5. [GitHub - kilimchoi/engineering-blogs: A curated list of engineering blogs](https://github.com/kilimchoi/engineering-blogs)
+6. [GitHub - tompollard/phd_thesis_markdown: Template for writing a PhD thesis in Markdown](https://github.com/tompollard/phd_thesis_markdown)
 
 ## 2020-12-28
 
