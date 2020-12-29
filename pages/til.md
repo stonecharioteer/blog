@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-29
+
+1. [A Complete Guide to LLVM for Programming Language Creators](https://mukulrathi.co.uk/create-your-own-programming-language/llvm-ir-cpp-api-tutorial/)
+
 ## 2020-12-28
 
 1. [Some of git internals (updated)](https://yurichev.com/news/20201220_git/)
