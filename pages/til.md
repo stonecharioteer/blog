@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-30
+
+1. [How to store dotfiles \| Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
+
 ## 2020-12-29
 
 1. [A Complete Guide to LLVM for Programming Language Creators](https://mukulrathi.co.uk/create-your-own-programming-language/llvm-ir-cpp-api-tutorial/)
