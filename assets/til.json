@@ -1,5 +1,13 @@
 [
     {
+        "added_on": "2020-12-30",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://www.atlassian.com/git/tutorials/dotfiles",
+        "title": "How to store dotfiles | Atlassian Git Tutorial"
+    },
+    {
         "added_on": "2020-12-29",
         "repeated_added_on": [],
         "categories": [],
