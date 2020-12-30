@@ -20,8 +20,9 @@ not reliant on external services.
 ## 2020-12-30
 
 1. [Brandon Invergo - Using GNU Stow to manage your dotfiles](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
-2. [How to store dotfiles \| Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
-3. [Webmention.io](https://webmention.io/)
+2. [Bridgy](https://brid.gy/)
+3. [How to store dotfiles \| Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
+4. [Webmention.io](https://webmention.io/)
 
 ## 2020-12-29
 
