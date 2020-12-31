@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2020-12-31
+
+1. [Organizing Background Worker Queues \| Brightball, Inc](https://www.brightball.com/articles/organizing-background-worker-queues)
+
 ## 2020-12-30
 
 1. [Brandon Invergo - Using GNU Stow to manage your dotfiles](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
