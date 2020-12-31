@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2020-12-31
 
-1. [Organizing Background Worker Queues \| Brightball, Inc](https://www.brightball.com/articles/organizing-background-worker-queues)
-2. [The Big Little Guide to Message Queues](https://sudhir.io/the-big-little-guide-to-message-queues/)
+1. [How Margins and Line Lengths Affect Readability](https://uxmovement.com/content/how-margins-and-line-lengths-affect-readability/)
+2. [Organizing Background Worker Queues \| Brightball, Inc](https://www.brightball.com/articles/organizing-background-worker-queues)
+3. [The Big Little Guide to Message Queues](https://sudhir.io/the-big-little-guide-to-message-queues/)
 
 ## 2020-12-30
 
