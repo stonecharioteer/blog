@@ -30,6 +30,19 @@
         "title": "How Margins and Line Lengths Affect Readability"
     },
     {
+        "added_on": "2020-12-31",
+        "repeated_added_on": [],
+        "categories": [
+            "Linux",
+            "devtools",
+            "tools",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://linux.die.net/man/1/xxd",
+        "title": "xxd(1): make hexdump/do reverse - Linux man page"
+    },
+    {
         "added_on": "2020-12-30",
         "repeated_added_on": [],
         "categories": [],
