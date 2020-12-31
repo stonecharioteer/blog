@@ -43,6 +43,14 @@
         "title": "xxd(1): make hexdump/do reverse - Linux man page"
     },
     {
+        "added_on": "2020-12-31",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://man7.org/linux/man-pages/man5/hosts.5.html#NOTES",
+        "title": "hosts(5) - Linux manual page"
+    },
+    {
         "added_on": "2020-12-30",
         "repeated_added_on": [],
         "categories": [],
