@@ -22,6 +22,7 @@ not reliant on external services.
 1. [How Margins and Line Lengths Affect Readability](https://uxmovement.com/content/how-margins-and-line-lengths-affect-readability/)
 2. [Organizing Background Worker Queues \| Brightball, Inc](https://www.brightball.com/articles/organizing-background-worker-queues)
 3. [The Big Little Guide to Message Queues](https://sudhir.io/the-big-little-guide-to-message-queues/)
+4. [xxd(1): make hexdump/do reverse - Linux man page](https://linux.die.net/man/1/xxd)
 
 ## 2020-12-30
 
