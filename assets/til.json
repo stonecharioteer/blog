@@ -8,6 +8,22 @@
         "title": "Java for Python Programmers \u2014 Java for Python Programmers"
     },
     {
+        "added_on": "2021-01-01",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "golang",
+            "jq",
+            "json",
+            "toml",
+            "tools",
+            "yaml"
+        ],
+        "type": "url",
+        "value": "https://github.com/solarkennedy/uq",
+        "title": "GitHub - solarkennedy/uq: Universal serialized data reader to JSON"
+    },
+    {
         "added_on": "2020-12-31",
         "repeated_added_on": [],
         "categories": [],
