@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-01-01
 
-1. [Java for Python Programmers — Java for Python Programmers](https://runestone.academy/runestone/books/published/java4python/Java4Python/toctree.html)
+1. [GitHub - solarkennedy/uq: Universal serialized data reader to JSON](https://github.com/solarkennedy/uq)
+2. [Java for Python Programmers — Java for Python Programmers](https://runestone.academy/runestone/books/published/java4python/Java4Python/toctree.html)
 
 ## 2020-12-31
 
