@@ -24,6 +24,20 @@
         "title": "GitHub - solarkennedy/uq: Universal serialized data reader to JSON"
     },
     {
+        "added_on": "2021-01-01",
+        "repeated_added_on": [],
+        "categories": [
+            "advanced",
+            "context",
+            "intermediate",
+            "python",
+            "stack"
+        ],
+        "type": "url",
+        "value": "https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack",
+        "title": "contextlib \u2014 Utilities for with-statement contexts \u2014 Python 3.9.1 documentation"
+    },
+    {
         "added_on": "2020-12-31",
         "repeated_added_on": [],
         "categories": [],
