@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-01
+
+1. [Java for Python Programmers — Java for Python Programmers](https://runestone.academy/runestone/books/published/java4python/Java4Python/toctree.html)
+
 ## 2020-12-31
 
 1. [How Margins and Line Lengths Affect Readability](https://uxmovement.com/content/how-margins-and-line-lengths-affect-readability/)
