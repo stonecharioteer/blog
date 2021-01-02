@@ -23,6 +23,7 @@ not reliant on external services.
 2. [Introduction - The Rustonomicon](https://doc.rust-lang.org/nomicon/)
 3. [Nim Programming Language](https://nim-lang.org/)
 4. [PEP proposal: Automatically Formatting the CPython Code - PEPs - Discussions on Python.org](https://discuss.python.org/t/pep-proposal-automatically-formatting-the-cpython-code/5603?page=3)
+5. [Rust Language Cheat Sheet](https://cheats.rs/)
 
 ## 2021-01-01
 
