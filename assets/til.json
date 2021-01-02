@@ -69,6 +69,23 @@
         "title": "Rust Language Cheat Sheet"
     },
     {
+        "added_on": "2021-01-02",
+        "repeated_added_on": [],
+        "categories": [
+            "CLI",
+            "book",
+            "command-line",
+            "command-line-interface",
+            "commandlineinterface",
+            "learning",
+            "resource",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://rust-cli.github.io/book/index.html",
+        "title": "Getting started - Command Line Applications in Rust"
+    },
+    {
         "added_on": "2021-01-01",
         "repeated_added_on": [],
         "categories": [],
