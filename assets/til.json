@@ -21,6 +21,23 @@
         "title": "Nim Programming Language"
     },
     {
+        "added_on": "2021-01-02",
+        "repeated_added_on": [],
+        "categories": [
+            "coding",
+            "howto",
+            "languages",
+            "learn",
+            "programming",
+            "resources",
+            "rust",
+            "tutorial"
+        ],
+        "type": "url",
+        "value": "https://fasterthanli.me/articles/a-half-hour-to-learn-rust",
+        "title": "A half-hour to learn Rust - fasterthanli.me"
+    },
+    {
         "added_on": "2021-01-01",
         "repeated_added_on": [],
         "categories": [],
