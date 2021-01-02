@@ -20,10 +20,11 @@ not reliant on external services.
 ## 2021-01-02
 
 1. [A half-hour to learn Rust - fasterthanli.me](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
-2. [Introduction - The Rustonomicon](https://doc.rust-lang.org/nomicon/)
-3. [Nim Programming Language](https://nim-lang.org/)
-4. [PEP proposal: Automatically Formatting the CPython Code - PEPs - Discussions on Python.org](https://discuss.python.org/t/pep-proposal-automatically-formatting-the-cpython-code/5603?page=3)
-5. [Rust Language Cheat Sheet](https://cheats.rs/)
+2. [Getting started - Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
+3. [Introduction - The Rustonomicon](https://doc.rust-lang.org/nomicon/)
+4. [Nim Programming Language](https://nim-lang.org/)
+5. [PEP proposal: Automatically Formatting the CPython Code - PEPs - Discussions on Python.org](https://discuss.python.org/t/pep-proposal-automatically-formatting-the-cpython-code/5603?page=3)
+6. [Rust Language Cheat Sheet](https://cheats.rs/)
 
 ## 2021-01-01
 
