@@ -51,6 +51,24 @@
         "title": "Introduction - The Rustonomicon"
     },
     {
+        "added_on": "2021-01-02",
+        "repeated_added_on": [],
+        "categories": [
+            "cheatsheet",
+            "coding",
+            "languages",
+            "learn",
+            "programming",
+            "resource",
+            "rust",
+            "tool",
+            "tutorial"
+        ],
+        "type": "url",
+        "value": "https://cheats.rs/",
+        "title": "Rust Language Cheat Sheet"
+    },
+    {
         "added_on": "2021-01-01",
         "repeated_added_on": [],
         "categories": [],
