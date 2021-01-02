@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-02
+
+1. [PEP proposal: Automatically Formatting the CPython Code - PEPs - Discussions on Python.org](https://discuss.python.org/t/pep-proposal-automatically-formatting-the-cpython-code/5603?page=3)
+
 ## 2021-01-01
 
 1. [GitHub - solarkennedy/uq: Universal serialized data reader to JSON](https://github.com/solarkennedy/uq)
