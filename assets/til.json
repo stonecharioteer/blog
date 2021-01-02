@@ -86,6 +86,19 @@
         "title": "Getting started - Command Line Applications in Rust"
     },
     {
+        "added_on": "2021-01-02",
+        "repeated_added_on": [],
+        "categories": [
+            "coding",
+            "languages",
+            "nim",
+            "programming"
+        ],
+        "type": "url",
+        "value": "https://github.com/pragmagic/karax",
+        "title": "GitHub - pragmagic/karax: Karax. Single page applications for Nim."
+    },
+    {
         "added_on": "2021-01-01",
         "repeated_added_on": [],
         "categories": [],
