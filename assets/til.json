@@ -38,6 +38,19 @@
         "title": "A half-hour to learn Rust - fasterthanli.me"
     },
     {
+        "added_on": "2021-01-02",
+        "repeated_added_on": [],
+        "categories": [
+            "books",
+            "learning",
+            "resources",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://doc.rust-lang.org/nomicon/",
+        "title": "Introduction - The Rustonomicon"
+    },
+    {
         "added_on": "2021-01-01",
         "repeated_added_on": [],
         "categories": [],
