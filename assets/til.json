@@ -126,6 +126,21 @@
         "title": "Pixelfed Documentation"
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "OSS",
+            "alternatives",
+            "applications",
+            "cloud-free",
+            "hosted",
+            "self-hosted"
+        ],
+        "type": "url",
+        "value": "https://github.com/awesome-selfhosted/awesome-self",
+        "title": "Page not found \u00b7 GitHub \u00b7 GitHub"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
