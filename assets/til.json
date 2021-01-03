@@ -155,6 +155,20 @@
         "title": "Rclone"
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "electronics",
+            "learning",
+            "robotics",
+            "robots",
+            "tech"
+        ],
+        "type": "url",
+        "value": "https://allshire.org/getting-started-robotics/",
+        "title": "Getting started in Robotics | Arthur Allshire"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
