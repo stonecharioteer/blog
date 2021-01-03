@@ -20,7 +20,8 @@ not reliant on external services.
 ## 2021-01-03
 
 1. [Algorithms by Jeff Erickson](http://algorithms.wtf)
-2. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+2. [GitHub - learnbyexample/scripting_course: A reference guide to Linux command line, Vim and Scripting](https://github.com/learnbyexample/scripting_course)
+3. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 
 ## 2021-01-02
 
