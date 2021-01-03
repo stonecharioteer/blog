@@ -33,6 +33,23 @@
         "title": "Teach Yourself Computer Science"
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "bash",
+            "learning",
+            "linux",
+            "perl",
+            "python",
+            "scripting",
+            "shell",
+            "vim"
+        ],
+        "type": "url",
+        "value": "https://github.com/learnbyexample/scripting_course",
+        "title": "GitHub - learnbyexample/scripting_course: A reference guide to Linux command line, Vim and Scripting"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
