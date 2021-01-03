@@ -30,9 +30,10 @@ not reliant on external services.
 9. [Page not found · GitHub · GitHub](https://github.com/awesome-selfhosted/awesome-self)
 10. [Pixelfed Documentation](https://docs.pixelfed.org/)
 11. [Rclone](https://rclone.org/)
-12. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
-13. [Writing a command-line program in Rust - Federico's Blog](https://people.gnome.org/~federico/blog/writing-a-command-line-program-in-rust.html)
-14. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
+12. [Specifying Dependencies - The Cargo Book](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)
+13. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+14. [Writing a command-line program in Rust - Federico's Blog](https://people.gnome.org/~federico/blog/writing-a-command-line-program-in-rust.html)
+15. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
 
 ## 2021-01-02
 
