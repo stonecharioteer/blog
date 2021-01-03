@@ -1,5 +1,23 @@
 [
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "algorithms",
+            "basics",
+            "book",
+            "computer-science",
+            "free",
+            "interview",
+            "learning",
+            "resources",
+            "studying"
+        ],
+        "type": "url",
+        "value": "http://algorithms.wtf",
+        "title": "Algorithms by Jeff Erickson"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
