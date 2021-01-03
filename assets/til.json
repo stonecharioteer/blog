@@ -195,6 +195,17 @@
         "title": "Eyes Above The Waves: In Praise Of Rust's structopt For Command Line Parsing"
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "learning",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://michael-f-bryan.github.io/rust-ffi-guide/overview.html",
+        "title": "Overview - The (unofficial) Rust FFI Guide"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
