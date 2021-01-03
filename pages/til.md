@@ -25,13 +25,14 @@ not reliant on external services.
 4. [Getting started in Robotics \| Arthur Allshire](https://allshire.org/getting-started-robotics/)
 5. [GitHub - learnbyexample/scripting_course: A reference guide to Linux command line, Vim and Scripting](https://github.com/learnbyexample/scripting_course)
 6. [Open Data Structures](https://opendatastructures.org/)
-7. [POLAR - Read. Learn. Never Forget. \| POLAR - Read. Learn. Never Forget.](https://getpolarized.io/)
-8. [Page not found · GitHub · GitHub](https://github.com/awesome-selfhosted/awesome-self)
-9. [Pixelfed Documentation](https://docs.pixelfed.org/)
-10. [Rclone](https://rclone.org/)
-11. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
-12. [Writing a command-line program in Rust - Federico's Blog](https://people.gnome.org/~federico/blog/writing-a-command-line-program-in-rust.html)
-13. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
+7. [Overview - The (unofficial) Rust FFI Guide](https://michael-f-bryan.github.io/rust-ffi-guide/overview.html)
+8. [POLAR - Read. Learn. Never Forget. \| POLAR - Read. Learn. Never Forget.](https://getpolarized.io/)
+9. [Page not found · GitHub · GitHub](https://github.com/awesome-selfhosted/awesome-self)
+10. [Pixelfed Documentation](https://docs.pixelfed.org/)
+11. [Rclone](https://rclone.org/)
+12. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+13. [Writing a command-line program in Rust - Federico's Blog](https://people.gnome.org/~federico/blog/writing-a-command-line-program-in-rust.html)
+14. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
 
 ## 2021-01-02
 
