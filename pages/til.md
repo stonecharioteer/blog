@@ -29,7 +29,8 @@ not reliant on external services.
 8. [Pixelfed Documentation](https://docs.pixelfed.org/)
 9. [Rclone](https://rclone.org/)
 10. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
-11. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
+11. [Writing a command-line program in Rust - Federico's Blog](https://people.gnome.org/~federico/blog/writing-a-command-line-program-in-rust.html)
+12. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
 
 ## 2021-01-02
 
