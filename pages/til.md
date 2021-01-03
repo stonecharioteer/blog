@@ -26,8 +26,9 @@ not reliant on external services.
 5. [POLAR - Read. Learn. Never Forget. \| POLAR - Read. Learn. Never Forget.](https://getpolarized.io/)
 6. [Page not found · GitHub · GitHub](https://github.com/awesome-selfhosted/awesome-self)
 7. [Pixelfed Documentation](https://docs.pixelfed.org/)
-8. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
-9. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
+8. [Rclone](https://rclone.org/)
+9. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+10. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
 
 ## 2021-01-02
 
