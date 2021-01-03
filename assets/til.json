@@ -219,6 +219,19 @@
         "title": "Specifying Dependencies - The Cargo Book"
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "api",
+            "discord",
+            "library",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://github.com/serenity-rs/serenity",
+        "title": "GitHub - serenity-rs/serenity: A Rust library for the Discord API."
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
