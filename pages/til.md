@@ -24,8 +24,9 @@ not reliant on external services.
 3. [GitHub - learnbyexample/scripting_course: A reference guide to Linux command line, Vim and Scripting](https://github.com/learnbyexample/scripting_course)
 4. [Open Data Structures](https://opendatastructures.org/)
 5. [POLAR - Read. Learn. Never Forget. \| POLAR - Read. Learn. Never Forget.](https://getpolarized.io/)
-6. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
-7. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
+6. [Pixelfed Documentation](https://docs.pixelfed.org/)
+7. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+8. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
 
 ## 2021-01-02
 
