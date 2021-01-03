@@ -18,6 +18,21 @@
         "title": "Algorithms by Jeff Erickson"
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "basics",
+            "computer-science",
+            "fundamentals",
+            "interview",
+            "learning",
+            "studying"
+        ],
+        "type": "url",
+        "value": "https://teachyourselfcs.com/",
+        "title": "Teach Yourself Computer Science"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
