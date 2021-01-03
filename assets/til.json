@@ -206,6 +206,19 @@
         "title": "Overview - The (unofficial) Rust FFI Guide"
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "cargo",
+            "dependency-management",
+            "packaging",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html",
+        "title": "Specifying Dependencies - The Cargo Book"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
