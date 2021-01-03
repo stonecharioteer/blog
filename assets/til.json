@@ -111,6 +111,21 @@
         "title": "A Graduate Course in Applied Cryptography"
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "OSS",
+            "alternatives",
+            "gallery",
+            "images",
+            "photos",
+            "self-hosted"
+        ],
+        "type": "url",
+        "value": "https://docs.pixelfed.org/",
+        "title": "Pixelfed Documentation"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
