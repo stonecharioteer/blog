@@ -98,6 +98,19 @@
         "title": "POLAR - Read. Learn. Never Forget. | POLAR - Read. Learn. Never Forget."
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "algorithms",
+            "cryptography",
+            "hashing",
+            "learning"
+        ],
+        "type": "url",
+        "value": "https://toc.cryptobook.us/",
+        "title": "A Graduate Course in Applied Cryptography"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
