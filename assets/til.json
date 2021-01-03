@@ -50,6 +50,21 @@
         "title": "GitHub - learnbyexample/scripting_course: A reference guide to Linux command line, Vim and Scripting"
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "books",
+            "free",
+            "learning",
+            "programming",
+            "resources",
+            "studying"
+        ],
+        "type": "url",
+        "value": "https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md",
+        "title": "free-programming-books/free-programming-books.md at master \u00b7 EbookFoundation/free-programming-books \u00b7 GitHub"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
