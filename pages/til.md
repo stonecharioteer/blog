@@ -22,8 +22,9 @@ not reliant on external services.
 1. [Algorithms by Jeff Erickson](http://algorithms.wtf)
 2. [GitHub - learnbyexample/scripting_course: A reference guide to Linux command line, Vim and Scripting](https://github.com/learnbyexample/scripting_course)
 3. [Open Data Structures](https://opendatastructures.org/)
-4. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
-5. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
+4. [POLAR - Read. Learn. Never Forget. \| POLAR - Read. Learn. Never Forget.](https://getpolarized.io/)
+5. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+6. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
 
 ## 2021-01-02
 
