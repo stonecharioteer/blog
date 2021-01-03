@@ -65,6 +65,23 @@
         "title": "free-programming-books/free-programming-books.md at master \u00b7 EbookFoundation/free-programming-books \u00b7 GitHub"
     },
     {
+        "added_on": "2021-01-03",
+        "repeated_added_on": [],
+        "categories": [
+            "algorithms",
+            "basics",
+            "data-structures",
+            "dsalgo",
+            "fundamentals",
+            "interviews",
+            "learning",
+            "studying"
+        ],
+        "type": "url",
+        "value": "https://opendatastructures.org/",
+        "title": "Open Data Structures"
+    },
+    {
         "added_on": "2021-01-02",
         "repeated_added_on": [],
         "categories": [],
