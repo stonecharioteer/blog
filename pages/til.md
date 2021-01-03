@@ -19,12 +19,13 @@ not reliant on external services.
 
 ## 2021-01-03
 
-1. [Algorithms by Jeff Erickson](http://algorithms.wtf)
-2. [GitHub - learnbyexample/scripting_course: A reference guide to Linux command line, Vim and Scripting](https://github.com/learnbyexample/scripting_course)
-3. [Open Data Structures](https://opendatastructures.org/)
-4. [POLAR - Read. Learn. Never Forget. \| POLAR - Read. Learn. Never Forget.](https://getpolarized.io/)
-5. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
-6. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
+1. [A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/)
+2. [Algorithms by Jeff Erickson](http://algorithms.wtf)
+3. [GitHub - learnbyexample/scripting_course: A reference guide to Linux command line, Vim and Scripting](https://github.com/learnbyexample/scripting_course)
+4. [Open Data Structures](https://opendatastructures.org/)
+5. [POLAR - Read. Learn. Never Forget. \| POLAR - Read. Learn. Never Forget.](https://getpolarized.io/)
+6. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+7. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
 
 ## 2021-01-02
 
