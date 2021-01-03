@@ -21,14 +21,15 @@ not reliant on external services.
 
 1. [A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/)
 2. [Algorithms by Jeff Erickson](http://algorithms.wtf)
-3. [GitHub - learnbyexample/scripting_course: A reference guide to Linux command line, Vim and Scripting](https://github.com/learnbyexample/scripting_course)
-4. [Open Data Structures](https://opendatastructures.org/)
-5. [POLAR - Read. Learn. Never Forget. \| POLAR - Read. Learn. Never Forget.](https://getpolarized.io/)
-6. [Page not found · GitHub · GitHub](https://github.com/awesome-selfhosted/awesome-self)
-7. [Pixelfed Documentation](https://docs.pixelfed.org/)
-8. [Rclone](https://rclone.org/)
-9. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
-10. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
+3. [Getting started in Robotics \| Arthur Allshire](https://allshire.org/getting-started-robotics/)
+4. [GitHub - learnbyexample/scripting_course: A reference guide to Linux command line, Vim and Scripting](https://github.com/learnbyexample/scripting_course)
+5. [Open Data Structures](https://opendatastructures.org/)
+6. [POLAR - Read. Learn. Never Forget. \| POLAR - Read. Learn. Never Forget.](https://getpolarized.io/)
+7. [Page not found · GitHub · GitHub](https://github.com/awesome-selfhosted/awesome-self)
+8. [Pixelfed Documentation](https://docs.pixelfed.org/)
+9. [Rclone](https://rclone.org/)
+10. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+11. [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
 
 ## 2021-01-02
 
