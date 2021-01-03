@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-01-03
 
 1. [Algorithms by Jeff Erickson](http://algorithms.wtf)
+2. [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 
 ## 2021-01-02
 
