@@ -51,6 +51,14 @@
         "title": "cargo-edit \u2014 Rust/Cargo add-on // Lib.rs"
     },
     {
+        "added_on": "2021-01-04",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://fasterthanli.me/series/making-our-own-executable-packer",
+        "title": "Making our own executable packer - fasterthanli.me"
+    },
+    {
         "added_on": "2021-01-03",
         "repeated_added_on": [],
         "categories": [
