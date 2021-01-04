@@ -23,12 +23,13 @@ not reliant on external services.
 2. [GitHub - valeriansaliou/sonic: 🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM.](https://github.com/valeriansaliou/sonic)
 3. [Introduction - Everything curl](https://ec.haxx.se/)
 4. [Making our own executable packer - fasterthanli.me](https://fasterthanli.me/series/making-our-own-executable-packer)
-5. [Page not found · GitHub · GitHub](https://github.com/pahaz/ssh)
-6. [Rocket - Simple, Fast, Type-Safe Web Framework for Rust](https://rocket.rs/master/)
-7. [Rust \| Exercism](https://exercism.io/my/tracks/rust)
-8. [The Art of Electronics 3rd Edition \| by Horowitz and Hill](https://artofelectronics.net/)
-9. [Who am I? - Easy Rust](https://dhghomon.github.io/easy_rust/Chapter_2.html)
-10. [cargo-edit — Rust/Cargo add-on // Lib.rs](https://lib.rs/crates/cargo-edit)
+5. [OWASP Cheat Sheet Series](https://owasp.org/www-project-cheat-sheets/)
+6. [Page not found · GitHub · GitHub](https://github.com/pahaz/ssh)
+7. [Rocket - Simple, Fast, Type-Safe Web Framework for Rust](https://rocket.rs/master/)
+8. [Rust \| Exercism](https://exercism.io/my/tracks/rust)
+9. [The Art of Electronics 3rd Edition \| by Horowitz and Hill](https://artofelectronics.net/)
+10. [Who am I? - Easy Rust](https://dhghomon.github.io/easy_rust/Chapter_2.html)
+11. [cargo-edit — Rust/Cargo add-on // Lib.rs](https://lib.rs/crates/cargo-edit)
 
 ## 2021-01-03
 
