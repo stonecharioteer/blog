@@ -25,7 +25,8 @@ not reliant on external services.
 4. [Making our own executable packer - fasterthanli.me](https://fasterthanli.me/series/making-our-own-executable-packer)
 5. [Rocket - Simple, Fast, Type-Safe Web Framework for Rust](https://rocket.rs/master/)
 6. [Rust \| Exercism](https://exercism.io/my/tracks/rust)
-7. [cargo-edit — Rust/Cargo add-on // Lib.rs](https://lib.rs/crates/cargo-edit)
+7. [The Art of Electronics 3rd Edition \| by Horowitz and Hill](https://artofelectronics.net/)
+8. [cargo-edit — Rust/Cargo add-on // Lib.rs](https://lib.rs/crates/cargo-edit)
 
 ## 2021-01-03
 
