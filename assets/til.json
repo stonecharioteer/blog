@@ -27,6 +27,22 @@
         "title": "Rocket - Simple, Fast, Type-Safe Web Framework for Rust"
     },
     {
+        "added_on": "2021-01-04",
+        "repeated_added_on": [],
+        "categories": [
+            "coding",
+            "languages",
+            "learning",
+            "programming",
+            "rust",
+            "studying",
+            "tutorial"
+        ],
+        "type": "url",
+        "value": "https://exercism.io/my/tracks/rust",
+        "title": "Rust | Exercism"
+    },
+    {
         "added_on": "2021-01-03",
         "repeated_added_on": [],
         "categories": [
