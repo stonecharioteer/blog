@@ -72,6 +72,20 @@
         "title": "Introduction - Everything curl"
     },
     {
+        "added_on": "2021-01-04",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "rust",
+            "search",
+            "search-engine",
+            "tool"
+        ],
+        "type": "url",
+        "value": "https://github.com/valeriansaliou/sonic",
+        "title": "GitHub - valeriansaliou/sonic: \ud83e\udd94 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM."
+    },
+    {
         "added_on": "2021-01-03",
         "repeated_added_on": [],
         "categories": [
