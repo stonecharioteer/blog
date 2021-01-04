@@ -21,6 +21,7 @@ not reliant on external services.
 
 1. [Auth Web Microservice with rust using Actix-Web - Complete Tutorial Part 1 - Harry Gill](https://gill.net.in/posts/auth-microservice-rust-actix-web-diesel-complete-tutorial-part-1/)
 2. [Rocket - Simple, Fast, Type-Safe Web Framework for Rust](https://rocket.rs/master/)
+3. [Rust \| Exercism](https://exercism.io/my/tracks/rust)
 
 ## 2021-01-03
 
