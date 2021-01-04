@@ -59,6 +59,19 @@
         "title": "Making our own executable packer - fasterthanli.me"
     },
     {
+        "added_on": "2021-01-04",
+        "repeated_added_on": [],
+        "categories": [
+            "book",
+            "curl",
+            "learning",
+            "resource"
+        ],
+        "type": "url",
+        "value": "https://ec.haxx.se/",
+        "title": "Introduction - Everything curl"
+    },
+    {
         "added_on": "2021-01-03",
         "repeated_added_on": [],
         "categories": [
