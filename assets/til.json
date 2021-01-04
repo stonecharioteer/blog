@@ -43,6 +43,14 @@
         "title": "Rust | Exercism"
     },
     {
+        "added_on": "2021-01-04",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://lib.rs/crates/cargo-edit",
+        "title": "cargo-edit \u2014 Rust/Cargo add-on // Lib.rs"
+    },
+    {
         "added_on": "2021-01-03",
         "repeated_added_on": [],
         "categories": [
