@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-01-04",
+        "repeated_added_on": [],
+        "categories": [
+            "actix",
+            "actix-web",
+            "framework",
+            "rust",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://gill.net.in/posts/auth-microservice-rust-actix-web-diesel-complete-tutorial-part-1/",
+        "title": "Auth Web Microservice with rust using Actix-Web - Complete Tutorial Part 1 - Harry Gill"
+    },
+    {
         "added_on": "2021-01-03",
         "repeated_added_on": [],
         "categories": [
