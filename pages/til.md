@@ -20,10 +20,11 @@ not reliant on external services.
 ## 2021-01-04
 
 1. [Auth Web Microservice with rust using Actix-Web - Complete Tutorial Part 1 - Harry Gill](https://gill.net.in/posts/auth-microservice-rust-actix-web-diesel-complete-tutorial-part-1/)
-2. [Making our own executable packer - fasterthanli.me](https://fasterthanli.me/series/making-our-own-executable-packer)
-3. [Rocket - Simple, Fast, Type-Safe Web Framework for Rust](https://rocket.rs/master/)
-4. [Rust \| Exercism](https://exercism.io/my/tracks/rust)
-5. [cargo-edit — Rust/Cargo add-on // Lib.rs](https://lib.rs/crates/cargo-edit)
+2. [Introduction - Everything curl](https://ec.haxx.se/)
+3. [Making our own executable packer - fasterthanli.me](https://fasterthanli.me/series/making-our-own-executable-packer)
+4. [Rocket - Simple, Fast, Type-Safe Web Framework for Rust](https://rocket.rs/master/)
+5. [Rust \| Exercism](https://exercism.io/my/tracks/rust)
+6. [cargo-edit — Rust/Cargo add-on // Lib.rs](https://lib.rs/crates/cargo-edit)
 
 ## 2021-01-03
 
