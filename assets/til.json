@@ -86,6 +86,18 @@
         "title": "GitHub - valeriansaliou/sonic: \ud83e\udd94 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM."
     },
     {
+        "added_on": "2021-01-04",
+        "repeated_added_on": [],
+        "categories": [
+            "DIY",
+            "book",
+            "electronics"
+        ],
+        "type": "url",
+        "value": "https://artofelectronics.net/",
+        "title": "The Art of Electronics 3rd Edition | by Horowitz and Hill"
+    },
+    {
         "added_on": "2021-01-03",
         "repeated_added_on": [],
         "categories": [
