@@ -30,6 +30,7 @@ not reliant on external services.
 9. [The Art of Electronics 3rd Edition \| by Horowitz and Hill](https://artofelectronics.net/)
 10. [Who am I? - Easy Rust](https://dhghomon.github.io/easy_rust/Chapter_2.html)
 11. [cargo-edit — Rust/Cargo add-on // Lib.rs](https://lib.rs/crates/cargo-edit)
+12. [into_rust(): screencasts for learning Rust](http://intorust.com/)
 
 ## 2021-01-03
 
