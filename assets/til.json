@@ -134,6 +134,22 @@
         "title": "OWASP Cheat Sheet Series"
     },
     {
+        "added_on": "2021-01-04",
+        "repeated_added_on": [],
+        "categories": [
+            "languages",
+            "learning",
+            "programming",
+            "rust",
+            "screencasts",
+            "system-programming",
+            "training"
+        ],
+        "type": "url",
+        "value": "http://intorust.com/",
+        "title": "into_rust(): screencasts for learning Rust"
+    },
+    {
         "added_on": "2021-01-03",
         "repeated_added_on": [],
         "categories": [
