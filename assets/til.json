@@ -126,6 +126,14 @@
         "title": "Page not found \u00b7 GitHub \u00b7 GitHub"
     },
     {
+        "added_on": "2021-01-04",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://owasp.org/www-project-cheat-sheets/",
+        "title": "OWASP Cheat Sheet Series"
+    },
+    {
         "added_on": "2021-01-03",
         "repeated_added_on": [],
         "categories": [
