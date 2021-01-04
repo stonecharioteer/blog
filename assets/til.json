@@ -98,6 +98,19 @@
         "title": "The Art of Electronics 3rd Edition | by Horowitz and Hill"
     },
     {
+        "added_on": "2021-01-04",
+        "repeated_added_on": [],
+        "categories": [
+            "book",
+            "learning",
+            "resource",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://dhghomon.github.io/easy_rust/Chapter_2.html",
+        "title": "Who am I? - Easy Rust"
+    },
+    {
         "added_on": "2021-01-03",
         "repeated_added_on": [],
         "categories": [
