@@ -17,6 +17,15 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-06
+
+1. [Introduction - Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
+2. [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
+3. [Performance Engineering of Software Systems \| Electrical Engineering and Computer Science \| MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-172-performance-engineering-of-software-systems-fall-2018/)
+4. [Tech Interview Handbook \| Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/)
+5. [Understanding Connections & Pools](https://sudhir.io/understanding-connections-pools/)
+6. [Using Leetcode to master coding interviews \| Benjamin Yolken](https://yolken.net/blog/master-coding-interviews)
+
 ## 2021-01-04
 
 1. [Auth Web Microservice with rust using Actix-Web - Complete Tutorial Part 1 - Harry Gill](https://gill.net.in/posts/auth-microservice-rust-actix-web-diesel-complete-tutorial-part-1/)

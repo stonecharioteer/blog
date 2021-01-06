@@ -1,5 +1,64 @@
 [
     {
+        "added_on": "2021-01-06",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://rust-unofficial.github.io/patterns/",
+        "title": "Introduction - Rust Design Patterns"
+    },
+    {
+        "added_on": "2021-01-06",
+        "repeated_added_on": [],
+        "categories": [
+            "book"
+        ],
+        "type": "url",
+        "value": "http://pages.cs.wisc.edu/~remzi/OSTEP/",
+        "title": "Operating Systems: Three Easy Pieces"
+    },
+    {
+        "added_on": "2021-01-06",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://sudhir.io/understanding-connections-pools/",
+        "title": "Understanding Connections & Pools"
+    },
+    {
+        "added_on": "2021-01-06",
+        "repeated_added_on": [],
+        "categories": [
+            "course"
+        ],
+        "type": "url",
+        "value": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-172-performance-engineering-of-software-systems-fall-2018/",
+        "title": "Performance Engineering of Software Systems | Electrical Engineering and Computer Science | MIT OpenCourseWare"
+    },
+    {
+        "added_on": "2021-01-06",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://yolken.net/blog/master-coding-interviews",
+        "title": "Using Leetcode to master coding interviews | Benjamin Yolken"
+    },
+    {
+        "added_on": "2021-01-06",
+        "repeated_added_on": [],
+        "categories": [
+            "algorithms",
+            "data-structures",
+            "interviewing",
+            "learning",
+            "studying",
+            "system-design"
+        ],
+        "type": "url",
+        "value": "https://yangshun.github.io/tech-interview-handbook/",
+        "title": "Tech Interview Handbook | Tech Interview Handbook"
+    },
+    {
         "added_on": "2021-01-04",
         "repeated_added_on": [],
         "categories": [
