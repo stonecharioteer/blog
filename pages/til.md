@@ -21,7 +21,8 @@ not reliant on external services.
 
 1. [Introduction - Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
 2. [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-3. [Understanding Connections & Pools](https://sudhir.io/understanding-connections-pools/)
+3. [Performance Engineering of Software Systems \| Electrical Engineering and Computer Science \| MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-172-performance-engineering-of-software-systems-fall-2018/)
+4. [Understanding Connections & Pools](https://sudhir.io/understanding-connections-pools/)
 
 ## 2021-01-04
 
