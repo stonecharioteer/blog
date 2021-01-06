@@ -23,6 +23,7 @@ not reliant on external services.
 2. [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
 3. [Performance Engineering of Software Systems \| Electrical Engineering and Computer Science \| MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-172-performance-engineering-of-software-systems-fall-2018/)
 4. [Understanding Connections & Pools](https://sudhir.io/understanding-connections-pools/)
+5. [Using Leetcode to master coding interviews \| Benjamin Yolken](https://yolken.net/blog/master-coding-interviews)
 
 ## 2021-01-04
 
