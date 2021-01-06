@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-06
+
+1. [Introduction - Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
+
 ## 2021-01-04
 
 1. [Auth Web Microservice with rust using Actix-Web - Complete Tutorial Part 1 - Harry Gill](https://gill.net.in/posts/auth-microservice-rust-actix-web-diesel-complete-tutorial-part-1/)
