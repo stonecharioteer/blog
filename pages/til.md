@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-01-06
 
 1. [Introduction - Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
+2. [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 ## 2021-01-04
 
