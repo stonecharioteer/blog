@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-07
+
+1. [Home \| Johnny•Decimal](https://johnnydecimal.com/)
+
 ## 2021-01-06
 
 1. [Introduction - Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
