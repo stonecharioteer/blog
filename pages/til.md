@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-01-08
 
 1. [A Visual Intro to NumPy and Data Representation – Jay Alammar – Visualizing machine learning one concept at a time.](https://jalammar.github.io/visual-numpy/)
+2. [GitHub - mebeim/aoc: 🎄 My solutions and walkthroughs for Advent of Code (https://adventofcode.com) and more related stuff.](https://github.com/mebeim/aoc)
 
 ## 2021-01-07
 
