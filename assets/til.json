@@ -1,5 +1,16 @@
 [
     {
+        "added_on": "2021-01-10",
+        "repeated_added_on": [],
+        "categories": [
+            "self-hosted",
+            "social-media"
+        ],
+        "type": "url",
+        "value": "https://scuttlebutt.nz/",
+        "title": "Scuttlebutt"
+    },
+    {
         "added_on": "2021-01-08",
         "repeated_added_on": [],
         "categories": [],
