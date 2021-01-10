@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-10
+
+1. [Scuttlebutt](https://scuttlebutt.nz/)
+
 ## 2021-01-08
 
 1. [A Visual Intro to NumPy and Data Representation – Jay Alammar – Visualizing machine learning one concept at a time.](https://jalammar.github.io/visual-numpy/)
