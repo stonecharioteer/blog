@@ -1,5 +1,20 @@
 [
     {
+        "added_on": "2021-01-11",
+        "repeated_added_on": [],
+        "categories": [
+            "book",
+            "decision-making",
+            "free",
+            "life",
+            "management",
+            "resources"
+        ],
+        "type": "url",
+        "value": "http://algorithmsbook.com",
+        "title": "Algorithms for Decision Making"
+    },
+    {
         "added_on": "2021-01-10",
         "repeated_added_on": [],
         "categories": [
