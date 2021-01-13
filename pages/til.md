@@ -23,13 +23,14 @@ not reliant on external services.
 2. [How to type 100 words per minute. I spent too much time trying to improve… \| by Dan Rusu \| Nov, 2020 \| Medium](https://medium.com/@roosterdan/how-to-type-100-words-per-minute-a780fd80fd27)
 3. [Introduction to plain text accounting — sirodoht blog](https://sirodoht.com/blog/introduction-to-plain-text-accounting/)
 4. [Kevin Boos - Publications](http://kevinaboos.web.rice.edu/publications.html)
-5. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
-6. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
-7. [Supporting Linux kernel development in Rust [LWN.net]](https://lwn.net/Articles/829858/)
-8. [Theseus OS: OSDI 2020 Long Talk - YouTube](https://youtu.be/j4ZPZoPNjkw)
-9. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
-10. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
-11. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
+5. [PhD Defense -- Theseus: Rethinking OS Structure and State Management - YouTube](https://youtu.be/JWGPLVYXZlU)
+6. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
+7. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
+8. [Supporting Linux kernel development in Rust [LWN.net]](https://lwn.net/Articles/829858/)
+9. [Theseus OS: OSDI 2020 Long Talk - YouTube](https://youtu.be/j4ZPZoPNjkw)
+10. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
+11. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
+12. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
 
 ## 2021-01-11
 
