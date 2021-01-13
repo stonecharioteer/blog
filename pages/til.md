@@ -24,10 +24,11 @@ not reliant on external services.
 3. [Introduction to plain text accounting — sirodoht blog](https://sirodoht.com/blog/introduction-to-plain-text-accounting/)
 4. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
 5. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
-6. [Theseus OS: OSDI 2020 Long Talk - YouTube](https://youtu.be/j4ZPZoPNjkw)
-7. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
-8. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
-9. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
+6. [Supporting Linux kernel development in Rust [LWN.net]](https://lwn.net/Articles/829858/)
+7. [Theseus OS: OSDI 2020 Long Talk - YouTube](https://youtu.be/j4ZPZoPNjkw)
+8. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
+9. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
+10. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
 
 ## 2021-01-11
 
