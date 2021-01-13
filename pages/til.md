@@ -28,10 +28,11 @@ not reliant on external services.
 7. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
 8. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
 9. [Supporting Linux kernel development in Rust [LWN.net]](https://lwn.net/Articles/829858/)
-10. [Theseus OS: OSDI 2020 Long Talk - YouTube](https://youtu.be/j4ZPZoPNjkw)
-11. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
-12. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
-13. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
+10. [The Observation Deck  » Rust after the honeymoon](http://dtrace.org/blogs/bmc/2020/10/11/rust-after-the-honeymoon/)
+11. [Theseus OS: OSDI 2020 Long Talk - YouTube](https://youtu.be/j4ZPZoPNjkw)
+12. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
+13. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
+14. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
 
 ## 2021-01-11
 
