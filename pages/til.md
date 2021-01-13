@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-13
+
+1. [How to type 100 words per minute. I spent too much time trying to improve… \| by Dan Rusu \| Nov, 2020 \| Medium](https://medium.com/@roosterdan/how-to-type-100-words-per-minute-a780fd80fd27)
+
 ## 2021-01-11
 
 1. [Algorithms for Decision Making](http://algorithmsbook.com)
