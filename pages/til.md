@@ -24,13 +24,14 @@ not reliant on external services.
 3. [Introduction to plain text accounting — sirodoht blog](https://sirodoht.com/blog/introduction-to-plain-text-accounting/)
 4. [Kevin Boos - Publications](http://kevinaboos.web.rice.edu/publications.html)
 5. [PhD Defense -- Theseus: Rethinking OS Structure and State Management - YouTube](https://youtu.be/JWGPLVYXZlU)
-6. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
-7. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
-8. [Supporting Linux kernel development in Rust [LWN.net]](https://lwn.net/Articles/829858/)
-9. [Theseus OS: OSDI 2020 Long Talk - YouTube](https://youtu.be/j4ZPZoPNjkw)
-10. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
-11. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
-12. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
+6. [Redox - Your Next(Gen) OS - Redox - Your Next(Gen) OS](https://www.redox-os.org/)
+7. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
+8. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
+9. [Supporting Linux kernel development in Rust [LWN.net]](https://lwn.net/Articles/829858/)
+10. [Theseus OS: OSDI 2020 Long Talk - YouTube](https://youtu.be/j4ZPZoPNjkw)
+11. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
+12. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
+13. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
 
 ## 2021-01-11
 
