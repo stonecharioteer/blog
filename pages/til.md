@@ -24,6 +24,7 @@ not reliant on external services.
 3. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
 4. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
 5. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
+6. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
 
 ## 2021-01-11
 
