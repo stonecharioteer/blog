@@ -90,6 +90,18 @@
         "title": "GitHub - theseus-os/Theseus: A modern experimental OS written from scratch in Rust to explore novel OS structure, state management techniques, and how to maximally leverage the power of language by shifting OS responsibilities into the compiler."
     },
     {
+        "added_on": "2021-01-13",
+        "repeated_added_on": [],
+        "categories": [
+            "operating-system",
+            "os",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://youtu.be/j4ZPZoPNjkw",
+        "title": "Theseus OS: OSDI 2020 Long Talk - YouTube"
+    },
+    {
         "added_on": "2021-01-11",
         "repeated_added_on": [],
         "categories": [
