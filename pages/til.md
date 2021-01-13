@@ -22,13 +22,14 @@ not reliant on external services.
 1. [GitHub - theseus-os/Theseus: A modern experimental OS written from scratch in Rust to explore novel OS structure, state management techniques, and how to maximally leverage the power of language by shifting OS responsibilities into the compiler.](https://github.com/theseus-os/Theseus)
 2. [How to type 100 words per minute. I spent too much time trying to improve… \| by Dan Rusu \| Nov, 2020 \| Medium](https://medium.com/@roosterdan/how-to-type-100-words-per-minute-a780fd80fd27)
 3. [Introduction to plain text accounting — sirodoht blog](https://sirodoht.com/blog/introduction-to-plain-text-accounting/)
-4. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
-5. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
-6. [Supporting Linux kernel development in Rust [LWN.net]](https://lwn.net/Articles/829858/)
-7. [Theseus OS: OSDI 2020 Long Talk - YouTube](https://youtu.be/j4ZPZoPNjkw)
-8. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
-9. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
-10. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
+4. [Kevin Boos - Publications](http://kevinaboos.web.rice.edu/publications.html)
+5. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
+6. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
+7. [Supporting Linux kernel development in Rust [LWN.net]](https://lwn.net/Articles/829858/)
+8. [Theseus OS: OSDI 2020 Long Talk - YouTube](https://youtu.be/j4ZPZoPNjkw)
+9. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
+10. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
+11. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
 
 ## 2021-01-11
 
