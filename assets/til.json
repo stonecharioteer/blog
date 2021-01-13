@@ -143,6 +143,19 @@
         "title": "PhD Defense -- Theseus: Rethinking OS Structure and State Management - YouTube"
     },
     {
+        "added_on": "2021-01-13",
+        "repeated_added_on": [],
+        "categories": [
+            "operating-system",
+            "os",
+            "rust",
+            "systems-programming"
+        ],
+        "type": "url",
+        "value": "https://www.redox-os.org/",
+        "title": "Redox - Your Next(Gen) OS - Redox - Your Next(Gen) OS"
+    },
+    {
         "added_on": "2021-01-11",
         "repeated_added_on": [],
         "categories": [
