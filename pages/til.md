@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-01-13
 
 1. [How to type 100 words per minute. I spent too much time trying to improve… \| by Dan Rusu \| Nov, 2020 \| Medium](https://medium.com/@roosterdan/how-to-type-100-words-per-minute-a780fd80fd27)
+2. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
 
 ## 2021-01-11
 
