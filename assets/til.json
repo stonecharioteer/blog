@@ -102,6 +102,19 @@
         "title": "Theseus OS: OSDI 2020 Long Talk - YouTube"
     },
     {
+        "added_on": "2021-01-13",
+        "repeated_added_on": [],
+        "categories": [
+            "Linux",
+            "drivers",
+            "rust",
+            "systems-programming"
+        ],
+        "type": "url",
+        "value": "https://lwn.net/Articles/829858/",
+        "title": "Supporting Linux kernel development in Rust [LWN.net]"
+    },
+    {
         "added_on": "2021-01-11",
         "repeated_added_on": [],
         "categories": [
