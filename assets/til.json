@@ -115,6 +115,21 @@
         "title": "Supporting Linux kernel development in Rust [LWN.net]"
     },
     {
+        "added_on": "2021-01-13",
+        "repeated_added_on": [],
+        "categories": [
+            "blog",
+            "learning",
+            "operating-systems",
+            "os",
+            "papers",
+            "rust"
+        ],
+        "type": "url",
+        "value": "http://kevinaboos.web.rice.edu/publications.html",
+        "title": "Kevin Boos - Publications"
+    },
+    {
         "added_on": "2021-01-11",
         "repeated_added_on": [],
         "categories": [
