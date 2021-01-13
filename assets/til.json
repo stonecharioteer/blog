@@ -41,6 +41,18 @@
         "title": "beancount: Double-Entry Accounting from Text Files | beancount.github.io"
     },
     {
+        "added_on": "2021-01-13",
+        "repeated_added_on": [],
+        "categories": [
+            "accounting",
+            "finance",
+            "money"
+        ],
+        "type": "url",
+        "value": "https://beancount.github.io/fava/",
+        "title": "Welcome to Fava! \u2014 Fava documentation"
+    },
+    {
         "added_on": "2021-01-11",
         "repeated_added_on": [],
         "categories": [
