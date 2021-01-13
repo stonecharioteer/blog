@@ -19,13 +19,14 @@ not reliant on external services.
 
 ## 2021-01-13
 
-1. [How to type 100 words per minute. I spent too much time trying to improve… \| by Dan Rusu \| Nov, 2020 \| Medium](https://medium.com/@roosterdan/how-to-type-100-words-per-minute-a780fd80fd27)
-2. [Introduction to plain text accounting — sirodoht blog](https://sirodoht.com/blog/introduction-to-plain-text-accounting/)
-3. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
-4. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
-5. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
-6. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
-7. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
+1. [GitHub - theseus-os/Theseus: A modern experimental OS written from scratch in Rust to explore novel OS structure, state management techniques, and how to maximally leverage the power of language by shifting OS responsibilities into the compiler.](https://github.com/theseus-os/Theseus)
+2. [How to type 100 words per minute. I spent too much time trying to improve… \| by Dan Rusu \| Nov, 2020 \| Medium](https://medium.com/@roosterdan/how-to-type-100-words-per-minute-a780fd80fd27)
+3. [Introduction to plain text accounting — sirodoht blog](https://sirodoht.com/blog/introduction-to-plain-text-accounting/)
+4. [Staff engineer archetypes.](https://lethain.com//staff-engineer-archetypes/)
+5. [Stories of reaching Staff-plus engineering roles - StaffEng \| StaffEng](https://staffeng.com/stories/)
+6. [Welcome to Fava! — Fava documentation](https://beancount.github.io/fava/)
+7. [beancount: Double-Entry Accounting from Text Files \| beancount.github.io](https://beancount.github.io/)
+8. [ledger, a powerful command-line accounting system](https://www.ledger-cli.org/)
 
 ## 2021-01-11
 
