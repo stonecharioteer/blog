@@ -156,6 +156,17 @@
         "title": "Redox - Your Next(Gen) OS - Redox - Your Next(Gen) OS"
     },
     {
+        "added_on": "2021-01-13",
+        "repeated_added_on": [],
+        "categories": [
+            "blog",
+            "rust"
+        ],
+        "type": "url",
+        "value": "http://dtrace.org/blogs/bmc/2020/10/11/rust-after-the-honeymoon/",
+        "title": "The Observation Deck  \u00bb Rust after the honeymoon"
+    },
+    {
         "added_on": "2021-01-11",
         "repeated_added_on": [],
         "categories": [
