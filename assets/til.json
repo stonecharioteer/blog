@@ -29,6 +29,18 @@
         "title": "Stories of reaching Staff-plus engineering roles - StaffEng | StaffEng"
     },
     {
+        "added_on": "2021-01-13",
+        "repeated_added_on": [],
+        "categories": [
+            "finances",
+            "money",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://beancount.github.io/",
+        "title": "beancount: Double-Entry Accounting from Text Files | beancount.github.io"
+    },
+    {
         "added_on": "2021-01-11",
         "repeated_added_on": [],
         "categories": [
