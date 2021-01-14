@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-14
+
+1. [How to Find Duplicate Files on Linux - buildVirtual](https://buildvirtual.net/how-to-find-duplicate-files-on-linux/)
+
 ## 2021-01-13
 
 1. [GitHub - theseus-os/Theseus: A modern experimental OS written from scratch in Rust to explore novel OS structure, state management techniques, and how to maximally leverage the power of language by shifting OS responsibilities into the compiler.](https://github.com/theseus-os/Theseus)
