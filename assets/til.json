@@ -33,6 +33,18 @@
         "title": "Livestream tips :: Jon Gjengset"
     },
     {
+        "added_on": "2021-01-14",
+        "repeated_added_on": [],
+        "categories": [
+            "advanced",
+            "course",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://youtube.com/playlist?list=PL0qfF8MrJ-jxMfirAdxDs9zIiBg2Wug0z",
+        "title": "CS631 Advanced Programming in the UNIX Environment - YouTube"
+    },
+    {
         "added_on": "2021-01-13",
         "repeated_added_on": [],
         "categories": [
