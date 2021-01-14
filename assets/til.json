@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-01-14",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "devtools",
+            "fdupes",
+            "linux",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://buildvirtual.net/how-to-find-duplicate-files-on-linux/",
+        "title": "How to Find Duplicate Files on Linux - buildVirtual"
+    },
+    {
         "added_on": "2021-01-13",
         "repeated_added_on": [],
         "categories": [
