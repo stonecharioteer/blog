@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2021-01-14
 
-1. [How to Find Duplicate Files on Linux - buildVirtual](https://buildvirtual.net/how-to-find-duplicate-files-on-linux/)
-2. [Livestream tips :: Jon Gjengset](https://thesquareplanet.com/blog/livestream-tips/)
+1. [CS631 Advanced Programming in the UNIX Environment - YouTube](https://youtube.com/playlist?list=PL0qfF8MrJ-jxMfirAdxDs9zIiBg2Wug0z)
+2. [How to Find Duplicate Files on Linux - buildVirtual](https://buildvirtual.net/how-to-find-duplicate-files-on-linux/)
+3. [Livestream tips :: Jon Gjengset](https://thesquareplanet.com/blog/livestream-tips/)
 
 ## 2021-01-13
 
