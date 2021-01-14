@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-01-14
 
 1. [How to Find Duplicate Files on Linux - buildVirtual](https://buildvirtual.net/how-to-find-duplicate-files-on-linux/)
+2. [Livestream tips :: Jon Gjengset](https://thesquareplanet.com/blog/livestream-tips/)
 
 ## 2021-01-13
 
