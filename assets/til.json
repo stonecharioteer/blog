@@ -1,5 +1,18 @@
 [
     {
+        "added_on": "2021-01-15",
+        "repeated_added_on": [],
+        "categories": [
+            "DIY",
+            "electronics",
+            "hobby-programming",
+            "robotics"
+        ],
+        "type": "url",
+        "value": "https://marksaroufim.medium.com/the-robot-overlord-manual-d4ee709155bc",
+        "title": "The Robot Overlord Manual. A robotics, machine learning and math\u2026 | by Mark Saroufim | Medium"
+    },
+    {
         "added_on": "2021-01-14",
         "repeated_added_on": [],
         "categories": [
