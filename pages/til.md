@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-15
+
+1. [The Robot Overlord Manual. A robotics, machine learning and math… \| by Mark Saroufim \| Medium](https://marksaroufim.medium.com/the-robot-overlord-manual-d4ee709155bc)
+
 ## 2021-01-14
 
 1. [CS631 Advanced Programming in the UNIX Environment - YouTube](https://youtube.com/playlist?list=PL0qfF8MrJ-jxMfirAdxDs9zIiBg2Wug0z)
