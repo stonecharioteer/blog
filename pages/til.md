@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-01-16
 
 1. [GitHub - Xfennec/progress: Linux tool to show progress for cp, mv, dd, ... (formerly known as cv)](https://github.com/Xfennec/progress)
+2. [Linux Handbook](https://linuxhandbook.com/)
 
 ## 2021-01-15
 
