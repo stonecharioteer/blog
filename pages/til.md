@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-16
+
+1. [GitHub - Xfennec/progress: Linux tool to show progress for cp, mv, dd, ... (formerly known as cv)](https://github.com/Xfennec/progress)
+
 ## 2021-01-15
 
 1. [The Robot Overlord Manual. A robotics, machine learning and math… \| by Mark Saroufim \| Medium](https://marksaroufim.medium.com/the-robot-overlord-manual-d4ee709155bc)
