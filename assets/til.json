@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-01-16",
+        "repeated_added_on": [],
+        "categories": [
+            "accessibility",
+            "devtools",
+            "linux",
+            "productivity",
+            "progress"
+        ],
+        "type": "url",
+        "value": "https://github.com/Xfennec/progress",
+        "title": "GitHub - Xfennec/progress: Linux tool to show progress for cp, mv, dd, ... (formerly known as cv)"
+    },
+    {
         "added_on": "2021-01-15",
         "repeated_added_on": [],
         "categories": [
