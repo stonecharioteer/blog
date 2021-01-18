@@ -23,6 +23,22 @@
         "value": "If you're setting `LESS` to a value, ensure that you use `-R` or colors in your terminal will be rendered in raw mode (their full escape sequence is printed) in any view that uses `less` as a pager, such as `git`"
     },
     {
+        "added_on": "2021-01-18",
+        "repeated_added_on": [],
+        "categories": [
+            "cirth",
+            "dwarvish",
+            "lotr",
+            "middle-earth",
+            "sindarin",
+            "tengwar",
+            "tolkien"
+        ],
+        "type": "url",
+        "value": "https://tengwartranscriber.github.io",
+        "title": "Tengwar Feanor Elvish Transcriber"
+    },
+    {
         "added_on": "2021-01-16",
         "repeated_added_on": [],
         "categories": [
