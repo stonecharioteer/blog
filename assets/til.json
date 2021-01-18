@@ -1,5 +1,21 @@
 [
     {
+        "added_on": "2021-01-18",
+        "repeated_added_on": [],
+        "categories": [
+            "config",
+            "firefox",
+            "privacy",
+            "settings",
+            "users",
+            "web",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://www.privacytools.io/browsers/",
+        "title": "Web Browsers | PrivacyTools"
+    },
+    {
         "added_on": "2021-01-16",
         "repeated_added_on": [],
         "categories": [
