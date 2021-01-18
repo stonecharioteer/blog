@@ -21,9 +21,10 @@ not reliant on external services.
 
 1. [14 Patterns to Ace Any Coding Interview Question \| Hacker Noon](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)
 2. [APA Style 6th Edition Blog: Abbreviations](https://blog.apastyle.org/apastyle/abbreviations/)
-3. [Tengwar Feanor Elvish Transcriber](https://tengwartranscriber.github.io)
-4. [Web Browsers \| PrivacyTools](https://www.privacytools.io/browsers/)
-5. If you're setting `LESS` to a value, ensure that you use `-R` or colors in your terminal will be rendered in raw mode (their full escape sequence is printed) in any view that uses `less` as a pager, such as `git`
+3. [New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time - Blind](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
+4. [Tengwar Feanor Elvish Transcriber](https://tengwartranscriber.github.io)
+5. [Web Browsers \| PrivacyTools](https://www.privacytools.io/browsers/)
+6. If you're setting `LESS` to a value, ensure that you use `-R` or colors in your terminal will be rendered in raw mode (their full escape sequence is printed) in any view that uses `less` as a pager, such as `git`
 
 ## 2021-01-16
 
