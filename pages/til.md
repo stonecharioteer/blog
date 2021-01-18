@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-18
+
+1. [Web Browsers \| PrivacyTools](https://www.privacytools.io/browsers/)
+
 ## 2021-01-16
 
 1. [GitHub - Xfennec/progress: Linux tool to show progress for cp, mv, dd, ... (formerly known as cv)](https://github.com/Xfennec/progress)
