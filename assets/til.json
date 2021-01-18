@@ -20,7 +20,7 @@
         "repeated_added_on": [],
         "categories": [],
         "type": "factoid",
-        "value": "If you're setting LESS to a value, ensure that you use -R or colors will be rendered in raw mode (their full escape sequence is printed) in any view that uses less as a pager, such as git"
+        "value": "If you're setting `LESS` to a value, ensure that you use `-R` or colors in your terminal will be rendered in raw mode (their full escape sequence is printed) in any view that uses `less` as a pager, such as `git`"
     },
     {
         "added_on": "2021-01-16",
