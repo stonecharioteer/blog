@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2021-01-18
 
-1. [Web Browsers \| PrivacyTools](https://www.privacytools.io/browsers/)
-2. If you're setting LESS to a value, ensure that you use -R or colors will be rendered in raw mode (their full escape sequence is printed) in any view that uses less as a pager, such as git
+1. [Tengwar Feanor Elvish Transcriber](https://tengwartranscriber.github.io)
+2. [Web Browsers \| PrivacyTools](https://www.privacytools.io/browsers/)
+3. If you're setting `LESS` to a value, ensure that you use `-R` or colors in your terminal will be rendered in raw mode (their full escape sequence is printed) in any view that uses `less` as a pager, such as `git`
 
 ## 2021-01-16
 
