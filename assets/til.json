@@ -8,6 +8,18 @@
         "title": "403 Forbidden"
     },
     {
+        "added_on": "2021-01-19",
+        "repeated_added_on": [],
+        "categories": [
+            "self-hosted",
+            "servers",
+            "sysadmin"
+        ],
+        "type": "url",
+        "value": "https://netbox.readthedocs.io/",
+        "title": "NetBox Documentation"
+    },
+    {
         "added_on": "2021-01-18",
         "repeated_added_on": [],
         "categories": [
