@@ -33,6 +33,19 @@
         "title": "GitHub - amperser/proselint: A linter for prose."
     },
     {
+        "added_on": "2021-01-19",
+        "repeated_added_on": [],
+        "categories": [
+            "editor",
+            "markdown",
+            "tool",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://novelwriter.readthedocs.io/en/stable/int_introduction.html",
+        "title": "Introduction \u2014 novelWriter 1.0.1 documentation"
+    },
+    {
         "added_on": "2021-01-18",
         "repeated_added_on": [],
         "categories": [
