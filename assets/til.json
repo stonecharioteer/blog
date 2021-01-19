@@ -20,6 +20,19 @@
         "title": "NetBox Documentation"
     },
     {
+        "added_on": "2021-01-19",
+        "repeated_added_on": [],
+        "categories": [
+            "English",
+            "longer",
+            "tool",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://github.com/amperser/proselint",
+        "title": "GitHub - amperser/proselint: A linter for prose."
+    },
+    {
         "added_on": "2021-01-18",
         "repeated_added_on": [],
         "categories": [
