@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-01-19
 
 1. [403 Forbidden](https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/)
+2. [NetBox Documentation](https://netbox.readthedocs.io/)
 
 ## 2021-01-18
 
