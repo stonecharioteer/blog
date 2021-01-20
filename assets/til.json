@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-01-20",
+        "repeated_added_on": [],
+        "categories": [
+            "breadboard",
+            "cool",
+            "desktop-only",
+            "electronics",
+            "web-apps"
+        ],
+        "type": "url",
+        "value": "https://www.tejotron.com/",
+        "title": "Tejotron"
+    },
+    {
         "added_on": "2021-01-19",
         "repeated_added_on": [],
         "categories": [],
