@@ -1,5 +1,18 @@
 [
     {
+        "added_on": "2021-01-21",
+        "repeated_added_on": [],
+        "categories": [
+            "explanation",
+            "tutorial",
+            "vi",
+            "vim"
+        ],
+        "type": "url",
+        "value": "https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim",
+        "title": "vi - What is your most productive shortcut with Vim? - Stack Overflow"
+    },
+    {
         "added_on": "2021-01-20",
         "repeated_added_on": [],
         "categories": [
