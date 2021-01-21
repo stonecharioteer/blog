@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-21
+
+1. [vi - What is your most productive shortcut with Vim? - Stack Overflow](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
+
 ## 2021-01-20
 
 1. [Tejotron](https://www.tejotron.com/)
