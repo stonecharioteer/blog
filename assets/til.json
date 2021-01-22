@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-01-22",
+        "repeated_added_on": [],
+        "categories": [
+            "gui",
+            "library",
+            "rust",
+            "win32",
+            "windows"
+        ],
+        "type": "url",
+        "value": "https://github.com/microsoft/windows-rs",
+        "title": "GitHub - microsoft/windows-rs: Rust for Windows"
+    },
+    {
         "added_on": "2021-01-21",
         "repeated_added_on": [],
         "categories": [
