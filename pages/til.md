@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-22
+
+1. [GitHub - microsoft/windows-rs: Rust for Windows](https://github.com/microsoft/windows-rs)
+
 ## 2021-01-21
 
 1. [vi - What is your most productive shortcut with Vim? - Stack Overflow](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
