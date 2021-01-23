@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-01-23",
+        "repeated_added_on": [],
+        "categories": [
+            "front-end",
+            "resources",
+            "web-dev"
+        ],
+        "type": "url",
+        "value": "https://github.com/sw-yx/spark-joy/blob/master/README.md",
+        "title": "spark-joy/README.md at master \u00b7 sw-yx/spark-joy \u00b7 GitHub"
+    },
+    {
         "added_on": "2021-01-22",
         "repeated_added_on": [],
         "categories": [
