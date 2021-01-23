@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-23
+
+1. [spark-joy/README.md at master · sw-yx/spark-joy · GitHub](https://github.com/sw-yx/spark-joy/blob/master/README.md)
+
 ## 2021-01-22
 
 1. [GitHub - microsoft/windows-rs: Rust for Windows](https://github.com/microsoft/windows-rs)
