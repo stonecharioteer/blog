@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-24
+
+1. [Algpt2 Part 2 \| Bilal Khan](https://bkkaggle.github.io/blog/algpt2/2020/07/17/ALGPT2-part-2.html)
+
 ## 2021-01-23
 
 1. [spark-joy/README.md at master · sw-yx/spark-joy · GitHub](https://github.com/sw-yx/spark-joy/blob/master/README.md)
