@@ -1,5 +1,21 @@
 [
     {
+        "added_on": "2021-01-24",
+        "repeated_added_on": [],
+        "categories": [
+            "AI",
+            "GPT-2",
+            "ML",
+            "NLP",
+            "language",
+            "machine-learning",
+            "natural-language-processing"
+        ],
+        "type": "url",
+        "value": "https://bkkaggle.github.io/blog/algpt2/2020/07/17/ALGPT2-part-2.html",
+        "title": "Algpt2 Part 2 | Bilal Khan"
+    },
+    {
         "added_on": "2021-01-23",
         "repeated_added_on": [],
         "categories": [
