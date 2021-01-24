@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-01-24
 
 1. [Algpt2 Part 2 \| Bilal Khan](https://bkkaggle.github.io/blog/algpt2/2020/07/17/ALGPT2-part-2.html)
+2. [GitHub - Asabeneh/30-Days-Of-JavaScript: 30 days of JavaScript programming challenge is a step by step guide to learn JavaScript programming language in 30 days. This challenge may take up to 100 days, follow your own pace.](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 
 ## 2021-01-23
 
