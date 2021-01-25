@@ -53,6 +53,20 @@
         "value": "'`dd`"
     },
     {
+        "added_on": "2021-01-25",
+        "repeated_added_on": [],
+        "categories": [
+            "alternative",
+            "darkroom",
+            "oss",
+            "photo-editing",
+            "photography"
+        ],
+        "type": "url",
+        "value": "https://filmulator.org/v0-11-0/",
+        "title": "Filmulator"
+    },
+    {
         "added_on": "2021-01-24",
         "repeated_added_on": [],
         "categories": [
