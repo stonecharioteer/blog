@@ -19,11 +19,12 @@ not reliant on external services.
 
 ## 2021-01-25
 
-1. [Filmulator](https://filmulator.org/v0-11-0/)
-2. [GitHub - prince-mishra/the-constitution-of-india: The Constitution of India, with each amendment as a commit.](https://github.com/prince-mishra/the-constitution-of-India)
-3. [Multy.me](https://www.multy.me/)
-4. [Perfect Media Server](https://perfectmediaserver.com/)
-5. '`dd`
+1. [Coding the STM32 Blue Pill with Rust and Visual Studio Code \| by Lup Yuen Lee 李立源 \| Coinmonks \| Medium](https://medium.com/coinmonks/coding-the-stm32-blue-pill-with-rust-and-visual-studio-code-b21615d8a20)
+2. [Filmulator](https://filmulator.org/v0-11-0/)
+3. [GitHub - prince-mishra/the-constitution-of-india: The Constitution of India, with each amendment as a commit.](https://github.com/prince-mishra/the-constitution-of-India)
+4. [Multy.me](https://www.multy.me/)
+5. [Perfect Media Server](https://perfectmediaserver.com/)
+6. '`dd`
 
 ## 2021-01-24
 
