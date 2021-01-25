@@ -67,6 +67,18 @@
         "title": "Filmulator"
     },
     {
+        "added_on": "2021-01-25",
+        "repeated_added_on": [],
+        "categories": [
+            "remote-working",
+            "tools",
+            "url-shortener"
+        ],
+        "type": "url",
+        "value": "https://www.multy.me/",
+        "title": "Multy.me"
+    },
+    {
         "added_on": "2021-01-24",
         "repeated_added_on": [],
         "categories": [
