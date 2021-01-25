@@ -23,6 +23,36 @@
         "title": "Perfect Media Server"
     },
     {
+        "added_on": "2021-01-25",
+        "repeated_added_on": [],
+        "categories": [
+            "Linux",
+            "USB",
+            "Where",
+            "`dd",
+            "and",
+            "backup",
+            "basically",
+            "brand",
+            "disks",
+            "if=file.iso",
+            "is",
+            "last",
+            "name",
+            "of",
+            "of=/dev/disk/by-id/ata-Samsung_SSD_840_EVO_120GB`",
+            "part",
+            "protips",
+            "stick'",
+            "supports",
+            "the",
+            "the",
+            "your"
+        ],
+        "type": "factoid",
+        "value": "'`dd`"
+    },
+    {
         "added_on": "2021-01-24",
         "repeated_added_on": [],
         "categories": [
