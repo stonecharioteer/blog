@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-25
+
+1. [GitHub - prince-mishra/the-constitution-of-india: The Constitution of India, with each amendment as a commit.](https://github.com/prince-mishra/the-constitution-of-India)
+
 ## 2021-01-24
 
 1. [Algpt2 Part 2 \| Bilal Khan](https://bkkaggle.github.io/blog/algpt2/2020/07/17/ALGPT2-part-2.html)
