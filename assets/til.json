@@ -79,6 +79,20 @@
         "title": "Multy.me"
     },
     {
+        "added_on": "2021-01-25",
+        "repeated_added_on": [],
+        "categories": [
+            "IoT",
+            "embedded-programming",
+            "hardware",
+            "rust",
+            "stm32"
+        ],
+        "type": "url",
+        "value": "https://medium.com/coinmonks/coding-the-stm32-blue-pill-with-rust-and-visual-studio-code-b21615d8a20",
+        "title": "Coding the STM32 Blue Pill with Rust and Visual Studio Code | by Lup Yuen Lee \u674e\u7acb\u6e90 | Coinmonks | Medium"
+    },
+    {
         "added_on": "2021-01-24",
         "repeated_added_on": [],
         "categories": [
