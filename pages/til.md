@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-01-26
 
 1. [Big-O notation explained by a self-taught programmer](https://justin.abrah.ms/computer-science/big-o-notation-explained.html)
+2. [I went through 700 reddit comments and collected 131 ADHD pro-tips! : ADHD](https://www.reddit.com/r/ADHD/comments/ioi1my/i_went_through_700_reddit_comments_and_collected/)
 
 ## 2021-01-25
 
