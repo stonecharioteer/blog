@@ -1,5 +1,16 @@
 [
     {
+        "added_on": "2021-01-26",
+        "repeated_added_on": [],
+        "categories": [
+            "algorithms",
+            "data-structures"
+        ],
+        "type": "url",
+        "value": "https://justin.abrah.ms/computer-science/big-o-notation-explained.html",
+        "title": "Big-O notation explained by a self-taught programmer"
+    },
+    {
         "added_on": "2021-01-25",
         "repeated_added_on": [],
         "categories": [
