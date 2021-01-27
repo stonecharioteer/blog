@@ -20,7 +20,8 @@ not reliant on external services.
 ## 2021-01-27
 
 1. [What might Amazon’s 6 page narrative structure look like?](https://www.anecdote.com/2018/05/amazons-six-page-narrative-structure/)
-2. 'In
+2. [White Papers At Amazon. How to write a business document the… \| by Andrea Marchiotto \| Medium](https://medium.com/@IndianaStyle/business-white-paper-at-amazon-3260046b8e0a)
+3. 'In
 
 ## 2021-01-26
 
