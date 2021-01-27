@@ -22,7 +22,8 @@ not reliant on external services.
 1. [How Jeff Bezos Turned Narrative into Amazon's Competitive Advantage - Knock Down Silos](https://slab.com/blog/jeff-bezos-writing-management-strategy/)
 2. [What might Amazon’s 6 page narrative structure look like?](https://www.anecdote.com/2018/05/amazons-six-page-narrative-structure/)
 3. [White Papers At Amazon. How to write a business document the… \| by Andrea Marchiotto \| Medium](https://medium.com/@IndianaStyle/business-white-paper-at-amazon-3260046b8e0a)
-4. 'In
+4. [Why Everyone on Your Team Should Strive for Good Writing - Knock Down Silos](https://slab.com/blog/writing-in-workplace/)
+5. 'In
 
 ## 2021-01-26
 
