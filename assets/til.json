@@ -107,6 +107,29 @@
         "title": "GitHub - outline/outline: The fastest wiki and knowledge base for growing teams. Beautiful, feature rich, and markdown compatible."
     },
     {
+        "added_on": "2021-01-27",
+        "repeated_added_on": [],
+        "categories": [
+            "ID",
+            "a",
+            "a",
+            "be",
+            "can",
+            "find",
+            "given",
+            "of",
+            "process",
+            "process",
+            "regexp",
+            "string.'",
+            "the",
+            "to",
+            "used"
+        ],
+        "type": "factoid",
+        "value": "'`pgrep`"
+    },
+    {
         "added_on": "2021-01-26",
         "repeated_added_on": [],
         "categories": [
