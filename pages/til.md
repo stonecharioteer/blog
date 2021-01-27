@@ -26,6 +26,7 @@ not reliant on external services.
 5. [White Papers At Amazon. How to write a business document the… \| by Andrea Marchiotto \| Medium](https://medium.com/@IndianaStyle/business-white-paper-at-amazon-3260046b8e0a)
 6. [Why Everyone on Your Team Should Strive for Good Writing - Knock Down Silos](https://slab.com/blog/writing-in-workplace/)
 7. 'In
+8. '`pgrep`
 
 ## 2021-01-26
 
