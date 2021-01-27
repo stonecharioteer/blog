@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-01-27
 
-1. 'In
+1. [What might Amazon’s 6 page narrative structure look like?](https://www.anecdote.com/2018/05/amazons-six-page-narrative-structure/)
+2. 'In
 
 ## 2021-01-26
 
