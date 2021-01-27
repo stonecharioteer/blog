@@ -21,14 +21,15 @@ not reliant on external services.
 
 1. [Can Silent Meetings Make Your Team More Collaborative? - Knock Down Silos](https://slab.com/blog/silent-meetings/)
 2. [Flask by Example – Project Setup – Real Python](https://realpython.com/flask-by-example-part-1-project-setup/)
-3. [GitHub - outline/outline: The fastest wiki and knowledge base for growing teams. Beautiful, feature rich, and markdown compatible.](https://github.com/outline/outline)
-4. [How Jeff Bezos Turned Narrative into Amazon's Competitive Advantage - Knock Down Silos](https://slab.com/blog/jeff-bezos-writing-management-strategy/)
-5. [How to Use Redis With Python – Real Python](https://realpython.com/python-redis/)
-6. [What might Amazon’s 6 page narrative structure look like?](https://www.anecdote.com/2018/05/amazons-six-page-narrative-structure/)
-7. [White Papers At Amazon. How to write a business document the… \| by Andrea Marchiotto \| Medium](https://medium.com/@IndianaStyle/business-white-paper-at-amazon-3260046b8e0a)
-8. [Why Everyone on Your Team Should Strive for Good Writing - Knock Down Silos](https://slab.com/blog/writing-in-workplace/)
-9. 'In
-10. '`pgrep`
+3. [GitHub - muesli/duf: Disk Usage/Free Utility - a better 'df' alternative](https://github.com/muesli/duf)
+4. [GitHub - outline/outline: The fastest wiki and knowledge base for growing teams. Beautiful, feature rich, and markdown compatible.](https://github.com/outline/outline)
+5. [How Jeff Bezos Turned Narrative into Amazon's Competitive Advantage - Knock Down Silos](https://slab.com/blog/jeff-bezos-writing-management-strategy/)
+6. [How to Use Redis With Python – Real Python](https://realpython.com/python-redis/)
+7. [What might Amazon’s 6 page narrative structure look like?](https://www.anecdote.com/2018/05/amazons-six-page-narrative-structure/)
+8. [White Papers At Amazon. How to write a business document the… \| by Andrea Marchiotto \| Medium](https://medium.com/@IndianaStyle/business-white-paper-at-amazon-3260046b8e0a)
+9. [Why Everyone on Your Team Should Strive for Good Writing - Knock Down Silos](https://slab.com/blog/writing-in-workplace/)
+10. 'In
+11. '`pgrep`
 
 ## 2021-01-26
 
