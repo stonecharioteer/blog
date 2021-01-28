@@ -37,6 +37,20 @@
         "title": "GitHub - diimdeep/awesome-split-keyboards: A collection of ergonomic split keyboards \u2328"
     },
     {
+        "added_on": "2021-01-28",
+        "repeated_added_on": [],
+        "categories": [
+            "container",
+            "docker",
+            "k8s",
+            "kube",
+            "kubernetes"
+        ],
+        "type": "url",
+        "value": "https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/",
+        "title": "Pull an Image from a Private Registry | Kubernetes"
+    },
+    {
         "added_on": "2021-01-27",
         "repeated_added_on": [],
         "categories": [
