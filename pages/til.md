@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2021-01-28
 
-1. [GitHub - kinx-project/kint: kinT keyboard controller (Kinesis controller replacement)](https://github.com/kinx-project/kint)
-2. [Stolen Camera Finder - find your photos, find your camera](https://www.stolencamerafinder.com/)
+1. [GitHub - diimdeep/awesome-split-keyboards: A collection of ergonomic split keyboards ⌨](https://github.com/diimdeep/awesome-split-keyboards)
+2. [GitHub - kinx-project/kint: kinT keyboard controller (Kinesis controller replacement)](https://github.com/kinx-project/kint)
+3. [Stolen Camera Finder - find your photos, find your camera](https://www.stolencamerafinder.com/)
 
 ## 2021-01-27
 
