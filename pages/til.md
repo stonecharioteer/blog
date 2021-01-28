@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-01-28
 
-1. [Stolen Camera Finder - find your photos, find your camera](https://www.stolencamerafinder.com/)
+1. [GitHub - kinx-project/kint: kinT keyboard controller (Kinesis controller replacement)](https://github.com/kinx-project/kint)
+2. [Stolen Camera Finder - find your photos, find your camera](https://www.stolencamerafinder.com/)
 
 ## 2021-01-27
 
