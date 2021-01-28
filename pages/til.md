@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-28
+
+1. [Stolen Camera Finder - find your photos, find your camera](https://www.stolencamerafinder.com/)
+
 ## 2021-01-27
 
 1. [Can Silent Meetings Make Your Team More Collaborative? - Knock Down Silos](https://slab.com/blog/silent-meetings/)
