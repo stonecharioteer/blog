@@ -82,6 +82,22 @@
         "title": "Kui"
     },
     {
+        "added_on": "2021-01-28",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "gui",
+            "k8s",
+            "kube",
+            "kubernetes",
+            "tools",
+            "ui"
+        ],
+        "type": "url",
+        "value": "https://github.com/kubelens/kubelens",
+        "title": "GitHub - kubelens/kubelens: A lightweight lens for applications running in Kubernetes"
+    },
+    {
         "added_on": "2021-01-27",
         "repeated_added_on": [],
         "categories": [
