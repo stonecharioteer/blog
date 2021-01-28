@@ -8,6 +8,21 @@
         "title": "Stolen Camera Finder - find your photos, find your camera"
     },
     {
+        "added_on": "2021-01-28",
+        "repeated_added_on": [],
+        "categories": [
+            "custom-keyboards",
+            "diy",
+            "keyboards",
+            "kinesis",
+            "mechanical-keyboards",
+            "open-source"
+        ],
+        "type": "url",
+        "value": "https://github.com/kinx-project/kint",
+        "title": "GitHub - kinx-project/kint: kinT keyboard controller (Kinesis controller replacement)"
+    },
+    {
         "added_on": "2021-01-27",
         "repeated_added_on": [],
         "categories": [
