@@ -21,7 +21,8 @@ not reliant on external services.
 
 1. [GitHub - diimdeep/awesome-split-keyboards: A collection of ergonomic split keyboards ⌨](https://github.com/diimdeep/awesome-split-keyboards)
 2. [GitHub - kinx-project/kint: kinT keyboard controller (Kinesis controller replacement)](https://github.com/kinx-project/kint)
-3. [Stolen Camera Finder - find your photos, find your camera](https://www.stolencamerafinder.com/)
+3. [Pull an Image from a Private Registry \| Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
+4. [Stolen Camera Finder - find your photos, find your camera](https://www.stolencamerafinder.com/)
 
 ## 2021-01-27
 
