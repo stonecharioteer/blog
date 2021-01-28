@@ -19,10 +19,11 @@ not reliant on external services.
 
 ## 2021-01-28
 
-1. [GitHub - diimdeep/awesome-split-keyboards: A collection of ergonomic split keyboards ⌨](https://github.com/diimdeep/awesome-split-keyboards)
-2. [GitHub - kinx-project/kint: kinT keyboard controller (Kinesis controller replacement)](https://github.com/kinx-project/kint)
-3. [Pull an Image from a Private Registry \| Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
-4. [Stolen Camera Finder - find your photos, find your camera](https://www.stolencamerafinder.com/)
+1. [GitHub - ahmetb/kubectx: Faster way to switch between clusters and namespaces in kubectl](https://github.com/ahmetb/kubectx/)
+2. [GitHub - diimdeep/awesome-split-keyboards: A collection of ergonomic split keyboards ⌨](https://github.com/diimdeep/awesome-split-keyboards)
+3. [GitHub - kinx-project/kint: kinT keyboard controller (Kinesis controller replacement)](https://github.com/kinx-project/kint)
+4. [Pull an Image from a Private Registry \| Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
+5. [Stolen Camera Finder - find your photos, find your camera](https://www.stolencamerafinder.com/)
 
 ## 2021-01-27
 
