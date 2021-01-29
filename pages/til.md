@@ -17,6 +17,12 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-29
+
+1. [Define Environment Variables for a Container \| Kubernetes](https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/)
+2. [GitHub - ahmetb/kubectl-tree: kubectl plugin to browse Kubernetes object hierarchies as a tree 🎄 (star the repo if you are using)](https://github.com/ahmetb/kubectl-tree)
+3. [HowTo: Disable SSH Host Key Checking - ShellHacks](shellhacks.com/disable-ssh-host-key-checking/)
+
 ## 2021-01-28
 
 1. [GitHub - ahmetb/kubectx: Faster way to switch between clusters and namespaces in kubectl](https://github.com/ahmetb/kubectx/)
