@@ -12,6 +12,17 @@
         "title": "GitHub - ahmetb/kubectl-tree: kubectl plugin to browse Kubernetes object hierarchies as a tree \ud83c\udf84 (star the repo if you are using)"
     },
     {
+        "added_on": "2021-01-29",
+        "repeated_added_on": [],
+        "categories": [
+            "openssh",
+            "ssh"
+        ],
+        "type": "url",
+        "value": "shellhacks.com/disable-ssh-host-key-checking/",
+        "title": "HowTo: Disable SSH Host Key Checking - ShellHacks"
+    },
+    {
         "added_on": "2021-01-28",
         "repeated_added_on": [],
         "categories": [],
