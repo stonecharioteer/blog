@@ -23,6 +23,7 @@ not reliant on external services.
 2. [GitHub - ahmetb/kubectl-tree: kubectl plugin to browse Kubernetes object hierarchies as a tree 🎄 (star the repo if you are using)](https://github.com/ahmetb/kubectl-tree)
 3. [HowTo: Disable SSH Host Key Checking - ShellHacks](shellhacks.com/disable-ssh-host-key-checking/)
 4. [Monkeytype](http://monkeytype.com)
+5. [Monkeytype](http://monkeytype.com/)
 
 ## 2021-01-28
 
