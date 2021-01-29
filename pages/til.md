@@ -21,7 +21,8 @@ not reliant on external services.
 
 1. [Define Environment Variables for a Container \| Kubernetes](https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/)
 2. [GitHub - ahmetb/kubectl-tree: kubectl plugin to browse Kubernetes object hierarchies as a tree 🎄 (star the repo if you are using)](https://github.com/ahmetb/kubectl-tree)
-3. [HowTo: Disable SSH Host Key Checking - ShellHacks](shellhacks.com/disable-ssh-host-key-checking/)
+3. [GitHub - donnemartin/gitsome: A supercharged Git/GitHub command line interface (CLI). An official integration for GitHub and GitHub Enterprise: https://github.com/works-with/category/desktop-tools](https://github.com/donnemartin/gitsome)
+4. [HowTo: Disable SSH Host Key Checking - ShellHacks](shellhacks.com/disable-ssh-host-key-checking/)
 
 ## 2021-01-28
 
