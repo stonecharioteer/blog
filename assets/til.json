@@ -1,5 +1,12 @@
 [
     {
+        "added_on": "2021-01-30",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "factoid",
+        "value": "`pytest --collect-only -q` will collect all test names, with parameters, and just print out the names in a way that you can use with `pytest <name>`"
+    },
+    {
         "added_on": "2021-01-29",
         "repeated_added_on": [],
         "categories": [
