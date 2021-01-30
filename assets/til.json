@@ -7,6 +7,19 @@
         "value": "`pytest --collect-only -q` will collect all test names, with parameters, and just print out the names in a way that you can use with `pytest <name>`"
     },
     {
+        "added_on": "2021-01-30",
+        "repeated_added_on": [],
+        "categories": [
+            "Linux",
+            "debugging",
+            "devtools",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/andikleen/pstrings",
+        "title": "GitHub - andikleen/pstrings: strings for a Linux process' address space"
+    },
+    {
         "added_on": "2021-01-29",
         "repeated_added_on": [],
         "categories": [
