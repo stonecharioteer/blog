@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2021-01-30
 
-1. [GitHub - andikleen/pstrings: strings for a Linux process' address space](https://github.com/andikleen/pstrings)
-2. `pytest --collect-only -q` will collect all test names, with parameters, and just print out the names in a way that you can use with `pytest <name>`
+1. [Gary Bernhardt: It's Fine \| DHTMLConf 2000 \| JSFest Oakland 2014 - YouTube](https://youtu.be/8QlZbg5B1vk)
+2. [GitHub - andikleen/pstrings: strings for a Linux process' address space](https://github.com/andikleen/pstrings)
+3. `pytest --collect-only -q` will collect all test names, with parameters, and just print out the names in a way that you can use with `pytest <name>`
 
 ## 2021-01-29
 
