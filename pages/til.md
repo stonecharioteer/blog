@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-30
+
+1. `pytest --collect-only -q` will collect all test names, with parameters, and just print out the names in a way that you can use with `pytest <name>`
+
 ## 2021-01-29
 
 1. [Define Environment Variables for a Container \| Kubernetes](https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/)
