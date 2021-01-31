@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-01-31
+
+1. [GitHub - danistefanovic/build-your-own-x: 🤓 Build your own (insert technology here)](https://github.com/danistefanovic/build-your-own-x)
+
 ## 2021-01-30
 
 1. [Gary Bernhardt: It's Fine \| DHTMLConf 2000 \| JSFest Oakland 2014 - YouTube](https://youtu.be/8QlZbg5B1vk)
