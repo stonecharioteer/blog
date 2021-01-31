@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-01-31
 
 1. [GitHub - danistefanovic/build-your-own-x: 🤓 Build your own (insert technology here)](https://github.com/danistefanovic/build-your-own-x)
+2. [Web Dev Junkie - YouTube](https://youtube.com/c/WebDevJunkie)
 
 ## 2021-01-30
 
