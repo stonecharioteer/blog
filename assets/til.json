@@ -132,6 +132,23 @@
         "type": "url",
         "value": "https://github.com/donnemartin/gitsome",
         "title": "GitHub - donnemartin/gitsome: A supercharged Git/GitHub command line interface (CLI). An official integration for GitHub and GitHub Enterprise: https://github.com/works-with/category/desktop-tools"
+            "mechanical-keyboard",
+            "typing"
+        ],
+        "type": "url",
+        "value": "http://monkeytype.com",
+        "title": "Monkeytype"
+    },
+    {
+        "added_on": "2021-01-29",
+        "repeated_added_on": [],
+        "categories": [
+            "mechanical-keyboard",
+            "typing"
+        ],
+        "type": "url",
+        "value": "http://monkeytype.com/",
+        "title": "Monkeytype"
     },
     {
         "added_on": "2021-01-28",
