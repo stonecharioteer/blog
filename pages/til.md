@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-01
+
+1. [Understanding Vue.js Lifecycle Hooks \| DigitalOcean](https://www.digitalocean.com/community/tutorials/vuejs-component-lifecycle)
+
 ## 2021-01-31
 
 1. [GitHub - danistefanovic/build-your-own-x: 🤓 Build your own (insert technology here)](https://github.com/danistefanovic/build-your-own-x)
