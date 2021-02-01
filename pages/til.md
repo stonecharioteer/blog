@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-02-01
 
-1. [Understanding Vue.js Lifecycle Hooks \| DigitalOcean](https://www.digitalocean.com/community/tutorials/vuejs-component-lifecycle)
+1. [S-MQTTT, or: secure-MQTT-over-Traefik · Jurian Sluiman](https://jurian.slui.mn/posts/smqttt-or-secure-mqtt-over-traefik/)
+2. [Understanding Vue.js Lifecycle Hooks \| DigitalOcean](https://www.digitalocean.com/community/tutorials/vuejs-component-lifecycle)
 
 ## 2021-01-31
 
