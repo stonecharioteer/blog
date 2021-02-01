@@ -14,6 +14,20 @@
         "title": "Understanding Vue.js Lifecycle Hooks | DigitalOcean"
     },
     {
+        "added_on": "2021-02-01",
+        "repeated_added_on": [],
+        "categories": [
+            "IoT",
+            "authentication",
+            "message-queue",
+            "mosquitto",
+            "mqtt"
+        ],
+        "type": "url",
+        "value": "https://jurian.slui.mn/posts/smqttt-or-secure-mqtt-over-traefik/",
+        "title": "S-MQTTT, or: secure-MQTT-over-Traefik \u00b7 Jurian Sluiman"
+    },
+    {
         "added_on": "2021-01-31",
         "repeated_added_on": [],
         "categories": [
