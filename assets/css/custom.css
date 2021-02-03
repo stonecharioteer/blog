@@ -13,3 +13,9 @@
     margin-top: 5px;
     max-height: 70px;
 }
+
+img.emoji {
+    display: inline !important;
+    margin: 0 !important;
+
+}
