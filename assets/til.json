@@ -58,6 +58,19 @@
         "title": "GitHub - FreedomBen/awk-hack-the-planet: Source code repo for Ben Porter (FreedomBen)'s talk at Linux Fest Northwest 2019 and 2020"
     },
     {
+        "added_on": "2021-02-03",
+        "repeated_added_on": [],
+        "categories": [
+            "Grammar",
+            "lexer",
+            "parser",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://github.com/zeroSteiner/rule-engine",
+        "title": "GitHub - zeroSteiner/rule-engine: A lightweight, optionally typed expression language with a custom grammar for matching arbitrary Python objects."
+    },
+    {
         "added_on": "2021-02-01",
         "repeated_added_on": [],
         "categories": [
