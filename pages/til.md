@@ -21,10 +21,11 @@ not reliant on external services.
 
 1. [GitHub - FreedomBen/awk-hack-the-planet: Source code repo for Ben Porter (FreedomBen)'s talk at Linux Fest Northwest 2019 and 2020](https://github.com/FreedomBen/awk-hack-the-planet)
 2. [GitHub - mazore/gerrymandering: A program that draws district lines around a two-party grid of people (equal proportions for each party) in order to give an unfair advantage to one party.](https://github.com/mazore/gerrymandering)
-3. [Most Discussed](https://www.mostdiscussed.com/)
-4. [Separating Programming Sheep from Non-Programming Goats](https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/)
-5. [Type Scale - A Visual Calculator](https://type-scale.com/)
-6. [carltheperson](https://carltheperson.com/posts/10-things-linux)
+3. [GitHub - zeroSteiner/rule-engine: A lightweight, optionally typed expression language with a custom grammar for matching arbitrary Python objects.](https://github.com/zeroSteiner/rule-engine)
+4. [Most Discussed](https://www.mostdiscussed.com/)
+5. [Separating Programming Sheep from Non-Programming Goats](https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/)
+6. [Type Scale - A Visual Calculator](https://type-scale.com/)
+7. [carltheperson](https://carltheperson.com/posts/10-things-linux)
 
 ## 2021-02-01
 
