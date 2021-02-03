@@ -23,6 +23,7 @@ not reliant on external services.
 2. [Most Discussed](https://www.mostdiscussed.com/)
 3. [Separating Programming Sheep from Non-Programming Goats](https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/)
 4. [Type Scale - A Visual Calculator](https://type-scale.com/)
+5. [carltheperson](https://carltheperson.com/posts/10-things-linux)
 
 ## 2021-02-01
 
