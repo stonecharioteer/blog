@@ -26,6 +26,14 @@
         "title": "Type Scale - A Visual Calculator"
     },
     {
+        "added_on": "2021-02-03",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/",
+        "title": "Separating Programming Sheep from Non-Programming Goats"
+    },
+    {
         "added_on": "2021-02-01",
         "repeated_added_on": [],
         "categories": [
