@@ -19,11 +19,12 @@ not reliant on external services.
 
 ## 2021-02-03
 
-1. [GitHub - mazore/gerrymandering: A program that draws district lines around a two-party grid of people (equal proportions for each party) in order to give an unfair advantage to one party.](https://github.com/mazore/gerrymandering)
-2. [Most Discussed](https://www.mostdiscussed.com/)
-3. [Separating Programming Sheep from Non-Programming Goats](https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/)
-4. [Type Scale - A Visual Calculator](https://type-scale.com/)
-5. [carltheperson](https://carltheperson.com/posts/10-things-linux)
+1. [GitHub - FreedomBen/awk-hack-the-planet: Source code repo for Ben Porter (FreedomBen)'s talk at Linux Fest Northwest 2019 and 2020](https://github.com/FreedomBen/awk-hack-the-planet)
+2. [GitHub - mazore/gerrymandering: A program that draws district lines around a two-party grid of people (equal proportions for each party) in order to give an unfair advantage to one party.](https://github.com/mazore/gerrymandering)
+3. [Most Discussed](https://www.mostdiscussed.com/)
+4. [Separating Programming Sheep from Non-Programming Goats](https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/)
+5. [Type Scale - A Visual Calculator](https://type-scale.com/)
+6. [carltheperson](https://carltheperson.com/posts/10-things-linux)
 
 ## 2021-02-01
 
