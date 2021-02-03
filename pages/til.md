@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-02-03
 
 1. [GitHub - mazore/gerrymandering: A program that draws district lines around a two-party grid of people (equal proportions for each party) in order to give an unfair advantage to one party.](https://github.com/mazore/gerrymandering)
+2. [Type Scale - A Visual Calculator](https://type-scale.com/)
 
 ## 2021-02-01
 
