@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-03
+
+1. [GitHub - mazore/gerrymandering: A program that draws district lines around a two-party grid of people (equal proportions for each party) in order to give an unfair advantage to one party.](https://github.com/mazore/gerrymandering)
+
 ## 2021-02-01
 
 1. [S-MQTTT, or: secure-MQTT-over-Traefik · Jurian Sluiman](https://jurian.slui.mn/posts/smqttt-or-secure-mqtt-over-traefik/)
@@ -39,7 +43,7 @@ not reliant on external services.
 2. [GitHub - ahmetb/kubectl-tree: kubectl plugin to browse Kubernetes object hierarchies as a tree 🎄 (star the repo if you are using)](https://github.com/ahmetb/kubectl-tree)
 3. [GitHub - donnemartin/gitsome: A supercharged Git/GitHub command line interface (CLI). An official integration for GitHub and GitHub Enterprise: https://github.com/works-with/category/desktop-tools](https://github.com/donnemartin/gitsome)
 4. [HowTo: Disable SSH Host Key Checking - ShellHacks](shellhacks.com/disable-ssh-host-key-checking/)
-5. [Monkeytype](http://monkeytype.com)
+5. [Monkeytype](http://monkeytype.com/)
 
 ## 2021-01-28
 
