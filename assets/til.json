@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-02-04",
+        "repeated_added_on": [],
+        "categories": [
+            "documentation",
+            "technical-writing",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://jacobian.org/series/great-documentation/",
+        "title": "Writing Great Documentation - Jacob Kaplan-Moss"
+    },
+    {
         "added_on": "2021-02-03",
         "repeated_added_on": [],
         "categories": [
