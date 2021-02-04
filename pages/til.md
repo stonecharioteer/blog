@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-04
+
+1. [Writing Great Documentation - Jacob Kaplan-Moss](https://jacobian.org/series/great-documentation/)
+
 ## 2021-02-03
 
 1. [GitHub - FreedomBen/awk-hack-the-planet: Source code repo for Ben Porter (FreedomBen)'s talk at Linux Fest Northwest 2019 and 2020](https://github.com/FreedomBen/awk-hack-the-planet)
