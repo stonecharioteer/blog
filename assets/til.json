@@ -8,6 +8,14 @@
         "title": "Contentui extension for Sphinx \u2014 Contentui extension for Sphinx documentation"
     },
     {
+        "added_on": "2021-02-05",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://sphinx-tabs.readthedocs.io/en/latest/",
+        "title": "Sphinx Tabs \u2014 sphinx-tabs documentation"
+    },
+    {
         "added_on": "2021-02-04",
         "repeated_added_on": [],
         "categories": [
