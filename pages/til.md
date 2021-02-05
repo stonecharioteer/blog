@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-02-05
 
 1. [Contentui extension for Sphinx — Contentui extension for Sphinx documentation](https://sphinxcontrib-contentui.readthedocs.io/en/latest/)
+2. [Sphinx Tabs — sphinx-tabs documentation](https://sphinx-tabs.readthedocs.io/en/latest/)
 
 ## 2021-02-04
 
