@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-05
+
+1. [Contentui extension for Sphinx — Contentui extension for Sphinx documentation](https://sphinxcontrib-contentui.readthedocs.io/en/latest/)
+
 ## 2021-02-04
 
 1. [Writing Great Documentation - Jacob Kaplan-Moss](https://jacobian.org/series/great-documentation/)
