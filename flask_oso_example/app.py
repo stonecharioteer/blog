@@ -23,3 +23,8 @@ def index_route():
 @app.route("/unvisitable")
 def unpermissable_route():
     oso_extension.authorize(actor="noone", action="can_visit", resource="this route")
+
+
+@app.route("/hello")
+def hello_route():
+    return "hello again"
