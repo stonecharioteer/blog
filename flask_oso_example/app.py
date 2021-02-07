@@ -1,7 +1,7 @@
 from flask import Flask
 
 import oso
-from flask_oso import FlaskOso
+from flask_oso import FlaskOso, skip_authorization
 
 app = Flask(__name__)
 
@@ -26,8 +26,8 @@ def unpermissable_route():
 
 
 @app.route("/hello")
+@skip_authorization
 def hello_route():
-    oso_extension.authorize(actor="noone", action="can_visit", resource="hello")
     return "hello again"
 
 oso_extension.require_authorization(app)
