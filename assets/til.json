@@ -1,5 +1,41 @@
 [
     {
+        "added_on": "2021-02-05",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://sphinxcontrib-contentui.readthedocs.io/en/latest/",
+        "title": "Contentui extension for Sphinx \u2014 Contentui extension for Sphinx documentation"
+    },
+    {
+        "added_on": "2021-02-05",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://sphinx-tabs.readthedocs.io/en/latest/",
+        "title": "Sphinx Tabs \u2014 sphinx-tabs documentation"
+    },
+    {
+        "added_on": "2021-02-05",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://github.com/executablebooks/sphinx-tabs",
+        "title": "GitHub - executablebooks/sphinx-tabs: Tabbed views for Sphinx"
+    },
+    {
+        "added_on": "2021-02-04",
+        "repeated_added_on": [],
+        "categories": [
+            "documentation",
+            "technical-writing",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://jacobian.org/series/great-documentation/",
+        "title": "Writing Great Documentation - Jacob Kaplan-Moss"
+    },
+    {
         "added_on": "2021-02-03",
         "repeated_added_on": [],
         "categories": [
@@ -11,6 +47,64 @@
         "type": "url",
         "value": "https://github.com/mazore/gerrymandering",
         "title": "GitHub - mazore/gerrymandering: A program that draws district lines around a two-party grid of people (equal proportions for each party) in order to give an unfair advantage to one party."
+    },
+    {
+        "added_on": "2021-02-03",
+        "repeated_added_on": [],
+        "categories": [
+            "UI",
+            "fontography",
+            "front-end",
+            "gui"
+        ],
+        "type": "url",
+        "value": "https://type-scale.com/",
+        "title": "Type Scale - A Visual Calculator"
+    },
+    {
+        "added_on": "2021-02-03",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/",
+        "title": "Separating Programming Sheep from Non-Programming Goats"
+    },
+    {
+        "added_on": "2021-02-03",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://www.mostdiscussed.com/",
+        "title": "Most Discussed"
+    },
+    {
+        "added_on": "2021-02-03",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://carltheperson.com/posts/10-things-linux",
+        "title": "carltheperson"
+    },
+    {
+        "added_on": "2021-02-03",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://github.com/FreedomBen/awk-hack-the-planet",
+        "title": "GitHub - FreedomBen/awk-hack-the-planet: Source code repo for Ben Porter (FreedomBen)'s talk at Linux Fest Northwest 2019 and 2020"
+    },
+    {
+        "added_on": "2021-02-03",
+        "repeated_added_on": [],
+        "categories": [
+            "Grammar",
+            "lexer",
+            "parser",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://github.com/zeroSteiner/rule-engine",
+        "title": "GitHub - zeroSteiner/rule-engine: A lightweight, optionally typed expression language with a custom grammar for matching arbitrary Python objects."
     },
     {
         "added_on": "2021-02-01",
@@ -5337,7 +5431,9 @@
             "resource"
         ],
         "added_on": "2020-08-30",
-        "repeated_added_on": [],
+        "repeated_added_on": [
+            "2021-02-04"
+        ],
         "type": "url",
         "value": "https://vim-adventures.com/",
         "title": "Learn VIM While Playing a Game"

@@ -17,9 +17,25 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-05
+
+1. [Contentui extension for Sphinx — Contentui extension for Sphinx documentation](https://sphinxcontrib-contentui.readthedocs.io/en/latest/)
+2. [GitHub - executablebooks/sphinx-tabs: Tabbed views for Sphinx](https://github.com/executablebooks/sphinx-tabs)
+3. [Sphinx Tabs — sphinx-tabs documentation](https://sphinx-tabs.readthedocs.io/en/latest/)
+
+## 2021-02-04
+
+1. [Writing Great Documentation - Jacob Kaplan-Moss](https://jacobian.org/series/great-documentation/)
+
 ## 2021-02-03
 
-1. [GitHub - mazore/gerrymandering: A program that draws district lines around a two-party grid of people (equal proportions for each party) in order to give an unfair advantage to one party.](https://github.com/mazore/gerrymandering)
+1. [GitHub - FreedomBen/awk-hack-the-planet: Source code repo for Ben Porter (FreedomBen)'s talk at Linux Fest Northwest 2019 and 2020](https://github.com/FreedomBen/awk-hack-the-planet)
+2. [GitHub - mazore/gerrymandering: A program that draws district lines around a two-party grid of people (equal proportions for each party) in order to give an unfair advantage to one party.](https://github.com/mazore/gerrymandering)
+3. [GitHub - zeroSteiner/rule-engine: A lightweight, optionally typed expression language with a custom grammar for matching arbitrary Python objects.](https://github.com/zeroSteiner/rule-engine)
+4. [Most Discussed](https://www.mostdiscussed.com/)
+5. [Separating Programming Sheep from Non-Programming Goats](https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/)
+6. [Type Scale - A Visual Calculator](https://type-scale.com/)
+7. [carltheperson](https://carltheperson.com/posts/10-things-linux)
 
 ## 2021-02-01
 
