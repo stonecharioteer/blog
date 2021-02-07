@@ -28,3 +28,5 @@ def unpermissable_route():
 @app.route("/hello")
 def hello_route():
     return "hello again"
+
+oso_extension.require_authorization(app)
