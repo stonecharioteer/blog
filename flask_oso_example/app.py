@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask
 
 import oso
 from flask_oso import FlaskOso
