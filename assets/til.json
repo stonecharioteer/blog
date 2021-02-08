@@ -61,6 +61,19 @@
         "title": "Introduction to PostgreSQL Automatic Failover | pgstef\u2019s blog"
     },
     {
+        "added_on": "2021-02-08",
+        "repeated_added_on": [],
+        "categories": [
+            "Linux",
+            "rust",
+            "terminal",
+            "tmux"
+        ],
+        "type": "url",
+        "value": "https://github.com/mosaic-org/mosaic",
+        "title": "GitHub - mosaic-org/mosaic: Terminal workspace (WIP)"
+    },
+    {
         "added_on": "2021-02-05",
         "repeated_added_on": [],
         "categories": [],
