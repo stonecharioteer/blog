@@ -25,6 +25,18 @@
         "title": "Scaling Postgres - YouTube"
     },
     {
+        "added_on": "2021-02-08",
+        "repeated_added_on": [],
+        "categories": [
+            "database",
+            "database-design",
+            "postgres"
+        ],
+        "type": "url",
+        "value": "https://www.citusdata.com/blog/2018/02/15/when-postgresql-blocks/",
+        "title": "PostgreSQL rocks, except when it blocks: Understanding locks"
+    },
+    {
         "added_on": "2021-02-05",
         "repeated_added_on": [],
         "categories": [],
