@@ -13,6 +13,18 @@
         "title": "Visual guide to SSH tunnels"
     },
     {
+        "added_on": "2021-02-08",
+        "repeated_added_on": [],
+        "categories": [
+            "database",
+            "database-design",
+            "postgres"
+        ],
+        "type": "url",
+        "value": "https://youtube.com/channel/UCnfO7IhkmJu_azn0WbIcV9A",
+        "title": "Scaling Postgres - YouTube"
+    },
+    {
         "added_on": "2021-02-05",
         "repeated_added_on": [],
         "categories": [],
