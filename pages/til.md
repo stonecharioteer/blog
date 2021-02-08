@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2021-02-08
 
-1. [Scaling Postgres - YouTube](https://youtube.com/channel/UCnfO7IhkmJu_azn0WbIcV9A)
-2. [Visual guide to SSH tunnels](https://robotmoon.com/ssh-tunnels/)
+1. [PostgreSQL rocks, except when it blocks: Understanding locks](https://www.citusdata.com/blog/2018/02/15/when-postgresql-blocks/)
+2. [Scaling Postgres - YouTube](https://youtube.com/channel/UCnfO7IhkmJu_azn0WbIcV9A)
+3. [Visual guide to SSH tunnels](https://robotmoon.com/ssh-tunnels/)
 
 ## 2021-02-05
 
