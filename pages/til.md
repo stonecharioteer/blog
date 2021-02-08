@@ -19,11 +19,12 @@ not reliant on external services.
 
 ## 2021-02-08
 
-1. [Introduction to PostgreSQL Automatic Failover \| pgstef’s blog](https://pgstef.github.io/2018/02/07/introduction_to_postgresql_automatic_failover.html)
-2. [PostgreSQL rocks, except when it blocks: Understanding locks](https://www.citusdata.com/blog/2018/02/15/when-postgresql-blocks/)
-3. [Scaling Postgres - YouTube](https://youtube.com/channel/UCnfO7IhkmJu_azn0WbIcV9A)
-4. [Visual guide to SSH tunnels](https://robotmoon.com/ssh-tunnels/)
-5. [When Postgres blocks: 7 tips for dealing with locks](https://www.citusdata.com/blog/2018/02/22/seven-tips-for-dealing-with-postgres-locks/)
+1. [GitHub - mosaic-org/mosaic: Terminal workspace (WIP)](https://github.com/mosaic-org/mosaic)
+2. [Introduction to PostgreSQL Automatic Failover \| pgstef’s blog](https://pgstef.github.io/2018/02/07/introduction_to_postgresql_automatic_failover.html)
+3. [PostgreSQL rocks, except when it blocks: Understanding locks](https://www.citusdata.com/blog/2018/02/15/when-postgresql-blocks/)
+4. [Scaling Postgres - YouTube](https://youtube.com/channel/UCnfO7IhkmJu_azn0WbIcV9A)
+5. [Visual guide to SSH tunnels](https://robotmoon.com/ssh-tunnels/)
+6. [When Postgres blocks: 7 tips for dealing with locks](https://www.citusdata.com/blog/2018/02/22/seven-tips-for-dealing-with-postgres-locks/)
 
 ## 2021-02-05
 
