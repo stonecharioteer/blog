@@ -1,0 +1,19 @@
+<div
+    markdown="span"
+    {% if include.alert_type == "note" %}
+    class="alert alert-note"
+    {% elsif include.alert_type == "warning" %}
+    class="alert alert-warning"
+    {% else %}
+    class="alert alert-info"
+    {% else %}
+    {% endif %}
+    role="alert">
+
+    <i class="fa fa-info-circle"></i> <b>
+    {% if include.alert_type == "note" %} Note {% elsif include.alert_type == "warning" %} Warning {% else %} Info {% endif %} :
+    </b> <b>{{include.title}}</b> <br>
+    <span class="content">
+        {{ include.content | newline_to_br }}
+    </span>
+</div>
