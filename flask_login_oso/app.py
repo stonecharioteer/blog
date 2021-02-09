@@ -36,9 +36,7 @@ class User:
 
 base_oso = Oso()
 base_oso.register_class(User)
-base_oso.load_str("""allow(user: User, "can", "logout");""")
-base_oso.load_str("""allow(user: User, "can", "logout") if user.id = "admin";""")
-
+base_oso.load_file("policies.polar")
 flask_oso_plugin = FlaskOso(oso=base_oso)
 flask_oso_plugin.init_app(app)
 
