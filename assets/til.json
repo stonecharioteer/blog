@@ -1,5 +1,79 @@
 [
     {
+        "added_on": "2021-02-08",
+        "repeated_added_on": [],
+        "categories": [
+            "basics",
+            "linux",
+            "network",
+            "ssh"
+        ],
+        "type": "url",
+        "value": "https://robotmoon.com/ssh-tunnels/",
+        "title": "Visual guide to SSH tunnels"
+    },
+    {
+        "added_on": "2021-02-08",
+        "repeated_added_on": [],
+        "categories": [
+            "database",
+            "database-design",
+            "postgres"
+        ],
+        "type": "url",
+        "value": "https://youtube.com/channel/UCnfO7IhkmJu_azn0WbIcV9A",
+        "title": "Scaling Postgres - YouTube"
+    },
+    {
+        "added_on": "2021-02-08",
+        "repeated_added_on": [],
+        "categories": [
+            "database",
+            "database-design",
+            "postgres"
+        ],
+        "type": "url",
+        "value": "https://www.citusdata.com/blog/2018/02/15/when-postgresql-blocks/",
+        "title": "PostgreSQL rocks, except when it blocks: Understanding locks"
+    },
+    {
+        "added_on": "2021-02-08",
+        "repeated_added_on": [],
+        "categories": [
+            "database",
+            "database-design",
+            "postgresql"
+        ],
+        "type": "url",
+        "value": "https://www.citusdata.com/blog/2018/02/22/seven-tips-for-dealing-with-postgres-locks/",
+        "title": "When Postgres blocks: 7 tips for dealing with locks"
+    },
+    {
+        "added_on": "2021-02-08",
+        "repeated_added_on": [],
+        "categories": [
+            "database",
+            "database-design",
+            "postgres"
+        ],
+        "type": "url",
+        "value": "https://pgstef.github.io/2018/02/07/introduction_to_postgresql_automatic_failover.html",
+        "title": "Introduction to PostgreSQL Automatic Failover | pgstef\u2019s blog"
+    },
+    {
+        "added_on": "2021-02-08",
+        "repeated_added_on": [],
+        "categories": [
+            "Linux",
+            "rust",
+            "terminal",
+            "tmux"
+        ],
+        "type": "url",
+        "value": "https://github.com/mosaic-org/mosaic",
+        "title": "GitHub - mosaic-org/mosaic: Terminal workspace (WIP)"
+    },
+    {
         "added_on": "2021-02-05",
         "repeated_added_on": [],
         "categories": [],
