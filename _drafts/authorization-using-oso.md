@@ -2,6 +2,7 @@
 layout:    "post"
 title:     "Authorization in Python using `oso`"
 categories: ['learning']
+permalink: '/oso-authz'
 ---
 
 Auth is one of the more underrated features in software. Not only is it hard
@@ -9,8 +10,8 @@ to do in a secure manner, it is also seldom appreciated when it is done well.
 When auth works, it's business as usual, and when it doesn't, someone messed
 up.
 
-When people say auth, they could mean one of two things: *authentication*, or,
-*authorization*.
+When people say auth, they could mean one of two things: *authentication* (AuthN), or,
+*authorization* (AuthZ).
 
 *Authentication* deals with user identity. Is user `abc` who they say they are?
 It deals with user IDs and passwords and validation. It could additionally
@@ -134,7 +135,11 @@ In this example, we're loading the `oso` library, and then immediately creating 
 
 An `oso` policy is declared in a language known as Polar. Polar takes inspiration from Prolog, and I like to think of its rule system as a paradigm you'd find in Rust's pattern matching. Don't let any of this intimidate you: I'll get to it later. For now, all you need to know is that we've added `allow("user", "can_use", "this_program");` to the policies in the `oso_object` object.
 
-Note that I've used triple double quotes because Polar uses only double quotes for its strings.
+{% capture value %}
+I've used triple double-quotes `"""` because Polar uses only double quotes `"` for its strings.
+{% endcapture %}
+
+{% include note.html title="Use double quotes for strings" alert_type="note" content=value%}
 
 This line essentially says: "If `allow` is triggered with 3 variables equal to, *literally*: `"user"`, `"can_use"` and `"this_program"`, then evaluate to `true`. (Polar uses `true`/`false` as synonyms for Python's `True`/`False`).
 
@@ -366,7 +371,11 @@ def hello_route():
     return "hello again"
 ```
 
-*Note that any third-party decorators have to come **after** the `flask` decorators.*
+{% capture value %}
+Any third-party decorators have to come **after** the `flask` decorators.
+{% endcapture %}
+
+{% include note.html title="Decorator Ordering" alert_type="note" content=value%}
 
 An interesting thing to note thus far is that there has been **no authentication**
 of any sort in our app. Additionally, we seem to have forgone the use of
@@ -388,6 +397,8 @@ paradigm*.  Understanding this enables you do do this:
 ```
 allow(1, "can_be_added_to", 1);
 ```
+
+Which can be used in Python as:
 
 ```python
 
