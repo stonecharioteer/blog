@@ -39,9 +39,8 @@ base_oso.register_class(User)
 base_oso.load_str("""allow(user: User, "can", "logout");""")
 base_oso.load_str("""allow(user: User, "can", "logout") if user.id = "admin";""")
 
-oso_extension = FlaskOso(oso=base_oso)
-oso_extension.init_app(app)
-oso_extension.require_authorization(app)
+flask_oso_plugin = FlaskOso(oso=base_oso)
+flask_oso_plugin.init_app(app)
 
 
 @login_manager.user_loader
@@ -62,14 +61,21 @@ def login():
 @app.route("/secure_route")
 @login_required
 def secure_route():
-    oso_extension.authorize(actor=current_user, action="can_get", resource="secure_route")
-    return jsonify(msg="this is a login-only route accessible only by admin")
+    username = current_user.id
+    if flask_oso_plugin.oso.is_allowed(User(username), "can_access","secure_route"):
+        return jsonify(msg="this is a login-only route accessible only by admin")
+    else:
+        return "access denied", 403
 
 
 @app.route("/logout")
 @login_required
 def logout():
-    oso_extension.authorize(actor=current_user, action="can", resource="logout")
+    username = current_user.id
+    if flask_oso_plugin.oso.is_allowed(User(username), "can", "logout"):
     # this line will allow all logged in users to be a ble to logout.  logout_user()
-    logout_user()
-    return jsonify(msg="you have been logged out")
+        logout_user()
+
+        return jsonify(msg="you have been logged out")
+    else:
+        return "access denied", 403
