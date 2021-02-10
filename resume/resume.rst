@@ -40,6 +40,7 @@ Visa Inc.
 * Conducted Python workshops with a varied audience, training them on how to set up
   Python projects, how to package them and how to build python modules so that they ate
   shareable.
+* Mentored and trained SDE-1s and interns, guiding them in design and implementation details.
 
 --------------------
 GKN Aerospace India
