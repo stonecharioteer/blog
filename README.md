@@ -20,7 +20,7 @@ for the layout and the themes.
             "---"
         ]
     },
-    "admonition" {
+    "admonition": {
         "prefix": "note",
         "body": [
             "{% capture value%}",
