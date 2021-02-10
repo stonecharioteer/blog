@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-02-10
 
-1. [What Is JWT and Why Should You Use JWT - YouTube](https://youtu.be/7Q17ubqLfaM)
+1. [FIGlet - hosted by PLiG](http://www.figlet.org/)
+2. [What Is JWT and Why Should You Use JWT - YouTube](https://youtu.be/7Q17ubqLfaM)
 
 ## 2021-02-08
 
