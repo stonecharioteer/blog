@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-10
+
+1. [What Is JWT and Why Should You Use JWT - YouTube](https://youtu.be/7Q17ubqLfaM)
+
 ## 2021-02-08
 
 1. [GitHub - mosaic-org/mosaic: Terminal workspace (WIP)](https://github.com/mosaic-org/mosaic)
