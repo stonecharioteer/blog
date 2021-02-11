@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-02-11",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "github",
+            "productivity",
+            "tools"
+        ],
+        "type": "factoid",
+        "value": "Visit any repo in @github and replace the 'github' with 'github1s' in the URL."
+    },
+    {
         "added_on": "2021-02-10",
         "repeated_added_on": [],
         "categories": [
