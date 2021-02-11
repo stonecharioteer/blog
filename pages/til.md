@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-11
+
+1. Visit any repo in @github and replace the 'github' with 'github1s' in the URL.
+
 ## 2021-02-10
 
 1. [FIGlet - hosted by PLiG](http://www.figlet.org/)
