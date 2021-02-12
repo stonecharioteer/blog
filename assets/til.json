@@ -1,5 +1,18 @@
 [
     {
+        "added_on": "2021-02-12",
+        "repeated_added_on": [],
+        "categories": [
+            "pattern-matching",
+            "python",
+            "rtfm",
+            "specification"
+        ],
+        "type": "url",
+        "value": "https://www.python.org/dev/peps/pep-0636/",
+        "title": "PEP 636 -- Structural Pattern Matching: Tutorial | Python.org"
+    },
+    {
         "added_on": "2021-02-11",
         "repeated_added_on": [],
         "categories": [
