@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-02-12
 
-1. [PEP 636 -- Structural Pattern Matching: Tutorial \| Python.org](https://www.python.org/dev/peps/pep-0636/)
+1. [GitHub - alqamahjsr/Algorithms: leetcode.com , algoexpert.io solutions in python and swift](https://github.com/alqamahjsr/Algorithms)
+2. [PEP 636 -- Structural Pattern Matching: Tutorial \| Python.org](https://www.python.org/dev/peps/pep-0636/)
 
 ## 2021-02-11
 
