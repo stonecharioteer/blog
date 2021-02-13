@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-13
+
+1. [Technical Writing One introduction  \|  Google Developers](https://developers.google.com/tech-writing/one)
+
 ## 2021-02-12
 
 1. [GitHub - alqamahjsr/Algorithms: leetcode.com , algoexpert.io solutions in python and swift](https://github.com/alqamahjsr/Algorithms)
