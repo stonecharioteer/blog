@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-02-13
 
-1. [Technical Writing One introduction  \|  Google Developers](https://developers.google.com/tech-writing/one)
+1. [An Introduction to Microservices. The essential concepts that every… \| by Amanda Bennett \| Microservice Geeks \| Feb, 2021 \| Medium](https://medium.com/microservicegeeks/an-introduction-to-microservices-a3a7e2297ee0)
+2. [Technical Writing One introduction  \|  Google Developers](https://developers.google.com/tech-writing/one)
 
 ## 2021-02-12
 
