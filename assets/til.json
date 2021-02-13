@@ -1,5 +1,16 @@
 [
     {
+        "added_on": "2021-02-13",
+        "repeated_added_on": [],
+        "categories": [
+            "resources",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://developers.google.com/tech-writing/one",
+        "title": "Technical Writing One introduction \u00a0|\u00a0 Google Developers"
+    },
+    {
         "added_on": "2021-02-12",
         "repeated_added_on": [],
         "categories": [
