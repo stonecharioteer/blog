@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 from flask_login import LoginManager, login_required, login_user, logout_user, current_user
 
 from oso import Oso
-from flask_oso import FlaskOso, skip_authorization
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "this shouldn't go into the code. store it in a config."
@@ -37,8 +36,6 @@ class User:
 base_oso = Oso()
 base_oso.register_class(User)
 base_oso.load_file("policies.polar")
-flask_oso_plugin = FlaskOso(oso=base_oso)
-flask_oso_plugin.init_app(app)
 
 
 @login_manager.user_loader
@@ -47,7 +44,6 @@ def load_user(user_id):
 
 
 @app.route("/login", methods=["POST"])
-@skip_authorization # authorization should be skipped for a login route.
 def login():
     username = request.json.get("username")
     # no password check
@@ -58,15 +54,15 @@ def login():
 
 @app.route("/insecure_route")
 @login_required
-@skip_authorization
 def insecure_route():
     return jsonify(msg="anyone who's logged in can query this route.")
+
 
 @app.route("/secure_route")
 @login_required
 def secure_route():
     username = current_user.id
-    if flask_oso_plugin.oso.is_allowed(User(username), "can_access","secure_route"):
+    if base_oso.is_allowed(User(username), "can_access", "secure_route"):
         return jsonify(msg="this is a login-only route accessible only by admin")
     else:
         return "access denied", 403
@@ -76,8 +72,8 @@ def secure_route():
 @login_required
 def logout():
     username = current_user.id
-    if flask_oso_plugin.oso.is_allowed(User(username), "can", "logout"):
-    # this line will allow all logged in users to be a ble to logout.  logout_user()
+    if base_oso.is_allowed(User(username), "can", "logout"):
+        # this line will allow all logged in users to be able to logout.  logout_user()
         logout_user()
 
         return jsonify(msg="you have been logged out")
