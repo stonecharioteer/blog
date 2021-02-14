@@ -56,6 +56,12 @@ def login():
     return jsonify(msg="login was a success!")
 
 
+@app.route("/insecure_route")
+@login_required
+@skip_authorization
+def insecure_route():
+    return jsonify(msg="anyone who's logged in can query this route.")
+
 @app.route("/secure_route")
 @login_required
 def secure_route():
