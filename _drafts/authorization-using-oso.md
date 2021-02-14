@@ -602,13 +602,11 @@ This is where `oso` comes in.
 
 Modify the above file to use `oso`:
 
-
 ```python
 from flask import Flask, request, jsonify
 from flask_login import LoginManager, login_required, login_user, logout_user, current_user
 
 from oso import Oso
-from flask_oso import FlaskOso, skip_authorization
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "this shouldn't go into the code. store it in a config."
@@ -645,9 +643,6 @@ base_oso.register_class(User)
 base_oso.load_str("""allow(user: User, "can", "logout");""")
 base_oso.load_str("""allow(user: User, "can", "logout") if user.id = "admin";""")
 
-flask_oso_plugin = FlaskOso(oso=base_oso)
-flask_oso_plugin.init_app(app)
-
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -655,7 +650,6 @@ def load_user(user_id):
 
 
 @app.route("/login", methods=["POST"])
-@skip_authorization # authorization should be skipped for a login route.
 def login():
     username = request.json.get("username")
     # no password check
@@ -666,7 +660,6 @@ def login():
 
 @app.route("/insecure_route")
 @login_required
-@skip_authorization
 def insecure_route():
     return jsonify(msg="anyone who's logged in can query this route.")
 
@@ -675,7 +668,7 @@ def insecure_route():
 @login_required
 def secure_route():
     username = current_user.id
-    if flask_oso_plugin.oso.is_allowed(User(username), "can_access","secure_route"):
+    if base_oso.is_allowed(User(username), "can_access","secure_route"):
         return jsonify(msg="this is a login-only route accessible only by admin")
     else:
 return "access denied", 403
@@ -685,10 +678,9 @@ return "access denied", 403
 @login_required
 def logout():
     username = current_user.id
-    if flask_oso_plugin.oso.is_allowed(User(username), "can", "logout"):
+    if base_oso.is_allowed(User(username), "can", "logout"):
     # this line will allow all logged in users to be a ble to logout.  logout_user()
         logout_user()
-
         return jsonify(msg="you have been logged out")
     else:
         return "access denied", 403
@@ -715,7 +707,8 @@ Change the lines:
 base_oso.load_str("""allow(user: User, "can", "logout");""")
 base_oso.load_str("""allow(user: User, "can", "logout") if user.id = "admin";""")
 ```
-to:
+
+To:
 
 ```python
 base_oso.load_file("policies.polar")
@@ -747,13 +740,13 @@ While you wouldn't necessarily call `flask_oso_plugin.oso.is_allowed` in your co
 
 Let's test the API.
 
-```
+```bash
 http POST http://localhost:5000/login username=admin password=admin --session test
 ```
 
 This logs us in. Let's try accessing one of the new routes.
 
-```
+```bash
 http http://localhost:5000/insecure_route --session test
 ```
 
@@ -773,12 +766,81 @@ Vary: Cookie
 
 ```
 
+Now, try accessing `/secure_route`
+
+```bash
+http http://localhost:5000/secure_route --session test
+```
+
+This returns:
+
+```
+Content-Length: 13
+Content-Type: text/html; charset=utf-8
+Date: Sun, 14 Feb 2021 07:42:27 GMT
+Server: Werkzeug/1.0.1 Python/3.9.1
+Vary: Cookie
+
+access denied
+```
+
+What happened?
+
+In the `/secure_route` view, notice how the Oso policies are read and checked,
+just like we have been doing so all alone.
+
+```python
+@login_required
+def secure_route():
+    username = current_user.id
+    if base_oso.is_allowed(User(username), "can_access", "secure_route"):
+        return jsonify(msg="this is a login-only route accessible only by admin")
+    else:
+        return "access denied", 403
+```
+
+Here, we call `base_oso.is_allowed`, just like before, and check if a `User` object, created
+with the `username` value, is *allowed* to read this route. While that explains what we're
+trying to do, remember that *all Polar is looking for is:* **a line in the loaded policies that matches `allow("admin", "can_access", "secure_route");`**.
+
+Again, for emphasis, Oso only looks for a matching policy. Since we don't have such a policy
+in the loaded policy file, it immediately resolves this function call to `False`, and our
+`if` statement moves to the `else` block.
+
+Now, while this is a fine way to use Oso in a Flask app, and there's no reason you shouldn't
+do this if you want to, when you have a larger Flask app, things can get complicated. So,
+the Oso team has given us a Flask extension called `flask_oso` that helps us even more.
+
+Let's rewrite the above file using `flask_oso`.
+
+```python
+```
+
+Now, query `/secure_route`. Notice that there's no difference in the response. You still get a
+403 because there's no policy in the `policies.polar` file that allows this. However, notice that
+nowhere do we call `base_oso.is_allowed`. Instead, we use the `flask_oso_extension` object,
+which is a `flask_oso.FlaskOso` object, bound to the `base_oso` object. And therein, we use
+`flask_oso_extension.authorize` instead. Here, the plugin does the bit regarding the 403 itself,
+allowing us to focus on more important, business-facing code.
+
+
 This is a route that is decorated with both `@login_required` and with `@skip_authorization`.
 
 Let's take a closer look.
 
+```python
+@app.route("/insecure_route")
+@login_required
+@skip_authorization
+def insecure_route():
+    return jsonify(msg="anyone who's logged in can query this route."
+```
 
+Flask-Login's `@login_required` ensures that there is a session attached to this request. If you
+were using cURL, you'd need to pass the cookie with the request. `httpie` does this for you with
+`--session <session-name>`. Now, notice that I've added `@skip_authorization` to the decorator list.
 
+This
 
 ### With flask_jwt_extended
 
@@ -795,13 +857,25 @@ their integrated chat, and he helped me grok Polar in a great way.
 
 Here are some other links:
 
-1. [Sam Scott's Talk on Oso and Polar]()
-2. [Getting Started with Oso]()
-3. [Python Oso Server Example]()
-4. [Flask Oso Integration Example]()
-5. [Osohq Youtube Channel]()
+1. [Getting Started with Oso](https://docs.osohq.com/getting-started/quickstart.html)
+2. [Python Oso Server Example](https://github.com/osohq/oso-python-quickstart)
+3. [Flask Oso Tutorial](https://github.com/osohq/oso-flask-tutorial)
+4. [Flask Oso Integration Example](https://github.com/osohq/oso-flask-integration)
+5. [Oso Github Repository](https://github.com/osohq/oso)
+6. [Osohq Youtube Channel](https://www.youtube.com/channel/UCrDCuHLJ32Cn0-j9K6wMwAg)
+7. Youtube Talks:
+   1. [Sam Scott: Access Control Patterns in Python](https://www.youtube.com/watch?v=UpPPuBqGbso)
+   2. [Polar, a Declarative Policy Language](https://www.youtube.com/watch?v=fw8wRl7HbDo)
+   3. [Building an Open Source Policy Engine in Rust](https://www.youtube.com/watch?v=NkatWt2_kks)
 
 Additionally, like I've mentioned before, go through the examples in the
-accompanying [Github repository]() for this post. You might want to rewind
+accompanying [Github repository](http://github.com/stonecharioteer/oso-examples) for this post. You might want to rewind
 a few commits to see how the code evolved, so that you understand the flow
 of the article as well.
+
+## Cookiecutter Template
+
+I maintain a bunch of all-encompassing Flask cookiecutter templates, and I've added Oso to all of the
+templates which have auth built into them. You can find the [cookiecutter
+repository here](https://github.com/stonecharioteer/cookiecutter-flask-multi),
+and [the instructions on running them here](/cookiecutter-flask-multi).
