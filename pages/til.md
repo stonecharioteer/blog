@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-15
+
+1. [CS:APP3e, Bryant and O'Hallaron](http://csapp.cs.cmu.edu/3e/labs.html)
+
 ## 2021-02-13
 
 1. [An Introduction to Microservices. The essential concepts that every… \| by Amanda Bennett \| Microservice Geeks \| Feb, 2021 \| Medium](https://medium.com/microservicegeeks/an-introduction-to-microservices-a3a7e2297ee0)
