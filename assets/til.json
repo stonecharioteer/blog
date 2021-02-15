@@ -13,6 +13,21 @@
         "title": "CS:APP3e, Bryant and O'Hallaron"
     },
     {
+        "added_on": "2021-02-15",
+        "repeated_added_on": [],
+        "categories": [
+            "book",
+            "computers",
+            "fundamentals",
+            "linux",
+            "project-ideas",
+            "shell"
+        ],
+        "type": "url",
+        "value": "http://csapp.cs.cmu.edu/3e/home.html",
+        "title": "CS:APP3e, Bryant and O'Hallaron"
+    },
+    {
         "added_on": "2021-02-13",
         "repeated_added_on": [],
         "categories": [
