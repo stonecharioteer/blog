@@ -60,6 +60,20 @@
         "title": "patma/README.md at master \u00b7 gvanrossum/patma \u00b7 GitHub"
     },
     {
+        "added_on": "2021-02-15",
+        "repeated_added_on": [],
+        "categories": [
+            "api-tools",
+            "curl",
+            "devtools",
+            "httpie",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/httpie/http-prompt",
+        "title": "GitHub - httpie/http-prompt: An interactive command-line HTTP and API testing client built on top of HTTPie featuring autocomplete, syntax highlighting, and more. https://twitter.com/httpie"
+    },
+    {
         "added_on": "2021-02-13",
         "repeated_added_on": [],
         "categories": [
