@@ -28,6 +28,24 @@
         "title": "CS:APP3e, Bryant and O'Hallaron"
     },
     {
+        "added_on": "2021-02-15",
+        "repeated_added_on": [],
+        "categories": [
+            "Linux",
+            "book",
+            "clang",
+            "free",
+            "fundamentals",
+            "learning",
+            "resource",
+            "systems-programming",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://github.com/angrave/SystemProgramming/wiki/Home",
+        "title": "Home \u00b7 angrave/SystemProgramming Wiki \u00b7 GitHub"
+    },
+    {
         "added_on": "2021-02-13",
         "repeated_added_on": [],
         "categories": [
