@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-02-15
 
 1. [CS:APP3e, Bryant and O'Hallaron](http://csapp.cs.cmu.edu/3e/labs.html)
+2. [CS:APP3e, Bryant and O'Hallaron](http://csapp.cs.cmu.edu/3e/home.html)
 
 ## 2021-02-13
 
