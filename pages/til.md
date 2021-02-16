@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-16
+
+1. [GitHub - nat/ghtop: See what's happening on GitHub in real time (also helpful if you need to use up your API quota as quickly as possible)](https://github.com/nat/ghtop)
+
 ## 2021-02-15
 
 1. [CS:APP3e, Bryant and O'Hallaron](http://csapp.cs.cmu.edu/3e/labs.html)
