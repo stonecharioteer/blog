@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-02-16
 
 1. [GitHub - nat/ghtop: See what's happening on GitHub in real time (also helpful if you need to use up your API quota as quickly as possible)](https://github.com/nat/ghtop)
+2. [GoAccess - Visual Web Log Analyzer](https://goaccess.io/)
 
 ## 2021-02-15
 
