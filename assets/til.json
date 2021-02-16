@@ -1,5 +1,20 @@
 [
     {
+        "added_on": "2021-02-16",
+        "repeated_added_on": [],
+        "categories": [
+            "analytics",
+            "cli",
+            "devtools",
+            "github",
+            "rich",
+            "tui"
+        ],
+        "type": "url",
+        "value": "https://github.com/nat/ghtop",
+        "title": "GitHub - nat/ghtop: See what's happening on GitHub in real time (also helpful if you need to use up your API quota as quickly as possible)"
+    },
+    {
         "added_on": "2021-02-15",
         "repeated_added_on": [],
         "categories": [
