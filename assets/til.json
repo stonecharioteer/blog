@@ -15,6 +15,20 @@
         "title": "GitHub - nat/ghtop: See what's happening on GitHub in real time (also helpful if you need to use up your API quota as quickly as possible)"
     },
     {
+        "added_on": "2021-02-16",
+        "repeated_added_on": [],
+        "categories": [
+            "analytics",
+            "cli",
+            "tools",
+            "tui",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://goaccess.io/",
+        "title": "GoAccess - Visual Web Log Analyzer"
+    },
+    {
         "added_on": "2021-02-15",
         "repeated_added_on": [],
         "categories": [
