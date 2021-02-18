@@ -43,6 +43,20 @@
         "title": "ink - inkle's narrative scripting language"
     },
     {
+        "added_on": "2021-02-18",
+        "repeated_added_on": [],
+        "categories": [
+            "Linux",
+            "basics",
+            "binary",
+            "elf",
+            "internals"
+        ],
+        "type": "url",
+        "value": "https://www.youtube.com/watch?v=nC1U1LJQL8o",
+        "title": "In-depth: ELF - The Extensible & Linkable Format - YouTube"
+    },
+    {
         "added_on": "2021-02-16",
         "repeated_added_on": [],
         "categories": [
