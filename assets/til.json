@@ -1,5 +1,20 @@
 [
     {
+        "added_on": "2021-02-18",
+        "repeated_added_on": [],
+        "categories": [
+            "a10y",
+            "css",
+            "front-end",
+            "gui",
+            "web-design",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://responsibleweb.app/",
+        "title": "Responsible Web Applications"
+    },
+    {
         "added_on": "2021-02-16",
         "repeated_added_on": [],
         "categories": [
