@@ -20,7 +20,8 @@ not reliant on external services.
 ## 2021-02-18
 
 1. [GitHub - gokcehan/lf: Terminal file manager](https://github.com/gokcehan/lf)
-2. [Responsible Web Applications](https://responsibleweb.app/)
+2. [GitHub - jarun/nnn: n³ The unorthodox terminal file manager.](https://github.com/jarun/nnn)
+3. [Responsible Web Applications](https://responsibleweb.app/)
 
 ## 2021-02-16
 
