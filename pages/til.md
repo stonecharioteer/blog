@@ -21,8 +21,9 @@ not reliant on external services.
 
 1. [GitHub - gokcehan/lf: Terminal file manager](https://github.com/gokcehan/lf)
 2. [GitHub - jarun/nnn: n³ The unorthodox terminal file manager.](https://github.com/jarun/nnn)
-3. [Responsible Web Applications](https://responsibleweb.app/)
-4. [ink - inkle's narrative scripting language](https://www.inklestudios.com/ink/)
+3. [In-depth: ELF - The Extensible & Linkable Format - YouTube](https://www.youtube.com/watch?v=nC1U1LJQL8o)
+4. [Responsible Web Applications](https://responsibleweb.app/)
+5. [ink - inkle's narrative scripting language](https://www.inklestudios.com/ink/)
 
 ## 2021-02-16
 
