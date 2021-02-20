@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-20
+
+1. [Redis: under the hood](https://www.pauladamsmith.com/articles/redis-under-the-hood.html)
+
 ## 2021-02-18
 
 1. [GitHub - gokcehan/lf: Terminal file manager](https://github.com/gokcehan/lf)
