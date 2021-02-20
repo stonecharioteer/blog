@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-02-20",
+        "repeated_added_on": [],
+        "categories": [
+            "clang",
+            "learn",
+            "redis"
+        ],
+        "type": "url",
+        "value": "https://www.pauladamsmith.com/articles/redis-under-the-hood.html",
+        "title": "Redis: under the hood"
+    },
+    {
         "added_on": "2021-02-18",
         "repeated_added_on": [],
         "categories": [
