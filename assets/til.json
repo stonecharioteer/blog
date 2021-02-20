@@ -12,6 +12,14 @@
         "title": "Redis: under the hood"
     },
     {
+        "added_on": "2021-02-20",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://developpaper.com/detailed-analysis-on-the-source-code-of-redis-network-model/",
+        "title": "Detailed analysis on the source code of redis network model | Develop Paper"
+    },
+    {
         "added_on": "2021-02-18",
         "repeated_added_on": [],
         "categories": [
