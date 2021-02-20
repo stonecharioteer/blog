@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-02-20
 
-1. [Redis: under the hood](https://www.pauladamsmith.com/articles/redis-under-the-hood.html)
+1. [Detailed analysis on the source code of redis network model \| Develop Paper](https://developpaper.com/detailed-analysis-on-the-source-code-of-redis-network-model/)
+2. [Redis: under the hood](https://www.pauladamsmith.com/articles/redis-under-the-hood.html)
 
 ## 2021-02-18
 
