@@ -33,6 +33,17 @@
         "title": "Rendering a tree view in the terminal with Python and Rich"
     },
     {
+        "added_on": "2021-02-23",
+        "repeated_added_on": [],
+        "categories": [
+            "performance-tuning",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://suade.org/dev/12-requests-per-second-with-python/",
+        "title": "12 requests per second in Python"
+    },
+    {
         "added_on": "2021-02-20",
         "repeated_added_on": [],
         "categories": [
