@@ -23,6 +23,7 @@ not reliant on external services.
 2. [Oktane17: Designing Beautiful REST + JSON APIs - YouTube](https://youtu.be/MiOSzpfP1Ww)
 3. [REST APIs must be hypertext-driven » Untangled](https://roy.gbiv.com/untangled/2008/rest-APIs-must-be-hypertext-driven)
 4. [Rendering a tree view in the terminal with Python and Rich](https://www.willmcgugan.com/blog/tech/post/rich-tree/)
+5. [https://crates.io/crates/python-launcher](https://crates.io/crates/python-launcher)
 
 ## 2021-02-20
 
