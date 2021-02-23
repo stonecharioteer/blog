@@ -1,5 +1,18 @@
 [
     {
+        "added_on": "2021-02-23",
+        "repeated_added_on": [],
+        "categories": [
+            "design",
+            "rest-api",
+            "web-application",
+            "web-design"
+        ],
+        "type": "url",
+        "value": "https://roy.gbiv.com/untangled/2008/rest-APIs-must-be-hypertext-driven",
+        "title": "REST APIs must be hypertext-driven \u00bb Untangled"
+    },
+    {
         "added_on": "2021-02-20",
         "repeated_added_on": [],
         "categories": [
