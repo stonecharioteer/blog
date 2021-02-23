@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-02-23
 
-1. [REST APIs must be hypertext-driven » Untangled](https://roy.gbiv.com/untangled/2008/rest-APIs-must-be-hypertext-driven)
+1. [Oktane17: Designing Beautiful REST + JSON APIs - YouTube](https://youtu.be/MiOSzpfP1Ww)
+2. [REST APIs must be hypertext-driven » Untangled](https://roy.gbiv.com/untangled/2008/rest-APIs-must-be-hypertext-driven)
 
 ## 2021-02-20
 
