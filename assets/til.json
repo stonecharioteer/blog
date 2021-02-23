@@ -44,6 +44,18 @@
         "title": "12 requests per second in Python"
     },
     {
+        "added_on": "2021-02-23",
+        "repeated_added_on": [],
+        "categories": [
+            "python",
+            "rust",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://crates.io/crates/python-launcher",
+        "title": "https://crates.io/crates/python-launcher"
+    },
+    {
         "added_on": "2021-02-20",
         "repeated_added_on": [],
         "categories": [
