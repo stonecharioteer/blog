@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-23
+
+1. [REST APIs must be hypertext-driven » Untangled](https://roy.gbiv.com/untangled/2008/rest-APIs-must-be-hypertext-driven)
+
 ## 2021-02-20
 
 1. [Detailed analysis on the source code of redis network model \| Develop Paper](https://developpaper.com/detailed-analysis-on-the-source-code-of-redis-network-model/)
