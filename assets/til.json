@@ -1,5 +1,20 @@
 [
     {
+        "added_on": "2021-02-25",
+        "repeated_added_on": [],
+        "categories": [
+            "blogging",
+            "extensions",
+            "python",
+            "restructured-text",
+            "sphinx",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://ablog.readthedocs.io/index.html",
+        "title": "ABlog for Sphinx \u2014 ABlog"
+    },
+    {
         "added_on": "2021-02-23",
         "repeated_added_on": [],
         "categories": [
