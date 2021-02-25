@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-02-25
+
+1. [ABlog for Sphinx — ABlog](https://ablog.readthedocs.io/index.html)
+
 ## 2021-02-23
 
 1. [12 requests per second in Python](https://suade.org/dev/12-requests-per-second-with-python/)
