@@ -20,7 +20,8 @@ not reliant on external services.
 ## 2021-02-28
 
 1. [Cosmopolitan C Library](https://justine.lol/cosmopolitan/index.html)
-2. [Introduction - Roguelike Tutorial - In Rust](https://bfnightly.bracketproductions.com/rustbook/)
+2. [Distributed systems for fun and profit](http://book.mixu.net/distsys/)
+3. [Introduction - Roguelike Tutorial - In Rust](https://bfnightly.bracketproductions.com/rustbook/)
 
 ## 2021-02-25
 
