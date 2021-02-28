@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-02-28",
+        "repeated_added_on": [],
+        "categories": [
+            "arm",
+            "clang",
+            "cross-compiler",
+            "unix",
+            "windows"
+        ],
+        "type": "url",
+        "value": "https://justine.lol/cosmopolitan/index.html",
+        "title": "Cosmopolitan C Library"
+    },
+    {
         "added_on": "2021-02-25",
         "repeated_added_on": [],
         "categories": [
