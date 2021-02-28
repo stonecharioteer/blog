@@ -26,6 +26,18 @@
         "title": "Introduction - Roguelike Tutorial - In Rust"
     },
     {
+        "added_on": "2021-02-28",
+        "repeated_added_on": [],
+        "categories": [
+            "basics",
+            "distributed-systems",
+            "system-design"
+        ],
+        "type": "url",
+        "value": "http://book.mixu.net/distsys/",
+        "title": "Distributed systems for fun and profit"
+    },
+    {
         "added_on": "2021-02-25",
         "repeated_added_on": [],
         "categories": [
