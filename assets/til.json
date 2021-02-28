@@ -38,6 +38,18 @@
         "title": "Distributed systems for fun and profit"
     },
     {
+        "added_on": "2021-02-28",
+        "repeated_added_on": [],
+        "categories": [
+            "distributed-systems",
+            "networks",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://hpbn.co/",
+        "title": "High Performance Browser Networking (O'Reilly)"
+    },
+    {
         "added_on": "2021-02-25",
         "repeated_added_on": [],
         "categories": [
