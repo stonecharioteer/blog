@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-02
+
+1. [Distributed Systems Reading List](https://dancres.github.io/Pages/)
+
 ## 2021-02-28
 
 1. [Cosmopolitan C Library](https://justine.lol/cosmopolitan/index.html)
