@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-03-02",
+        "repeated_added_on": [],
+        "categories": [
+            "distributed-systems",
+            "system-design",
+            "technical-papers"
+        ],
+        "type": "url",
+        "value": "https://dancres.github.io/Pages/",
+        "title": "Distributed Systems Reading List"
+    },
+    {
         "added_on": "2021-02-28",
         "repeated_added_on": [],
         "categories": [
