@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-03-03
 
-1. [GitHub - slgobinath/SafeEyes: Protect your eyes from eye strain using this simple and beautiful, yet extensible break reminder](https://github.com/slgobinath/SafeEyes)
+1. [A fundamental introduction to x86 assembly programming](https://www.nayuki.io/page/a-fundamental-introduction-to-x86-assembly-programming)
+2. [GitHub - slgobinath/SafeEyes: Protect your eyes from eye strain using this simple and beautiful, yet extensible break reminder](https://github.com/slgobinath/SafeEyes)
 
 ## 2021-03-02
 
