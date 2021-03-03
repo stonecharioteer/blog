@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-03
+
+1. [GitHub - slgobinath/SafeEyes: Protect your eyes from eye strain using this simple and beautiful, yet extensible break reminder](https://github.com/slgobinath/SafeEyes)
+
 ## 2021-03-02
 
 1. [Distributed Systems Reading List](https://dancres.github.io/Pages/)
