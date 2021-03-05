@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-05
+
+1. [GitHub - dolthub/dolt: Dolt – It's Git for Data](https://github.com/dolthub/dolt)
+
 ## 2021-03-03
 
 1. [A fundamental introduction to x86 assembly programming](https://www.nayuki.io/page/a-fundamental-introduction-to-x86-assembly-programming)
