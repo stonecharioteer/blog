@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-03-05",
+        "repeated_added_on": [],
+        "categories": [
+            "databases",
+            "git",
+            "version-control"
+        ],
+        "type": "url",
+        "value": "https://github.com/dolthub/dolt",
+        "title": "GitHub - dolthub/dolt: Dolt \u2013 It's Git for Data"
+    },
+    {
         "added_on": "2021-03-03",
         "repeated_added_on": [],
         "categories": [],
