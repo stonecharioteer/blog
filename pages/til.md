@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-09
+
+1. [i Hate Regex - The Regex Cheat Sheet](https://ihateregex.io/)
+
 ## 2021-03-05
 
 1. [GitHub - dolthub/dolt: Dolt – It's Git for Data](https://github.com/dolthub/dolt)
