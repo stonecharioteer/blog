@@ -1,5 +1,16 @@
 [
     {
+        "added_on": "2021-03-09",
+        "repeated_added_on": [],
+        "categories": [
+            "regex",
+            "regular-expressions"
+        ],
+        "type": "url",
+        "value": "https://ihateregex.io/",
+        "title": "i Hate Regex - The Regex Cheat Sheet"
+    },
+    {
         "added_on": "2021-03-05",
         "repeated_added_on": [],
         "categories": [
