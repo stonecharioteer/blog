@@ -1,6 +1,35 @@
-Day Fourteen
-My very first introduction to the Mahabharata was one of two comics, from Amar Chitra Katha, bought at the railway station in Mumbai, over twenty years ago.
-It was either the story of Karna or the story of Abhimanyu, I cannot recall which one it was. I remember reading both when I was younger and being enthralled with the battles they fought. Both, naturally are tragedies, extremely famous.
-As I sat in a temple which is empty most of the time, I read of the fall of Bhishma and Abhimanyu today. Such tragic tales these are! Oh, Gangeya! Why couldn't you have been the sire of the Kuru lineage? Why did Shantanu have to crave the touch of Matsyagandhi? Oh, Devavrata? Why did the fisherman have to demand such a deadly price of you, and why did you have to take that terrible oath? Perhaps with you on the throne, Dharma would have been stalwart. Perhaps that way you could have avoided your bed of arrows?
-Oh Soubhadra! Why did Dharmaraja have to send you, a child, into the Chakravyuha? Why did Dhananjeya not teach you how to emerge out of it after breaking through it's defence? Why, Abhimanyu, why did Drona have to instruct Jayadrata and Karna on how to defeat you? Why did he have to point at your bowstrings?
-Today I went to read the Mahabharata by the Tungabhadra, and I did. As I read, I played with a smooth pebble that seemed like a miniature of the boulder that held up the temple where I sat.
+---
+title: Reading the Mahabharata by the Tungabhadra - Day 14
+layout: post
+categories: [indian-mythology, reading, bibek-debroy, books, hampi]
+image: /assets/images/posts/india/mahabharata-day-14.jpg
+description: "Day 14 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+---
+
+![Mahabharata Day 14](/assets/posts/india/mahabharata-day-14.jpg)
+
+My very first introduction to the Mahabharata was one of two comics, from Amar
+Chitra Katha, bought at the railway station in Mumbai, over twenty years ago.
+
+It was either the story of Karna or the story of Abhimanyu, I cannot recall
+which one it was. I remember reading both when I was younger and being
+enthralled with the battles they fought. Both, naturally are tragedies,
+extremely famous.
+
+As I sat in a temple which is empty most of the time, I read of the fall of
+Bhishma and Abhimanyu today. Such tragic tales these are! Oh, Gangeya! Why
+couldn't you have been the sire of the Kuru lineage? Why did Shantanu have to
+crave the touch of Matsyagandhi? Oh, Devavrata? Why did the fisherman have to
+demand such a deadly price of you, and why did you have to take that terrible
+oath? Perhaps with you on the throne, Dharma would have been stalwart. Perhaps
+that way you could have avoided your bed of arrows?
+
+Oh Soubhadra! Why did Dharmaraja have to send you, a child, into the
+Chakravyuha? Why did Dhananjeya not teach you how to emerge out of it after
+breaking through it's defence? Why, Abhimanyu, why did Drona have to instruct
+Jayadrata and Karna on how to defeat you? Why did he have to point at your
+bowstrings?
+
+Today I went to read the Mahabharata by the Tungabhadra, and I did. As I read,
+I played with a smooth pebble that seemed like a miniature of the boulder that
+held up the temple where I sat.
