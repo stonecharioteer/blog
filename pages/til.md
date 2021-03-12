@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-12
+
+1. [fuser(1) - Linux man page](https://linux.die.net/man/1/fuser)
+
 ## 2021-03-09
 
 1. [i Hate Regex - The Regex Cheat Sheet](https://ihateregex.io/)
