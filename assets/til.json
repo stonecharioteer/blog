@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-03-12",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "devtools",
+            "linux",
+            "tools",
+            "unix"
+        ],
+        "type": "url",
+        "value": "https://linux.die.net/man/1/fuser",
+        "title": "fuser(1) - Linux man page"
+    },
+    {
         "added_on": "2021-03-09",
         "repeated_added_on": [],
         "categories": [
