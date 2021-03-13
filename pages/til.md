@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-13
+
+1. [Multi-tenant data isolation with PostgreSQL Row Level Security \| AWS Database Blog](https://aws.amazon.com/blogs/database/multi-tenant-data-isolation-with-postgresql-row-level-security/)
+
 ## 2021-03-12
 
 1. [fuser(1) - Linux man page](https://linux.die.net/man/1/fuser)
