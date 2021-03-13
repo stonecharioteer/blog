@@ -41,6 +41,19 @@
         "title": "Camelot: PDF Table Extraction for Humans \u2014 Camelot 0.8.2 documentation"
     },
     {
+        "added_on": "2021-03-13",
+        "repeated_added_on": [],
+        "categories": [
+            "basics",
+            "git",
+            "implementation",
+            "learning"
+        ],
+        "type": "url",
+        "value": "https://wyag.thb.lt/",
+        "title": "Write yourself a Git!"
+    },
+    {
         "added_on": "2021-03-12",
         "repeated_added_on": [],
         "categories": [
