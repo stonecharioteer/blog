@@ -1,5 +1,20 @@
 [
     {
+        "added_on": "2021-03-13",
+        "repeated_added_on": [],
+        "categories": [
+            "SQL",
+            "dB",
+            "database",
+            "design",
+            "postgresql",
+            "scaling"
+        ],
+        "type": "url",
+        "value": "https://aws.amazon.com/blogs/database/multi-tenant-data-isolation-with-postgresql-row-level-security/",
+        "title": "Multi-tenant data isolation with PostgreSQL Row Level Security | AWS Database Blog"
+    },
+    {
         "added_on": "2021-03-12",
         "repeated_added_on": [],
         "categories": [
