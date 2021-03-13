@@ -22,6 +22,7 @@ not reliant on external services.
 1. [Camelot: PDF Table Extraction for Humans — Camelot 0.8.2 documentation](https://camelot-py.readthedocs.io/en/master/)
 2. [Multi-tenant data isolation with PostgreSQL Row Level Security \| AWS Database Blog](https://aws.amazon.com/blogs/database/multi-tenant-data-isolation-with-postgresql-row-level-security/)
 3. [Varsity by Zerodha – Markets, Trading, and Investing Simplified.](https://zerodha.com/varsity/)
+4. [Write yourself a Git!](https://wyag.thb.lt/)
 
 ## 2021-03-12
 
