@@ -1,5 +1,15 @@
 [
     {
+        "added_on": "2021-03-14",
+        "repeated_added_on": [],
+        "categories": [
+            "python"
+        ],
+        "type": "url",
+        "value": "https://stackoverflow.com/questions/2220699/whats-the-difference-between-eval-exec-and-compile/29456463?stw=2#29456463",
+        "title": "python - What's the difference between eval, exec, and compile? - Stack Overflow"
+    },
+    {
         "added_on": "2021-03-13",
         "repeated_added_on": [],
         "categories": [
