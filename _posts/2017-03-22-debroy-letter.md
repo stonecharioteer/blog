@@ -191,7 +191,7 @@ Is Ashwattama's anger not justified?
 
 As I read of Karna's death, the sun was setting. The orange star was just behind the main *gopuram* of the Virupaksha temple. I looked at it from three kilometres away, by an abandoned temple to Narasimha.
 
-Karna. Oh, Vaikartana! how can anyone not cheer for your? When faced with the task of killing Ghatotkacha, you used the very weapon you'd sabed to use on your nemesis Partha. Who could be *more* deserving of cheer?
+Karna. Oh, Vaikartana! how can anyone not cheer for your? When faced with the task of killing Ghatotkacha, you used the very weapon you'd saved to use on your nemesis Partha. Who could be *more* deserving of cheer?
 
 Even now I feel so much anguish at his death.
 
