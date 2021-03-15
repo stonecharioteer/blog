@@ -1,5 +1,69 @@
 [
     {
+        "added_on": "2021-03-14",
+        "repeated_added_on": [],
+        "categories": [
+            "python"
+        ],
+        "type": "url",
+        "value": "https://stackoverflow.com/questions/2220699/whats-the-difference-between-eval-exec-and-compile/29456463?stw=2#29456463",
+        "title": "python - What's the difference between eval, exec, and compile? - Stack Overflow"
+    },
+    {
+        "added_on": "2021-03-13",
+        "repeated_added_on": [],
+        "categories": [
+            "SQL",
+            "dB",
+            "database",
+            "design",
+            "postgresql",
+            "scaling"
+        ],
+        "type": "url",
+        "value": "https://aws.amazon.com/blogs/database/multi-tenant-data-isolation-with-postgresql-row-level-security/",
+        "title": "Multi-tenant data isolation with PostgreSQL Row Level Security | AWS Database Blog"
+    },
+    {
+        "added_on": "2021-03-13",
+        "repeated_added_on": [],
+        "categories": [
+            "financial-trading",
+            "investments",
+            "learning",
+            "resources"
+        ],
+        "type": "url",
+        "value": "https://zerodha.com/varsity/",
+        "title": "Varsity by Zerodha \u2013 Markets, Trading, and Investing Simplified."
+    },
+    {
+        "added_on": "2021-03-13",
+        "repeated_added_on": [],
+        "categories": [
+            "data-gathering",
+            "image-recognition",
+            "parser",
+            "pdf"
+        ],
+        "type": "url",
+        "value": "https://camelot-py.readthedocs.io/en/master/",
+        "title": "Camelot: PDF Table Extraction for Humans \u2014 Camelot 0.8.2 documentation"
+    },
+    {
+        "added_on": "2021-03-13",
+        "repeated_added_on": [],
+        "categories": [
+            "basics",
+            "git",
+            "implementation",
+            "learning"
+        ],
+        "type": "url",
+        "value": "https://wyag.thb.lt/",
+        "title": "Write yourself a Git!"
+    },
+    {
         "added_on": "2021-03-12",
         "repeated_added_on": [],
         "categories": [

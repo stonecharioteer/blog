@@ -17,6 +17,17 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-14
+
+1. [python - What's the difference between eval, exec, and compile? - Stack Overflow](https://stackoverflow.com/questions/2220699/whats-the-difference-between-eval-exec-and-compile/29456463?stw=2#29456463)
+
+## 2021-03-13
+
+1. [Camelot: PDF Table Extraction for Humans — Camelot 0.8.2 documentation](https://camelot-py.readthedocs.io/en/master/)
+2. [Multi-tenant data isolation with PostgreSQL Row Level Security \| AWS Database Blog](https://aws.amazon.com/blogs/database/multi-tenant-data-isolation-with-postgresql-row-level-security/)
+3. [Varsity by Zerodha – Markets, Trading, and Investing Simplified.](https://zerodha.com/varsity/)
+4. [Write yourself a Git!](https://wyag.thb.lt/)
+
 ## 2021-03-12
 
 1. [fuser(1) - Linux man page](https://linux.die.net/man/1/fuser)
