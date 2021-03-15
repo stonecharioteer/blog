@@ -39,7 +39,7 @@ Between 2010 and 2011, I was working at the Indian Institute of Science. On my w
 
 > If you want the full story, read this.
 
-He said, handing me a copy of an oddly bound book with curious symbols on the ocver. It said:
+He said, handing me a copy of an oddly bound book with curious symbols on the cover. It said:
 
 > The Mahabharata 1: *Translated* by Bibek Debroy
 
@@ -93,9 +93,9 @@ I sat in an abandoned temple to Shiva, long desecrated by Muslims, as I read of 
 
 If sons back then respected their fathers enough to give up their youth and sexual pleasure, why did Duryodhana not heed his father's words?
 
-Dharma? Did Dharma compell the Son of Yama to wager Panchali away?
+Dharma? Did Dharma compel the Son of Yama to wager Panchali away?
 
-Time and again Shakuni resorts to deceit and tells Yudhishtira:
+Time and again Shakuni resorts to deceit and tells Yudishtira:
 
 > "I have won!"
 
@@ -115,11 +115,11 @@ War.
 
 But there already *was* war, right?
 
-I enjoyed the Virata Parva the most. Narada's account of Nala and Damayanti was very new to me. I'd never heard of them before. Narada offering to bestow Dharmaraja with the knowledge of dice games - the knowledge Nala was known - seemed just. If only Yudhisthira knew dice before his match with Shakuni.
+I enjoyed the Virata Parva the most. Narada's account of Nala and Damayanti was very new to me. I'd never heard of them before. Narada offering to bestow Dharmaraja with the knowledge of dice games - the knowledge Nala was known - seemed just. If only Yudishtira knew dice before his match with Shakuni.
 
 > How subtle *is* Dharma?
 
-The day I finished the Virata Parva, it rained in Hampi. In *December!* The cyclone from the Bay of Bengal caught up with me. Or, like my aunts claim, King Virata's love for the rain knows no bounds. I should read htat portion once a month to save Bangalore from its water woes then.
+The day I finished the Virata Parva, it rained in Hampi. In *December!* The cyclone from the Bay of Bengal caught up with me. Or, like my aunts claim, King Virata's love for the rain knows no bounds. I should read that portion once a month to save Bangalore from its water woes then.
 
 I laughed at the end of that Parva. How effortlessly Arjuna dismisses the sons of Dhritarashtra. In a poetic way, this should have been the end.
 
@@ -183,12 +183,13 @@ The way that young boy was slain was far too cruel. I felt so angry at Jayadrath
 
 Why did Dharmaraja have to ask such a young boy to break in?
 
-> Dharma. All of the Mahabharata is about Dharma, or one's interpretation of it. Was Abhimanyu wronged? Or was Arjuna committing sin as he shot Bhurishrava in the arm to save Yuyudhana? As Jayadratha falls, Karna vows to use the Pashupati against Arjuna and Drona stuggles to prove his worth. Dharma!
+> Dharma. All of the Mahabharata is about Dharma, or one's interpretation of it. Was Abhimanyu wronged? Or was Arjuna committing sin as he shot Bhurishrava in the arm to save Yuyudhana? As Jayadratha falls, Karna vows to use the Pashupati against Arjuna and Drona struggles to prove his worth. Dharma!
+
 Again, where is Dharma in the killing of Drona by tricking him into believing his son has fallen?
 
 Is Ashwattama's anger not justified?
 
-As I read of Karna's death, the sun was setting. The orange star was just behidn the main *gopuram* of the Virupaksha temple. I looked at it from three kilometres away, by an abandoned temple to Narasimha.
+As I read of Karna's death, the sun was setting. The orange star was just behind the main *gopuram* of the Virupaksha temple. I looked at it from three kilometres away, by an abandoned temple to Narasimha.
 
 Karna. Oh, Vaikartana! how can anyone not cheer for your? When faced with the task of killing Ghatotkacha, you used the very weapon you'd sabed to use on your nemesis Partha. Who could be *more* deserving of cheer?
 
