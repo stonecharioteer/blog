@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-15
+
+1. [GitHub - GoogleChromeLabs/dark-mode-toggle: A custom element that allows you to easily put a Dark Mode 🌒 toggle or switch on your site:](https://github.com/GoogleChromeLabs/dark-mode-toggle)
+
 ## 2021-03-14
 
 1. [python - What's the difference between eval, exec, and compile? - Stack Overflow](https://stackoverflow.com/questions/2220699/whats-the-difference-between-eval-exec-and-compile/29456463?stw=2#29456463)
