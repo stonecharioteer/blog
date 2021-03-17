@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-03-17
 
 1. [GitHub - danluu/post-mortems: A collection of postmortems. Sorry for the delay in merging PRs!](https://github.com/danluu/post-mortems)
+2. [GitHub - nschloe/termplotlib: Plotting on the command line](https://github.com/nschloe/termplotlib)
 
 ## 2021-03-15
 
