@@ -7,6 +7,11 @@ description: "I had the pleasure of speaking to the students of the University o
 customexcerpt: "My first 'computer' was the Atari 600XL. My father bought it when he was in the Middle East, and he never knew that his sisters would learn to write BASIC on it in a village in India."
 ---
 
+{% capture value%}
+This talk was delivered to the students of the Master of Software Development program at the University of Utah on April 28th, 2021. I have a recording of this talk uploaded on Youtube, here.
+{% endcapture%}
+{% include note.html title="About this Talk" alert_type="note" content=value %}
+
 My first 'computer' was the Atari 600XL. My father bought it when he was in the
 Middle East, and he never knew that his sisters would learn to write BASIC on
 it in a village in India. It is quite possible that my aunts were the first
@@ -43,10 +48,10 @@ stuck with Mechanical Engineering for 4 years. I enjoyed the course, and I
 found that I loved working with my hands. I eventually went on to work at a
 motorcycle company, and worked in factories for 3 years. I spent the time
 learning MS Excel and quite a bit of statistics, to analyse shop floor
-efficiency. I had an excellent teacher, a wise and very inspiring General Manager
-who I interacted with only for a few times over a year. He told me that
-a well-run shop floor will *sound* good. And he taught me the importance
-of statistical process control.
+efficiency. I had an excellent teacher, a wise and very inspiring General
+Manager who I interacted with only for a few times over a year. He told me that
+a well-run shop floor will *sound* good. And he taught me the importance of
+statistical process control.
 
 In 2012, my father had a heart attack and we didn't have any insurance. I'm
 going to spare you the agony of hearing that story, and tell you that he made
@@ -58,33 +63,73 @@ I knew that I couldn't take the low pay and the longer hours any longer and I
 decided to move on from the factories and joined Amazon's biggest competitor in
 India - Flipkart - as a content writer for books. I finally had my dream job.
 
-It was a job where I would write about books, all day long. As someone who loved to
-read, this was brilliant. I did well in my role, but I realized that I wrote *fast*.
-I was faster than most other writers there, and I soon began taking on other tasks.
+It was a job where I would write about books, all day long. As someone who
+loved to read, this was brilliant. I did well in my role, but I realized that I
+wrote *fast*.  I was faster than most other writers there, and I soon began
+taking on other tasks.
 
-The team would fill in Google Spreadsheets with their daily writing records, and
-the team leads would make everyone take turns filling the sheets in. If there is one
-thing you need to know about Spreadsheets, it is that a lack of discipline does not
-give itself to the process.
+The team would fill in Google Spreadsheets with their daily writing records,
+and the team leads would make everyone take turns filling the sheets in. If
+there is one thing you need to know about Spreadsheets, it is that a lack of
+discipline does not give itself to the process.
 
-I began thinking how *I* would improve this process. I became known as an Excel Wizard,
-and I was trying my best to change my process - until I slowly hit the bottle neck.
+I began thinking how *I* would improve this process. I became known as an Excel
+Wizard, and I was trying my best to change my process - until I slowly hit the
+bottle neck.
 
 Processing power.
 
-There was only so much I could do to collate 25 sheets of 100 records each per day
-using Google Spreadsheets back then. I didn't know anything about programming the sheets,
-I was just using two simple formulae to work my magic.
+There was only so much I could do to collate 25 sheets of 100 records each per
+day using Google Spreadsheets back then. I didn't know anything about
+programming the sheets, I was just using two simple formulae to work my magic.
 
-I called up one of my old school friends and she told me that I needed to either use Ruby
-or Python for the job. I called another, since I didn't know the difference between the two,
-and he said I should use Python.
+I called up one of my old school friends and she told me that I needed to
+either use Ruby or Python for the job. I called another, since I didn't know
+the difference between the two, and he said I should use Python.
 
-I learnt Python over a weekend, and macguyvered a desktop application that would
-create reports for the team leads to use and to assign work to the writers.
+I learnt Python over a weekend, and macguyvered a desktop application that
+would create reports for the team leads to use and to assign work to the
+writers.
 
-I eventually wrote other software for the company, a tool to create infographics, and another to make reports
-for writers.
+I eventually wrote other software for the company, a tool to create
+infographics, and another to make reports for writers.
 
-I went on to another company where I learnt more about technology. I was always working in a silo, I did not network,
-and I learnt things in what now feels like an inefficient way.
+I realized that I could write software, and I wanted to try getting a job as a
+developer.  It seemed easy enough. I applied to some companies, and took the
+first offer I got.
+
+I became a Systems Engineer, a strange way of saying Software Developer, at a
+company called GKN.  I worked there for three years and built software for,
+oddly enough, Mechanical Engineers.  I worked for a German manager, a man who
+set my imagination free and helped me learn so much.  However, I was the only
+software engineer there and I wanted to go to a company where I could find my
+peers.
+
+My name is Vinay Keerthi and I am a Senior Software Engineer at Visa Inc. I
+build scalable, secure solutions for engineers across the floor, and I commit
+my free time to speaking at conferences and meetups.
+
+My journey in tech is not new. It is like so many others who have moved from
+careers in different fields, some even more alien to Software Development than
+mine.
+
+When Dr. Shankar asked me to deliver this talk, I was both excited and
+confused. What did I have to tell to students getting a Master's degree in
+Software Development? To me, my journey felt so haphazard and without a plan.
+I *fumbled* into a career in Software Development.
+
+I have tried mentoring others to follow my path. Some of them have taken to it
+like a dog to a bone, while others have rejected it and stuck to their own
+paths. I do not blame them. This path is not as easy as it might seem to one
+who has scaled it, partway at least.
+
+However, this is what I've learned from my path.
+
+I bought my first Raspberry Pi in 2014. I was fascinated by it, a device that I could install Linux in, and use as a full computer.
+At 256MB RAM, it was already more powerful than my first desktop! So I bought one. Over the years, I bought several Raspberry Pis. I own about 20 of them today.
+
+I don't use them for work. I think IT would have a fit if they knew I carried a Raspberry Pi with me *everywhere* I went.
+
+Why do I carry it everywhere?
+
+Well, it's because it's both a talking point, and it's something that I can hook up to a display and use with my keyboards.
