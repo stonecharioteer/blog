@@ -125,11 +125,15 @@ who has scaled it, partway at least.
 
 However, this is what I've learned from my path.
 
-I bought my first Raspberry Pi in 2014. I was fascinated by it, a device that I could install Linux in, and use as a full computer.
-At 256MB RAM, it was already more powerful than my first desktop! So I bought one. Over the years, I bought several Raspberry Pis. I own about 20 of them today.
+I bought my first Raspberry Pi in 2014. I was fascinated by it, a device that I
+could install Linux in, and use as a full computer.  At 256MB RAM, it was
+already more powerful than my first desktop! So I bought one. Over the years, I
+bought several Raspberry Pis. I own about 20 of them today.
 
-I don't use them for work. I think IT would have a fit if they knew I carried a Raspberry Pi with me *everywhere* I went.
+I don't use them for work. I think IT would have a fit if they knew I carried a
+Raspberry Pi with me *everywhere* I went.
 
 Why do I carry it everywhere?
 
-Well, it's because it's both a talking point, and it's something that I can hook up to a display and use with my keyboards.
+Well, it's because it's both a talking point, and it's something that I can
+hook up to a display and use with my keyboards.
