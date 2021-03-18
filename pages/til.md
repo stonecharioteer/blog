@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-03-18
 
 1. [GitHub - kubernetes-sigs/descheduler: Descheduler for Kubernetes](https://github.com/kubernetes-sigs/descheduler)
+2. [GitHub - wagoodman/dive: A tool for exploring each layer in a docker image](https://github.com/wagoodman/dive)
 
 ## 2021-03-17
 
