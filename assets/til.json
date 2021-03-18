@@ -12,6 +12,18 @@
         "title": "GitHub - kubernetes-sigs/descheduler: Descheduler for Kubernetes"
     },
     {
+        "added_on": "2021-03-18",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "docker",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/wagoodman/dive",
+        "title": "GitHub - wagoodman/dive: A tool for exploring each layer in a docker image"
+    },
+    {
         "added_on": "2021-03-17",
         "repeated_added_on": [],
         "categories": [
