@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-18
+
+1. [GitHub - kubernetes-sigs/descheduler: Descheduler for Kubernetes](https://github.com/kubernetes-sigs/descheduler)
+
 ## 2021-03-17
 
 1. [GitHub - danluu/post-mortems: A collection of postmortems. Sorry for the delay in merging PRs!](https://github.com/danluu/post-mortems)
