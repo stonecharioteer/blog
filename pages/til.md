@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-19
+
+1. [kubernetes - Why does scaling down a deployment seem to always remove the newest pods? - Stack Overflow](https://stackoverflow.com/questions/51467314/why-does-scaling-down-a-deployment-seem-to-always-remove-the-newest-pods)
+
 ## 2021-03-18
 
 1. [GitHub - P3GLEG/Whaler: Program to reverse Docker images into Dockerfiles](https://github.com/P3GLEG/Whaler)
