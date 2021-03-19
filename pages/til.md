@@ -20,7 +20,8 @@ not reliant on external services.
 ## 2021-03-19
 
 1. [ChartMuseum - Helm Chart Repository](https://chartmuseum.com/)
-2. [kubernetes - Why does scaling down a deployment seem to always remove the newest pods? - Stack Overflow](https://stackoverflow.com/questions/51467314/why-does-scaling-down-a-deployment-seem-to-always-remove-the-newest-pods)
+2. [The Rise, Fall and Revival of AMD \| TechSpot](https://www.techspot.com/article/2043-amd-rise-fall-revival-history/)
+3. [kubernetes - Why does scaling down a deployment seem to always remove the newest pods? - Stack Overflow](https://stackoverflow.com/questions/51467314/why-does-scaling-down-a-deployment-seem-to-always-remove-the-newest-pods)
 
 ## 2021-03-18
 
