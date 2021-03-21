@@ -1,5 +1,16 @@
 [
     {
+        "added_on": "2021-03-21",
+        "repeated_added_on": [],
+        "categories": [
+            "tts",
+            "voice-generation"
+        ],
+        "type": "url",
+        "value": "https://github.com/CorentinJ/Real-Time-Voice-Cloning",
+        "title": "GitHub - CorentinJ/Real-Time-Voice-Cloning: Clone a voice in 5 seconds to generate arbitrary speech in real-time"
+    },
+    {
         "added_on": "2021-03-19",
         "repeated_added_on": [],
         "categories": [
