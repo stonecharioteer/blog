@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-03-22
 
 1. [CSE138 (Distributed Systems) lectures, Spring 2020 - YouTube](https://youtube.com/playlist?list=PLNPUF5QyWU8O0Wd8QDh9KaM1ggsxspJ31)
+2. [Fallacies of distributed computing - Wikipedia](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
 
 ## 2021-03-21
 
