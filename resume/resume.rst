@@ -18,16 +18,19 @@ Resume - Vinay Keerthi K. T.
 -----
 
 -----------------
-Visa Inc.
+VISA Inc.
 -----------------
 
 **Sr. Software Engineer - Data Platform** | **Bangalore** | Started: **MAY 2019**
 
 * [PATENT PENDING] Designed and spearheaded the security portal project, a REST layer that
-  facilitates automation of linux server security updates for PCI compliance
+  facilitates automation of Qualys security updates for PCI compliance
   while adhering to company-specific rules regarding service availability,
   using OSS and internal APIs to minimize maintenance time. Reduced contractual
   manpower by 75% and downtime by 70 hours a month for 2400 servers.
+* [PATENT PENDING] Developed a library to create concurrent and self-cleaning containerized
+  sessions that can be used to automate parallel workflows for testing and automation
+  of complex applications: example threat analysis of cross-border transactions using a single VISA card.
 * Mentored college graduates to build their first applications, integrating
   native pipelines, helped them craft detailed documentation and tune the performance
   of their apps.
@@ -35,7 +38,7 @@ Visa Inc.
   parallel ssh-based connections, like ``ansible``, but with company-specific requirements.
 * Designed and developed a tool that allows developers to quickly get started with
   projects, building pipelines and bootstrapping the initial code for them, while
-  settiing up quality checks, running automated tests and uploading artefacts to
+  setting up quality checks, running automated tests and uploading artifacts to
   the right registry in JFrog Artifactory.
 * Conducted Python workshops with a varied audience, training them on how to set up
   Python projects, how to package them and how to build python modules so that they ate
@@ -87,14 +90,17 @@ Personal Projects & OSS
 ------------------------
 
 * Spoke at PyCon India 2019 on `MicroPython: Building a Physical Inventory Search Engine. <https://stonecharioteer.com/2019/10/12/pycon.html>`_
-* (Developed @ Visa) Built a visualization dashboard atop of BitBucket and Github,
+* (Developed @ VISA) Built a visualization dashboard atop of BitBucket and Github,
   to visualize developer productivity and project momentum using statistical control charts.
-* Regularly conduct workshops on `Flask` and `Python` at the `Bangalore Python meetup group. <https://stonecharioteer.com/2020/05/23/flask-workshop.html>`_
+* Regularly conduct workshops on ``Flask`` and ``Python`` at the `Bangalore Python meetup group. <https://stonecharioteer.com/2020/05/23/flask-workshop.html>`_
 * `Built a discord bot to help me automate the updation of my blog. <https://stonecharioteer.com/sarathi.html>`_
 * Built my own Raspberry Pi Kubernetes Cluster out of 4 Raspberry Pi 4 and 4 Raspberry Pi Zero W boards.
 * Built my own Mechanical Keyboards using the QMK framework.
+* Conducted a `Screencast on Web Application Security and OWASP principles <https://stonecharioteer.com/2020/12/09/bangpypers-screencast-on-security-headers.html>`_.
 * Working on an open source alternative to ``readthedocs``, to build and host documentation.
 * Working on a command-line-interface to templates for ``Jekyll``, the static site generator.
+* Completed the Advanced Kubernetes Training from `learnk8s.io`
+* Presenting a guest lecture at the University of Utah's Master of Software Development Program on navigating a career in tech.
 
 ----------------------
 Other Experience

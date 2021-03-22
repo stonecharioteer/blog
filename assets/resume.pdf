@@ -102,7 +102,7 @@ endobj
 endobj
 16 0 obj
 <<
-/Annots [ 8 0 R 9 0 R 13 0 R 14 0 R 15 0 R ] /Contents 34 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 33 0 R /Resources <<
+/Annots [ 8 0 R 9 0 R 13 0 R 14 0 R 15 0 R ] /Contents 35 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 34 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
 /FormXob.11bf86f434c871a91d958c1f57fd7769 10 0 R /FormXob.3b25edbf771e9a68e276489c6fe48cd0 12 0 R /FormXob.bfc9889037b48b51202d445ad18c51e4 6 0 R
 >>
@@ -123,7 +123,7 @@ endobj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://stonecharioteer.com/2020/05/23/flask-workshop.html)
->> /Border [ 0 0 0 ] /Rect [ 340.8129 522.0236 487.5629 534.0236 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 351.7929 522.0236 498.5429 534.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 19 0 obj
@@ -136,27 +136,34 @@ endobj
 20 0 obj
 <<
 /A <<
+/S /URI /Type /Action /URI (https://stonecharioteer.com/2020/12/09/bangpypers-screencast-on-security-headers.html)
+>> /Border [ 0 0 0 ] /Rect [ 145.1729 438.0236 427.5029 450.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+21 0 obj
+<<
+/A <<
 /S /URI /Type /Action /URI (mailto:ktvkvinaykeerthi@gmail.com)
 >> /Border [ 0 0 0 ] /Rect [ 78.2978 68.69291 205.1378 80.69291 ] /Subtype /Link /Type /Annot
 >>
 endobj
-21 0 obj
+22 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://github.com/stonecharioteer)
 >> /Border [ 0 0 0 ] /Rect [ 347.7678 68.69291 416.6878 80.69291 ] /Subtype /Link /Type /Annot
 >>
 endobj
-22 0 obj
+23 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://stonecharioteer.com/)
 >> /Border [ 0 0 0 ] /Rect [ 435.3078 68.69291 525.8978 80.69291 ] /Subtype /Link /Type /Annot
 >>
 endobj
-23 0 obj
+24 0 obj
 <<
-/Annots [ 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R ] /Contents 35 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 33 0 R /Resources <<
+/Annots [ 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R ] /Contents 36 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 34 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
 /FormXob.11bf86f434c871a91d958c1f57fd7769 10 0 R /FormXob.3b25edbf771e9a68e276489c6fe48cd0 12 0 R /FormXob.bfc9889037b48b51202d445ad18c51e4 6 0 R
 >>
@@ -166,60 +173,60 @@ endobj
 >> /Type /Page
 >>
 endobj
-24 0 obj
-<<
-/Outlines 26 0 R /PageLabels 36 0 R /PageMode /UseNone /Pages 33 0 R /Type /Catalog
->>
-endobj
 25 0 obj
 <<
-/Author () /CreationDate (D:20210119164623-05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20210119164623-05'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (\(unspecified\)) /Title (Resume - Vinay Keerthi K. T.) /Trapped /False
+/Outlines 27 0 R /PageLabels 37 0 R /PageMode /UseNone /Pages 34 0 R /Type /Catalog
 >>
 endobj
 26 0 obj
 <<
-/Count 6 /First 27 0 R /Last 32 0 R /Type /Outlines
+/Author () /CreationDate (D:20210322224853-05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20210322224853-05'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Resume - Vinay Keerthi K. T.) /Trapped /False
 >>
 endobj
 27 0 obj
 <<
-/Dest [ 16 0 R /XYZ 62.69291 690.6772 0 ] /Next 28 0 R /Parent 26 0 R /Title (Visa Inc.)
+/Count 6 /First 28 0 R /Last 33 0 R /Type /Outlines
 >>
 endobj
 28 0 obj
 <<
-/Dest [ 16 0 R /XYZ 62.69291 423.6772 0 ] /Next 29 0 R /Parent 26 0 R /Prev 27 0 R /Title (GKN Aerospace India)
+/Dest [ 16 0 R /XYZ 62.69291 690.6772 0 ] /Next 29 0 R /Parent 27 0 R /Title (Visa Inc.)
 >>
 endobj
 29 0 obj
 <<
-/Dest [ 16 0 R /XYZ 62.69291 222.6772 0 ] /Next 30 0 R /Parent 26 0 R /Prev 28 0 R /Title (Flipkart Internet Pvt. Ltd.)
+/Dest [ 16 0 R /XYZ 62.69291 423.6772 0 ] /Next 30 0 R /Parent 27 0 R /Prev 28 0 R /Title (GKN Aerospace India)
 >>
 endobj
 30 0 obj
 <<
-/Dest [ 23 0 R /XYZ 62.69291 765.0236 0 ] /Next 31 0 R /Parent 26 0 R /Prev 29 0 R /Title (Tech Stack)
+/Dest [ 16 0 R /XYZ 62.69291 222.6772 0 ] /Next 31 0 R /Parent 27 0 R /Prev 29 0 R /Title (Flipkart Internet Pvt. Ltd.)
 >>
 endobj
 31 0 obj
 <<
-/Dest [ 23 0 R /XYZ 62.69291 618.0236 0 ] /Next 32 0 R /Parent 26 0 R /Prev 30 0 R /Title (Personal Projects & OSS)
+/Dest [ 24 0 R /XYZ 62.69291 765.0236 0 ] /Next 32 0 R /Parent 27 0 R /Prev 30 0 R /Title (Tech Stack)
 >>
 endobj
 32 0 obj
 <<
-/Dest [ 23 0 R /XYZ 62.69291 411.0236 0 ] /Parent 26 0 R /Prev 31 0 R /Title (Other Experience)
+/Dest [ 24 0 R /XYZ 62.69291 618.0236 0 ] /Next 33 0 R /Parent 27 0 R /Prev 31 0 R /Title (Personal Projects & OSS)
 >>
 endobj
 33 0 obj
 <<
-/Count 2 /Kids [ 16 0 R 23 0 R ] /Type /Pages
+/Dest [ 24 0 R /XYZ 62.69291 345.0236 0 ] /Parent 27 0 R /Prev 32 0 R /Title (Other Experience)
 >>
 endobj
 34 0 obj
 <<
-/Length 9237
+/Count 2 /Kids [ 16 0 R 24 0 R ] /Type /Pages
+>>
+endobj
+35 0 obj
+<<
+/Length 9236
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -345,7 +352,7 @@ q
 1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.03284 Tw (Designed and developed a tool that allows developers to quickly get started with projects, building) Tj T* 0 Tw 2.865366 Tw (pipelines and bootstrapping the initial code for them, while settiing up quality checks, running) Tj T* 0 Tw (automated tests and uploading artefacts to the right registry in JFrog Artifactory.) Tj T* ET
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.03284 Tw (Designed and developed a tool that allows developers to quickly get started with projects, building) Tj T* 0 Tw 3.036136 Tw (pipelines and bootstrapping the initial code for them, while setting up quality checks, running) Tj T* 0 Tw (automated tests and uploading artifacts to the right registry in JFrog Artifactory.) Tj T* ET
 Q
 Q
 q
@@ -651,15 +658,15 @@ Q
 q
 1 0 0 1 56.69291 56.69291 cm
 q
-BT 1 0 0 1 0 2 Tm 109.4849 0 Td 12 TL /F4 10 Tf 0 0 0 rg (Autogenerated from an rst file on) Tj /F1 10 Tf ( 2021-01-19 ) Tj /F4 10 Tf (using Python.) Tj T* -109.4849 0 Td ET
+BT 1 0 0 1 0 2 Tm 109.4849 0 Td 12 TL /F4 10 Tf 0 0 0 rg (Autogenerated from an rst file on) Tj /F1 10 Tf ( 2021-03-22 ) Tj /F4 10 Tf (using Python.) Tj T* -109.4849 0 Td ET
 Q
 Q
  
 endstream
 endobj
-35 0 obj
+36 0 obj
 <<
-/Length 8000
+/Length 9199
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -909,7 +916,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Regularly conduct workshops on ) Tj /F4 10 Tf (Flask) Tj /F1 10 Tf ( and ) Tj /F4 10 Tf (Python) Tj /F1 10 Tf ( at the ) Tj 0 0 .501961 rg (Bangalore Python meetup group.) Tj  T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Regularly conduct workshops on ) Tj /F3 10 Tf (Flask) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (Python) Tj /F1 10 Tf ( at the ) Tj 0 0 .501961 rg (Bangalore Python meetup group.) Tj  T* ET
 Q
 Q
 q
@@ -1011,7 +1018,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Working on an open source alternative to ) Tj /F3 10 Tf (readthedocs) Tj /F1 10 Tf (, to build and host documentation.) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Conducted a ) Tj 0 0 .501961 rg (Screencast on Web Application Security and OWASP principles) Tj 0 0 0 rg (.) Tj T* ET
 Q
 Q
 q
@@ -1036,6 +1043,31 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Working on an open source alternative to ) Tj /F3 10 Tf (readthedocs) Tj /F1 10 Tf (, to build and host documentation.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 417.0236 cm
+Q
+q
+1 0 0 1 62.69291 405.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
 BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Working on a command-line-interface to templates for ) Tj /F3 10 Tf (Jekyll) Tj /F1 10 Tf (, the static site generator.) Tj T* ET
 Q
 Q
@@ -1044,22 +1076,73 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 423.0236 cm
+1 0 0 1 62.69291 399.0236 cm
 Q
 q
-1 0 0 1 62.69291 390.0236 cm
+1 0 0 1 62.69291 387.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Completed the Advanced Kubernetes Training from ) Tj /F4 10 Tf (learnk8s.io) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 381.0236 cm
+Q
+q
+1 0 0 1 62.69291 357.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .779269 Tw (Presenting a guest lecture at the University of Utah's Master of Software Development Program on) Tj T* 0 Tw (navigating a career in tech.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 357.0236 cm
+Q
+q
+1 0 0 1 62.69291 324.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Other Experience) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 378.0236 cm
+1 0 0 1 62.69291 312.0236 cm
 Q
 q
-1 0 0 1 62.69291 378.0236 cm
+1 0 0 1 62.69291 312.0236 cm
 Q
 q
-1 0 0 1 62.69291 318.0236 cm
+1 0 0 1 62.69291 252.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -1140,10 +1223,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 318.0236 cm
+1 0 0 1 62.69291 252.0236 cm
 Q
 q
-1 0 0 1 62.69291 289.6772 cm
+1 0 0 1 62.69291 223.6772 cm
 n 0 14.17323 m 469.8898 14.17323 l S
 Q
 q
@@ -1173,29 +1256,29 @@ Q
 q
 1 0 0 1 56.69291 56.69291 cm
 q
-BT 1 0 0 1 0 2 Tm 109.4849 0 Td 12 TL /F4 10 Tf 0 0 0 rg (Autogenerated from an rst file on) Tj /F1 10 Tf ( 2021-01-19 ) Tj /F4 10 Tf (using Python.) Tj T* -109.4849 0 Td ET
+BT 1 0 0 1 0 2 Tm 109.4849 0 Td 12 TL /F4 10 Tf 0 0 0 rg (Autogenerated from an rst file on) Tj /F1 10 Tf ( 2021-03-22 ) Tj /F4 10 Tf (using Python.) Tj T* -109.4849 0 Td ET
 Q
 Q
  
 endstream
 endobj
-36 0 obj
+37 0 obj
 <<
-/Nums [ 0 37 0 R 1 38 0 R ]
+/Nums [ 0 38 0 R 1 39 0 R ]
 >>
 endobj
-37 0 obj
+38 0 obj
 <<
 /S /D /St 1
 >>
 endobj
-38 0 obj
+39 0 obj
 <<
 /S /D /St 2
 >>
 endobj
 xref
-0 39
+0 40
 0000000000 65535 f 
 0000000073 00000 n 
 0000000134 00000 n 
@@ -1217,34 +1300,35 @@ xref
 0000029803 00000 n 
 0000030014 00000 n 
 0000030207 00000 n 
-0000030392 00000 n 
-0000030579 00000 n 
-0000030760 00000 n 
-0000031181 00000 n 
-0000031287 00000 n 
-0000031573 00000 n 
-0000031647 00000 n 
-0000031758 00000 n 
+0000030445 00000 n 
+0000030630 00000 n 
+0000030817 00000 n 
+0000030998 00000 n 
+0000031426 00000 n 
+0000031532 00000 n 
+0000031818 00000 n 
 0000031892 00000 n 
-0000032034 00000 n 
-0000032159 00000 n 
-0000032297 00000 n 
-0000032415 00000 n 
-0000032483 00000 n 
-0000041772 00000 n 
-0000049824 00000 n 
-0000049874 00000 n 
-0000049908 00000 n 
+0000032003 00000 n 
+0000032137 00000 n 
+0000032279 00000 n 
+0000032404 00000 n 
+0000032542 00000 n 
+0000032660 00000 n 
+0000032728 00000 n 
+0000042016 00000 n 
+0000051267 00000 n 
+0000051317 00000 n 
+0000051351 00000 n 
 trailer
 <<
 /ID 
-[<9544d94810c0ccac9f3d74cc0ac3240e><9544d94810c0ccac9f3d74cc0ac3240e>]
+[<d18dbcb52877825dbcdddc5003f808d8><d18dbcb52877825dbcdddc5003f808d8>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
-/Info 25 0 R
-/Root 24 0 R
-/Size 39
+/Info 26 0 R
+/Root 25 0 R
+/Size 40
 >>
 startxref
-49942
+51385
 %%EOF
