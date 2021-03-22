@@ -1,5 +1,16 @@
 [
     {
+        "added_on": "2021-03-22",
+        "repeated_added_on": [],
+        "categories": [
+            "distributed-systems",
+            "system-design"
+        ],
+        "type": "url",
+        "value": "https://youtube.com/playlist?list=PLNPUF5QyWU8O0Wd8QDh9KaM1ggsxspJ31",
+        "title": "CSE138 (Distributed Systems) lectures, Spring 2020 - YouTube"
+    },
+    {
         "added_on": "2021-03-21",
         "repeated_added_on": [],
         "categories": [
