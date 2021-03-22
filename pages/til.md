@@ -17,9 +17,33 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-22
+
+1. [CSE138 (Distributed Systems) lectures, Spring 2020 - YouTube](https://youtube.com/playlist?list=PLNPUF5QyWU8O0Wd8QDh9KaM1ggsxspJ31)
+2. [Fallacies of distributed computing - Wikipedia](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
+3. [GitHub - i5ik/22120: 22120 - NodeJS product to self-host the Internet with an Offline Archive. Like binaries? https://github.com/dosyago/22120/releases Similar to ArchiveBox, SingleFile and WebMemex, but gooderer.](https://github.com/i5ik/22120)
+
+## 2021-03-21
+
+1. [GitHub - CorentinJ/Real-Time-Voice-Cloning: Clone a voice in 5 seconds to generate arbitrary speech in real-time](https://github.com/CorentinJ/Real-Time-Voice-Cloning)
+
+## 2021-03-19
+
+1. [ChartMuseum - Helm Chart Repository](https://chartmuseum.com/)
+2. [The Rise, Fall and Revival of AMD \| TechSpot](https://www.techspot.com/article/2043-amd-rise-fall-revival-history/)
+3. [kubernetes - Why does scaling down a deployment seem to always remove the newest pods? - Stack Overflow](https://stackoverflow.com/questions/51467314/why-does-scaling-down-a-deployment-seem-to-always-remove-the-newest-pods)
+
+## 2021-03-18
+
+1. [GitHub - P3GLEG/Whaler: Program to reverse Docker images into Dockerfiles](https://github.com/P3GLEG/Whaler)
+2. [GitHub - kubernetes-sigs/descheduler: Descheduler for Kubernetes](https://github.com/kubernetes-sigs/descheduler)
+3. [GitHub - wagoodman/dive: A tool for exploring each layer in a docker image](https://github.com/wagoodman/dive)
+
 ## 2021-03-17
 
 1. [GitHub - danluu/post-mortems: A collection of postmortems. Sorry for the delay in merging PRs!](https://github.com/danluu/post-mortems)
+2. [GitHub - nschloe/termplotlib: Plotting on the command line](https://github.com/nschloe/termplotlib)
+3. [https://twitter.com/happyautomata?s=08](https://twitter.com/happyautomata?s=08)
 
 ## 2021-03-15
 

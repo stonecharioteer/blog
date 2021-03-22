@@ -1,5 +1,122 @@
 [
     {
+        "added_on": "2021-03-22",
+        "repeated_added_on": [],
+        "categories": [
+            "distributed-systems",
+            "system-design"
+        ],
+        "type": "url",
+        "value": "https://youtube.com/playlist?list=PLNPUF5QyWU8O0Wd8QDh9KaM1ggsxspJ31",
+        "title": "CSE138 (Distributed Systems) lectures, Spring 2020 - YouTube"
+    },
+    {
+        "added_on": "2021-03-22",
+        "repeated_added_on": [],
+        "categories": [
+            "distributed-systems",
+            "system-design"
+        ],
+        "type": "url",
+        "value": "https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing",
+        "title": "Fallacies of distributed computing - Wikipedia"
+    },
+    {
+        "added_on": "2021-03-22",
+        "repeated_added_on": [],
+        "categories": [
+            "archival",
+            "browser",
+            "search",
+            "self-hosted",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/i5ik/22120",
+        "title": "GitHub - i5ik/22120: 22120 - NodeJS product to self-host the Internet with an Offline Archive. Like binaries? https://github.com/dosyago/22120/releases Similar to ArchiveBox, SingleFile and WebMemex, but gooderer."
+    },
+    {
+        "added_on": "2021-03-21",
+        "repeated_added_on": [],
+        "categories": [
+            "tts",
+            "voice-generation"
+        ],
+        "type": "url",
+        "value": "https://github.com/CorentinJ/Real-Time-Voice-Cloning",
+        "title": "GitHub - CorentinJ/Real-Time-Voice-Cloning: Clone a voice in 5 seconds to generate arbitrary speech in real-time"
+    },
+    {
+        "added_on": "2021-03-19",
+        "repeated_added_on": [],
+        "categories": [
+            "k8s",
+            "kubernetes",
+            "system-design"
+        ],
+        "type": "url",
+        "value": "https://stackoverflow.com/questions/51467314/why-does-scaling-down-a-deployment-seem-to-always-remove-the-newest-pods",
+        "title": "kubernetes - Why does scaling down a deployment seem to always remove the newest pods? - Stack Overflow"
+    },
+    {
+        "added_on": "2021-03-19",
+        "repeated_added_on": [],
+        "categories": [
+            "distributed-systems",
+            "helm",
+            "helm-charts",
+            "k8s",
+            "kubernetes",
+            "system-design"
+        ],
+        "type": "url",
+        "value": "https://chartmuseum.com/",
+        "title": "ChartMuseum - Helm Chart Repository"
+    },
+    {
+        "added_on": "2021-03-19",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://www.techspot.com/article/2043-amd-rise-fall-revival-history/",
+        "title": "The Rise, Fall and Revival of AMD | TechSpot"
+    },
+    {
+        "added_on": "2021-03-18",
+        "repeated_added_on": [],
+        "categories": [
+            "k8s",
+            "kubernetes",
+            "scheduler"
+        ],
+        "type": "url",
+        "value": "https://github.com/kubernetes-sigs/descheduler",
+        "title": "GitHub - kubernetes-sigs/descheduler: Descheduler for Kubernetes"
+    },
+    {
+        "added_on": "2021-03-18",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "docker",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/wagoodman/dive",
+        "title": "GitHub - wagoodman/dive: A tool for exploring each layer in a docker image"
+    },
+    {
+        "added_on": "2021-03-18",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "docker"
+        ],
+        "type": "url",
+        "value": "https://github.com/P3GLEG/Whaler",
+        "title": "GitHub - P3GLEG/Whaler: Program to reverse Docker images into Dockerfiles"
+    },
+    {
         "added_on": "2021-03-17",
         "repeated_added_on": [],
         "categories": [
@@ -11,6 +128,28 @@
         "type": "url",
         "value": "https://github.com/danluu/post-mortems",
         "title": "GitHub - danluu/post-mortems: A collection of postmortems. Sorry for the delay in merging PRs!"
+    },
+    {
+        "added_on": "2021-03-17",
+        "repeated_added_on": [],
+        "categories": [
+            "CLI",
+            "matplotlib",
+            "plotting",
+            "python",
+            "terminal"
+        ],
+        "type": "url",
+        "value": "https://github.com/nschloe/termplotlib",
+        "title": "GitHub - nschloe/termplotlib: Plotting on the command line"
+    },
+    {
+        "added_on": "2021-03-17",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://twitter.com/happyautomata?s=08",
+        "title": "https://twitter.com/happyautomata?s=08"
     },
     {
         "added_on": "2021-03-15",
@@ -3789,7 +3928,9 @@
     },
     {
         "added_on": "2020-12-08",
-        "repeated_added_on": [],
+        "repeated_added_on": [
+            "2021-03-22"
+        ],
         "categories": [
             "coding",
             "course",
@@ -8148,7 +8289,9 @@
     {
         "categories": [],
         "added_on": "2020-07-20",
-        "repeated_added_on": [],
+        "repeated_added_on": [
+            "2021-03-20"
+        ],
         "type": "url",
         "value": "https://github.com/binhnguyennus/awesome-scalability",
         "title": "Patterns of Scalability"
