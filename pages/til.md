@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2021-03-25
 
-1. [GitHub - bootandy/dust: A more intuitive version of du in rust](https://github.com/bootandy/dust)
-2. [GitHub - ducaale/xh: Friendly and fast tool for sending HTTP requests](https://github.com/ducaale/xh)
+1. [GitHub - ClementTsang/bottom: Yet another cross-platform graphical process/system monitor.](https://github.com/ClementTsang/bottom)
+2. [GitHub - bootandy/dust: A more intuitive version of du in rust](https://github.com/bootandy/dust)
+3. [GitHub - ducaale/xh: Friendly and fast tool for sending HTTP requests](https://github.com/ducaale/xh)
 
 ## 2021-03-23
 
