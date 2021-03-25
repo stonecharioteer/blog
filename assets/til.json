@@ -13,6 +13,20 @@
         "title": "GitHub - bootandy/dust: A more intuitive version of du in rust"
     },
     {
+        "added_on": "2021-03-25",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "curl",
+            "linux",
+            "rust",
+            "rust-alternative"
+        ],
+        "type": "url",
+        "value": "https://github.com/ducaale/xh",
+        "title": "GitHub - ducaale/xh: Friendly and fast tool for sending HTTP requests"
+    },
+    {
         "added_on": "2021-03-23",
         "repeated_added_on": [],
         "categories": [
