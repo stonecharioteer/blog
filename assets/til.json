@@ -1,5 +1,18 @@
 [
     {
+        "added_on": "2021-03-25",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "linux",
+            "rust",
+            "rust-alternatives"
+        ],
+        "type": "url",
+        "value": "https://github.com/bootandy/dust",
+        "title": "GitHub - bootandy/dust: A more intuitive version of du in rust"
+    },
+    {
         "added_on": "2021-03-23",
         "repeated_added_on": [],
         "categories": [
