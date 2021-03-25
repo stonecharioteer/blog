@@ -59,6 +59,17 @@
         "title": "GitHub - dalance/procs: A modern replacement for ps written in Rust"
     },
     {
+        "added_on": "2021-03-25",
+        "repeated_added_on": [],
+        "categories": [
+            "dns",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://nip.io/",
+        "title": "nip.io - wildcard DNS for any IP Address"
+    },
+    {
         "added_on": "2021-03-23",
         "repeated_added_on": [],
         "categories": [
