@@ -21,7 +21,8 @@ not reliant on external services.
 
 1. [GitHub - ClementTsang/bottom: Yet another cross-platform graphical process/system monitor.](https://github.com/ClementTsang/bottom)
 2. [GitHub - bootandy/dust: A more intuitive version of du in rust](https://github.com/bootandy/dust)
-3. [GitHub - ducaale/xh: Friendly and fast tool for sending HTTP requests](https://github.com/ducaale/xh)
+3. [GitHub - dalance/procs: A modern replacement for ps written in Rust](https://github.com/dalance/procs)
+4. [GitHub - ducaale/xh: Friendly and fast tool for sending HTTP requests](https://github.com/ducaale/xh)
 
 ## 2021-03-23
 
