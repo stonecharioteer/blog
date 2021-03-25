@@ -27,6 +27,22 @@
         "title": "GitHub - ducaale/xh: Friendly and fast tool for sending HTTP requests"
     },
     {
+        "added_on": "2021-03-25",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "linux",
+            "process-monitoring",
+            "rust",
+            "rust-alternative",
+            "tools",
+            "top"
+        ],
+        "type": "url",
+        "value": "https://github.com/ClementTsang/bottom",
+        "title": "GitHub - ClementTsang/bottom: Yet another cross-platform graphical process/system monitor."
+    },
+    {
         "added_on": "2021-03-23",
         "repeated_added_on": [],
         "categories": [
