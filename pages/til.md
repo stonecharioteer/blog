@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-25
+
+1. [GitHub - bootandy/dust: A more intuitive version of du in rust](https://github.com/bootandy/dust)
+
 ## 2021-03-23
 
 1. [GitHub - oz/tz: 🌐 A time zone helper](https://github.com/oz/tz)
