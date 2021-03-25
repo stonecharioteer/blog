@@ -1,6 +1,7 @@
 pages:
   - {name: 'About', url: 'about.html'}
   - {name: 'TIL', url: '/til.html'}
+  - {name: 'Notes', url: 'https://notes.stonecharioteer.com/'}
   - {name: 'Journals', url: '/journals.html'}
   - {name: 'Categories', url: '/categories'}
   - {name: 'Archive', url: 'archive.html'}
