@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-03-26",
+        "repeated_added_on": [],
+        "categories": [
+            "CICD",
+            "deployment",
+            "k8s"
+        ],
+        "type": "url",
+        "value": "https://argoproj.github.io/argo-cd/",
+        "title": "Argo CD - Declarative GitOps CD for Kubernetes"
+    },
+    {
         "added_on": "2021-03-25",
         "repeated_added_on": [],
         "categories": [
