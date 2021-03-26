@@ -12,6 +12,19 @@
         "title": "Argo CD - Declarative GitOps CD for Kubernetes"
     },
     {
+        "added_on": "2021-03-26",
+        "repeated_added_on": [],
+        "categories": [
+            "devtools",
+            "ide",
+            "k8s",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://k8slens.dev/",
+        "title": "Lens | The Kubernetes IDE"
+    },
+    {
         "added_on": "2021-03-25",
         "repeated_added_on": [],
         "categories": [
