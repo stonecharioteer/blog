@@ -17,6 +17,18 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-25
+
+1. [GitHub - ClementTsang/bottom: Yet another cross-platform graphical process/system monitor.](https://github.com/ClementTsang/bottom)
+2. [GitHub - bootandy/dust: A more intuitive version of du in rust](https://github.com/bootandy/dust)
+3. [GitHub - dalance/procs: A modern replacement for ps written in Rust](https://github.com/dalance/procs)
+4. [GitHub - ducaale/xh: Friendly and fast tool for sending HTTP requests](https://github.com/ducaale/xh)
+5. [nip.io - wildcard DNS for any IP Address](https://nip.io/)
+
+## 2021-03-23
+
+1. [GitHub - oz/tz: 🌐 A time zone helper](https://github.com/oz/tz)
+
 ## 2021-03-22
 
 1. [CSE138 (Distributed Systems) lectures, Spring 2020 - YouTube](https://youtube.com/playlist?list=PLNPUF5QyWU8O0Wd8QDh9KaM1ggsxspJ31)
