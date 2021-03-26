@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-03-26
 
 1. [Argo CD - Declarative GitOps CD for Kubernetes](https://argoproj.github.io/argo-cd/)
+2. [Lens \| The Kubernetes IDE](https://k8slens.dev/)
 
 ## 2021-03-25
 
