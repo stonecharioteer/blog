@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-26
+
+1. [Argo CD - Declarative GitOps CD for Kubernetes](https://argoproj.github.io/argo-cd/)
+
 ## 2021-03-25
 
 1. [GitHub - ClementTsang/bottom: Yet another cross-platform graphical process/system monitor.](https://github.com/ClementTsang/bottom)
