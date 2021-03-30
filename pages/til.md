@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-03-30
+
+1. [NoteCalc - A handy note taking app with built in calculator](https://bbodi.github.io/notecalc3/)
+
 ## 2021-03-26
 
 1. [Argo CD - Declarative GitOps CD for Kubernetes](https://argoproj.github.io/argo-cd/)
