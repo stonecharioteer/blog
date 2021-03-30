@@ -12,6 +12,17 @@
         "title": "NoteCalc - A handy note taking app with built in calculator"
     },
     {
+        "added_on": "2021-03-30",
+        "repeated_added_on": [],
+        "categories": [
+            "linux",
+            "networking"
+        ],
+        "type": "url",
+        "value": "https://blog.tonari.no/introducing-innernet",
+        "title": "Introducing 'innernet' | tonari blog"
+    },
+    {
         "added_on": "2021-03-26",
         "repeated_added_on": [],
         "categories": [
