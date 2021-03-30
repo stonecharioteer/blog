@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-03-30
 
-1. [NoteCalc - A handy note taking app with built in calculator](https://bbodi.github.io/notecalc3/)
+1. [Introducing 'innernet' \| tonari blog](https://blog.tonari.no/introducing-innernet)
+2. [NoteCalc - A handy note taking app with built in calculator](https://bbodi.github.io/notecalc3/)
 
 ## 2021-03-26
 
