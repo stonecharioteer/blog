@@ -12,6 +12,17 @@
         "title": "Medium"
     },
     {
+        "added_on": "2021-04-02",
+        "repeated_added_on": [],
+        "categories": [
+            "single-binary",
+            "web-server"
+        ],
+        "type": "url",
+        "value": "https://unix4lyfe.org/darkhttpd/",
+        "title": "darkhttpd"
+    },
+    {
         "added_on": "2021-03-30",
         "repeated_added_on": [],
         "categories": [
