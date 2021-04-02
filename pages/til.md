@@ -20,7 +20,8 @@ not reliant on external services.
 ## 2021-04-02
 
 1. [Medium](https://medium.com/k8slens/lens-4-2-released-f1c3268d3f95b)
-2. [darkhttpd](https://unix4lyfe.org/darkhttpd/)
+2. [Shell Field Guide](https://raimonster.com/scripting-field-guide/)
+3. [darkhttpd](https://unix4lyfe.org/darkhttpd/)
 
 ## 2021-03-30
 
