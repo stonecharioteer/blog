@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-04-02",
+        "repeated_added_on": [],
+        "categories": [
+            "gui",
+            "k8s",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://medium.com/k8slens/lens-4-2-released-f1c3268d3f95b",
+        "title": "Medium"
+    },
+    {
         "added_on": "2021-03-30",
         "repeated_added_on": [],
         "categories": [
