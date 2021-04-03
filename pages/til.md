@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-03
+
+1. [GitHub - climech/grit: A multitree-based personal task manager](https://github.com/climech/grit)
+
 ## 2021-04-02
 
 1. [Medium](https://medium.com/k8slens/lens-4-2-released-f1c3268d3f95b)
