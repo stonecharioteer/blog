@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-04-04",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "linux",
+            "shell",
+            "tmux",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/rothgar/awesome-tmux",
+        "title": "GitHub - rothgar/awesome-tmux: A list of awesome resources for tmux"
+    },
+    {
         "added_on": "2021-04-03",
         "repeated_added_on": [],
         "categories": [
