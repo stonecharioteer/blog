@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-04-04
 
 1. [GitHub - rothgar/awesome-tmux: A list of awesome resources for tmux](https://github.com/rothgar/awesome-tmux)
+2. [The Case of the Top Secret iPod - TidBITS](https://tidbits.com/2020/08/17/the-case-of-the-top-secret-ipod/)
 
 ## 2021-04-03
 
