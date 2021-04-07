@@ -1,5 +1,13 @@
 [
     {
+        "added_on": "2021-04-07",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://github.com/SeanPrashad/leetcode-patterns",
+        "title": "GitHub - SeanPrashad/leetcode-patterns: A curated list of leetcode questions grouped by their common patterns"
+    },
+    {
         "added_on": "2021-04-04",
         "repeated_added_on": [],
         "categories": [
