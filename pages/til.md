@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-07
+
+1. [GitHub - SeanPrashad/leetcode-patterns: A curated list of leetcode questions grouped by their common patterns](https://github.com/SeanPrashad/leetcode-patterns)
+
 ## 2021-04-04
 
 1. [GitHub - rothgar/awesome-tmux: A list of awesome resources for tmux](https://github.com/rothgar/awesome-tmux)
