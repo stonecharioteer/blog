@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-04-07
 
-1. [GitHub - SeanPrashad/leetcode-patterns: A curated list of leetcode questions grouped by their common patterns](https://github.com/SeanPrashad/leetcode-patterns)
+1. [Breaking PostgreSQL at Scale — Christophe Pettus - YouTube](https://youtu.be/XUkTUMZRBE8)
+2. [GitHub - SeanPrashad/leetcode-patterns: A curated list of leetcode questions grouped by their common patterns](https://github.com/SeanPrashad/leetcode-patterns)
 
 ## 2021-04-04
 
