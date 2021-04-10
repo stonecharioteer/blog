@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-04-10",
+        "repeated_added_on": [],
+        "categories": [
+            "browser",
+            "firefox",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox",
+        "title": "uBlock Origin works best on Firefox \u00b7 gorhill/uBlock Wiki \u00b7 GitHub"
+    },
+    {
         "added_on": "2021-04-07",
         "repeated_added_on": [],
         "categories": [],
