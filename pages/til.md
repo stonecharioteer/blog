@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-10
+
+1. [uBlock Origin works best on Firefox · gorhill/uBlock Wiki · GitHub](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox)
+
 ## 2021-04-07
 
 1. [Breaking PostgreSQL at Scale — Christophe Pettus - YouTube](https://youtu.be/XUkTUMZRBE8)
