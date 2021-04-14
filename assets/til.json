@@ -33,6 +33,21 @@
         "title": "Is Vim Really Not For You? A Beginner Guide"
     },
     {
+        "added_on": "2021-04-14",
+        "repeated_added_on": [],
+        "categories": [
+            "fundamentals",
+            "learning",
+            "linux",
+            "operating-system",
+            "raspberry-pi",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials",
+        "title": "GitHub - rust-embedded/rust-raspberrypi-OS-tutorials: Learn to write an embedded OS in Rust"
+    },
+    {
         "added_on": "2021-04-10",
         "repeated_added_on": [],
         "categories": [
