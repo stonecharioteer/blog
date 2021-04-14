@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-14
+
+1. [https://querybook.com/](https://querybook.com/)
+
 ## 2021-04-10
 
 1. [uBlock Origin works best on Firefox · gorhill/uBlock Wiki · GitHub](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox)
