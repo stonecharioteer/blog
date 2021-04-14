@@ -19,9 +19,10 @@ not reliant on external services.
 
 ## 2021-04-14
 
-1. [Is Vim Really Not For You? A Beginner Guide](https://thevaluable.dev/vim-beginner/)
-2. [Password Store - Apps on Google Play](https://play.google.com/store/apps/details?id=dev.msfjarvis.aps)
-3. [https://querybook.com/](https://querybook.com/)
+1. [GitHub - rust-embedded/rust-raspberrypi-OS-tutorials: Learn to write an embedded OS in Rust](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials)
+2. [Is Vim Really Not For You? A Beginner Guide](https://thevaluable.dev/vim-beginner/)
+3. [Password Store - Apps on Google Play](https://play.google.com/store/apps/details?id=dev.msfjarvis.aps)
+4. [https://querybook.com/](https://querybook.com/)
 
 ## 2021-04-10
 
