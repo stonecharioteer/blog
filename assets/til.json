@@ -11,6 +11,17 @@
         "title": "https://querybook.com/"
     },
     {
+        "added_on": "2021-04-14",
+        "repeated_added_on": [],
+        "categories": [
+            "android",
+            "password-manager"
+        ],
+        "type": "url",
+        "value": "https://play.google.com/store/apps/details?id=dev.msfjarvis.aps",
+        "title": "Password Store - Apps on Google Play"
+    },
+    {
         "added_on": "2021-04-10",
         "repeated_added_on": [],
         "categories": [
