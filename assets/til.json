@@ -1,5 +1,16 @@
 [
     {
+        "added_on": "2021-04-14",
+        "repeated_added_on": [],
+        "categories": [
+            "data-science",
+            "notebooks"
+        ],
+        "type": "url",
+        "value": "https://querybook.com/",
+        "title": "https://querybook.com/"
+    },
+    {
         "added_on": "2021-04-10",
         "repeated_added_on": [],
         "categories": [
