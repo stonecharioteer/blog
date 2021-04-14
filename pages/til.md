@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-04-14
 
-1. [https://querybook.com/](https://querybook.com/)
+1. [Password Store - Apps on Google Play](https://play.google.com/store/apps/details?id=dev.msfjarvis.aps)
+2. [https://querybook.com/](https://querybook.com/)
 
 ## 2021-04-10
 
