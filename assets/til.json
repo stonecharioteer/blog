@@ -38,6 +38,14 @@
         "title": "GitHub - piku/piku: The tiniest PaaS you've ever seen. Piku allows you to do git push deployments to your own servers."
     },
     {
+        "added_on": "2021-04-15",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://deno.land/std@0.93.0",
+        "title": "https://deno.land/std@0.93.0"
+    },
+    {
         "added_on": "2021-04-14",
         "repeated_added_on": [],
         "categories": [
