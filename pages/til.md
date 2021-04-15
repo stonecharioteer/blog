@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-04-15
 
-1. [Why Rust strings seem hard \| Brandon's Website](https://www.brandons.me/blog/why-rust-strings-seem-hard)
+1. [Deep dive in CORS: History, how it works, and best practices \| Ilija Eftimov ⚡️](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/)
+2. [Why Rust strings seem hard \| Brandon's Website](https://www.brandons.me/blog/why-rust-strings-seem-hard)
 
 ## 2021-04-14
 
