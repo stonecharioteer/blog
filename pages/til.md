@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-15
+
+1. [Why Rust strings seem hard \| Brandon's Website](https://www.brandons.me/blog/why-rust-strings-seem-hard)
+
 ## 2021-04-14
 
 1. [Build a Raspberry Pi Linux System the Hard Way](https://rickcarlino.com/2021/01/23/build-a-raspbery-pi-linux-system-the-hard-way-html.html)
