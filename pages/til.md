@@ -22,6 +22,7 @@ not reliant on external services.
 1. [Deep dive in CORS: History, how it works, and best practices \| Ilija Eftimov ⚡️](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/)
 2. [GitHub - piku/piku: The tiniest PaaS you've ever seen. Piku allows you to do git push deployments to your own servers.](https://github.com/piku/piku)
 3. [Why Rust strings seem hard \| Brandon's Website](https://www.brandons.me/blog/why-rust-strings-seem-hard)
+4. [https://deno.land/std@0.93.0](https://deno.land/std@0.93.0)
 
 ## 2021-04-14
 
