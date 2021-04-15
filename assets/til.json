@@ -12,6 +12,19 @@
         "title": "Why Rust strings seem hard | Brandon's Website"
     },
     {
+        "added_on": "2021-04-15",
+        "repeated_added_on": [],
+        "categories": [
+            "browsers",
+            "cross-origin-requests",
+            "web-design",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/",
+        "title": "Deep dive in CORS: History, how it works, and best practices | Ilija Eftimov \u26a1\ufe0f"
+    },
+    {
         "added_on": "2021-04-14",
         "repeated_added_on": [],
         "categories": [
