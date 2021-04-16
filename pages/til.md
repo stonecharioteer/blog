@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-16
+
+1. [Oso - Authorization Academy](https://www.osohq.com/developers/authorization-academy)
+
 ## 2021-04-15
 
 1. [Deep dive in CORS: History, how it works, and best practices \| Ilija Eftimov ⚡️](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/)
