@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-04-16
 
-1. [Oso - Authorization Academy](https://www.osohq.com/developers/authorization-academy)
+1. [Data Visualization Guide \| Anton Zhiyanov](https://antonz.org/dataviz-guide/)
+2. [Oso - Authorization Academy](https://www.osohq.com/developers/authorization-academy)
 
 ## 2021-04-15
 
