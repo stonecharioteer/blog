@@ -15,6 +15,21 @@
         "title": "Oso - Authorization Academy"
     },
     {
+        "added_on": "2021-04-16",
+        "repeated_added_on": [],
+        "categories": [
+            "analytics",
+            "data",
+            "data-visualization",
+            "infographics",
+            "plotting",
+            "storytelling"
+        ],
+        "type": "url",
+        "value": "https://antonz.org/dataviz-guide/",
+        "title": "Data Visualization Guide | Anton Zhiyanov"
+    },
+    {
         "added_on": "2021-04-15",
         "repeated_added_on": [],
         "categories": [
