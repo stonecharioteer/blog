@@ -1,5 +1,20 @@
 [
     {
+        "added_on": "2021-04-16",
+        "repeated_added_on": [],
+        "categories": [
+            "Authorization",
+            "auth",
+            "learning",
+            "rbac",
+            "system-design",
+            "web-design"
+        ],
+        "type": "url",
+        "value": "https://www.osohq.com/developers/authorization-academy",
+        "title": "Oso - Authorization Academy"
+    },
+    {
         "added_on": "2021-04-15",
         "repeated_added_on": [],
         "categories": [
