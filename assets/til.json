@@ -12,6 +12,19 @@
         "title": "Introduction - PyO3 user guide"
     },
     {
+        "added_on": "2021-04-18",
+        "repeated_added_on": [],
+        "categories": [
+            "linux",
+            "operating-systems",
+            "privacy",
+            "security"
+        ],
+        "type": "url",
+        "value": "https://www.qubes-os.org/intro/",
+        "title": "Introduction | Qubes OS"
+    },
+    {
         "added_on": "2021-04-17",
         "repeated_added_on": [],
         "categories": [
