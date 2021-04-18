@@ -21,8 +21,9 @@ not reliant on external services.
 
 1. [GitHub - Schniz/fnm: 🚀 Fast and simple Node.js version manager, built in Rust](https://github.com/Schniz/fnm)
 2. [GitHub - ajeetdsouza/zoxide: A smarter cd command](https://github.com/ajeetdsouza/zoxide)
-3. [Introduction - PyO3 user guide](https://pyo3.rs/v0.13.2/)
-4. [Introduction \| Qubes OS](https://www.qubes-os.org/intro/)
+3. [How to Write a Technical Book — SerHack Blog](https://serhack.me/articles/how-to-write-technical-book/)
+4. [Introduction - PyO3 user guide](https://pyo3.rs/v0.13.2/)
+5. [Introduction \| Qubes OS](https://www.qubes-os.org/intro/)
 
 ## 2021-04-17
 
