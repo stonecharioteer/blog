@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-18
+
+1. [Introduction - PyO3 user guide](https://pyo3.rs/v0.13.2/)
+
 ## 2021-04-17
 
 1. [Slurm Workload Manager - Quick Start User Guide](https://slurm.schedmd.com/quickstart.html)
