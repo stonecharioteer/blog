@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-04-19",
+        "repeated_added_on": [],
+        "categories": [
+            "Milton",
+            "books",
+            "censorship",
+            "classics",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://milton.host.dartmouth.edu/reading_room/areopagitica/text.html",
+        "title": "Areopagitica: Text"
+    },
+    {
         "added_on": "2021-04-18",
         "repeated_added_on": [],
         "categories": [
