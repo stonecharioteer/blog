@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-20
+
+1. [Volumio - The Audiophile Music Player](https://volumio.org/)
+
 ## 2021-04-19
 
 1. [Areopagitica: Text](https://milton.host.dartmouth.edu/reading_room/areopagitica/text.html)
