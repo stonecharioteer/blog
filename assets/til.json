@@ -1,5 +1,13 @@
 [
     {
+        "added_on": "2021-04-21",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://blog.discord.com/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc-ce01c3187429",
+        "title": "How Discord Handles Two and Half Million Concurrent Voice Users using WebRTC | by Jozsef Vass | Discord Blog"
+    },
+    {
         "added_on": "2021-04-20",
         "repeated_added_on": [],
         "categories": [
