@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-21
+
+1. [How Discord Handles Two and Half Million Concurrent Voice Users using WebRTC \| by Jozsef Vass \| Discord Blog](https://blog.discord.com/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc-ce01c3187429)
+
 ## 2021-04-20
 
 1. [Volumio - The Audiophile Music Player](https://volumio.org/)
