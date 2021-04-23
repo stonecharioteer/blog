@@ -1,5 +1,21 @@
 [
     {
+        "added_on": "2021-04-23",
+        "repeated_added_on": [],
+        "categories": [
+            "linux",
+            "rust",
+            "screen",
+            "terminal",
+            "terminal-multiplexer",
+            "tmux",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://zellij.dev",
+        "title": "Zellij"
+    },
+    {
         "added_on": "2021-04-21",
         "repeated_added_on": [],
         "categories": [],
