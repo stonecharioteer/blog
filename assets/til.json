@@ -1,5 +1,20 @@
 [
     {
+        "added_on": "2021-04-24",
+        "repeated_added_on": [],
+        "categories": [
+            "cluster",
+            "grafana",
+            "k8s",
+            "monitoring",
+            "prometheus",
+            "raspberry-pi"
+        ],
+        "type": "url",
+        "value": "https://github.com/mattogodoy/omni",
+        "title": "GitHub - mattogodoy/omni: A very lightweight monitoring system for Raspberry Pi clusters running Kubernetes."
+    },
+    {
         "added_on": "2021-04-23",
         "repeated_added_on": [],
         "categories": [
