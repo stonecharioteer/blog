@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-04-24
 
-1. [GitHub - mattogodoy/omni: A very lightweight monitoring system for Raspberry Pi clusters running Kubernetes.](https://github.com/mattogodoy/omni)
+1. [GitHub - MichaelMure/git-bug: Distributed, offline-first bug tracker embedded in git, with bridges](https://github.com/MichaelMure/git-bug)
+2. [GitHub - mattogodoy/omni: A very lightweight monitoring system for Raspberry Pi clusters running Kubernetes.](https://github.com/mattogodoy/omni)
 
 ## 2021-04-23
 
