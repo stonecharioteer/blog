@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-24
+
+1. [GitHub - mattogodoy/omni: A very lightweight monitoring system for Raspberry Pi clusters running Kubernetes.](https://github.com/mattogodoy/omni)
+
 ## 2021-04-23
 
 1. [Zellij](https://zellij.dev)
