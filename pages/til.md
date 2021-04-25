@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-04-25
 
-1. [Title Page - The Rust Performance Book](https://nnethercote.github.io/perf-book/title-page.html)
+1. [Introduction - The Little Book of Rust Macros](https://veykril.github.io/tlborm/introduction.html)
+2. [Title Page - The Rust Performance Book](https://nnethercote.github.io/perf-book/title-page.html)
 
 ## 2021-04-24
 
