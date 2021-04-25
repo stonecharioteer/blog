@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-04-25",
+        "repeated_added_on": [],
+        "categories": [
+            "book",
+            "learning",
+            "performance",
+            "resources",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://nnethercote.github.io/perf-book/title-page.html",
+        "title": "Title Page - The Rust Performance Book"
+    },
+    {
         "added_on": "2021-04-24",
         "repeated_added_on": [],
         "categories": [
