@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-25
+
+1. [Title Page - The Rust Performance Book](https://nnethercote.github.io/perf-book/title-page.html)
+
 ## 2021-04-24
 
 1. [GitHub - MichaelMure/git-bug: Distributed, offline-first bug tracker embedded in git, with bridges](https://github.com/MichaelMure/git-bug)
