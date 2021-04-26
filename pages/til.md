@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-26
+
+1. [labella · PyPI](https://pypi.org/project/labella/)
+
 ## 2021-04-25
 
 1. [Introduction - The Little Book of Rust Macros](https://veykril.github.io/tlborm/introduction.html)
