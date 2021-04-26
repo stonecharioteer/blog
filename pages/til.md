@@ -20,7 +20,8 @@ not reliant on external services.
 ## 2021-04-26
 
 1. [NNgroup - YouTube](https://youtube.com/c/NNgroup)
-2. [labella · PyPI](https://pypi.org/project/labella/)
+2. [SponsorBlock - Skip over YouTube Sponsors - Sponsorship Skipper](https://sponsor.ajay.app/)
+3. [labella · PyPI](https://pypi.org/project/labella/)
 
 ## 2021-04-25
 
