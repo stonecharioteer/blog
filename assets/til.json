@@ -28,6 +28,19 @@
         "title": "NNgroup - YouTube"
     },
     {
+        "added_on": "2021-04-26",
+        "repeated_added_on": [],
+        "categories": [
+            "browser",
+            "chrome",
+            "extension",
+            "firefox"
+        ],
+        "type": "url",
+        "value": "https://sponsor.ajay.app/",
+        "title": "SponsorBlock - Skip over YouTube Sponsors - Sponsorship Skipper"
+    },
+    {
         "added_on": "2021-04-25",
         "repeated_added_on": [],
         "categories": [
