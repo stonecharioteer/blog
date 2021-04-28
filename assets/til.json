@@ -1,5 +1,465 @@
 [
     {
+        "added_on": "2021-04-26",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "diagram",
+            "latex",
+            "timeline"
+        ],
+        "type": "url",
+        "value": "https://pypi.org/project/labella/",
+        "title": "labella \u00b7 PyPI"
+    },
+    {
+        "added_on": "2021-04-26",
+        "repeated_added_on": [],
+        "categories": [
+            "a11y",
+            "design",
+            "ui",
+            "ux",
+            "web-design",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://youtube.com/c/NNgroup",
+        "title": "NNgroup - YouTube"
+    },
+    {
+        "added_on": "2021-04-26",
+        "repeated_added_on": [],
+        "categories": [
+            "browser",
+            "chrome",
+            "extension",
+            "firefox"
+        ],
+        "type": "url",
+        "value": "https://sponsor.ajay.app/",
+        "title": "SponsorBlock - Skip over YouTube Sponsors - Sponsorship Skipper"
+    },
+    {
+        "added_on": "2021-04-25",
+        "repeated_added_on": [],
+        "categories": [
+            "book",
+            "learning",
+            "performance",
+            "resources",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://nnethercote.github.io/perf-book/title-page.html",
+        "title": "Title Page - The Rust Performance Book"
+    },
+    {
+        "added_on": "2021-04-25",
+        "repeated_added_on": [],
+        "categories": [
+            "books",
+            "learning",
+            "macros",
+            "resources",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://veykril.github.io/tlborm/introduction.html",
+        "title": "Introduction - The Little Book of Rust Macros"
+    },
+    {
+        "added_on": "2021-04-24",
+        "repeated_added_on": [],
+        "categories": [
+            "cluster",
+            "grafana",
+            "k8s",
+            "monitoring",
+            "prometheus",
+            "raspberry-pi"
+        ],
+        "type": "url",
+        "value": "https://github.com/mattogodoy/omni",
+        "title": "GitHub - mattogodoy/omni: A very lightweight monitoring system for Raspberry Pi clusters running Kubernetes."
+    },
+    {
+        "added_on": "2021-04-24",
+        "repeated_added_on": [],
+        "categories": [
+            "bug-tracker",
+            "cli",
+            "git",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/MichaelMure/git-bug",
+        "title": "GitHub - MichaelMure/git-bug: Distributed, offline-first bug tracker embedded in git, with bridges"
+    },
+    {
+        "added_on": "2021-04-23",
+        "repeated_added_on": [],
+        "categories": [
+            "linux",
+            "rust",
+            "screen",
+            "terminal",
+            "terminal-multiplexer",
+            "tmux",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://zellij.dev",
+        "title": "Zellij"
+    },
+    {
+        "added_on": "2021-04-21",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://blog.discord.com/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc-ce01c3187429",
+        "title": "How Discord Handles Two and Half Million Concurrent Voice Users using WebRTC | by Jozsef Vass | Discord Blog"
+    },
+    {
+        "added_on": "2021-04-20",
+        "repeated_added_on": [],
+        "categories": [
+            "FOSS",
+            "audiophile",
+            "music",
+            "software"
+        ],
+        "type": "url",
+        "value": "https://volumio.org/",
+        "title": "Volumio - The Audiophile Music Player"
+    },
+    {
+        "added_on": "2021-04-19",
+        "repeated_added_on": [],
+        "categories": [
+            "Milton",
+            "books",
+            "censorship",
+            "classics",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://milton.host.dartmouth.edu/reading_room/areopagitica/text.html",
+        "title": "Areopagitica: Text"
+    },
+    {
+        "added_on": "2021-04-18",
+        "repeated_added_on": [],
+        "categories": [
+            "extensions",
+            "python",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://pyo3.rs/v0.13.2/",
+        "title": "Introduction - PyO3 user guide"
+    },
+    {
+        "added_on": "2021-04-18",
+        "repeated_added_on": [],
+        "categories": [
+            "linux",
+            "operating-systems",
+            "privacy",
+            "security"
+        ],
+        "type": "url",
+        "value": "https://www.qubes-os.org/intro/",
+        "title": "Introduction | Qubes OS"
+    },
+    {
+        "added_on": "2021-04-18",
+        "repeated_added_on": [],
+        "categories": [
+            "cd",
+            "linux",
+            "rust",
+            "z"
+        ],
+        "type": "url",
+        "value": "https://github.com/ajeetdsouza/zoxide",
+        "title": "GitHub - ajeetdsouza/zoxide: A smarter cd command"
+    },
+    {
+        "added_on": "2021-04-18",
+        "repeated_added_on": [],
+        "categories": [
+            "nodes",
+            "npm"
+        ],
+        "type": "url",
+        "value": "https://github.com/Schniz/fnm",
+        "title": "GitHub - Schniz/fnm: \ud83d\ude80 Fast and simple Node.js version manager, built in Rust"
+    },
+    {
+        "added_on": "2021-04-18",
+        "repeated_added_on": [],
+        "categories": [
+            "technical-writing",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://serhack.me/articles/how-to-write-technical-book/",
+        "title": "How to Write a Technical Book \u2014 SerHack Blog"
+    },
+    {
+        "added_on": "2021-04-17",
+        "repeated_added_on": [],
+        "categories": [
+            "clusters",
+            "computation",
+            "job-management",
+            "queuing"
+        ],
+        "type": "url",
+        "value": "https://slurm.schedmd.com/quickstart.html",
+        "title": "Slurm Workload Manager - Quick Start User Guide"
+    },
+    {
+        "added_on": "2021-04-16",
+        "repeated_added_on": [],
+        "categories": [
+            "Authorization",
+            "auth",
+            "learning",
+            "rbac",
+            "system-design",
+            "web-design"
+        ],
+        "type": "url",
+        "value": "https://www.osohq.com/developers/authorization-academy",
+        "title": "Oso - Authorization Academy"
+    },
+    {
+        "added_on": "2021-04-16",
+        "repeated_added_on": [],
+        "categories": [
+            "analytics",
+            "data",
+            "data-visualization",
+            "infographics",
+            "plotting",
+            "storytelling"
+        ],
+        "type": "url",
+        "value": "https://antonz.org/dataviz-guide/",
+        "title": "Data Visualization Guide | Anton Zhiyanov"
+    },
+    {
+        "added_on": "2021-04-15",
+        "repeated_added_on": [],
+        "categories": [
+            "rust",
+            "strings",
+            "unicode"
+        ],
+        "type": "url",
+        "value": "https://www.brandons.me/blog/why-rust-strings-seem-hard",
+        "title": "Why Rust strings seem hard | Brandon's Website"
+    },
+    {
+        "added_on": "2021-04-15",
+        "repeated_added_on": [],
+        "categories": [
+            "browsers",
+            "cross-origin-requests",
+            "web-design",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/",
+        "title": "Deep dive in CORS: History, how it works, and best practices | Ilija Eftimov \u26a1\ufe0f"
+    },
+    {
+        "added_on": "2021-04-15",
+        "repeated_added_on": [],
+        "categories": [
+            "PaaS",
+            "deployment",
+            "platform",
+            "raspberry-pi"
+        ],
+        "type": "url",
+        "value": "https://github.com/piku/piku",
+        "title": "GitHub - piku/piku: The tiniest PaaS you've ever seen. Piku allows you to do git push deployments to your own servers."
+    },
+    {
+        "added_on": "2021-04-15",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://deno.land/std@0.93.0",
+        "title": "https://deno.land/std@0.93.0"
+    },
+    {
+        "added_on": "2021-04-14",
+        "repeated_added_on": [],
+        "categories": [
+            "data-science",
+            "notebooks"
+        ],
+        "type": "url",
+        "value": "https://querybook.com/",
+        "title": "https://querybook.com/"
+    },
+    {
+        "added_on": "2021-04-14",
+        "repeated_added_on": [],
+        "categories": [
+            "android",
+            "password-manager"
+        ],
+        "type": "url",
+        "value": "https://play.google.com/store/apps/details?id=dev.msfjarvis.aps",
+        "title": "Password Store - Apps on Google Play"
+    },
+    {
+        "added_on": "2021-04-14",
+        "repeated_added_on": [],
+        "categories": [
+            "developer-tools",
+            "vim"
+        ],
+        "type": "url",
+        "value": "https://thevaluable.dev/vim-beginner/",
+        "title": "Is Vim Really Not For You? A Beginner Guide"
+    },
+    {
+        "added_on": "2021-04-14",
+        "repeated_added_on": [],
+        "categories": [
+            "fundamentals",
+            "learning",
+            "linux",
+            "operating-system",
+            "raspberry-pi",
+            "rust"
+        ],
+        "type": "url",
+        "value": "https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials",
+        "title": "GitHub - rust-embedded/rust-raspberrypi-OS-tutorials: Learn to write an embedded OS in Rust"
+    },
+    {
+        "added_on": "2021-04-14",
+        "repeated_added_on": [],
+        "categories": [
+            "embedded-programming",
+            "learning",
+            "linux",
+            "raspberry-pi"
+        ],
+        "type": "url",
+        "value": "https://rickcarlino.com/2021/01/23/build-a-raspbery-pi-linux-system-the-hard-way-html.html",
+        "title": "Build a Raspberry Pi Linux System the Hard Way"
+    },
+    {
+        "added_on": "2021-04-10",
+        "repeated_added_on": [],
+        "categories": [
+            "browser",
+            "firefox",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox",
+        "title": "uBlock Origin works best on Firefox \u00b7 gorhill/uBlock Wiki \u00b7 GitHub"
+    },
+    {
+        "added_on": "2021-04-07",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://github.com/SeanPrashad/leetcode-patterns",
+        "title": "GitHub - SeanPrashad/leetcode-patterns: A curated list of leetcode questions grouped by their common patterns"
+    },
+    {
+        "added_on": "2021-04-07",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://youtu.be/XUkTUMZRBE8",
+        "title": "Breaking PostgreSQL at Scale \u2014 Christophe Pettus - YouTube"
+    },
+    {
+        "added_on": "2021-04-04",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "linux",
+            "shell",
+            "tmux",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/rothgar/awesome-tmux",
+        "title": "GitHub - rothgar/awesome-tmux: A list of awesome resources for tmux"
+    },
+    {
+        "added_on": "2021-04-04",
+        "repeated_added_on": [],
+        "categories": [
+            "apple",
+            "developers",
+            "devstory",
+            "story"
+        ],
+        "type": "url",
+        "value": "https://tidbits.com/2020/08/17/the-case-of-the-top-secret-ipod/",
+        "title": "The Case of the Top Secret iPod - TidBITS"
+    },
+    {
+        "added_on": "2021-04-03",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "task-management",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/climech/grit",
+        "title": "GitHub - climech/grit: A multitree-based personal task manager"
+    },
+    {
+        "added_on": "2021-04-02",
+        "repeated_added_on": [],
+        "categories": [
+            "gui",
+            "k8s",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://medium.com/k8slens/lens-4-2-released-f1c3268d3f95b",
+        "title": "Medium"
+    },
+    {
+        "added_on": "2021-04-02",
+        "repeated_added_on": [],
+        "categories": [
+            "single-binary",
+            "web-server"
+        ],
+        "type": "url",
+        "value": "https://unix4lyfe.org/darkhttpd/",
+        "title": "darkhttpd"
+    },
+    {
+        "added_on": "2021-04-02",
+        "repeated_added_on": [],
+        "categories": [
+            "bash",
+            "linux",
+            "shell"
+        ],
+        "type": "url",
+        "value": "https://raimonster.com/scripting-field-guide/",
+        "title": "Shell Field Guide"
+    },
+    {
         "added_on": "2021-03-30",
         "repeated_added_on": [],
         "categories": [
@@ -10,6 +470,17 @@
         "type": "url",
         "value": "https://bbodi.github.io/notecalc3/",
         "title": "NoteCalc - A handy note taking app with built in calculator"
+    },
+    {
+        "added_on": "2021-03-30",
+        "repeated_added_on": [],
+        "categories": [
+            "linux",
+            "networking"
+        ],
+        "type": "url",
+        "value": "https://blog.tonari.no/introducing-innernet",
+        "title": "Introducing 'innernet' | tonari blog"
     },
     {
         "added_on": "2021-03-26",

@@ -17,9 +17,98 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-04-26
+
+1. [NNgroup - YouTube](https://youtube.com/c/NNgroup)
+2. [SponsorBlock - Skip over YouTube Sponsors - Sponsorship Skipper](https://sponsor.ajay.app/)
+3. [labella · PyPI](https://pypi.org/project/labella/)
+
+## 2021-04-25
+
+1. [Introduction - The Little Book of Rust Macros](https://veykril.github.io/tlborm/introduction.html)
+2. [Title Page - The Rust Performance Book](https://nnethercote.github.io/perf-book/title-page.html)
+
+## 2021-04-24
+
+1. [GitHub - MichaelMure/git-bug: Distributed, offline-first bug tracker embedded in git, with bridges](https://github.com/MichaelMure/git-bug)
+2. [GitHub - mattogodoy/omni: A very lightweight monitoring system for Raspberry Pi clusters running Kubernetes.](https://github.com/mattogodoy/omni)
+
+## 2021-04-23
+
+1. [Zellij](https://zellij.dev)
+
+## 2021-04-21
+
+1. [How Discord Handles Two and Half Million Concurrent Voice Users using WebRTC \| by Jozsef Vass \| Discord Blog](https://blog.discord.com/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc-ce01c3187429)
+
+## 2021-04-20
+
+1. [Volumio - The Audiophile Music Player](https://volumio.org/)
+
+## 2021-04-19
+
+1. [Areopagitica: Text](https://milton.host.dartmouth.edu/reading_room/areopagitica/text.html)
+
+## 2021-04-18
+
+1. [GitHub - Schniz/fnm: 🚀 Fast and simple Node.js version manager, built in Rust](https://github.com/Schniz/fnm)
+2. [GitHub - ajeetdsouza/zoxide: A smarter cd command](https://github.com/ajeetdsouza/zoxide)
+3. [How to Write a Technical Book — SerHack Blog](https://serhack.me/articles/how-to-write-technical-book/)
+4. [Introduction - PyO3 user guide](https://pyo3.rs/v0.13.2/)
+5. [Introduction \| Qubes OS](https://www.qubes-os.org/intro/)
+
+## 2021-04-17
+
+1. [Slurm Workload Manager - Quick Start User Guide](https://slurm.schedmd.com/quickstart.html)
+
+## 2021-04-16
+
+1. [Data Visualization Guide \| Anton Zhiyanov](https://antonz.org/dataviz-guide/)
+2. [Oso - Authorization Academy](https://www.osohq.com/developers/authorization-academy)
+
+## 2021-04-15
+
+1. [Deep dive in CORS: History, how it works, and best practices \| Ilija Eftimov ⚡️](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/)
+2. [GitHub - piku/piku: The tiniest PaaS you've ever seen. Piku allows you to do git push deployments to your own servers.](https://github.com/piku/piku)
+3. [Why Rust strings seem hard \| Brandon's Website](https://www.brandons.me/blog/why-rust-strings-seem-hard)
+4. [https://deno.land/std@0.93.0](https://deno.land/std@0.93.0)
+
+## 2021-04-14
+
+1. [Build a Raspberry Pi Linux System the Hard Way](https://rickcarlino.com/2021/01/23/build-a-raspbery-pi-linux-system-the-hard-way-html.html)
+2. [GitHub - rust-embedded/rust-raspberrypi-OS-tutorials: Learn to write an embedded OS in Rust](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials)
+3. [Is Vim Really Not For You? A Beginner Guide](https://thevaluable.dev/vim-beginner/)
+4. [Password Store - Apps on Google Play](https://play.google.com/store/apps/details?id=dev.msfjarvis.aps)
+5. [https://querybook.com/](https://querybook.com/)
+
+## 2021-04-10
+
+1. [uBlock Origin works best on Firefox · gorhill/uBlock Wiki · GitHub](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox)
+
+## 2021-04-07
+
+1. [Breaking PostgreSQL at Scale — Christophe Pettus - YouTube](https://youtu.be/XUkTUMZRBE8)
+2. [GitHub - SeanPrashad/leetcode-patterns: A curated list of leetcode questions grouped by their common patterns](https://github.com/SeanPrashad/leetcode-patterns)
+
+## 2021-04-04
+
+1. [GitHub - rothgar/awesome-tmux: A list of awesome resources for tmux](https://github.com/rothgar/awesome-tmux)
+2. [The Case of the Top Secret iPod - TidBITS](https://tidbits.com/2020/08/17/the-case-of-the-top-secret-ipod/)
+
+## 2021-04-03
+
+1. [GitHub - climech/grit: A multitree-based personal task manager](https://github.com/climech/grit)
+
+## 2021-04-02
+
+1. [Medium](https://medium.com/k8slens/lens-4-2-released-f1c3268d3f95b)
+2. [Shell Field Guide](https://raimonster.com/scripting-field-guide/)
+3. [darkhttpd](https://unix4lyfe.org/darkhttpd/)
+
 ## 2021-03-30
 
-1. [NoteCalc - A handy note taking app with built in calculator](https://bbodi.github.io/notecalc3/)
+1. [Introducing 'innernet' \| tonari blog](https://blog.tonari.no/introducing-innernet)
+2. [NoteCalc - A handy note taking app with built in calculator](https://bbodi.github.io/notecalc3/)
 
 ## 2021-03-26
 

@@ -41,9 +41,8 @@ I assembled these keyboards and flashed the QMK framework on them, programming t
 
 ![Stonecharioteer Logo](/assets/images/logo/stonecharioteer-large.png)
 
-I was born in Hampi, Karnataka, India, and I often write about it as well. I was lucky enough to find the domain, and the ID in all my frequent portals.
-
-The logo was designed by my sister Sthuthi Kiran.
+I was born in Hampi, Karnataka, India, and I often write about it as well.
+I was lucky enough to find the domain, and the ID in all my frequent portals.
 
 [Contact me via twitter.](https://twitter.com/stonecharioteer)
 
