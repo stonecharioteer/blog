@@ -2,7 +2,8 @@
 title: The Importance of Documentation
 layout: post
 categories: [documentation, software-development]
-description: "Many software projects, internal to an organization, or open-source, have poor documentation."
+description: "This post introduces a series of posts on How to Write Documentation."
+custom_excerpt: "This post introduces a series of posts on How to Write Documentation."
 ---
 
 Nod if you've come across this before. You find an *amazing* software library
