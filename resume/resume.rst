@@ -9,7 +9,7 @@ Resume - Vinay Keerthi K. T.
     **BE Mechanical Engineering (2010)**
 
     |mail| `ktvkvinaykeerthi@gmail.com <mailto:ktvkvinaykeerthi@gmail.com>`_ |
-    **Phone:** +91 9538689544 |
+    **Phone:** +91 9019323715|
     |github| `stonecharioteer <https://github.com/stonecharioteer>`_ |
     |web| `stonecharioteer.com <https://stonecharioteer.com/>`_ |
 
@@ -61,6 +61,7 @@ GKN Aerospace India
   engineering pipelines involving proprietary software and protocols.
 * Designed the system interaction and data pipelines for a large-scale
   application that submits HPC jobs to servers placed across the world.
+* Conducted annual training in Python and Data Analytics for Mechanical Engineers.
 
 -------------------------------
 Flipkart Internet Pvt. Ltd.
@@ -99,7 +100,7 @@ Personal Projects & OSS
 * Conducted a `Screencast on Web Application Security and OWASP principles <https://stonecharioteer.com/2020/12/09/bangpypers-screencast-on-security-headers.html>`_.
 * Working on an open source alternative to ``readthedocs``, to build and host documentation.
 * Working on a command-line-interface to templates for ``Jekyll``, the static site generator.
-* Completed the Advanced Kubernetes Training from `learnk8s.io`
+* Completed the Advanced Kubernetes Training from ``learnk8s.io``
 * Presenting a guest lecture at the University of Utah's Master of Software Development Program on navigating a career in tech.
 
 ----------------------
