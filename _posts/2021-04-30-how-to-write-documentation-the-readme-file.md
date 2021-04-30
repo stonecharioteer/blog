@@ -149,7 +149,7 @@ While the entire README actually is their documentation, they do it in a way tha
 
 ## Series
 
-**1. How to Write Documentation: The README.md file**
+1. **How to Write Documentation: The README.md file**
 2. How to Write Documentation: The Getting Started Section
 3. How to Write Documentation: The Installation Guide
 4. How to Write Documentation: The API Reference
