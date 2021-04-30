@@ -3,7 +3,6 @@ title: How to Write Documentation - The README.md File
 layout: post
 categories: [documentation, writing, meta, side-projects]
 description: "A guide on how to write a README.md file for a Git repository."
-customexcerpt: ""
 ---
 
 In the introduction post to this series, I discussed how to write a `README.md`
