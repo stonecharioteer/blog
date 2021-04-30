@@ -149,17 +149,18 @@ While the entire README actually is their documentation, they do it in a way tha
 
 ## Series
 
-1. **How to Write Documentation: The README.md file**
-2. How to Write Documentation: The Getting Started Section
-3. How to Write Documentation: The Installation Guide
-4. How to Write Documentation: The API Reference
-5. How to Write Documentation: Conference Talk Submission
-6. How to Write Documentation: The Tech Blog
-7. How to Write Documentation: Patent Submission Document
-8. How to Write Documentation Extras: The Uninstallation Guide
-9. How to Write Documentation Extras: The Configuration Guide
-10. How to Write Documentation Extras: Testing Instructions
-11. How to Write Documentation Extras: The Changelog
-12. How to Write Documentation Extras: The Roadmap
-13. How to Write Documentation Extras: Issue Tracking
-14. How to Write Documentation Extras: Presentations
+1. [The Importance of Documentation - Series Introduction]({% post_url 2021-04-28-the-importance-of-documentation %})
+2. **How to Write Documentation: The README.md file**
+3. How to Write Documentation: The Getting Started Section
+4. How to Write Documentation: The Installation Guide
+5. How to Write Documentation: The API Reference
+6. How to Write Documentation: Conference Talk Submission
+7. How to Write Documentation: The Tech Blog
+8. How to Write Documentation: Patent Submission Document
+9. How to Write Documentation Extras: The Uninstallation Guide
+10. How to Write Documentation Extras: The Configuration Guide
+11. How to Write Documentation Extras: Testing Instructions
+12. How to Write Documentation Extras: The Changelog
+13. How to Write Documentation Extras: The Roadmap
+14. How to Write Documentation Extras: Issue Tracking
+15. How to Write Documentation Extras: Presentations
