@@ -3,7 +3,7 @@ title: The Importance of Documentation
 layout: post
 categories: [documentation, software-development]
 description: "This post introduces a series of posts on How to Write Documentation."
-custom_excerpt: "This post introduces a series of posts on How to Write Documentation."
+customexcerpt: "This post introduces a series of posts on How to Write Documentation."
 ---
 
 Nod if you've come across this before. You find an *amazing* software library
@@ -130,7 +130,7 @@ tackle how to write the other parts of documentation in dedicated posts.
 
 ## Series
 
-1. How to Write Documentation: The README.md file
+1. [How to Write Documentation: The README.md file]({% post_url 2020-04-30-how-to-write-documentation-the-readme-file %})
 2. How to Write Documentation: The Getting Started Section
 3. How to Write Documentation: The Installation Guide
 4. How to Write Documentation: The API Reference
