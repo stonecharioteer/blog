@@ -130,7 +130,7 @@ tackle how to write the other parts of documentation in dedicated posts.
 
 ## Series
 
-1. [How to Write Documentation: The README.md file]({% post_url 2020-04-30-how-to-write-documentation-the-readme-file %})
+1. [How to Write Documentation: The README.md file]({% post_url 2021-04-30-how-to-write-documentation-the-readme-file %})
 2. How to Write Documentation: The Getting Started Section
 3. How to Write Documentation: The Installation Guide
 4. How to Write Documentation: The API Reference
