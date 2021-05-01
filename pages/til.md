@@ -20,7 +20,8 @@ not reliant on external services.
 ## 2021-05-01
 
 1. [Benford's law - Wikipedia](https://en.wikipedia.org/wiki/Benford%27s_law)
-2. [Event Sourcing pattern - Cloud Design Patterns \| Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
+2. [CSRF, CORS, and HTTP Security headers Demystified](https://blog.vnaik.com/posts/web-attacks.html)
+3. [Event Sourcing pattern - Cloud Design Patterns \| Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
 
 ## 2021-04-26
 
