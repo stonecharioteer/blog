@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-05-01",
+        "repeated_added_on": [],
+        "categories": [
+            "interesting",
+            "mathematics",
+            "number-theory"
+        ],
+        "type": "url",
+        "value": "https://en.wikipedia.org/wiki/Benford%27s_law",
+        "title": "Benford's law - Wikipedia"
+    },
+    {
         "added_on": "2021-04-26",
         "repeated_added_on": [],
         "categories": [
