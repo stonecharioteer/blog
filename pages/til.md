@@ -22,6 +22,7 @@ not reliant on external services.
 1. [Benford's law - Wikipedia](https://en.wikipedia.org/wiki/Benford%27s_law)
 2. [CSRF, CORS, and HTTP Security headers Demystified](https://blog.vnaik.com/posts/web-attacks.html)
 3. [Event Sourcing pattern - Cloud Design Patterns \| Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
+4. [Web Security](https://infosec.mozilla.org/guidelines/web_security)
 
 ## 2021-04-26
 
