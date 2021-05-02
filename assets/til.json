@@ -12,6 +12,20 @@
         "title": "GitHub - banga/git-split-diffs: GitHub style split diffs in your terminal"
     },
     {
+        "added_on": "2021-05-02",
+        "repeated_added_on": [],
+        "categories": [
+            "best-practices",
+            "best-practices",
+            "code-review",
+            "terminal",
+            "vim"
+        ],
+        "type": "url",
+        "value": "https://blog.jez.io/cli-code-review",
+        "title": "Code Review from the Command Line - Bits, Bytes, and Words"
+    },
+    {
         "added_on": "2021-05-01",
         "repeated_added_on": [],
         "categories": [
