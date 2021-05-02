@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-05-02
 
-1. [GitHub - banga/git-split-diffs: GitHub style split diffs in your terminal](https://github.com/banga/git-split-diffs)
+1. [Code Review from the Command Line - Bits, Bytes, and Words](https://blog.jez.io/cli-code-review)
+2. [GitHub - banga/git-split-diffs: GitHub style split diffs in your terminal](https://github.com/banga/git-split-diffs)
 
 ## 2021-05-01
 
