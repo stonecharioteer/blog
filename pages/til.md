@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-05-02
+
+1. [GitHub - banga/git-split-diffs: GitHub style split diffs in your terminal](https://github.com/banga/git-split-diffs)
+
 ## 2021-05-01
 
 1. [Benford's law - Wikipedia](https://en.wikipedia.org/wiki/Benford%27s_law)
