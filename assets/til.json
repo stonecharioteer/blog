@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-05-02",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "devtools",
+            "git"
+        ],
+        "type": "url",
+        "value": "https://github.com/banga/git-split-diffs",
+        "title": "GitHub - banga/git-split-diffs: GitHub style split diffs in your terminal"
+    },
+    {
         "added_on": "2021-05-01",
         "repeated_added_on": [],
         "categories": [
