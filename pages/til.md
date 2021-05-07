@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-05-07
 
-1. [Justniffer \| justniffer](http://onotelli.github.io/justniffer/)
+1. [GitHub - ventoy/Ventoy: A new bootable USB solution.](https://github.com/ventoy/Ventoy)
+2. [Justniffer \| justniffer](http://onotelli.github.io/justniffer/)
 
 ## 2021-05-02
 
