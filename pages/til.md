@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-05-07
+
+1. [Justniffer \| justniffer](http://onotelli.github.io/justniffer/)
+
 ## 2021-05-02
 
 1. [Code Review from the Command Line - Bits, Bytes, and Words](https://blog.jez.io/cli-code-review)
