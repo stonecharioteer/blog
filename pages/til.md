@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-05-08
 
-1. [JoeDog \| Just another WordPress site](https://www.joedog.org/)
+1. [403 Forbidden](https://www.serverwatch.com/guides/load-testing-and-benchmarking-with-siege/)
+2. [JoeDog \| Just another WordPress site](https://www.joedog.org/)
 
 ## 2021-05-07
 
