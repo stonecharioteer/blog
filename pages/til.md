@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-05-11
+
+1. [GitHub - cantino/mcfly: Fly through your shell history. Great Scott!](https://github.com/cantino/mcfly)
+
 ## 2021-05-08
 
 1. [403 Forbidden](https://www.serverwatch.com/guides/load-testing-and-benchmarking-with-siege/)
