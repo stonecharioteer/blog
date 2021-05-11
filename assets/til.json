@@ -1,5 +1,13 @@
 [
     {
+        "added_on": "2021-05-11",
+        "repeated_added_on": [],
+        "categories": [],
+        "type": "url",
+        "value": "https://github.com/cantino/mcfly",
+        "title": "GitHub - cantino/mcfly: Fly through your shell history. Great Scott!"
+    },
+    {
         "added_on": "2021-05-08",
         "repeated_added_on": [],
         "categories": [
