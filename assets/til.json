@@ -1,5 +1,20 @@
 [
     {
+        "added_on": "2021-05-14",
+        "repeated_added_on": [],
+        "categories": [
+            "cool",
+            "downloader",
+            "entertainment",
+            "manga",
+            "scraper",
+            "tool"
+        ],
+        "type": "url",
+        "value": "https://github.com/darylhjd/mangadesk",
+        "title": "GitHub - darylhjd/mangadesk: Terminal client for MangaDex \ud83d\udcd6"
+    },
+    {
         "added_on": "2021-05-11",
         "repeated_added_on": [],
         "categories": [],
