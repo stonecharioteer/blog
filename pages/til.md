@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-05-14
+
+1. [GitHub - darylhjd/mangadesk: Terminal client for MangaDex 📖](https://github.com/darylhjd/mangadesk)
+
 ## 2021-05-11
 
 1. [GitHub - cantino/mcfly: Fly through your shell history. Great Scott!](https://github.com/cantino/mcfly)
