@@ -37,6 +37,19 @@
         "title": "AutoInvent \u00b7 GitHub"
     },
     {
+        "added_on": "2021-05-21",
+        "repeated_added_on": [],
+        "categories": [
+            "debian",
+            "packaging",
+            "python",
+            "spotify"
+        ],
+        "type": "url",
+        "value": "https://github.com/spotify/dh-virtualenv",
+        "title": "GitHub - spotify/dh-virtualenv: Python virtualenvs in Debian packages"
+    },
+    {
         "added_on": "2021-05-14",
         "repeated_added_on": [],
         "categories": [
