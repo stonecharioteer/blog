@@ -26,6 +26,17 @@
         "title": "PyVideo.org \u00b7 FlaskCon 2020"
     },
     {
+        "added_on": "2021-05-21",
+        "repeated_added_on": [],
+        "categories": [
+            "graphql",
+            "visualization"
+        ],
+        "type": "url",
+        "value": "https://github.com/autoinvent/",
+        "title": "AutoInvent \u00b7 GitHub"
+    },
+    {
         "added_on": "2021-05-14",
         "repeated_added_on": [],
         "categories": [
