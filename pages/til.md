@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-05-21
+
+1. [GitHub - django/asgiref: ASGI specification and utilities](https://github.com/django/asgiref)
+
 ## 2021-05-14
 
 1. [GitHub - darylhjd/mangadesk: Terminal client for MangaDex 📖](https://github.com/darylhjd/mangadesk)
