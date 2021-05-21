@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-05-21
 
 1. [GitHub - django/asgiref: ASGI specification and utilities](https://github.com/django/asgiref)
+2. [PyVideo.org · FlaskCon 2020](https://pyvideo.org/events/flaskcon-2020.html)
 
 ## 2021-05-14
 
