@@ -1,5 +1,19 @@
 [
     {
+        "added_on": "2021-05-21",
+        "repeated_added_on": [],
+        "categories": [
+            "ASGI",
+            "async",
+            "python",
+            "web-development",
+            "web-server"
+        ],
+        "type": "url",
+        "value": "https://github.com/django/asgiref",
+        "title": "GitHub - django/asgiref: ASGI specification and utilities"
+    },
+    {
         "added_on": "2021-05-14",
         "repeated_added_on": [],
         "categories": [
