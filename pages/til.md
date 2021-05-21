@@ -21,7 +21,8 @@ not reliant on external services.
 
 1. [AutoInvent · GitHub](https://github.com/autoinvent/)
 2. [GitHub - django/asgiref: ASGI specification and utilities](https://github.com/django/asgiref)
-3. [PyVideo.org · FlaskCon 2020](https://pyvideo.org/events/flaskcon-2020.html)
+3. [GitHub - spotify/dh-virtualenv: Python virtualenvs in Debian packages](https://github.com/spotify/dh-virtualenv)
+4. [PyVideo.org · FlaskCon 2020](https://pyvideo.org/events/flaskcon-2020.html)
 
 ## 2021-05-14
 
