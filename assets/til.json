@@ -12,6 +12,22 @@
         "title": "Extreme HTTP Performance Tuning: 1.2M API req/s on a 4 vCPU EC2 Instance | talawah.io"
     },
     {
+        "added_on": "2021-05-25",
+        "repeated_added_on": [],
+        "categories": [
+            "fosss",
+            "game-development",
+            "games",
+            "linux-gaming",
+            "lua",
+            "steam",
+            "tutorial"
+        ],
+        "type": "url",
+        "value": "https://github.com/a327ex/BYTEPATH",
+        "title": "GitHub - a327ex/BYTEPATH: A replayable arcade shooter with a focus on build theorycrafting."
+    },
+    {
         "added_on": "2021-05-21",
         "repeated_added_on": [],
         "categories": [
