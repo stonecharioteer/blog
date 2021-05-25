@@ -28,6 +28,19 @@
         "title": "GitHub - a327ex/BYTEPATH: A replayable arcade shooter with a focus on build theorycrafting."
     },
     {
+        "added_on": "2021-05-25",
+        "repeated_added_on": [],
+        "categories": [
+            "conference-videos",
+            "crdt",
+            "distributed-systems",
+            "martin-kleppmann"
+        ],
+        "type": "url",
+        "value": "https://youtu.be/x7drE24geUw",
+        "title": "CRDTs: The Hard Parts - YouTube"
+    },
+    {
         "added_on": "2021-05-21",
         "repeated_added_on": [],
         "categories": [
