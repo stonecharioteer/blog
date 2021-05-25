@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-05-25
+
+1. [Extreme HTTP Performance Tuning: 1.2M API req/s on a 4 vCPU EC2 Instance \| talawah.io](https://talawah.io/blog/extreme-http-performance-tuning-one-point-two-million/)
+
 ## 2021-05-21
 
 1. [AutoInvent · GitHub](https://github.com/autoinvent/)
