@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-05-25",
+        "repeated_added_on": [],
+        "categories": [
+            "performance",
+            "system-design",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://talawah.io/blog/extreme-http-performance-tuning-one-point-two-million/",
+        "title": "Extreme HTTP Performance Tuning: 1.2M API req/s on a 4 vCPU EC2 Instance | talawah.io"
+    },
+    {
         "added_on": "2021-05-21",
         "repeated_added_on": [],
         "categories": [
