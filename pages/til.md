@@ -19,8 +19,9 @@ not reliant on external services.
 
 ## 2021-05-25
 
-1. [Extreme HTTP Performance Tuning: 1.2M API req/s on a 4 vCPU EC2 Instance \| talawah.io](https://talawah.io/blog/extreme-http-performance-tuning-one-point-two-million/)
-2. [GitHub - a327ex/BYTEPATH: A replayable arcade shooter with a focus on build theorycrafting.](https://github.com/a327ex/BYTEPATH)
+1. [CRDTs: The Hard Parts - YouTube](https://youtu.be/x7drE24geUw)
+2. [Extreme HTTP Performance Tuning: 1.2M API req/s on a 4 vCPU EC2 Instance \| talawah.io](https://talawah.io/blog/extreme-http-performance-tuning-one-point-two-million/)
+3. [GitHub - a327ex/BYTEPATH: A replayable arcade shooter with a focus on build theorycrafting.](https://github.com/a327ex/BYTEPATH)
 
 ## 2021-05-21
 
