@@ -42,6 +42,17 @@
         "title": "Martin Kleppmann\u2019s blog"
     },
     {
+        "added_on": "2021-05-29",
+        "repeated_added_on": [],
+        "categories": [
+            "blog",
+            "golang"
+        ],
+        "type": "url",
+        "value": "https://eli.thegreenplace.net/",
+        "title": "Eli Bendersky's website"
+    },
+    {
         "added_on": "2021-05-25",
         "repeated_added_on": [],
         "categories": [
