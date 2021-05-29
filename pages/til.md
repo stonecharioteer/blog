@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-05-29
+
+1. [GitHub - nocodb/nocodb: 🔥 🔥 The Open Source Airtable alternative](https://github.com/nocodb/nocodb)
+
 ## 2021-05-25
 
 1. [CRDTs: The Hard Parts - YouTube](https://youtu.be/x7drE24geUw)
