@@ -19,9 +19,10 @@ not reliant on external services.
 
 ## 2021-05-29
 
-1. [GitHub - b0o/awesome-by-example: A curated list of awesome example-based learning resources.](https://github.com/b0o/awesome-by-example)
-2. [GitHub - nocodb/nocodb: 🔥 🔥 The Open Source Airtable alternative](https://github.com/nocodb/nocodb)
-3. [Martin Kleppmann’s blog](https://martin.kleppmann.com/archive.html)
+1. [Eli Bendersky's website](https://eli.thegreenplace.net/)
+2. [GitHub - b0o/awesome-by-example: A curated list of awesome example-based learning resources.](https://github.com/b0o/awesome-by-example)
+3. [GitHub - nocodb/nocodb: 🔥 🔥 The Open Source Airtable alternative](https://github.com/nocodb/nocodb)
+4. [Martin Kleppmann’s blog](https://martin.kleppmann.com/archive.html)
 
 ## 2021-05-25
 
