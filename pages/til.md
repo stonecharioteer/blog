@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-05-29
 
-1. [GitHub - nocodb/nocodb: 🔥 🔥 The Open Source Airtable alternative](https://github.com/nocodb/nocodb)
+1. [GitHub - b0o/awesome-by-example: A curated list of awesome example-based learning resources.](https://github.com/b0o/awesome-by-example)
+2. [GitHub - nocodb/nocodb: 🔥 🔥 The Open Source Airtable alternative](https://github.com/nocodb/nocodb)
 
 ## 2021-05-25
 
