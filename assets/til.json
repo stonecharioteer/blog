@@ -1,5 +1,22 @@
 [
     {
+        "added_on": "2021-05-29",
+        "repeated_added_on": [],
+        "categories": [
+            "airtable",
+            "database",
+            "fosss",
+            "mariadb",
+            "mysql",
+            "postgresql",
+            "spreadsheet",
+            "sql"
+        ],
+        "type": "url",
+        "value": "https://github.com/nocodb/nocodb",
+        "title": "GitHub - nocodb/nocodb: \ud83d\udd25 \ud83d\udd25 The Open Source Airtable alternative"
+    },
+    {
         "added_on": "2021-05-25",
         "repeated_added_on": [],
         "categories": [
