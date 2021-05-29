@@ -31,6 +31,17 @@
         "title": "GitHub - b0o/awesome-by-example: A curated list of awesome example-based learning resources."
     },
     {
+        "added_on": "2021-05-29",
+        "repeated_added_on": [],
+        "categories": [
+            "blog",
+            "distributed-systems"
+        ],
+        "type": "url",
+        "value": "https://martin.kleppmann.com/archive.html",
+        "title": "Martin Kleppmann\u2019s blog"
+    },
+    {
         "added_on": "2021-05-25",
         "repeated_added_on": [],
         "categories": [
