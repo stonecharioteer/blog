@@ -13,6 +13,20 @@
         "title": "GitHub - cleanbrowsing/dnsperftest: DNS Performance test"
     },
     {
+        "added_on": "2021-06-02",
+        "repeated_added_on": [],
+        "categories": [
+            "dns",
+            "networking",
+            "pihole",
+            "raspberry-pi",
+            "unbound"
+        ],
+        "type": "url",
+        "value": "https://www.reddit.com/r/pihole/comments/d9j1z6/unbound_as_recursive_dns_server_slow_performance/",
+        "title": "reddit: the front page of the internet"
+    },
+    {
         "added_on": "2021-05-29",
         "repeated_added_on": [],
         "categories": [
