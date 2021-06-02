@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-06-02
 
 1. [GitHub - cleanbrowsing/dnsperftest: DNS Performance test](https://github.com/cleanbrowsing/dnsperftest)
+2. [reddit: the front page of the internet](https://www.reddit.com/r/pihole/comments/d9j1z6/unbound_as_recursive_dns_server_slow_performance/)
 
 ## 2021-05-29
 
