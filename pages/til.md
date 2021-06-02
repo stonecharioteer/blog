@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-06-02
+
+1. [GitHub - cleanbrowsing/dnsperftest: DNS Performance test](https://github.com/cleanbrowsing/dnsperftest)
+
 ## 2021-05-29
 
 1. [Eli Bendersky's website](https://eli.thegreenplace.net/)
