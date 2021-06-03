@@ -17,6 +17,21 @@
         "title": "GitHub - o2sh/onefetch: Git repository summary on your terminal"
     },
     {
+        "added_on": "2021-06-03",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "cpu",
+            "neofetch",
+            "screenfetch",
+            "tools",
+            "tools"
+        ],
+        "type": "url",
+        "value": "https://github.com/Dr-Noob/cpufetch",
+        "title": "GitHub - Dr-Noob/cpufetch: Simple yet fancy CPU architecture fetching tool"
+    },
+    {
         "added_on": "2021-06-02",
         "repeated_added_on": [],
         "categories": [
