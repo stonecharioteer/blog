@@ -32,6 +32,24 @@
         "title": "GitHub - Dr-Noob/cpufetch: Simple yet fancy CPU architecture fetching tool"
     },
     {
+        "added_on": "2021-06-03",
+        "repeated_added_on": [],
+        "categories": [
+            "UI",
+            "courses",
+            "css",
+            "free",
+            "frontend",
+            "gui",
+            "learning",
+            "resources",
+            "web-development"
+        ],
+        "type": "url",
+        "value": "https://web.dev/learn/css/?s=09",
+        "title": "Learn CSS"
+    },
+    {
         "added_on": "2021-06-02",
         "repeated_added_on": [],
         "categories": [
