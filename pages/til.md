@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-06-03
+
+1. [GitHub - o2sh/onefetch: Git repository summary on your terminal](https://github.com/o2sh/onefetch)
+
 ## 2021-06-02
 
 1. [Attention Required! \| Cloudflare](https://www.cloudflare.com/learning/dns/what-is-dns/)
