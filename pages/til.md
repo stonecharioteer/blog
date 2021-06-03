@@ -21,6 +21,7 @@ not reliant on external services.
 
 1. [GitHub - Dr-Noob/cpufetch: Simple yet fancy CPU architecture fetching tool](https://github.com/Dr-Noob/cpufetch)
 2. [GitHub - o2sh/onefetch: Git repository summary on your terminal](https://github.com/o2sh/onefetch)
+3. [Learn CSS](https://web.dev/learn/css/?s=09)
 
 ## 2021-06-02
 
