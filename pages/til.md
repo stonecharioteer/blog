@@ -19,7 +19,8 @@ not reliant on external services.
 
 ## 2021-06-03
 
-1. [GitHub - o2sh/onefetch: Git repository summary on your terminal](https://github.com/o2sh/onefetch)
+1. [GitHub - Dr-Noob/cpufetch: Simple yet fancy CPU architecture fetching tool](https://github.com/Dr-Noob/cpufetch)
+2. [GitHub - o2sh/onefetch: Git repository summary on your terminal](https://github.com/o2sh/onefetch)
 
 ## 2021-06-02
 
