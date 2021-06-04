@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-06-04
+
+1. [GitHub - davidlatwe/montydb: Monty, Mongo tinified. MongoDB implemented in Python !](https://github.com/davidlatwe/montydb)
+
 ## 2021-06-03
 
 1. [GitHub - Dr-Noob/cpufetch: Simple yet fancy CPU architecture fetching tool](https://github.com/Dr-Noob/cpufetch)
