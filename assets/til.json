@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-06-08",
+        "repeated_added_on": [],
+        "categories": [
+            "documentation",
+            "tech",
+            "writing"
+        ],
+        "type": "url",
+        "value": "https://developers.google.com/tech-writing",
+        "title": "Technical Writing \u00a0|\u00a0 Google Developers"
+    },
+    {
         "added_on": "2021-06-04",
         "repeated_added_on": [],
         "categories": [
