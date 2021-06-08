@@ -37,6 +37,19 @@
         "title": "Why Is Your NES A TV Station? (That's Weird) - YouTube"
     },
     {
+        "added_on": "2021-06-08",
+        "repeated_added_on": [],
+        "categories": [
+            "fosss",
+            "google-analytics",
+            "metrics-collection",
+            "web-analytics"
+        ],
+        "type": "url",
+        "value": "https://matomo.org/",
+        "title": "Matomo Analytics - The Google Analytics alternative that protects your data"
+    },
+    {
         "added_on": "2021-06-04",
         "repeated_added_on": [],
         "categories": [
