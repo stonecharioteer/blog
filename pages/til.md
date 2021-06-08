@@ -20,6 +20,7 @@ not reliant on external services.
 ## 2021-06-08
 
 1. [Technical Writing  \|  Google Developers](https://developers.google.com/tech-writing)
+2. [What every programmer should know about memory, Part 1 [LWN.net]](https://lwn.net/Articles/250967/)
 
 ## 2021-06-04
 
