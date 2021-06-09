@@ -17,6 +17,23 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-06-08
+
+1. [Matomo Analytics - The Google Analytics alternative that protects your data](https://matomo.org/)
+2. [Technical Writing  \|  Google Developers](https://developers.google.com/tech-writing)
+3. [What every programmer should know about memory, Part 1 [LWN.net]](https://lwn.net/Articles/250967/)
+4. [Why Is Your NES A TV Station? (That's Weird) - YouTube](https://youtu.be/8sQF_K9MqpA)
+
+## 2021-06-04
+
+1. [GitHub - davidlatwe/montydb: Monty, Mongo tinified. MongoDB implemented in Python !](https://github.com/davidlatwe/montydb)
+
+## 2021-06-03
+
+1. [GitHub - Dr-Noob/cpufetch: Simple yet fancy CPU architecture fetching tool](https://github.com/Dr-Noob/cpufetch)
+2. [GitHub - o2sh/onefetch: Git repository summary on your terminal](https://github.com/o2sh/onefetch)
+3. [Learn CSS](https://web.dev/learn/css/?s=09)
+
 ## 2021-06-02
 
 1. [Attention Required! \| Cloudflare](https://www.cloudflare.com/learning/dns/what-is-dns/)
