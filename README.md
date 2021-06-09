@@ -33,3 +33,5 @@ for the layout and the themes.
     }
 }
 ```
+
+This blog is accessible at [www.stonecharioteer.com](www.stonecharioteer.com).
