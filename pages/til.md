@@ -17,6 +17,10 @@ not reliant on external services.
 
 <i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
 
+## 2021-06-10
+
+1. [GitHub - blechschmidt/massdns: A high-performance DNS stub resolver for bulk lookups and reconnaissance (subdomain enumeration)](https://github.com/blechschmidt/massdns)
+
 ## 2021-06-08
 
 1. [Matomo Analytics - The Google Analytics alternative that protects your data](https://matomo.org/)
