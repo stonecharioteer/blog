@@ -1,5 +1,17 @@
 [
     {
+        "added_on": "2021-06-10",
+        "repeated_added_on": [],
+        "categories": [
+            "DNS",
+            "tools",
+            "web"
+        ],
+        "type": "url",
+        "value": "https://github.com/blechschmidt/massdns",
+        "title": "GitHub - blechschmidt/massdns: A high-performance DNS stub resolver for bulk lookups and reconnaissance (subdomain enumeration)"
+    },
+    {
         "added_on": "2021-06-08",
         "repeated_added_on": [],
         "categories": [
