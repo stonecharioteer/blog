@@ -12,6 +12,18 @@
         "title": "GitHub - google/python-fire: Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object."
     },
     {
+        "added_on": "2021-06-14",
+        "repeated_added_on": [],
+        "categories": [
+            "cli",
+            "gui",
+            "python"
+        ],
+        "type": "url",
+        "value": "https://github.com/chriskiehl/Gooey",
+        "title": "GitHub - chriskiehl/Gooey: Turn (almost) any Python command line program into a full GUI application with one line"
+    },
+    {
         "added_on": "2021-06-11",
         "repeated_added_on": [],
         "categories": [
