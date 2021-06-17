@@ -41,7 +41,7 @@ VISA Inc.
   setting up quality checks, running automated tests and uploading artifacts to
   the right registry in JFrog Artifactory.
 * Conducted Python workshops with a varied audience, training them on how to set up
-  Python projects, how to package them and how to build python modules so that they ate
+  Python projects, how to package them and how to build python modules so that they are
   shareable.
 * Mentored and trained SDE-1s and interns, guiding them in design and implementation details.
 
