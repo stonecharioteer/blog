@@ -10,7 +10,7 @@ to do in a secure manner, it is also seldom appreciated when it is done well.
 When auth works, it's business as usual, and when it doesn't, someone messed
 up.
 
-When people say auth, they could mean one of two things: *authentication*
+When people say **auth**, they could mean one of two things: *authentication*
 (AuthN), or, *authorization* (AuthZ).
 
 *Authentication* deals with user identity. Is user `abc` who they say they are?
@@ -29,15 +29,15 @@ if you need your user to be able to do something, then just add him to that
 role. Easy-peasy.
 
 There is a problem with this approach. The roles have to be checked in your
-code, time and again? Want to add a new feature only admins with `cat` in their
+code, time and again. Want to add a new feature only admins with `cat` in their
 username can perform on every third Sunday? Tough luck, you can't do that.
 
 Or maybe you can.
 
 ## What is Oso?
 
-`oso` is a library that takes care of authorization. In coding terms, `oso`
-allows you to take code that looks like this:
+[Oso](https://osohq.com) is a library that takes care of authorization. In
+coding terms, `oso` allows you to take code that looks like this:
 
 ```python
 def user_can_do_this(user):
@@ -56,26 +56,29 @@ else:
 And rewrite it like this:
 
 ```python
-
 if oso.is_allowed(user, "can_do", this):
     print("I can do this!")
 else:
     print("Access denied!")
 ```
 
-And in your rules:
+And in your rules, you define this:
 
-```
+```polar
 allow(user, "can_do", this) if user.is_admin and user.id in ["abc","xyz", "lkjh"]
 ```
 
 For now, ignore what is inside the `allow` line. Indeed, also ignore the
-*words* `user`, `"can_do"` and `this`. *None of them have any meaning beyond
-what you assign it in your code*.
+*words* `user`, `"can_do"` and `this`. *None of them have any meaning beyond*
+*what you assign it in your code*.
 
+Take a minute to reread the above two lines. This is important.
 
-While this doesn't look like much, it actually is. `oso` provides users the
-`polar` declarative language with which to declare *policies* for the
+The **tokens** do not have any real meaning as to what they do. It is
+up to *you* to impart meaning to them.
+
+While this doesn't look like much, it actually is. Oso provides users the
+Polar declarative language with which to declare *policies* for the
 application.
 
 These policies enable developers to abstract the actual rules of authorization
@@ -86,35 +89,31 @@ defined a rule that you're attempting to use.
 
 ## Why do I need Oso?
 
-If you're used to doing things with `if` statements, or perhaps modular
-`decorators`, and that's a good pattern to have, why would you need `oso`?
+If you're used to doing things with *if* statements, or perhaps modular
+decorators, and that's a good pattern to have, why would you need `oso`?
 
-1. `oso` does modularization for you.
+1. Oso does modularization for you.
 2. You can use the Polar language syntax to define rules in a simple way.
 3. You can hot load policies on the fly, meaning you can come up with runtime
    policies that you couldn't do without considerable effort.
-4. `oso` also gives you plugins for your favourite languages: You can reuse
-   your policies *across* your organization, in multiple languages.
+4. Oso also gives you plugins for your favorite languages: You can reuse
+   your policies *across* your organization: in *multiple* languages.
 5. You can separately version control your policies.
 6. Policies are just strings. You can store them in a database, if you want
-   you. Also, [/r/madlads](https://reddit.com/r/madlads) is :point_right: that
+   to. Also, [/r/madlads](https://reddit.com/r/madlads) is :point_right: that
    way.
 
 ## Hello Oso
 
 {% capture value %}
-Oso supports several languages, not just Python. I use Python here merely for demonstrative purposes, but you should visit [their official documentation website](https://docs.osohq.com) to find more libraries supporting other languages such as Java, Rust and Node.js.
+Oso supports several languages, not just Python. I use Python here merely for demonstrative purposes, but you should visit their official [documentation website](https://docs.osohq.com) to find more libraries supporting other languages such as Java, Rust and Node.js.
 {% endcapture %}
 
 {% include note.html title="Using Oso in other languages" alert_type="note" content=value%}
 
-So how do you use `oso` in your python code?
+So how do you use Oso in your python code?
 
-First, install the library.
-
-```bash
-
-First, install the library.
+First, install the library. (Make sure you're doing this in a virtual environment for your project.)
 
 ```bash
 pip install oso
@@ -123,7 +122,6 @@ pip install oso
 Then, create a new python file.
 
 ```python
-
 from oso import Oso
 
 oso_object = Oso()
@@ -135,12 +133,12 @@ if oso_object.is_allowed("user", "can_use", "this_program"):
 else:
     print("Access denied")
 ```
-
+<!-- TODO: Check the repo -->
 All examples from this post are available [here as a Github repository.](https://github.com/stonecharioteer/oso-examples)
 
 ### What's Going On?
 
-The `oso` documentation begins users with showing how you can integrate `oso`
+The Oso documentation begins users with showing how you can integrate Oso
 into a web application written in native Python. However, I believe in a first
 principles approach.
 
@@ -148,10 +146,10 @@ In this example, we're loading the `oso` library, and then immediately creating
 an instance of the `oso.Oso` class. This enables us to then bind *policies* to
 the object.
 
-An `oso` policy is declared in a language known as Polar. Polar takes
-inspiration from Prolog, and I like to think of its rule system as a paradigm
-you'd find in Rust's pattern matching. Don't let any of this intimidate you:
-I'll get to it later. For now, all you need to know is that we've added
+A policy is declared in a language known as Polar. Polar takes inspiration from
+Prolog, and I like to think of its rule system as a paradigm you'd find in
+Rust's pattern matching. Don't let any of this intimidate you: I'll get to it
+later. For now, all you need to know is that we've added
 `allow("user", "can_use", "this_program");` to the policies in the `oso_object`
 object.
 
@@ -159,16 +157,16 @@ object.
 I've used triple double-quotes `"""` because Polar uses only double quotes `"` for its strings and I didn't want to use single-quotes `'` to surround them in Python. You may choose to do so if you like.
 {% endcapture %}
 
-{% include note.html title="Use double quotes for strings" alert_type="note" content=value%}
+{% include note.html title="Use double quotes for strings in Polar" alert_type="note" content=value%}
 
-This line essentially says: "If `allow` is triggered with 3 variables equal to,
+This line says: "If `allow` is triggered with 3 variables equal to,
 *literally*: `"user"`, `"can_use"` and `"this_program"`, then evaluate to
-`true`. (Polar uses `true`/`false` as synonyms for Python's `True`/`False`).
+`true`. (Polar uses `true`/`false` as booleans).
 
 Next, we use this policy in our script, with `oso_object.is_allowed`. Note that
 the arguments to `is_allowed` are *exactly* the same as those to `allow`.
 
-`oso`'s `is_allowed` looks for a function called `allow` loaded into the object
+Oso's `is_allowed` looks for a function called `allow` loaded into the object
 which has a matching pattern. Again, don't worry too much about this for now.
 And it finds the single policy we have defined and realizes that the policy
 matches and evaluates to `True` (this is on the Python side).
@@ -177,7 +175,7 @@ Hence, the line `print("Hello from oso")` works.
 
 ### What Happened?
 
-Under the hood, `oso` evaluates Polar rules and loads them into the `oso.Oso`
+Under the hood, Oso evaluates Polar rules and loads them into the `oso.Oso`
 object that we create. Those rules dictate the outcome of
 `oso_object.is_allowed` calls. But here's a question for you:
 
@@ -193,18 +191,18 @@ whatever you want it to be.
 
 Let me reiterate.
 
-```
+```polar
 allow("user", "can_use", "this_program");
 ```
 
-This *defines* a policy called `allow` with those exact parameters.
+This *defines* a policy called `allow` with those **exact**: parameters.
 
 `is_allowed` matches its arguments with this policy, and realizes that it
-matches the rule, thus evaluating to `True`.
+matches the rule, thus evaluating to `True` in the Python file.
 
 ### What if I want to *deny* access?
 
-That's simple. Just try to call `is_allowed` with anything else.
+That's simple. Just try to call `is_allowed` with **anything** else.
 
 In our previous file, add the following:
 
@@ -219,7 +217,7 @@ This `is_allowed` will evaluate to `False`, since it doesn't match the rule
 that we've loaded into the`oso_object`.
 
 Remember what I've been saying about *pattern-matching*? Well, Oso looks for
-an exact match for the rules. You *could* generalize it further by using types,
+an *exact* match for the rules. You *could* generalize it further by using types,
 or your own classes, but we'll get to that later.
 
 For now, you need to just understand that `oso` essentially does a 1:1 match
@@ -227,6 +225,108 @@ with the rules in your `oso_object` and evaluates `is_allowed` based on a
 suitable `allow` policy.
 
 ## Oso in a CLI
+
+An interesting exercise to understand what you could do with Oso is to try building
+a command line tool.
+
+Let's write a quick CLI using `argparse`:
+
+```python
+import argparse
+
+parser = argparse.ArgumentParser(
+    description="Simple rmdir clone command-line-tool to demonstrate Oso's usage")
+parser.add_argument('path', metavar="P", type=str, help="Path to remove")
+
+
+if __name__ = "__main__":
+    args = parser.parse_args()
+    print(f"Attempting to remove directory: {args.path}.")
+```
+
+This is a simple CLI that uses [`argparse`](https://docs.python.org/3/library/argparse.html). I'm going to attempt a check to see if the user has write permissions, and only then allow a delete.
+
+Let's add some more code here.
+
+```python
+from enum import Enum
+
+class PathAttributes(Enum):
+    """A bunch of enums to help understand the path attributes"""
+    # path isn't a directory
+    NOTADIRECTORY = 1
+    # path is a writable directory
+    WRITABLEDIRECTORY = 2
+    # path is a read only directory (current user doesn't have write access)
+    READONLYDIRECTORY = 3
+    # path is an inaccessible directory (current user doesn't have read or write access)
+    INACCESSABLEDIRECTORY = 4
+    # path does not exist
+    NONEXISTENTDIRECTORY = 5
+
+def get_path_attributes(path):
+    """Returns a tuple of path attributes"""
+    import pathlib
+    import stat
+
+    path = pathlib.Path(path)
+    if not path.exists():
+        return PathAttributes.NONEXISTENTDIRECTORY
+    elif not path.is_dir():
+        return PathAttributes.NOTADIRECTORY
+    else:
+        # this is a directory. We need to determine whether it's
+        # writable, readable or accessible.
+        path_stat_mode = path.stat().st_mode
+        is_writeable = stat.S_ISWUSER(path_stat_mode) or stat.S_ISWGRP(path_stat_mode) or stat.S_ISWOTH(path_stat_mode)
+        if is_writeable:
+            return PathAttributes.WRITEABLEDIRECTORY
+        else:
+            is_readable = stat.S_ISRUSER(path_stat_mode) or stat.S_ISRGRP(path_stat_mode) or stat.S_ISROTH(path_stat_mode)
+            if is_readable:
+                return PathAttributes.READONLYDIRECTORY
+            else:
+                return PathAttributes.INACCESSIBLEDIRECTORY
+
+
+def rmdir(path):
+    import shutil
+    import oso
+    path_attributes = get_path_attributes(path)
+    if oso.isallowed("can_remove", path_attributes):
+        shutil.rmtree(path)
+```
+
+The above code looks like it is a lot. Let's take a moment to understand what is happening here.
+
+```python
+from enum import Enum
+```
+
+This imports the `Enum` class so that we can define an enumeration for the path
+attributes. Take a moment to [go through the official Python documentation on Enums](https://docs.python.org/3/library/enum.html) if you've never used them before.
+
+```python
+class PathAttributes(Enum):
+    """A bunch of enums to help understand the path attributes"""
+    # path isn't a directory
+    NOTADIRECTORY = 1
+    # path is a writable directory
+    WRITABLEDIRECTORY = 2
+    # path is a read only directory (current user doesn't have write access)
+    READONLYDIRECTORY = 3
+    # path is an inaccessible directory (current user doesn't have read or write access)
+    INACCESSABLEDIRECTORY = 4
+    # path does not exist
+    NONEXISTENTDIRECTORY = 5
+```
+
+The `PathAttributes` class defines an enumerated set of attributes for a folder.
+The in-line comments explain what they're for.
+
+At this point experienced pythonistas may be wondering what the heck I'm doing. Bear with me, this isn't a best-principles-python-tutorial. It's a "what can Oso do?" showcase.
+
+Next, the functions
 
 <!-- TODO: explain how to use `oso` with argparse, suggest usage with `click` -->
 <!-- TODO: Use `pandas` and show how to limit the use of something when the dataframe is too large.  -->
@@ -302,9 +402,7 @@ curl http://localhost:5000/
 
 You will get the `"hello world"` response from this route.
 
-
 Now try using `cURL` to query `/unvisitable`.
-
 
 ```bash
 curl http://localhost:5000/unvisitable
@@ -321,7 +419,6 @@ You will get a `403 Unauthorized` from this route.
 
 Now add a new route.
 
-
 ```python
 @app.route("/hello")
 def hello_route():
@@ -330,12 +427,12 @@ def hello_route():
 
 Rerun the app, and `cURL` the `/hello` route.
 
-
 ```bash
 curl http://localhost:5000/hello
 ```
 
-You will get a `"hello again"` response. However there is no `flask_oso.authorize` check here.
+You will get a `"hello again"` response. However there is no
+`flask_oso.authorize` check here.
 
 What's going on?
 
@@ -422,7 +519,6 @@ Additionally, `flask_oso.Flask_Oso()`'s `authorize` method is a wrapper around
 and the `resource`. While *all* of `oso`'s use case can be assumed to fall in
 to these three buckets, remember again that *you do not need to follow this
 paradigm*.  Understanding this enables you do do this:
-
 
 ```
 allow(1, "can_be_added_to", 1);
@@ -715,7 +811,7 @@ base_oso.load_file("policies.polar")
 ```
 
 which you should store in the same folder as your `app.py` file. Remember,
-for any queries, please look at [the Github repository](https://github.com/stonecharioteer/oso-examples/).
+for any queries, please look at the [Github repository](https://github.com/stonecharioteer/oso-examples/).
 
 This will read the file `policies.polar` and load each policy written therein.
 
@@ -799,9 +895,11 @@ def secure_route():
         return "access denied", 403
 ```
 
-Here, we call `base_oso.is_allowed`, just like before, and check if a `User` object, created
-with the `username` value, is *allowed* to read this route. While that explains what we're
-trying to do, remember that *all Polar is looking for is:* **a line in the loaded policies that matches `allow("admin", "can_access", "secure_route");`**.
+Here, we call `base_oso.is_allowed`, just like before, and check if a `User`
+object, created with the `username` value, is *allowed* to read this route.
+While that explains what we're trying to do, remember that *all Polar is*
+*looking for is:* **a line in the loaded policies that matches `allow("admin",**
+**"can_access", "secure_route");`**.
 
 Again, for emphasis, Oso only looks for a matching policy. Since we don't have such a policy
 in the loaded policy file, it immediately resolves this function call to `False`, and our
@@ -813,6 +911,7 @@ the Oso team has given us a Flask extension called `flask_oso` that helps us eve
 
 Let's rewrite the above file using `flask_oso`.
 
+<!-- TODO: rewrite the flask example above in flask_oso -->
 ```python
 ```
 
@@ -840,7 +939,8 @@ Flask-Login's `@login_required` ensures that there is a session attached to this
 were using cURL, you'd need to pass the cookie with the request. `httpie` does this for you with
 `--session <session-name>`. Now, notice that I've added `@skip_authorization` to the decorator list.
 
-This
+Now, we are still using `User` to bind the current user to an oso-accepted object. This is a huge
+limitation, which the Oso crowd has solved yet again for us.
 
 ### With flask_jwt_extended
 
@@ -869,13 +969,13 @@ Here are some other links:
    3. [Building an Open Source Policy Engine in Rust](https://www.youtube.com/watch?v=NkatWt2_kks)
 
 Additionally, like I've mentioned before, go through the examples in the
-accompanying [Github repository](http://github.com/stonecharioteer/oso-examples) for this post. You might want to rewind
-a few commits to see how the code evolved, so that you understand the flow
-of the article as well.
+accompanying [Github repository](http://github.com/stonecharioteer/oso-examples)
+for this post. You might want to rewind a few commits to see how the code
+evolved, so that you understand the flow of the article as well.
 
 ## Cookiecutter Template
 
-I maintain a bunch of all-encompassing Flask cookiecutter templates, and I've added Oso to all of the
-templates which have auth built into them. You can find the [cookiecutter
-repository here](https://github.com/stonecharioteer/cookiecutter-flask-multi),
+I maintain a bunch of all-encompassing Flask cookiecutter templates, and I've
+added Oso to all of the templates which have auth built into them. You can find
+the [cookiecutter repository here](https://github.com/stonecharioteer/cookiecutter-flask-multi),
 and [the instructions on running them here](/cookiecutter-flask-multi).
