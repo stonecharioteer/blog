@@ -50,8 +50,8 @@ There are a few exclusions, however:
 
 I'm going to be streaming on [my Twitch Channel](https://twitch.tv/stonecharioteer).
 
-I will be going live at 8PM IST on 2021-06-03.
-[Here's a calendar invite](https://calendar.google.com/event?action=TEMPLATE&tmeid=MGthcm1jMXRsYmJjdWZibXYwb2xxMTRsaDkga3R2a3ZpbmF5a2VlcnRoaUBt&tmsrc=ktvkvinaykeerthi%40gmail.com)
+I will be going live at 8PM IST on 2021-07-03.
+[Here's a calendar invite](https://dateful.com/eventlink/5564772587)
 for the entire session, should you need it.
 
 ## Prerequisites
@@ -82,3 +82,11 @@ than others.
     channel: "stonecharioteer",
   });
 </script>
+
+## Resources
+
+1. [Calendar Invite](https://dateful.com/eventlink/5564772587)
+2. [Notes on Notion](https://www.notion.so/A-Weekend-With-PostgreSQL-68b98f680d8c4cbdb0f80fb99223c742)
+3. [Twitch Livestream Link](https://twitch.tv/u/stonecharioteer) (You *will* need an account to comment, but you don't need one to watch.)
+4. YouTube Recordings (These will go live later)
+5. [PostgreSQL Documentation v13.3](https://www.postgresql.org/docs/13/index.html)
