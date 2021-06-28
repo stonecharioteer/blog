@@ -77,7 +77,7 @@ than others.
 
 <script type="text/javascript">
   new Twitch.Embed("twitch-embed", {
-    width: 854,
+    width: 700,
     height: 480,
     channel: "stonecharioteer",
   });
