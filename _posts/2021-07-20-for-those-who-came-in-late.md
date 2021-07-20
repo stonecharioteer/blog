@@ -1,5 +1,8 @@
 ---
 title: "For Those Who Came in Late"
+layout: post
+categories: [meta, programming, career-advice, python, ruby]
+description: "How I built my career in programming."
 ---
 
 This is a very personal post. It's about my journey so far. A few of you might
@@ -97,11 +100,11 @@ attribute the learning to my boss, a German who gave me amazing projects.
 I solved so many problems for the company, but eventually the time to part
 had arrived.
 
-Somehow, my next job sojourn was different. I joined Visa Inc. as a Sr. Software
-Developer with an *extreme* imposter's syndrome. I was not a developer, or so
-I told myself. I was a *hack*, a *pretender*. I was going to join a company
-where other software engineers worked, and they would find out that I do not
-match up to them.
+Somehow, my next job sojourn was different. I joined Visa Inc. as a Sr.
+Software Developer with an *extreme* imposter's syndrome. I was not a
+developer, or so I told myself. I was a *hack*, a *pretender*. I was going to
+join a company where other software engineers worked, and they would find out
+that I do not match up to them.
 
 Somehow, imposter's syndrome has a funny way of manifesting itself in those
 among us who least deserve it. As I joined Visa I also began to network with
@@ -119,5 +122,27 @@ part of the job, dealing with divas, people who thought they were the best
 because they used IntelliJ, or because they were validated by the higher
 management. Every company has people like this.
 
+My journey is a very personal one. I will never forget trying to grab a few
+minutes' sleep in the cold factory 10 years ago. I will forget trying to decide
+what to choose at a restaurant, whether it was just a main course or an
+appetizer and a dessert.
 
+I was lucky that I had friends who recommended I learn Python, lucky that I
+learnt in time, and that I had a natural flair for programming.
+
+But it was not all luck.
+
+I put in the hours. I spent a large part of 2015-2019 programming every day.
+I taught myself everything I could, meddled in projects that taught me so much.
+I finally spoke at PyCon India, and went on to deliver talks at BangPypers.
+I'm also scheduled for a talk at the University of Utah, where I want to talk
+to the students about this journey, and how to fall in love with tech.
+
+There's a lot of luck involved, but it isn't only luck. I've seen others try
+and fail. They focus on the reward: a better career, better salary. I really
+didn't have a plan. I just went with what felt interesting. At times I might
+have even made better decisions with respect to money, or I could have switched
+jobs earlier. But that's not me.
+
+I etched my career out of hard work. It's a journey I'll never forget.
 
