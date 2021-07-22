@@ -15,7 +15,7 @@ there's not much to say about it. I don't remember much beyond sitting in class
 wondering when the lunch break was.
 
 Before this, I studied in a school affiliated to the CBSE Board in Bangalore.
-It has a rather gradiose name: The Oxford Senior Secondary School. There's no
+It has a rather grandiose name: The Oxford Senior Secondary School. There's no
 relation with the Oxford university, so mind your jokes. I studied there for
 most of my life. I was an average student, but I didn't really do well. I
 was kicked out in the 11th grade, for not being "good enough to uphold the
