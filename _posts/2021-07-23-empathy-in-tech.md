@@ -96,21 +96,6 @@ non-confrontationaly. He said these things to people who couldn't fight back.
 
 The meek.
 
-It's weird that the Bible says Blessed are the Meek for they shall inherit the EartAn architect I once knew was someone I wouldn't recommend learning from. I am
-adamant about this belief constantly. This person was a bully, and he would
-chide people telling them that they are "not a developer" because they didn't
-use his preferred editor, or his preferred shell. He'd tell college graduates
-that they were not developers because they didn't know how to use `git`. And
-he constantly made others around him feel that they either had to confirm to
-his whims, or that they wouldn't be given any encouragement from the
-management.
-
-The funny thing is, he never really said or did these things to those who
-could hold their own against him. These were things he said to those who were
-non-confrontationaly. He said these things to people who couldn't fight back.
-
-The meek.
-
 It's weird that the Bible says "Blessed are the Meek for they shall inherit the
 Earth". I wonder about that sometimes.
 
