@@ -16,7 +16,7 @@ Ask yourself this. Who would you rather work with: a developer who does his
 job, isn't passionate about what he does but minds his business, or one who
 is super passionate, is knowledgeable, but tries to micromanage every pull
 request. Insofar as to say every pull request shall have only one commit,
-and if you do not confirm, then you *are not a developer*?
+and if you do not conform, then you *are not a developer*?
 
 If you had to choose between two mentors, would you pick one who gives you
 the bare minimum directive or the one who pretends he's a diva and that you
@@ -86,13 +86,13 @@ adamant about this belief constantly. This person was a bully, and he would
 chide people telling them that they are "not a developer" because they didn't
 use his preferred editor, or his preferred shell. He'd tell college graduates
 that they were not developers because they didn't know how to use `git`. And
-he constantly made others around him feel that they either had to confirm to
+he constantly made others around him feel that they either had to conform to
 his whims, or that they wouldn't be given any encouragement from the
 management.
 
 The funny thing is, he never really said or did these things to those who
 could hold their own against him. These were things he said to those who were
-non-confrontationaly. He said these things to people who couldn't fight back.
+non-confrontational. He said these things to people who couldn't fight back.
 
 The meek.
 
