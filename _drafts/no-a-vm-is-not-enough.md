@@ -85,9 +85,14 @@ starting a Powershell instance, for example. Besides, there's another problem.
 
 ### Powershell
 
-Your servers are running Linux. You're already dealing with `bash` foo. Do you want to keep up to date on `Powershell`?
+Your servers are running Linux. You're already dealing with `bash` foo. Do you
+want to keep up to date on `Powershell`?
 
-Seriously. I, as do many other developers who care about their custom configs, store my `dotfiles` in Github. The first thing I do when I get a new laptop is run a few `ansible` scripts, and configure my machine to work the way I want. I need my terminal to run flawlessly, with the fonts I prefer, and with the predefined configurations for everything from `neovim`to `pgcli` to `VS Code`.
+Seriously. I, as do many other developers who care about their custom configs,
+store my `dotfiles` in Github. The first thing I do when I get a new laptop is
+run a few `ansible` scripts, and configure my machine to work the way I want. I
+need my terminal to run flawlessly, with the fonts I prefer, and with the
+predefined configurations for everything from `neovim`to `pgcli` to `VS Code`.
 
 And why is this important?
 
@@ -159,7 +164,7 @@ and fancy Linux instance, but that is again a horrible experience.
 
 #### Use Docker and run multiple Containers
 
-That is a good answer. In fact, this would work, *if* the executibles *and
+That is a good answer. In fact, this would work, *if* the executables *and*
 the firewall isn't blocking everything in red tape from here to Timbucktu.
 
 I'm serious. Docker will not work because of several reasons.
@@ -225,7 +230,7 @@ using, and the level of permissions I will have on this machine.
 
 I do not compromise on this. Give me a machine running Linux, preferably Ubuntu,
 Debian or Fedora. Bonus points if I can bring my own device, and use my own
-choice of distroy. I will be impressed if you have your own distro that you
+choice of distro. I will be impressed if you have your own distro that you
 locally maintain, with software registries and all.
 
 ## So what, use a Virtual Machine
