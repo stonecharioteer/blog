@@ -2,7 +2,7 @@
 title: Enabling Tapping on the Touchpad in Linux
 layout: post
 categories: [linux]
-description: "How to fix your laptop's touchpad in Linux so that you can tap to click."
+description: "In which I show how to fix your laptop's touchpad in Linux so that you can tap to click."
 ---
 
 I've been trying to improve my Linux user experience lately. I use a Dell G5 SE

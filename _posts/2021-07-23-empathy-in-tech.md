@@ -2,7 +2,7 @@
 title: "Empathy in Tech"
 layout: post
 categories: [meta, technology, career, empathy]
-description: "How do you learn to be more understanding in a career in tech? Why do we even need empathy?"
+description: "In which I write about empathy in tech, why we need it, and the bullies I've found."
 ---
 
 I've been meaning to write about empathy in tech for a long time. Oddly, this

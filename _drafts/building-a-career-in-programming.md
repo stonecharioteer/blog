@@ -46,7 +46,7 @@ words _and_ progressing the story at the same pace, every day.
 
 It doesn't work that way. Not the volume, but the analogy. Software isn't like
 writing a book. It's more like putting a book together. Sometimes, the chapters
-are all there, out in the open source field, but you need to do some groundwokr
+are all there, out in the open source field, but you need to do some groundwork
 before you can put them together.
 
 And here's where it gets odd. Those open source libraries took passion to

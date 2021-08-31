@@ -2,6 +2,7 @@
 title: Setting up Neovim with Vim Plug and YouCompleteMe
 layout: post
 categories: [vim]
+description: "In which I describe my shift away from VSCode and how to setup nvim."
 ---
 
 I'm moving to neovim for my primary editing purposes. VSCode has served me

@@ -13,17 +13,18 @@ Pentium 4 Processor and one day, I hit the *Wall of XP*. XP would not run.
 I bought a DDR1 1GB Stick. Do you know how hard that was to find in India?
 Then, XP ran, in *classic mode*.
 
-Eventually, I found Linux Mint 7: Gloria. It was, *forgive the pun*, **glorious**.
-I could do everything. Write that fantasy fiction book I told myself I'd sell one day,
-learn how to use GIMP to make [signatures](https://www.wikihow.com/Create-a-Forum-Signature)
-for [the PHP BBforums](https://www.phpbb.com/) that were all the rage in the latter
-half of the 00's, and then eventually teach myself Python to build a career.
+Eventually, I found Linux Mint 7: Gloria. It was, *forgive the pun*,
+**glorious**.  I could do everything. Write that fantasy fiction book I told
+myself I'd sell one day, learn how to use GIMP to make
+[signatures](https://www.wikihow.com/Create-a-Forum-Signature) for [the PHP
+BBforums](https://www.phpbb.com/) that were all the rage in the latter half of
+the 00's, and then eventually teach myself Python to build a career.
 
-I do so much in Linux these days that using a Windows computer whenever I
-need to play a game is so painful. I keep forgetting that there is no *usable*
-shell. **Don't point your Cygwins and MINGWs at me**. I keep forgetting I
-have to install things through weird installers. Chocolatey exists, but I am
-not in Windows long enough to appreciate it, and the lack of text-based configuration
+I do so much in Linux these days that using a Windows computer whenever I need
+to play a game is so painful. I keep forgetting that there is no *usable*
+shell. **Don't point your Cygwins and MINGWs at me**. I keep forgetting I have
+to install things through weird installers. Chocolatey exists, but I am not in
+Windows long enough to appreciate it, and the lack of text-based configuration
 makes me groan. Environment variables in dialog boxes? With character limits?
 
 `/endrant{windows}`

@@ -3,6 +3,7 @@ layout:    "post"
 date:      "2021-01-17 12:10:57.992558"
 title:     "A Half Hour To Learn Data Structures And Algorithms"
 categories: ['learning']
+description: "In which I describe various data structures and algorithms, and take a rather high-level approach."
 ---
 
 As a self-taught developer, one of my weakpoints is interviewing. I suck at

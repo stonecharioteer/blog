@@ -6,11 +6,15 @@ description: "How does the Linux scheduler work?"
 customexcerpt: "My friend asked me a question that got me thinking... How does the Linux scheduler work?"
 ---
 
-I have not had a great foundation in Computer Science. I have meandered around full stack application development, and my friend Sumanth pointed out that I needed to improve this gap in my education. So he asked me a question that got me thinking:
+I have not had a great foundation in Computer Science. I have meandered around
+full stack application development, and my friend Sumanth pointed out that I
+needed to improve this gap in my education. So he asked me a question that got
+me thinking:
 
 > ### How *does* the Linux Scheduler work?
 >
-> You are running a process `pidx` how does your computer end up picking up another process?
+> You are running a process `pidx` how does your computer end up picking up
+> another process?
 >
 > What decides how this happens?
 >
@@ -30,7 +34,8 @@ I have not had a great foundation in Computer Science. I have meandered around f
 >   4. Ticks
 >   5. Time Slices
 
-I have no idea how to do this so I'm going to search the internet for the phrase "Linux Scheduler" and "Linux Scheduler Hackernews".
+I have no idea how to do this so I'm going to search the internet for the
+phrase "Linux Scheduler" and "Linux Scheduler Hackernews".
 
 ## References
 

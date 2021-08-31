@@ -2,7 +2,7 @@
 title: "For Those Who Came in Late"
 layout: post
 categories: [meta, programming, career-advice, python, ruby]
-description: "How I built my career in programming."
+description: "In which I describe how I built my career in programming."
 ---
 
 This is a very personal post. It's about my journey so far. A few of you might
