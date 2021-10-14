@@ -29,7 +29,7 @@ love teaching people, but what I love even more is learning from the
 experience.
 
 I've held trainings in Python for all sorts of people, but the ones who've
-amazed me the most are those who weren't developers. I had at at a previous
+amazed me the most are those who weren't developers. I once worked at an
 organization, where I trained mechanical engineers who hoped to learn Python
 and use it in their day-to-day work. Their excitement to learn constantly
 helped me keep my journey in perspective, and it helped me understand better
