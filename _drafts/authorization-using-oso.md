@@ -1,9 +1,23 @@
 ---
-layout:    "post"
+layout:    post
 title:     "Authorization in Python using Oso"
 categories: ['learning', 'authorization', 'web-development', 'python']
 permalink: '/oso-authz'
 ---
+
+## Prelude
+
+This is an article I've been working on for six months. Life got in the way,
+but it wasn't just that. I haven't been using Oso in the months since February,
+since I've moved on to another company, but the central premise that excites
+me about the library hasn't changed. The fun folks at Oso reached out to me
+since I've been telling them about this article, and we had a fun chat about
+it and how I've used Oso in a very non-conventional way at my previous
+workplace. I am not affiliated with them or with my previous organization
+at the time of this writing, and I'm not speaking for them, but I'll say this.
+*Oso is darn good software*.
+
+## Introduction
 
 Auth is one of the more underrated features in software. Not only is it hard
 to do in a secure manner, it is also seldom appreciated when it is done well.
@@ -21,7 +35,7 @@ with user tokens, sessions, and cookies among other things.
 the thing they have requested? Where are the authorization rules?  Who is
 allowed to use this portion of your application? Who is denied it?
 
-This article deals with *authorization* and not authentication.
+This article deals with *authorization* and not **authentication.**
 
 When a developer goes about looking for a way to configure authorization, they
 usually arrive at *roles*. A user's *role* is assigned certain permissions, and
@@ -29,7 +43,7 @@ if you need your user to be able to do something, then just add him to that
 role. Easy-peasy.
 
 There is a problem with this approach. The roles have to be checked in your
-code, time and again. Want to add a new feature only admins with `cat` in their
+code, time and again. Want to add a new feature only admins with *cat* in their
 username can perform on every third Sunday? Tough luck, you can't do that.
 
 Or maybe you can.
@@ -74,8 +88,10 @@ For now, ignore what is inside the `allow` line. Indeed, also ignore the
 
 Take a minute to reread the above two lines. This is important.
 
-The **tokens** do not have any real meaning as to what they do. It is
-up to *you* to impart meaning to them.
+In an earlier paragraph, I used the term "words" to refer to `user`, `"can_do"`
+and `this`. That was a gross over-simplification of what's happening here.
+These are **tokens**.  The tokens do not have any real meaning as to what they
+do. It is up to *you* to impart meaning to them.
 
 While this doesn't look like much, it actually is. Oso provides users the
 Polar declarative language with which to declare *policies* for the
@@ -90,7 +106,8 @@ defined a rule that you're attempting to use.
 ## Why do I need Oso?
 
 If you're used to doing things with *if* statements, or perhaps modular
-decorators, and that's a good pattern to have, why would you need `oso`?
+decorators if you're in a Python world, and that's a good pattern to have, why
+would you need `oso`?
 
 1. Oso does modularization for you.
 2. You can use the Polar language syntax to define rules in a simple way.
@@ -111,15 +128,16 @@ Oso supports several languages, not just Python. I use Python here merely for de
 
 {% include note.html title="Using Oso in other languages" alert_type="note" content=value%}
 
-So how do you use Oso in your python code?
+So how _do_ you use Oso in your python code?
 
-First, install the library. (Make sure you're doing this in a virtual environment for your project.)
+First, install the library. (Make sure you're doing this in a virtual
+environment for your project.)
 
 ```bash
 pip install oso
 ```
 
-Then, create a new python file.
+Then, create a [new python file.](https://github.com/stonecharioteer/oso-examples/blob/master/hello_oso/script.py)
 
 ```python
 from oso import Oso
@@ -133,7 +151,7 @@ if oso_object.is_allowed("user", "can_use", "this_program"):
 else:
     print("Access denied")
 ```
-<!-- TODO: Check the repo -->
+
 All examples from this post are available [here as a Github repository.](https://github.com/stonecharioteer/oso-examples)
 
 ### What's Going On?
@@ -149,7 +167,7 @@ the object.
 A policy is declared in a language known as Polar. Polar takes inspiration from
 Prolog, and I like to think of its rule system as a paradigm you'd find in
 Rust's pattern matching. Don't let any of this intimidate you: I'll get to it
-later. For now, all you need to know is that we've added
+later. For now, all you need to know is that we've added the _line_
 `allow("user", "can_use", "this_program");` to the policies in the `oso_object`
 object.
 
@@ -159,15 +177,16 @@ I've used triple double-quotes `"""` because Polar uses only double quotes `"` f
 
 {% include note.html title="Use double quotes for strings in Polar" alert_type="note" content=value%}
 
-This line says: "If `allow` is triggered with 3 variables equal to,
-*literally*: `"user"`, `"can_use"` and `"this_program"`, then evaluate to
-`true`. (Polar uses `true`/`false` as booleans).
+This line says: 
+> If a function called `allow` is triggered with 3 variables equal to,
+> *literally*: `"user"`, `"can_use"` and `"this_program"`, then evaluate to
+> `true`. (Polar uses `true`/`false` as booleans).
 
 Next, we use this policy in our script, with `oso_object.is_allowed`. Note that
 the arguments to `is_allowed` are *exactly* the same as those to `allow`.
 
 Oso's `is_allowed` looks for a function called `allow` loaded into the object
-which has a matching pattern. Again, don't worry too much about this for now.
+which has a matching pattern. (Again, don't worry too much about this for now.)
 And it finds the single policy we have defined and realizes that the policy
 matches and evaluates to `True` (this is on the Python side).
 
@@ -198,7 +217,9 @@ allow("user", "can_use", "this_program");
 This *defines* a policy called `allow` with those **exact**: parameters.
 
 `is_allowed` matches its arguments with this policy, and realizes that it
-matches the rule, thus evaluating to `True` in the Python file.
+matches the rule, thus evaluating to `True` in the Python file. `is_allowed`
+is *hard-wired* to find a declarative function named `allow` in all the polar
+definitions that are *loaded* into memory at this current moment.
 
 ### What if I want to *deny* access?
 
@@ -244,7 +265,10 @@ if __name__ = "__main__":
     print(f"Attempting to remove directory: {args.path}.")
 ```
 
-This is a simple CLI that uses [`argparse`](https://docs.python.org/3/library/argparse.html). I'm going to attempt a check to see if the user has write permissions, and only then allow a delete.
+This is a simple CLI that uses
+[`argparse`](https://docs.python.org/3/library/argparse.html). I'm going to
+attempt a check to see if the user has write permissions, and only then allow a
+delete.
 
 Let's add some more code here.
 
@@ -263,6 +287,7 @@ class PathAttributes(Enum):
     INACCESSABLEDIRECTORY = 4
     # path does not exist
     NONEXISTENTDIRECTORY = 5
+
 
 def get_path_attributes(path):
     """Returns a tuple of path attributes"""
@@ -293,18 +318,23 @@ def rmdir(path):
     import shutil
     import oso
     path_attributes = get_path_attributes(path)
-    if oso.isallowed("can_remove", path_attributes):
+    if oso.is_allowed("can_remove", path_attributes):
         shutil.rmtree(path)
+    else:
+        raise PermissionError(f"You cannot delete {path}")
 ```
 
-The above code looks like it is a lot. Let's take a moment to understand what is happening here.
+The above code looks like it is a lot. Let's take a moment to understand what is
+happening here.
 
 ```python
 from enum import Enum
 ```
 
 This imports the `Enum` class so that we can define an enumeration for the path
-attributes. Take a moment to [go through the official Python documentation on Enums](https://docs.python.org/3/library/enum.html) if you've never used them before.
+attributes. Take a moment to go through the 
+[official Python documentation on Enums](https://docs.python.org/3/library/enum.html)
+if you've never used them before.
 
 ```python
 class PathAttributes(Enum):
@@ -324,12 +354,91 @@ class PathAttributes(Enum):
 The `PathAttributes` class defines an enumerated set of attributes for a folder.
 The in-line comments explain what they're for.
 
-At this point experienced pythonistas may be wondering what the heck I'm doing. Bear with me, this isn't a best-principles-python-tutorial. It's a "what can Oso do?" showcase.
+At this point experienced pythonistas may be wondering what the heck I'm doing.
+Bear with me, this isn't a best-principles-python-tutorial. It's a "what can
+Oso do?" showcase.
 
-Next, the functions
+Next, the functions:
+
+```python
+def get_path_attributes(path):
+    """Returns a tuple of path attributes"""
+    import pathlib
+    import stat
+
+    path = pathlib.Path(path)
+    if not path.exists():
+        return PathAttributes.NONEXISTENTDIRECTORY
+    elif not path.is_dir():
+        return PathAttributes.NOTADIRECTORY
+    else:
+        # this is a directory. We need to determine whether it's
+        # writable, readable or accessible.
+        path_stat_mode = path.stat().st_mode
+        is_writeable = stat.S_ISWUSER(path_stat_mode) or stat.S_ISWGRP(path_stat_mode) or stat.S_ISWOTH(path_stat_mode)
+        if is_writeable:
+            return PathAttributes.WRITEABLEDIRECTORY
+        else:
+            is_readable = stat.S_ISRUSER(path_stat_mode) or stat.S_ISRGRP(path_stat_mode) or stat.S_ISROTH(path_stat_mode)
+            if is_readable:
+                return PathAttributes.READONLYDIRECTORY
+            else:
+                return PathAttributes.INACCESSIBLEDIRECTORY
+```
+
+This function returns the *type* of the item, using our Enum.
+
+```python
+def rmdir(path):
+    import shutil
+    import oso
+    path_attributes = get_path_attributes(path)
+    if oso.is_allowed("can_remove", path_attributes):
+        shutil.rmtree(path)
+    else:
+        raise PermissionError(f"You cannot delete {path}")
+```
+
+This function goes ahead and tries to delete the item, checking if a user has
+permissions to do so.
+
+The one line that I'm interested in here is the one that calls `oso.is_allowed`,
+which does all the heavy lifting.
+
+This function call will search for the current polar definitions that `oso` has
+been given, and remember, *we haven't loaded a Polar file yet,* and it then checks
+if there's a `allow` statement definition for this check.
+
+There is none. So irrespective of what you want to do, this function will not let
+you do it
+if there's a `allow` statement definition for this check.
+
+There is none. So irrespective of what you want to do, this function will not let
+you do it. Instead, it will throw a `PermissionError`.
+
+Why?
+
+Remember, *Oso is deny-by-default.* You haven't given it any polar rules, so it
+will deny your request. `is_allowed` doesn't match with anything so it will
+immediately reject your request.
+
+Now, let's go ahead and add a polar file that we will use with this script.
+
+```polar
+allow("can_remove", path_attributes: PathAttribute) if path_attributes in
+[PathAttributes.WRITEABLEDIRECTORY];
+```
+
+This single line is *not* a function call. It *is nothing but a statement*.
+Repeat that to yourself. It is just a statement that evaluates to `True`.
+
+_If_ you call `oso.is_allowed` with 2 arguments that match the parameters defined
+here, then the function `oso.is_allowed` will return a `True`. For *all* other
+scenarios, it will return `False`.
 
 <!-- TODO: explain how to use `oso` with argparse, suggest usage with `click` -->
 <!-- TODO: Use `pandas` and show how to limit the use of something when the dataframe is too large.  -->
+
 ## Where's the Server?
 
 An easy misconception to make is that `oso` needs to be used with an API. It
