@@ -8,50 +8,59 @@ customexcerpt: "I wanted to take a moment to dive into closures in python, and w
 
 ## Preamble 
 
-About a year ago, a friend and I were discussing closures in programming languages,
-and how they were treated so specially in many technical circles.
-To us, the concept seemed weird. Python's closures were... *intuitive*, weren't they?
-Both of us were not exactly from a standard programming background, but we were (and still are) super passionate about tech.
+About a year ago, a friend and I were discussing closures in programming
+languages, and how they were treated so specially in many technical circles.
+To us, the concept seemed weird. Python's closures were... *intuitive*, weren't
+they?  Both of us were not exactly from a standard programming background, we'd
+both studied Mechanical Engineering, not Computer Science, but we were (and
+still are) super passionate about tech.
 
-Which is why we were confused. Whatever it is that the world calls **closures** seems pretty obvious. At least to us they were.
+Which is why we were confused. Whatever it is that the world calls **closures**
+seems pretty obvious. At least to us they were.
 
-And well, we weren't wrong. But we were mildly surprised at how Python deals with it.
+And well, we weren't wrong. But we were mildly surprised at how Python deals
+with it.
 
 ## Intended Audience
 
-This is an intermediate level article, and you might be confused reading it if you don't understand the following:
+This is an intermediate level article, and you might be confused reading it if
+you don't understand the following:
 
 1. [Writing Python scripts.](https://docs.python.org/3/tutorial/index.html)
 2. [Using the REPL Interpreter](https://docs.python.org/3/tutorial/interpreter.html)
 3. [Writing functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 4. [Writing classes (knowledge of inheritance is not required)](https://docs.python.org/3/tutorial/classes.html)
-5. Using the [`id`](https://docs.python.org/3/library/functions.html#id), [`help`](https://docs.python.org/3/library/functions.html#help) and [`dir`](https://docs.python.org/3/library/functions.html#dir) functions.
+5. Using the [`id`](https://docs.python.org/3/library/functions.html#id),
+   [`help`](https://docs.python.org/3/library/functions.html#help) and
+   [`dir`](https://docs.python.org/3/library/functions.html#dir) functions.
 6. [Using the `dis` module to disassemble Python code.](https://docs.python.org/3/library/dis.html)
 
-I have linked to the best articles (IMO) on these topics above, so if you like, you can go ahead and read those first.
+I have linked to the best articles (IMO) on these topics above, so if you like,
+you can go ahead and read those first.
 
-Also, most articles deal with an article with respect to nested functions. While I *do* deal with nested functions, I do not start there. I start earlier, with a simple variable,
-and build up to nested... let's say objects.
+Also, most articles deal with an article with respect to nested functions.
+While I *do* deal with nested functions, I do not start there. I start earlier,
+with a simple variable, and build up to nested... let's say objects.
 
 
 ## Introduction
 
 Let's take a look.
 
-
 ```python
-
 def some_func():
     something_to_return = 10
     print(f"id(something_to_return) = {id(something_to_return)}")
     return something_to_return
 ```
 
-The `id` function in Python is a built-in that [returns the *identity* of the object the variable.](https://docs.python.org/3/library/functions.html#id)
-I use this function to sniff around my code to see if I am passing around copies of a variable or if I am actually passing the variable (*sic* object) itself.
+The `id` function in Python is a built-in that 
+[returns the *identity*](https://docs.python.org/3/library/functions.html#id)
+of the object that represents the variable. I use this function to sniff around
+my code to see if I am passing around copies of a variable or if I am actually
+passing the variable (*sic* object) itself.
 
 In this case, it is easy to test this theory.
-
 
 ```
 >>> x = some_func()
@@ -60,30 +69,34 @@ id(something_to_return) = 10917664
 10917664
 ```
 
-Of course this number will vary, and it could be the same, but for objects with non-overlapping lifetime.
-In other words, during one specific *scope*, these numbers are guaranteed to be representative of a specific object.
+This snippet prints out the `id` value of these variables, and while of course
+this number will vary, and it could be the same, but for objects with
+non-overlapping lifetime.  In other words, during one specific *scope*, these
+numbers are guaranteed to be representative of a specific object.
 
 ## Scopes
 
-The *scope* that I just brought up is, in very simple terms, like a space for your code to run in. In python, variables are shared from an outer scope to an inner
-scope.
+The *scope* that I just brought up is, in very simple terms, like a space for
+your code to run in. In python, variables are shared from an outer scope to an
+inner scope.
 
 
 ```python
-
 def test():
     x = 10
 
 print(x) # This will result in a NameError exception since x was defined inside a function.
 
 test()
-print(x) # no, calling the function doesn't add whatever is inside magically to the "higher" scope"
+print(x)
+# no, calling the function doesn't add whatever is inside magically to
+# the "higher" scope"
 ```
 
-A higher scope is indicative of a scope that contains another scope. If that is too wordy for your taste:
+A higher scope is indicative of a scope that contains another scope. If that is
+too wordy for your taste:
 
 ```python
-
 # this is scope 0
 def func():
     # this is scope 1
@@ -93,15 +106,20 @@ def func():
     pass 
 ```
 
-In this example, scope 0 *contains* scope 1. Scope 1 *contains* scope 2. However, everything in scopes 0 and 1 are accessible in scope 2, and everything in scope 0 is accessible to scope 0.
+In this example, scope 0 *contains* scope 1. Scope 1 *contains* scope 2.
+However, everything in scopes 0 and 1 are accessible in scope 2, and everything
+in scope 0 is accessible to scope 0.
 
-Scope 0 is the outermost scope. Scope 1 is inside scope 0. Scope 1 is outside of scope 2. Scope 2 is inside scope 1.
+Scope 0 is the outermost scope. Scope 1 is inside scope 0. Scope 1 is outside
+of scope 2. Scope 2 is inside scope 1.
 
 This will become clearer in time.
 
 ## Sniffing around returned values
 
-Now, let's look back at our closures. We saw that the `id` value of the integer that was returned is the same. which means, technically, that the same object was returned into the outer scope from the inner scope.
+Now, let's look back at our closures. We saw that the `id` value of the integer
+that was returned is the same. which means, technically, that the same object
+was returned into the outer scope from the inner scope.
 
 Let's expand this example.
 
@@ -133,7 +151,11 @@ When I run the above snippet, here's what I get:
 94093123237024
 ```
 
-If you are following along, this means that the application passed around a variable `x`, created *inside* `func`, outside of its scope, and then *into* the scope of another function that returned it unmodified, and the `id` was never changed. This means that all through your process, you passed around a single object. You did not change it.
+If you are following along, this means that the application passed around a
+variable `x`, created *inside* `func`, outside of its scope, and then *into*
+the scope of another function that returned it unmodified, and the `id` was
+never changed. This means that all through your process, you passed around a
+single object. You did not change it.
 
 Now, you might wonder if this would work.
 
@@ -171,7 +193,8 @@ AssertionError                            Traceback (most recent call last)
 AssertionError: the objects are not the same
 ```
 
-This doesn't work. Why? Let's take it apart using another tool in the python standard library, the `dis` module.
+This doesn't work. Why? Let's take it apart using another tool in the python
+standard library, the `dis` module.
 
 ## Disassembling our snippets
 
@@ -217,9 +240,13 @@ assert ext_x is ext_x2, "the objects are not the same"
 
 ```
 
-When you run this file, you should see the following output. Do not be too intimidated by how long it seems, it is fairly easy to understand once you know how to read it.
+When you run this file, you should see the following output. Do not be too
+intimidated by how long it seems, it is fairly easy to understand once you know
+how to read it.
 
-[The official python documentation on the `dis` library is excellent and you should try to go through that before you read ahead](https://docs.python.org/3/library/dis.html)
+[The official python documentation](https://docs.python.org/3/library/dis.html)
+on the `dis` library is excellent and you should try to go through that before
+you read ahead.
 
 
 ```
@@ -359,17 +386,16 @@ Disassembly of <code object func2 at 0x7f000e81c4b0, file "<dis>", line 10>:
 
  12           8 LOAD_FAST                0 (inp)
              10 RETURN_VALUE 
+
 ```
 
 Look at the first half, which says "disassembling the first snippet".
-
 
 ## Let's return a dictionary instead!
 
 ## Nested Functions - Finally
 
 ## Overdrive: Nested classes
-
 ## Bonus Bonus: Returning Static Methods
 
 ## We Get the Idea: So what?
@@ -380,10 +406,14 @@ Look at the first half, which says "disassembling the first snippet".
 
 ## A Personal Story
 
-The conversation at the beginning of this article came about because I had just come out of an interview where the interviewer asked me to explain Python closures.
-I had faltered, not because I didn't know, but because, oddly enough, I thought there was nothing special about how you can essentially play ping pong with objects
-in Python. Most languages do this. Python does this only because C does it. You can return pointers, can't you?
+The conversation at the beginning of this article came about because I had just
+come out of an interview where the interviewer asked me to explain Python
+closures. I had faltered, not because I didn't know, but because, oddly
+enough, I thought there was nothing special about how you can essentially play
+ping pong with objects in Python. Most languages do this. Python does this only
+because C does it. You can return pointers, can't you?
 
-All in all, a confusing interview let me to understand something in depth, and helped me learn.
+All in all, a confusing interview let me to understand something in depth, and
+helped me learn.
 
 
