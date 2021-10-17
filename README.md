@@ -35,3 +35,16 @@ for the layout and the themes.
 ```
 
 This blog is accessible at [www.stonecharioteer.com](www.stonecharioteer.com).
+
+
+## Local Testing
+
+Just use the docker command:
+
+```
+docker run --rm -it \
+  --volume="$PWD:/srv/jekyll" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -p 4000:4000 jekyll/jekyll:3.8 \
+  jekyll serve
+```
