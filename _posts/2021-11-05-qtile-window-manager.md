@@ -60,6 +60,185 @@ files are necessary for building some of the dependencies of `qtile`), and I
 created a virtual environment using the `venv` module in `/opt/qtile`. Then, I
 changed the owner of the folder to my regular user account.
 
+Then, it was time to install qtile.
+
+Since I use the [fish shell](), I had to `source activate /opt/qtile/bin/activate.fish` to activate the virtual environment. And then I followed up by installing `qtile`. I didn't pick a version right away, I decided to go with the latest version.
+
+Qtile doesn't setup an entry for your `xsessions`, so you need to do that yourself. 
+
+I created `/usr/share/xsessions/qtile.desktop` and filled it with the following:
+
+```ini
+[Desktop Entry]
+Name=Qtile
+Comment=Qtile Session
+Exec=/opt/qtile/bin/qtile start
+Type=Application
+Keywords=wm;tiling
+```
+
+Notice how I used the *absolute* path for qtile.
+
+After this, I logged out of my previous window manager and switched to the new entry for Qtile.
+
+On loading qtile for the first time, I was fairly surprised with the default config. It wasn't as *blank* as i3wm and xmonad were. It had a panel, a helpful text field on the panel about how to start the launcher, and it was very easy to use. I was liking it already.
+
+But I wanted to configure it so that I could mess with the design.
+
+![Default Config](assets/images/posts/qtile/default.png)
+*Fig. 1. Default Qtile Config*
+
+The first thing that bothered me was the lack of a wallpaper. I'd used [nitrogen]() before, so I installed it and started it up, setting a wallpaper. I restarted qtile and then... nothing.
+
+That was me being silly and forgetting that *Explicit is better than Implicit*. Like all tiling window managers, Qtile did none of the work for us. You have to ensure that the wallpaper manager *loads* when Qtile is done loading. That's where the `.xsessionrc` file comes in.
+
+Since nitrogen can restore a wallpaper with ease, all I needed to do was:
+
+```
+nitrogen --restore &
+```
+
+This went into the `~/.xsessionrc` file.
+
+Next, I needed to start configuring Qtile.
+
+Qtile's config file rests at `~/.config/qtile/config.py`. On start, Qtile will *read* this file. Since this file is just Python code, that also means every single line in this file is executed.
+
+When you look at the
+[default config](https://github.com/qtile/qtile/blob/master/libqtile/resources/default_config.py),
+you will notice:
+
+1. It's about 130 lines long. Not too big.
+2. It's just a bunch of variable declarations.
+
+This meant that all you needed to configure Qtile was to ensure you set the
+values of a few *global* variables in the config file. And Qtile would take
+care of the rest.
+
+This was useful. All I needed to do was set some variables.
+
+The default config constructs all these variables as it sets them, which is
+something I don't recommend. Python's error handling will not point out the
+right place where the error is occurring, and while 3.11 seeks to improve this,
+it's generally not a good practice to have a long variable declaration step in
+your code.
+
+For example, where the config does this:
+
+```python
+screens = [
+    Screen(
+        bottom=bar.Bar(
+            [
+                widget.CurrentLayout(),
+                widget.GroupBox(),
+                widget.Prompt(),
+                widget.WindowName(),
+                widget.Chord(
+                    chords_colors={
+                        'launch': ("#ff0000", "#ffffff"),
+                    },
+                    name_transform=lambda name: name.upper(),
+                ),
+                widget.TextBox("default config", name="default"),
+                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                widget.Systray(),
+                widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
+                widget.QuickExit(),
+            ],
+            24,
+        ),
+    ),
+]
+```
+
+If you want to *reuse* these objects, it's better to just construct them separately and then use them in a panel. The same goes for reusing panels.
+
+So instead, I decided to create a python library to manage, among other things, my qtile configuration.
+
+This library needed to serve other purposes, and it was always going to be very esoteric. I wanted to be able to use it to create a CLI for some helper tasks, and to store my ansible playbooks as well.
+
+For now though, I'm just going to store my qtile configuration builder.
+
+### Poetry
+
+I've been a staunch supporter of using `setuptools` to create python packages.
+I've never used [poetry](https://python-poetry.org/), and I thought perhaps now
+is a good time to move away from a `setup.py` and start using a
+`pyproject.toml`. With that in mind, I installed poetry following the
+instructions on the website. Note that while the large block in the center
+tells you to use one command, there's a callout above it that also tells
+you that the `get-poetry.py` script is about to be deprecated.
+
+To install poetry, run:
+
+```
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
+```
+
+Poetry is a python packaging and dependency management system. You setup a new project using it, and you can manage the virtual environments, manage dependencies, isolate primary dependencies, manage developer dependencies, and more with it. I've begun moving away from `miniconda` and have taken a liking to deadsnakes, but I might just start using poetry for everything. The requirements.txt file is frankly annoying to maintain.
+
+I created a new project using:
+
+```
+poetry new stonecharioteer
+```
+
+This created a placeholder repository for me, which had a `pyproject.toml` file, a tests folder, a module folder, named `stonecharioteer`.
+
+```
+stonecharioteer/
+├── poetry.lock
+├── pyproject.toml
+├── README.rst
+├── stonecharioteer
+│   └── __init__.py
+└── tests
+    ├── __init__.py
+    └── test_stonecharioteer.py
+```
+
+There are [some](https://realpython.com/effective-python-environment/#poetry)
+[great](https://python-poetry.org/docs/) tutorials for learning how to use poetry, so I'm not going to go into it here. What I found the most useful are the following commands:
+
+```bash
+# create a new project
+poetry new stonecharioteer
+# add a dependency for the project
+poetry add requests
+# add a development dependency for the project
+poetry add --dev pytest
+# install updates to the dependencies
+poetry update
+# launch a shell with a virtual environment sourced for this project.
+poetry shell
+# create a new environment with a different flavour of python
+poetry env new python3.10
+# build the wheel
+poetry build
+# publish to pypi
+poetry publish
+# bump the patch version
+poetry version patch
+# bump the minor version
+poetry version minor
+# bump the major version
+poetry version major
+```
+
+### Modularizing the Qtile Config
+
+As I've written above, the `config.py` file needs to merely contain the following variables:
+
+1. `keys`: These are the keymaps for Qtile.
+2. `screens`: These are physical display spaces your computer might have, like monitors.
+3. `mouse`: These are mouse behaviours.
+4. `groups`: These are synonymous with workspaces, and define the names of various workspaces.
+5. `layouts`: These are the tiling window manager layouts you'd like to enable.
+6. `terminal`: This points to your preferred terminal. You should add the terminal to path if you'd like to use it.
+7. `mod`: This is the modifier key, usually set to the Super or Windows key.
+
+There are a few *other* variables that you can set, but I don't think they're necessary always. The defaults will persist.
 ## Rice Screenshots
 
 ![Home Screen](assets/images/posts/qtile/rice-001.png)
@@ -73,7 +252,8 @@ changed the owner of the folder to my regular user account.
 
 ## Todo
 
-This project isn't done yet. I have a list of things I want to do, some of which are:
+This project isn't done yet. I have a list of things I want to do, some of
+which are:
 
 1. Create Ansible playbooks for the installation.
 2. Create a linux user group for the virtual environment. and add all relevant
