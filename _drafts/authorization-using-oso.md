@@ -5,9 +5,43 @@ categories: ['learning', 'authorization', 'web-development', 'python']
 permalink: '/oso-authz'
 ---
 
+## Outline
+
+1. Prelude
+2. Introduction
+3. What is Oso?
+4. Why do I need Oso?
+5. Hello Oso
+    1. What is Going On?
+    2. What Happened?
+    3. What if I want to *deny* access?
+6. Oso in a CLI
+    1. With argparse
+    2. Write your own decorator for Click
+7. Where is the Server?
+8. Oso and Flask
+    1. With a barebones Flask application
+    2. Using flask-oso
+    3. With Flask-Login
+    4. With `flask_jwt_extended`
+9. Advanced Patterns
+10. Getting Help
+11. Cookiecutter Template
+
+## TODOs
+<!-- NOTE: Remove these later -->
+
+* Explain how to use Oso with Argparse
+* Explain how to use Oso with Click
+* Explain how to use Flask-Oso
+* Explain how to use Oso with Flask Login
+* Explain how to use Oso with JWT Tokens
+* Explain how to use Oso with OIDC
+* Explain how to use the new `resource` fields.
+
 ## Prelude
 
-This is an article I've been working on for six months. Life got in the way,
+This is an article I've been working on for almost a year now. Life got in the way,
 but it wasn't just that. I haven't been using Oso in the months since February,
 since I've moved on to another company, but the central premise that excites
 me about the library hasn't changed. The fun folks at Oso reached out to me
@@ -16,6 +50,18 @@ it and how I've used Oso in a very non-conventional way at my previous
 workplace. I am not affiliated with them or with my previous organization
 at the time of this writing, and I'm not speaking for them, but I'll say this.
 *Oso is darn good software*.
+
+The structure of this post is to serve not as a tutorial to Oso. The official
+[documentation](https://docs.osohq.com) more than serve that purpose. Instead,
+I wanted to dig into *why* I find this library fascinating enough to be *this*
+excited. I'm writing about all the different ways in which you *could* use Oso,
+even if it wasn't exactly meant for that purpose. Not everyone will have such a
+requirement, but in my opinion, this is how you learn. You build things that
+might not see mobvious from the first glance. I'll save the fanboyism for the
+conclusion, but I'll leave you with this.
+
+While Oso does a lot for you under the hood, it's *what you can do* if you know
+it like a power user that empowers you.
 
 ## Introduction
 
@@ -137,7 +183,7 @@ environment for your project.)
 pip install oso
 ```
 
-Then, create a [new python file.](https://github.com/stonecharioteer/oso-examples/blob/master/hello_oso/script.py)
+Then, create a [new python file.](https://github.com/stonecharioteer/blog/tree/master/code/oso-examples)
 
 ```python
 from oso import Oso
@@ -152,7 +198,7 @@ else:
     print("Access denied")
 ```
 
-All examples from this post are available [here as a Github repository.](https://github.com/stonecharioteer/oso-examples)
+All examples from this post are available [here as a Github repository.](https://github.com/stonecharioteer/blog/tree/master/code/oso-examples)
 
 ### What's Going On?
 
@@ -249,6 +295,8 @@ suitable `allow` policy.
 
 An interesting exercise to understand what you could do with Oso is to try building
 a command line tool.
+
+### Using argparse
 
 Let's write a quick CLI using `argparse`:
 
@@ -386,7 +434,9 @@ def get_path_attributes(path):
                 return PathAttributes.INACCESSIBLEDIRECTORY
 ```
 
-This function returns the *type* of the item, using our Enum.
+This function returns the *type* of the item, using our Enum. Ignore the `stat`
+lines, since they're irrelevant to this post. If you must know, they check the
+user permissions for a given path.
 
 ```python
 def rmdir(path):
@@ -402,19 +452,18 @@ def rmdir(path):
 This function goes ahead and tries to delete the item, checking if a user has
 permissions to do so.
 
-The one line that I'm interested in here is the one that calls `oso.is_allowed`,
-which does all the heavy lifting.
+The one line that I'm interested in here is the one that calls
+`oso.is_allowed`, which does all the heavy lifting.
 
 This function call will search for the current polar definitions that `oso` has
-been given, and remember, *we haven't loaded a Polar file yet,* and it then checks
-if there's a `allow` statement definition for this check.
+been given, and remember, *we haven't loaded a Polar file yet,* and it then
+checks if there's a `allow` statement definition for this check.
 
-There is none. So irrespective of what you want to do, this function will not let
-you do it
-if there's a `allow` statement definition for this check.
+There is none. So irrespective of what you want to do, this function will not
+let you do it if there's a `allow` statement definition for this check.
 
-There is none. So irrespective of what you want to do, this function will not let
-you do it. Instead, it will throw a `PermissionError`.
+There is none. So irrespective of what you want to do, this function will not
+let you do it. Instead, it will throw a `PermissionError`.
 
 Why?
 
@@ -432,13 +481,30 @@ allow("can_remove", path_attributes: PathAttribute) if path_attributes in
 This single line is *not* a function call. It *is nothing but a statement*.
 Repeat that to yourself. It is just a statement that evaluates to `True`.
 
-_If_ you call `oso.is_allowed` with 2 arguments that match the parameters defined
-here, then the function `oso.is_allowed` will return a `True`. For *all* other
-scenarios, it will return `False`.
+_If_ you call `oso.is_allowed` with 2 arguments that match the parameters
+defined here, then the function `oso.is_allowed` will return a `True`. For
+*all* other scenarios, it will return `False`.
 
-<!-- TODO: explain how to use `oso` with argparse, suggest usage with `click` -->
-<!-- TODO: Use `pandas` and show how to limit the use of something when the dataframe is too large.  -->
+### Writing your own decorator for Click
 
+[Click](https://click.palletsprojects.com/en/8.0.x/) is one of my favourite CLI tools. I've built several tools using
+it and I've found that it makes me more productive than when I've used argparse.
+Install it using:
+
+```
+pip install 'click>=8.0.0,<8.1'
+```
+
+If you were to write the above program using click:
+
+```python
+import click
+
+@click.command()
+@click.
+
+
+```
 ## Where's the Server?
 
 An easy misconception to make is that `oso` needs to be used with an API. It
@@ -920,7 +986,7 @@ base_oso.load_file("policies.polar")
 ```
 
 which you should store in the same folder as your `app.py` file. Remember,
-for any queries, please look at the [Github repository](https://github.com/stonecharioteer/oso-examples/).
+for any queries, please look at the [Github repository](https://github.com/stonecharioteer/blog/tree/master/code/oso-examples).
 
 This will read the file `policies.polar` and load each policy written therein.
 
@@ -1007,16 +1073,17 @@ def secure_route():
 Here, we call `base_oso.is_allowed`, just like before, and check if a `User`
 object, created with the `username` value, is *allowed* to read this route.
 While that explains what we're trying to do, remember that *all Polar is*
-*looking for is:* **a line in the loaded policies that matches `allow("admin",**
-**"can_access", "secure_route");`**.
+*looking for is:* **a line in the loaded policies that matches
+`allow("admin",** **"can_access", "secure_route");`**.
 
-Again, for emphasis, Oso only looks for a matching policy. Since we don't have such a policy
-in the loaded policy file, it immediately resolves this function call to `False`, and our
-`if` statement moves to the `else` block.
+Again, for emphasis, Oso only looks for a matching policy. Since we don't have
+such a policy in the loaded policy file, it immediately resolves this function
+call to `False`, and our `if` statement moves to the `else` block.
 
-Now, while this is a fine way to use Oso in a Flask app, and there's no reason you shouldn't
-do this if you want to, when you have a larger Flask app, things can get complicated. So,
-the Oso team has given us a Flask extension called `flask_oso` that helps us even more.
+Now, while this is a fine way to use Oso in a Flask app, and there's no reason
+you shouldn't do this if you want to, when you have a larger Flask app, things
+can get complicated. So, the Oso team has given us a Flask extension called
+`flask_oso` that helps us even more.
 
 Let's rewrite the above file using `flask_oso`.
 
@@ -1024,12 +1091,14 @@ Let's rewrite the above file using `flask_oso`.
 ```python
 ```
 
-Now, query `/secure_route`. Notice that there's no difference in the response. You still get a
-403 because there's no policy in the `policies.polar` file that allows this. However, notice that
-nowhere do we call `base_oso.is_allowed`. Instead, we use the `flask_oso_extension` object,
-which is a `flask_oso.FlaskOso` object, bound to the `base_oso` object. And therein, we use
-`flask_oso_extension.authorize` instead. Here, the plugin does the bit regarding the 403 itself,
-allowing us to focus on more important, business-facing code.
+Now, query `/secure_route`. Notice that there's no difference in the response.
+You still get a 403 because there's no policy in the `policies.polar` file that
+allows this. However, notice that nowhere do we call `base_oso.is_allowed`.
+Instead, we use the `flask_oso_extension` object, which is a
+`flask_oso.FlaskOso` object, bound to the `base_oso` object. And therein, we
+use `flask_oso_extension.authorize` instead. Here, the plugin does the bit
+regarding the 403 itself, allowing us to focus on more important,
+business-facing code.
 
 
 This is a route that is decorated with both `@login_required` and with `@skip_authorization`.
@@ -1044,14 +1113,16 @@ def insecure_route():
     return jsonify(msg="anyone who's logged in can query this route."
 ```
 
-Flask-Login's `@login_required` ensures that there is a session attached to this request. If you
-were using cURL, you'd need to pass the cookie with the request. `httpie` does this for you with
-`--session <session-name>`. Now, notice that I've added `@skip_authorization` to the decorator list.
+Flask-Login's `@login_required` ensures that there is a session attached to
+this request. If you were using cURL, you'd need to pass the cookie with the
+request. `httpie` does this for you with `--session <session-name>`. Now,
+notice that I've added `@skip_authorization` to the decorator list.
 
-Now, we are still using `User` to bind the current user to an oso-accepted object. This is a huge
-limitation, which the Oso crowd has solved yet again for us.
+Now, we are still using `User` to bind the current user to an oso-accepted
+object. This is a huge limitation, which the Oso crowd has solved yet again for
+us.
 
-### With flask_jwt_extended
+### With `flask_jwt_extended`
 
 ## Advanced Patterns
 
@@ -1088,3 +1159,27 @@ I maintain a bunch of all-encompassing Flask cookiecutter templates, and I've
 added Oso to all of the templates which have auth built into them. You can find
 the [cookiecutter repository here](https://github.com/stonecharioteer/cookiecutter-flask-multi),
 and [the instructions on running them here](/cookiecutter-flask-multi).
+
+## Conclusion
+
+I don't know if there's a logical conclusion to this article. It's unlike
+anything I've published before on my blog. Oso has been a sheer joy to work
+with, and I'm looking forward to digging into it using Rust next. I want to
+learn how to hook into the `resource` fields, and actually do some real damage.
+It helps that the folks at Oso are super friendly.
+
+I'd like to thank Greg for his patience. I've been running my mouth all around
+HN promising them this blog article since January 2021, but truth be told, it's
+been ridiculously slow and their API evolved in that time. The sections on the
+`resource` fields wouldn't have been written if I'd written this in January, so
+I'll write this off as a win.
+
+Oso is sheer joy to work with. I love their documentation, which was really
+poor when I began using it, and is really well done now. I'm a strong proponent
+of good documentation, which should be readable and entertaining, and their
+docs fulfill that requirement.
+
+The folks at Oso are super nice as well, so go on and trouble them on Slack.
+I'm leaving yet another promise to write a long post on hooking into `resource`
+by forking Oso itself, but that's for another day. Greg, when you see this,
+remind me to get to work on that :smiling_imp:.
