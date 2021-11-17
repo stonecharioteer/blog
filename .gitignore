@@ -184,3 +184,4 @@ dmypy.json
 .prof
 
 _website/
+.doctrees/
