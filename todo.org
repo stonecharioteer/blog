@@ -1,8 +1,0 @@
-#+TITLE: TODO List
-
-* TODO CFPs
-    Due @[2020-01-10]
-
-** TODO Discord Bot
-** TODO Shelfie v2
-** TODO Building a Dash App with Authentication and Authorization using `oso`
