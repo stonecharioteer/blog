@@ -20,7 +20,7 @@ blog_title = "Stonecharioteer's Blog"
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
-blog_baseurl = ""
+blog_baseurl = "https://stonecharioteer.com"
 
 # Choose to archive only post titles. Archiving only titles can speed
 # up project building.
@@ -32,7 +32,7 @@ blog_baseurl = ""
 # links. Dictionary keys are what should be used in ``post`` directive
 # to refer to the author.  Default is ``{}``.
 blog_authors = {
-    "Vinay Keerthi": ("Vinay Keerthi", None),
+    "Stonecharioteer": ("Stonecharioteer", None),
 }
 
 
@@ -67,7 +67,7 @@ blog_authors = {
 # Default is ``0``, meaning no image.  Setting this to ``1`` will include
 # the first image, when available, to the excerpt.  This option can be set
 # on a per post basis using :rst:dir:`post` directive option ``image``.
-# post_auto_image = 0
+# post_auto_image = 1
 
 # Number of seconds (default is ``5``) that a redirect page waits before
 # refreshing the page to redirect to the post.
@@ -94,7 +94,7 @@ blog_authors = {
 # In addition, there are authors.html, languages.html, and locations.html
 # sidebars that link to author and location archive pages.
 html_sidebars = {
-    '**': [ #'about.html',
+    '**': [ # 'about.html',
             'postcard.html',
             # 'navigation.html',
             'recentposts.html',
@@ -183,8 +183,8 @@ needs_sphinx = '1.2'
 # ones.
 extensions = [
     "ablog",
-    "myst_nb",
-    # "myst_parser",
+    # "myst_nb",
+    "myst_parser",
     "sphinx_panels",
     # "sphinxcontrib.bibtex",
     "sphinxext.opengraph",
@@ -209,7 +209,7 @@ master_doc = "index"
 # General information about the project.
 project = "Stonecharioteer's Blog"
 copyright = "2021, Vinay Keerthi"
-author = "Vinay Keerthi"
+author = "Stonecharioteer"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -236,13 +236,14 @@ language = "en"
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = [
+    "env/*",
     "posts/*/.ipynb_checkpoints/*",
     ".github/*",
     ".history",
     "github_submodule/*",
     "LICENSE.md",
     "README.md",
-    ]
+]
 
 if not os.environ.get("BLOG_DRAFTS"):
     exclude_patterns.append("_drafts/*")
@@ -300,14 +301,14 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-# html_title = None
+html_title = "Stonecharioteer's Blog"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 # html_short_title = None
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-# html_logo = None
+html_logo = "_static/images/logo/stonecharioteer-banner.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -383,7 +384,7 @@ htmlhelp_basename = "StonecharioteersBlogdoc"
 blog_post_pattern = "posts/*/*"
 post_redirect_refresh = 1
 post_auto_image = 1
-post_auto_excerpt = 2
+post_auto_excerpt = 1
 disqus_shortname = "stonecharioteer"
 
 # Panels config
