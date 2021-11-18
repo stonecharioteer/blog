@@ -1,14 +1,17 @@
 ---
-title: "Reading the Mahabharata by the Tungabhadra - Day 4"
-layout: post
-categories: [indian-mythology, bibek-debroy, hampi, books, reading]
-image: /assets/images/posts/india/mahabharata-day-04.jpg
-description: "Day 4 of my journey in reading Bibek Debroy's 10-volume translation of the Mahabharata in Hampi"
+blogpost: true
+date: Dec 4, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, bibek-debroy, hampi, books, reading
+image: 0
 ---
-![Mahabharata Day 4](/assets/images/posts/india/mahabharata-day-04.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 4
 
 How we ruin ourselves. Mankind has always fallen flat on its face when faced
 with the questions of Dharma.
+
+![Mahabharata Day 4](/assets/images/posts/india/mahabharata-day-04.jpg)
 
 Dharma isn't difficult to comprehend, adharma is just easier.
 

@@ -1,10 +1,10 @@
 ---
-title: A Weekend With Postgresql
-layout: post
-categories: [databases, documentation, livecast, video]
-description: "I'm doing a webcast reading of the postgresql documentation."
-customexcerpt: "I've wanted to read the postgresql documentation live, on video, for over a year now. This is the best time to do it."
+blogpost: true
+category: Talks
+date: Jun 28, 2021
+tags: databases, documentation, livecast, video
 ---
+# A Weekend With Postgresql
 
 ## Introduction
 

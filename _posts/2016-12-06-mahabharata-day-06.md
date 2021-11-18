@@ -1,17 +1,19 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 6
-layout: post
-categories: [indian-mythology, bibek-debroy, hampi, reading, books]
-image: /assets/images/posts/india/mahabharata-day-06.jpg
-description: "Day 6 of my journey of reading Bibek Debroy's 10 volume translation of the Mahabharata in Hampi."
+blogpost: true
+date: Dec 6, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, bibek-debroy, hampi, reading, books
+image: 0
 ---
-
-![Mahabharata Day 6](/assets/images/posts/india/mahabharata-day-06.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 6
 
 Wherever I sit down in Hampi, I can't help but ask myself if once, a long time
 ago, Krishnadevaraya walked past this very spot. I wonder if I have walked
 along paths he liked to walk through, I wonder if he could appreciate the
 poetry of sitting under a tree to read the Mahabharata.
+
+![Mahabharata Day 6](/assets/images/posts/india/mahabharata-day-06.jpg)
 
 The Mahabharata is daunting in scope. I sat under this tree and read of the
 lament of Damayanti as her husband Nala forsook her in the woods. I read how

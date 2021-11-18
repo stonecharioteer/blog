@@ -1,14 +1,16 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 19
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-19.jpg
-description: "Day 19 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 28, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 19](/assets/images/posts/india/mahabharata-day-19.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 19
 
 The End.
+
+![Mahabharata Day 19](/assets/images/posts/india/mahabharata-day-19.jpg)
 
 The 1008 names of Shiva, the 1000 names of Vishnu, the Anu Gita and the Purusha
 Suktam. Bhishma leaves Dharmaraja with this and other words of Dharma. And

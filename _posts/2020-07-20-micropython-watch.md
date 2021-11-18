@@ -1,11 +1,11 @@
 ---
-title: The ESP8266 Smart Watch
-layout: post
-categories: [iot]
-image: /assets/images/posts/iot/esp8266-watch.png
-description: "I bought an ESP8266 based 'watch' that I am going to flash MicroPython on."
-customexcerpt: "I bought an ESP8266 based watch. This thing can technically run MicroPython!"
+blogpost: true
+date: July 20, 2020
+category: Show and Tell
+tags: iot
+image: 1
 ---
+# The ESP8266 Smart Watch
 
 
 ![Watch](/assets/images/posts/iot/esp8266-watch.png)

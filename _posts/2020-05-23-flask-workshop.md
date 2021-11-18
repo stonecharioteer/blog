@@ -1,6 +1,8 @@
 ---
 title: Bangalore Python Meetup Group - Flask Workshop
-categories: [talks, meetups, workshop, flask, python, programming]
+date: May 23, 2020
+category: Talks
+tags: meetups, workshop, flask, python, programming
 ---
 
 I have been meaning to do a Flask workshop for quite some time now. The guys

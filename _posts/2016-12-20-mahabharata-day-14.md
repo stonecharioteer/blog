@@ -1,15 +1,17 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 14
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-14.jpg
-description: "Day 14 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 19, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 14](/assets/images/posts/india/mahabharata-day-14.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 14
 
 My very first introduction to the Mahabharata was one of two comics, from Amar
 Chitra Katha, bought at the railway station in Mumbai, over twenty years ago.
+
+![Mahabharata Day 14](/assets/images/posts/india/mahabharata-day-14.jpg)
 
 It was either the story of Karna or the story of Abhimanyu, I cannot recall
 which one it was. I remember reading both when I was younger and being

@@ -1,17 +1,20 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 8
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-08.jpg
-description: "Day 8 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 10, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
 
-![Mahabharata Day 8](/assets/images/posts/india/mahabharata-day-08.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 8
 
 There is some justice in reading Markandeya's rendition of the Ramayana,
 recited to the Pandavas, as I sit in Hampi. A large part of the Kishkinda Kanda
 is supposed to have occurred here, and I remember the stories that my
 grandfather told me about how Hanuman was born on Anjanadri Hill.
+
+![Mahabharata Day 8](/assets/images/posts/india/mahabharata-day-08.jpg)
 
 I read of Yudhishtira's answers to the questions posed by the Yaksha and
 somehow, I lost myself for the first time since I began reading the

@@ -1,9 +1,10 @@
 ---
-title: "Empathy in Tech"
-layout: post
-categories: [meta, technology, career, empathy]
-description: "In which I write about empathy in tech, why we need it, and the bullies I've found."
+blogpost: true
+date: July 25, 2021
+category: Thoughts
+tags: meta, technology, career, empathy
 ---
+# Empathy in Tech
 
 I've been meaning to write about empathy in tech for a long time. Oddly, this
 is a topic that I'm the most hesitant to write about, for personal reasons.

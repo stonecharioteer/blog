@@ -1,13 +1,10 @@
 ---
-title: Keeping Your Work Laptop Awake
-layout: post
-categories: [wfh, linux, python]
-description: "Learn how to keep your work laptop awake when you cannot change
-power settings, using Python."
-customexcerpt: "Sometimes you'd like to keep your laptop from sleeping, and for
-whatever reason, you might not be able to change your laptop's power management
-rules."
+blogpost: true
+date: Nov 24, 2020
+category: Tips and Tricks
+tags: wfh, linux, python
 ---
+# Keeping Your Work Laptop Awake
 
 Sometimes you'd like to keep your work laptop from sleeping, and for whatever
 reason, you might not be able to change your system's power management rules.

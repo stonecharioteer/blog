@@ -1,15 +1,17 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 15
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-15.jpg
-description: "Day 7 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 21, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 15](/assets/images/posts/india/mahabharata-day-15.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 15
 
 My skin feels good against cold stone. I love the feeling in my toes as the
 cold air and the heat of the sun combine to give me shivers.
+
+![Mahabharata Day 15](/assets/images/posts/india/mahabharata-day-15.jpg)
 
 In the three weeks that I have been in Hampi, I haven't just read the Mahabharata.
 I have also been looking closely at the ruins. The people selling coconuts by

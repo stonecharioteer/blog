@@ -1,10 +1,10 @@
 ---
-title: Web Application Security with secure.py
-layout: post
-categories: [python, flask, security]
-description: "A post on web application security and how to avoid common pitfalls with `secure.py`"
-customexcerpt: "A common pitfall when developing web applications is not knowing how to design a safe application.`"
+blogpost: true
+date: Nov 11, 2020
+category: Tutorial
+tags: python, flask, security
 ---
+# Web Application Security with secure.py
 
 A common pitfall when developing web applications is not knowing how to design a safe application.
 `secure.py` is a great Python module that helps deal with the basic foundations of web application security.

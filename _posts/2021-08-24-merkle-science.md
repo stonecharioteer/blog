@@ -1,9 +1,10 @@
 ---
-title: I joined Merkle Science as an Architect
-layout: post
-categories: [life, meta, career, technology, cryptocurrency]
-description: "I left Visa and joined Merkle Science in July."
+blogpost: true
+date: Aug 24, 2021
+category: Updates
+tag: life, meta, career, technology, cryptocurrency
 ---
+# I joined Merkle Science as an Architect
 
 I left Visa on July 21, and joined [Merkle Science](https://merklescience.com)
 as an Architect and Lead Software Engineer. I'm working with the Data
@@ -32,7 +33,7 @@ around that space as well, since tech in the cryptocurrency field is still new
 and it is constantly changing.
 
 I don't have much to say since I'm still new here, but I've already learnt a
-lot about Cryptocurrencies. I want to blog about Ethereum and how to write a
+lot about the domain. I want to blog about Ethereum and how to write a
 DeFi app soon. It could be interesting!
 
 We _are_ hiring, of course, so please [reach out](mailto:ktvkvinaykeerthi+referme@gmail.com)

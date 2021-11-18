@@ -1,16 +1,17 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 1
-layout: post
-categories: [mahabharata, bibek-debroy, reading, books, hampi, indian-mythology]
-image: /assets/images/posts/india/mahabharata-day-01.jpg
-description: "I wanted to read Bibek Debroy's 10 Volume translation of the Mahabharata in a place where no one would disturb me, and so, I chose Hampi, the land of my birth."
-customexcerpt: "Where would you read the Mahabharata? I chose to go to Hampi, the land where I was born."
+blogpost: true
+date: Dec 1, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+image: 0
 ---
-
-![Mahabharata Day 1](/assets/images/posts/india/mahabharata-day-01-01.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 1
 
 Hampi. As a kid, I didn't like going to Hampi. I had nothing to see there, it
 was full of tanks and wells. I didn't care much for the heat either.
+
+![Mahabharata Day 1](/assets/images/posts/india/mahabharata-day-01-01.jpg)
 
 Today, as I sat atop a small hill, reading the first volume of the Mahabharata,
 a stranger came up to me, to ask about the sights. He asked me why this place

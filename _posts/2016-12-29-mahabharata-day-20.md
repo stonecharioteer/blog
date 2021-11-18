@@ -1,16 +1,18 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 20
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-20.jpg
-description: "Day 20 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 29, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 20](/assets/images/posts/india/mahabharata-day-20.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 20
 
 This journey has been relieving. I have done all that I set out to do. I came
 for a larger purpose, to start writing once again. It has been too long, and I
 have been scared of something.
+
+![Mahabharata Day 20](/assets/images/posts/india/mahabharata-day-20.jpg)
 
 Fear is a gripping thing, and it has defined a lot in my life. My closest
 friends know how much I fear some things. When I think about the thing I fear

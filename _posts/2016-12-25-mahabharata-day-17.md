@@ -1,18 +1,20 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 17
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-17.jpg
-description: "Day 17 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 25, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 17](/assets/images/posts/india/mahabharata-day-17.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 17
 
 The empty temples scare me. They stand here, stripped of their purpose by the
 invaders from Golkonda, Bijapur and Delhi. The idols are destroyed, nothing
 remains except the stories. Some temples don't even have the stories. Guides
 make stuff up, they tell unsuspecting travellers that there's some story here.
 There is, but it isn't the story the guides are feeding them.
+
+![Mahabharata Day 17](/assets/images/posts/india/mahabharata-day-17.jpg)
 
 Hampi enthralls me on a level that I couldn't begin to understand as a child. I
 feel at peace, sitting under a tree, not realizing that a spider was climbing

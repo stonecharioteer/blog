@@ -1,8 +1,10 @@
 ---
-title: Managing Multiple Python Installations
-categories: [pip, conda, python]
-show_edit_on_github: false
+blogpost: true
+date: July 7, 2020
+category: Tutorial
+tags: pip, conda, python
 ---
+# Managing Multiple Python Installations
 
 
 If you are running a Linux or Mac machine and would like to run multiple

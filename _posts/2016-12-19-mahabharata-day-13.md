@@ -1,14 +1,16 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 13
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-13.jpg
-description: "Day 13 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 19, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 13](/assets/images/posts/india/mahabharata-day-13.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 13
 
 It begins.
+
+![Mahabharata Day 13](/assets/images/posts/india/mahabharata-day-13.jpg)
 
 Struck by doubt, Kounteya Dhananjeya casts away his bows and arrows, refusing
 to strike down his relatives.

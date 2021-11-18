@@ -1,16 +1,16 @@
 ---
-title: Sarathi - A Personal Discord Bot
-layout: post
-categories: [discord, python, til, meta]
-permalink: "/sarathi.html"
-image: /assets/images/posts/sarathi/add-factoid.jpeg
-description: "I built a discord bot to help me manage and query my TIL page."
-customexcerpt: "I've been maintaining a TIL page for a while now, and while the idea is great, I have had some issues updating the sheet daily."
+blogpost: true
+date: Nov 30, 2020
+category: Show and Tell
+tags: discord, python, til, meta
+image: 0
 ---
+# Sarathi - A Personal Discord Bot
+
+I've been maintaining [a TIL page](https://stonecharioteer.com/til.html) for a while now, and while the idea is great, I have had some issues updating the sheet daily.
 
 ![sarathi-bot add factoid](/assets/images/posts/sarathi/help.jpeg)
 
-I've been maintaining [a TIL page](https://stonecharioteer.com/til.html) for a while now, and while the idea is great, I have had some issues updating the sheet daily.
 My flow has been like this:
 
 1. Whenever I find a link / factoid interesting, I save them in a WhatsApp group where I'm the only member for later record.

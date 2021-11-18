@@ -1,13 +1,18 @@
 ---
-title: Migrating the Mahabharata Posts
-layout: post
-categories: [mahabharata, bibek-debroy]
-description: "I'm migrating my Instagram stories on my month-long trip to Hampi to read the Mahabhrata here."
+blogpost: true
+date: Mar 10, 2021
+category: Update, Reading
+tags: bibek-debroy, hampi, reading, mahabharata, letters
 ---
+# Migrating the Mahabharata Posts
 
-In 2016, I spent a month in Hampi to read Bibek Debroy's 10-volume translation of the Mahabharata. It was a life-changing experience, and I formed a bond with the author through correspondence ever since. I'd posted about my experience on Instagram, but I'd like to move all the posts here, for easy retrieval.
+In 2016, I spent a month in Hampi to read Bibek Debroy's 10-volume translation
+of the Mahabharata. It was a life-changing experience, and I formed a bond with
+the author through correspondence ever since. I'd posted about my experience on
+Instagram, but I'd like to move all the posts here, for easy retrieval.
 
-I've migrated my Instagram posts on reading the Mahabharata in Hampi, and I've reproduced the letter to Mr. Bibek Debroy in its entirety here.
+I've migrated my Instagram posts on reading the Mahabharata in Hampi, and I've
+reproduced the letter to Mr. Bibek Debroy in its entirety here.
 
 1. [Day 1]({% post_url 2016-12-01-mahabharata-day-01 %})
 1. [Day 2]({% post_url 2016-12-02-mahabharata-day-02 %})

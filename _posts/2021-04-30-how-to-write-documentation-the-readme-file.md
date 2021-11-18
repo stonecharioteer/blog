@@ -1,9 +1,9 @@
 ---
-title: How to Write Documentation - The README.md File
-layout: post
-categories: [documentation, writing, meta, side-projects]
-description: "A guide on how to write a README.md file for a Git repository."
+blogpost: true
+category: Opinion
+tags: [documentation, writing, meta, side-projects]
 ---
+# How to Write Documentation - The README.md File
 
 In the introduction post to this series, I discussed how to write a `README.md`
 file in a `git` repository. I'm digging deeper into this here.
@@ -120,7 +120,9 @@ how to run tests in this section. Treat it like a mini-Developer's guide.
 Some other notes you can put in your README are:
 
 1. The latest release notes.
-2. A link to your Slack or Discord channel where devs can be reacted directly. I'd recommend having private channels for contributors and one public help channel that's moderated by a bot.
+2. A link to your Slack or Discord channel where devs can be reacted directly.
+   I'd recommend having private channels for contributors and one public help
+   channel that's moderated by a bot.
 3. A link to your company's website, if this is a company's open source project.
 
 ## What does not belong in your README
@@ -133,19 +135,32 @@ Some other notes you can put in your README are:
 6. Description of your company
 7. API Documentation
 
-There *are* usecases for each of these, but they don't belong in the README. Instead, make a project website with dedicated sections for the,.
+There *are* usecases for each of these, but they don't belong in the README.
+Instead, make a project website with dedicated sections for the,.
 
 ## Final Note
 
-I'm going to be re-stating this time and again. While you have the best of intentions, you will not be able to make everyone happy. However, that doesn't mean you shouldn't at least consider *who* your documentation is for. Make sure that you know this. That way, you will at least help some of the audience instead of triggering everyone.
+I'm going to be re-stating this time and again. While you have the best of
+intentions, you will not be able to make everyone happy. However, that doesn't
+mean you shouldn't at least consider *who* your documentation is for. Make sure
+that you know this. That way, you will at least help some of the audience
+instead of triggering everyone.
 
 ## Exceptions - `httpie`
 
-[`httpie`](https://github.com/httpie/httpie) goes against many of the points I've listed above, but it does so with an important note at the top. It *tells* the reader that this *is* a development version of the official docs which are best viewed on the docs website.
+[`httpie`](https://github.com/httpie/httpie) goes against many of the points
+I've listed above, but it does so with an important note at the top. It *tells*
+the reader that this *is* a development version of the official docs which are
+best viewed on the docs website.
 
-It provides a `GIF` right at the top, showing users what this tool can do. You are *sold* at the very beginning.
+It provides a `GIF` right at the top, showing users what this tool can do. You
+are *sold* at the very beginning.
 
-While the entire README actually is their documentation, they do it in a way that showcases different aspects of this tool effectively. The `README.md` does what it's supposed to do: introduce the tool, and gives users help whenever they need it. Right at the top, the stickers are used to grand effect: to link to Discord where users can get help.
+While the entire README actually is their documentation, they do it in a way
+that showcases different aspects of this tool effectively. The `README.md` does
+what it's supposed to do: introduce the tool, and gives users help whenever
+they need it. Right at the top, the stickers are used to grand effect: to link
+to Discord where users can get help.
 
 ## Series
 

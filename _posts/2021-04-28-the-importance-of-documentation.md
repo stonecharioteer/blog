@@ -1,10 +1,9 @@
 ---
-title: The Importance of Documentation
-layout: post
-categories: [documentation, software-development]
-description: "This post introduces a series of posts on How to Write Documentation."
-customexcerpt: "This post introduces a series of posts on How to Write Documentation."
+blogpost: true
+category: Blog
+category: [documentation, software-development]
 ---
+# The Importance of Documentation
 
 Nod if you've come across this before. You find an *amazing* software library
 that you can use for your project, whether at work or one of your many

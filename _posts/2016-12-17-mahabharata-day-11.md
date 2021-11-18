@@ -1,14 +1,16 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 11
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-11.jpg
-description: "Day 11 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 17, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 11](/assets/images/posts/india/mahabharata-day-11.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 11
 
 Oh Suyodhana! Oh, Suyodhana!
+
+![Mahabharata Day 11](/assets/images/posts/india/mahabharata-day-11.jpg)
 
 Why won't you listen to them? When Sanjaya gave you the message sent by
 DharmaRaja, why did you mock him? When Krishna Vasudeva himself descended with

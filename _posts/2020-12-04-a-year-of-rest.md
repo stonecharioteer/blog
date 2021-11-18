@@ -1,9 +1,10 @@
 ---
-layout:    post
-date:      "2020-12-04 18:21:11+05:30"
-title:     A Year Of Rest
-tags:      [hobbies, coding, hearing-loss]
+blogpost: true
+date: Dec 4, 2020
+category: Updates
+tags: hobbies, coding, hearing-loss
 ---
+# A Year Of Rest
 
 I have been taking it easy for a year.
 

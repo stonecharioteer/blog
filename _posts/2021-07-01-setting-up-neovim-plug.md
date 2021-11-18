@@ -1,9 +1,10 @@
 ---
-title: Setting up Neovim with Vim Plug and YouCompleteMe
-layout: post
-categories: [vim]
-description: "In which I describe my shift away from VSCode and how to setup nvim."
+blogpost: true
+date: Jul 1, 2021
+Category: Tutorial
+tags: vim, editors, programming, tech, neovim
 ---
+# Setting up Neovim with Vim Plug and YouCompleteMe
 
 I'm moving to neovim for my primary editing purposes. VSCode has served me
 well, but I'm growing wearing of its growing pains. Some extensions don't work
@@ -100,4 +101,3 @@ Ensure you have the latest `glibc` package installed on your machine.
 
 This post is rather esoteric for a problem that I've faced just now. I thought
 I'd document it because I'm prone to forget how I fixed this.
-

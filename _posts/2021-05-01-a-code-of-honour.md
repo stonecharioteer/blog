@@ -1,11 +1,12 @@
 ---
-title: A Personal Code
-layout: post
-categories: [meta, philosophy]
-description: "My thoughts on a personal code of values."
-customexcerpt: "Do you have a personal code of values? I've been giving this some thought and I feel like I'm at a stage where I'd like to write my code down."
+blogpost: true
+date: May 1, 2021
+category: Blog
+tags: meta, philosophy
 permalink: /personal-code
 ---
+
+# A Personal Code
 
 Do you have a personal code of honour? I've been giving this some thought and I
 feel like I'm at a stage where I'd like to write my code down.

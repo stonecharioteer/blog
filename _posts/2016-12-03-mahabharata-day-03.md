@@ -1,14 +1,17 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 3
-layout: post
-categories: [indian-mythology, bibek-debroy, mahabharata, hampi]
-image: /assets/images/posts/india/mahabharata-day-03.jpg
-description: "Day 3 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata in Hampi."
+blogpost: true
+date: Dec 3, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, bibek-debroy, mahabharata, hampi
+image: 0
 ---
-![Mahabharata Day 3](/assets/images/posts/india/mahabharata-day-03.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 3
 
 This land belongs to the monkeys. It is theirs to frolic in, it is theirs to
 own. We have somehow faltered here, and they know it far better than we.
+
+![Mahabharata Day 3](/assets/images/posts/india/mahabharata-day-03.jpg)
 
 The wind blows my hair into my eyes, it cries out, howling like a dog in the
 distance. Perhaps it really is a dog, perhaps Dharma is watching me read the

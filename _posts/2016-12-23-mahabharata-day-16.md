@@ -1,14 +1,16 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 16
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-16.jpg
-description: "Day 16 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 23, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 16](/assets/images/posts/india/mahabharata-day-16.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 16
 
 Karna.
+
+![Mahabharata Day 16](/assets/images/posts/india/mahabharata-day-16.jpg)
 
 Oh Karna!
 

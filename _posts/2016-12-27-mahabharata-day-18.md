@@ -1,16 +1,18 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 18
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-18.jpg
-description: "Day 18 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 27, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 18](/assets/images/posts/india/mahabharata-day-18.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 18
 
 In the aftermath of the battle and after all the funerals, Krishna instructs
 Dharmaraja to go and seek Bhishma's teachings. On his deathbed, Gangeya recites
 the hundred names of Vishnu, and begins revealing the nature of Dharma.
+
+![Mahabharata Day 18](/assets/images/posts/india/mahabharata-day-18.jpg)
 
 He teaches Yudhishtira how to be a just king, and how to rule over the kingdom.
 He expounds the ways to placate the gods, the way to attain moksha and the

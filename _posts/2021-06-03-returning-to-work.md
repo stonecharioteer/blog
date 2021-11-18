@@ -1,11 +1,10 @@
 ---
-title: Returning to the Craft of Programming
-layout: post
-categories: [life, raspberry-pi, work]
-image: /assets/images/posts/raspberry-pi-clusters.jpeg
-description: "In which I write about my burnout, how I have not been working on side-projects, and how I'm attempting to get back to them."
-customexcerpt: "I have not been working on side projects in a few months. I've been busy with life, family, and health. However, I finally feel ready to return to it."
+blogpost: true
+category: Update
+date: June 3, 2021
+tags: life, raspberry-pi, work
 ---
+# Returning to the Craft of Programming
 
 I have not been working on side projects in a few months. I've been busy with
 life, family, and health. However, I finally feel ready to return to it.

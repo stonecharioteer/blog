@@ -1,15 +1,17 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 10
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-10.jpg
-description: "Day 10 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 16, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 10](/assets/images/posts/india/mahabharata-day-10.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 10
 
 I am not reading these books at my usual speed. I could take the shorter way,
 read at full speed from the comforts of my home, or I could do it this way.
+
+![Mahabharata Day 10](/assets/images/posts/india/mahabharata-day-10.jpg)
 
 From the top of a hill where the rishi Matanga meditated for centuries, where
 he cursed the Vanara king Vali for his vile sin, I read Dhritarashtra's words

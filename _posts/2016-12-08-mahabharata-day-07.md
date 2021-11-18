@@ -1,18 +1,21 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 7
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-07.jpg
-description: "Day 7 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 8, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 7](/assets/images/posts/india/mahabharata-day-07.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 7
 
 As I read the Mahabharata today, a British lady came up to me to ask me about
 Hampi. She was wondering if the heat had something to do with global warming. I
 assured her that it has always been this hot here. It's why Krishnadevaraya
 built so many pushkarinis, and why the landscape is filled with mantapas for
 weary travellers to rest as they walked in the hot sun.
+
+![Mahabharata Day 7](/assets/images/posts/india/mahabharata-day-07.jpg)
+
 
 Indeed, even the trees seem to be growing where travellers can find shade. Even
 the trees want to help travellers rest.

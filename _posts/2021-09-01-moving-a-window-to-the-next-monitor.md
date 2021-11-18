@@ -1,9 +1,10 @@
 ---
-title: "Moving a Window to the Next Monitor on XFCE"
-categories: [linux, manjaro, xfce, x11]
-description: "In which I record how to map a keybinding to move a window to the next/previous monitor."
+blogpost: true
+tags: linux, manjaro, xfce, x11
+category: Tutorial
 ---
 
+# Moving a Window to the Next Monitor on XFCE
 ## Step 1: Install `yay`
 
 [`yay` is a package manager for AUR](https://github.com/Jguer/yay).

@@ -1,10 +1,10 @@
 ---
-title: The Sound of Music
 layout: post
-categories: [hearing-loss]
-description: "This is a post on how I became single-sided deaf, and how I coped with it."
-customexcerpt: "In the August of 2019, I lost all hearing in my left ear in a second. This is how it changed my life."
+date: Dec 11, 2019
+category: Health
+tags: hearing-loss
 ---
+# The Sound of Music
 
 I don't know the first thing about music.
 

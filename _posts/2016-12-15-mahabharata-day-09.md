@@ -1,15 +1,17 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 9
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-09.jpg
-description: "Day 9 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 15, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 9](/assets/images/posts/india/mahabharata-day-09.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 9
 
 This rock that I sit on is a picnic spot, and it suits the purpose really. Many
 locals come here, and their kids are curious about what I'm doing here.
+
+![Mahabharata Day 9](/assets/images/posts/india/mahabharata-day-09.jpg)
 
 They try to talk to me in broken English, and I smile and reply in Kannada.
 They are shocked. Somehow, the hair and the beard have convinced them that I'm

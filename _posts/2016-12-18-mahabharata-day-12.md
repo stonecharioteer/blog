@@ -1,14 +1,16 @@
 ---
-title: Reading the Mahabharata by the Tungabhadra - Day 12
-layout: post
-categories: [indian-mythology, reading, bibek-debroy, books, hampi]
-image: /assets/images/posts/india/mahabharata-day-12.jpg
-description: "Day 12 of my journey of reading Bibek Debroy's 10-volume translation of the Mahabharata by the Tungabhadra."
+blogpost: true
+date: Dec 18, 2016
+location: Hampi, Karnataka, India
+category: Reading
+tags: indian-mythology, reading, bibek-debroy, books, hampi
+image: 0
 ---
-
-![Mahabharata Day 12](/assets/images/posts/india/mahabharata-day-12.jpg)
+# Reading the Mahabharata by the Tungabhadra - Day 12
 
 Bhishma Parva.
+
+![Mahabharata Day 12](/assets/images/posts/india/mahabharata-day-12.jpg)
 
 Here it all begins. The story of the downfall of the Kuru Dynasty, the downfall
 of the sons of Dhritarashtra.  As I sit atop the mountain where Hanuman, the
