@@ -1,9 +1,10 @@
 ---
-layout:    post
-title:     "Authorization in Python using Oso"
-categories: ['learning', 'authorization', 'web-development', 'python']
+blogpost: true
+category: Tutorial
+tags: learning, authorization, web-development, python, oso
 permalink: '/oso-authz'
 ---
+# Authorization in Python using Oso
 
 ## Outline
 
