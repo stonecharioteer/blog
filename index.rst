@@ -3,11 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Vinay Keerthi's Blog!
+Stonecharioteer's Blog
 ==================================================
 
-Hello World! Find more about me here: :ref:`about`
-
+Hello there! Welcome to my blog where I write about tech, books I love to read,
+and life in general.
 
 Here is a list of most recent posts:
 
@@ -25,5 +25,7 @@ Here is a list of most recent posts:
 .. toctree::
    :hidden:
 
-   about.rst
+   Stonecharioteer's Blog<index>
+   about.md
+   Values<_posts/2021-05-01-a-code-of-honour.md>
 
