@@ -1,0 +1,919 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta property="og:title" content="Empathy in Tech" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="_posts/2021-07-23-empathy-in-tech.html" />
+  <meta property="og:description" content="I’ve been meaning to write about empathy in tech for a long time. Oddly, this is a topic that I’m the most hesitant to write about, for personal reasons. I’m not the most empathetic person, and I h..." />
+  
+    <title>Empathy in Tech &#8212; Stonecharioteer&#39;s Blog</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../blog/atom.xml"
+  title="Stonecharioteer's Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../">
+  <img src="../../_static/stonecharioteer-banner.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../">
+  Stonecharioteer's Blog
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/">
+  About Me
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../2021-05-01-a-code-of-honour/">
+  Values
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/stonecharioteer/" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/stonecharioteer" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">  
+<h2>
+   <i class="fa fa-calendar"></i>
+  25 July 2021 
+</h2>
+
+<ul>
+      
+<li id="category">
+  <span
+    ><i class="fa-fw fa fa-folder-open"></i></span
+  >
+   
+  <a href="../../blog/category/thoughts/">Thoughts</a>  
+</li>
+ 
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../../blog/tag/meta/">meta</a>   
+  <a href="../../blog/tag/technology/">technology</a>   
+  <a href="../../blog/tag/career/">career</a>   
+  <a href="../../blog/tag/empathy/">empathy</a>  
+</li>
+ 
+<li id="comments">
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = "stonecharioteer"; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  <i class="fa-fw fa fa-comments"></i>
+  <a
+    href="#disqus_thread"
+    data-disqus-identifier="/_posts/2021-07-23-empathy-in-tech/"
+  >
+    </a
+  >
+</li>
+
+</ul>
+
+<h3>
+  <a href="../../blog/">Recent Posts</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2021-08-24-merkle-science/"
+      >24 August - I joined Merkle Science as an Architect</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021-07-01-setting-up-neovim-plug/"
+      >01 July - Setting up Neovim with Vim Plug and YouCompleteMe</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021-06-28-a-weekend-with-postgresql/"
+      >28 June - A Weekend With Postgresql</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021-06-03-returning-to-work/"
+      >03 June - Returning to the Craft of Programming</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021-05-01-a-code-of-honour/"
+      >01 May - A Personal Code</a
+    >
+  </li>
+  
+</ul>
+
+<h3><a href="../../blog/tag/">Tags</a></h3>
+<style type="text/css">
+  ul.ablog-cloud {
+    list-style: none;
+    overflow: auto;
+  }
+  ul.ablog-cloud li {
+    float: left;
+    height: 20pt;
+    line-height: 18pt;
+    margin-right: 5px;
+  }
+  ul.ablog-cloud a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  li.ablog-cloud-1 {
+    font-size: 80%;
+  }
+  li.ablog-cloud-2 {
+    font-size: 95%;
+  }
+  li.ablog-cloud-3 {
+    font-size: 110%;
+  }
+  li.ablog-cloud-4 {
+    font-size: 125%;
+  }
+  li.ablog-cloud-5 {
+    font-size: 140%;
+  }
+</style>
+<ul class="ablog-cloud">
+           
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/bangpypers/">bangpypers</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../blog/tag/bibek-debroy/">bibek-debroy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/books/">books</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/career/">career</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/coding/">coding</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/comics/">comics</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/computer-science/">computer-science</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/conda/">conda</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/conferences/">conferences</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/courses/">courses</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/covid/">covid</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/databases/">databases</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/discord/">discord</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/documentation/">documentation</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/editors/">editors</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/empathy/">empathy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/flask/">flask</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/flipkart/">flipkart</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/gaming/">gaming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/hampi/">hampi</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/health/">health</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/hearing-loss/">hearing-loss</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/hobbies/">hobbies</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/homelab/">homelab</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/indian-mythology/">indian-mythology</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/iot/">iot</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/japanese/">japanese</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/jekyll/">jekyll</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/kubernetes/">kubernetes</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/learning/">learning</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/letters/">letters</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/life/">life</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/linux/">linux</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/livecast/">livecast</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/mahabharata/">mahabharata</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/meetup/">meetup</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/meta/">meta</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/micropython/">micropython</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/neovim/">neovim</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/notes/">notes</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/philosophy/">philosophy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/pip/">pip</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/podcasts/">podcasts</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/programming/">programming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/pycon/">pycon</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../blog/tag/python/">python</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/raspberry-pi/">raspberry-pi</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/reading/">reading</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/rust/">rust</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/screencast/">screencast</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/security/">security</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/shelfie/">shelfie</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/snhl/">snhl</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/talks/">talks</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tech/">tech</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/technology/">technology</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/thoughts/">thoughts</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/til/">til</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tiny/">tiny</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tutorial/">tutorial</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/updates/">updates</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/video/">video</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/videos/">videos</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/vim/">vim</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/webdev/">webdev</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/wfh/">wfh</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/work/">work</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/writing/">writing</a>
+  </li>
+        
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/zen/">zen</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../../blog/category/">Categories</a>
+</h3>
+<ul>
+     
+  <li>
+    <a href="../../blog/category/blog/">Blog (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/how-to/">How To (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/journal/">Journal (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/learning/">Learning (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/life/">Life (3)</a>
+  </li>
+      
+  <li>
+    <a href="../../blog/category/reading/">Reading (22)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/review/">Review (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/show-and-tell/">Show and Tell (6)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/talks/">Talks (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/thoughts/">Thoughts (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/tips-and-tricks/">Tips and Tricks (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/tutorial/">Tutorial (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/update/">Update (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/updates/">Updates (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/writing/">Writing (1)</a>
+  </li>
+     
+</ul>
+
+<h3>
+  <a href="../../blog/archive/">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../blog/2021/">2021 (9)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2020/">2020 (18)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2019/">2019 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2018/">2018 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2017/">2017 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2016/">2016 (20)</a>
+  </li>
+   
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="empathy-in-tech">
+<h1>Empathy in Tech<a class="headerlink" href="#empathy-in-tech" title="Permalink to this headline">¶</a></h1>
+<p>I’ve been meaning to write about empathy in tech for a long time. Oddly, this
+is a topic that I’m the most hesitant to write about, for personal reasons.
+I’m not the most empathetic person, and I have trouble understanding how to
+improve the things I say to my friends. However, the topic I’m talking about
+has more to do with teaching than it does with personal relationships outside
+of tech.</p>
+<p>Ask yourself this. Who would you rather work with: a developer who does his
+job, isn’t passionate about what he does but minds his business, or one who
+is super passionate, is knowledgeable, but tries to micromanage every pull
+request. Insofar as to say every pull request shall have only one commit,
+and if you do not conform, then you <em>are not a developer</em>?</p>
+<p>If you had to choose between two mentors, would you pick one who gives you
+the bare minimum directive or the one who pretends he’s a diva and that you
+should mimic everything he does, from the choice of his editor to the tools
+he builds without asking anyone what features they want?</p>
+<p>If this post seems rather personal, it is. I’ve met people like this before.
+Oddly enough, I have been this person before. I have friends who refuse to
+ask me for help because I used to be condescending about their lack of
+knowledge, and I’ve been told that I’m not a good teacher by people close
+to me.</p>
+<p>Why does that affect me?</p>
+<p>I want to teach. I spent a long time getting where I am, and teaching is how
+I want to do my bit in helping others. However, I took some time to realize
+that I needed to be more empathic to others.</p>
+<p>I had to say these words to myself.</p>
+<ul class="simple">
+<li><p>Someone who uses another operating system is not a lesser developer.</p></li>
+<li><p>Someone who learns in another way that you wouldn’t usually recommend isn’t
+less smart than me.</p></li>
+<li><p>Someone who uses the mouse rather than just the keyboard isn’t inferior to
+me.</p></li>
+<li><p>Someone who types slower than me and takes their time isn’t any less smart.</p></li>
+<li><p>Someone who takes their time to learn things isn’t inferior.</p></li>
+</ul>
+<p>Do these sentences shock you? They should. These are things that I have thought
+early in my career. It took me a long time to learn how to teach others with
+patience. I still have a lot to work on, and I am sure that everyone does.</p>
+<p>If you want to teach someone else, remember that it is an act of acceptance.
+And it isn’t <em>they</em> who alone need to accept you, but <em>you</em> who need to accept
+<em>them</em> and the way that they learn things.</p>
+<p>I learn through books, and used to wonder why people used videos to learn.
+However, I have since recognized the worth of visual learning and how some
+might prefer it to lengthy technical articles or books. At times, the videos
+are <em>better</em> for gaining a broad understanding of a topic in a shorter span
+of time.</p>
+<p>Some like to read physical books to learn. I still consider this a waste since
+tech books expire so quickly, but I understand that reading on a large tablet
+isn’t for everyone. The books might be cheaper in the short run. Especially
+if you find used copies.</p>
+<p><em>However</em>, I tell myself that the reasons for someone’s choice do not matter.
+They have the right to <em>choose</em> how and what they learn, or if they even
+want to learn at all. Everyone has a different reason for learning. Some want
+to provide for their family, and tech is more attractive than most engineering
+fields. It pays a <em>lot</em> better.</p>
+<p>Yet, it is hard. Empathy is really hard, because you need to not only be
+patient, but you need to also understand where someone is coming from. That
+involves spending more time with them and their approach to things. A thing I
+tell my friends who want to mimic my journey into tech is this.</p>
+<p>What works for one person will not work for you.</p>
+<p>Sure, watching people who are lucky enough to be passionate about their jobs
+is really enthralling. It burns inside, wanting to be a part of such fire.
+However, it is also <em>extremely draining</em>. You might not want that.</p>
+<p>An architect I once knew was someone I wouldn’t recommend learning from. I am
+adamant about this belief constantly. This person was a bully, and he would
+chide people telling them that they are “not a developer” because they didn’t
+use his preferred editor, or his preferred shell. He’d tell college graduates
+that they were not developers because they didn’t know how to use <code class="docutils literal notranslate"><span class="pre">git</span></code>. And
+he constantly made others around him feel that they either had to conform to
+his whims, or that they wouldn’t be given any encouragement from the
+management.</p>
+<p>The funny thing is, he never really said or did these things to those who
+could hold their own against him. These were things he said to those who were
+non-confrontational. He said these things to people who couldn’t fight back.</p>
+<p>The meek.</p>
+<p>It’s weird that the Bible says “Blessed are the Meek for they shall inherit the
+Earth”. I wonder about that sometimes.</p>
+<p>Where does this lack of empathy stem from? I don’t know what drove him per se,
+but I know something that frightens me.</p>
+<p>Everyone is in tech for different reasons, and the least you can do is be nice
+to the person next to you. Physically or virtually.</p>
+<p>If I didn’t have friends who cared enough to tell me to my face that I was
+being condescending or didn’t have empathy, I would have been <em>exactly</em> like
+him. And the funniest thing was that I almost was.</p>
+<p>I pride myself in being someone who prefers the terminal. Every time I conduct
+a screencast or a workshop, someone or the other invariably asks for my
+dotfiles. I used to find that a matter of pride. Lately though, I’ve been
+considering flushing my settings just before a presentation so that it doesn’t
+detract from the message of the presentation.</p>
+<p>However, I used to wonder why <em>other</em> developers didn’t use the command line
+interface as much as I did. I <em>love</em> the terminal. <code class="docutils literal notranslate"><span class="pre">neovim</span></code> and <code class="docutils literal notranslate"><span class="pre">tmux</span></code> fuel
+my workflow constantly. I’ve tried VS Code and Sublime Text and I’ve kept
+returning to the terminal constantly. I use Linux over Mac or Windows, and
+almost always prefer a Linux laptop for work. My new workplace agreed to give
+me a Linux because I asked them nicely. I feel crippled in other platforms.</p>
+<p>And here’s another funny thing. It doesn’t matter. My choices don’t matter
+really. Tech is all about plugging stuff together in one way or the other.
+The only part of tech that’s constantly interesting and omnipresent are the
+people. If you’re not nice, what are you? Certainly not a developer by any
+means. You’re just a bully, shouting into the void. People aren’t scared of you
+they’re just annoyed at having to deal with you.</p>
+<p>If I went down that path, I wouldn’t have been able to mentor some excellent
+graduates and interns along the way. I wouldn’t have been able to think with
+clarity, and I most certainly wouldn’t have been able to teach anyone.</p>
+<p>I think I’ve been able to do some of those things. And I know for certain that
+I need to improve how I do the rest.</p>
+</section>
+
+<div class="section">
+     
+<div class="section">
+  <span style="float: left">
+     
+    <a href="../2021-07-01-setting-up-neovim-plug/">
+      <i class="fa fa-arrow-circle-left"></i> Setting up Neovim with Vim Plug and YouCompleteMe
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+     
+    <a href="../2021-08-24-merkle-science/">
+      I joined Merkle Science as an Architect <i
+        class="fa fa-arrow-circle-right"
+      ></i
+      >
+    </a>
+    
+  </span>
+</div>
+  
+  <div class="section">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = "stonecharioteer";
+      var disqus_identifier = "/_posts/2021-07-23-empathy-in-tech/";
+      var disqus_title = "Empathy in Tech";
+      var disqus_url = "https://stonecharioteer.com/_posts/2021-07-23-empathy-in-tech";
+
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+    <a href="https://disqus.com" class="dsq-brlink"
+      >comments powered by <span class="logo-disqus">Disqus</span></a
+    >
+  </div>
+  
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Vinay Keerthi.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

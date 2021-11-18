@@ -1,0 +1,14 @@
+---
+blogpost: true
+date: July 14, 2020
+category: Journal
+tags: updates
+---
+
+# Today I Learned Journal
+
+I started a journal to maintain a list of things I am learning daily. This
+is mostly to just keep me on my toes, but also so that I can record everything
+I learn daily.
+
+[Access it here.](/til.html)

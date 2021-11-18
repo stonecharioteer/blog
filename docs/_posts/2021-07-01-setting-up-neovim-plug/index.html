@@ -1,0 +1,913 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta property="og:title" content="Setting up Neovim with Vim Plug and YouCompleteMe" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="_posts/2021-07-01-setting-up-neovim-plug.html" />
+  <meta property="og:description" content="I’m moving to neovim for my primary editing purposes. VSCode has served me well, but I’m growing wearing of its growing pains. Some extensions don’t work well, and many things seem broken of late. ..." />
+  
+    <title>Setting up Neovim with Vim Plug and YouCompleteMe &#8212; Stonecharioteer&#39;s Blog</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../blog/atom.xml"
+  title="Stonecharioteer's Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../">
+  <img src="../../_static/stonecharioteer-banner.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../">
+  Stonecharioteer's Blog
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/">
+  About Me
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../2021-05-01-a-code-of-honour/">
+  Values
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/stonecharioteer/" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/stonecharioteer" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">  
+<h2>
+   <i class="fa fa-calendar"></i>
+  01 July 2021 
+</h2>
+
+<ul>
+       
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../../blog/tag/vim/">vim</a>   
+  <a href="../../blog/tag/editors/">editors</a>   
+  <a href="../../blog/tag/programming/">programming</a>   
+  <a href="../../blog/tag/tech/">tech</a>   
+  <a href="../../blog/tag/neovim/">neovim</a>  
+</li>
+ 
+<li id="comments">
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = "stonecharioteer"; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  <i class="fa-fw fa fa-comments"></i>
+  <a
+    href="#disqus_thread"
+    data-disqus-identifier="/_posts/2021-07-01-setting-up-neovim-plug/"
+  >
+    </a
+  >
+</li>
+
+</ul>
+
+<h3>
+  <a href="../../blog/">Recent Posts</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2021-08-24-merkle-science/"
+      >24 August - I joined Merkle Science as an Architect</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021-07-23-empathy-in-tech/"
+      >25 July - Empathy in Tech</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021-06-28-a-weekend-with-postgresql/"
+      >28 June - A Weekend With Postgresql</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021-06-03-returning-to-work/"
+      >03 June - Returning to the Craft of Programming</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021-05-01-a-code-of-honour/"
+      >01 May - A Personal Code</a
+    >
+  </li>
+  
+</ul>
+
+<h3><a href="../../blog/tag/">Tags</a></h3>
+<style type="text/css">
+  ul.ablog-cloud {
+    list-style: none;
+    overflow: auto;
+  }
+  ul.ablog-cloud li {
+    float: left;
+    height: 20pt;
+    line-height: 18pt;
+    margin-right: 5px;
+  }
+  ul.ablog-cloud a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  li.ablog-cloud-1 {
+    font-size: 80%;
+  }
+  li.ablog-cloud-2 {
+    font-size: 95%;
+  }
+  li.ablog-cloud-3 {
+    font-size: 110%;
+  }
+  li.ablog-cloud-4 {
+    font-size: 125%;
+  }
+  li.ablog-cloud-5 {
+    font-size: 140%;
+  }
+</style>
+<ul class="ablog-cloud">
+           
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/bangpypers/">bangpypers</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../blog/tag/bibek-debroy/">bibek-debroy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/books/">books</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/career/">career</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/coding/">coding</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/comics/">comics</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/computer-science/">computer-science</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/conda/">conda</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/conferences/">conferences</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/courses/">courses</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/covid/">covid</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/databases/">databases</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/discord/">discord</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/documentation/">documentation</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/editors/">editors</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/empathy/">empathy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/flask/">flask</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/flipkart/">flipkart</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/gaming/">gaming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/hampi/">hampi</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/health/">health</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/hearing-loss/">hearing-loss</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/hobbies/">hobbies</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/homelab/">homelab</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/indian-mythology/">indian-mythology</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/iot/">iot</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/japanese/">japanese</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/jekyll/">jekyll</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/kubernetes/">kubernetes</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/learning/">learning</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/letters/">letters</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/life/">life</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/linux/">linux</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/livecast/">livecast</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/mahabharata/">mahabharata</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/meetup/">meetup</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/meta/">meta</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/micropython/">micropython</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/neovim/">neovim</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/notes/">notes</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/philosophy/">philosophy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/pip/">pip</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/podcasts/">podcasts</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/programming/">programming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/pycon/">pycon</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../blog/tag/python/">python</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/raspberry-pi/">raspberry-pi</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/reading/">reading</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/rust/">rust</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/screencast/">screencast</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/security/">security</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/shelfie/">shelfie</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/snhl/">snhl</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/talks/">talks</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tech/">tech</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/technology/">technology</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/thoughts/">thoughts</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/til/">til</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tiny/">tiny</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tutorial/">tutorial</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/updates/">updates</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/video/">video</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/videos/">videos</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/vim/">vim</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/webdev/">webdev</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/wfh/">wfh</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/work/">work</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/writing/">writing</a>
+  </li>
+        
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/zen/">zen</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../../blog/category/">Categories</a>
+</h3>
+<ul>
+     
+  <li>
+    <a href="../../blog/category/blog/">Blog (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/how-to/">How To (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/journal/">Journal (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/learning/">Learning (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/life/">Life (3)</a>
+  </li>
+      
+  <li>
+    <a href="../../blog/category/reading/">Reading (22)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/review/">Review (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/show-and-tell/">Show and Tell (6)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/talks/">Talks (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/thoughts/">Thoughts (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/tips-and-tricks/">Tips and Tricks (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/tutorial/">Tutorial (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/update/">Update (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/updates/">Updates (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/writing/">Writing (1)</a>
+  </li>
+     
+</ul>
+
+<h3>
+  <a href="../../blog/archive/">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../blog/2021/">2021 (9)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2020/">2020 (18)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2019/">2019 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2018/">2018 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2017/">2017 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2016/">2016 (20)</a>
+  </li>
+   
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-neovim">
+   Installing Neovim
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration">
+   Configuration
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-vim-plug">
+   Installing Vim Plug
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-youcompleteme">
+   Installing YouCompleteMe
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#note">
+   Note
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="setting-up-neovim-with-vim-plug-and-youcompleteme">
+<h1>Setting up Neovim with Vim Plug and YouCompleteMe<a class="headerlink" href="#setting-up-neovim-with-vim-plug-and-youcompleteme" title="Permalink to this headline">¶</a></h1>
+<p>I’m moving to neovim for my primary editing purposes. VSCode has served me
+well, but I’m growing wearing of its growing pains. Some extensions don’t work
+well, and many things seem broken of late. Besides, I don’t really use the IDE
+features all that much.</p>
+<p>I’ve been using neovim for quite some time, and I like it. I grok the vim
+movement keys, and I love the modes. Vim in and of itself seems to have
+problems that I didn’t delve into.</p>
+<p>I don’t like using others’ configs. I’ve tried doing that, and that really
+didn’t work for me. I am also very pedantic about messing with global python
+installations, since some of the plugins usually recommend installing
+packages willy-nilly in the global python install.</p>
+<section id="installing-neovim">
+<h2>Installing Neovim<a class="headerlink" href="#installing-neovim" title="Permalink to this headline">¶</a></h2>
+<p>I’ve downloaded the latest development version of neovim from the website.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo mv ~/Downloads/nvim.AppImage /usr/bin/nvim
+</pre></div>
+</div>
+</section>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>My dotfiles, as always, are
+<a class="reference external" href="https://github.com/stonecharioteer.com/jarl">here</a>.
+The README.md documents everything therein, but I’m taking the time here to
+talk about a particular problem I had personally when setting up YouCompleteMe.</p>
+</section>
+<section id="installing-vim-plug">
+<h2>Installing Vim Plug<a class="headerlink" href="#installing-vim-plug" title="Permalink to this headline">¶</a></h2>
+<p>I use <a class="reference external" href="https://github.com/junegunn/vim-plug">vim-plug</a> as my package manager of
+choice.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sh -c <span class="s1">&#39;curl -fLo &quot;${XDG_DATA_HOME:-$HOME/.local/share}&quot;/nvim/site/autoload/plug.vim --create-dirs \</span>
+<span class="s1">       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&#39;</span>
+</pre></div>
+</div>
+<p>The Plugins I’ve chosen are listed in the README of the github repository.</p>
+</section>
+<section id="installing-youcompleteme">
+<h2>Installing YouCompleteMe<a class="headerlink" href="#installing-youcompleteme" title="Permalink to this headline">¶</a></h2>
+<p>These instructions are valid for Manjaro Linux running the 5.13.0-AMD-znver2
+kernel, however they shouldn’t vary for any version of Linux.</p>
+<p>While most tutorials instruct you to install YouCompleteMe using the system
+installation of Python, <em>do</em> <strong>not</strong> <em><strong>do</strong></em> that. Instead, create a virtual
+environment or a <em>conda</em> environment. In fact, you’ll see exactly why I
+recommend using a conda environment.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n nvim <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
+conda activate nvim
+pip install pynvim neovim
+</pre></div>
+</div>
+<p>After creating this environment, edit the <code class="docutils literal notranslate"><span class="pre">init.vim</span></code> file and ensure that you
+change the path to reflect where the <code class="docutils literal notranslate"><span class="pre">python</span></code> command in your new environment
+resides.</p>
+<p>You can check that by typing <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">python</span></code> while you have the environment
+activated.</p>
+<div class="highlight-vim notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="k">g</span>:python3_host_prog <span class="p">=</span> <span class="s1">&#39;/home/stonecharioteer/code/tools/miniconda3/envs/nvim/bin/python3&#39;</span>
+</pre></div>
+</div>
+<p>This tells your neovim installation where to expect the python3 installation.</p>
+<p>Make sure you activate your Vim Plug hook <em>after</em> setting this value.</p>
+<p>After you run <code class="docutils literal notranslate"><span class="pre">:PlugInstall</span></code>, exit nvim and navigate to the <code class="docutils literal notranslate"><span class="pre">~/.local/share/nvim/plugged/YouCompleteMe</span></code> folder.</p>
+<p>Here, with your python3 environment activated, run <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">install.py</span> <span class="pre">--all</span></code>.</p>
+<p>Then, you should start nvim to <em>check</em> if YouCompleteMe reports any errors.
+You can check the STDERR logs using <code class="docutils literal notranslate"><span class="pre">:YcmToggleLogs</span></code> and then pressing <code class="docutils literal notranslate"><span class="pre">2</span></code>.</p>
+<p>You will notice that there is a problem with <code class="docutils literal notranslate"><span class="pre">GLIBCXX_3.4.29</span></code>, which YCM reports
+is missing from the <code class="docutils literal notranslate"><span class="pre">libstdc++.so.6</span></code> file in your Conda environment’s <code class="docutils literal notranslate"><span class="pre">lib</span></code>
+folder.</p>
+<p>This is very easily remediable.</p>
+<p>All you need to is delete the file that exists in your lib folder, and instead
+symlink the system’s <code class="docutils literal notranslate"><span class="pre">libstdc++.so.6</span></code> file into this folder. This file is usually
+in <code class="docutils literal notranslate"><span class="pre">/usr/lib64</span></code>.</p>
+<p>Ensure you have the latest <code class="docutils literal notranslate"><span class="pre">glibc</span></code> package installed on your machine.</p>
+</section>
+<section id="note">
+<h2>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h2>
+<p>This post is rather esoteric for a problem that I’ve faced just now. I thought
+I’d document it because I’m prone to forget how I fixed this.</p>
+</section>
+</section>
+
+<div class="section">
+     
+<div class="section">
+  <span style="float: left">
+     
+    <a href="../2021-06-28-a-weekend-with-postgresql/">
+      <i class="fa fa-arrow-circle-left"></i> A Weekend With Postgresql
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+     
+    <a href="../2021-07-23-empathy-in-tech/">
+      Empathy in Tech <i
+        class="fa fa-arrow-circle-right"
+      ></i
+      >
+    </a>
+    
+  </span>
+</div>
+  
+  <div class="section">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = "stonecharioteer";
+      var disqus_identifier = "/_posts/2021-07-01-setting-up-neovim-plug/";
+      var disqus_title = "Setting up Neovim with Vim Plug and YouCompleteMe";
+      var disqus_url = "https://stonecharioteer.com/_posts/2021-07-01-setting-up-neovim-plug";
+
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+    <a href="https://disqus.com" class="dsq-brlink"
+      >comments powered by <span class="logo-disqus">Disqus</span></a
+    >
+  </div>
+  
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Vinay Keerthi.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

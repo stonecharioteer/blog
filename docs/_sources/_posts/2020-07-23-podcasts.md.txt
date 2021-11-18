@@ -1,0 +1,14 @@
+---
+blogpost: true
+date: July 23, 2020
+category: Journal
+tags: tech, podcasts, learning
+---
+
+# A List of Podcasts I Follow
+
+I didn't listen to podcasts for a large part of my professional life. My friend Najeem introduced me to Talk Python, which was
+the first podcast I have ever listened to and enjoyed. Since then, I have found a lot of podcasts that I follow, and wanted
+to keep track of the episodes I love, as well as podcasts I love.
+
+[Since this is a living journal, you can find it here.](/tech-podcasts-i-love.html)

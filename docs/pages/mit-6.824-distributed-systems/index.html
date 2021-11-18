@@ -1,0 +1,1269 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta property="og:title" content="Links" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="pages/mit-6.824-distributed-systems.html" />
+  <meta property="og:description" content="table of contents{:toc}. YouTube Playlist, Course Webpage, Course Schedule, Course Labs: 1 - MapReduce| 2 - Raft| 3 - Fault-tolerant Key/Value Service| 4 - Sharded Key/Value Service. Motivation: I ..." />
+  
+    <title>Links &#8212; Stonecharioteer&#39;s Blog</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../blog/atom.xml"
+  title="Stonecharioteer's Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../">
+  <img src="../../_static/stonecharioteer-banner.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../">
+  Stonecharioteer's Blog
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/">
+  About Me
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../_posts/2021-05-01-a-code-of-honour/">
+  Values
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/stonecharioteer/" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/stonecharioteer" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+<h3>
+  <a href="../../blog/">Recent Posts</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../_posts/2021-08-24-merkle-science/"
+      >24 August - I joined Merkle Science as an Architect</a
+    >
+  </li>
+  
+  <li>
+    <a href="../../_posts/2021-07-23-empathy-in-tech/"
+      >25 July - Empathy in Tech</a
+    >
+  </li>
+  
+  <li>
+    <a href="../../_posts/2021-07-01-setting-up-neovim-plug/"
+      >01 July - Setting up Neovim with Vim Plug and YouCompleteMe</a
+    >
+  </li>
+  
+  <li>
+    <a href="../../_posts/2021-06-28-a-weekend-with-postgresql/"
+      >28 June - A Weekend With Postgresql</a
+    >
+  </li>
+  
+  <li>
+    <a href="../../_posts/2021-06-03-returning-to-work/"
+      >03 June - Returning to the Craft of Programming</a
+    >
+  </li>
+  
+</ul>
+
+<h3><a href="../../blog/tag/">Tags</a></h3>
+<style type="text/css">
+  ul.ablog-cloud {
+    list-style: none;
+    overflow: auto;
+  }
+  ul.ablog-cloud li {
+    float: left;
+    height: 20pt;
+    line-height: 18pt;
+    margin-right: 5px;
+  }
+  ul.ablog-cloud a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  li.ablog-cloud-1 {
+    font-size: 80%;
+  }
+  li.ablog-cloud-2 {
+    font-size: 95%;
+  }
+  li.ablog-cloud-3 {
+    font-size: 110%;
+  }
+  li.ablog-cloud-4 {
+    font-size: 125%;
+  }
+  li.ablog-cloud-5 {
+    font-size: 140%;
+  }
+</style>
+<ul class="ablog-cloud">
+           
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/bangpypers/">bangpypers</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../blog/tag/bibek-debroy/">bibek-debroy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/books/">books</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/career/">career</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/coding/">coding</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/comics/">comics</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/computer-science/">computer-science</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/conda/">conda</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/conferences/">conferences</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/courses/">courses</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/covid/">covid</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/databases/">databases</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/discord/">discord</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/documentation/">documentation</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/editors/">editors</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/empathy/">empathy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/flask/">flask</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/flipkart/">flipkart</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/gaming/">gaming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/hampi/">hampi</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/health/">health</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/hearing-loss/">hearing-loss</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/hobbies/">hobbies</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/homelab/">homelab</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/indian-mythology/">indian-mythology</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/iot/">iot</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/japanese/">japanese</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/jekyll/">jekyll</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/kubernetes/">kubernetes</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/learning/">learning</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/letters/">letters</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/life/">life</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/linux/">linux</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/livecast/">livecast</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/mahabharata/">mahabharata</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/meetup/">meetup</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/meta/">meta</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/micropython/">micropython</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/neovim/">neovim</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/notes/">notes</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/philosophy/">philosophy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/pip/">pip</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/podcasts/">podcasts</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/programming/">programming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/pycon/">pycon</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../blog/tag/python/">python</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/raspberry-pi/">raspberry-pi</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/reading/">reading</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/rust/">rust</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/screencast/">screencast</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/security/">security</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/shelfie/">shelfie</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/snhl/">snhl</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/talks/">talks</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tech/">tech</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/technology/">technology</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/thoughts/">thoughts</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/til/">til</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tiny/">tiny</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tutorial/">tutorial</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/updates/">updates</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/video/">video</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/videos/">videos</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/vim/">vim</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/webdev/">webdev</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/wfh/">wfh</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/work/">work</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/writing/">writing</a>
+  </li>
+        
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/zen/">zen</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../../blog/category/">Categories</a>
+</h3>
+<ul>
+     
+  <li>
+    <a href="../../blog/category/blog/">Blog (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/how-to/">How To (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/journal/">Journal (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/learning/">Learning (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/life/">Life (3)</a>
+  </li>
+      
+  <li>
+    <a href="../../blog/category/reading/">Reading (22)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/review/">Review (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/show-and-tell/">Show and Tell (6)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/talks/">Talks (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/thoughts/">Thoughts (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/tips-and-tricks/">Tips and Tricks (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/tutorial/">Tutorial (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/update/">Update (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/updates/">Updates (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/writing/">Writing (1)</a>
+  </li>
+     
+</ul>
+
+<h3>
+  <a href="../../blog/archive/">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../blog/2021/">2021 (9)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2020/">2020 (18)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2019/">2019 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2018/">2018 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2017/">2017 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2016/">2016 (20)</a>
+  </li>
+   
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Links
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#motivation">
+   Motivation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#daily-notes">
+   Daily Notes
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#watching-lecture-1-introduction">
+     2020-07-07 Watching Lecture 1: Introduction
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mapreduce">
+       MapReduce
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#end-thoughts">
+       End Thoughts
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-the-tests-for-the-labs">
+     Getting the Tests for the Labs
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#watching-lecture-2-rpc-and-threads">
+     2020-07-08 Watching Lecture 2: RPC and Threads
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#golang">
+       Golang!
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#observations-on-golang">
+       Observations on Golang
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-golang-tutorial">
+       The Golang Tutorial
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#observations-as-a-pythonista">
+         Observations as a Pythonista:
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       End Thoughts
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#continuing-the-golang-journey">
+     2020-07-12 Continuing the Golang Journey
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#looney-loopy-looping">
+       Looney Loopy Looping
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#conditionals">
+       Conditionals
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-tour-continues">
+     2020-07-29 The Tour Continues!
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <ul class="simple">
+<li><p>table of contents
+{:toc}</p></li>
+</ul>
+<section id="links">
+<h1>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h1>
+<ol class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/playlist?list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB">YouTube Playlist</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=cQP8WApzIQQ&amp;list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB">Course Webpage</a></p></li>
+<li><p><a class="reference external" href="https://pdos.csail.mit.edu/6.824/schedule.html">Course Schedule</a></p></li>
+<li><p>Course Labs: <a class="reference external" href="https://pdos.csail.mit.edu/6.824/labs/lab-mr.html">1 - MapReduce</a> | <a class="reference external" href="https://pdos.csail.mit.edu/6.824/labs/lab-raft.html">2 - Raft</a> | <a class="reference external" href="https://pdos.csail.mit.edu/6.824/labs/lab-kvraft.html">3 - Fault-tolerant Key/Value Service</a> | <a class="reference external" href="https://pdos.csail.mit.edu/6.824/labs/lab-kvraft.html">4 - Sharded Key/Value Service</a></p></li>
+</ol>
+</section>
+<section id="motivation">
+<h1>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h1>
+<p>I discovered this course through a comment on HN. I am generally skeptical
+about most academic courses on YouTube, but this proved to be really
+impressive.</p>
+<p>I would recommend having a look at the lab
+exercises. <em>You get to write a <strong>sharded</strong> K/V store!</em></p>
+<p>I cannot stress this enough. If I am able to <strong>that</strong> by the time
+I am done, I will be elated.</p>
+<p>On a note, I have not taken any of the apparently required courses
+that are listed on the course website, there are no good recordings of <a class="reference external" href="http://web.mit.edu/6.033/www">6.033</a> or <a class="reference external" href="https://pdos.csail.mit.edu/6.828/2019/">6.828 - Operating Systems Engineering</a></p>
+</section>
+<section id="daily-notes">
+<h1>Daily Notes<a class="headerlink" href="#daily-notes" title="Permalink to this headline">¶</a></h1>
+<section id="watching-lecture-1-introduction">
+<h2>2020-07-07 Watching Lecture 1: Introduction<a class="headerlink" href="#watching-lecture-1-introduction" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=cQP8WApzIQQ&amp;list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB">Link to the video</a></p>
+<p>I have never taken study notes like this before, I am typing as I go through
+this course. This lecture seems to be focussed on MapReduce. I have <em>never</em>
+used MapReduce, and I have never really understood what it is and how something
+like Hadoop works. I hope to understand it better with this. MapReduce, I mean,
+not Hadoop.</p>
+<section id="mapreduce">
+<h3>MapReduce<a class="headerlink" href="#mapreduce" title="Permalink to this headline">¶</a></h3>
+<p><span class="xref myst">MapReduce: Simplified Data Processing on Large Clusters</span>
+is the publication that talks about MapReduce and
+what it means for computing in general. It is in the required reading.
+I will read it after video one.</p>
+<p>So MapReduce is essentially splitting a problem into smaller sets based on some
+criteria, and then assembling the solution from partial solutions. Map a function
+onto a list of inputs, and then <em>reduce</em> the results into solutions.</p>
+<p>The example he shows is a word count functionality. Given a set of files,
+how would you give a word count across them?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># this isn&#39;t executable code btw. Just me thinking out loud.</span>
+<span class="k">def</span> <span class="nf">map</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
+            <span class="k">yield</span> <span class="n">word</span><span class="p">,</span> <span class="mi">1</span>
+
+<span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">yield</span> <span class="nb">len</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+</pre></div>
+</div>
+<p>The way this would work is:</p>
+<ol class="simple">
+<li><p>The map function would return something like a dictionary in python terms,
+and it would have perhaps the file name, and then a data structure that has
+the word and its count in this file.</p></li>
+<li><p>The reduce file would use all these outputs, and then <em>mush</em> them together
+by returning another final result that has the <em>overall</em> solution.</p></li>
+</ol>
+<p>So this could be scaled by splitting the problem <em>across</em> CPUs or <em>machines</em>
+themselves.</p>
+<p>Makes sense. I guess that is why it is used with Hadoop. Hadoop is a joint
+filesystem that enables such a mechanism, especially when you’d need to process
+actual <em>files</em>.</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=cQP8WApzIQQ?t=4000s">&#64;1h9m</a> <em>Aha!</em>
+So Hadoop came out of a necessity to <em>facilitate</em> MapReduce. Google File
+System, huh? That makes sense. Having a network file system that enables
+splitting a huge file and saving it across servers makes so much sense if you
+operate like this. And this also comes with data safety guarantees. Hadoop
+naturally has data backup guarantees and replications (3 is default, I think)</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=cQP8WApzIQQ?t=4260s">&#64;1h12m</a> GFS would schedule
+the map task <em>where</em> the data chunks were for network efficiency? That makes
+sense because the map job packet size must be <em>much lower</em> than the data that
+it operates on. This is good. Helps me understand what the heck is going on
+with Hadoop.</p>
+<p>Map stores its output on the disk of the machine that it executes on. But to
+group together all the values associated to a key and then to <strong>reduce</strong> them
+on a separate machine, they need to be moved later. So the row-wise data of say,
+words in a word count dictionary, would have to be converted to a columnar
+dataset of words and their counts as opposed to a collection of different words
+and their individual counts across different files.</p>
+<p>Say:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># again, don&#39;t try to run this.</span>
+
+
+<span class="n">map_output_1</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;cat&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="s2">&quot;dog&quot;</span><span class="p">:</span> <span class="mi">20</span>
+<span class="p">}</span>
+
+<span class="n">map_output_2</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;elephant&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">&quot;dog&quot;</span><span class="p">:</span> <span class="mi">29</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This would then need to be turned into <em>3 reduce jobs</em>. One for the key “cat”,
+one for “dog” and one for “elephant” across these two outputs.</p>
+<p>Huh. How would you do sorting in MapReduce? Wouldn’t you need to know where
+something would appear? Perhaps split large arrays and sort sections and then
+sort those again? There was an algorithm for that, I think. I had watched
+some animation that showed this.</p>
+<!-- TODO: add link to that video. -->
+<p>Chaining together MapReduce seems to be a normal procedure. I suppose sorting
+could operate like that.</p>
+</section>
+<section id="end-thoughts">
+<h3>End Thoughts<a class="headerlink" href="#end-thoughts" title="Permalink to this headline">¶</a></h3>
+<p>I like journalling as I watch the course. This way I both concentrate, and
+I have copious notes as well. I will rewatch this lecture later, and make
+sure that I update my notes. Watch this space.</p>
+</section>
+</section>
+<section id="getting-the-tests-for-the-labs">
+<h2>Getting the Tests for the Labs<a class="headerlink" href="#getting-the-tests-for-the-labs" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://pdos.csail.mit.edu/6.824/labs/lab-mr.html">Ugh, the CSS in the Labs pages is so horrible for accessibility.</a> I cannot
+read the code snippets either. I love the course, but whoever made the webpages
+did not care a bit about accessibility or design of an interface.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone git://g.csail.mit.edu/6.824-golabs-2020 <span class="m">6</span>.824
+<span class="nb">cd</span> <span class="m">6</span>.824
+</pre></div>
+</div>
+<p>I’ve cloned this repo. Apparently this one lecture is enough to get started.
+The course does recommend golang, but I am going to try some rudimentary
+stuff with Python, and I will get around to golang later, once I learn it.</p>
+</section>
+<section id="watching-lecture-2-rpc-and-threads">
+<h2>2020-07-08 Watching Lecture 2: RPC and Threads<a class="headerlink" href="#watching-lecture-2-rpc-and-threads" title="Permalink to this headline">¶</a></h2>
+<section id="golang">
+<h3>Golang!<a class="headerlink" href="#golang" title="Permalink to this headline">¶</a></h3>
+<p>I would <em>prefer</em> using Python or Rust to complete this course, but I think
+learning Golang to push myself would be a good way to get myself out of this
+rut and keep my interest.</p>
+<p>Also, the professor taking this course is <a class="reference external" href="https://pdos.csail.mit.edu/~rtm/">Robert Morris</a>.
+I love how he teaches. Also, his <a class="reference external" href="https://pdos.csail.mit.edu/~rtm/old-papers.html">pre-MIT papers section is lit!</a></p>
+<p>It is funny how he says you <em>could</em> use Python for this course. But I will avoid
+the temptation.</p>
+</section>
+<section id="observations-on-golang">
+<h3>Observations on Golang<a class="headerlink" href="#observations-on-golang" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Type-Safe</p></li>
+<li><p>Memory-Safe</p></li>
+<li><p>Garbage-Collected</p></li>
+<li><p>The combination of threads and garbage-collection is particularly interesting.</p>
+<ul>
+<li><p>You don’t need to figure out when a thread was using an object.</p></li>
+</ul>
+</li>
+<li><p>Golang has always been said to be simple. What, 50 keywords?</p></li>
+</ul>
+</section>
+<section id="the-golang-tutorial">
+<h3>The Golang Tutorial<a class="headerlink" href="#the-golang-tutorial" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=gA4YXUJX7t8&amp;?t=180s">&#64;3m</a> So I am supposed to take the Golang tutorial and then read Effective Go before
+I proceed. Will do that.</p>
+<p>My friend <a class="reference external" href="https://tirkarthi.github.io/">Karthikeyan</a> recommended
+<a class="reference external" href="https://www.golang-book.com/books/intro">Caleb Doxsey’s An Introduction to Programming in Go</a>,
+which is available for free at that link. However,
+I will shelve perfection and completion in the language (for now),
+and <a class="reference external" href="https://tour.golang.org/">I will focus on the official tutorial.</a></p>
+<p>I am going to store all the code I write for this project on the same github repo as this blog. I might move it later. <a class="reference external" href="https://github.com/stonecharioteer/blog/tree/master/pages/mit-6.824">Access it here.</a></p>
+<p>In the folder golang, I am going to store all the go code I write
+to learn the language. It won’t have anything to do with this course, but well.</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;hello, world\n&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<section id="observations-as-a-pythonista">
+<h4>Observations as a Pythonista:<a class="headerlink" href="#observations-as-a-pythonista" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>W00t! I am not writing semi-colons.</p></li>
+<li><p>Braces are okay. I can live with those.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">import</span></code> uses <em>quotes</em>. I was <em>just</em> telling someone about this yesterday.</p></li>
+<li><p><a class="reference external" href="https://tour.golang.org/welcome/">There is an interactive tutorial website!!</a></p></li>
+<li><p>2009-11-10 23:00:00 UTC is Golang’s Birthday, apparently.</p></li>
+<li><p>The way go prints out the timestamp when I use <code class="docutils literal notranslate"><span class="pre">time.Now()</span></code> is so weird. What are those extra numbers? It has the timezone, and that is great. But it also has something akin to <code class="docutils literal notranslate"><span class="pre">m=+0.00086191</span></code>. What is that?</p></li>
+<li><p>Every Go Program is made up of Packages?</p>
+<ul>
+<li><p>Not everyone realizes that Python is so similar. <em>Every</em> python “object” is an “object”, complete with its own constructor and all.</p></li>
+<li><p>Note to self: You can preach all the language agnosticism you want, but you cannot take the snake out of the snake charmer’s basket.</p></li>
+</ul>
+</li>
+</ul>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&quot;fmt&quot;</span>
+	<span class="s">&quot;math/rand&quot;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;My favorite number is &quot;</span><span class="p">,</span> <span class="nx">rand</span><span class="p">.</span><span class="nx">Intn</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Wait. The output is <em>always</em> the same! The tour page says this:</p>
+<blockquote>
+<div><p>Note: The environment in which these programs are executed is deterministic, so each time you run the example program rand.Intn will return the same number.
+(To see a different number, seed the number generator; see rand.Seed. Time is constant in the playground, so you will need to use something else as the seed.)</p>
+</div></blockquote>
+<p>Also, so importing <code class="docutils literal notranslate"><span class="pre">math/rand</span></code> allows me to use rand at the global level.</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&quot;fmt&quot;</span>
+	<span class="s">&quot;math/rand&quot;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">rand</span><span class="p">.</span><span class="nx">Seed</span><span class="p">(</span><span class="mi">1091234017</span><span class="p">)</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;My favorite number is &quot;</span><span class="p">,</span> <span class="nx">rand</span><span class="p">.</span><span class="nx">Intn</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Huh. The output remains constant every time I execute. So true random number
+generation is not possible here? I wonder what Python does. I guess it uses
+something the timestamp to generate the seed each time. You learn something new!</p>
+<p>Go uses tabs! Not spaces. Heh. Pied Piper should have used Golang.</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&quot;fmt&quot;</span>
+	<span class="s">&quot;math&quot;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">math</span><span class="p">.</span><span class="nx">Pi</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>So Go only exposes those variables that start with a capital first letter?
+Works for me.</p>
+<p><a class="reference external" href="https://blog.golang.org/declaration-syntax">Go’s types come <strong>after</strong> the variable name.</a> I like this, to be honest.</p>
+<p>Oh wow. That article on declarations is <strong>insane</strong>. I can see why Python’s
+type hints took the <code class="docutils literal notranslate"><span class="pre">x:</span> <span class="pre">int</span></code> form now.</p>
+<p><code class="docutils literal notranslate"><span class="pre">a,</span> <span class="pre">b</span> <span class="pre">:=</span> <span class="pre">1,</span> <span class="pre">2</span></code> seems to be the way to define variable without declaring their
+type. The types are implied from the variables on the right. This is not
+usable outside of a function since every statement <em>must</em> begin with a keyword.</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+
+<span class="kd">func</span> <span class="nx">split</span><span class="p">(</span><span class="nx">sum</span> <span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">x</span> <span class="p">=</span> <span class="nx">sum</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">/</span> <span class="mi">9</span>
+	<span class="nx">y</span> <span class="p">=</span> <span class="nx">sum</span> <span class="o">-</span> <span class="nx">x</span>
+	<span class="k">return</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">split</span><span class="p">(</span><span class="mi">17</span><span class="p">))</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Naming the return variables allows you to return them implicitly. I am not so
+certain I would use that. Cannot see what it is useful. Perhaps in a way so I
+can keep track of the returnable variable(s).</p>
+<p>Go’s types are interesting.</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&quot;fmt&quot;</span>
+	<span class="s">&quot;math/cmplx&quot;</span>
+<span class="p">)</span>
+
+<span class="kd">var</span> <span class="p">(</span>
+	<span class="nx">ToBe</span>   <span class="kt">bool</span>       <span class="p">=</span> <span class="kc">false</span>
+	<span class="nx">MaxInt</span> <span class="kt">uint64</span>     <span class="p">=</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">64</span> <span class="o">-</span> <span class="mi">1</span>
+	<span class="nx">z</span>      <span class="kt">complex128</span> <span class="p">=</span> <span class="nx">cmplx</span><span class="p">.</span><span class="nx">Sqrt</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span> <span class="o">+</span> <span class="m">12i</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Type: %T Value: %v\n&quot;</span><span class="p">,</span> <span class="nx">ToBe</span><span class="p">,</span> <span class="nx">ToBe</span><span class="p">)</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Type: %T Value: %v\n&quot;</span><span class="p">,</span> <span class="nx">MaxInt</span><span class="p">,</span> <span class="nx">MaxInt</span><span class="p">)</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Type: %T Value: %v\n&quot;</span><span class="p">,</span> <span class="nx">z</span><span class="p">,</span> <span class="nx">z</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>And the supported types are:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">bool</span>
+
+<span class="n">string</span>
+
+<span class="nb">int</span>  <span class="n">int8</span>  <span class="n">int16</span>  <span class="n">int32</span>  <span class="n">int64</span>
+<span class="n">uint</span> <span class="n">uint8</span> <span class="n">uint16</span> <span class="n">uint32</span> <span class="n">uint64</span> <span class="n">uintptr</span>
+
+<span class="n">byte</span> <span class="o">//</span> <span class="n">alias</span> <span class="k">for</span> <span class="n">uint8</span>
+
+<span class="n">rune</span> <span class="o">//</span> <span class="n">alias</span> <span class="k">for</span> <span class="n">int32</span>
+     <span class="o">//</span> <span class="n">represents</span> <span class="n">a</span> <span class="n">Unicode</span> <span class="n">code</span> <span class="n">point</span>
+
+<span class="n">float32</span> <span class="n">float64</span>
+
+<span class="n">complex64</span> <span class="n">complex128</span>
+</pre></div>
+</div>
+<p>Go sets initial values to variables. They are either <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">false</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> depending
+upon the type.</p>
+<p>Go assignment between items of different type requires an <strong>explicit conversion</strong>.
+This is done through the type functions that perform the type casting.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">:=</span></code> and the <code class="docutils literal notranslate"><span class="pre">var</span> <span class="pre">=</span></code> ways of declaring variables perform type inferrence,
+as noted above.</p>
+<p>Go supports immutable <code class="docutils literal notranslate"><span class="pre">const</span></code>s. These can infer types as well. Constants can be character, string, boolean, or numeric values.</p>
+</section>
+</section>
+<section id="id1">
+<h3>End Thoughts<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>I’ll be spending another day on this tutorial. There’s a lot to cover and
+I don’t want to rush it. I would like to master enough Go to try going through
+the Algorithms course and implementing common algorithms in Go. That would be
+fun!</p>
+</section>
+</section>
+<section id="continuing-the-golang-journey">
+<h2>2020-07-12 Continuing the Golang Journey<a class="headerlink" href="#continuing-the-golang-journey" title="Permalink to this headline">¶</a></h2>
+<p>I am taking slightly longer than I hoped for with this. Let me try to finish
+it tonight. (Current time is 23:00)</p>
+<section id="looney-loopy-looping">
+<h3>Looney Loopy Looping<a class="headerlink" href="#looney-loopy-looping" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">sum</span> <span class="o">:=</span> <span class="mi">0</span>
+	<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+		<span class="nx">sum</span> <span class="o">+=</span> <span class="nx">i</span>
+	<span class="p">}</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Ah, those old C-variety loops. Braces are always required. No parentheses.</p>
+<p>Interesting. The <code class="docutils literal notranslate"><span class="pre">for</span></code> can be turned into a <code class="docutils literal notranslate"><span class="pre">while</span></code>-varient by just omitting
+the instantiation and the increment.</p>
+<blockquote>
+<div><p>C’s <code class="docutils literal notranslate"><span class="pre">while</span></code> is spelled <code class="docutils literal notranslate"><span class="pre">for</span></code> in Go,</p>
+</div></blockquote>
+<p>LOL.</p>
+</section>
+<section id="conditionals">
+<h3>Conditionals<a class="headerlink" href="#conditionals" title="Permalink to this headline">¶</a></h3>
+<p>Interesting why loops are introduced <em>before</em> conditionals. Is it easier to
+grok?</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&quot;fmt&quot;</span>
+	<span class="s">&quot;math&quot;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">sqrt</span><span class="p">(</span><span class="nx">x</span> <span class="kt">float64</span><span class="p">)</span> <span class="kt">string</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="nx">x</span> <span class="p">&lt;</span> <span class="mi">0</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="nx">sqrt</span><span class="p">(</span><span class="o">-</span><span class="nx">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;i&quot;</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="nx">fmt</span><span class="p">.</span><span class="nx">Sprint</span><span class="p">(</span><span class="nx">math</span><span class="p">.</span><span class="nx">Sqrt</span><span class="p">(</span><span class="nx">x</span><span class="p">))</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="nx">sqrt</span><span class="p">(</span><span class="o">-</span><span class="mi">16</span><span class="p">))</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Hmm. <code class="docutils literal notranslate"><span class="pre">fmt.Sprint()</span></code> does string typecasting, does it?</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&quot;fmt&quot;</span>
+	<span class="s">&quot;math&quot;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">pow</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">n</span><span class="p">,</span> <span class="nx">lim</span> <span class="kt">float64</span><span class="p">)</span> <span class="kt">float64</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="nx">v</span> <span class="o">:=</span> <span class="nx">math</span><span class="p">.</span><span class="nx">Pow</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">n</span><span class="p">);</span> <span class="nx">v</span> <span class="p">&lt;</span> <span class="nx">lim</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="nx">v</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="nx">lim</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span>
+		<span class="nx">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+		<span class="nx">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span>
+	<span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Wait, so <code class="docutils literal notranslate"><span class="pre">:=</span></code> is sort of the walrus operator!! W00t.</p>
+</section>
+</section>
+<section id="the-tour-continues">
+<h2>2020-07-29 The Tour Continues!<a class="headerlink" href="#the-tour-continues" title="Permalink to this headline">¶</a></h2>
+<p>Note: <em>I took quite some time off from this course, but I am back now and I plan to finish this soon.</em></p>
+<p>So the last time, I was looking at loops. Loops don’t need parentheses here. That’s good.</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">sum</span> <span class="o">:=</span> <span class="mi">0</span>
+	<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+		<span class="nx">sum</span> <span class="o">+=</span> <span class="nx">i</span>
+	<span class="p">}</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span>
+
+	<span class="k">for</span> <span class="nx">sum</span> <span class="p">&lt;</span> <span class="mi">1000</span> <span class="p">{</span>
+		<span class="nx">sum</span> <span class="o">+=</span> <span class="mi">100</span>
+	<span class="p">}</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span>
+
+	<span class="k">for</span> <span class="p">{</span>
+		<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;lol infinite loops&quot;</span><span class="p">)</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The initialization and increment are optional, so there is no need for a while or a do-while loop here. Good.</p>
+<blockquote>
+<div><p><a class="reference external" href="https://tour.golang.org/flowcontrol/3">C’s <em>while</em> is spelled <em>for</em> in Go.</a></p>
+</div></blockquote>
+<p>That’s hilarious. If only my old CS teacher Vasanth could see my face now.</p>
+<p><a class="reference external" href="https://tour.golang.org/flowcontrol/6"><strong>Go’s Conditional’s have the <em>walrus operator</em>?!</strong></a></p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&quot;fmt&quot;</span>
+	<span class="s">&quot;math&quot;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">pow</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">n</span><span class="p">,</span> <span class="nx">lim</span> <span class="kt">float64</span><span class="p">)</span> <span class="kt">float64</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="nx">v</span> <span class="o">:=</span> <span class="nx">math</span><span class="p">.</span><span class="nx">Pow</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">n</span><span class="p">);</span> <span class="nx">v</span> <span class="p">&lt;</span> <span class="nx">lim</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="nx">v</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="nx">lim</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span>
+		<span class="nx">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+		<span class="nx">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+	<span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>I am sold.</p>
+<p>The variable defined in the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement isn’t accessible outside the statement,
+but variables defined within the blocks are accessible outside the blog.
+Such a weird decision. I mean, even Python does this but it is very weird.</p>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Vinay Keerthi.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
