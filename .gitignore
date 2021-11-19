@@ -183,5 +183,4 @@ dmypy.json
 # profiling data
 .prof
 
-_website/
 .doctrees/

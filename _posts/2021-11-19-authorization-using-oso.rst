@@ -1,12 +1,15 @@
----
-blogpost: true
-category: Tutorial
-tags: learning, authorization, web-development, python, oso
-permalink: '/oso-authz'
----
-# Authorization in Python using Oso
+.. post:: Nov 19, 2021
+   :tags: oso, authorization, web-development, tech
+   :category: Tutorial
+   :redirect: /oso-authz
 
-## Outline
+======================================
+Authorization in Python using Oso
+======================================
+
+--------
+Outline
+--------
 
 1. Prelude
 2. Introduction
@@ -29,18 +32,18 @@ permalink: '/oso-authz'
 10. Getting Help
 11. Cookiecutter Template
 
-## TODOs
-<!-- NOTE: Remove these later -->
+.. todo:: 
+    * Explain how to use Oso with Argparse
+    * Explain how to use Oso with Click
+    * Explain how to use Flask-Oso
+    * Explain how to use Oso with Flask Login
+    * Explain how to use Oso with JWT Tokens
+    * Explain how to use Oso with OIDC
+    * Explain how to use the new `resource` fields.
 
-* Explain how to use Oso with Argparse
-* Explain how to use Oso with Click
-* Explain how to use Flask-Oso
-* Explain how to use Oso with Flask Login
-* Explain how to use Oso with JWT Tokens
-* Explain how to use Oso with OIDC
-* Explain how to use the new `resource` fields.
-
-## Prelude
+----------
+Prelude
+----------
 
 This is an article I've been working on for almost a year now. Life got in the way,
 but it wasn't just that. I haven't been using Oso in the months since February,
@@ -64,7 +67,9 @@ conclusion, but I'll leave you with this.
 While Oso does a lot for you under the hood, it's *what you can do* if you know
 it like a power user that empowers you.
 
-## Introduction
+-----------------
+Introduction
+-----------------
 
 Auth is one of the more underrated features in software. Not only is it hard
 to do in a secure manner, it is also seldom appreciated when it is done well.
@@ -95,39 +100,42 @@ username can perform on every third Sunday? Tough luck, you can't do that.
 
 Or maybe you can.
 
-## What is Oso?
+---------------
+What is Oso?
+---------------
 
 [Oso](https://osohq.com) is a library that takes care of authorization. In
 coding terms, `oso` allows you to take code that looks like this:
 
-```python
-def user_can_do_this(user):
-    if user.is_admin and user.id in ["abc","xyz", "lkjh"]:
-        return True
+.. code:: python
+    :linenos:
+
+    def user_can_do_this(user):
+        if user.is_admin and user.id in ["abc","xyz", "lkjh"]:
+            return True
+        else:
+            return False
+
+    if user_can_do_this(user):
+        print("I can do this!")
     else:
-        return False
-
-
-if user_can_do_this(user):
-    print("I can do this!")
-else:
-    print("Access denied!")
-```
+        print("Access denied!")
 
 And rewrite it like this:
 
-```python
-if oso.is_allowed(user, "can_do", this):
-    print("I can do this!")
-else:
-    print("Access denied!")
-```
+.. code:: python
+    :linenos:
+
+    if oso.is_allowed(user, "can_do", this):
+        print("I can do this!")
+    else:
+        print("Access denied!")
 
 And in your rules, you define this:
 
-```polar
-allow(user, "can_do", this) if user.is_admin and user.id in ["abc","xyz", "lkjh"]
-```
+.. code::
+
+    allow(user, "can_do", this) if user.is_admin and user.id in ["abc","xyz", "lkjh"]
 
 For now, ignore what is inside the `allow` line. Indeed, also ignore the
 *words* `user`, `"can_do"` and `this`. *None of them have any meaning beyond*
@@ -167,41 +175,47 @@ would you need `oso`?
    to. Also, [/r/madlads](https://reddit.com/r/madlads) is :point_right: that
    way.
 
-## Hello Oso
+--------------
+Hello Oso
+--------------
 
-{% capture value %}
-Oso supports several languages, not just Python. I use Python here merely for demonstrative purposes, but you should visit their official [documentation website](https://docs.osohq.com) to find more libraries supporting other languages such as Java, Rust and Node.js.
-{% endcapture %}
+.. note:: Using Oso in other languages
 
-{% include note.html title="Using Oso in other languages" alert_type="note" content=value%}
+    Oso supports several languages, not just Python. I use Python here merely for
+    demonstrative purposes, but you should visit their official [documentation
+    website](https://docs.osohq.com) to find more libraries supporting other
+    languages such as Java, Rust and Node.js.
+
 
 So how _do_ you use Oso in your python code?
 
 First, install the library. (Make sure you're doing this in a virtual
 environment for your project.)
 
-```bash
-pip install oso
-```
+.. code-block:: bash
+
+    pip install oso
 
 Then, create a [new python file.](https://github.com/stonecharioteer/blog/tree/master/code/oso-examples)
 
-```python
-from oso import Oso
+.. code-block:: python
+    :linenos:
 
-oso_object = Oso()
+    from oso import Oso
 
-oso_object.load_str("""allow("user", "can_use", "this_program");""")
+    oso_object = Oso()
 
-if oso_object.is_allowed("user", "can_use", "this_program"):
-    print("Hello from oso")
-else:
-    print("Access denied")
-```
+    oso_object.load_str("""allow("user", "can_use", "this_program");""")
+
+    if oso_object.is_allowed("user", "can_use", "this_program"):
+        print("Hello from oso")
+    else:
+        print("Access denied")
 
 All examples from this post are available [here as a Github repository.](https://github.com/stonecharioteer/blog/tree/master/code/oso-examples)
 
-### What's Going On?
+What's Going On?
+=================
 
 The Oso documentation begins users with showing how you can integrate Oso
 into a web application written in native Python. However, I believe in a first
@@ -218,13 +232,14 @@ later. For now, all you need to know is that we've added the _line_
 `allow("user", "can_use", "this_program");` to the policies in the `oso_object`
 object.
 
-{% capture value %}
-I've used triple double-quotes `"""` because Polar uses only double quotes `"` for its strings and I didn't want to use single-quotes `'` to surround them in Python. You may choose to do so if you like.
-{% endcapture %}
+.. tip:: Use double quotes for strings in Polar
+    I've used triple double-quotes `"""` because Polar uses only double quotes
+   `"` for its strings and I didn't want to use single-quotes `'` to surround
+   them in Python. You may choose to do so if you like.
 
-{% include note.html title="Use double quotes for strings in Polar" alert_type="note" content=value%}
 
 This line says: 
+
 > If a function called `allow` is triggered with 3 variables equal to,
 > *literally*: `"user"`, `"can_use"` and `"this_program"`, then evaluate to
 > `true`. (Polar uses `true`/`false` as booleans).
@@ -239,7 +254,8 @@ matches and evaluates to `True` (this is on the Python side).
 
 Hence, the line `print("Hello from oso")` works.
 
-### What Happened?
+What Happened?
+----------------
 
 Under the hood, Oso evaluates Polar rules and loads them into the `oso.Oso`
 object that we create. Those rules dictate the outcome of
@@ -257,9 +273,9 @@ whatever you want it to be.
 
 Let me reiterate.
 
-```polar
-allow("user", "can_use", "this_program");
-```
+.. code-block::
+
+    allow("user", "can_use", "this_program");
 
 This *defines* a policy called `allow` with those **exact**: parameters.
 
@@ -274,12 +290,13 @@ That's simple. Just try to call `is_allowed` with **anything** else.
 
 In our previous file, add the following:
 
-```python
-if oso_object.is_allowed("user-123", "can_run", "this_program"):
-    print("Hello again, but you probably can't run this line.")
-else:
-    print("You weren't authorized by the rules!")
-```
+.. code-block:: python
+    :linenos:
+
+    if oso_object.is_allowed("user-123", "can_run", "this_program"):
+        print("Hello again, but you probably can't run this line.")
+    else:
+        print("You weren't authorized by the rules!")
 
 This `is_allowed` will evaluate to `False`, since it doesn't match the rule
 that we've loaded into the`oso_object`.
@@ -292,27 +309,31 @@ For now, you need to just understand that `oso` essentially does a 1:1 match
 with the rules in your `oso_object` and evaluates `is_allowed` based on a
 suitable `allow` policy.
 
-## Oso in a CLI
+-----------------
+Oso in a CLI
+-----------------
 
 An interesting exercise to understand what you could do with Oso is to try building
 a command line tool.
 
-### Using argparse
+Using argparse
+================
 
 Let's write a quick CLI using `argparse`:
 
-```python
-import argparse
+.. code-block:: python
+    :linenos:
 
-parser = argparse.ArgumentParser(
-    description="Simple rmdir clone command-line-tool to demonstrate Oso's usage")
-parser.add_argument('path', metavar="P", type=str, help="Path to remove")
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="Simple rmdir clone command-line-tool to demonstrate Oso's usage")
+    parser.add_argument('path', metavar="P", type=str, help="Path to remove")
 
 
-if __name__ = "__main__":
-    args = parser.parse_args()
-    print(f"Attempting to remove directory: {args.path}.")
-```
+    if __name__ = "__main__":
+        args = parser.parse_args()
+        print(f"Attempting to remove directory: {args.path}.")
 
 This is a simple CLI that uses
 [`argparse`](https://docs.python.org/3/library/argparse.html). I'm going to
@@ -321,84 +342,86 @@ delete.
 
 Let's add some more code here.
 
-```python
-from enum import Enum
+.. code-block:: python
+    :linenos:
 
-class PathAttributes(Enum):
-    """A bunch of enums to help understand the path attributes"""
-    # path isn't a directory
-    NOTADIRECTORY = 1
-    # path is a writable directory
-    WRITABLEDIRECTORY = 2
-    # path is a read only directory (current user doesn't have write access)
-    READONLYDIRECTORY = 3
-    # path is an inaccessible directory (current user doesn't have read or write access)
-    INACCESSABLEDIRECTORY = 4
-    # path does not exist
-    NONEXISTENTDIRECTORY = 5
+    from enum import Enum
+
+    class PathAttributes(Enum):
+        """A bunch of enums to help understand the path attributes"""
+        # path isn't a directory
+        NOTADIRECTORY = 1
+        # path is a writable directory
+        WRITABLEDIRECTORY = 2
+        # path is a read only directory (current user doesn't have write access)
+        READONLYDIRECTORY = 3
+        # path is an inaccessible directory (current user doesn't have read or write access)
+        INACCESSABLEDIRECTORY = 4
+        # path does not exist
+        NONEXISTENTDIRECTORY = 5
 
 
-def get_path_attributes(path):
-    """Returns a tuple of path attributes"""
-    import pathlib
-    import stat
+    def get_path_attributes(path):
+        """Returns a tuple of path attributes"""
+        import pathlib
+        import stat
 
-    path = pathlib.Path(path)
-    if not path.exists():
-        return PathAttributes.NONEXISTENTDIRECTORY
-    elif not path.is_dir():
-        return PathAttributes.NOTADIRECTORY
-    else:
-        # this is a directory. We need to determine whether it's
-        # writable, readable or accessible.
-        path_stat_mode = path.stat().st_mode
-        is_writeable = stat.S_ISWUSER(path_stat_mode) or stat.S_ISWGRP(path_stat_mode) or stat.S_ISWOTH(path_stat_mode)
-        if is_writeable:
-            return PathAttributes.WRITEABLEDIRECTORY
+        path = pathlib.Path(path)
+        if not path.exists():
+            return PathAttributes.NONEXISTENTDIRECTORY
+        elif not path.is_dir():
+            return PathAttributes.NOTADIRECTORY
         else:
-            is_readable = stat.S_ISRUSER(path_stat_mode) or stat.S_ISRGRP(path_stat_mode) or stat.S_ISROTH(path_stat_mode)
-            if is_readable:
-                return PathAttributes.READONLYDIRECTORY
+            # this is a directory. We need to determine whether it's
+            # writable, readable or accessible.
+            path_stat_mode = path.stat().st_mode
+            is_writeable = stat.S_ISWUSER(path_stat_mode) or stat.S_ISWGRP(path_stat_mode) or stat.S_ISWOTH(path_stat_mode)
+            if is_writeable:
+                return PathAttributes.WRITEABLEDIRECTORY
             else:
-                return PathAttributes.INACCESSIBLEDIRECTORY
+                is_readable = stat.S_ISRUSER(path_stat_mode) or stat.S_ISRGRP(path_stat_mode) or stat.S_ISROTH(path_stat_mode)
+                if is_readable:
+                    return PathAttributes.READONLYDIRECTORY
+                else:
+                    return PathAttributes.INACCESSIBLEDIRECTORY
 
 
-def rmdir(path):
-    import shutil
-    import oso
-    path_attributes = get_path_attributes(path)
-    if oso.is_allowed("can_remove", path_attributes):
-        shutil.rmtree(path)
-    else:
-        raise PermissionError(f"You cannot delete {path}")
-```
+    def rmdir(path):
+        import shutil
+        import oso
+        path_attributes = get_path_attributes(path)
+        if oso.is_allowed("can_remove", path_attributes):
+            shutil.rmtree(path)
+        else:
+            raise PermissionError(f"You cannot delete {path}")
 
 The above code looks like it is a lot. Let's take a moment to understand what is
 happening here.
 
-```python
-from enum import Enum
-```
+.. code-block:: python
+     from enum import Enum
+
 
 This imports the `Enum` class so that we can define an enumeration for the path
 attributes. Take a moment to go through the 
 [official Python documentation on Enums](https://docs.python.org/3/library/enum.html)
 if you've never used them before.
 
-```python
-class PathAttributes(Enum):
-    """A bunch of enums to help understand the path attributes"""
-    # path isn't a directory
-    NOTADIRECTORY = 1
-    # path is a writable directory
-    WRITABLEDIRECTORY = 2
-    # path is a read only directory (current user doesn't have write access)
-    READONLYDIRECTORY = 3
-    # path is an inaccessible directory (current user doesn't have read or write access)
-    INACCESSABLEDIRECTORY = 4
-    # path does not exist
-    NONEXISTENTDIRECTORY = 5
-```
+.. code-block:: python
+    :linenos:
+
+    class PathAttributes(Enum):
+        """A bunch of enums to help understand the path attributes"""
+        # path isn't a directory
+        NOTADIRECTORY = 1
+        # path is a writable directory
+        WRITABLEDIRECTORY = 2
+        # path is a read only directory (current user doesn't have write access)
+        READONLYDIRECTORY = 3
+        # path is an inaccessible directory (current user doesn't have read or write access)
+        INACCESSABLEDIRECTORY = 4
+        # path does not exist
+        NONEXISTENTDIRECTORY = 5
 
 The `PathAttributes` class defines an enumerated set of attributes for a folder.
 The in-line comments explain what they're for.
@@ -409,46 +432,48 @@ Oso do?" showcase.
 
 Next, the functions:
 
-```python
-def get_path_attributes(path):
-    """Returns a tuple of path attributes"""
-    import pathlib
-    import stat
+.. code-block:: python
+   :linenos:
 
-    path = pathlib.Path(path)
-    if not path.exists():
-        return PathAttributes.NONEXISTENTDIRECTORY
-    elif not path.is_dir():
-        return PathAttributes.NOTADIRECTORY
-    else:
-        # this is a directory. We need to determine whether it's
-        # writable, readable or accessible.
-        path_stat_mode = path.stat().st_mode
-        is_writeable = stat.S_ISWUSER(path_stat_mode) or stat.S_ISWGRP(path_stat_mode) or stat.S_ISWOTH(path_stat_mode)
-        if is_writeable:
-            return PathAttributes.WRITEABLEDIRECTORY
+    def get_path_attributes(path):
+        """Returns a tuple of path attributes"""
+        import pathlib
+        import stat
+
+        path = pathlib.Path(path)
+        if not path.exists():
+            return PathAttributes.NONEXISTENTDIRECTORY
+        elif not path.is_dir():
+            return PathAttributes.NOTADIRECTORY
         else:
-            is_readable = stat.S_ISRUSER(path_stat_mode) or stat.S_ISRGRP(path_stat_mode) or stat.S_ISROTH(path_stat_mode)
-            if is_readable:
-                return PathAttributes.READONLYDIRECTORY
+            # this is a directory. We need to determine whether it's
+            # writable, readable or accessible.
+            path_stat_mode = path.stat().st_mode
+            is_writeable = stat.S_ISWUSER(path_stat_mode) or stat.S_ISWGRP(path_stat_mode) or stat.S_ISWOTH(path_stat_mode)
+            if is_writeable:
+                return PathAttributes.WRITEABLEDIRECTORY
             else:
-                return PathAttributes.INACCESSIBLEDIRECTORY
-```
+                is_readable = stat.S_ISRUSER(path_stat_mode) or stat.S_ISRGRP(path_stat_mode) or stat.S_ISROTH(path_stat_mode)
+                if is_readable:
+                    return PathAttributes.READONLYDIRECTORY
+                else:
+                    return PathAttributes.INACCESSIBLEDIRECTORY
 
 This function returns the *type* of the item, using our Enum. Ignore the `stat`
 lines, since they're irrelevant to this post. If you must know, they check the
 user permissions for a given path.
 
-```python
-def rmdir(path):
-    import shutil
-    import oso
-    path_attributes = get_path_attributes(path)
-    if oso.is_allowed("can_remove", path_attributes):
-        shutil.rmtree(path)
-    else:
-        raise PermissionError(f"You cannot delete {path}")
-```
+.. code-block:: python
+    :linenos:
+
+    def rmdir(path):
+        import shutil
+        import oso
+        path_attributes = get_path_attributes(path)
+        if oso.is_allowed("can_remove", path_attributes):
+            shutil.rmtree(path)
+        else:
+            raise PermissionError(f"You cannot delete {path}")
 
 This function goes ahead and tries to delete the item, checking if a user has
 permissions to do so.
@@ -474,10 +499,10 @@ immediately reject your request.
 
 Now, let's go ahead and add a polar file that we will use with this script.
 
-```polar
-allow("can_remove", path_attributes: PathAttribute) if path_attributes in
-[PathAttributes.WRITEABLEDIRECTORY];
-```
+.. code-block::
+
+    allow("can_remove", path_attributes: PathAttribute) if path_attributes in
+    [PathAttributes.WRITEABLEDIRECTORY];
 
 This single line is *not* a function call. It *is nothing but a statement*.
 Repeat that to yourself. It is just a statement that evaluates to `True`.
@@ -486,27 +511,31 @@ _If_ you call `oso.is_allowed` with 2 arguments that match the parameters
 defined here, then the function `oso.is_allowed` will return a `True`. For
 *all* other scenarios, it will return `False`.
 
-### Writing your own decorator for Click
+Writing your own decorator for Click
+======================================
 
-[Click](https://click.palletsprojects.com/en/8.0.x/) is one of my favourite CLI tools. I've built several tools using
-it and I've found that it makes me more productive than when I've used argparse.
+[Click](https://click.palletsprojects.com/en/8.0.x/) is one of my favourite CLI
+tools. I've built several tools using it and I've found that it makes me more
+productive than when I've used argparse.
 Install it using:
 
-```
-pip install 'click>=8.0.0,<8.1'
-```
+.. code-block:: bash
+
+    pip install 'click>=8.0.0,<8.1'
 
 If you were to write the above program using click:
 
-```python
-import click
+.. code-block:: python
+    :linenos:
 
-@click.command()
-@click.
+    import click
 
+    @click.command()
+    @click.
 
-```
-## Where's the Server?
+------------------------
+Where's the Server?
+------------------------
 
 An easy misconception to make is that `oso` needs to be used with an API. It
 doesn't.  In fact, you could use `oso` for regular applications or scripts. If
@@ -526,7 +555,9 @@ However, one place where authorization is definitely needed is in a web app.
 That's where `oso` was designed to be used, despite my proclivity to use it
 in hacked-up scripts.
 
-## Oso and Flask
+--------------
+Oso and Flask
+--------------
 
 `oso` is a very simple way to decide what a particular user can do `Flask`
 app. However, remember that `oso` doesn't care how or if a user is
@@ -536,76 +567,78 @@ is not really needed.
 Depending on how you use logins and user sessions, I'd recommend going through
 the following three sections separately.
 
-### With a barebones Flask application
+With a barebones Flask application
+===================================
 
 Consider the following `app.py`
 
-```python
-from flask import Flask
-import oso
-from flask_oso import FlaskOso
+.. code-block:: python
+    :linenos:
 
-app = Flask(__name__)
-base_oso = oso()
-oso_extension = FlaskOso(oso=base_oso)
-base_oso.load_str("""allow("anyone","can_visit","index");""")
-flask_oso.init_app(app)
+    from flask import Flask
+    import oso
+    from flask_oso import FlaskOso
 
-@app.route("/")
-def index_route():
-    oso_extension.authorize(actor="anyone", action="can_visit", resource="index")
-    return "hello world"
+    app = Flask(__name__)
+    base_oso = oso()
+    oso_extension = FlaskOso(oso=base_oso)
+    base_oso.load_str("""allow("anyone","can_visit","index");""")
+    flask_oso.init_app(app)
+
+    @app.route("/")
+    def index_route():
+        oso_extension.authorize(actor="anyone", action="can_visit", resource="index")
+        return "hello world"
 
 
-@app.route("/unvisitable")
-def unpermissable_route():
-    oso_extension.authorize(actor="noone", action="can_visit", resource="this route")
-```
+    @app.route("/unvisitable")
+    def unpermissable_route():
+        oso_extension.authorize(actor="noone", action="can_visit", resource="this route")
+        
 
 Run this application with:
 
-```
-$ export FLASK_APP=app.py
-$ flask run
- * Running on http://127.0.0.1:5000/
-```
+.. code-block:: bash
+    export FLASK_APP=app.py
+    flask run
+    # output: * Running on http://127.0.0.1:5000/
 
 Try using `cURL` to query the API.
 
-```bash
-curl http://localhost:5000/
-```
+.. code-block:: bash
+    curl http://localhost:5000/
 
 You will get the `"hello world"` response from this route.
 
 Now try using `cURL` to query `/unvisitable`.
 
-```bash
-curl http://localhost:5000/unvisitable
-```
+.. code-block:: bash
+    curl http://localhost:5000/unvisitable
 
 You will get a `403 Unauthorized` from this route.
 
-```html
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-<title>403 Forbidden</title>
-<h1>Forbidden</h1>
-<p>Unauthorized</p>
-```
+.. code-block:: html
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+    <title>403 Forbidden</title>
+    <h1>Forbidden</h1>
+    <p>Unauthorized</p>
+
 
 Now add a new route.
 
-```python
-@app.route("/hello")
-def hello_route():
-    return "hello again"
-```
+.. code-block:: python
+    :linenos:
+
+    @app.route("/hello")
+    def hello_route():
+        return "hello again"
 
 Rerun the app, and `cURL` the `/hello` route.
 
-```bash
-curl http://localhost:5000/hello
-```
+.. code-block:: bash
+
+    curl http://localhost:5000/hello
 
 You will get a `"hello again"` response. However there is no
 `flask_oso.authorize` check here.
@@ -618,67 +651,64 @@ or it doesn't check for any rule whatsoever.
 So, add this line at the very bottom of `app.py` and rerun the last `cURL`
 command.
 
-```python
-flask_oso.require_authorization(app)
-```
+.. code-block:: python
+    flask_oso.require_authorization(app)
 
 *Remember, there's no indentation here. This is **outside** any function or view.*
 
-```bash
-curl http://localhost:5000/hello
-```
+.. code:: bash
+
+    curl http://localhost:5000/hello
 
 Now try running this route.
 
 Immediate you see the following `500 Server Error` and on inspecting the server's
 output, you see the following:
 
-```
-Traceback (most recent call last):
-  File "/home/user/oso-examples/env/lib/python3.9/site-packages/flask/app.py", line 1970, in finalize_request
-    response = self.process_response(response)
-  File "/home/user/oso-examples/env/lib/python3.9/site-packages/flask/app.py", line 2267, in process_response
-    response = handler(response)
-  File "/home/user/oso-examples/env/lib/python3.9/site-packages/flask_oso/flask_oso.py", line 225, in _require_authorization
-    raise OsoError("Authorize not called.")
-polar.exceptions.OsoError: Authorize not called
-```
+.. code-block:: 
+
+    Traceback (most recent call last):
+    File "/home/user/oso-examples/env/lib/python3.9/site-packages/flask/app.py", line 1970, in finalize_request
+        response = self.process_response(response)
+    File "/home/user/oso-examples/env/lib/python3.9/site-packages/flask/app.py", line 2267, in process_response
+        response = handler(response)
+    File "/home/user/oso-examples/env/lib/python3.9/site-packages/flask_oso/flask_oso.py", line 225, in _require_authorization
+        raise OsoError("Authorize not called.")
+    polar.exceptions.OsoError: Authorize not called
 
 `polar.exceptions.OsoError: Authorize not called` is immediately telling us
 that there is some route that hasn't explicitly run `oso_extension.authorize`
 to check for the right permissions. This is a useful setting to keep active,
 but if you don't want to write some rule that looks like:
 
-```
-allow("anyone", "can_query", "this");
-```
+.. code-block:: 
+
+    allow("anyone", "can_query", "this");
 
 And in the route:
 
-```python
-@app.route("/hello")
-def hello_route():
-    oso_extension.authorize(actor="anyone", action="can_query", resource="this")
-    return "hello again"
-```
+.. code-block::
+
+    @app.route("/hello")
+    def hello_route():
+        oso_extension.authorize(actor="anyone", action="can_query", resource="this")
+        return "hello again"
 
 Which works as a sort of catch-all to allowing anyone to visit a route,
 you can choose to use  the `@flask_oso.skip_authorization` decorator instead.
 
-```python
-from flask_oso import skip_authorization
+.. code-block:: python
+    :linenos:
+    from flask_oso import skip_authorization
 
-@app.route("/hello")
-@skip_authorization
-def hello_route():
-    return "hello again"
-```
+    @app.route("/hello")
+    @skip_authorization
+    def hello_route():
+        return "hello again"
 
-{% capture value %}
-Any third-party decorators have to come **after** the `flask` decorators.
-{% endcapture %}
+.. note:: Decorator Ordering
 
-{% include note.html title="Decorator Ordering" alert_type="note" content=value%}
+    Any third-party decorators have to come **after** the `flask` decorators.
 
 An interesting thing to note thus far is that there has been **no authentication**
 of any sort in our app. Additionally, we seem to have forgone the use of
@@ -696,19 +726,17 @@ and the `resource`. While *all* of `oso`'s use case can be assumed to fall in
 to these three buckets, remember again that *you do not need to follow this
 paradigm*.  Understanding this enables you do do this:
 
-```
-allow(1, "can_be_added_to", 1);
-```
+.. code-block:: 
+    allow(1, "can_be_added_to", 1);
 
 Which can be used in Python as:
 
-```python
+.. code-block::
 
-@app.route("/add")
-def check_add():
-    oso_extension(actor=1, action="can_be_added_to", resource=1)
-    return "1 can be added to 1, giving 2"
-```
+    @app.route("/add")
+    def check_add():
+        oso_extension(actor=1, action="can_be_added_to", resource=1)
+        return "1 can be added to 1, giving 2"
 
 While this may seem like quite the trivial nonsense, I deplore readers to
 spend some time thinking why or how they could use something like this.
@@ -716,155 +744,157 @@ spend some time thinking why or how they could use something like this.
 That being said, let's get into implementing `oso` with a proper authenticated
 session.
 
-### With Flask-Login
+With Flask-Login
+===================
 
 `Flask-Login` is a popular `flask` extension for creating logins. I recommend
 going through its official docs to understand how to set it up.
 
 For now, here's a barebones app.
 
-```python
-from flask import Flask, request, jsonify
-from flask_login import LoginManager, login_required
+.. code-block:: python
+    :linenos:
 
-app = Flask(__name__)
-login_manager = LoginManager()
-login_manager.init_app(app)
+    from flask import Flask, request, jsonify
+    from flask_login import LoginManager, login_required
 
-class User:
-    def __init__(self, id=None):
-        self.id = id
+    app = Flask(__name__)
+    login_manager = LoginManager()
+    login_manager.init_app(app)
 
-    @staticmethod
-    def get(id):
-        if id == "admin":
-            return User("admin")
-        else:
-            return None
+    class User:
+        def __init__(self, id=None):
+            self.id = id
 
-    def is_authenticated(self):
-        return self.id == "admin"
+        @staticmethod
+        def get(id):
+            if id == "admin":
+                return User("admin")
+            else:
+                return None
 
-    def is_active(self):
-        return self.id == "admin"
+        def is_authenticated(self):
+            return self.id == "admin"
 
-    def is_anonymous(self):
-        return self.id is None
+        def is_active(self):
+            return self.id == "admin"
 
-    def get_id(self):
-        return self.id
+        def is_anonymous(self):
+            return self.id is None
 
-
-@login_manager.user_loader
-def load_user(user_id):
-    return User.get(user_id)
+        def get_id(self):
+            return self.id
 
 
-@app.route("/login", methods=["POST"])
-def login():
-    username = request.get("username")
-    password = request.get("password")
-
-    if username == "admin" and password == "admin":
-        user = User("admin")
-        login_user(user)
-        return jsonify(msg="login was a success!")
+    @login_manager.user_loader
+    def load_user(user_id):
+        return User.get(user_id)
 
 
-@app.route("/secure_route")
-@login_required
-def secure_route():
-    return jsonify(msg="this is a login-only route")
+    @app.route("/login", methods=["POST"])
+    def login():
+        username = request.get("username")
+        password = request.get("password")
 
-@app.route("/logout")
-@login_required
-def logout():
-    logout_user()
-    return jsonify(msg="you have been logged out")
+        if username == "admin" and password == "admin":
+            user = User("admin")
+            login_user(user)
+            return jsonify(msg="login was a success!")
 
-```
+
+    @app.route("/secure_route")
+    @login_required
+    def secure_route():
+        return jsonify(msg="this is a login-only route")
+
+    @app.route("/logout")
+    @login_required
+    def logout():
+        logout_user()
+        return jsonify(msg="you have been logged out")
 
 The above example doesn't use `oso` yet. It's a very simple, single user
 API, where the username and password is `admin`.
 
-*Note that I do not recommend you do this sort of password check, or that you
-code `admin` `admin` in your your app. **Seriously**, don't blame me if you do
-this.*
+.. warning:: 
+   Note that I do not recommend you do this sort of password check, or that you
+   code `admin` `admin` in your your app. **Seriously**, don't blame me if you do
+   this.
 
 Run this file.
 
-```
-$ export FLASK_APP=app.py
-$ flask run
- * Running on http://127.0.0.1:5000/
-```
+.. code-block:: bash
+    export FLASK_APP=app.py
+    flask run
+    # output: Running on http://127.0.0.1:5000/
 
 Login using `cURL`
 
-```bash
-curl -v --header "Content-Type: application/json" --request POST --data '{"username": "admin", "password": "admin"}' http://localhost:5000/login
-```
+.. code-block:: bash
+    curl -v --header "Content-Type: application/json" --request POST --data '{"username": "admin", "password": "admin"}' http://localhost:5000/login
 
-*Note, use `-v` to see the Cookie response.*
+.. tip::
+   Use `-v` to see the Cookie response.
 
 This responds something like this:
 
-```
-Note: Unnecessary use of -X or --request, POST is already inferred.
-*   Trying 127.0.0.1...
-* TCP_NODELAY set
-* Connected to localhost (127.0.0.1) port 5000 (#0)
-> POST /login HTTP/1.1
-> Host: localhost:5000
-> User-Agent: curl/7.58.0
-> Accept: */*
-> Content-Type: application/json
-> Content-Length: 42
->
-* upload completely sent off: 42 out of 42 bytes
-* HTTP 1.0, assume close after body
-< HTTP/1.0 200 OK
-< Content-Type: application/json
-< Content-Length: 31
-< Set-Cookie: remember_token=admin|2e8e46e666c966125e1df57bf560a4aa129ee62f36b011cb01452b0b0369da88241bb0120288974a36358566b0458996e2afbc0de91a9196170c3bb0a4b9f42f; Expires=Mon, 07-Feb-2022 17:47:08 GMT; Path=/
-< Vary: Cookie
-< Set-Cookie: session=.eJwlzjEOwjAMQNG7ZGaIE9txehlk17boAENLJ8TdqcT2ly-9T7nnHsejLO_9jFu5b16WUkdvMpy8iTXJ7hIz5pgEZKaKme7QtAnAUKPanVYV00QzVArlPq7C8BSmtraOcP2c6xQLnSRWVVDrrABiJlw5kG2gY-_E5YKcR-x_jfpze5XvD7KsMUk.YCAnnA.SfBueBlbxoY1yxq-xwqN6fHudmQ; HttpOnly; Path=/
-< Server: Werkzeug/1.0.1 Python/3.9.1
-< Date: Sun, 07 Feb 2021 17:47:08 GMT
-<
-{"msg":"login was a success!"}
-* Closing connection 0
-```
+.. code-block::
+
+    Note: Unnecessary use of -X or --request, POST is already inferred.
+    *   Trying 127.0.0.1...
+    * TCP_NODELAY set
+    * Connected to localhost (127.0.0.1) port 5000 (#0)
+    > POST /login HTTP/1.1
+    > Host: localhost:5000
+    > User-Agent: curl/7.58.0
+    > Accept: */*
+    > Content-Type: application/json
+    > Content-Length: 42
+    >
+    * upload completely sent off: 42 out of 42 bytes
+    * HTTP 1.0, assume close after body
+    < HTTP/1.0 200 OK
+    < Content-Type: application/json
+    < Content-Length: 31
+    < Set-Cookie: remember_token=admin|2e8e46e666c966125e1df57bf560a4aa129ee62f36b011cb01452b0b0369da88241bb0120288974a36358566b0458996e2afbc0de91a9196170c3bb0a4b9f42f; Expires=Mon, 07-Feb-2022 17:47:08 GMT; Path=/
+    < Vary: Cookie
+    < Set-Cookie: session=.eJwlzjEOwjAMQNG7ZGaIE9txehlk17boAENLJ8TdqcT2ly-9T7nnHsejLO_9jFu5b16WUkdvMpy8iTXJ7hIz5pgEZKaKme7QtAnAUKPanVYV00QzVArlPq7C8BSmtraOcP2c6xQLnSRWVVDrrABiJlw5kG2gY-_E5YKcR-x_jfpze5XvD7KsMUk.YCAnnA.SfBueBlbxoY1yxq-xwqN6fHudmQ; HttpOnly; Path=/
+    < Server: Werkzeug/1.0.1 Python/3.9.1
+    < Date: Sun, 07 Feb 2021 17:47:08 GMT
+    <
+    {"msg":"login was a success!"}
+    * Closing connection 0
 
 Copy the `Set-Cookie: session:` value to use in the following command:
 
-```bash
-curl --cookie "session=.eJwlzjEOwjAMQNG7ZGaIE9txehlk17boAENLJ8TdqcT2ly-9T7nnHsejLO_9jFu5b16WUkdvMpy8iTXJ7hIz5pgEZKaKme7QtAnAUKPanVYV00QzVArlPq7C8BSmtraOcP2c6xQLnSRWVVDrrABiJlw5kG2gY-_E5YKcR-x_jfpze5XvD7KsMUk.YCAnnA.SfBueBlbxoY1yxq-xwqN6fHudmQ; HttpOnly; Path=/" http://localhost:5000/secure_route
-```
+.. code-block:: bash
+    curl --cookie "session=.eJwlzjEOwjAMQNG7ZGaIE9txehlk17boAENLJ8TdqcT2ly-9T7nnHsejLO_9jFu5b16WUkdvMpy8iTXJ7hIz5pgEZKaKme7QtAnAUKPanVYV00QzVArlPq7C8BSmtraOcP2c6xQLnSRWVVDrrABiJlw5kG2gY-_E5YKcR-x_jfpze5XvD7KsMUk.YCAnnA.SfBueBlbxoY1yxq-xwqN6fHudmQ; HttpOnly; Path=/" http://localhost:5000/secure_route
 
-{% capture value %}
-While `curl` is a great tool, it might intimidate users somewhat if you're not used to a CLI. In those cases, I'd recommend using Postman, or, if you want an easier CLI, I'd also recommend [httpie](https://httpie.io/?_blank).
+.. note::
 
-For the rest of this blog article, I am going to use httpie, which helps do the same steps above through:
+    While `curl` is a great tool, it might intimidate users somewhat if you're not used to a CLI. In those cases, I'd recommend using Postman, or, if you want an easier CLI, I'd also recommend [httpie](https://httpie.io/?_blank).
 
-```http http://localhost:5000/login username=admin password=admin --session test```
+    For the rest of this blog article, I am going to use httpie, which helps do the same steps above through:
+    .. code-block:: bash
+    http http://localhost:5000/login username=admin password=admin --session test
 
-This stores the session cookie in a local file attached to this session name.
+    This stores the session cookie in a local file attached to this session name.
 
-```http http://localhost:5000/secure_route --session test```
+    .. code-block:: bash
+        http http://localhost:5000/secure_route --session test
 
-This will then use *that* cookie effortlessly on your part.
+    This will then use *that* cookie effortlessly on your part.
 
-Note that `http` is how you use the `httpie` command. Please [check the docs to learn more.](https://httpie.io/docs)
-{% endcapture %}
+    Note that `http` is how you use the `httpie` command. Please [check the docs to learn more.](https://httpie.io/docs)
 
-{% include note.html title="" alert_type="" content=value%}
 
 This gives us the following response:
 
-```json
-{"msg":"this is a login-only route"}
-```
+.. code-block:: json
+
+    {
+    "msg": "this is a login-only route"
+    }
 
 This is now a login-only route. While that solves our purpose of whether a
 user is authenticated or not, this doesn't do anything related to whether a
