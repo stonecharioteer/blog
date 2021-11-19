@@ -413,3 +413,5 @@ rediraffe_redirects = {
 
 def setup(app):
     app.add_css_file("custom.css")
+
+ablog_website = "docs"
