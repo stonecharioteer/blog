@@ -47,7 +47,7 @@ I wanted to dig into *why* I find this library fascinating enough to be *this*
 excited. I'm writing about all the different ways in which you *could* use Oso,
 even if it wasn't exactly meant for that purpose. Not everyone will have such a
 requirement, but in my opinion, this is how you learn. You build things that
-might not see mobvious from the first glance. I'll save the fanboyism for the
+might not seem obvious from the first glance. I'll save the fanboyism for the
 conclusion, but I'll leave you with this.
 
 While Oso does a lot for you under the hood, it's *what you can do* if you know
