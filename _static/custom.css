@@ -102,16 +102,17 @@ div.timeline div.entry.right::after {
     left: -.5em;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
+body, p, h1, h2, h3, h4, h5, h6 {
     font-family: "Merriweather", Serif;
+}
+
+p {
+    font-size: calc(8px + 1vw);
 }
 
 img.logo {
     margin-left: 15px;
     margin-right: 5px;
-}
-img.logo::after {
-    content: "Stonecharioteer's Blog: Programming and Life as a Self Taught Dev"
 }
 
 div.bd-sidebar {
