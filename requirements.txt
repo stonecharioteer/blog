@@ -44,6 +44,7 @@ jupyter-server-mathjax==0.2.3
 jupyter-sphinx==0.3.2
 jupyterlab-pygments==0.1.2
 jupyterlab-widgets==1.0.2
+latexcodec==2.0.1
 livereload==2.6.3
 lxml==4.6.4
 markdown-it-py==1.1.0
@@ -70,6 +71,8 @@ pre-commit==2.15.0
 prometheus-client==0.12.0
 prompt-toolkit==3.0.22
 ptyprocess==0.7.0
+pybtex==0.24.0
+pybtex-docutils==1.0.1
 pycparser==2.21
 pydata-sphinx-theme==0.7.2
 Pygments==2.10.0
@@ -91,11 +94,13 @@ sphinx-autobuild==2021.3.14
 sphinx-panels==0.6.0
 sphinx-togglebutton==0.2.3
 sphinxcontrib-applehelp==1.0.2
+sphinxcontrib-bibtex==2.4.1
 sphinxcontrib-devhelp==1.0.2
 sphinxcontrib-htmlhelp==2.0.0
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
+sphinxemoji==0.2.0
 sphinxext-opengraph==0.4.2
 sphinxext-rediraffe==0.2.7
 SQLAlchemy==1.4.27

@@ -160,7 +160,7 @@ would you need Oso?
    your policies *across* your organization: in *multiple* languages.
 5. You can separately version control your policies.
 6. Policies are just strings. You can store them in a database, if you want
-   to. Also, `/r/madlads <https://reddit.com/r/madlads>`_ is :point_right: that
+   to. Also, `/r/madlads <https://reddit.com/r/madlads>`_ is |:point_right:| that
    way.
 
 .. admonition:: Personal Take
