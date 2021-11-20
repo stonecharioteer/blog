@@ -107,7 +107,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-size: calc(8px + 1vw);
+    font-size: calc(12px + 0.5vw);
 }
 
 img.logo {
@@ -117,4 +117,32 @@ img.logo {
 
 div.bd-sidebar {
     overflow-y: scroll;
+}
+
+div.blockquote {
+    font-style: oblique;
+    font-size: calc(12px + 0.5vw);
+    padding-left: calc(10px + 10vw);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    border-left: 3px solid lightgrey;
+}
+
+div.blockquote > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: calc(10px + 10vw);
+    padding: 0;
+}
+
+.admonition-title {
+    margin-left: 100rem;
+}
+div.blockquote > div.attribution {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    width: 50%;
+    text-align: right;
 }

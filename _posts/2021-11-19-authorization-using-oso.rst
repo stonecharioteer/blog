@@ -178,7 +178,9 @@ would you need Oso?
    help you appreciate what that means, but I hope to. If nothing else, I hope to leave you
    with this:
 
-   |   Oso is *powerful*, and not just for authorization.
+   .. container:: blockquote
+      
+      Oso is *powerful*, and not just for authorization.
 
 --------------
 Hello Oso
