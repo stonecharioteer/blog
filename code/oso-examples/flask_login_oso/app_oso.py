@@ -35,9 +35,7 @@ class User:
 
 base_oso = Oso()
 base_oso.register_class(User)
-base_oso.load_str("""allow(user: User, "can", "logout");""")
-base_oso.load_str("""allow(user: User, "can", "logout") if user.id = "admin";""")
-# Change to: base_oso.load_file("policies.polar")
+base_oso.load_file("policies.polar")
 
 
 @login_manager.user_loader
@@ -77,6 +75,7 @@ def logout():
     if base_oso.is_allowed(User(username), "can", "logout"):
         # this line will allow all logged in users to be able to logout.  logout_user()
         logout_user()
+
         return jsonify(msg="you have been logged out")
     else:
         return "access denied", 403
