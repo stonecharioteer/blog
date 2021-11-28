@@ -1,6 +1,7 @@
 ======================================
 Authorization in Python using Oso
 ======================================
+.. {{{ headerblock
 
 .. post:: Nov 28, 2021
    :tags: oso, authorization, web-development, tech
@@ -11,25 +12,25 @@ Authorization in Python using Oso
    an authorization framework. In this article, I dive into how to use it,
    from a bottom-up approach.
 
-
+.. }}}
 --------
 Outline
 --------
-
+.. {{{ outline
 .. contents:: Sections
 
-.. todo:: 
+.. todo::
 
     * Explain how to use Oso with Flask Login
     * Explain how to use Flask-Oso
     * Explain how to use Oso with JWT Tokens
     * Explain how to use Oso with OIDC (necessary?)
     * Explain how to use the new ``resource`` fields.
-
+.. }}}
 ----------
 Prelude
 ----------
-
+.. {{{ prelude
 This is an article I've been working on for almost a year now. Life got in the way,
 but it wasn't just that. I haven't been using Oso in the months since February,
 since I've moved on to another company, but the central premise that excites
@@ -52,10 +53,11 @@ conclusion, but I'll leave you with this.
 While Oso does a lot for you under the hood, it's *what you can do* if you know
 it like a power user that empowers you.
 
+.. }}}
 -----------------
 Introduction
 -----------------
-
+.. {{{ introduction
 Auth is one of the more underrated features in software. Not only is it hard
 to do in a secure manner, it is also seldom appreciated when it is done well.
 When auth works, it's business as usual, and when it doesn't, someone messed
@@ -85,10 +87,11 @@ username can perform on every third Sunday? Tough luck, you can't do that.
 
 Or maybe you can.
 
+.. }}}
 ---------------
 What is Oso?
 ---------------
-
+.. {{{ what is oso
 `Oso <https://osohq.com>`_ is a library that takes care of authorization. In
 coding terms, Oso allows you to take code that looks like this:
 
@@ -143,9 +146,11 @@ and instead focus on their code. Everything else is denied to the user.
 Yes, :code:`oso` is *deny by default*. No one gets to do anything if you haven't
 defined a rule that you're attempting to use.
 
+.. }}}
 --------------------
 Why do I need Oso?
 --------------------
+.. {{{ why do I need oso
 
 If you're used to doing things with *if* statements, or perhaps modular
 decorators if you're in a Python world, and that's a good pattern to have, why
@@ -178,12 +183,14 @@ would you need Oso?
    with this:
 
    .. container:: blockquote
-      
-      Oso is *powerful*, and not just for authorization.
 
+      Oso is *powerful*, and not just for authorization.
+.. }}}
 --------------
 Hello Oso
 --------------
+.. {{{ hello oso
+.. {{{ intro block
 
 .. admonition:: Using Oso in other languages
     :class: note
@@ -215,6 +222,9 @@ Then, create a `new python file.
 All examples from this post are available at `Github
 <https://github.com/stonecharioteer/blog/tree/master/code/oso-examples>`_
 
+.. }}}
+
+.. {{{ what's going on
 What's Going On?
 =================
 
@@ -240,10 +250,9 @@ later. For now, all you need to know is that we've added the _line_
    `"` for its strings and I didn't want to use single-quotes `'` to surround
    them in Python. You may choose to do so if you like.
 
+This line says:
 
-This line says: 
-
-.. 
+..
 
    If a function called `allow` is triggered with 3 variables equal to,
    *literally*: :code:`"user"`, :code:`"can_use"` and :code:`"this_program"`, then
@@ -259,9 +268,11 @@ matches and evaluates to ``True`` (this is on the Python side).
 
 Hence, the line ``print("Hello from oso")`` works.
 
+.. }}}
+
+.. {{{ what happened
 What Happened?
 ----------------
-
 Under the hood, Oso evaluates Polar rules and loads them into the `oso.Oso`
 object that we create. Those rules dictate the outcome of
 ``oso_object.is_allowed`` calls. But here's a question for you:
@@ -288,10 +299,11 @@ This *defines* a policy called `allow` with those **exact**: parameters.
 matches the rule, thus evaluating to ``True`` in the Python file. ``is_allowed``
 is *hard-wired* to find a declarative function named ``allow`` in all the polar
 definitions that are *loaded* into memory at this current moment.
+.. }}}
 
+.. {{{ denial
 What if I want to *deny* access?
 ===================================
-
 That's simple. Just try to call ``is_allowed`` with **anything** else.
 
 In our previous file, add the following:
@@ -319,13 +331,15 @@ For brevity, the previous file is printed here in full:
    :language: python
    :linenos:
 
+.. }}}
+.. }}}
 -----------------
 Oso in a CLI
 -----------------
-
+.. {{{ oso cli
 An interesting exercise to understand what you could do with Oso is to try
 building a command line tool.
-
+.. {{{ argparse
 Using `argparse`
 ================
 
@@ -430,10 +444,12 @@ Again, for brevity, here's the complete ``cli.py`` file:
     :language: python
     :linenos:
 
+.. }}}
+.. }}}
 ------------------------
 Where's the Server?
 ------------------------
-
+.. {{{ server
 An easy misconception to make is that Oso needs to be used with an API. It
 doesn't.  In fact, you could use Oso for regular applications or scripts. If
 you want to dictate whether your code can or cannot do something, go right
@@ -452,10 +468,11 @@ However, one place where authorization is definitely needed is in a web app.
 That's where Oso was designed to be used, despite my proclivity to use it
 in hacked-up scripts.
 
+.. }}}
 --------------
 Oso and Flask
 --------------
-
+.. {{{ flask
 Oso is a very simple way to decide what a particular user can do Flask app.
 However, remember that Oso doesn't care how or if a user is authenticated. You
 can *choose* to integrate it with a user session, but this is not really
@@ -463,6 +480,8 @@ needed.
 
 Depending on how you use logins and user sessions, I'd recommend going through
 the following three sections separately.
+
+.. {{{ barebones
 
 With a barebones Flask application
 ===================================
@@ -472,7 +491,7 @@ Consider the following ``app.py``:
 .. literalinclude:: /code/oso-examples/flask_oso_example/app.py
    :language: python
    :linenos:
-   :lines: 1-25 
+   :lines: 1-25
 
 Run this application with:
 
@@ -492,7 +511,7 @@ You will get the ``"hello world"`` response from this route.
 Now try using ``cURL`` to query ``/unvisitable``.
 
 .. code-block:: bash
-   
+
     curl http://localhost:5000/unvisitable
 
 You will get a ``403 Unauthorized`` from this route.
@@ -509,7 +528,7 @@ Now add a new route.
 .. literalinclude:: /code/oso-examples/flask_oso_example/app.py
    :language: python
    :linenos:
-   :lines: 28,30,31
+   :lines: 22,24-25
 
 Rerun the app, and ``cURL`` the ``/hello`` route.
 
@@ -522,7 +541,7 @@ You will get a ``"hello again"`` response. However there is no
 
 What is *going on?*
 
-While Oso *denies by default*, ``flask_oso``` will have to be told to do so,
+While Oso *denies by default*, ``flask_oso`` will have to be told to do so,
 or it doesn't check for any rule whatsoever.
 
 So, add this line at the very bottom of ``app.py`` and rerun the last ``cURL``
@@ -531,9 +550,11 @@ command.
 .. literalinclude:: /code/oso-examples/flask_oso_example/app.py
    :language: python
    :linenos:
-   :lines: 33
+   :lines: 27
 
-*Remember, there's no indentation here. This is **outside** any function or view.*
+.. note::
+
+   Remember, there's no indentation here. This is **outside** any function or view.
 
 .. code:: bash
 
@@ -544,7 +565,7 @@ Now try running this route.
 Immediate you see the following `500 Server Error` and on inspecting the server's
 output, you see the following:
 
-.. code-block:: 
+.. code-block::
 
     Traceback (most recent call last):
     File "/home/user/oso-examples/env/lib/python3.9/site-packages/flask/app.py", line 1970, in finalize_request
@@ -560,7 +581,7 @@ that there is some route that hasn't explicitly run ``oso_extension.authorize``
 to check for the right permissions. This is a useful setting to keep active,
 but if you don't want to write some rule that looks like:
 
-.. code-block:: 
+.. code-block::
 
     allow("anyone", "can_query", "this");
 
@@ -579,7 +600,7 @@ you can choose to use  the ``@flask_oso.skip_authorization`` decorator instead.
 
 .. literalinclude:: /code/oso-examples/flask_oso_example/app.py
    :language: python
-   :lines: 28-31
+   :lines: 22-25
    :emphasize-lines: 2
    :linenos:
 
@@ -605,7 +626,7 @@ use case can be assumed to fall in to these three buckets, remember again that
 *you do not need to follow this paradigm.*  Understanding this enables you do
 do this:
 
-.. code-block:: 
+.. code-block::
 
     allow(1, "can_be_added_to", 1);
 
@@ -615,7 +636,7 @@ Which can be used in Python as:
 
     @app.route("/add")
     def check_add():
-        oso_extension(actor=1, action="can_be_added_to", resource=1)
+        oso_extension.authorize(actor=1, action="can_be_added_to", resource=1)
         return "1 can be added to 1, giving 2"
 
 While this may seem like quite the trivial nonsense, I deplore readers to
@@ -623,12 +644,17 @@ spend some time thinking why or how they could use something like this.
 
 That being said, let's get into implementing Oso with a proper authenticated
 session.
+.. }}}
+
+.. {{{ flask-login
 
 With Flask-Login
 ===================
 
 Flask-Login is a popular Flask extension for creating logins. I recommend
 going through its official docs to understand how to set it up.
+
+.. {{{ without oso
 
 For now, here's a barebones app.
 
@@ -639,7 +665,7 @@ For now, here's a barebones app.
 The above example doesn't use Oso yet. It's a very simple, single user
 API, where the username and password is "admin".
 
-.. warning:: 
+.. warning::
 
    Note that I do not recommend you do this sort of password check, or that you
    code "admin" "admin" in your your app. **Seriously**, don't blame me if you do
@@ -737,7 +763,19 @@ user can access a particular route or not.
 
 This is where Oso comes in.
 
+.. }}}
+
+.. {{{ raw oso, without flask_oso
+
 Modify the above file to use Oso:
+
+.. note::
+
+   We are still not using ``flask_oso`` in this example like we did in the *previous*
+   example. I'm building up to *why* you'd need yet another extension in your
+   repertoire. You *can* do all that ``flask_oso`` does without resorting to it,
+   and you should probably understand what's going on under the hood, but if you're
+   not interested, you should skip ahead.
 
 .. literalinclude:: /code/oso-examples/flask_login_oso/app_oso.py
    :linenos:
@@ -784,6 +822,10 @@ Note that the contents of ``policies.polar`` are:
    :linenos:
 
 From now on, we are going to call this instead of using :code:`load_str`.
+
+..
+   FIXME: This section seems broken somehow. Why is it talking about flask_oso,
+   when I've not even implemented that yet?
 
 Next, we create an instance of the :code:`flask_oso.FlaskOso` class, and pass it
 the newly created :code:`base_oso` object. This provides a nifty plugin with which
@@ -883,6 +925,9 @@ you shouldn't do this if you want to, when you have a larger Flask app, things
 can get complicated. So, the Oso team has given us a Flask extension called
 ``flask_oso`` that helps us even more.
 
+.. }}}
+
+.. {{{ using flask_oso
 Let's rewrite the above file using :code:`flask_oso`.
 
 .. todo::
@@ -908,7 +953,7 @@ This is a route that is decorated with both :code:`@login_required` and with
 Let's take a closer look.
 
 .. code-block:: python
-    :linenos: 
+    :linenos:
 
     @app.route("/insecure_route")
     @login_required
@@ -924,18 +969,24 @@ notice that I've added :code:`@skip_authorization` to the decorator list.
 Now, we are still using :code:`User` to bind the current user to an oso-accepted
 object. This is a huge limitation, which the Oso crowd has solved yet again for
 us.
+.. }}}
+.. }}}
 
-With ``flask_jwt_extended``
-=================================
-
+.. }}}
 ---------------------
 Advanced Patterns
 ---------------------
+.. {{{ advanced
 
+.. todo::
+
+   Talk about the ``resource`` fields here.
+
+.. }}}
 ------------------
 Getting Help
 ------------------
-
+.. {{{ help
 Oso has a great support system. Their `official website
 <https://www.osohq.com>`_ is a good place to start, and you can find the
 `documentation <https://docs.osohq.com>`_ from there. I recommend looking into
@@ -962,10 +1013,11 @@ accompanying `Github repository <http://github.com/stonecharioteer/oso-examples>
 for this post. You might want to rewind a few commits to see how the code
 evolved, so that you understand the flow of the article as well.
 
+.. }}}
 ----------------
 Conclusion
 ----------------
-
+.. {{{ conclusion
 I don't know if there's a logical conclusion to this article. It's unlike
 anything I've published before on my blog. Oso has been a sheer joy to work
 with, and I'm looking forward to digging into it using Rust next. I want to
@@ -987,3 +1039,4 @@ The folks at Oso are super nice as well, so go on and trouble them on Slack.
 I'm leaving yet another promise to write a long post on hooking into :code:`resource`
 by forking Oso itself, but that's for another day. Graham, when you see this,
 remind me to get to work on that |:smiling_imp:|.
+.. }}}
