@@ -1,50 +1,25 @@
-# Stonecharioteer.com Blog
+============================
+Stonecharioteer.com Blog
+============================
 
-This is the jekyll source code for my blog. I use [YAMT](https://github.com/PandaSekh/Jekyll-YAMT)
-for the layout and the themes.
+This is the source code for my blog. I used to use Jekyll before, but I abhor
+Markdown and don't consider it a worthwhile format to type coding
+articles in. I've migrated the blog to use `ablog <>`_, which uses Sphinx underneath
+the hood. I'm super happy with the way it allows me to use RestructuredText.
 
-## Snippet for Title Block for markdown files
+-------
+Setup
+-------
 
-```javascript
-{
-    "titleblock": {
-        "prefix": "title",
-        "body": [
-            "---",
-            "title: $1",
-            "layout: post",
-            "categories: [$2]",
-            "image: /assets/images/posts/$3",
-            "description: \"$4\"",
-            "customexcerpt: \"$5\"",
-            "---"
-        ]
-    },
-    "admonition": {
-        "prefix": "note",
-        "body": [
-            "{% capture value%}",
-            "$1",
-            "{% endcapture%}",
-            "{% include note.html title=\"$2\" alert_type="${3|note,warning,info}" content=value %}",
-            "",
-            "",
-        ]
-    }
-}
-```
+Dependencies: you'll need Python 3 (install the latest, always), and nodejs
+with npm installed (I recommend using nvm to manage your node versions).
 
-This blog is accessible at [www.stonecharioteer.com](www.stonecharioteer.com).
+.. code-block:: bash
+   
+   python3 -m venv env
+   source env/bin/activate
+   pip install -r requirements.txt
+   ablog build
+   npm install -g live-server
+   live-server docs
 
-
-## Local Testing
-
-Just use the docker command:
-
-```
-docker run --rm -it \
-  --volume="$PWD:/srv/jekyll" \
-  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
-  -p 4000:4000 jekyll/jekyll:3.8 \
-  jekyll serve
-```
