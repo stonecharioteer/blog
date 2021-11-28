@@ -2,7 +2,7 @@
 Authorization in Python using Oso
 ======================================
 
-.. post:: Nov 19, 2021
+.. post:: Nov 28, 2021
    :tags: oso, authorization, web-development, tech
    :category: Tutorial
    :redirect: oso-authz
@@ -20,7 +20,6 @@ Outline
 
 .. todo:: 
     * Explain how to use Oso with Argparse
-    * Explain how to use Oso with Click
     * Explain how to use Flask-Oso
     * Explain how to use Oso with Flask Login
     * Explain how to use Oso with JWT Tokens
@@ -186,7 +185,8 @@ would you need Oso?
 Hello Oso
 --------------
 
-.. note:: Using Oso in other languages
+.. admonition:: Using Oso in other languages
+    :class: note
 
     Oso supports several languages, not just Python. I use Python here merely for
     demonstrative purposes, but you should visit their official `documentation
@@ -194,7 +194,7 @@ Hello Oso
     languages such as Java, Rust and Node.js.
 
 
-So how _do_ you use Oso in your python code?
+So how *do* you use Oso in your python code?
 
 First, install the library. (Make sure you're doing this in a virtual
 environment for your project.)
@@ -206,21 +206,13 @@ environment for your project.)
 Then, create a `new python file.
 <https://github.com/stonecharioteer/blog/tree/master/code/oso-examples>`_
 
-.. code-block:: python
-    :linenos:
+.. literalinclude:: /code/oso-examples/hello_oso/script.py
+   :language: python
+   :linenos:
+   :lines: 1-10
 
-    from oso import Oso
 
-    oso_object = Oso()
-
-    oso_object.load_str("""allow("user", "can_use", "this_program");""")
-
-    if oso_object.is_allowed("user", "can_use", "this_program"):
-        print("Hello from oso")
-    else:
-        print("Access denied")
-
-All examples from this post are available `here as a Github repository.
+All examples from this post are available at `Github
 <https://github.com/stonecharioteer/blog/tree/master/code/oso-examples>`_
 
 What's Going On?
@@ -238,10 +230,11 @@ A policy is declared in a language known as Polar. Polar takes inspiration from
 Prolog, and I like to think of its rule system as a paradigm you'd find in
 Rust's pattern matching. Don't let any of this intimidate you: I'll get to it
 later. For now, all you need to know is that we've added the _line_
-`allow("user", "can_use", "this_program");` to the policies in the `oso_object`
-object.
+:code:`allow("user", "can_use", "this_program");` to the policies in the
+:code:`oso_object` object.
 
-.. tip:: Use double quotes for strings in Polar
+.. admonition:: Use double quotes for strings in Polar
+   :class: tip
    I've used triple double-quotes `"""` because Polar uses only double quotes
    `"` for its strings and I didn't want to use single-quotes `'` to surround
    them in Python. You may choose to do so if you like.
@@ -249,35 +242,37 @@ object.
 
 This line says: 
 
-> If a function called `allow` is triggered with 3 variables equal to,
-> *literally*: `"user"`, `"can_use"` and `"this_program"`, then evaluate to
-> `true`. (Polar uses `true`/`false` as booleans).
+.. 
 
-Next, we use this policy in our script, with `oso_object.is_allowed`. Note that
-the arguments to `is_allowed` are *exactly* the same as those to `allow`.
+   If a function called `allow` is triggered with 3 variables equal to,
+   *literally*: :code:`"user"`, :code:`"can_use"` and :code:`"this_program"`, then
+   evaluate to :code:`true`. (Polar uses ``true``/``false`` as booleans).
 
-Oso's `is_allowed` looks for a function called `allow` loaded into the object
+Next, we use this policy in our script, with ``oso_object.is_allowed``. Note that
+the arguments to ``is_allowed`` are *exactly* the same as those to ``allow``.
+
+Oso's ``is_allowed`` looks for a function called ``allow`` loaded into the object
 which has a matching pattern. (Again, don't worry too much about this for now.)
 And it finds the single policy we have defined and realizes that the policy
-matches and evaluates to `True` (this is on the Python side).
+matches and evaluates to ``True`` (this is on the Python side).
 
-Hence, the line `print("Hello from oso")` works.
+Hence, the line ``print("Hello from oso")`` works.
 
 What Happened?
 ----------------
 
 Under the hood, Oso evaluates Polar rules and loads them into the `oso.Oso`
 object that we create. Those rules dictate the outcome of
-`oso_object.is_allowed` calls. But here's a question for you:
+``oso_object.is_allowed`` calls. But here's a question for you:
 
-Where are the rules coming from?
+**Where are the rules coming from?**
 
 Polar is a declarative language. While it supports things like integers and
 some rudimentary math, strings and boolean values, it doesn't have much else.
 
-So what is `allow`?
+So what is ``allow``?
 
-The interesting thing about `oso` and its choice with Polar is that `allow` is
+The interesting thing about Oso and its choice with Polar is that ``allow`` is
 whatever you want it to be.
 
 Let me reiterate.
@@ -288,36 +283,40 @@ Let me reiterate.
 
 This *defines* a policy called `allow` with those **exact**: parameters.
 
-`is_allowed` matches its arguments with this policy, and realizes that it
-matches the rule, thus evaluating to `True` in the Python file. `is_allowed`
-is *hard-wired* to find a declarative function named `allow` in all the polar
+``is_allowed`` matches its arguments with this policy, and realizes that it
+matches the rule, thus evaluating to ``True`` in the Python file. ``is_allowed``
+is *hard-wired* to find a declarative function named ``allow`` in all the polar
 definitions that are *loaded* into memory at this current moment.
 
 What if I want to *deny* access?
 ===================================
 
-That's simple. Just try to call `is_allowed` with **anything** else.
+That's simple. Just try to call ``is_allowed`` with **anything** else.
 
 In our previous file, add the following:
 
-.. code-block:: python
-    :linenos:
+.. literalinclude:: /code/oso-examples/hello_oso/script.py
+   :language: python
+   :lines: 12-15
+   :lineno-start: 12
+   :linenos:
 
-    if oso_object.is_allowed("user-123", "can_run", "this_program"):
-        print("Hello again, but you probably can't run this line.")
-    else:
-        print("You weren't authorized by the rules!")
-
-This `is_allowed` will evaluate to `False`, since it doesn't match the rule
-that we've loaded into the`oso_object`.
+This ``is_allowed`` will evaluate to ``False``, since it doesn't match the rule
+that we've loaded into the ``oso_object``.
 
 Remember what I've been saying about *pattern-matching*? Well, Oso looks for
 an *exact* match for the rules. You *could* generalize it further by using types,
 or your own classes, but we'll get to that later.
 
-For now, you need to just understand that `oso` essentially does a 1:1 match
-with the rules in your `oso_object` and evaluates `is_allowed` based on a
-suitable `allow` policy.
+For now, you need to just understand that Oso essentially does a 1:1 match
+with the rules in your ``oso_object`` and evaluates ``is_allowed`` based on a
+suitable ``allow`` policy.
+
+For brevity, the previous file is printed here in full:
+
+.. literalinclude:: /code/oso-examples/hello_oso/script.py
+   :language: python
+   :linenos:
 
 -----------------
 Oso in a CLI
@@ -326,180 +325,85 @@ Oso in a CLI
 An interesting exercise to understand what you could do with Oso is to try
 building a command line tool.
 
-Using argparse
+Using `argparse`
 ================
 
-Let's write a quick CLI using `argparse`:
+Let's write a quick CLI using ``argparse``:
 
-.. code-block:: python
-    :linenos:
+.. literalinclude:: /code/oso-examples/cli/cli.py
+   :language: python
+   :linenos:
+   :lines: 2, 4-7, 54-57
 
-    import argparse
+This is a simple CLI that uses `argparse. <https://docs.python.org/3/library/argparse.html>`_
 
-    parser = argparse.ArgumentParser(
-        description="Simple rmdir clone command-line-tool to demonstrate Oso's usage")
-    parser.add_argument('path', metavar="P", type=str, help="Path to remove")
-
-
-    if __name__ = "__main__":
-        args = parser.parse_args()
-        print(f"Attempting to remove directory: {args.path}.")
-
-This is a simple CLI that uses
-`argparse. <https://docs.python.org/3/library/argparse.html>`_ I'm going to
-attempt a check to see if the user has write permissions, and only then allow a
-delete.
+I'm going to attempt a check to see if the user has write permissions, and only
+then allow a delete.
 
 Let's add some more code here.
 
-.. code-block:: python
+.. literalinclude:: /code/oso-examples/cli/cli.py
+    :language: python
     :linenos:
-
-    from enum import Enum
-
-    class PathAttributes(Enum):
-        """A bunch of enums to help understand the path attributes"""
-        # path isn't a directory
-        NOTADIRECTORY = 1
-        # path is a writable directory
-        WRITABLEDIRECTORY = 2
-        # path is a read only directory (current user doesn't have write access)
-        READONLYDIRECTORY = 3
-        # path is an inaccessible directory (current user doesn't have read or write access)
-        INACCESSABLEDIRECTORY = 4
-        # path does not exist
-        NONEXISTENTDIRECTORY = 5
-
-
-    def get_path_attributes(path):
-        """Returns a tuple of path attributes"""
-        import pathlib
-        import stat
-
-        path = pathlib.Path(path)
-        if not path.exists():
-            return PathAttributes.NONEXISTENTDIRECTORY
-        elif not path.is_dir():
-            return PathAttributes.NOTADIRECTORY
-        else:
-            # this is a directory. We need to determine whether it's
-            # writable, readable or accessible.
-            path_stat_mode = path.stat().st_mode
-            is_writeable = stat.S_ISWUSER(path_stat_mode) or stat.S_ISWGRP(path_stat_mode) or stat.S_ISWOTH(path_stat_mode)
-            if is_writeable:
-                return PathAttributes.WRITEABLEDIRECTORY
-            else:
-                is_readable = stat.S_ISRUSER(path_stat_mode) or stat.S_ISRGRP(path_stat_mode) or stat.S_ISROTH(path_stat_mode)
-                if is_readable:
-                    return PathAttributes.READONLYDIRECTORY
-                else:
-                    return PathAttributes.INACCESSIBLEDIRECTORY
-
-
-    def rmdir(path):
-        import shutil
-        import oso
-        path_attributes = get_path_attributes(path)
-        if oso.is_allowed("can_remove", path_attributes):
-            shutil.rmtree(path)
-        else:
-            raise PermissionError(f"You cannot delete {path}")
+    :lines: 3, 8-53
 
 The above code looks like it is a lot. Let's take a moment to understand what is
 happening here.
 
-.. code-block:: python
-     from enum import Enum
 
+.. literalinclude:: /code/oso-examples/cli/cli.py
+    :language: python
+    :linenos:
+    :lines: 3
 
-This imports the `Enum` class so that we can define an enumeration for the path
+This imports the ``Enum`` class so that we can define an enumeration for the path
 attributes. Take a moment to go through the `official Python documentation on
 Enums <https://docs.python.org/3/library/enum.html>`_ if you've never used them
 before.
 
-.. code-block:: python
+.. literalinclude:: /code/oso-examples/cli/cli.py
+    :language: python
     :linenos:
+    :lines: 10-19
 
-    class PathAttributes(Enum):
-        """A bunch of enums to help understand the path attributes"""
-        # path isn't a directory
-        NOTADIRECTORY = 1
-        # path is a writable directory
-        WRITABLEDIRECTORY = 2
-        # path is a read only directory (current user doesn't have write access)
-        READONLYDIRECTORY = 3
-        # path is an inaccessible directory (current user doesn't have read or write access)
-        INACCESSABLEDIRECTORY = 4
-        # path does not exist
-        NONEXISTENTDIRECTORY = 5
-
-The `PathAttributes` class defines an enumerated set of attributes for a folder.
+The ``PathAttributes`` class defines an enumerated set of attributes for a folder.
 The in-line comments explain what they're for.
 
 At this point experienced pythonistas may be wondering what the heck I'm doing.
-Bear with me, this isn't a best-principles-python-tutorial. It's a "what can
+Bear with me, *this isn't a best-principles-python-tutorial*. It's a "what can
 Oso do?" showcase.
 
 Next, the functions:
 
-.. code-block:: python
-   :linenos:
-
-   def get_path_attributes(path):
-      """Returns a tuple of path attributes"""
-      import pathlib
-      import stat
-
-      path = pathlib.Path(path)
-      if not path.exists():
-            return PathAttributes.NONEXISTENTDIRECTORY
-      elif not path.is_dir():
-            return PathAttributes.NOTADIRECTORY
-      else:
-            # this is a directory. We need to determine whether it's
-            # writable, readable or accessible.
-            path_stat_mode = path.stat().st_mode
-            is_writeable = stat.S_ISWUSER(path_stat_mode) or stat.S_ISWGRP(path_stat_mode) or stat.S_ISWOTH(path_stat_mode)
-            if is_writeable:
-               return PathAttributes.WRITEABLEDIRECTORY
-            else:
-               is_readable = stat.S_ISRUSER(path_stat_mode) or stat.S_ISRGRP(path_stat_mode) or stat.S_ISROTH(path_stat_mode)
-               if is_readable:
-                  return PathAttributes.READONLYDIRECTORY
-               else:
-                  return PathAttributes.INACCESSIBLEDIRECTORY
+.. literalinclude:: /code/oso-examples/cli/cli.py
+    :language: python
+    :linenos:
+    :lines: 22-38
 
 This function returns the *type* of the item, using our Enum. Ignore the `stat`
 lines, since they're irrelevant to this post. If you must know, they check the
 user permissions for a given path.
 
-.. code-block:: python
+.. literalinclude:: /code/oso-examples/cli/cli.py
+    :language: python
     :linenos:
-
-    def rmdir(path):
-        import shutil
-        import oso
-        path_attributes = get_path_attributes(path)
-        if oso.is_allowed("can_remove", path_attributes):
-            shutil.rmtree(path)
-        else:
-            raise PermissionError(f"You cannot delete {path}")
+    :lines: 41-53
 
 This function goes ahead and tries to delete the item, checking if a user has
 permissions to do so.
 
 The one line that I'm interested in here is the one that calls
-`oso.is_allowed`, which does all the heavy lifting.
+``oso.is_allowed``, which does all the heavy lifting.
 
-This function call will search for the current polar definitions that `oso` has
+This function call will search for the current polar definitions that Oso has
 been given, and remember, *we haven't loaded a Polar file yet,* and it then
-checks if there's a `allow` statement definition for this check.
+checks if there's a ``allow`` statement definition for this check.
 
 There is none. So irrespective of what you want to do, this function will not
-let you do it if there's a `allow` statement definition for this check.
+let you do it if there's a ``allow`` statement definition for this check.
 
 There is none. So irrespective of what you want to do, this function will not
-let you do it. Instead, it will throw a :code:`PermissionError`.
+let you do it. Instead, it will throw a ``PermissionError``.
 
 Why?
 
@@ -509,39 +413,21 @@ immediately reject your request.
 
 Now, let's go ahead and add a polar file that we will use with this script.
 
-.. code-block::
-
-    allow("can_remove", path_attributes: PathAttribute) if path_attributes in
-    [PathAttributes.WRITEABLEDIRECTORY];
+.. literalinclude:: /code/oso-examples/cli/rmdir.polar
+   :linenos:
 
 This single line is *not* a function call. It *is nothing but a statement*.
 Repeat that to yourself. It is just a statement that evaluates to :code:`True`.
 
-_If_ you call :code:`oso.is_allowed` with 2 arguments that match the parameters
+*If* you call :code:`oso.is_allowed` with 2 arguments that match the parameters
 defined here, then the function :code:`oso.is_allowed` will return a :code:`True`. For
 *all* other scenarios, it will return :code:`False`.
 
-Writing your own decorator for Click
-======================================
+Again, for brevity, here's the complete ``cli.py`` file:
 
-`Click <https://click.palletsprojects.com/en/8.0.x/>`_ is one of my favourite CLI
-tools. I've built several tools using it and I've found that it makes me more
-productive than when I've used argparse.
-Install it using:
-
-.. code-block:: bash
-
-    pip install 'click>=8.0.0,<8.1'
-
-If you were to write the above program using click:
-
-.. code-block:: python
+.. literalinclude:: /code/oso-examples/cli/cli.py
+    :language: python
     :linenos:
-
-    import click
-
-    @click.command()
-    @click.
 
 ------------------------
 Where's the Server?
