@@ -1,8 +1,8 @@
 ---
-layout: post
+blogpost: true
 date: Dec 11, 2019
 category: Health
-tags: hearing-loss
+tags: hearing-loss, snhl, life, health
 ---
 # The Sound of Music
 

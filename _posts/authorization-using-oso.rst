@@ -20,11 +20,10 @@ Outline
 
 .. todo:: 
 
-    * Explain how to use Oso with Argparse
-    * Explain how to use Flask-Oso
     * Explain how to use Oso with Flask Login
+    * Explain how to use Flask-Oso
     * Explain how to use Oso with JWT Tokens
-    * Explain how to use Oso with OIDC
+    * Explain how to use Oso with OIDC (necessary?)
     * Explain how to use the new ``resource`` fields.
 
 ----------
@@ -871,18 +870,18 @@ just like we have been doing so all alone.
 
 Here, we call :code:`base_oso.is_allowed`, just like before, and check if a
 :code:`User` object, created with the `username` value, is *allowed* to read
-this route.  While that explains what we're trying to do, remember that *all
-Polar is* *looking for is:* **a line in the loaded policies that matches
-:code:`allow("admin",** **"can_access", "secure_route");`**.
+this route.  While that explains what we're trying to do, remember that all
+Polar is looking for is: a line in the loaded policies that matches, *exactly*
+``allow("admin", "can_access", "secure_route");``.
 
 Again, for emphasis, Oso only looks for a matching policy. Since we don't have
 such a policy in the loaded policy file, it immediately resolves this function
-call to :code:`False`, and our :code:`if` statement moves to the :code:`else` block.
+call to ``False``, and our ``if`` statement moves to the ``else`` block.
 
 Now, while this is a fine way to use Oso in a Flask app, and there's no reason
 you shouldn't do this if you want to, when you have a larger Flask app, things
 can get complicated. So, the Oso team has given us a Flask extension called
-`flask_oso` that helps us even more.
+``flask_oso`` that helps us even more.
 
 Let's rewrite the above file using :code:`flask_oso`.
 
@@ -903,7 +902,8 @@ use :code:`flask_oso_extension.authorize` instead. Here, the plugin does the bit
 regarding the 403 itself, allowing us to focus on more important,
 business-facing code.
 
-This is a route that is decorated with both :code:`@login_required` and with :code:`@skip_authorization`.
+This is a route that is decorated with both :code:`@login_required` and with
+:code:`@skip_authorization`.
 
 Let's take a closer look.
 
@@ -943,10 +943,6 @@ their Slack server, which is integrated (no joke) into their website for some
 great support. I reached out to `Gabe <mailto:gabe@osohq.com>`_ through their
 integrated chat, and he helped me grok Polar in a great way.
 
-.. todo::
-
-   Add link to the slack server.
-
 Here are some other links:
 
 1. `Getting Started with Oso <https://docs.osohq.com/getting-started/quickstart.html>`_
@@ -959,20 +955,12 @@ Here are some other links:
    1. `Sam Scott: Access Control Patterns in Python <https://www.youtube.com/watch?v=UpPPuBqGbso>`_
    2. `Polar, a Declarative Policy Language <https://www.youtube.com/watch?v=fw8wRl7HbDo>`_
    3. `Building an Open Source Policy Engine in Rust <https://www.youtube.com/watch?v=NkatWt2_kks>`_
+8. `Oso Slack Server <https://join.slack.com/t/oso-oss/shared_invite/zt-gpma9cye-yVfWh75rY3YUUrKanbKeKA>`_
 
 Additionally, like I've mentioned before, go through the examples in the
 accompanying `Github repository <http://github.com/stonecharioteer/oso-examples>`_
 for this post. You might want to rewind a few commits to see how the code
 evolved, so that you understand the flow of the article as well.
-
------------------------
-Cookiecutter Template
------------------------
-
-I maintain a bunch of all-encompassing Flask cookiecutter templates, and I've
-added Oso to all of the templates which have auth built into them. You can find
-the `cookiecutter repository here, <https://github.com/stonecharioteer/cookiecutter-flask-multi>`_
-and `the instructions on running them here. </cookiecutter-flask-multi>`_
 
 ----------------
 Conclusion
@@ -984,7 +972,7 @@ with, and I'm looking forward to digging into it using Rust next. I want to
 learn how to hook into the `resource` fields, and actually do some real damage.
 It helps that the folks at Oso are super friendly.
 
-I'd like to thank Greg for his patience. I've been running my mouth all around
+I'd like to thank Graham for his patience. I've been running my mouth all around
 HN promising them this blog article since January 2021, but truth be told, it's
 been ridiculously slow and their API evolved in that time. The sections on the
 `resource` fields wouldn't have been written if I'd written this in January, so
@@ -998,4 +986,4 @@ docs fulfill that requirement.
 The folks at Oso are super nice as well, so go on and trouble them on Slack.
 I'm leaving yet another promise to write a long post on hooking into :code:`resource`
 by forking Oso itself, but that's for another day. Graham, when you see this,
-remind me to get to work on that :smiling_imp:.
+remind me to get to work on that |:smiling_imp:|.

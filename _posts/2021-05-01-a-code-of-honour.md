@@ -3,7 +3,7 @@ blogpost: true
 date: May 1, 2021
 category: Blog
 tags: meta, philosophy
-permalink: /personal-code
+redirect: personal-code
 ---
 
 # A Personal Code

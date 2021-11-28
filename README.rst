@@ -25,3 +25,21 @@ with npm installed (I recommend using nvm to manage your node versions).
    npm install -g live-server
    live-server docs
 
+.. tip::
+
+   I know it isn't the *best* idea, but I use Tmux with my blog, and I rely on
+   `Tmuxinator <https://github.com/tmuxinator/tmuxinator>`_ to automatically
+   run my blog setup. My config is in the ``.tmuxinator.yml`` file.
+
+   In one pane, I run:
+
+   .. code-block::
+       
+       fd . | entr sh -c 'env/bin/ablog build'
+
+   `entr <https://github.com/eradman/entr>`_ is one of my favourite tools for
+   setting up live builds on file changes.
+
+   And in another, I run ``live-server docs/``
+
+

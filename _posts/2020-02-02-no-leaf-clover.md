@@ -1,14 +1,14 @@
 ---
 blogpost: true
 date: Feb 2, 2020
+category: Health
 tags: hearing-loss, snhl, life, health
-category: Life
 ---
 # No Leaf Clover
 
 [Continued from Part 1: The Sound of Music.]({% post_url 2019-12-11-the-sound-of-music %})
 
-![Hearing Aids](/assets/images/posts/hearing-loss/hearing-aid.png)
+![Hearing Aids](/_static/images/posts/hearing-loss/hearing-aid.png)
 
 I do not believe in luck. There is no such thing. Things happen and we must
 accept them or reject them. What we do defines us.
@@ -166,6 +166,9 @@ I am.
 
 ---
 
-**Update** : The hearing aid does not help me hear everything. It gives me *a sense* of sounds to my left. It's very, very low, because of how much nerve damage there has been to my ear. That has not dismayed me, and WFH is a blessing.
+**Update** : The hearing aid does not help me hear everything. It gives me *a
+sense* of sound to my left. It's very, very low, because of how much nerve
+damage there has been to my ear. That has not dismayed me, and WFH is a
+blessing.
 
 [Read the 1 Year update of my experience to understand more.](https://stonecharioteer.com/2020/09/01/ear-one.html)
