@@ -17,11 +17,29 @@ Resume - Vinay Keerthi K. T.
 
 -----
 
+--------------------
+Merkle Science
+--------------------
+
+**Lead Software Engineer** | **Bangalore** | Started **July 2021**
+
+* Responsible for creating developer documentation and content for developer experience at the company.
+* Created API toolkit for customers to use our API with different programming
+  launguages, including but not restricted to Python, Nodejs, Java and Golang.
+  Used OpenAPI-Generator to autogenerate code in a CircleCI Pipeline.
+* Mentor and train new graduates in domain-level knowledge.
+* Wrote onboarding docs for new engineers, created tutorials to bring engineers up to speed on the domain.
+* Designed and developed our solution for compliance with the FATF Travel Rule recommendation, requiring
+  CryptoCurrency entities to exchange KYC information prior to transferring virtual assets.
+* Templatized Airflow DAGs for new chain onboarding - created a system to generate Apache Airflow DAGs using
+  pure SQL queries, empowering analysts to write only SQL and focus on getting data regarding new cryptocurrencies
+  into our platform.
+
 -----------------
 VISA Inc.
 -----------------
 
-**Sr. Software Engineer - Data Platform** | **Bangalore** | Started: **MAY 2019**
+**Sr. Software Engineer - Data Platform** | **Bangalore** | **MAY 2019 - July 2021**
 
 * [PATENT PENDING] Designed and spearheaded the security portal project, a REST layer that
   facilitates automation of Qualys security updates for PCI compliance
@@ -90,6 +108,7 @@ Tech Stack
 Personal Projects & OSS
 ------------------------
 
+* Conducted a live stream cast on Twitch on `A Weekend with PostgreSQL <https://www.youtube.com/playlist?list=PLyW7jj8atph9VO9UoMPXIKNiyK-q5GZWj>`_
 * Spoke at PyCon India 2019 on `MicroPython: Building a Physical Inventory Search Engine. <https://stonecharioteer.com/2019/10/12/pycon.html>`_
 * (Developed @ VISA) Built a visualization dashboard atop of BitBucket and Github,
   to visualize developer productivity and project momentum using statistical control charts.
