@@ -13,3 +13,14 @@ I recommend getting a physical copy of this book to read along with my notes.
 While the initial sections of the book dwell on the pre-interview process,
 I do not find them *too* relevant to me. I am going to focus purely on the
 problem-solving skills.
+
+-----------
+Exercises
+-----------
+
+1.1 Unique Characters in String
+--------------------------------
+
+.. literalinclude:: /code/books/ctci/01_arrays_and_strings/ex_1x1_unique.py
+   :language: python
+   :linenos:
