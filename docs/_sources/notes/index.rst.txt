@@ -11,6 +11,10 @@ This section hosts my notes on various topics.
    but I want to merge this with my blog, so I can consolidate my knowledge-base.
 
 
+------------
+General
+------------
+
 .. panels::
 
    Books
@@ -38,7 +42,12 @@ This section hosts my notes on various topics.
       :text: View
       :classes: btn-outline-primary btn-block stretched-link
 
-   ---
+
+------------------------
+Interview Preparation
+------------------------
+
+.. panels::
 
    Advent of Code
    ^^^^^^^^^^^^^^^
@@ -55,6 +64,25 @@ This section hosts my notes on various topics.
 
    ---
 
+   Leetcode
+   ^^^^^^^^^^^^^^^
+
+   My notes and solutions for leetcode problems
+
+   +++
+
+   .. link-button:: notes-leetcode
+      :type: ref
+      :text: View
+      :classes: btn-outline-primary btn-block stretched-link
+
+
+-----------
+Tools
+-----------
+
+.. panels::
+
    Ansible
    ^^^^^^^^
 
@@ -64,20 +92,6 @@ This section hosts my notes on various topics.
    +++
 
    .. link-button:: notes-ansible
-      :type: ref
-      :text: View
-      :classes: btn-outline-primary btn-block stretched-link
-
-   ---
-
-   Django
-   ^^^^^^^^
-
-   Notes on Django, the Web-framework.
-
-   +++
-
-   .. link-button:: notes-django
       :type: ref
       :text: View
       :classes: btn-outline-primary btn-block stretched-link
@@ -98,14 +112,61 @@ This section hosts my notes on various topics.
 
    ---
 
-   Flask
+   Kubernetes
    ^^^^^^^^^^^^^^^^
 
-   Notes on Flask, the web microframework.
+   Notes on Kubernetes
 
    +++
 
-   .. link-button:: notes-flask
+   .. link-button:: notes-k8s
+      :type: ref
+      :text: View
+      :classes: btn-outline-primary btn-block stretched-link
+
+   ---
+
+   neovim
+   ^^^^^^^^^^^^^^^^
+
+   Notes on the neovim editor.
+
+   +++
+
+   .. link-button:: notes-neovim
+      :type: ref
+      :text: View
+      :classes: btn-outline-primary btn-block stretched-link
+
+   ---
+
+   Vagrant
+   ^^^^^^^^^^^^^^^^
+
+   Notes on Vagrant.
+
+   +++
+
+   .. link-button:: notes-vagrant
+      :type: ref
+      :text: View
+      :classes: btn-outline-primary btn-block stretched-link
+
+--------------------------------
+Languages & Frameworks
+--------------------------------
+
+.. panels::
+
+   Python
+   ^^^^^^^^^^^^^^^^
+
+   General purpose notes on the Python programming language that do not really
+   belong anywhere else in this blog.
+
+   +++
+
+   .. link-button:: notes-python
       :type: ref
       :text: View
       :classes: btn-outline-primary btn-block stretched-link
@@ -154,43 +215,28 @@ This section hosts my notes on various topics.
 
    ---
 
-   Python
+   Flask
    ^^^^^^^^^^^^^^^^
 
-   General purpose notes on the Python programming language that do not really
-   belong anywhere else in this blog.
+   Notes on Flask, the web microframework.
 
    +++
 
-   .. link-button:: notes-python
+   .. link-button:: notes-flask
       :type: ref
       :text: View
       :classes: btn-outline-primary btn-block stretched-link
 
    ---
 
-   Kubernetes
-   ^^^^^^^^^^^^^^^^
+   Django
+   ^^^^^^^^
 
-   Notes on Kubernetes
-
-   +++
-
-   .. link-button:: notes-k8s
-      :type: ref
-      :text: View
-      :classes: btn-outline-primary btn-block stretched-link
-
-   ---
-
-   neovim
-   ^^^^^^^^^^^^^^^^
-
-   Notes on the neovim editor.
+   Notes on Django, the Web-framework.
 
    +++
 
-   .. link-button:: notes-neovim
+   .. link-button:: notes-django
       :type: ref
       :text: View
       :classes: btn-outline-primary btn-block stretched-link
