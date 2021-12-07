@@ -94,16 +94,16 @@ blog_authors = {
 # In addition, there are authors.html, languages.html, and locations.html
 # sidebars that link to author and location archive pages.
 html_sidebars = {
-    '**': [ # 'about.html',
-            'postcard.html',
-            # 'navigation.html',
-            'recentposts.html',
-            'tagcloud.html',
-            'categories.html', 
-            'archives.html',
-            'searchbox.html',
-            ],
-    }
+    "**": [  # 'about.html',
+        "postcard.html",
+        # 'navigation.html',
+        "recentposts.html",
+        "tagcloud.html",
+        "categories.html",
+        "archives.html",
+        "searchbox.html",
+    ],
+}
 
 # -- Blog Feed Options --------------------------------------------------------
 
@@ -176,7 +176,7 @@ fontawesome_included = True
 # -- Sphinx Options -----------------------------------------------------------
 
 # If your project needs a minimal Sphinx version, state it here.
-needs_sphinx = '1.2'
+needs_sphinx = "1.2"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -248,6 +248,10 @@ exclude_patterns = [
 
 if not os.environ.get("BLOG_DRAFTS"):
     exclude_patterns.append("_drafts/*")
+    # If true, `todo` and `todoList` produce output, else they produce nothing.
+    todo_include_todos = True
+else:
+    todo_include_todos = False
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
 # default_role = None
@@ -264,7 +268,7 @@ if not os.environ.get("BLOG_DRAFTS"):
 # show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = "sphinx"
 
 # A list of ignored prefixes for module index sorting.
 # modindex_common_prefix = []
@@ -272,29 +276,26 @@ pygments_style = 'sphinx'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 # keep_warnings = False
 
-# If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = False
-
 
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'pydata_sphinx_theme'
+html_theme = "pydata_sphinx_theme"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'github_button': False,
+    "github_button": False,
 }
 
 html_theme_options = {
-  "github_url": "https://github.com/stonecharioteer/",
-  "twitter_url": "https://twitter.com/stonecharioteer",
-  "search_bar_text": "Search this site...",
-  # "google_analytics_id": "UA-88310237-1",
-  "navbar_end": ["search-field.html", "navbar-icon-links"],
+    "github_url": "https://github.com/stonecharioteer/",
+    "twitter_url": "https://twitter.com/stonecharioteer",
+    "search_bar_text": "Search this site...",
+    # "google_analytics_id": "UA-88310237-1",
+    "navbar_end": ["search-field.html", "navbar-icon-links"],
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -328,7 +329,7 @@ html_extra_path = ["feed.xml"]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-html_last_updated_fmt = '%%b %%d, %%Y'
+html_last_updated_fmt = "%%b %%d, %%Y"
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -351,7 +352,7 @@ html_use_smartypants = True
 # html_show_sourcelink = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
-# html_show_sphinx = True
+html_show_sphinx = False
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 # html_show_copyright = True
@@ -409,10 +410,11 @@ myst_update_mathjax = False
 # Temporarily stored as off until we fix it
 jupyter_execute_notebooks = "off"
 
-rediraffe_redirects = {
-}
+rediraffe_redirects = {}
+
 
 def setup(app):
     app.add_css_file("custom.css")
+
 
 ablog_website = "docs"
