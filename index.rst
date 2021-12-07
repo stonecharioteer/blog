@@ -28,4 +28,4 @@ Here is a list of most recent posts:
    Stonecharioteer's Blog<index>
    about.md
    Values<_posts/2021-05-01-a-code-of-honour.md>
-
+   Notes<notes/index.rst>
