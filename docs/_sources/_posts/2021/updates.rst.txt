@@ -15,9 +15,10 @@ since I'd originally promised the article to the folks at Oso in Jan 2021.
 
 I've updated the blog to ditch Jekyll. I abhor Markdown for writing of all formats,
 and I've been busy changing the blog structure so that it can use `ablog,
-<https://ablog.readthedocs.io>`_ which uses `Sphinx, <>`_ in all of its
-goodness. I am very happy with the results, but I'd like to figure out how to
-use the `Furo theme <>`_ with ablog as well. All in due time.
+<https://ablog.readthedocs.io>`_ which uses `Sphinx,
+<https://www.sphinx-doc.org/en/master/>`_ in all of its goodness. I am very
+happy with the results, but I'd like to figure out how to use the `Furo theme
+<https://github.com/pradyunsg/furo>`_ with ablog as well. All in due time.
 
 I'm coding again, at least I *will* be. I want to do the `Advent of Code
 <https://www.adventofcode.com>`_ challenge this year. I'm not saying I want to
