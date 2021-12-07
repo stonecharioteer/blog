@@ -1,5 +1,11 @@
 from flask import Flask, request, jsonify
-from flask_login import LoginManager, login_required, login_user, logout_user, current_user
+from flask_login import (
+    LoginManager,
+    login_required,
+    login_user,
+    logout_user,
+    current_user,
+)
 
 from oso import Oso
 
@@ -75,7 +81,6 @@ def logout():
     if base_oso.is_allowed(User(username), "can", "logout"):
         # this line will allow all logged in users to be able to logout.  logout_user()
         logout_user()
-
         return jsonify(msg="you have been logged out")
     else:
         return "access denied", 403
