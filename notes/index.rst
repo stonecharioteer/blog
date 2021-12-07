@@ -49,6 +49,19 @@ Interview Preparation
 
 .. panels::
 
+   Data Structures and Algorithms
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Implementations of various data structures and algorithms (in Python).
+   +++
+
+   .. link-button:: notes-dsa
+      :type: ref
+      :text: View
+      :classes: btn-outline-primary btn-block stretched-link
+
+   ---
+
    Advent of Code
    ^^^^^^^^^^^^^^^
 
