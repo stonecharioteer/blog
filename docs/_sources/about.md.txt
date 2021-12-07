@@ -55,7 +55,7 @@ them to suit my preferred layout.
 
 ## Why Stonecharioteer?
 
-![Stonecharioteer Logo](/_statics/images/logo/stonecharioteer-large.png)
+![Stonecharioteer Logo](/_static/images/logo/stonecharioteer-large.png)
 
 I was born in Hampi, Karnataka, India, and I often write about it as well.  I
 was lucky enough to find the domain, and the ID in all my frequent portals.
