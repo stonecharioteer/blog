@@ -1,7 +1,7 @@
-.. post:: Nov 19, 2021
-   :tags: oso, authorization, web-development, tech
+.. post::
+   :tags: draft, oso, authorization, web-development, tech
    :category: Tutorial
-   :redirect: /oso-authz
+   :redirect: oso-authz
 
 ======================================
 Authorization in Python using Oso
@@ -32,7 +32,7 @@ Outline
 10. Getting Help
 11. Cookiecutter Template
 
-.. todo:: 
+.. todo::
     * Explain how to use Oso with Argparse
     * Explain how to use Oso with Click
     * Explain how to use Flask-Oso
@@ -238,7 +238,7 @@ object.
    them in Python. You may choose to do so if you like.
 
 
-This line says: 
+This line says:
 
 > If a function called `allow` is triggered with 3 variables equal to,
 > *literally*: `"user"`, `"can_use"` and `"this_program"`, then evaluate to
@@ -403,7 +403,7 @@ happening here.
 
 
 This imports the `Enum` class so that we can define an enumeration for the path
-attributes. Take a moment to go through the 
+attributes. Take a moment to go through the
 [official Python documentation on Enums](https://docs.python.org/3/library/enum.html)
 if you've never used them before.
 
@@ -594,7 +594,7 @@ Consider the following `app.py`
     @app.route("/unvisitable")
     def unpermissable_route():
         oso_extension.authorize(actor="noone", action="can_visit", resource="this route")
-        
+
 
 Run this application with:
 
@@ -665,7 +665,7 @@ Now try running this route.
 Immediate you see the following `500 Server Error` and on inspecting the server's
 output, you see the following:
 
-.. code-block:: 
+.. code-block::
 
     Traceback (most recent call last):
     File "/home/user/oso-examples/env/lib/python3.9/site-packages/flask/app.py", line 1970, in finalize_request
@@ -681,7 +681,7 @@ that there is some route that hasn't explicitly run `oso_extension.authorize`
 to check for the right permissions. This is a useful setting to keep active,
 but if you don't want to write some rule that looks like:
 
-.. code-block:: 
+.. code-block::
 
     allow("anyone", "can_query", "this");
 
@@ -726,7 +726,7 @@ and the `resource`. While *all* of `oso`'s use case can be assumed to fall in
 to these three buckets, remember again that *you do not need to follow this
 paradigm*.  Understanding this enables you do do this:
 
-.. code-block:: 
+.. code-block::
     allow(1, "can_be_added_to", 1);
 
 Which can be used in Python as:
@@ -816,7 +816,7 @@ For now, here's a barebones app.
 The above example doesn't use `oso` yet. It's a very simple, single user
 API, where the username and password is `admin`.
 
-.. warning:: 
+.. warning::
    Note that I do not recommend you do this sort of password check, or that you
    code `admin` `admin` in your your app. **Seriously**, don't blame me if you do
    this.
