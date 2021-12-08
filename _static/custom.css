@@ -121,5 +121,6 @@ div.bd-sidebar {
 
 .card > .card-body > figure > img {
     border: 1px solid black;
+    border-radius: .75rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
