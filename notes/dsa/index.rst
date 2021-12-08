@@ -1,7 +1,12 @@
+:blogpost: true
+:category: Notes
+:tags: interview-prep, learning, programming, tech, dsa
+
 .. _notes-dsa:
 ================================
 Data Structures and Algorithms
 ================================
+
 
 .. note::
 
