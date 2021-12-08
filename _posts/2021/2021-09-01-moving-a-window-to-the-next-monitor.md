@@ -47,6 +47,3 @@ chmod +x move-to-next-monitor
 ## Step 4: Add Keyboard bindings to invoke this script
 
 Use your XFCE window manager tools to bind a keyboard shortcut to invoke this tool.
-
-
-

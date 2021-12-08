@@ -39,7 +39,7 @@ monthly salary of 8000 INR. I taught myself Excel and began doing work on
 Statistical Quality Control. I learnt
 I stuck around for three months, and then my cousin
 found me a better job. I was hired as a Graduate Engineer Trainee at India
-Nippon Electricals Ltd., for a salary of 17,000 INR, and had to work on a 
+Nippon Electricals Ltd., for a salary of 17,000 INR, and had to work on a
 rotational shift basis. I moved to Hosur for a while, but I eventually found
 a way to commute back home every day. I spent 6 hours a day commuting, and
 on some days, I had to sleep in the bus stand at 10 pm to catch the 1 AM office
@@ -58,7 +58,7 @@ as a Content Writer. I could write, and I thought perhaps that was a better
 field. I didn't have a plan.
 
 I joined Flipkart on February 13th, 2014. I was a content writer for the books
-catalogue team, and I was *having fun*. I could write about the 
+catalogue team, and I was *having fun*. I could write about the
 *Lord of the Rings* and *Superman comics*, I wrote unique poems about
 *Dr. Seuss* books, and also for Shakespearean poetry featuring Star Wars.
 
@@ -113,7 +113,7 @@ didn't have side-projects, they didn't want to learn more than was necessary.
 
 However, there were those who were amazing in their own right. Running meetups,
 working on obscure built-in modules in CPython, fixing deprecation warnings,
-being able to single-handledly deploy k8s clusters with ease, and writing 
+being able to single-handledly deploy k8s clusters with ease, and writing
 fantabulously clean code. I also met some interns and graduates who were
 amazing. They needed moulding, but they were almost there.
 
@@ -145,4 +145,3 @@ have even made better decisions with respect to money, or I could have switched
 jobs earlier. But that's not me.
 
 I etched my career out of hard work. It's a journey I'll never forget.
-

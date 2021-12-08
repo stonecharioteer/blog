@@ -30,7 +30,7 @@ sudo mv ~/Downloads/nvim.AppImage /usr/bin/nvim
 
 ## Configuration
 
-My dotfiles, as always, are 
+My dotfiles, as always, are
 [here](https://github.com/stonecharioteer.com/jarl).
 The README.md documents everything therein, but I'm taking the time here to
 talk about a particular problem I had personally when setting up YouCompleteMe.

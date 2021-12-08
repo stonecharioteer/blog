@@ -119,7 +119,7 @@ detract from the message of the presentation.
 However, I used to wonder why *other* developers didn't use the command line
 interface as much as I did. I *love* the terminal. `neovim` and `tmux` fuel
 my workflow constantly. I've tried VS Code and Sublime Text and I've kept
-returning to the terminal constantly. I use Linux over Mac or Windows, and 
+returning to the terminal constantly. I use Linux over Mac or Windows, and
 almost always prefer a Linux laptop for work. My new workplace agreed to give
 me a Linux because I asked them nicely. I feel crippled in other platforms.
 
@@ -136,5 +136,3 @@ clarity, and I most certainly wouldn't have been able to teach anyone.
 
 I think I've been able to do some of those things. And I know for certain that
 I need to improve how I do the rest.
-
-

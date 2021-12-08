@@ -152,4 +152,3 @@ Now, save this file and reboot. This should preserve your settings even if your
 touchpad device ID changes.
 
 To see more settings you can modify for `libinput`, check out the [man pages](https://www.mankier.com/4/libinput).
-

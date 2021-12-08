@@ -75,4 +75,3 @@ file of your chosen shell.
 The `keyboard` module can be used to do a lot of interesting things, such
 as making shortcuts and adding hotkeys for altered behaviour. Do explore more
 and `@` me on Twitter if you build something amazing.
-

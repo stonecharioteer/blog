@@ -36,4 +36,3 @@ this guy's firmware onto this.
 
 I wanted to build a programmable dial into an Altoids box, so perhaps I'll do
 that. Time to find a dial though!
-

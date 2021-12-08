@@ -39,6 +39,3 @@ DeFi app soon. It could be interesting!
 We _are_ hiring, of course, so please [reach out](mailto:ktvkvinaykeerthi+referme@gmail.com)
 if you want to work in a company that's making headway in the cryptocurrency
 space!
-
-
-
