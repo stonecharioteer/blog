@@ -2,8 +2,10 @@
 
 This is an article wherein I describe my adventures with learning how to use postgresql properly.
 
-I wanted to learn how to profile and use postgresql like a boss. So I sshed into my Raspberry Pi Zero W which is currently running `pihole`,
-  and I git cloned `git://git.postgresql.org/git/postgresql.git`, the source code for PostgresQL.
+I wanted to learn how to profile and use postgresql like a boss. So I sshed
+into my Raspberry Pi Zero W which is currently running `pihole`, and I git
+cloned `git://git.postgresql.org/git/postgresql.git`, the source code for
+PostgresQL.
 
 
 # Goals
