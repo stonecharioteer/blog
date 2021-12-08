@@ -117,3 +117,9 @@ img.logo::after {
 div.bd-sidebar {
     overflow-y: scroll;
 }
+
+
+.card > .card-body > figure > img {
+    border: 1px solid black;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
