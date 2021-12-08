@@ -1,8 +1,11 @@
+:blogpost: true
+:category: Notes
+:tags: tech, programming, learning
+
 .. _notes:
 ===================
 Notes
 ===================
-
 
 This section hosts my notes on various topics.
 

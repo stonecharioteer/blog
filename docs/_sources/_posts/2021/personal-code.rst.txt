@@ -1,12 +1,13 @@
----
-blogpost: true
-date: May 1, 2021
-category: Blog
-tags: meta, philosophy
-permalink: /personal-code
----
+:blogpost: true
+:date: May 1, 2021
+:category: Life
+:tags: meta, philosophy
+:redirect: personal-code
 
-# A Personal Code
+.. _personal-code:
+===================
+A Personal Code
+===================
 
 Do you have a personal code of honour? I've been giving this some thought and I
 feel like I'm at a stage where I'd like to write my code down.
@@ -20,7 +21,9 @@ What is my code? What are my values?
 Note that this is in a pure sense of "Values" in a technical space. However,
 these bleed into my private life as well.
 
-## I Teach
+---------
+I Teach
+---------
 
 I constantly seek to **empower those** around me, through **trust** and
 **camaraderie**.
@@ -59,14 +62,16 @@ me, that when I deliver the same talk, I have to constantly know that the
 reaction will not always be the same. I have to make the audience a part of the
 talk for my talks to empower them.
 
-## I Serve
+-------------
+I Serve
+-------------
+
 
 I am constantly cognizant of the customer and their needs
 
 When developing a tool, I am always in the customer's shoes. I'm constantly
-trying to put things in their perspective. Indeed, my series about [writing
-documentation]({% post_url 2021-04-28-the-importance-of-documentation %})
-*bleeds* with that belief.
+trying to put things in their perspective. Indeed, my series about writing
+documentation *bleeds* with that belief.
 
 At my core, I know two things: the customer wants what they want, and; the
 customer *may not always be right*. Sometimes, the customer doesn't know what
@@ -76,7 +81,9 @@ blend all of those things. I need to remember what the customer wants, and
 be able to build tools, systems and interfaces that give the customer a way to
 achieve their plan.
 
-## I Include
+------------
+I Include
+------------
 
 I abhor bullies. I hate them with my very core. It doesn't matter to me if
 you're a genius.  If you are a bully, your net addition to the team is a
@@ -89,7 +96,9 @@ unheard.
 There is something to be said about divas. But, there is nothing good that
 comes out of being one.
 
-## I Learn
+---------
+I Learn
+---------
 
 I am learning and curious to a fault.
 
@@ -98,10 +107,12 @@ Given a chance by Mephistopheles, Faust asks for wisdom, at a great price. The
 phrase selling your soul originated there, after all. I have the flaws of
 Faust. I will constantly learn, with every waking moment.
 
-So much so that I have a [discord bot to collect things I learn every day and
-post them on this blog.](https://stonecharioteer.com/til.html)
+So much so that I have a `discord bot to collect things I learn every day and
+post them on this blog. <https://stonecharioteer.com/til.html>`_
 
-## I Write
+---------
+I Write
+---------
 
 I'm constantly writing things down. Case in point: this post itself.
 
@@ -110,7 +121,9 @@ structuring talks that I give in a way that both entertains and educates.
 
 This philosophy of mine is why I maintain this blog in the first place.
 
-## I Act
+-------
+I Act
+-------
 
 I do not wait to be told to build something. I build things the moment I see
 a void where it should exist.
@@ -129,12 +142,16 @@ I get around to the things that matter in due time.
 Problems exist, and I yearn to solve them. I don't seek to write software. I
 seek to eliminate problems through the art of software.
 
-## I Wait
+-------
+I Wait
+-------
 
 This point exists to teach me that I need to exercise patience. It is a
 constant reminder that waiting helps. It is not what makes me happy, but it
 **is** a thing I am working on.
 
-## Endnote
+---------
+Endnote
+---------
 
 Do you have a code of values? Do you think an individual should seek to have these?

@@ -1,8 +1,3 @@
-
-.. Stonecharioteer's Blog index file, created by `ablog start` on Wed Nov 17 14:06:05 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Stonecharioteer's Blog
 ==================================================
 
@@ -27,5 +22,5 @@ Here is a list of most recent posts:
 
    Stonecharioteer's Blog<index>
    about.md
-   Values<_posts/2021-05-01-a-code-of-honour.md>
+   Values<_posts/2021/personal-code.rst>
    Notes<notes/index.rst>

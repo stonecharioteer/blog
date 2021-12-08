@@ -1,7 +1,13 @@
+:blogpost: true
+:category: Notes
+:tags: reading, tech, programming, learning
+:redirect: books
+
 .. _notes-books:
 ===================
 Books
 ===================
+
 
 .. note::
 

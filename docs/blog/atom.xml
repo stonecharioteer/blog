@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2021-12-08T05:57:00.570092+00:00</updated>
+  <updated>2021-12-08T07:30:46.141194+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -830,15 +830,13 @@ notes website comes in.</summary>
     <published>2021-03-30T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2021/2021-05-01-a-code-of-honour/</id>
+    <id>https://stonecharioteer.com/_posts/2021/personal-code/</id>
     <title>A Personal Code</title>
     <updated>2021-05-01T00:00:00+05:30</updated>
-    <content type="html">&lt;p&gt;Do you have a personal code of honour? I’ve been giving this some thought and I
-feel like I’m at a stage where I’d like to write my code down.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Explicit markup ends without a blank line; unexpected unindent.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2021/2021-05-01-a-code-of-honour/" rel="alternate"/>
-    <summary>Do you have a personal code of honour? I’ve been giving this some thought and I
-feel like I’m at a stage where I’d like to write my code down.</summary>
+    <link href="https://stonecharioteer.com/_posts/2021/personal-code/" rel="alternate"/>
+    <summary>Explicit markup ends without a blank line; unexpected unindent.</summary>
     <category term="meta" label="meta"/>
     <category term="philosophy" label="philosophy"/>
     <published>2021-05-01T00:00:00+05:30</published>
