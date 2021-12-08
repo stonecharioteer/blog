@@ -110,6 +110,7 @@ img.logo {
     margin-left: 15px;
     margin-right: 5px;
 }
+
 img.logo::after {
     content: "Stonecharioteer's Blog: Programming and Life as a Self Taught Dev"
 }
@@ -117,7 +118,6 @@ img.logo::after {
 div.bd-sidebar {
     overflow-y: scroll;
 }
-
 
 .card > .card-body > figure > img {
     border: 1px solid black;
