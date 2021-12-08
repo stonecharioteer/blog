@@ -2,19 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2021-12-08T05:48:23.800409+00:00</updated>
+  <updated>2021-12-08T05:57:00.570092+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-01-mahabharata-day-01/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-01-mahabharata-day-01/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 1</title>
     <updated>2016-12-01T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;Hampi. As a kid, I didn’t like going to Hampi. I had nothing to see there, it
 was full of tanks and wells. I didn’t care much for the heat either.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 1" src="../_images/mahabharata-day-01-01.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-01-mahabharata-day-01/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-01-mahabharata-day-01/" rel="alternate"/>
     <summary>Hampi. As a kid, I didn’t like going to Hampi. I had nothing to see there, it
 was full of tanks and wells. I didn’t care much for the heat either.Mahabharata Day 1</summary>
     <category term="mahabharata" label="mahabharata"/>
@@ -26,7 +26,7 @@ was full of tanks and wells. I didn’t care much for the heat either.Mahabharat
     <published>2016-12-01T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-02-mahabharata-day-02/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-02-mahabharata-day-02/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 2</title>
     <updated>2016-12-02T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;It is unbelievably calm atop a hill. I was right when I chose this spot to read
@@ -36,7 +36,7 @@ sons to share with him their youth, I could agree with him that one thousand
 years could never be enough time to enjoy the wonders of this world.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 2" src="../_images/mahabharata-day-02.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-02-mahabharata-day-02/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-02-mahabharata-day-02/" rel="alternate"/>
     <summary>It is unbelievably calm atop a hill. I was right when I chose this spot to read
 the Mahabharata.  Reading of Shakuntala and Dushyantha, I lost myself in her
 pain as he denied loving her. Reading about Yayati and how he beseeched his
@@ -50,14 +50,14 @@ years could never be enough time to enjoy the wonders of this world.Mahabharata 
     <published>2016-12-02T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-03-mahabharata-day-03/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-03-mahabharata-day-03/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 3</title>
     <updated>2016-12-03T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;This land belongs to the monkeys. It is theirs to frolic in, it is theirs to
 own. We have somehow faltered here, and they know it far better than we.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 3" src="../_images/mahabharata-day-03.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-03-mahabharata-day-03/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-03-mahabharata-day-03/" rel="alternate"/>
     <summary>This land belongs to the monkeys. It is theirs to frolic in, it is theirs to
 own. We have somehow faltered here, and they know it far better than we.Mahabharata Day 3</summary>
     <category term="indian-mythology" label="indian-mythology"/>
@@ -67,14 +67,14 @@ own. We have somehow faltered here, and they know it far better than we.Mahabhar
     <published>2016-12-03T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-04-mahabharata-day-04/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-04-mahabharata-day-04/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 4</title>
     <updated>2016-12-04T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;How we ruin ourselves. Mankind has always fallen flat on its face when faced
 with the questions of Dharma.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 4" src="../_images/mahabharata-day-04.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-04-mahabharata-day-04/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-04-mahabharata-day-04/" rel="alternate"/>
     <summary>How we ruin ourselves. Mankind has always fallen flat on its face when faced
 with the questions of Dharma.Mahabharata Day 4</summary>
     <category term="indian-mythology" label="indian-mythology"/>
@@ -85,7 +85,7 @@ with the questions of Dharma.Mahabharata Day 4</summary>
     <published>2016-12-04T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-05-mahabharata-day-05/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-05-mahabharata-day-05/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 5</title>
     <updated>2016-12-05T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I do not believe in religion, I despise the organized rituals that exist today.
@@ -94,7 +94,7 @@ people such as Prahalada and Bali. It runs through the veins of Markandeya, and
 it is in the pillars of the sabha Maya built for Dharmaraja.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 5" src="../_images/mahabharata-day-05.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-05-mahabharata-day-05/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-05-mahabharata-day-05/" rel="alternate"/>
     <summary>I do not believe in religion, I despise the organized rituals that exist today.
 That is not Sanathana Dharma.  Dharma is subtle, it is imbued into the blood of
 people such as Prahalada and Bali. It runs through the veins of Markandeya, and
@@ -107,7 +107,7 @@ it is in the pillars of the sabha Maya built for Dharmaraja.Mahabharata Day 5</s
     <published>2016-12-05T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-06-mahabharata-day-06/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-06-mahabharata-day-06/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 6</title>
     <updated>2016-12-06T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;Wherever I sit down in Hampi, I can’t help but ask myself if once, a long time
@@ -116,7 +116,7 @@ along paths he liked to walk through, I wonder if he could appreciate the
 poetry of sitting under a tree to read the Mahabharata.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 6" src="../_images/mahabharata-day-06.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-06-mahabharata-day-06/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-06-mahabharata-day-06/" rel="alternate"/>
     <summary>Wherever I sit down in Hampi, I can’t help but ask myself if once, a long time
 ago, Krishnadevaraya walked past this very spot. I wonder if I have walked
 along paths he liked to walk through, I wonder if he could appreciate the
@@ -129,7 +129,7 @@ poetry of sitting under a tree to read the Mahabharata.Mahabharata Day 6</summar
     <published>2016-12-06T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-08-mahabharata-day-07/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-08-mahabharata-day-07/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 7</title>
     <updated>2016-12-08T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;As I read the Mahabharata today, a British lady came up to me to ask me about
@@ -139,7 +139,7 @@ built so many pushkarinis, and why the landscape is filled with mantapas for
 weary travellers to rest as they walked in the hot sun.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 7" src="../_images/mahabharata-day-07.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-08-mahabharata-day-07/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-08-mahabharata-day-07/" rel="alternate"/>
     <summary>As I read the Mahabharata today, a British lady came up to me to ask me about
 Hampi. She was wondering if the heat had something to do with global warming. I
 assured her that it has always been this hot here. It’s why Krishnadevaraya
@@ -153,7 +153,7 @@ weary travellers to rest as they walked in the hot sun.Mahabharata Day 7</summar
     <published>2016-12-08T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-10-mahabharata-day-08/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-10-mahabharata-day-08/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 8</title>
     <updated>2016-12-10T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;There is some justice in reading Markandeya’s rendition of the Ramayana,
@@ -162,7 +162,7 @@ is supposed to have occurred here, and I remember the stories that my
 grandfather told me about how Hanuman was born on Anjanadri Hill.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 8" src="../_images/mahabharata-day-08.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-10-mahabharata-day-08/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-10-mahabharata-day-08/" rel="alternate"/>
     <summary>There is some justice in reading Markandeya’s rendition of the Ramayana,
 recited to the Pandavas, as I sit in Hampi. A large part of the Kishkinda Kanda
 is supposed to have occurred here, and I remember the stories that my
@@ -175,14 +175,14 @@ grandfather told me about how Hanuman was born on Anjanadri Hill.Mahabharata Day
     <published>2016-12-10T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-15-mahabharata-day-09/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-15-mahabharata-day-09/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 9</title>
     <updated>2016-12-15T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;This rock that I sit on is a picnic spot, and it suits the purpose really. Many
 locals come here, and their kids are curious about what I’m doing here.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 9" src="../_images/mahabharata-day-09.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-15-mahabharata-day-09/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-15-mahabharata-day-09/" rel="alternate"/>
     <summary>This rock that I sit on is a picnic spot, and it suits the purpose really. Many
 locals come here, and their kids are curious about what I’m doing here.Mahabharata Day 9</summary>
     <category term="indian-mythology" label="indian-mythology"/>
@@ -193,14 +193,14 @@ locals come here, and their kids are curious about what I’m doing here.Mahabha
     <published>2016-12-15T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-16-mahabharata-day-10/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-16-mahabharata-day-10/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 10</title>
     <updated>2016-12-16T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I am not reading these books at my usual speed. I could take the shorter way,
 read at full speed from the comforts of my home, or I could do it this way.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 10" src="../_images/mahabharata-day-10.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-16-mahabharata-day-10/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-16-mahabharata-day-10/" rel="alternate"/>
     <summary>I am not reading these books at my usual speed. I could take the shorter way,
 read at full speed from the comforts of my home, or I could do it this way.Mahabharata Day 10</summary>
     <category term="indian-mythology" label="indian-mythology"/>
@@ -211,13 +211,13 @@ read at full speed from the comforts of my home, or I could do it this way.Mahab
     <published>2016-12-16T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-17-mahabharata-day-11/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-17-mahabharata-day-11/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 11</title>
     <updated>2016-12-17T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;Oh Suyodhana! Oh, Suyodhana!&lt;/p&gt;
 &lt;img alt="Mahabharata Day 11" src="../_images/mahabharata-day-11.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-17-mahabharata-day-11/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-17-mahabharata-day-11/" rel="alternate"/>
     <summary>Oh Suyodhana! Oh, Suyodhana!Mahabharata Day 11</summary>
     <category term="indian-mythology" label="indian-mythology"/>
     <category term="reading" label="reading"/>
@@ -227,13 +227,13 @@ read at full speed from the comforts of my home, or I could do it this way.Mahab
     <published>2016-12-17T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-18-mahabharata-day-12/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-18-mahabharata-day-12/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 12</title>
     <updated>2016-12-18T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;Bhishma Parva.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 12" src="../_images/mahabharata-day-12.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-18-mahabharata-day-12/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-18-mahabharata-day-12/" rel="alternate"/>
     <summary>Bhishma Parva.Mahabharata Day 12</summary>
     <category term="indian-mythology" label="indian-mythology"/>
     <category term="reading" label="reading"/>
@@ -243,13 +243,13 @@ read at full speed from the comforts of my home, or I could do it this way.Mahab
     <published>2016-12-18T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-19-mahabharata-day-13/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-19-mahabharata-day-13/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 13</title>
     <updated>2016-12-19T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;It begins.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 13" src="../_images/mahabharata-day-13.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-19-mahabharata-day-13/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-19-mahabharata-day-13/" rel="alternate"/>
     <summary>It begins.Mahabharata Day 13</summary>
     <category term="indian-mythology" label="indian-mythology"/>
     <category term="reading" label="reading"/>
@@ -259,14 +259,14 @@ read at full speed from the comforts of my home, or I could do it this way.Mahab
     <published>2016-12-19T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-20-mahabharata-day-14/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-20-mahabharata-day-14/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 14</title>
     <updated>2016-12-19T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;My very first introduction to the Mahabharata was one of two comics, from Amar
 Chitra Katha, bought at the railway station in Mumbai, over twenty years ago.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 14" src="../_images/mahabharata-day-14.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-20-mahabharata-day-14/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-20-mahabharata-day-14/" rel="alternate"/>
     <summary>My very first introduction to the Mahabharata was one of two comics, from Amar
 Chitra Katha, bought at the railway station in Mumbai, over twenty years ago.Mahabharata Day 14</summary>
     <category term="indian-mythology" label="indian-mythology"/>
@@ -277,14 +277,14 @@ Chitra Katha, bought at the railway station in Mumbai, over twenty years ago.Mah
     <published>2016-12-19T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-21-mahabharata-day-15/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-21-mahabharata-day-15/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 15</title>
     <updated>2016-12-21T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;My skin feels good against cold stone. I love the feeling in my toes as the
 cold air and the heat of the sun combine to give me shivers.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 15" src="../_images/mahabharata-day-15.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-21-mahabharata-day-15/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-21-mahabharata-day-15/" rel="alternate"/>
     <summary>My skin feels good against cold stone. I love the feeling in my toes as the
 cold air and the heat of the sun combine to give me shivers.Mahabharata Day 15</summary>
     <category term="indian-mythology" label="indian-mythology"/>
@@ -295,13 +295,13 @@ cold air and the heat of the sun combine to give me shivers.Mahabharata Day 15</
     <published>2016-12-21T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-23-mahabharata-day-16/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-23-mahabharata-day-16/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 16</title>
     <updated>2016-12-23T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;Karna.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 16" src="../_images/mahabharata-day-16.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-23-mahabharata-day-16/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-23-mahabharata-day-16/" rel="alternate"/>
     <summary>Karna.Mahabharata Day 16</summary>
     <category term="indian-mythology" label="indian-mythology"/>
     <category term="reading" label="reading"/>
@@ -311,7 +311,7 @@ cold air and the heat of the sun combine to give me shivers.Mahabharata Day 15</
     <published>2016-12-23T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-25-mahabharata-day-17/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-25-mahabharata-day-17/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 17</title>
     <updated>2016-12-25T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;The empty temples scare me. They stand here, stripped of their purpose by the
@@ -321,7 +321,7 @@ make stuff up, they tell unsuspecting travellers that there’s some story here.
 There is, but it isn’t the story the guides are feeding them.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 17" src="../_images/mahabharata-day-17.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-25-mahabharata-day-17/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-25-mahabharata-day-17/" rel="alternate"/>
     <summary>The empty temples scare me. They stand here, stripped of their purpose by the
 invaders from Golkonda, Bijapur and Delhi. The idols are destroyed, nothing
 remains except the stories. Some temples don’t even have the stories. Guides
@@ -335,7 +335,7 @@ There is, but it isn’t the story the guides are feeding them.Mahabharata Day 1
     <published>2016-12-25T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-27-mahabharata-day-18/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-27-mahabharata-day-18/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 18</title>
     <updated>2016-12-27T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;In the aftermath of the battle and after all the funerals, Krishna instructs
@@ -343,7 +343,7 @@ Dharmaraja to go and seek Bhishma’s teachings. On his deathbed, Gangeya recite
 the hundred names of Vishnu, and begins revealing the nature of Dharma.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 18" src="../_images/mahabharata-day-18.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-27-mahabharata-day-18/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-27-mahabharata-day-18/" rel="alternate"/>
     <summary>In the aftermath of the battle and after all the funerals, Krishna instructs
 Dharmaraja to go and seek Bhishma’s teachings. On his deathbed, Gangeya recites
 the hundred names of Vishnu, and begins revealing the nature of Dharma.Mahabharata Day 18</summary>
@@ -355,13 +355,13 @@ the hundred names of Vishnu, and begins revealing the nature of Dharma.Mahabhara
     <published>2016-12-27T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-28-mahabharata-day-19/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-28-mahabharata-day-19/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 19</title>
     <updated>2016-12-28T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;The End.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 19" src="../_images/mahabharata-day-19.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-28-mahabharata-day-19/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-28-mahabharata-day-19/" rel="alternate"/>
     <summary>The End.Mahabharata Day 19</summary>
     <category term="indian-mythology" label="indian-mythology"/>
     <category term="reading" label="reading"/>
@@ -371,7 +371,7 @@ the hundred names of Vishnu, and begins revealing the nature of Dharma.Mahabhara
     <published>2016-12-28T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2016-12-29-mahabharata-day-20/</id>
+    <id>https://stonecharioteer.com/_posts/2016/2016-12-29-mahabharata-day-20/</id>
     <title>Reading the Mahabharata by the Tungabhadra - Day 20</title>
     <updated>2016-12-29T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;This journey has been relieving. I have done all that I set out to do. I came
@@ -379,7 +379,7 @@ for a larger purpose, to start writing once again. It has been too long, and I
 have been scared of something.&lt;/p&gt;
 &lt;img alt="Mahabharata Day 20" src="../_images/mahabharata-day-20.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2016-12-29-mahabharata-day-20/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2016/2016-12-29-mahabharata-day-20/" rel="alternate"/>
     <summary>This journey has been relieving. I have done all that I set out to do. I came
 for a larger purpose, to start writing once again. It has been too long, and I
 have been scared of something.Mahabharata Day 20</summary>
@@ -391,14 +391,14 @@ have been scared of something.Mahabharata Day 20</summary>
     <published>2016-12-29T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2017-03-22-debroy-letter/</id>
+    <id>https://stonecharioteer.com/_posts/2017/2017-03-22-debroy-letter/</id>
     <title>Dear Mr. Debroy</title>
     <updated>2017-03-22T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;The following is the content of handwritten letter I sent to Mr. Debroy dated Feb 12th, 2017.
 I’ve reproduced it in its entirety here.&lt;/p&gt;
 &lt;img alt="Debroy letter" src="../_images/debroy-letter-01.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2017-03-22-debroy-letter/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2017/2017-03-22-debroy-letter/" rel="alternate"/>
     <summary>The following is the content of handwritten letter I sent to Mr. Debroy dated Feb 12th, 2017.
 I’ve reproduced it in its entirety here.Debroy letter</summary>
     <category term="bibek-debroy" label="bibek-debroy"/>
@@ -411,13 +411,13 @@ I’ve reproduced it in its entirety here.Debroy letter</summary>
     <published>2017-03-22T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2017-09-02-harivamsha/</id>
+    <id>https://stonecharioteer.com/_posts/2017/2017-09-02-harivamsha/</id>
     <title>Reading the Harivamsha by the Tungabhadra</title>
     <updated>2017-09-02T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;Krishna. The dark one.&lt;/p&gt;
 &lt;img alt="Harivamsha" src="../_images/harivamsha-01.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2017-09-02-harivamsha/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2017/2017-09-02-harivamsha/" rel="alternate"/>
     <summary>Krishna. The dark one.Harivamsha</summary>
     <category term="indian-mythology" label="indian-mythology"/>
     <category term="reading" label="reading"/>
@@ -427,14 +427,14 @@ I’ve reproduced it in its entirety here.Debroy letter</summary>
     <published>2017-09-02T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2018-09-30-kana/</id>
+    <id>https://stonecharioteer.com/_posts/2018/2018-09-30-kana/</id>
     <title>Learn the Kana Using Python and a Raspberry Pi</title>
     <updated>2018-09-09T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I have been attempting to learn Nihongo. It is a failing attempt really, since I
 have so little time lately.&lt;/p&gt;
 &lt;img alt="Quiz" src="../_images/quiz-1.jpeg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2018-09-30-kana/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2018/2018-09-30-kana/" rel="alternate"/>
     <summary>I have been attempting to learn Nihongo. It is a failing attempt really, since I
 have so little time lately.Quiz</summary>
     <category term="raspberry-pi" label="raspberry-pi"/>
@@ -442,7 +442,7 @@ have so little time lately.Quiz</summary>
     <published>2018-09-09T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2018-10-28-leonardo/</id>
+    <id>https://stonecharioteer.com/_posts/2018/2018-10-28-leonardo/</id>
     <title>Leonardo - Generating Product Unique Specification Images Using Python</title>
     <updated>2018-10-28T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;When I was at Flipkart in the Content Team, my manager brought up an interesting
@@ -452,7 +452,7 @@ going to be an image where a prospective buyer could see the key specifications
 of the project arrayed around the product image in a neat fashion.&lt;/p&gt;
 &lt;img alt="Sample-1" src="../_images/sample-1.jpeg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2018-10-28-leonardo/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2018/2018-10-28-leonardo/" rel="alternate"/>
     <summary>When I was at Flipkart in the Content Team, my manager brought up an interesting
 project for the Graphic Designers in our team. He said Flipkart was going to
 invest in the creation of product images that would replace content. It was
@@ -463,7 +463,7 @@ of the project arrayed around the product image in a neat fashion.Sample-1</summ
     <published>2018-10-28T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2019-10-12-pycon/</id>
+    <id>https://stonecharioteer.com/_posts/2019/2019-10-12-pycon/</id>
     <title>PyCon India 2019 Talk - MicroPython</title>
     <updated>2019-10-12T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I finally spoke at PyCon India! It was a great experience. I was a bit nervous
@@ -472,7 +472,7 @@ had arranged the “silent conference”. The headphones supported mono-channels
 which is a blessing for someone who is single-sided deaf, like me.&lt;/p&gt;
 &lt;img alt="PyCon India 2019" src="../_images/title-screenshot.png" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2019-10-12-pycon/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2019/2019-10-12-pycon/" rel="alternate"/>
     <summary>I finally spoke at PyCon India! It was a great experience. I was a bit nervous
 speaking as someone who had just lost an ear, but I am glad that the organizers
 had arranged the “silent conference”. The headphones supported mono-channels,
@@ -486,13 +486,13 @@ which is a blessing for someone who is single-sided deaf, like me.PyCon India 20
     <published>2019-10-12T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-02-02-no-leaf-clover/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-02-02-no-leaf-clover/</id>
     <title>No Leaf Clover</title>
     <updated>2020-02-02T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;[Continued from Part 1: The Sound of Music.]({% post_url 2019-12-11-the-sound-of-music %})&lt;/p&gt;
 &lt;img alt="Hearing Aids" src="../_images/hearing-aid.png" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-02-02-no-leaf-clover/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-02-02-no-leaf-clover/" rel="alternate"/>
     <summary>[Continued from Part 1: The Sound of Music.]({% post_url 2019-12-11-the-sound-of-music %})Hearing Aids</summary>
     <category term="hearing-loss" label="hearing-loss"/>
     <category term="snhl" label="snhl"/>
@@ -501,7 +501,7 @@ which is a blessing for someone who is single-sided deaf, like me.PyCon India 20
     <published>2020-02-02T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-02-29-pip-configuration/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-02-29-pip-configuration/</id>
     <title>Configuring Pip to Work in Enterprise Environments</title>
     <updated>2020-02-29T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;The hardest thing about using package managers within
@@ -510,7 +510,7 @@ you need on the office network. Oftentimes, you are
 hindered by SSL errors, and other times you get
 bogged by DNS errors.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-02-29-pip-configuration/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-02-29-pip-configuration/" rel="alternate"/>
     <summary>The hardest thing about using package managers within
 an enterprise is getting them to download the packages
 you need on the office network. Oftentimes, you are
@@ -521,14 +521,14 @@ bogged by DNS errors.</summary>
     <published>2020-02-29T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-07-04-jekyll/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-07-04-jekyll/</id>
     <title>Blog Updates</title>
     <updated>2020-07-04T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I am ditching Digital Ocean since I do not need a droplet to run the blog.
 Github pages with Jekyll and the &lt;a class="reference external" href="https://github.com/PandaSekh/Jekyll-YAMT"&gt;YAMT&lt;/a&gt;
 theme suffice for now.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-07-04-jekyll/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-07-04-jekyll/" rel="alternate"/>
     <summary>I am ditching Digital Ocean since I do not need a droplet to run the blog.
 Github pages with Jekyll and the YAMT
 theme suffice for now.</summary>
@@ -537,13 +537,13 @@ theme suffice for now.</summary>
     <published>2020-07-04T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-07-04-rpi4-k3s-docker/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-07-04-rpi4-k3s-docker/</id>
     <title>K3S on the 8GB Raspberry Pi 4 with Docker-CE</title>
     <updated>2020-07-04T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I finally managed to fix the issue I was having with K3S on the Raspberry Pi 4.
 Turns out, there is an issue with how Docker does IP configurations.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-07-04-rpi4-k3s-docker/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-07-04-rpi4-k3s-docker/" rel="alternate"/>
     <summary>I finally managed to fix the issue I was having with K3S on the Raspberry Pi 4.
 Turns out, there is an issue with how Docker does IP configurations.</summary>
     <category term="raspberry-pi" label="raspberry-pi"/>
@@ -553,26 +553,26 @@ Turns out, there is an issue with how Docker does IP configurations.</summary>
     <published>2020-07-04T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-07-07-mit-distributed-systems/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-07-07-mit-distributed-systems/</id>
     <title>I am taking the MIT Distributed Systems Course</title>
     <updated>2020-07-07T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;To learn more about how distributed system design works, I have decided to spend
 time with 6.824 - Distributed Systems.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-07-07-mit-distributed-systems/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-07-07-mit-distributed-systems/" rel="alternate"/>
     <summary>To learn more about how distributed system design works, I have decided to spend
 time with 6.824 - Distributed Systems.</summary>
     <published>2020-07-07T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-07-04-managing-python-installs/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-07-04-managing-python-installs/</id>
     <title>Managing Multiple Python Installations</title>
     <updated>2020-07-07T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;If you are running a Linux or Mac machine and would like to run multiple
 versions of Python, you probably have been told that you need to stop trying
 to use package managers to run Python.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-07-04-managing-python-installs/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-07-04-managing-python-installs/" rel="alternate"/>
     <summary>If you are running a Linux or Mac machine and would like to run multiple
 versions of Python, you probably have been told that you need to stop trying
 to use package managers to run Python.</summary>
@@ -582,14 +582,14 @@ to use package managers to run Python.</summary>
     <published>2020-07-07T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-07-14-til/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-07-14-til/</id>
     <title>Today I Learned Journal</title>
     <updated>2020-07-14T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I started a journal to maintain a list of things I am learning daily. This
 is mostly to just keep me on my toes, but also so that I can record everything
 I learn daily.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-07-14-til/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-07-14-til/" rel="alternate"/>
     <summary>I started a journal to maintain a list of things I am learning daily. This
 is mostly to just keep me on my toes, but also so that I can record everything
 I learn daily.</summary>
@@ -597,14 +597,14 @@ I learn daily.</summary>
     <published>2020-07-14T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-07-19-stm-boards/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-07-19-stm-boards/</id>
     <title>The STM32F401 Boards</title>
     <updated>2020-07-19T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;A while ago, a user posted &lt;a class="reference external" href="https://github.com/TeXitoi/keyberon"&gt;a link to this repo&lt;/a&gt;
 on &lt;a class="reference external" href="https://www.reddit.com/r/mk"&gt;/r/mk&lt;/a&gt;.&lt;/p&gt;
 &lt;img alt="STM Board" src="../_images/stm32f401.png" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-07-19-stm-boards/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-07-19-stm-boards/" rel="alternate"/>
     <summary>A while ago, a user posted a link to this repo
 on /r/mk.STM Board</summary>
     <category term="iot" label="iot"/>
@@ -612,26 +612,26 @@ on /r/mk.STM Board</summary>
     <published>2020-07-19T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-07-20-micropython-watch/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-07-20-micropython-watch/</id>
     <title>The ESP8266 Smart Watch</title>
     <updated>2020-07-20T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;&lt;img alt="Watch" src="../_images/esp8266-watch.png" /&gt;&lt;/p&gt;
 &lt;img alt="Watch" src="../_images/esp8266-watch.png" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-07-20-micropython-watch/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-07-20-micropython-watch/" rel="alternate"/>
     <summary>WatchWatch</summary>
     <category term="iot" label="iot"/>
     <published>2020-07-20T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-07-23-podcasts/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-07-23-podcasts/</id>
     <title>A List of Podcasts I Follow</title>
     <updated>2020-07-23T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I didn’t listen to podcasts for a large part of my professional life. My friend Najeem introduced me to Talk Python, which was
 the first podcast I have ever listened to and enjoyed. Since then, I have found a lot of podcasts that I follow, and wanted
 to keep track of the episodes I love, as well as podcasts I love.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-07-23-podcasts/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-07-23-podcasts/" rel="alternate"/>
     <summary>I didn’t listen to podcasts for a large part of my professional life. My friend Najeem introduced me to Talk Python, which was
 the first podcast I have ever listened to and enjoyed. Since then, I have found a lot of podcasts that I follow, and wanted
 to keep track of the episodes I love, as well as podcasts I love.</summary>
@@ -641,13 +641,13 @@ to keep track of the episodes I love, as well as podcasts I love.</summary>
     <published>2020-07-23T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-09-01-ear-one/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-09-01-ear-one/</id>
     <title>(Y)ear One</title>
     <updated>2020-09-01T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;&lt;img alt="Headphones image" src="../_images/ear-one.jpeg" /&gt;&lt;/p&gt;
 &lt;img alt="Headphones image" src="../_images/ear-one.jpeg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-09-01-ear-one/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-09-01-ear-one/" rel="alternate"/>
     <summary>Headphones imageHeadphones image</summary>
     <category term="hearing-loss" label="hearing-loss"/>
     <category term="health" label="health"/>
@@ -656,13 +656,13 @@ to keep track of the episodes I love, as well as podcasts I love.</summary>
     <published>2020-09-01T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-11-11-web-application-security/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-11-11-web-application-security/</id>
     <title>Web Application Security with secure.py</title>
     <updated>2020-11-11T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;A common pitfall when developing web applications is not knowing how to design a safe application.
 &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;secure.py&lt;/span&gt;&lt;/code&gt; is a great Python module that helps deal with the basic foundations of web application security.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-11-11-web-application-security/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-11-11-web-application-security/" rel="alternate"/>
     <summary>A common pitfall when developing web applications is not knowing how to design a safe application.
 secure.py is a great Python module that helps deal with the basic foundations of web application security.</summary>
     <category term="python" label="python"/>
@@ -671,7 +671,7 @@ secure.py is a great Python module that helps deal with the basic foundations of
     <published>2020-11-11T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-11-16-miles-morales/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-11-16-miles-morales/</id>
     <title>The Song of a Hero - Insomniac’s Spider-Man Miles Morales</title>
     <updated>2020-11-16T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;Of all the differences between the first Spider-Man game for the
@@ -679,7 +679,7 @@ PS4 and Spider-Man Miles Morales, I did not expect to be wowed
 by the music.&lt;/p&gt;
 &lt;img alt="Image 1" src="../_images/miles-01.jpg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-11-16-miles-morales/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-11-16-miles-morales/" rel="alternate"/>
     <summary>Of all the differences between the first Spider-Man game for the
 PS4 and Spider-Man Miles Morales, I did not expect to be wowed
 by the music.Image 1</summary>
@@ -688,14 +688,14 @@ by the music.Image 1</summary>
     <published>2020-11-16T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-11-24-keeping-your-laptop-awake/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-11-24-keeping-your-laptop-awake/</id>
     <title>Keeping Your Work Laptop Awake</title>
     <updated>2020-11-24T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;Sometimes you’d like to keep your work laptop from sleeping, and for whatever
 reason, you might not be able to change your system’s power management rules.
 In this article, I show you how to get around that.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-11-24-keeping-your-laptop-awake/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-11-24-keeping-your-laptop-awake/" rel="alternate"/>
     <summary>Sometimes you’d like to keep your work laptop from sleeping, and for whatever
 reason, you might not be able to change your system’s power management rules.
 In this article, I show you how to get around that.</summary>
@@ -705,13 +705,13 @@ In this article, I show you how to get around that.</summary>
     <published>2020-11-24T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-11-30-sarathi-discord-til-bot/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-11-30-sarathi-discord-til-bot/</id>
     <title>Sarathi - A Personal Discord Bot</title>
     <updated>2020-11-30T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I’ve been maintaining &lt;a class="reference external" href="https://stonecharioteer.com/til.html"&gt;a TIL page&lt;/a&gt; for a while now, and while the idea is great, I have had some issues updating the sheet daily.&lt;/p&gt;
 &lt;img alt="sarathi-bot add factoid" src="../_images/help.jpeg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-11-30-sarathi-discord-til-bot/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-11-30-sarathi-discord-til-bot/" rel="alternate"/>
     <summary>I’ve been maintaining a TIL page for a while now, and while the idea is great, I have had some issues updating the sheet daily.sarathi-bot add factoid</summary>
     <category term="discord" label="discord"/>
     <category term="python" label="python"/>
@@ -720,12 +720,12 @@ In this article, I show you how to get around that.</summary>
     <published>2020-11-30T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-12-04-a-year-of-rest/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-12-04-a-year-of-rest/</id>
     <title>A Year Of Rest</title>
     <updated>2020-12-04T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I have been taking it easy for a year.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-12-04-a-year-of-rest/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-12-04-a-year-of-rest/" rel="alternate"/>
     <summary>I have been taking it easy for a year.</summary>
     <category term="hobbies" label="hobbies"/>
     <category term="coding" label="coding"/>
@@ -733,13 +733,13 @@ In this article, I show you how to get around that.</summary>
     <published>2020-12-04T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-12-09-bangpypers-screencast-on-security-headers/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-12-09-bangpypers-screencast-on-security-headers/</id>
     <title>BangPypers Screencast On Security Headers</title>
     <updated>2020-12-09T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;The video for my screencast has finally been uploaded. This was a screencast conducted by BangPypers.
 Here, I covered the topics I blogged about in [this article]({% post_url 2020-11-11-web-application-security %}).&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-12-09-bangpypers-screencast-on-security-headers/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-12-09-bangpypers-screencast-on-security-headers/" rel="alternate"/>
     <summary>The video for my screencast has finally been uploaded. This was a screencast conducted by BangPypers.
 Here, I covered the topics I blogged about in [this article]({% post_url 2020-11-11-web-application-security %}).</summary>
     <category term="webdev" label="webdev"/>
@@ -752,7 +752,7 @@ Here, I covered the topics I blogged about in [this article]({% post_url 2020-11
     <published>2020-12-09T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2020-12-25-david-beazley-courses/</id>
+    <id>https://stonecharioteer.com/_posts/2020/2020-12-25-david-beazley-courses/</id>
     <title>David Beazley’s Courses</title>
     <updated>2020-12-25T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;Among other things, 2020 has been a window into opportunities I didn’t have
@@ -763,7 +763,7 @@ heal from burnout and come to terms with my job, which I’d just started in
 for myself professionally. I have been overwhelmed with immense Imposter’s
 Sydrome, and I needed a chance to get over it.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2020-12-25-david-beazley-courses/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2020/2020-12-25-david-beazley-courses/" rel="alternate"/>
     <summary>Among other things, 2020 has been a window into opportunities I didn’t have
 before. Mostly with respect to time. I was able to rest, which given my
 penchant for workaholism, was something my mind deserved. I was also about to
@@ -779,7 +779,7 @@ Sydrome, and I needed a chance to get over it.</summary>
     <published>2020-12-25T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2021-03-10-mahabharata-instagram/</id>
+    <id>https://stonecharioteer.com/_posts/2021/2021-03-10-mahabharata-instagram/</id>
     <title>Migrating the Mahabharata Posts</title>
     <updated>2021-03-10T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;In 2016, I spent a month in Hampi to read Bibek Debroy’s 10-volume translation
@@ -787,7 +787,7 @@ of the Mahabharata. It was a life-changing experience, and I formed a bond with
 the author through correspondence ever since. I’d posted about my experience on
 Instagram, but I’d like to move all the posts here, for easy retrieval.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2021-03-10-mahabharata-instagram/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2021/2021-03-10-mahabharata-instagram/" rel="alternate"/>
     <summary>In 2016, I spent a month in Hampi to read Bibek Debroy’s 10-volume translation
 of the Mahabharata. It was a life-changing experience, and I formed a bond with
 the author through correspondence ever since. I’d posted about my experience on
@@ -800,14 +800,14 @@ Instagram, but I’d like to move all the posts here, for easy retrieval.</summa
     <published>2021-03-10T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2021-03-26-notes/</id>
+    <id>https://stonecharioteer.com/_posts/2021/2021-03-26-notes/</id>
     <title>My Notes</title>
     <updated>2021-03-26T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I needed a place to collect my thoughts on various topics related to
 technology, in a slightly less-public manner. That’s where my new
 &lt;a class="reference external" href="https://notes.stonecharioteer.com"&gt;notes website&lt;/a&gt; comes in.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2021-03-26-notes/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2021/2021-03-26-notes/" rel="alternate"/>
     <summary>I needed a place to collect my thoughts on various topics related to
 technology, in a slightly less-public manner. That’s where my new
 notes website comes in.</summary>
@@ -817,12 +817,12 @@ notes website comes in.</summary>
     <published>2021-03-26T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2021-03-30-do-the-job-you-hate/</id>
+    <id>https://stonecharioteer.com/_posts/2021/2021-03-30-do-the-job-you-hate/</id>
     <title>Do The Job You Hate So You Won’t Hate The Job You Love</title>
     <updated>2021-03-30T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;That is all.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2021-03-30-do-the-job-you-hate/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2021/2021-03-30-do-the-job-you-hate/" rel="alternate"/>
     <summary>That is all.</summary>
     <category term="zen" label="zen"/>
     <category term="tiny" label="tiny"/>
@@ -830,13 +830,13 @@ notes website comes in.</summary>
     <published>2021-03-30T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2021-05-01-a-code-of-honour/</id>
+    <id>https://stonecharioteer.com/_posts/2021/2021-05-01-a-code-of-honour/</id>
     <title>A Personal Code</title>
     <updated>2021-05-01T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;Do you have a personal code of honour? I’ve been giving this some thought and I
 feel like I’m at a stage where I’d like to write my code down.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2021-05-01-a-code-of-honour/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2021/2021-05-01-a-code-of-honour/" rel="alternate"/>
     <summary>Do you have a personal code of honour? I’ve been giving this some thought and I
 feel like I’m at a stage where I’d like to write my code down.</summary>
     <category term="meta" label="meta"/>
@@ -844,14 +844,14 @@ feel like I’m at a stage where I’d like to write my code down.</summary>
     <published>2021-05-01T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2021-06-03-returning-to-work/</id>
+    <id>https://stonecharioteer.com/_posts/2021/2021-06-03-returning-to-work/</id>
     <title>Returning to the Craft of Programming</title>
     <updated>2021-06-03T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I have not been working on side projects in a few months. I’ve been busy with
 life, family, and health. However, I finally feel ready to return to it.&lt;/p&gt;
 &lt;img alt="Raspberry Pi Clusters" src="../_images/raspberry-pi-clusters.jpeg" /&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2021-06-03-returning-to-work/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2021/2021-06-03-returning-to-work/" rel="alternate"/>
     <summary>I have not been working on side projects in a few months. I’ve been busy with
 life, family, and health. However, I finally feel ready to return to it.Raspberry Pi Clusters</summary>
     <category term="life" label="life"/>
@@ -860,13 +860,13 @@ life, family, and health. However, I finally feel ready to return to it.Raspberr
     <published>2021-06-03T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2021-06-28-a-weekend-with-postgresql/</id>
+    <id>https://stonecharioteer.com/_posts/2021/2021-06-28-a-weekend-with-postgresql/</id>
     <title>A Weekend With Postgresql</title>
     <updated>2021-06-28T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I’ve wanted to read the postgresql documentation live, on video, for over a
 year now. This is the best time to do it.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2021-06-28-a-weekend-with-postgresql/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2021/2021-06-28-a-weekend-with-postgresql/" rel="alternate"/>
     <summary>I’ve wanted to read the postgresql documentation live, on video, for over a
 year now. This is the best time to do it.</summary>
     <category term="databases" label="databases"/>
@@ -876,7 +876,7 @@ year now. This is the best time to do it.</summary>
     <published>2021-06-28T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2021-07-01-setting-up-neovim-plug/</id>
+    <id>https://stonecharioteer.com/_posts/2021/2021-07-01-setting-up-neovim-plug/</id>
     <title>Setting up Neovim with Vim Plug and YouCompleteMe</title>
     <updated>2021-07-01T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I’m moving to neovim for my primary editing purposes. VSCode has served me
@@ -884,7 +884,7 @@ well, but I’m growing wearing of its growing pains. Some extensions don’t wo
 well, and many things seem broken of late. Besides, I don’t really use the IDE
 features all that much.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2021-07-01-setting-up-neovim-plug/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2021/2021-07-01-setting-up-neovim-plug/" rel="alternate"/>
     <summary>I’m moving to neovim for my primary editing purposes. VSCode has served me
 well, but I’m growing wearing of its growing pains. Some extensions don’t work
 well, and many things seem broken of late. Besides, I don’t really use the IDE
@@ -897,7 +897,7 @@ features all that much.</summary>
     <published>2021-07-01T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2021-07-23-empathy-in-tech/</id>
+    <id>https://stonecharioteer.com/_posts/2021/2021-07-23-empathy-in-tech/</id>
     <title>Empathy in Tech</title>
     <updated>2021-07-25T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I’ve been meaning to write about empathy in tech for a long time. Oddly, this
@@ -907,7 +907,7 @@ improve the things I say to my friends. However, the topic I’m talking about
 has more to do with teaching than it does with personal relationships outside
 of tech.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2021-07-23-empathy-in-tech/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2021/2021-07-23-empathy-in-tech/" rel="alternate"/>
     <summary>I’ve been meaning to write about empathy in tech for a long time. Oddly, this
 is a topic that I’m the most hesitant to write about, for personal reasons.
 I’m not the most empathetic person, and I have trouble understanding how to
@@ -921,7 +921,7 @@ of tech.</summary>
     <published>2021-07-25T00:00:00+05:30</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/_posts/2021-08-24-merkle-science/</id>
+    <id>https://stonecharioteer.com/_posts/2021/2021-08-24-merkle-science/</id>
     <title>I joined Merkle Science as an Architect</title>
     <updated>2021-08-24T00:00:00+05:30</updated>
     <content type="html">&lt;p&gt;I left Visa on July 21, and joined &lt;a class="reference external" href="https://merklescience.com"&gt;Merkle Science&lt;/a&gt;
@@ -932,7 +932,7 @@ developer, and this comes after 2 years at a large corporation. I’m also
 excited since I knew &lt;em&gt;nothing&lt;/em&gt; about Cryptocurrencies and Decentralized
 Finance, and today I can say I understand at least a little.&lt;/p&gt;
 </content>
-    <link href="https://stonecharioteer.com/_posts/2021-08-24-merkle-science/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/_posts/2021/2021-08-24-merkle-science/" rel="alternate"/>
     <summary>I left Visa on July 21, and joined Merkle Science
 as an Architect and Lead Software Engineer. I’m working with the Data
 Engineering team, and have some cross-over work with the Product team as well.
