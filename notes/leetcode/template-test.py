@@ -3,10 +3,10 @@ import sys
 import pathlib
 try:
     code_folder = "{{code_folder_path}}"
-    # the path here should be relative to this folder
-    # and the folder it points to should contain
-    # a file named `solution.py` and another called `__init__.py`
-    # and `solution.py` should contain a class named `Solution`
+    # the path here should be relative to the folder containing this folder and
+    # the folder it points to should contain
+    # a file named `solution.py` containing 
+    # a class named `Solution`
     # which has a method named `solve`
     absolute_code_path = pathlib.Path(code_folder).resolve().absolute()
     sys.path.append(code_folder)
