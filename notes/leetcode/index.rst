@@ -366,11 +366,3 @@ have setup a testing pipeline targetting Leetcode only.
 
    **Day 30**
    ^^^
-
-
-
--------------
-Something
--------------
-
-Hello, world!
