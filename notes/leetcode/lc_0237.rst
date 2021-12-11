@@ -1,0 +1,10 @@
+.. _lc-0237:
+================================================================================================================================================================================================================================
+LC0237 - Delete a given Node when a node is given. (0(1) solution) (EASY)
+================================================================================================================================================================================================================================
+
+This is the solution for `Leetcode Problem 237 - Delete a given Node when a node is given. (0(1) solution). <https://leetcode.com/problems/delete-node-in-a-linked-list/>`_
+
+.. literalinclude:: solutions/0237_delete_node_in_a_linked_list/solution.py
+    :language: python
+    :linenos:

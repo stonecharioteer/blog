@@ -1,0 +1,10 @@
+.. _lc-0021:
+================================================================================================================================================================================================================================
+LC0021 - Merge two sorted Linked List (use method used in mergeSort) (EASY)
+================================================================================================================================================================================================================================
+
+This is the solution for `Leetcode Problem 21 - Merge two sorted Linked List (use method used in mergeSort). <https://leetcode.com/problems/merge-two-sorted-lists/>`_
+
+.. literalinclude:: solutions/0021_merge_two_sorted_lists/solution.py
+    :language: python
+    :linenos:

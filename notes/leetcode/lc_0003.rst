@@ -1,0 +1,10 @@
+.. _lc-0003:
+================================================================================================================================================================================================================================
+LC0003 - Longest Substring without repeat (MEDIUM)
+================================================================================================================================================================================================================================
+
+This is the solution for `Leetcode Problem 3 - Longest Substring without repeat. <https://leetcode.com/problems/longest-substring-without-repeating-characters/>`_
+
+.. literalinclude:: solutions/0003_longest_substring_without_repeating_characters/solution.py
+    :language: python
+    :linenos:
