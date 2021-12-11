@@ -1,0 +1,10 @@
+.. _lc-0234:
+================================================================================================================================================================================================================================
+LC0234 - Check if a LinkedList is palindrome or not (EASY)
+================================================================================================================================================================================================================================
+
+This is the solution for `Leetcode Problem 234 - Check if a LinkedList is palindrome or not. <https://leetcode.com/problems/palindrome-linked-list/>`_
+
+.. literalinclude:: solutions/0234_palindrome_linked_list/solution.py
+    :language: python
+    :linenos:

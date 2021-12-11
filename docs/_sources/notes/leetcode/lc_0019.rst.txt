@@ -1,0 +1,10 @@
+.. _lc-0019:
+================================================================================================================================================================================================================================
+LC0019 - Remove N-th node from back of LinkedList (MEDIUM)
+================================================================================================================================================================================================================================
+
+This is the solution for `Leetcode Problem 19 - Remove N-th node from back of LinkedList. <https://leetcode.com/problems/remove-nth-node-from-end-of-list/>`_
+
+.. literalinclude:: solutions/0019_remove_nth_node_from_end_of_list/solution.py
+    :language: python
+    :linenos:

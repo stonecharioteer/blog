@@ -1,0 +1,10 @@
+.. _lc-0088:
+================================================================================================================================================================================================================================
+LC0088 - Merge two sorted Arrays without extra space (EASY)
+================================================================================================================================================================================================================================
+
+This is the solution for `Leetcode Problem 88 - Merge two sorted Arrays without extra space. <https://leetcode.com/problems/merge-sorted-array/>`_
+
+.. literalinclude:: solutions/0088_merge_sorted_array/solution.py
+    :language: python
+    :linenos:
