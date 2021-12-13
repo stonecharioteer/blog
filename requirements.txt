@@ -52,7 +52,7 @@ jupyterlab-pygments==0.1.2
 jupyterlab-widgets==1.0.2
 latexcodec==2.0.1
 livereload==2.6.3
-lxml==4.6.4
+lxml==4.6.5
 markdown-it-py==1.1.0
 MarkupSafe==1.1.1
 matplotlib-inline==0.1.3
