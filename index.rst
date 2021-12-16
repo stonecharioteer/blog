@@ -22,5 +22,5 @@ Here is a list of most recent posts:
 
    Stonecharioteer's Blog<index>
    about.md
-   Values<_posts/2021/personal-code.rst>
+   Values<posts/2021/personal-code.rst>
    Notes<notes/index.rst>
