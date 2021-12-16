@@ -3,6 +3,7 @@ blogpost: true
 date: July 25, 2021
 category: Thoughts
 tags: meta, technology, career, empathy
+redirect: 2021/07/23/empathy-in-tech.html,empathy-in-tech
 ---
 # Empathy in Tech
 
