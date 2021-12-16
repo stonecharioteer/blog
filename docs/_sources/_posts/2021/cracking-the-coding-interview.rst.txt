@@ -1,4 +1,3 @@
-:date: Dec 12, 2021
 :category: Learning
 :tags: tech, career, interviews, learning, algorithms, data-structures
 
@@ -49,5 +48,4 @@ plans and calendars. I'm not certain I've been great following them, though.
    ---
    :column: +entry right
 
-   **Practice: 
-
+   **Practice:
