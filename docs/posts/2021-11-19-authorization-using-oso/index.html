@@ -1,0 +1,1780 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta property="og:title" content="Authorization in Python using Oso" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="posts/2021-11-19-authorization-using-oso.html" />
+  <meta property="og:description" content="Outline: Prelude, Introduction, What is Oso?, Why do I need Oso?,- Hello Oso,- What is Going On?, What Happened?, What if I want to deny access?.,.,- Oso in a CLI,- With argparse, Write your own de..." />
+  
+    <title>Authorization in Python using Oso &#8212; Stonecharioteer&#39;s Blog</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../blog/atom.xml"
+  title="Stonecharioteer's Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../">
+  <img src="../../_static/stonecharioteer-banner.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../">
+  Stonecharioteer's Blog
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../about/">
+  About Me
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../2021/personal-code/">
+  Values
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../notes/">
+  Notes
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/stonecharioteer/" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/stonecharioteer" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">  
+<h2>
+   <i
+    class="fa fa-pencil"
+  ></i
+  >  Draft  
+</h2>
+
+<ul>
+      
+<li id="category">
+  <span
+    ><i class="fa-fw fa fa-folder-open"></i></span
+  >
+   
+  <a href="../../blog/category/tutorial/">Tutorial</a>  
+</li>
+ 
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   draft  oso  authorization  web-development  
+  <a href="../../blog/tag/tech/">tech</a>  
+</li>
+ 
+</ul>
+
+<h3>
+  <a href="../../blog/">Recent Posts</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2021/advent-of-code/"
+      >07 December - Advent of Code 2021</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021/updates/"
+      >06 December - Updates</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021/2021-08-24-merkle-science/"
+      >24 August - I joined Merkle Science as an Architect</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021/2021-07-23-empathy-in-tech/"
+      >25 July - Empathy in Tech</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2021/2021-07-01-setting-up-neovim-plug/"
+      >01 July - Setting up Neovim with Vim Plug and YouCompleteMe</a
+    >
+  </li>
+  
+</ul>
+
+<h3><a href="../../blog/tag/">Tags</a></h3>
+<style type="text/css">
+  ul.ablog-cloud {
+    list-style: none;
+    overflow: auto;
+  }
+  ul.ablog-cloud li {
+    float: left;
+    height: 20pt;
+    line-height: 18pt;
+    margin-right: 5px;
+  }
+  ul.ablog-cloud a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  li.ablog-cloud-1 {
+    font-size: 80%;
+  }
+  li.ablog-cloud-2 {
+    font-size: 95%;
+  }
+  li.ablog-cloud-3 {
+    font-size: 110%;
+  }
+  li.ablog-cloud-4 {
+    font-size: 125%;
+  }
+  li.ablog-cloud-5 {
+    font-size: 140%;
+  }
+</style>
+<ul class="ablog-cloud">
+               
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/bangpypers/">bangpypers</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../blog/tag/bibek-debroy/">bibek-debroy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/books/">books</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/career/">career</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/coding/">coding</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/comics/">comics</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/computer-science/">computer-science</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/conda/">conda</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/conferences/">conferences</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/courses/">courses</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/covid/">covid</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/databases/">databases</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/discord/">discord</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/documentation/">documentation</a>
+  </li>
+        
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/editors/">editors</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/empathy/">empathy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/flask/">flask</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/flipkart/">flipkart</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/gaming/">gaming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/hampi/">hampi</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/health/">health</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/hearing-loss/">hearing-loss</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/hobbies/">hobbies</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/homelab/">homelab</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/indian-mythology/">indian-mythology</a>
+  </li>
+        
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/iot/">iot</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/japanese/">japanese</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/jekyll/">jekyll</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/kubernetes/">kubernetes</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/learning/">learning</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/letters/">letters</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/life/">life</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/linux/">linux</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/livecast/">livecast</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/mahabharata/">mahabharata</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/meetup/">meetup</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/meta/">meta</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/micropython/">micropython</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/neovim/">neovim</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/notes/">notes</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/philosophy/">philosophy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/pip/">pip</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/podcasts/">podcasts</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/programming/">programming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/pycon/">pycon</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../blog/tag/python/">python</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/raspberry-pi/">raspberry-pi</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../blog/tag/reading/">reading</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/rust/">rust</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/screencast/">screencast</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/security/">security</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/shelfie/">shelfie</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/snhl/">snhl</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/talks/">talks</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tech/">tech</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/technology/">technology</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/thoughts/">thoughts</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/til/">til</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tiny/">tiny</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/tutorial/">tutorial</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/updates/">updates</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/video/">video</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/videos/">videos</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/vim/">vim</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/webdev/">webdev</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/wfh/">wfh</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/work/">work</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/writing/">writing</a>
+  </li>
+        
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/zen/">zen</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../../blog/category/">Categories</a>
+</h3>
+<ul>
+     
+  <li>
+    <a href="../../blog/category/health/">Health (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/how-to/">How To (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/journal/">Journal (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/learning/">Learning (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/life/">Life (4)</a>
+  </li>
+        
+  <li>
+    <a href="../../blog/category/reading/">Reading (22)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/review/">Review (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/show-and-tell/">Show and Tell (6)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/talks/">Talks (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/tech/">Tech (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/thoughts/">Thoughts (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/tips-and-tricks/">Tips and Tricks (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/tutorial/">Tutorial (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/update/">Update (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/updates/">Updates (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/category/writing/">Writing (1)</a>
+  </li>
+     
+</ul>
+
+<h3>
+  <a href="../../blog/archive/">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../blog/2021/">2021 (11)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2020/">2020 (18)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2019/">2019 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2018/">2018 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2017/">2017 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../blog/2016/">2016 (20)</a>
+  </li>
+   
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#outline">
+   Outline
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prelude">
+   Prelude
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-oso">
+   What is Oso?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hello-oso">
+   Hello Oso
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-s-going-on">
+     What’s Going On?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-happened">
+       What Happened?
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oso-in-a-cli">
+   Oso in a CLI
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-argparse">
+     Using argparse
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-your-own-decorator-for-click">
+     Writing your own decorator for Click
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-s-the-server">
+   Where’s the Server?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oso-and-flask">
+   Oso and Flask
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#with-a-barebones-flask-application">
+     With a barebones Flask application
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#with-flask-login">
+     With Flask-Login
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="authorization-in-python-using-oso">
+<h1>Authorization in Python using Oso<a class="headerlink" href="#authorization-in-python-using-oso" title="Permalink to this headline">¶</a></h1>
+<section id="outline">
+<h2>Outline<a class="headerlink" href="#outline" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Prelude</p></li>
+<li><p>Introduction</p></li>
+<li><p>What is Oso?</p></li>
+<li><p>Why do I need Oso?</p></li>
+<li><dl class="simple">
+<dt>Hello Oso</dt><dd><ol class="arabic simple">
+<li><p>What is Going On?</p></li>
+<li><p>What Happened?</p></li>
+<li><p>What if I want to <em>deny</em> access?</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Oso in a CLI</dt><dd><ol class="arabic simple">
+<li><p>With argparse</p></li>
+<li><p>Write your own decorator for Click</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Where is the Server?</p></li>
+<li><dl class="simple">
+<dt>Oso and Flask</dt><dd><ol class="arabic simple">
+<li><p>With a barebones Flask application</p></li>
+<li><p>Using flask-oso</p></li>
+<li><p>With Flask-Login</p></li>
+<li><p>With <cite>flask_jwt_extended</cite></p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Advanced Patterns</p></li>
+<li><p>Getting Help</p></li>
+<li><p>Cookiecutter Template</p></li>
+</ol>
+</section>
+<section id="prelude">
+<h2>Prelude<a class="headerlink" href="#prelude" title="Permalink to this headline">¶</a></h2>
+<p>This is an article I’ve been working on for almost a year now. Life got in the way,
+but it wasn’t just that. I haven’t been using Oso in the months since February,
+since I’ve moved on to another company, but the central premise that excites
+me about the library hasn’t changed. The fun folks at Oso reached out to me
+since I’ve been telling them about this article, and we had a fun chat about
+it and how I’ve used Oso in a very non-conventional way at my previous
+workplace. I am not affiliated with them or with my previous organization
+at the time of this writing, and I’m not speaking for them, but I’ll say this.
+<em>Oso is darn good software</em>.</p>
+<p>The structure of this post is to serve not as a tutorial to Oso. The official
+[documentation](<a class="reference external" href="https://docs.osohq.com">https://docs.osohq.com</a>) more than serve that purpose. Instead,
+I wanted to dig into <em>why</em> I find this library fascinating enough to be <em>this</em>
+excited. I’m writing about all the different ways in which you <em>could</em> use Oso,
+even if it wasn’t exactly meant for that purpose. Not everyone will have such a
+requirement, but in my opinion, this is how you learn. You build things that
+might not see mobvious from the first glance. I’ll save the fanboyism for the
+conclusion, but I’ll leave you with this.</p>
+<p>While Oso does a lot for you under the hood, it’s <em>what you can do</em> if you know
+it like a power user that empowers you.</p>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Auth is one of the more underrated features in software. Not only is it hard
+to do in a secure manner, it is also seldom appreciated when it is done well.
+When auth works, it’s business as usual, and when it doesn’t, someone messed
+up.</p>
+<p>When people say <strong>auth</strong>, they could mean one of two things: <em>authentication</em>
+(AuthN), or, <em>authorization</em> (AuthZ).</p>
+<p><em>Authentication</em> deals with user identity. Is user <cite>abc</cite> who they say they are?
+It deals with user IDs and passwords and validation. It could additionally deal
+with user tokens, sessions, and cookies among other things.</p>
+<p><em>Authorization</em> deals with a user’s permissions. Is user <cite>abc</cite> <em>allowed</em> to do
+the thing they have requested? Where are the authorization rules?  Who is
+allowed to use this portion of your application? Who is denied it?</p>
+<p>This article deals with <em>authorization</em> and not <strong>authentication.</strong></p>
+<p>When a developer goes about looking for a way to configure authorization, they
+usually arrive at <em>roles</em>. A user’s <em>role</em> is assigned certain permissions, and
+if you need your user to be able to do something, then just add him to that
+role. Easy-peasy.</p>
+<p>There is a problem with this approach. The roles have to be checked in your
+code, time and again. Want to add a new feature only admins with <em>cat</em> in their
+username can perform on every third Sunday? Tough luck, you can’t do that.</p>
+<p>Or maybe you can.</p>
+</section>
+<section id="what-is-oso">
+<h2>What is Oso?<a class="headerlink" href="#what-is-oso" title="Permalink to this headline">¶</a></h2>
+<p>[Oso](<a class="reference external" href="https://osohq.com">https://osohq.com</a>) is a library that takes care of authorization. In
+coding terms, <cite>oso</cite> allows you to take code that looks like this:</p>
+<p>And rewrite it like this:</p>
+<p>And in your rules, you define this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">allow</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="s2">&quot;can_do&quot;</span><span class="p">,</span> <span class="n">this</span><span class="p">)</span> <span class="k">if</span> <span class="n">user</span><span class="o">.</span><span class="n">is_admin</span> <span class="ow">and</span> <span class="n">user</span><span class="o">.</span><span class="n">id</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;abc&quot;</span><span class="p">,</span><span class="s2">&quot;xyz&quot;</span><span class="p">,</span> <span class="s2">&quot;lkjh&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>For now, ignore what is inside the <cite>allow</cite> line. Indeed, also ignore the
+<em>words</em> <cite>user</cite>, <cite>“can_do”</cite> and <cite>this</cite>. <em>None of them have any meaning beyond</em>
+<em>what you assign it in your code</em>.</p>
+<p>Take a minute to reread the above two lines. This is important.</p>
+<p>In an earlier paragraph, I used the term “words” to refer to <cite>user</cite>, <cite>“can_do”</cite>
+and <cite>this</cite>. That was a gross over-simplification of what’s happening here.
+These are <strong>tokens</strong>.  The tokens do not have any real meaning as to what they
+do. It is up to <em>you</em> to impart meaning to them.</p>
+<p>While this doesn’t look like much, it actually is. Oso provides users the
+Polar declarative language with which to declare <em>policies</em> for the
+application.</p>
+<p>These policies enable developers to abstract the actual rules of authorization
+and instead focus on their code. Everything else is denied to the user.</p>
+<p>Yes, <cite>oso</cite> is <em>deny by default</em>. No one gets to do anything if you haven’t
+defined a rule that you’re attempting to use.</p>
+<p>## Why do I need Oso?</p>
+<p>If you’re used to doing things with <em>if</em> statements, or perhaps modular
+decorators if you’re in a Python world, and that’s a good pattern to have, why
+would you need <cite>oso</cite>?</p>
+<ol class="arabic simple">
+<li><p>Oso does modularization for you.</p></li>
+<li><p>You can use the Polar language syntax to define rules in a simple way.</p></li>
+<li><p>You can hot load policies on the fly, meaning you can come up with runtime
+policies that you couldn’t do without considerable effort.</p></li>
+<li><p>Oso also gives you plugins for your favorite languages: You can reuse
+your policies <em>across</em> your organization: in <em>multiple</em> languages.</p></li>
+<li><p>You can separately version control your policies.</p></li>
+<li><p>Policies are just strings. You can store them in a database, if you want
+to. Also, [/r/madlads](<a class="reference external" href="https://reddit.com/r/madlads">https://reddit.com/r/madlads</a>) is :point_right: that
+way.</p></li>
+</ol>
+</section>
+<section id="hello-oso">
+<h2>Hello Oso<a class="headerlink" href="#hello-oso" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Using Oso in other languages</p>
+<p>Oso supports several languages, not just Python. I use Python here merely for
+demonstrative purposes, but you should visit their official [documentation
+website](<a class="reference external" href="https://docs.osohq.com">https://docs.osohq.com</a>) to find more libraries supporting other
+languages such as Java, Rust and Node.js.</p>
+</div>
+<p>So how _do_ you use Oso in your python code?</p>
+<p>First, install the library. (Make sure you’re doing this in a virtual
+environment for your project.)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install oso
+</pre></div>
+</div>
+<p>Then, create a [new python file.](<a class="reference external" href="https://github.com/stonecharioteer/blog/tree/master/code/oso-examples">https://github.com/stonecharioteer/blog/tree/master/code/oso-examples</a>)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">oso</span> <span class="kn">import</span> <span class="n">Oso</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">oso_object</span> <span class="o">=</span> <span class="n">Oso</span><span class="p">()</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">oso_object</span><span class="o">.</span><span class="n">load_str</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;allow(&quot;user&quot;, &quot;can_use&quot;, &quot;this_program&quot;);&quot;&quot;&quot;</span><span class="p">)</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="k">if</span> <span class="n">oso_object</span><span class="o">.</span><span class="n">is_allowed</span><span class="p">(</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;can_use&quot;</span><span class="p">,</span> <span class="s2">&quot;this_program&quot;</span><span class="p">):</span>
+<span class="linenos"> 8</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello from oso&quot;</span><span class="p">)</span>
+<span class="linenos"> 9</span><span class="k">else</span><span class="p">:</span>
+<span class="linenos">10</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Access denied&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>All examples from this post are available [here as a Github repository.](<a class="reference external" href="https://github.com/stonecharioteer/blog/tree/master/code/oso-examples">https://github.com/stonecharioteer/blog/tree/master/code/oso-examples</a>)</p>
+<section id="what-s-going-on">
+<h3>What’s Going On?<a class="headerlink" href="#what-s-going-on" title="Permalink to this headline">¶</a></h3>
+<p>The Oso documentation begins users with showing how you can integrate Oso
+into a web application written in native Python. However, I believe in a first
+principles approach.</p>
+<p>In this example, we’re loading the <cite>oso</cite> library, and then immediately creating
+an instance of the <cite>oso.Oso</cite> class. This enables us to then bind <em>policies</em> to
+the object.</p>
+<p>A policy is declared in a language known as Polar. Polar takes inspiration from
+Prolog, and I like to think of its rule system as a paradigm you’d find in
+Rust’s pattern matching. Don’t let any of this intimidate you: I’ll get to it
+later. For now, all you need to know is that we’ve added the _line_
+<cite>allow(“user”, “can_use”, “this_program”);</cite> to the policies in the <cite>oso_object</cite>
+object.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<dl class="simple">
+<dt>Use double quotes for strings in Polar</dt><dd><p>I’ve used triple double-quotes <cite>“””</cite> because Polar uses only double quotes</p>
+</dd>
+</dl>
+<p><cite>“</cite> for its strings and I didn’t want to use single-quotes <cite>‘</cite> to surround
+them in Python. You may choose to do so if you like.</p>
+</div>
+<p>This line says:</p>
+<p>&gt; If a function called <cite>allow</cite> is triggered with 3 variables equal to,
+&gt; <em>literally</em>: <cite>“user”</cite>, <cite>“can_use”</cite> and <cite>“this_program”</cite>, then evaluate to
+&gt; <cite>true</cite>. (Polar uses <cite>true</cite>/<cite>false</cite> as booleans).</p>
+<p>Next, we use this policy in our script, with <cite>oso_object.is_allowed</cite>. Note that
+the arguments to <cite>is_allowed</cite> are <em>exactly</em> the same as those to <cite>allow</cite>.</p>
+<p>Oso’s <cite>is_allowed</cite> looks for a function called <cite>allow</cite> loaded into the object
+which has a matching pattern. (Again, don’t worry too much about this for now.)
+And it finds the single policy we have defined and realizes that the policy
+matches and evaluates to <cite>True</cite> (this is on the Python side).</p>
+<p>Hence, the line <cite>print(“Hello from oso”)</cite> works.</p>
+<section id="what-happened">
+<h4>What Happened?<a class="headerlink" href="#what-happened" title="Permalink to this headline">¶</a></h4>
+<p>Under the hood, Oso evaluates Polar rules and loads them into the <cite>oso.Oso</cite>
+object that we create. Those rules dictate the outcome of
+<cite>oso_object.is_allowed</cite> calls. But here’s a question for you:</p>
+<p>Where are the rules coming from?</p>
+<p>Polar is a declarative language. While it supports things like integers and
+some rudimentary math, strings and boolean values, it doesn’t have much else.</p>
+<p>So what is <cite>allow</cite>?</p>
+<p>The interesting thing about <cite>oso</cite> and its choice with Polar is that <cite>allow</cite> is
+whatever you want it to be.</p>
+<p>Let me reiterate.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">allow</span><span class="p">(</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;can_use&quot;</span><span class="p">,</span> <span class="s2">&quot;this_program&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>This <em>defines</em> a policy called <cite>allow</cite> with those <strong>exact</strong>: parameters.</p>
+<p><cite>is_allowed</cite> matches its arguments with this policy, and realizes that it
+matches the rule, thus evaluating to <cite>True</cite> in the Python file. <cite>is_allowed</cite>
+is <em>hard-wired</em> to find a declarative function named <cite>allow</cite> in all the polar
+definitions that are <em>loaded</em> into memory at this current moment.</p>
+<p>### What if I want to <em>deny</em> access?</p>
+<p>That’s simple. Just try to call <cite>is_allowed</cite> with <strong>anything</strong> else.</p>
+<p>In our previous file, add the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">if</span> <span class="n">oso_object</span><span class="o">.</span><span class="n">is_allowed</span><span class="p">(</span><span class="s2">&quot;user-123&quot;</span><span class="p">,</span> <span class="s2">&quot;can_run&quot;</span><span class="p">,</span> <span class="s2">&quot;this_program&quot;</span><span class="p">):</span>
+<span class="linenos">2</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello again, but you probably can&#39;t run this line.&quot;</span><span class="p">)</span>
+<span class="linenos">3</span><span class="k">else</span><span class="p">:</span>
+<span class="linenos">4</span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You weren&#39;t authorized by the rules!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This <cite>is_allowed</cite> will evaluate to <cite>False</cite>, since it doesn’t match the rule
+that we’ve loaded into the`oso_object`.</p>
+<p>Remember what I’ve been saying about <em>pattern-matching</em>? Well, Oso looks for
+an <em>exact</em> match for the rules. You <em>could</em> generalize it further by using types,
+or your own classes, but we’ll get to that later.</p>
+<p>For now, you need to just understand that <cite>oso</cite> essentially does a 1:1 match
+with the rules in your <cite>oso_object</cite> and evaluates <cite>is_allowed</cite> based on a
+suitable <cite>allow</cite> policy.</p>
+</section>
+</section>
+</section>
+<section id="oso-in-a-cli">
+<h2>Oso in a CLI<a class="headerlink" href="#oso-in-a-cli" title="Permalink to this headline">¶</a></h2>
+<p>An interesting exercise to understand what you could do with Oso is to try building
+a command line tool.</p>
+<section id="using-argparse">
+<h3>Using argparse<a class="headerlink" href="#using-argparse" title="Permalink to this headline">¶</a></h3>
+<p>Let’s write a quick CLI using <cite>argparse</cite>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span>
+<span class="linenos"> 4</span>    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Simple rmdir clone command-line-tool to demonstrate Oso&#39;s usage&quot;</span><span class="p">)</span>
+<span class="linenos"> 5</span><span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s2">&quot;P&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Path to remove&quot;</span><span class="p">)</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">=</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="linenos"> 9</span>    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+<span class="linenos">10</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Attempting to remove directory: </span><span class="si">{</span><span class="n">args</span><span class="o">.</span><span class="n">path</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is a simple CLI that uses
+[<cite>argparse</cite>](<a class="reference external" href="https://docs.python.org/3/library/argparse.html">https://docs.python.org/3/library/argparse.html</a>). I’m going to
+attempt a check to see if the user has write permissions, and only then allow a
+delete.</p>
+<p>Let’s add some more code here.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="k">class</span> <span class="nc">PathAttributes</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<span class="linenos"> 4</span>    <span class="sd">&quot;&quot;&quot;A bunch of enums to help understand the path attributes&quot;&quot;&quot;</span>
+<span class="linenos"> 5</span>    <span class="c1"># path isn&#39;t a directory</span>
+<span class="linenos"> 6</span>    <span class="n">NOTADIRECTORY</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos"> 7</span>    <span class="c1"># path is a writable directory</span>
+<span class="linenos"> 8</span>    <span class="n">WRITABLEDIRECTORY</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="linenos"> 9</span>    <span class="c1"># path is a read only directory (current user doesn&#39;t have write access)</span>
+<span class="linenos">10</span>    <span class="n">READONLYDIRECTORY</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="linenos">11</span>    <span class="c1"># path is an inaccessible directory (current user doesn&#39;t have read or write access)</span>
+<span class="linenos">12</span>    <span class="n">INACCESSABLEDIRECTORY</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="linenos">13</span>    <span class="c1"># path does not exist</span>
+<span class="linenos">14</span>    <span class="n">NONEXISTENTDIRECTORY</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="k">def</span> <span class="nf">get_path_attributes</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<span class="linenos">18</span>    <span class="sd">&quot;&quot;&quot;Returns a tuple of path attributes&quot;&quot;&quot;</span>
+<span class="linenos">19</span>    <span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="linenos">20</span>    <span class="kn">import</span> <span class="nn">stat</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span>    <span class="n">path</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="linenos">23</span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+<span class="linenos">24</span>        <span class="k">return</span> <span class="n">PathAttributes</span><span class="o">.</span><span class="n">NONEXISTENTDIRECTORY</span>
+<span class="linenos">25</span>    <span class="k">elif</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">is_dir</span><span class="p">():</span>
+<span class="linenos">26</span>        <span class="k">return</span> <span class="n">PathAttributes</span><span class="o">.</span><span class="n">NOTADIRECTORY</span>
+<span class="linenos">27</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">28</span>        <span class="c1"># this is a directory. We need to determine whether it&#39;s</span>
+<span class="linenos">29</span>        <span class="c1"># writable, readable or accessible.</span>
+<span class="linenos">30</span>        <span class="n">path_stat_mode</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span><span class="o">.</span><span class="n">st_mode</span>
+<span class="linenos">31</span>        <span class="n">is_writeable</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISWUSER</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span> <span class="ow">or</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISWGRP</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span> <span class="ow">or</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISWOTH</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span>
+<span class="linenos">32</span>        <span class="k">if</span> <span class="n">is_writeable</span><span class="p">:</span>
+<span class="linenos">33</span>            <span class="k">return</span> <span class="n">PathAttributes</span><span class="o">.</span><span class="n">WRITEABLEDIRECTORY</span>
+<span class="linenos">34</span>        <span class="k">else</span><span class="p">:</span>
+<span class="linenos">35</span>            <span class="n">is_readable</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISRUSER</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span> <span class="ow">or</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISRGRP</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span> <span class="ow">or</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISROTH</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span>
+<span class="linenos">36</span>            <span class="k">if</span> <span class="n">is_readable</span><span class="p">:</span>
+<span class="linenos">37</span>                <span class="k">return</span> <span class="n">PathAttributes</span><span class="o">.</span><span class="n">READONLYDIRECTORY</span>
+<span class="linenos">38</span>            <span class="k">else</span><span class="p">:</span>
+<span class="linenos">39</span>                <span class="k">return</span> <span class="n">PathAttributes</span><span class="o">.</span><span class="n">INACCESSIBLEDIRECTORY</span>
+<span class="linenos">40</span>
+<span class="linenos">41</span>
+<span class="linenos">42</span><span class="k">def</span> <span class="nf">rmdir</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<span class="linenos">43</span>    <span class="kn">import</span> <span class="nn">shutil</span>
+<span class="linenos">44</span>    <span class="kn">import</span> <span class="nn">oso</span>
+<span class="linenos">45</span>    <span class="n">path_attributes</span> <span class="o">=</span> <span class="n">get_path_attributes</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="linenos">46</span>    <span class="k">if</span> <span class="n">oso</span><span class="o">.</span><span class="n">is_allowed</span><span class="p">(</span><span class="s2">&quot;can_remove&quot;</span><span class="p">,</span> <span class="n">path_attributes</span><span class="p">):</span>
+<span class="linenos">47</span>        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="linenos">48</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">49</span>        <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You cannot delete </span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The above code looks like it is a lot. Let’s take a moment to understand what is
+happening here.</p>
+<p>This imports the <cite>Enum</cite> class so that we can define an enumeration for the path
+attributes. Take a moment to go through the
+[official Python documentation on Enums](<a class="reference external" href="https://docs.python.org/3/library/enum.html">https://docs.python.org/3/library/enum.html</a>)
+if you’ve never used them before.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">class</span> <span class="nc">PathAttributes</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<span class="linenos"> 2</span>    <span class="sd">&quot;&quot;&quot;A bunch of enums to help understand the path attributes&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span>    <span class="c1"># path isn&#39;t a directory</span>
+<span class="linenos"> 4</span>    <span class="n">NOTADIRECTORY</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos"> 5</span>    <span class="c1"># path is a writable directory</span>
+<span class="linenos"> 6</span>    <span class="n">WRITABLEDIRECTORY</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="linenos"> 7</span>    <span class="c1"># path is a read only directory (current user doesn&#39;t have write access)</span>
+<span class="linenos"> 8</span>    <span class="n">READONLYDIRECTORY</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="linenos"> 9</span>    <span class="c1"># path is an inaccessible directory (current user doesn&#39;t have read or write access)</span>
+<span class="linenos">10</span>    <span class="n">INACCESSABLEDIRECTORY</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="linenos">11</span>    <span class="c1"># path does not exist</span>
+<span class="linenos">12</span>    <span class="n">NONEXISTENTDIRECTORY</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<p>The <cite>PathAttributes</cite> class defines an enumerated set of attributes for a folder.
+The in-line comments explain what they’re for.</p>
+<p>At this point experienced pythonistas may be wondering what the heck I’m doing.
+Bear with me, this isn’t a best-principles-python-tutorial. It’s a “what can
+Oso do?” showcase.</p>
+<p>Next, the functions:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span> <span class="k">def</span> <span class="nf">get_path_attributes</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<span class="linenos"> 2</span>     <span class="sd">&quot;&quot;&quot;Returns a tuple of path attributes&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span>     <span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="linenos"> 4</span>     <span class="kn">import</span> <span class="nn">stat</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span>     <span class="n">path</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="linenos"> 7</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+<span class="linenos"> 8</span>         <span class="k">return</span> <span class="n">PathAttributes</span><span class="o">.</span><span class="n">NONEXISTENTDIRECTORY</span>
+<span class="linenos"> 9</span>     <span class="k">elif</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">is_dir</span><span class="p">():</span>
+<span class="linenos">10</span>         <span class="k">return</span> <span class="n">PathAttributes</span><span class="o">.</span><span class="n">NOTADIRECTORY</span>
+<span class="linenos">11</span>     <span class="k">else</span><span class="p">:</span>
+<span class="linenos">12</span>         <span class="c1"># this is a directory. We need to determine whether it&#39;s</span>
+<span class="linenos">13</span>         <span class="c1"># writable, readable or accessible.</span>
+<span class="linenos">14</span>         <span class="n">path_stat_mode</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span><span class="o">.</span><span class="n">st_mode</span>
+<span class="linenos">15</span>         <span class="n">is_writeable</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISWUSER</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span> <span class="ow">or</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISWGRP</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span> <span class="ow">or</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISWOTH</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span>
+<span class="linenos">16</span>         <span class="k">if</span> <span class="n">is_writeable</span><span class="p">:</span>
+<span class="linenos">17</span>             <span class="k">return</span> <span class="n">PathAttributes</span><span class="o">.</span><span class="n">WRITEABLEDIRECTORY</span>
+<span class="linenos">18</span>         <span class="k">else</span><span class="p">:</span>
+<span class="linenos">19</span>             <span class="n">is_readable</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISRUSER</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span> <span class="ow">or</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISRGRP</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span> <span class="ow">or</span> <span class="n">stat</span><span class="o">.</span><span class="n">S_ISROTH</span><span class="p">(</span><span class="n">path_stat_mode</span><span class="p">)</span>
+<span class="linenos">20</span>             <span class="k">if</span> <span class="n">is_readable</span><span class="p">:</span>
+<span class="linenos">21</span>                 <span class="k">return</span> <span class="n">PathAttributes</span><span class="o">.</span><span class="n">READONLYDIRECTORY</span>
+<span class="linenos">22</span>             <span class="k">else</span><span class="p">:</span>
+<span class="linenos">23</span>                 <span class="k">return</span> <span class="n">PathAttributes</span><span class="o">.</span><span class="n">INACCESSIBLEDIRECTORY</span>
+</pre></div>
+</div>
+<p>This function returns the <em>type</em> of the item, using our Enum. Ignore the <cite>stat</cite>
+lines, since they’re irrelevant to this post. If you must know, they check the
+user permissions for a given path.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">rmdir</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<span class="linenos">2</span>    <span class="kn">import</span> <span class="nn">shutil</span>
+<span class="linenos">3</span>    <span class="kn">import</span> <span class="nn">oso</span>
+<span class="linenos">4</span>    <span class="n">path_attributes</span> <span class="o">=</span> <span class="n">get_path_attributes</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="linenos">5</span>    <span class="k">if</span> <span class="n">oso</span><span class="o">.</span><span class="n">is_allowed</span><span class="p">(</span><span class="s2">&quot;can_remove&quot;</span><span class="p">,</span> <span class="n">path_attributes</span><span class="p">):</span>
+<span class="linenos">6</span>        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="linenos">7</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">8</span>        <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You cannot delete </span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This function goes ahead and tries to delete the item, checking if a user has
+permissions to do so.</p>
+<p>The one line that I’m interested in here is the one that calls
+<cite>oso.is_allowed</cite>, which does all the heavy lifting.</p>
+<p>This function call will search for the current polar definitions that <cite>oso</cite> has
+been given, and remember, <em>we haven’t loaded a Polar file yet,</em> and it then
+checks if there’s a <cite>allow</cite> statement definition for this check.</p>
+<p>There is none. So irrespective of what you want to do, this function will not
+let you do it if there’s a <cite>allow</cite> statement definition for this check.</p>
+<p>There is none. So irrespective of what you want to do, this function will not
+let you do it. Instead, it will throw a <cite>PermissionError</cite>.</p>
+<p>Why?</p>
+<p>Remember, <em>Oso is deny-by-default.</em> You haven’t given it any polar rules, so it
+will deny your request. <cite>is_allowed</cite> doesn’t match with anything so it will
+immediately reject your request.</p>
+<p>Now, let’s go ahead and add a polar file that we will use with this script.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">allow</span><span class="p">(</span><span class="s2">&quot;can_remove&quot;</span><span class="p">,</span> <span class="n">path_attributes</span><span class="p">:</span> <span class="n">PathAttribute</span><span class="p">)</span> <span class="k">if</span> <span class="n">path_attributes</span> <span class="ow">in</span>
+<span class="p">[</span><span class="n">PathAttributes</span><span class="o">.</span><span class="n">WRITEABLEDIRECTORY</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>This single line is <em>not</em> a function call. It <em>is nothing but a statement</em>.
+Repeat that to yourself. It is just a statement that evaluates to <cite>True</cite>.</p>
+<p>_If_ you call <cite>oso.is_allowed</cite> with 2 arguments that match the parameters
+defined here, then the function <cite>oso.is_allowed</cite> will return a <cite>True</cite>. For
+<em>all</em> other scenarios, it will return <cite>False</cite>.</p>
+</section>
+<section id="writing-your-own-decorator-for-click">
+<h3>Writing your own decorator for Click<a class="headerlink" href="#writing-your-own-decorator-for-click" title="Permalink to this headline">¶</a></h3>
+<p>[Click](<a class="reference external" href="https://click.palletsprojects.com/en/8.0.x/">https://click.palletsprojects.com/en/8.0.x/</a>) is one of my favourite CLI
+tools. I’ve built several tools using it and I’ve found that it makes me more
+productive than when I’ve used argparse.
+Install it using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install <span class="s1">&#39;click&gt;=8.0.0,&lt;8.1&#39;</span>
+</pre></div>
+</div>
+<p>If you were to write the above program using click:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">import</span> <span class="nn">click</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="nd">@click</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+<span class="linenos">4</span><span class="nd">@click</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="where-s-the-server">
+<h2>Where’s the Server?<a class="headerlink" href="#where-s-the-server" title="Permalink to this headline">¶</a></h2>
+<p>An easy misconception to make is that <cite>oso</cite> needs to be used with an API. It
+doesn’t.  In fact, you could use <cite>oso</cite> for regular applications or scripts. If
+you want to dictate whether your code can or cannot do something, go right
+ahead and use <cite>oso</cite>. You could recreate <cite>rm</cite> should you want to, integrating
+checks for whether a user to allowed to delete a file or not. You could also
+forget about even having a <cite>user</cite>, you could instead use <cite>oso</cite> to decide
+whether or not a particular step happens in your code. I could see this being
+used for an IoT project, decided to check if your house is too hot or too cold.
+Perhaps this rule could then be used in multiple places, from turning up the
+thermostat to turning on the Air Conditioner, or ordering soup online, or
+getting icecream.</p>
+<p>Honestly, the sky is the limit with this.</p>
+<p>However, one place where authorization is definitely needed is in a web app.
+That’s where <cite>oso</cite> was designed to be used, despite my proclivity to use it
+in hacked-up scripts.</p>
+</section>
+<section id="oso-and-flask">
+<h2>Oso and Flask<a class="headerlink" href="#oso-and-flask" title="Permalink to this headline">¶</a></h2>
+<p><cite>oso</cite> is a very simple way to decide what a particular user can do <cite>Flask</cite>
+app. However, remember that <cite>oso</cite> doesn’t care how or if a user is
+authenticated. You can <em>choose</em> to integrate it with a user session, but this
+is not really needed.</p>
+<p>Depending on how you use logins and user sessions, I’d recommend going through
+the following three sections separately.</p>
+<section id="with-a-barebones-flask-application">
+<h3>With a barebones Flask application<a class="headerlink" href="#with-a-barebones-flask-application" title="Permalink to this headline">¶</a></h3>
+<p>Consider the following <cite>app.py</cite></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<span class="linenos"> 2</span><span class="kn">import</span> <span class="nn">oso</span>
+<span class="linenos"> 3</span><span class="kn">from</span> <span class="nn">flask_oso</span> <span class="kn">import</span> <span class="n">FlaskOso</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="linenos"> 6</span><span class="n">base_oso</span> <span class="o">=</span> <span class="n">oso</span><span class="p">()</span>
+<span class="linenos"> 7</span><span class="n">oso_extension</span> <span class="o">=</span> <span class="n">FlaskOso</span><span class="p">(</span><span class="n">oso</span><span class="o">=</span><span class="n">base_oso</span><span class="p">)</span>
+<span class="linenos"> 8</span><span class="n">base_oso</span><span class="o">.</span><span class="n">load_str</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;allow(&quot;anyone&quot;,&quot;can_visit&quot;,&quot;index&quot;);&quot;&quot;&quot;</span><span class="p">)</span>
+<span class="linenos"> 9</span><span class="n">flask_oso</span><span class="o">.</span><span class="n">init_app</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<span class="linenos">12</span><span class="k">def</span> <span class="nf">index_route</span><span class="p">():</span>
+<span class="linenos">13</span>    <span class="n">oso_extension</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="n">actor</span><span class="o">=</span><span class="s2">&quot;anyone&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;can_visit&quot;</span><span class="p">,</span> <span class="n">resource</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
+<span class="linenos">14</span>    <span class="k">return</span> <span class="s2">&quot;hello world&quot;</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/unvisitable&quot;</span><span class="p">)</span>
+<span class="linenos">18</span><span class="k">def</span> <span class="nf">unpermissable_route</span><span class="p">():</span>
+<span class="linenos">19</span>    <span class="n">oso_extension</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="n">actor</span><span class="o">=</span><span class="s2">&quot;noone&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;can_visit&quot;</span><span class="p">,</span> <span class="n">resource</span><span class="o">=</span><span class="s2">&quot;this route&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Run this application with:</p>
+<p>Try using <cite>cURL</cite> to query the API.</p>
+<p>You will get the <cite>“hello world”</cite> response from this route.</p>
+<p>Now try using <cite>cURL</cite> to query <cite>/unvisitable</cite>.</p>
+<p>You will get a <cite>403 Unauthorized</cite> from this route.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>403 Forbidden<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Forbidden<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Unauthorized<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Now add a new route.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/hello&quot;</span><span class="p">)</span>
+<span class="linenos">2</span><span class="k">def</span> <span class="nf">hello_route</span><span class="p">():</span>
+<span class="linenos">3</span>    <span class="k">return</span> <span class="s2">&quot;hello again&quot;</span>
+</pre></div>
+</div>
+<p>Rerun the app, and <cite>cURL</cite> the <cite>/hello</cite> route.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl http://localhost:5000/hello
+</pre></div>
+</div>
+<p>You will get a <cite>“hello again”</cite> response. However there is no
+<cite>flask_oso.authorize</cite> check here.</p>
+<p>What’s going on?</p>
+<p>While <cite>oso</cite> <em>denies by default</em>, <cite>flask_oso</cite> will have to be told to do so,
+or it doesn’t check for any rule whatsoever.</p>
+<p>So, add this line at the very bottom of <cite>app.py</cite> and rerun the last <cite>cURL</cite>
+command.</p>
+<p><em>Remember, there’s no indentation here. This is **outside*</em> any function or view.*</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl http://localhost:5000/hello
+</pre></div>
+</div>
+<p>Now try running this route.</p>
+<p>Immediate you see the following <cite>500 Server Error</cite> and on inspecting the server’s
+output, you see the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<span class="n">File</span> <span class="s2">&quot;/home/user/oso-examples/env/lib/python3.9/site-packages/flask/app.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1970</span><span class="p">,</span> <span class="ow">in</span> <span class="n">finalize_request</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">process_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="n">File</span> <span class="s2">&quot;/home/user/oso-examples/env/lib/python3.9/site-packages/flask/app.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">2267</span><span class="p">,</span> <span class="ow">in</span> <span class="n">process_response</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">handler</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="n">File</span> <span class="s2">&quot;/home/user/oso-examples/env/lib/python3.9/site-packages/flask_oso/flask_oso.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">225</span><span class="p">,</span> <span class="ow">in</span> <span class="n">_require_authorization</span>
+    <span class="k">raise</span> <span class="n">OsoError</span><span class="p">(</span><span class="s2">&quot;Authorize not called.&quot;</span><span class="p">)</span>
+<span class="n">polar</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">OsoError</span><span class="p">:</span> <span class="n">Authorize</span> <span class="ow">not</span> <span class="n">called</span>
+</pre></div>
+</div>
+<p><cite>polar.exceptions.OsoError: Authorize not called</cite> is immediately telling us
+that there is some route that hasn’t explicitly run <cite>oso_extension.authorize</cite>
+to check for the right permissions. This is a useful setting to keep active,
+but if you don’t want to write some rule that looks like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">allow</span><span class="p">(</span><span class="s2">&quot;anyone&quot;</span><span class="p">,</span> <span class="s2">&quot;can_query&quot;</span><span class="p">,</span> <span class="s2">&quot;this&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>And in the route:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/hello&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">hello_route</span><span class="p">():</span>
+    <span class="n">oso_extension</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="n">actor</span><span class="o">=</span><span class="s2">&quot;anyone&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;can_query&quot;</span><span class="p">,</span> <span class="n">resource</span><span class="o">=</span><span class="s2">&quot;this&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="s2">&quot;hello again&quot;</span>
+</pre></div>
+</div>
+<p>Which works as a sort of catch-all to allowing anyone to visit a route,
+you can choose to use  the <cite>&#64;flask_oso.skip_authorization</cite> decorator instead.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Decorator Ordering</p>
+<p>Any third-party decorators have to come <strong>after</strong> the <cite>flask</cite> decorators.</p>
+</div>
+<p>An interesting thing to note thus far is that there has been <strong>no authentication</strong>
+of any sort in our app. Additionally, we seem to have forgone the use of
+<cite>oso.is_allowed</cite> and instead rely on <cite>flask_oso.FlaskOso().authorize</cite>.</p>
+<p><cite>flask_oso.FlaskOso()</cite> provides a general wrapper around <cite>oso.Oso</cite>, and maps
+it to the application as a <cite>Flask</cite> extension. This not only allows us to use
+<cite>oso</cite> as an extension, but it also allows us to have <em>more</em> than one
+<cite>flask_oso.Flask_Oso()</cite> object, thus enabling us to have multi-tiered
+authorization should we dare to.</p>
+<p>Additionally, <cite>flask_oso.Flask_Oso()</cite>’s <cite>authorize</cite> method is a wrapper around
+<cite>oso.is_allowed</cite>, and it allows us to explicitly name the <cite>actor</cite>, the <cite>action</cite>
+and the <cite>resource</cite>. While <em>all</em> of <cite>oso</cite>’s use case can be assumed to fall in
+to these three buckets, remember again that <em>you do not need to follow this
+paradigm</em>.  Understanding this enables you do do this:</p>
+<p>Which can be used in Python as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/add&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">check_add</span><span class="p">():</span>
+    <span class="n">oso_extension</span><span class="p">(</span><span class="n">actor</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;can_be_added_to&quot;</span><span class="p">,</span> <span class="n">resource</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="s2">&quot;1 can be added to 1, giving 2&quot;</span>
+</pre></div>
+</div>
+<p>While this may seem like quite the trivial nonsense, I deplore readers to
+spend some time thinking why or how they could use something like this.</p>
+<p>That being said, let’s get into implementing <cite>oso</cite> with a proper authenticated
+session.</p>
+</section>
+<section id="with-flask-login">
+<h3>With Flask-Login<a class="headerlink" href="#with-flask-login" title="Permalink to this headline">¶</a></h3>
+<p><cite>Flask-Login</cite> is a popular <cite>flask</cite> extension for creating logins. I recommend
+going through its official docs to understand how to set it up.</p>
+<p>For now, here’s a barebones app.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">jsonify</span>
+<span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">flask_login</span> <span class="kn">import</span> <span class="n">LoginManager</span><span class="p">,</span> <span class="n">login_required</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="linenos"> 5</span><span class="n">login_manager</span> <span class="o">=</span> <span class="n">LoginManager</span><span class="p">()</span>
+<span class="linenos"> 6</span><span class="n">login_manager</span><span class="o">.</span><span class="n">init_app</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">class</span> <span class="nc">User</span><span class="p">:</span>
+<span class="linenos"> 9</span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="linenos">10</span>        <span class="bp">self</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="nb">id</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span>    <span class="nd">@staticmethod</span>
+<span class="linenos">13</span>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+<span class="linenos">14</span>        <span class="k">if</span> <span class="nb">id</span> <span class="o">==</span> <span class="s2">&quot;admin&quot;</span><span class="p">:</span>
+<span class="linenos">15</span>            <span class="k">return</span> <span class="n">User</span><span class="p">(</span><span class="s2">&quot;admin&quot;</span><span class="p">)</span>
+<span class="linenos">16</span>        <span class="k">else</span><span class="p">:</span>
+<span class="linenos">17</span>            <span class="k">return</span> <span class="kc">None</span>
+<span class="linenos">18</span>
+<span class="linenos">19</span>    <span class="k">def</span> <span class="nf">is_authenticated</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="linenos">20</span>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="s2">&quot;admin&quot;</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span>    <span class="k">def</span> <span class="nf">is_active</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="linenos">23</span>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="s2">&quot;admin&quot;</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span>    <span class="k">def</span> <span class="nf">is_anonymous</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="linenos">26</span>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span> <span class="ow">is</span> <span class="kc">None</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span>    <span class="k">def</span> <span class="nf">get_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="linenos">29</span>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span>
+<span class="linenos">32</span><span class="nd">@login_manager</span><span class="o">.</span><span class="n">user_loader</span>
+<span class="linenos">33</span><span class="k">def</span> <span class="nf">load_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">):</span>
+<span class="linenos">34</span>    <span class="k">return</span> <span class="n">User</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+<span class="linenos">35</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/login&quot;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;POST&quot;</span><span class="p">])</span>
+<span class="linenos">38</span><span class="k">def</span> <span class="nf">login</span><span class="p">():</span>
+<span class="linenos">39</span>    <span class="n">username</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">)</span>
+<span class="linenos">40</span>    <span class="n">password</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="linenos">41</span>
+<span class="linenos">42</span>    <span class="k">if</span> <span class="n">username</span> <span class="o">==</span> <span class="s2">&quot;admin&quot;</span> <span class="ow">and</span> <span class="n">password</span> <span class="o">==</span> <span class="s2">&quot;admin&quot;</span><span class="p">:</span>
+<span class="linenos">43</span>        <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="s2">&quot;admin&quot;</span><span class="p">)</span>
+<span class="linenos">44</span>        <span class="n">login_user</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+<span class="linenos">45</span>        <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="s2">&quot;login was a success!&quot;</span><span class="p">)</span>
+<span class="linenos">46</span>
+<span class="linenos">47</span>
+<span class="linenos">48</span><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/secure_route&quot;</span><span class="p">)</span>
+<span class="linenos">49</span><span class="nd">@login_required</span>
+<span class="linenos">50</span><span class="k">def</span> <span class="nf">secure_route</span><span class="p">():</span>
+<span class="linenos">51</span>    <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="s2">&quot;this is a login-only route&quot;</span><span class="p">)</span>
+<span class="linenos">52</span>
+<span class="linenos">53</span><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/logout&quot;</span><span class="p">)</span>
+<span class="linenos">54</span><span class="nd">@login_required</span>
+<span class="linenos">55</span><span class="k">def</span> <span class="nf">logout</span><span class="p">():</span>
+<span class="linenos">56</span>    <span class="n">logout_user</span><span class="p">()</span>
+<span class="linenos">57</span>    <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="s2">&quot;you have been logged out&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The above example doesn’t use <cite>oso</cite> yet. It’s a very simple, single user
+API, where the username and password is <cite>admin</cite>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Note that I do not recommend you do this sort of password check, or that you
+code <cite>admin</cite> <cite>admin</cite> in your your app. <strong>Seriously</strong>, don’t blame me if you do
+this.</p>
+</div>
+<p>Run this file.</p>
+<p>Login using <cite>cURL</cite></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use <cite>-v</cite> to see the Cookie response.</p>
+</div>
+<p>This responds something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Note</span><span class="p">:</span> <span class="n">Unnecessary</span> <span class="n">use</span> <span class="n">of</span> <span class="o">-</span><span class="n">X</span> <span class="ow">or</span> <span class="o">--</span><span class="n">request</span><span class="p">,</span> <span class="n">POST</span> <span class="ow">is</span> <span class="n">already</span> <span class="n">inferred</span><span class="o">.</span>
+<span class="o">*</span>   <span class="n">Trying</span> <span class="mf">127.0.0.1</span><span class="o">...</span>
+<span class="o">*</span> <span class="n">TCP_NODELAY</span> <span class="nb">set</span>
+<span class="o">*</span> <span class="n">Connected</span> <span class="n">to</span> <span class="n">localhost</span> <span class="p">(</span><span class="mf">127.0.0.1</span><span class="p">)</span> <span class="n">port</span> <span class="mi">5000</span> <span class="p">(</span><span class="c1">#0)</span>
+<span class="o">&gt;</span> <span class="n">POST</span> <span class="o">/</span><span class="n">login</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="o">&gt;</span> <span class="n">Host</span><span class="p">:</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">5000</span>
+<span class="o">&gt;</span> <span class="n">User</span><span class="o">-</span><span class="n">Agent</span><span class="p">:</span> <span class="n">curl</span><span class="o">/</span><span class="mf">7.58.0</span>
+<span class="o">&gt;</span> <span class="n">Accept</span><span class="p">:</span> <span class="o">*/*</span>
+<span class="o">&gt;</span> <span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="o">&gt;</span> <span class="n">Content</span><span class="o">-</span><span class="n">Length</span><span class="p">:</span> <span class="mi">42</span>
+<span class="o">&gt;</span>
+<span class="o">*</span> <span class="n">upload</span> <span class="n">completely</span> <span class="n">sent</span> <span class="n">off</span><span class="p">:</span> <span class="mi">42</span> <span class="n">out</span> <span class="n">of</span> <span class="mi">42</span> <span class="nb">bytes</span>
+<span class="o">*</span> <span class="n">HTTP</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">assume</span> <span class="n">close</span> <span class="n">after</span> <span class="n">body</span>
+<span class="o">&lt;</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.0</span> <span class="mi">200</span> <span class="n">OK</span>
+<span class="o">&lt;</span> <span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="o">&lt;</span> <span class="n">Content</span><span class="o">-</span><span class="n">Length</span><span class="p">:</span> <span class="mi">31</span>
+<span class="o">&lt;</span> <span class="n">Set</span><span class="o">-</span><span class="n">Cookie</span><span class="p">:</span> <span class="n">remember_token</span><span class="o">=</span><span class="n">admin</span><span class="o">|</span><span class="mf">2e8</span><span class="n">e46e666c966125e1df57bf560a4aa129ee62f36b011cb01452b0b0369da88241bb0120288974a36358566b0458996e2afbc0de91a9196170c3bb0a4b9f42f</span><span class="p">;</span> <span class="n">Expires</span><span class="o">=</span><span class="n">Mon</span><span class="p">,</span> <span class="mi">07</span><span class="o">-</span><span class="n">Feb</span><span class="o">-</span><span class="mi">2022</span> <span class="mi">17</span><span class="p">:</span><span class="mi">47</span><span class="p">:</span><span class="mi">08</span> <span class="n">GMT</span><span class="p">;</span> <span class="n">Path</span><span class="o">=/</span>
+<span class="o">&lt;</span> <span class="n">Vary</span><span class="p">:</span> <span class="n">Cookie</span>
+<span class="o">&lt;</span> <span class="n">Set</span><span class="o">-</span><span class="n">Cookie</span><span class="p">:</span> <span class="n">session</span><span class="o">=.</span><span class="n">eJwlzjEOwjAMQNG7ZGaIE9txehlk17boAENLJ8TdqcT2ly</span><span class="o">-</span><span class="mi">9</span><span class="n">T7nnHsejLO_9jFu5b16WUkdvMpy8iTXJ7hIz5pgEZKaKme7QtAnAUKPanVYV00QzVArlPq7C8BSmtraOcP2c6xQLnSRWVVDrrABiJlw5kG2gY</span><span class="o">-</span><span class="n">_E5YKcR</span><span class="o">-</span><span class="n">x_jfpze5XvD7KsMUk</span><span class="o">.</span><span class="n">YCAnnA</span><span class="o">.</span><span class="n">SfBueBlbxoY1yxq</span><span class="o">-</span><span class="n">xwqN6fHudmQ</span><span class="p">;</span> <span class="n">HttpOnly</span><span class="p">;</span> <span class="n">Path</span><span class="o">=/</span>
+<span class="o">&lt;</span> <span class="n">Server</span><span class="p">:</span> <span class="n">Werkzeug</span><span class="o">/</span><span class="mf">1.0.1</span> <span class="n">Python</span><span class="o">/</span><span class="mf">3.9.1</span>
+<span class="o">&lt;</span> <span class="n">Date</span><span class="p">:</span> <span class="n">Sun</span><span class="p">,</span> <span class="mi">07</span> <span class="n">Feb</span> <span class="mi">2021</span> <span class="mi">17</span><span class="p">:</span><span class="mi">47</span><span class="p">:</span><span class="mi">08</span> <span class="n">GMT</span>
+<span class="o">&lt;</span>
+<span class="p">{</span><span class="s2">&quot;msg&quot;</span><span class="p">:</span><span class="s2">&quot;login was a success!&quot;</span><span class="p">}</span>
+<span class="o">*</span> <span class="n">Closing</span> <span class="n">connection</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>Copy the <cite>Set-Cookie: session:</cite> value to use in the following command:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While <cite>curl</cite> is a great tool, it might intimidate users somewhat if you’re not used to a CLI. In those cases, I’d recommend using Postman, or, if you want an easier CLI, I’d also recommend [httpie](<a class="reference external" href="https://httpie.io/?_blank">https://httpie.io/?_blank</a>).</p>
+<p>For the rest of this blog article, I am going to use httpie, which helps do the same steps above through:
+.. code-block:: bash
+http <a class="reference external" href="http://localhost:5000/login">http://localhost:5000/login</a> username=admin password=admin –session test</p>
+<p>This stores the session cookie in a local file attached to this session name.</p>
+<p>This will then use <em>that</em> cookie effortlessly on your part.</p>
+<p>Note that <cite>http</cite> is how you use the <cite>httpie</cite> command. Please [check the docs to learn more.](<a class="reference external" href="https://httpie.io/docs">https://httpie.io/docs</a>)</p>
+</div>
+<p>This gives us the following response:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;this is a login-only route&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This is now a login-only route. While that solves our purpose of whether a
+user is authenticated or not, this doesn’t do anything related to whether a
+user can access a particular route or not.</p>
+<p>This is where <cite>oso</cite> comes in.</p>
+<p>Modify the above file to use <cite>oso</cite>:</p>
+<p><a href="#id2"><span class="problematic" id="id3">``</span></a><a href="#id4"><span class="problematic" id="id5">`</span></a>python
+from flask import Flask, request, jsonify
+from flask_login import LoginManager, login_required, login_user, logout_user, current_user</p>
+<p>from oso import Oso</p>
+<p>app = Flask(__name__)
+app.config[“SECRET_KEY”] = “this shouldn’t go into the code. store it in a config.”
+login_manager = LoginManager()
+login_manager.init_app(app)</p>
+<dl>
+<dt>class User:</dt><dd><dl class="simple">
+<dt>def __init__(self, id=None):</dt><dd><p>self.id = id</p>
+</dd>
+</dl>
+<p>&#64;staticmethod
+def get(id):</p>
+<blockquote>
+<div><dl class="simple">
+<dt>if isinstance(id, str):</dt><dd><p>return User(id)</p>
+</dd>
+<dt>else:</dt><dd><p>return None</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="simple">
+<dt>def is_authenticated(self):</dt><dd><p>return self.id is not None</p>
+</dd>
+<dt>def is_active(self):</dt><dd><p>return self.id is not None</p>
+</dd>
+<dt>def is_anonymous(self):</dt><dd><p>return self.id is None</p>
+</dd>
+<dt>def get_id(self):</dt><dd><p>return self.id</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>base_oso = Oso()
+base_oso.register_class(User)
+base_oso.load_str(“””allow(user: User, “can”, “logout”);”””)
+base_oso.load_str(“””allow(user: User, “can”, “logout”) if user.id = “admin”;”””)</p>
+<p>&#64;login_manager.user_loader
+def load_user(user_id):</p>
+<blockquote>
+<div><p>return User.get(user_id)</p>
+</div></blockquote>
+<p>&#64;app.route(“/login”, methods=[“POST”])
+def login():</p>
+<blockquote>
+<div><p>username = request.json.get(“username”)
+# no password check
+user = User(username)
+login_user(user, remember=True)
+return jsonify(msg=”login was a success!”)</p>
+</div></blockquote>
+<p>&#64;app.route(“/insecure_route”)
+&#64;login_required
+def insecure_route():</p>
+<blockquote>
+<div><p>return jsonify(msg=”anyone who’s logged in can query this route.”)</p>
+</div></blockquote>
+<p>&#64;app.route(“/secure_route”)
+&#64;login_required
+def secure_route():</p>
+<blockquote>
+<div><p>username = current_user.id
+if base_oso.is_allowed(User(username), “can_access”,”secure_route”):</p>
+<blockquote>
+<div><p>return jsonify(msg=”this is a login-only route accessible only by admin”)</p>
+</div></blockquote>
+<p>else:</p>
+</div></blockquote>
+<p>return “access denied”, 403</p>
+<p>&#64;app.route(“/logout”)
+&#64;login_required
+def logout():</p>
+<blockquote>
+<div><p>username = current_user.id
+if base_oso.is_allowed(User(username), “can”, “logout”):
+# this line will allow all logged in users to be a ble to logout.  logout_user()</p>
+<blockquote>
+<div><p>logout_user()
+return jsonify(msg=”you have been logged out”)</p>
+</div></blockquote>
+<dl class="simple">
+<dt>else:</dt><dd><p>return “access denied”, 403</p>
+</dd>
+</dl>
+</div></blockquote>
+<p><a href="#id6"><span class="problematic" id="id7">``</span></a><a href="#id8"><span class="problematic" id="id9">`</span></a></p>
+<p>Now, this application has some Oso rules implemented in it. Let’s break this down:</p>
+<p>First, there is a <cite>base_oso</cite> object that is an instance of <cite>oso.Oso</cite>. This
+is nothing special, just the <cite>oso.Oso</cite> object we’ve been using so far.</p>
+<p>To this, we have called <cite>register_class</cite>, which allows us to use a Python
+class definition within the rules. I’ll get to that in due time.</p>
+<p>After the class definition, we are adding 2 rules by using the <cite>load_str</cite>
+method.</p>
+<p>Now that we’ve used <cite>load_str</cite> fairly enough, let’s switch to a more
+convenient way, by calling <cite>load_file</cite> instead.</p>
+<p>Change the lines:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`python</span>
+<span class="pre">base_oso.load_str(&quot;&quot;&quot;allow(user:</span> <span class="pre">User,</span> <span class="pre">&quot;can&quot;,</span> <span class="pre">&quot;logout&quot;);&quot;&quot;&quot;)</span>
+<span class="pre">base_oso.load_str(&quot;&quot;&quot;allow(user:</span> <span class="pre">User,</span> <span class="pre">&quot;can&quot;,</span> <span class="pre">&quot;logout&quot;)</span> <span class="pre">if</span> <span class="pre">user.id</span> <span class="pre">=</span> <span class="pre">&quot;admin&quot;;&quot;&quot;&quot;)</span>
+<span class="pre">`</span></code></p>
+<p>To:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`python</span>
+<span class="pre">base_oso.load_file(&quot;policies.polar&quot;)</span>
+<span class="pre">`</span></code></p>
+<p>which you should store in the same folder as your <cite>app.py</cite> file. Remember,
+for any queries, please look at the [Github repository](<a class="reference external" href="https://github.com/stonecharioteer/blog/tree/master/code/oso-examples">https://github.com/stonecharioteer/blog/tree/master/code/oso-examples</a>).</p>
+<p>This will read the file <cite>policies.polar</cite> and load each policy written therein.</p>
+<p>From now on, we are going to call this instead of using <cite>load_str</cite>.</p>
+<p>Next, we create an instance of the <cite>flask_oso.FlaskOso</cite> class, and pass it
+the newly created <cite>base_oso</cite> object. This provides a nifty plugin with which
+to use the functionality of <cite>oso</cite>. Following the standard Flask plugin designs,
+this object requires you to either pass <cite>app</cite> to it during the initialization,
+or to call <cite>.init_app(app)</cite> afterwards (as you would with a <cite>create_app</cite>
+application factory function).</p>
+<p>Now, wherever we need to access <cite>oso</cite>, we need to use the newly created <cite>flask_oso_plugin</cite>
+object instead. This object has <cite>oso</cite> as a child, pointing to the raw layer
+that Oso provides underneath.</p>
+<p>{% capture value %}
+While you wouldn’t necessarily call <cite>flask_oso_plugin.oso.is_allowed</cite> in your code, I am taking a moment to explain what you’d have to do if you stuck to your guns and decided to not use the <cite>flask_oso</cite> helper functions that I will show you later. The Osohq docs do a good job of directly jumping to the best practices, but I prefer an “explicit is better than implicit” approach when it comes to explaining things that take a while for a user to understand.
+{% endcapture %}</p>
+<p>{% include note.html title=”Using <cite>flask_oso.oso</cite> vs using <cite>flask_oso.authorize</cite>” alert_type=”info” content=value%}</p>
+<p>Let’s test the API.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">http</span> <span class="pre">POST</span> <span class="pre">http://localhost:5000/login</span> <span class="pre">username=admin</span> <span class="pre">password=admin</span> <span class="pre">--session</span> <span class="pre">test</span>
+<span class="pre">`</span></code></p>
+<p>This logs us in. Let’s try accessing one of the new routes.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">http</span> <span class="pre">http://localhost:5000/insecure_route</span> <span class="pre">--session</span> <span class="pre">test</span>
+<span class="pre">`</span></code></p>
+<p>This returns:</p>
+<p><a href="#id10"><span class="problematic" id="id11">``</span></a>`
+HTTP/1.0 200 OK
+Content-Length: 55
+Content-Type: application/json
+Date: Tue, 09 Feb 2021 17:43:28 GMT
+Server: Werkzeug/1.0.1 Python/3.9.1
+Vary: Cookie</p>
+<dl class="simple">
+<dt>{</dt><dd><p>“msg”: “anyone who’s logged in can query this route.”</p>
+</dd>
+</dl>
+<p>}</p>
+<p><a href="#id12"><span class="problematic" id="id13">``</span></a><a href="#id14"><span class="problematic" id="id15">`</span></a></p>
+<p>Now, try accessing <cite>/secure_route</cite></p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">http</span> <span class="pre">http://localhost:5000/secure_route</span> <span class="pre">--session</span> <span class="pre">test</span>
+<span class="pre">`</span></code></p>
+<p>This returns:</p>
+<p><a href="#id16"><span class="problematic" id="id17">``</span></a>`
+Content-Length: 13
+Content-Type: text/html; charset=utf-8
+Date: Sun, 14 Feb 2021 07:42:27 GMT
+Server: Werkzeug/1.0.1 Python/3.9.1
+Vary: Cookie</p>
+<p>access denied
+<a href="#id18"><span class="problematic" id="id19">``</span></a><a href="#id20"><span class="problematic" id="id21">`</span></a></p>
+<p>What happened?</p>
+<p>In the <cite>/secure_route</cite> view, notice how the Oso policies are read and checked,
+just like we have been doing so all alone.</p>
+<p><a href="#id22"><span class="problematic" id="id23">``</span></a><a href="#id24"><span class="problematic" id="id25">`</span></a>python
+&#64;login_required
+def secure_route():</p>
+<blockquote>
+<div><p>username = current_user.id
+if base_oso.is_allowed(User(username), “can_access”, “secure_route”):</p>
+<blockquote>
+<div><p>return jsonify(msg=”this is a login-only route accessible only by admin”)</p>
+</div></blockquote>
+<dl class="simple">
+<dt>else:</dt><dd><p>return “access denied”, 403</p>
+</dd>
+</dl>
+</div></blockquote>
+<p><a href="#id26"><span class="problematic" id="id27">``</span></a><a href="#id28"><span class="problematic" id="id29">`</span></a></p>
+<p>Here, we call <cite>base_oso.is_allowed</cite>, just like before, and check if a <cite>User</cite>
+object, created with the <cite>username</cite> value, is <em>allowed</em> to read this route.
+While that explains what we’re trying to do, remember that <em>all Polar is</em>
+<em>looking for is:</em> <strong>a line in the loaded policies that matches
+`allow(“admin”,</strong> <strong>“can_access”, “secure_route”);`</strong>.</p>
+<p>Again, for emphasis, Oso only looks for a matching policy. Since we don’t have
+such a policy in the loaded policy file, it immediately resolves this function
+call to <cite>False</cite>, and our <cite>if</cite> statement moves to the <cite>else</cite> block.</p>
+<p>Now, while this is a fine way to use Oso in a Flask app, and there’s no reason
+you shouldn’t do this if you want to, when you have a larger Flask app, things
+can get complicated. So, the Oso team has given us a Flask extension called
+<cite>flask_oso</cite> that helps us even more.</p>
+<p>Let’s rewrite the above file using <cite>flask_oso</cite>.</p>
+<p>&lt;!– TODO: rewrite the flask example above in flask_oso –&gt;
+<code class="docutils literal notranslate"><span class="pre">`python</span>
+<span class="pre">`</span></code></p>
+<p>Now, query <cite>/secure_route</cite>. Notice that there’s no difference in the response.
+You still get a 403 because there’s no policy in the <cite>policies.polar</cite> file that
+allows this. However, notice that nowhere do we call <cite>base_oso.is_allowed</cite>.
+Instead, we use the <cite>flask_oso_extension</cite> object, which is a
+<cite>flask_oso.FlaskOso</cite> object, bound to the <cite>base_oso</cite> object. And therein, we
+use <cite>flask_oso_extension.authorize</cite> instead. Here, the plugin does the bit
+regarding the 403 itself, allowing us to focus on more important,
+business-facing code.</p>
+<p>This is a route that is decorated with both <cite>&#64;login_required</cite> and with <cite>&#64;skip_authorization</cite>.</p>
+<p>Let’s take a closer look.</p>
+<p><a href="#id30"><span class="problematic" id="id31">``</span></a><a href="#id32"><span class="problematic" id="id33">`</span></a>python
+&#64;app.route(“/insecure_route”)
+&#64;login_required
+&#64;skip_authorization
+def insecure_route():</p>
+<blockquote>
+<div><p>return jsonify(msg=”anyone who’s logged in can query this route.”</p>
+</div></blockquote>
+<p><a href="#id34"><span class="problematic" id="id35">``</span></a><a href="#id36"><span class="problematic" id="id37">`</span></a></p>
+<p>Flask-Login’s <cite>&#64;login_required</cite> ensures that there is a session attached to
+this request. If you were using cURL, you’d need to pass the cookie with the
+request. <cite>httpie</cite> does this for you with <cite>–session &lt;session-name&gt;</cite>. Now,
+notice that I’ve added <cite>&#64;skip_authorization</cite> to the decorator list.</p>
+<p>Now, we are still using <cite>User</cite> to bind the current user to an oso-accepted
+object. This is a huge limitation, which the Oso crowd has solved yet again for
+us.</p>
+<p>### With <cite>flask_jwt_extended</cite></p>
+<p>## Advanced Patterns</p>
+<p>## Getting Help</p>
+<p>Oso has a great support system. Their [official website](<a class="reference external" href="https://www.osohq.com">https://www.osohq.com</a>)
+is a good place to start, and you can find the
+[documentation](<a class="reference external" href="https://docs.osohq.com">https://docs.osohq.com</a>) from there. I recommend looking into
+their [Slack server](), which is integrated (no joke) into their website for
+some great support. I reached out to [Gabe](<a class="reference external" href="mailto:gabe&#37;&#52;&#48;osohq&#46;com">mailto:gabe<span>&#64;</span>osohq<span>&#46;</span>com</a>) through
+their integrated chat, and he helped me grok Polar in a great way.</p>
+<p>Here are some other links:</p>
+<ol class="arabic simple">
+<li><p>[Getting Started with Oso](<a class="reference external" href="https://docs.osohq.com/getting-started/quickstart.html">https://docs.osohq.com/getting-started/quickstart.html</a>)</p></li>
+<li><p>[Python Oso Server Example](<a class="reference external" href="https://github.com/osohq/oso-python-quickstart">https://github.com/osohq/oso-python-quickstart</a>)</p></li>
+<li><p>[Flask Oso Tutorial](<a class="reference external" href="https://github.com/osohq/oso-flask-tutorial">https://github.com/osohq/oso-flask-tutorial</a>)</p></li>
+<li><p>[Flask Oso Integration Example](<a class="reference external" href="https://github.com/osohq/oso-flask-integration">https://github.com/osohq/oso-flask-integration</a>)</p></li>
+<li><p>[Oso Github Repository](<a class="reference external" href="https://github.com/osohq/oso">https://github.com/osohq/oso</a>)</p></li>
+<li><p>[Osohq Youtube Channel](<a class="reference external" href="https://www.youtube.com/channel/UCrDCuHLJ32Cn0-j9K6wMwAg">https://www.youtube.com/channel/UCrDCuHLJ32Cn0-j9K6wMwAg</a>)</p></li>
+<li><p>Youtube Talks:
+1. [Sam Scott: Access Control Patterns in Python](<a class="reference external" href="https://www.youtube.com/watch?v=UpPPuBqGbso">https://www.youtube.com/watch?v=UpPPuBqGbso</a>)
+2. [Polar, a Declarative Policy Language](<a class="reference external" href="https://www.youtube.com/watch?v=fw8wRl7HbDo">https://www.youtube.com/watch?v=fw8wRl7HbDo</a>)
+3. [Building an Open Source Policy Engine in Rust](<a class="reference external" href="https://www.youtube.com/watch?v=NkatWt2_kks">https://www.youtube.com/watch?v=NkatWt2_kks</a>)</p></li>
+</ol>
+<p>Additionally, like I’ve mentioned before, go through the examples in the
+accompanying [Github repository](<a class="reference external" href="http://github.com/stonecharioteer/oso-examples">http://github.com/stonecharioteer/oso-examples</a>)
+for this post. You might want to rewind a few commits to see how the code
+evolved, so that you understand the flow of the article as well.</p>
+<p>## Cookiecutter Template</p>
+<p>I maintain a bunch of all-encompassing Flask cookiecutter templates, and I’ve
+added Oso to all of the templates which have auth built into them. You can find
+the [cookiecutter repository here](<a class="reference external" href="https://github.com/stonecharioteer/cookiecutter-flask-multi">https://github.com/stonecharioteer/cookiecutter-flask-multi</a>),
+and [the instructions on running them here](/cookiecutter-flask-multi).</p>
+<p>## Conclusion</p>
+<p>I don’t know if there’s a logical conclusion to this article. It’s unlike
+anything I’ve published before on my blog. Oso has been a sheer joy to work
+with, and I’m looking forward to digging into it using Rust next. I want to
+learn how to hook into the <cite>resource</cite> fields, and actually do some real damage.
+It helps that the folks at Oso are super friendly.</p>
+<p>I’d like to thank Greg for his patience. I’ve been running my mouth all around
+HN promising them this blog article since January 2021, but truth be told, it’s
+been ridiculously slow and their API evolved in that time. The sections on the
+<cite>resource</cite> fields wouldn’t have been written if I’d written this in January, so
+I’ll write this off as a win.</p>
+<p>Oso is sheer joy to work with. I love their documentation, which was really
+poor when I began using it, and is really well done now. I’m a strong proponent
+of good documentation, which should be readable and entertaining, and their
+docs fulfill that requirement.</p>
+<p>The folks at Oso are super nice as well, so go on and trouble them on Slack.
+I’m leaving yet another promise to write a long post on hooking into <cite>resource</cite>
+by forking Oso itself, but that’s for another day. Greg, when you see this,
+remind me to get to work on that :smiling_imp:.</p>
+</section>
+</section>
+</section>
+
+<div class="section">
+       
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Vinay Keerthi.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
