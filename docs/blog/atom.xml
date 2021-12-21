@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2021-12-16T13:25:54.207719+00:00</updated>
+  <updated>2021-12-21T05:47:03.167296+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -988,5 +988,24 @@ this year, I’ve started allocating some time to this every day.</summary>
     <category term="learning" label="learning"/>
     <category term="tech" label="tech"/>
     <published>2021-12-07T00:00:00+05:30</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2021/reflections-on-doing-more/</id>
+    <title>Reflections on Doing More</title>
+    <updated>2021-12-21T00:00:00+05:30</updated>
+    <content type="html">&lt;p&gt;This post originally started off as something on how I’m trying to learn more.
+It &lt;em&gt;meandered&lt;/em&gt; into &lt;strong&gt;Dear Diary&lt;/strong&gt; territory, but there’s a certain flow to it,
+in my opinion. I’m keeping it as it is, and releasing it without edits.&lt;/p&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2021/reflections-on-doing-more/" rel="alternate"/>
+    <summary>This post originally started off as something on how I’m trying to learn more.
+It meandered into Dear Diary territory, but there’s a certain flow to it,
+in my opinion. I’m keeping it as it is, and releasing it without edits.</summary>
+    <category term="tech" label="tech"/>
+    <category term="learning" label="learning"/>
+    <category term="reading" label="reading"/>
+    <category term="health" label="health"/>
+    <category term="mental-health" label="mental-health"/>
+    <published>2021-12-21T00:00:00+05:30</published>
   </entry>
 </feed>
