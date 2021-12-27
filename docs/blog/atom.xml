@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2021-12-21T17:39:28.137974+00:00</updated>
+  <updated>2021-12-27T08:58:26.848764+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -1007,5 +1007,27 @@ in my opinion. I’m keeping it as it is, and releasing it without edits.</summa
     <category term="health" label="health"/>
     <category term="mental-health" label="mental-health"/>
     <published>2021-12-21T00:00:00+05:30</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2021/serene-library/</id>
+    <title>Memories of a Circulating Library</title>
+    <updated>2021-12-27T00:00:00+05:30</updated>
+    <content type="html">&lt;p&gt;When I was 9, my mother enrolled me into a circulating library in Jayanagar 4th
+Block. It was named &lt;em&gt;Serene&lt;/em&gt;, and it was operating out of what was a smallish
+garage. The &lt;em&gt;librarian&lt;/em&gt;, whose name I cannot really recall (I think it was
+Kumar or some other common Kannadiga name), was thin, silent and didn’t strike
+me as someone who read himself. It was a living for him.&lt;/p&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2021/serene-library/" rel="alternate"/>
+    <summary>When I was 9, my mother enrolled me into a circulating library in Jayanagar 4th
+Block. It was named Serene, and it was operating out of what was a smallish
+garage. The librarian, whose name I cannot really recall (I think it was
+Kumar or some other common Kannadiga name), was thin, silent and didn’t strike
+me as someone who read himself. It was a living for him.</summary>
+    <category term="reading" label="reading"/>
+    <category term="libraries" label="libraries"/>
+    <category term="bangalore" label="bangalore"/>
+    <category term="nostalgia" label="nostalgia"/>
+    <published>2021-12-27T00:00:00+05:30</published>
   </entry>
 </feed>
