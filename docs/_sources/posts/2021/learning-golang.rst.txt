@@ -13,12 +13,12 @@ This time, `Learn Go With Tests <https://quii.gitbook.io/learn-go-with-tests>`_ 
 This is a great "book" that sticks to the principles of TDD with gusto (do people still say gusto?).
 I'm having fun working on it and will have more thoughts later. I've already written more golang than I
 ever have. I've tried A Tour of Golang before and never got around to finishing it. This seems much more
-structured and might be my favorite new way of learning how to learn a programming language. 
+structured and might be my favorite new way of learning how to learn a programming language.
 
 To help me measure my journey, I'm going to target being able to do the following things:
 
 1. Command Line Application
-   
+
    * Do what I'm able to in Python using Click
    * Read a TOML file for config
    * Use whatever is the equivalent of Pathlib to find ``~/.config/APPNAME/default.toml``
