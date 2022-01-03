@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-01-03T17:11:03.047264+00:00</updated>
+  <updated>2022-01-03T17:15:13.536901+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -1049,12 +1049,17 @@ This time, Learn Go With Tests is my favorite resource.</summary>
     <id>https://stonecharioteer.com/posts/2022/onward/</id>
     <title>Onward</title>
     <updated>2022-01-03T00:00:00+05:30</updated>
-    <content type="html">&lt;p&gt;Explicit markup ends without a blank line; unexpected unindent.&lt;/p&gt;
+    <content type="html">&lt;p&gt;I’m beginning this year &lt;em&gt;hopeful&lt;/em&gt;. It’s been a long three years, and I have a
+lot to do. I’m focussing this year on doing things, which is something I’ve
+said multiple times last year as well. But this year, I’m working on fixing
+this.&lt;/p&gt;
 </content>
     <link href="https://stonecharioteer.com/posts/2022/onward/" rel="alternate"/>
-    <summary>Explicit markup ends without a blank line; unexpected unindent.</summary>
+    <summary>I’m beginning this year hopeful. It’s been a long three years, and I have a
+lot to do. I’m focussing this year on doing things, which is something I’ve
+said multiple times last year as well. But this year, I’m working on fixing
+this.</summary>
     <category term="learning" label="learning"/>
-    <category term="life" label="life"/>
     <category term="teaching" label="teaching"/>
     <category term="goals" label="goals"/>
     <published>2022-01-03T00:00:00+05:30</published>
