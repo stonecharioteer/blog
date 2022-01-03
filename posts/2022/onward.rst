@@ -1,9 +1,8 @@
 :blogpost: true
 :date: Jan 3, 2022
-:Category: Life
-:tags: learning, life, teaching, goals
+:category: Life
+:tags: learning, teaching, goals
 
-.. _post-onward:
 =========================
 Onward
 =========================
