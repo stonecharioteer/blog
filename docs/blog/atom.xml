@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2021-12-27T08:58:26.848764+00:00</updated>
+  <updated>2022-01-03T15:50:20.366543+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -1029,5 +1029,34 @@ me as someone who read himself. It was a living for him.</summary>
     <category term="bangalore" label="bangalore"/>
     <category term="nostalgia" label="nostalgia"/>
     <published>2021-12-27T00:00:00+05:30</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2021/learning-golang/</id>
+    <title>Learning Golang</title>
+    <updated>2021-12-28T00:00:00+05:30</updated>
+    <content type="html">&lt;p&gt;Despite my numerous failed attempts at learning golang, I’ve decided to bite the bullet and try yet again.
+This time, &lt;a class="reference external" href="https://quii.gitbook.io/learn-go-with-tests"&gt;Learn Go With Tests&lt;/a&gt; is my favorite resource.&lt;/p&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2021/learning-golang/" rel="alternate"/>
+    <summary>Despite my numerous failed attempts at learning golang, I’ve decided to bite the bullet and try yet again.
+This time, Learn Go With Tests is my favorite resource.</summary>
+    <category term="golang" label="golang"/>
+    <category term="tech" label="tech"/>
+    <category term="programming" label="programming"/>
+    <published>2021-12-28T00:00:00+05:30</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/onward/</id>
+    <title>Onward</title>
+    <updated>2022-01-03T00:00:00+05:30</updated>
+    <content type="html">&lt;p&gt;Explicit markup ends without a blank line; unexpected unindent.&lt;/p&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/onward/" rel="alternate"/>
+    <summary>Explicit markup ends without a blank line; unexpected unindent.</summary>
+    <category term="learning" label="learning"/>
+    <category term="life" label="life"/>
+    <category term="teaching" label="teaching"/>
+    <category term="goals" label="goals"/>
+    <published>2022-01-03T00:00:00+05:30</published>
   </entry>
 </feed>
