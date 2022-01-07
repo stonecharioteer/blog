@@ -1,9 +1,14 @@
----
-title: "For Those Who Came in Late"
-layout: post
-categories: [meta, programming, career-advice, python, ruby]
-description: "In which I describe how I built my career in programming."
----
+:blogpost: true
+:date: July 20, 2021
+:category: Programming
+:tags: Tech, Meta, Python, Ruby, Career-Advice
+:redirect: for-those-who-came-in-late
+
+.. _for-those-who-came-in-late:
+
+==============================
+For Those Who Came in Late
+==============================
 
 This is a very personal post. It's about my journey so far. A few of you might
 know this already, but I thought this is a good time to document this journey.
@@ -36,16 +41,15 @@ group of companies in 2012. My cousin referred me there (he was an auditor at
 the Bureau Veritas firm). I got into Harita Fehrer Ltd first, where I was a
 contractual employee. I had to commute to Hosur, Tamil Nadu, daily, for a
 monthly salary of 8000 INR. I taught myself Excel and began doing work on
-Statistical Quality Control. I learnt
-I stuck around for three months, and then my cousin
-found me a better job. I was hired as a Graduate Engineer Trainee at India
-Nippon Electricals Ltd., for a salary of 17,000 INR, and had to work on a
-rotational shift basis. I moved to Hosur for a while, but I eventually found
-a way to commute back home every day. I spent 6 hours a day commuting, and
-on some days, I had to sleep in the bus stand at 10 pm to catch the 1 AM office
+Statistical Quality Control. I learnt I stuck around for three months, and then
+my cousin found me a better job. I was hired as a Graduate Engineer Trainee at
+India Nippon Electricals Ltd., for a salary of 17,000 INR, and had to work on a
+rotational shift basis. I moved to Hosur for a while, but I eventually found a
+way to commute back home every day. I spent 6 hours a day commuting, and on some
+days, I had to sleep in the bus stand at 10 pm to catch the 1 AM office
 transport. I stayed at INEL for a year, almost exactly. After that, my cousin
-again referred me to another company, Narasipur Auto Components Pvt. Ltd., and
-I began working there in May 2013.
+again referred me to another company, Narasipur Auto Components Pvt. Ltd., and I
+began working there in May 2013.
 
 Narasipur was the hardest company I had to work in. The Managing Director was
 a task master, and he demanded all our time. I was not happy there, especially

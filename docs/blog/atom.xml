@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-01-03T17:15:13.536901+00:00</updated>
+  <updated>2022-01-07T09:19:50.155473+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -906,6 +906,23 @@ features all that much.</summary>
     <published>2021-07-01T00:00:00+05:30</published>
   </entry>
   <entry>
+    <id>https://stonecharioteer.com/posts/2021/2021-07-20-for-those-who-came-in-late/</id>
+    <title>For Those Who Came in Late</title>
+    <updated>2021-07-20T00:00:00+05:30</updated>
+    <content type="html">&lt;p&gt;This is a very personal post. It’s about my journey so far. A few of you might
+know this already, but I thought this is a good time to document this journey.&lt;/p&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2021/2021-07-20-for-those-who-came-in-late/" rel="alternate"/>
+    <summary>This is a very personal post. It’s about my journey so far. A few of you might
+know this already, but I thought this is a good time to document this journey.</summary>
+    <category term="Tech" label="Tech"/>
+    <category term="Meta" label="Meta"/>
+    <category term="Python" label="Python"/>
+    <category term="Ruby" label="Ruby"/>
+    <category term="Career-Advice" label="Career-Advice"/>
+    <published>2021-07-20T00:00:00+05:30</published>
+  </entry>
+  <entry>
     <id>https://stonecharioteer.com/posts/2021/2021-07-23-empathy-in-tech/</id>
     <title>Empathy in Tech</title>
     <updated>2021-07-25T00:00:00+05:30</updated>
@@ -1063,5 +1080,30 @@ this.</summary>
     <category term="teaching" label="teaching"/>
     <category term="goals" label="goals"/>
     <published>2022-01-03T00:00:00+05:30</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/python/</id>
+    <title>Python - A Reflection in 2022</title>
+    <updated>2022-01-07T00:00:00+05:30</updated>
+    <content type="html">&lt;p&gt;I built my career on Python. In 2014, I had to make a decision. It was between
+either choosing to learn Ruby or Python. I was helping to create a tool and
+process for a team of content writers at Flipkart – I was a content writer
+there, and I’d used Excel for it at first, until Excel couldn’t handle the
+queries anymore. I called my friend who recommended Python. I learnt Python,
+almost over a course of a weekend, and I was making a PyQT4 application in a few
+weeks.&lt;/p&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/python/" rel="alternate"/>
+    <summary>I built my career on Python. In 2014, I had to make a decision. It was between
+either choosing to learn Ruby or Python. I was helping to create a tool and
+process for a team of content writers at Flipkart – I was a content writer
+there, and I’d used Excel for it at first, until Excel couldn’t handle the
+queries anymore. I called my friend who recommended Python. I learnt Python,
+almost over a course of a weekend, and I was making a PyQT4 application in a few
+weeks.</summary>
+    <category term="python" label="python"/>
+    <category term="technology" label="technology"/>
+    <category term="work" label="work"/>
+    <published>2022-01-07T00:00:00+05:30</published>
   </entry>
 </feed>
