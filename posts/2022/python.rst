@@ -47,7 +47,7 @@ apt-get install python python-pip``. I don't remember the last time I had to use
 Right now, I like ``asdf``, but I have a feeling I won't use it too long. That
 deserves a post in and of itself really.
 
-What's the best way to manage dependencies? Is it creating a 
+What's the best way to manage dependencies? Is it creating a
 `virtual environment <https://docs.python.org/3/tutorial/venv.html>`_
 and capturing the dependencies in a ``requirements.txt`` file, or perhaps you'd
 like to use ``poetry`` to do that and store only your direct dependencies in a
@@ -114,3 +114,22 @@ didn't know any other language enough to build things with before it. And I had
 Python in any other language. But I feel like I want to return to the basics
 with it.
 
+What does that entail? I'm not sure really. I've tried downloading and building
+versions of Python and using ``python3 -m venv env`` to create environments,
+but it feels too clunky a process. Or perhaps, whenever I need a new
+environment, I can build an entirely new version of Python, store them all in
+``~/python/py<version>/<project-name>``, and use `direnv <https://direnv.net/>`_
+to automatically enable/disable it when I enter the folder.
+
+.. tip::
+
+   Did you know about `shims? <https://en.wikipedia.org/wiki/Shim_(computing)>`_
+   I had been searching for something like this for ages and didn't know what
+   the right term was! Direnv is *amazing*.
+
+The state of Python both excites and exhausts me. It's good that there are so
+many tools now, but it cannot be easy. If I delve on this too much, I might end
+up making my own tool. It'll end up being like the battle of the Frameworks. And
+for what it's worth, I still think Flask is better than Django. I'm more attuned
+to doing things explicitly than having an entire framework do things for you.
+Call me old fashioned.
