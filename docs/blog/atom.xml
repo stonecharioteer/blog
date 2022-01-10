@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-01-07T10:25:59.902039+00:00</updated>
+  <updated>2022-01-10T06:45:05.497077+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -1105,5 +1105,21 @@ weeks.</summary>
     <category term="technology" label="technology"/>
     <category term="work" label="work"/>
     <published>2022-01-07T00:00:00+05:30</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/vagrant/</id>
+    <title>Vagrant</title>
+    <updated>2022-01-10T00:00:00+05:30</updated>
+    <content type="html">&lt;p&gt;I’m late to the Vagrant train. I must have heard about it in 2014, but I’ve
+never bothered to look it up. I’m using it lately to test out my dotfiles, which
+I’m creating Ansible playbooks for. It’s convenient.&lt;/p&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/vagrant/" rel="alternate"/>
+    <summary>I’m late to the Vagrant train. I must have heard about it in 2014, but I’ve
+never bothered to look it up. I’m using it lately to test out my dotfiles, which
+I’m creating Ansible playbooks for. It’s convenient.</summary>
+    <category term="vagrant" label="vagrant"/>
+    <category term="dev-setup" label="dev-setup"/>
+    <published>2022-01-10T00:00:00+05:30</published>
   </entry>
 </feed>

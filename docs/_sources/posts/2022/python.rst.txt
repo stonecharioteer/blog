@@ -47,7 +47,7 @@ apt-get install python python-pip``. I don't remember the last time I had to use
 Right now, I like ``asdf``, but I have a feeling I won't use it too long. That
 deserves a post in and of itself really.
 
-What's the best way to manage dependencies? Is it creating a 
+What's the best way to manage dependencies? Is it creating a
 `virtual environment <https://docs.python.org/3/tutorial/venv.html>`_
 and capturing the dependencies in a ``requirements.txt`` file, or perhaps you'd
 like to use ``poetry`` to do that and store only your direct dependencies in a
