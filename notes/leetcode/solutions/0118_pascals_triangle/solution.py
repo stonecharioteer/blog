@@ -6,11 +6,20 @@ Level: easy
 
 
 class Solution:
-    def __init__(self, *args, **kwargs):
-        """Instantiates the solution object"""
-        self.args = args
-        self.kwargs = kwargs
+    def generate(self, numRows: int) -> List[List[int]]:
+        result = []
+        for index in range(1, numRows + 1):
+            if index == 1:
+                result.append([1])
+            elif index == 2:
+                result.append([1, 1])
+            else:
+                current_row = [0 for _ in range(index)]
+                current_row[0] = current_row[-1] = 1
+                for j in range(1, index - 1):
+                    previous_row = result[-1]
+                    current_row[j] = previous_row[j - 1] + previous_row[j]
 
-    def solve(self, *args, **kwargs):
-        """This implements the main solution"""
-        raise NotImplementedError("This solution is not yet implemented.")
+                result.append(current_row)
+
+        return result
