@@ -10,8 +10,29 @@ Leetcode
 
    All problems are the property of Leetcode and the rights thereof belong to
    them.
+.. {{{ Adding New Solutions
 
+---------------------
+Adding New Solutions
+---------------------
 
+Add an item to ``problems.toml`` and run ``create_solutions.py``. Do not manually
+create solution files.
+
+A problem item in the ``toml`` file is defined as:
+
+.. code-block:: toml
+
+   [[problems.leetcode]]
+   name = "2-Sum-Problem"
+   url = "https://leetcode.com/problems/two-sum/"
+   number = 1
+   level = "EASY"
+   labels = [ "striver", "striver-4",]
+
+.. }}}
+
+.. {{{ Striver List
 ---------------
 Striver List
 ---------------
@@ -366,3 +387,12 @@ have setup a testing pipeline targetting Leetcode only.
 
    **Day 30**
    ^^^
+.. }}}
+
+.. todo::
+
+   Add general index since I'll also be solving problems that are not in the
+   categorized lists.
+
+   Perhaps I should just move each of these labelled things to their own
+   toctrees. Panels are overkill if I use them for everything
