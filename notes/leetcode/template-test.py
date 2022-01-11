@@ -1,6 +1,7 @@
 """Test for Leetcode #{{number}} - {{name}}"""
-import sys
 import pathlib
+import sys
+
 try:
     code_folder = "{{code_folder_path}}"
     # the path here should be relative to the folder containing this folder and
@@ -13,8 +14,10 @@ try:
     from solution import Solution
 except ImportError:
     raise ImportError(
-            "Unable to import solution.py "
-            "from {{code_folder_path}}, ""are you sure the solution exists?")
+        "Unable to import solution.py "
+        "from {{code_folder_path}}, "
+        "are you sure the solution exists?"
+    )
 
 
 def test_{{short_name}}():
