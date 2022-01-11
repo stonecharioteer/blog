@@ -210,6 +210,13 @@ level = "EASY"
 labels = [ "striver", "striver-5",]
 
 [[problems.leetcode]]
+name = "Missing Number"
+url = "https://leetcode.com/problems/missing-number/"
+number = 268
+level = "EASY"
+labels = [ "LC Patterns", "Arrays", "Bit Manipulation", ]
+
+[[problems.leetcode]]
 name = "Find the duplicate in an array of N+1 integers"
 url = "https://leetcode.com/problems/find-the-duplicate-number/"
 number = 287
