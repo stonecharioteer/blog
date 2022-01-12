@@ -14,3 +14,13 @@ class Solution:
     def solve(self, *args, **kwargs):
         """This implements the main solution"""
         raise NotImplementedError("This solution is not yet implemented.")
+
+    def findDuplicate(self, nums: List[int]) -> int:
+        from collections import defaultdict
+
+        nums_dict = defaultdict(int)
+        for num in nums:
+            nums_dict[num] += 1
+            if nums_dict[num] == 2:
+                return num
+        return -1

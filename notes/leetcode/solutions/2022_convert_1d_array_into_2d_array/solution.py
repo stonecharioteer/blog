@@ -14,3 +14,17 @@ class Solution:
     def solve(self, *args, **kwargs):
         """This implements the main solution"""
         raise NotImplementedError("This solution is not yet implemented.")
+
+    def construct2DArray(self, original: List[int], m: int, n: int) -> List[List[int]]:
+        array = []
+        # check if the rearrangement is possible.
+        if (m * n) != len(original):
+            return array
+        row = []
+        for ix, item in enumerate(original):
+            row.append(item)
+            if (ix + 1) % n == 0:
+                array.append(row)
+                row = []
+
+        return array
