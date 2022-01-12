@@ -23,9 +23,9 @@ jobs:
         apt-get install -y libffi-dev git curl libssl-dev make build-essential
     - name: Setup Python
       uses: actions/setup-python@v2
+    - uses: actions/checkout@master
       with:
         fetch-depth: 0
-    - uses: actions/checkout@v2
     - name: Build and Commit
       run: |
         echo "$(pwd)"
