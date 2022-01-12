@@ -3,6 +3,8 @@
 This is the jekyll source code for my blog. I use [YAMT](https://github.com/PandaSekh/Jekyll-YAMT)
 for the layout and the themes.
 
+This blog uses ablog and sphinx
+
 ## Snippet for Title Block for markdown files
 
 ```javascript
