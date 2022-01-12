@@ -5,6 +5,10 @@ Hello there! I'm Vinay Keerthi and this is my blog where I write about
 technology, books (fictional and technical), travel, mental and physical health,
 among other things.
 
+.. todo::
+
+   I need to improve this section
+
 Here is a list of most recent posts:
 
 .. postlist:: 5
