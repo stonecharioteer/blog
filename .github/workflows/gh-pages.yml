@@ -6,7 +6,7 @@ on:
 jobs:
   gh-pages:
     name: Publish Github Pages
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
     steps:
     - name: Setup Python
       uses: actions/setup-python@v2
