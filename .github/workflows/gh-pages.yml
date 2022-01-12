@@ -17,6 +17,10 @@ jobs:
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
       if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
+    - name: Setup dependencies
+      run: |
+        apt-get update
+        apt-get install -y libffi-dev git curl libssl-dev make build-essential
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
