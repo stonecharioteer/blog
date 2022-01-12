@@ -12,6 +12,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         fetch-depth: 0
+    - uses: actions/checkout@v2
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
     - name: Build and Commit
       run: |
         echo "$(pwd)"
