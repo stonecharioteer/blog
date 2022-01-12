@@ -102,7 +102,7 @@ name = "Set Matrix Zeroes"
 url = "https://leetcode.com/problems/set-matrix-zeroes/"
 number = 73
 level = "MEDIUM"
-labels = [ "striver", "striver-1",]
+labels = [ "striver", "striver-1", "LC Patterns", "Arrays"]
 
 [[problems.leetcode]]
 name = "Search in a 2d Matrix"
@@ -145,6 +145,13 @@ url = "https://leetcode.com/problems/longest-consecutive-sequence/"
 number = 128
 level = "MEDIUM"
 labels = [ "striver", "striver-4",]
+
+[[problems.leetcode]]
+name = "Single Number"
+url = "https://leetcode.com/problems/single-number/"
+number = 136
+level = "EASY"
+labels = ["LC Patterns", "Arrays", ]
 
 [[problems.leetcode]]
 name = "Detect a cycle in Linked List"
@@ -210,6 +217,13 @@ level = "EASY"
 labels = [ "striver", "striver-5",]
 
 [[problems.leetcode]]
+name = "Product of Array Except Self"
+url = "https://leetcode.com/problems/product-of-array-except-self/"
+number = 238
+level = "MEDIUM"
+labels = [ "LC Patterns", "Arrays", ]
+
+[[problems.leetcode]]
 name = "Missing Number"
 url = "https://leetcode.com/problems/missing-number/"
 number = 268
@@ -221,7 +235,14 @@ name = "Find the duplicate in an array of N+1 integers"
 url = "https://leetcode.com/problems/find-the-duplicate-number/"
 number = 287
 level = "MEDIUM"
-labels = [ "striver", "striver-2",]
+labels = [ "striver", "striver-2", "LC Patterns", "Arrays"]
+
+[[problems.leetcode]]
+name = "Find All Duplicates in an Array"
+url = "https://leetcode.com/problems/find-all-duplicates-in-an-array/"
+number = 442
+level = "MEDIUM"
+labels = [ "LC Patterns", "Arrays", ]
 
 [[problems.leetcode]]
 name = "Reverse Pairs (Leetcode)"
@@ -236,6 +257,13 @@ url = "https://leetcode.com/problems/middle-of-the-linked-list/"
 number = 876
 level = "EASY"
 labels = [ "striver", "striver-5",]
+
+[[problems.leetcode]]
+name = "Convert 1D Array into 2D Array"
+url = "https://leetcode.com/problems/convert-1d-array-into-2d-array/"
+number = 2022
+level = "EASY"
+labels = ["LC Patterns", "Arrays"]
 
 [[problems.interviewbit]]
 name = "Repeat and Missing Number"
