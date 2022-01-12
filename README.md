@@ -1,52 +1,12 @@
-# Stonecharioteer.com Blog
+# stonecharioteer.com
 
-This is the jekyll source code for my blog. I use [YAMT](https://github.com/PandaSekh/Jekyll-YAMT)
-for the layout and the themes.
+This is the sphinx-based source code for my [blog](https://stonecharioteer.com).
 
-This blog uses ablog and sphinx
+To build this using gh-actions, I recommend starting a runner using docker.
 
-## Snippet for Title Block for markdown files
-
-```javascript
-{
-    "titleblock": {
-        "prefix": "title",
-        "body": [
-            "---",
-            "title: $1",
-            "layout: post",
-            "categories: [$2]",
-            "image: /assets/images/posts/$3",
-            "description: \"$4\"",
-            "customexcerpt: \"$5\"",
-            "---"
-        ]
-    },
-    "admonition": {
-        "prefix": "note",
-        "body": [
-            "{% capture value%}",
-            "$1",
-            "{% endcapture%}",
-            "{% include note.html title=\"$2\" alert_type="${3|note,warning,info}" content=value %}",
-            "",
-            "",
-        ]
-    }
-}
+```bash
+    docker run -d -e RUNNER_NAME= -e RUNNER_WORKDIR=/tmp/runner -e ACCESS_TOKEN= -e REPO_URL= -v /tmp/runner:/tmp/runner myoung34/github-runner:ubuntu-bionic
 ```
+Set the values of those envvars using `direnv`, it makes things easy.
 
-This blog is accessible at [www.stonecharioteer.com](www.stonecharioteer.com).
-
-
-## Local Testing
-
-Just use the docker command:
-
-```
-docker run --rm -it \
-  --volume="$PWD:/srv/jekyll" \
-  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
-  -p 4000:4000 jekyll/jekyll:3.8 \
-  jekyll serve
-```
+Don't build this locally, it's annoying. But if you have to, use `ablog clean && ablog build``
