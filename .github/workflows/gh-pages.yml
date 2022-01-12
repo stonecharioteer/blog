@@ -1,0 +1,32 @@
+name: Publish Github Pages
+on:
+  push:
+    branches: [master]
+
+jobs:
+  gh-pages:
+    name: Publish Github Pages
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Setup Locale
+      run: |
+        sudo locale-gen en_US.UTF-8
+        sudo update-locale
+    - name: Install dependencies
+      run: |
+        sudo update
+        sudo apt-get install -y libbz2-dev libffi-dev liblzma-dev libncurses5-dev libncurses5w-dev libsqlite3-dev libssl-dev libxml-dev make zlib1g-dev tk-dev
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with':
+        fetch-depth: 0
+    - name: Build and Commit
+      uses: sphinx-notes/pages@v2
+      with:
+        documentation_path: .
+        requirements_path: ./requirements.txt
+    - name: Push Changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages
