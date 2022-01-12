@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-01-10T06:45:05.497077+00:00</updated>
+  <updated>2022-01-12T08:35:37.446946+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -1121,5 +1121,23 @@ I’m creating Ansible playbooks for. It’s convenient.</summary>
     <category term="vagrant" label="vagrant"/>
     <category term="dev-setup" label="dev-setup"/>
     <published>2022-01-10T00:00:00+05:30</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/polkadot/</id>
+    <title>The Polkadot Framework</title>
+    <updated>2022-01-11T00:00:00+05:30</updated>
+    <content type="html">&lt;p&gt;This is the first of my posts on reading whitepapers, and coincidentally,
+the first of my posts on cryptocurrencies. I don’t know much about
+the first-principles of cryptocurrencies and I’d like to improve that.&lt;/p&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/polkadot/" rel="alternate"/>
+    <summary>This is the first of my posts on reading whitepapers, and coincidentally,
+the first of my posts on cryptocurrencies. I don’t know much about
+the first-principles of cryptocurrencies and I’d like to improve that.</summary>
+    <category term="polkadot" label="polkadot"/>
+    <category term="cryptocurrency" label="cryptocurrency"/>
+    <category term="blockchains" label="blockchains"/>
+    <category term="whitepaper" label="whitepaper"/>
+    <published>2022-01-11T00:00:00+05:30</published>
   </entry>
 </feed>

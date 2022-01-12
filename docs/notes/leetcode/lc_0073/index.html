@@ -9,7 +9,7 @@
   <meta property="og:title" content="LC0073 - Set Matrix Zeroes (MEDIUM)" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="notes/leetcode/lc_0073.html" />
-  <meta property="og:description" content="This is the solution for Leetcode Problem 73 - Set Matrix Zeroes."""Solution to Leetcode 73 - 73 Link : https://leetcode.com/problems/set-matrix-zeroes/ Level: medium """ class Solution: def __init..." />
+  <meta property="og:description" content="This is the solution for Leetcode Problem 73 - Set Matrix Zeroes. Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0’s, and return the matrix. You must do ..." />
   
     <title>LC0073 - Set Matrix Zeroes (MEDIUM) &#8212; Stonecharioteer&#39;s Blog</title>
     
@@ -185,6 +185,12 @@
 <ul>
    
   <li>
+    <a href="../../../posts/2022/polkadot/"
+      >11 January - The Polkadot Framework</a
+    >
+  </li>
+  
+  <li>
     <a href="../../../posts/2022/vagrant/"
       >10 January - Vagrant</a
     >
@@ -205,12 +211,6 @@
   <li>
     <a href="../../../posts/2021/learning-golang/"
       >28 December - Learning Golang</a
-    >
-  </li>
-  
-  <li>
-    <a href="../../../posts/2021/serene-library/"
-      >27 December - Memories of a Circulating Library</a
     >
   </li>
   
@@ -282,6 +282,10 @@
     <a href="../../../blog/tag/bibek-debroy/">bibek-debroy</a>
   </li>
       
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/blockchains/">blockchains</a>
+  </li>
+    
   <li class="ablog-cloud ablog-cloud-4">
     <a href="../../../blog/tag/books/">books</a>
   </li>
@@ -316,6 +320,10 @@
     
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/covid/">covid</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/cryptocurrency/">cryptocurrency</a>
   </li>
       
   <li class="ablog-cloud ablog-cloud-1">
@@ -471,6 +479,10 @@
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/polkadot/">polkadot</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/programming/">programming</a>
   </li>
     
@@ -575,6 +587,10 @@
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/whitepaper/">whitepaper</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/work/">work</a>
   </li>
     
@@ -593,6 +609,10 @@
 </h3>
 <ul>
      
+  <li>
+    <a href="../../../blog/category/computer-science/">Computer Science (1)</a>
+  </li>
+    
   <li>
     <a href="../../../blog/category/health/">Health (1)</a>
   </li>
@@ -669,7 +689,7 @@
 <ul>
    
   <li>
-    <a href="../../../blog/2022/">2022 (3)</a>
+    <a href="../../../blog/2022/">2022 (4)</a>
   </li>
     
   <li>
@@ -742,22 +762,41 @@
                  <section id="lc0073-set-matrix-zeroes-medium">
 <h1>LC0073 - Set Matrix Zeroes (MEDIUM)<a class="headerlink" href="#lc0073-set-matrix-zeroes-medium" title="Permalink to this headline">¶</a></h1>
 <p>This is the solution for <a class="reference external" href="https://leetcode.com/problems/set-matrix-zeroes/">Leetcode Problem 73 - Set Matrix Zeroes.</a></p>
+<p>Given an m x n integer matrix matrix, if an element is 0, set its entire row and
+column to 0’s, and return the matrix.</p>
+<p>You must do it in place.</p>
+<p>Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Input</span><span class="p">:</span> <span class="n">matrix</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">Output</span><span class="p">:</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span>
+</pre></div>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="sd">&quot;&quot;&quot;Solution to Leetcode 73 - 73</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span><span class="sd">Link : https://leetcode.com/problems/set-matrix-zeroes/</span>
 <span class="linenos"> 4</span><span class="sd">Level: medium</span>
 <span class="linenos"> 5</span><span class="sd">&quot;&quot;&quot;</span>
 <span class="linenos"> 6</span>
-<span class="linenos"> 7</span>
-<span class="linenos"> 8</span><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-<span class="linenos"> 9</span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="linenos">10</span>        <span class="sd">&quot;&quot;&quot;Instantiates the solution object&quot;&quot;&quot;</span>
-<span class="linenos">11</span>        <span class="bp">self</span><span class="o">.</span><span class="n">args</span> <span class="o">=</span> <span class="n">args</span>
-<span class="linenos">12</span>        <span class="bp">self</span><span class="o">.</span><span class="n">kwargs</span> <span class="o">=</span> <span class="n">kwargs</span>
-<span class="linenos">13</span>
-<span class="linenos">14</span>    <span class="k">def</span> <span class="nf">solve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="linenos">15</span>        <span class="sd">&quot;&quot;&quot;This implements the main solution&quot;&quot;&quot;</span>
-<span class="linenos">16</span>        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;This solution is not yet implemented.&quot;</span><span class="p">)</span>
+<span class="linenos"> 7</span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+<span class="linenos">11</span>    <span class="k">def</span> <span class="nf">setZeroes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">matrix</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">12</span>        <span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos">13</span><span class="sd">        Do not return anything, modify matrix in-place instead.</span>
+<span class="linenos">14</span><span class="sd">        &quot;&quot;&quot;</span>
+<span class="linenos">15</span>        <span class="c1"># first note down where the zeroes are.</span>
+<span class="linenos">16</span>        <span class="n">zeroes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="linenos">17</span>        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+<span class="linenos">18</span>            <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">cell</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+<span class="linenos">19</span>                <span class="k">if</span> <span class="n">cell</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">20</span>                    <span class="n">zeroes</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">))</span>
+<span class="linenos">21</span>        <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="ow">in</span> <span class="n">zeroes</span><span class="p">:</span>
+<span class="linenos">22</span>            <span class="c1"># item at i x j is 0,</span>
+<span class="linenos">23</span>            <span class="c1"># set row i to zero</span>
+<span class="linenos">24</span>            <span class="c1"># set col j to zero</span>
+<span class="linenos">25</span>            <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+<span class="linenos">26</span>            <span class="k">for</span> <span class="n">row</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+<span class="linenos">27</span>                <span class="n">matrix</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 </pre></div>
 </div>
 </section>

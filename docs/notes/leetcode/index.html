@@ -9,7 +9,7 @@
   <meta property="og:title" content="Leetcode" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="notes/leetcode/index.html" />
-  <meta property="og:description" content="Striver List: This is a rough timeline of problems that follow the Striver SDE Sheet. Note that for now, I’m sticking only to the Leetcode problems linked therein, since I have setup a testing pipe..." />
+  <meta property="og:description" content="Adding New Solutions: Add an item to problems.toml and run create_solutions.py. Do not manually create solution files. A problem item in the toml file is defined as:[[problems.leetcode]] name = "2-..." />
   
     <title>Leetcode &#8212; Stonecharioteer&#39;s Blog</title>
     
@@ -185,6 +185,12 @@
 <ul>
    
   <li>
+    <a href="../../posts/2022/polkadot/"
+      >11 January - The Polkadot Framework</a
+    >
+  </li>
+  
+  <li>
     <a href="../../posts/2022/vagrant/"
       >10 January - Vagrant</a
     >
@@ -205,12 +211,6 @@
   <li>
     <a href="../../posts/2021/learning-golang/"
       >28 December - Learning Golang</a
-    >
-  </li>
-  
-  <li>
-    <a href="../../posts/2021/serene-library/"
-      >27 December - Memories of a Circulating Library</a
     >
   </li>
   
@@ -282,6 +282,10 @@
     <a href="../../blog/tag/bibek-debroy/">bibek-debroy</a>
   </li>
       
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/blockchains/">blockchains</a>
+  </li>
+    
   <li class="ablog-cloud ablog-cloud-4">
     <a href="../../blog/tag/books/">books</a>
   </li>
@@ -316,6 +320,10 @@
     
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/covid/">covid</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/cryptocurrency/">cryptocurrency</a>
   </li>
       
   <li class="ablog-cloud ablog-cloud-1">
@@ -471,6 +479,10 @@
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/polkadot/">polkadot</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/programming/">programming</a>
   </li>
     
@@ -575,6 +587,10 @@
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../blog/tag/whitepaper/">whitepaper</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/work/">work</a>
   </li>
     
@@ -593,6 +609,10 @@
 </h3>
 <ul>
      
+  <li>
+    <a href="../../blog/category/computer-science/">Computer Science (1)</a>
+  </li>
+    
   <li>
     <a href="../../blog/category/health/">Health (1)</a>
   </li>
@@ -669,7 +689,7 @@
 <ul>
    
   <li>
-    <a href="../../blog/2022/">2022 (3)</a>
+    <a href="../../blog/2022/">2022 (4)</a>
   </li>
     
   <li>
@@ -725,6 +745,11 @@
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-new-solutions">
+   Adding New Solutions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#striver-list">
    Striver List
   </a>
@@ -761,6 +786,20 @@ that I can keep track of my preparation.</p>
 <p>All problems are the property of Leetcode and the rights thereof belong to
 them.</p>
 </div>
+<section id="adding-new-solutions">
+<h2>Adding New Solutions<a class="headerlink" href="#adding-new-solutions" title="Permalink to this headline">¶</a></h2>
+<p>Add an item to <code class="docutils literal notranslate"><span class="pre">problems.toml</span></code> and run <code class="docutils literal notranslate"><span class="pre">create_solutions.py</span></code>. Do not manually
+create solution files.</p>
+<p>A problem item in the <code class="docutils literal notranslate"><span class="pre">toml</span></code> file is defined as:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[problems.leetcode]]</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s">&quot;2-Sum-Problem&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">&quot;https://leetcode.com/problems/two-sum/&quot;</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">level</span> <span class="o">=</span> <span class="s">&quot;EASY&quot;</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&quot;striver&quot;</span><span class="p">,</span> <span class="s">&quot;striver-4&quot;</span><span class="p">,]</span>
+</pre></div>
+</div>
+</section>
 <section id="striver-list">
 <h2>Striver List<a class="headerlink" href="#striver-list" title="Permalink to this headline">¶</a></h2>
 <p>This is a rough timeline of problems that follow the <a class="reference external" href="https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/">Striver SDE Sheet.</a>
