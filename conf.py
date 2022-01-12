@@ -8,6 +8,7 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 import os
+
 import ablog
 
 # -- General ABlog Options ----------------------------------------------------
@@ -94,16 +95,16 @@ blog_authors = {
 # In addition, there are authors.html, languages.html, and locations.html
 # sidebars that link to author and location archive pages.
 html_sidebars = {
-    '**': [ # 'about.html',
-            'postcard.html',
-            # 'navigation.html',
-            'recentposts.html',
-            'tagcloud.html',
-            'categories.html', 
-            'archives.html',
-            'searchbox.html',
-            ],
-    }
+    "**": [  # 'about.html',
+        "postcard.html",
+        # 'navigation.html',
+        "recentposts.html",
+        "tagcloud.html",
+        "categories.html",
+        "archives.html",
+        "searchbox.html",
+    ],
+}
 
 # -- Blog Feed Options --------------------------------------------------------
 
@@ -176,17 +177,16 @@ fontawesome_included = True
 # -- Sphinx Options -----------------------------------------------------------
 
 # If your project needs a minimal Sphinx version, state it here.
-needs_sphinx = '1.2'
+needs_sphinx = "1.2"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
     "ablog",
-    # "myst_nb",
     "myst_parser",
     "sphinx_panels",
-    # "sphinxcontrib.bibtex",
+    "sphinx.ext.githubpages",
     "sphinxext.opengraph",
     "sphinxext.rediraffe",
     "sphinx.ext.extlinks",
@@ -263,7 +263,7 @@ if not os.environ.get("BLOG_DRAFTS"):
 # show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = "sphinx"
 
 # A list of ignored prefixes for module index sorting.
 # modindex_common_prefix = []
@@ -279,21 +279,21 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'pydata_sphinx_theme'
+html_theme = "pydata_sphinx_theme"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'github_button': False,
+    "github_button": False,
 }
 
 html_theme_options = {
-  "github_url": "https://github.com/stonecharioteer/",
-  "twitter_url": "https://twitter.com/stonecharioteer",
-  "search_bar_text": "Search this site...",
-  # "google_analytics_id": "UA-88310237-1",
-  "navbar_end": ["search-field.html", "navbar-icon-links"],
+    "github_url": "https://github.com/stonecharioteer/",
+    "twitter_url": "https://twitter.com/stonecharioteer",
+    "search_bar_text": "Search this site...",
+    # "google_analytics_id": "UA-88310237-1",
+    "navbar_end": ["search-field.html", "navbar-icon-links"],
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -327,7 +327,7 @@ html_extra_path = ["feed.xml"]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-html_last_updated_fmt = '%%b %%d, %%Y'
+html_last_updated_fmt = "%%b %%d, %%Y"
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -408,10 +408,11 @@ myst_update_mathjax = False
 # Temporarily stored as off until we fix it
 jupyter_execute_notebooks = "off"
 
-rediraffe_redirects = {
-}
+rediraffe_redirects = {}
+
 
 def setup(app):
     app.add_css_file("custom.css")
+
 
 ablog_website = "docs"
