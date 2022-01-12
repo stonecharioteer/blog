@@ -103,6 +103,8 @@ url = "https://leetcode.com/problems/set-matrix-zeroes/"
 number = 73
 level = "MEDIUM"
 labels = [ "striver", "striver-1", "LC Patterns", "Arrays"]
+solved = true
+solve_date = "2022-01-11"
 
 [[problems.leetcode]]
 name = "Search in a 2d Matrix"
@@ -131,6 +133,8 @@ url = "https://leetcode.com/problems/pascals-triangle/"
 number = 118
 level = "EASY"
 labels = [ "striver", "striver-1",]
+solved = true
+solve_date = "2022-01-11"
 
 [[problems.leetcode]]
 name = "Stock Buy and Sell"
@@ -152,6 +156,8 @@ url = "https://leetcode.com/problems/single-number/"
 number = 136
 level = "EASY"
 labels = ["LC Patterns", "Arrays", ]
+solved = true
+solve_date = "2022-01-12"
 
 [[problems.leetcode]]
 name = "Detect a cycle in Linked List"
@@ -222,6 +228,8 @@ url = "https://leetcode.com/problems/product-of-array-except-self/"
 number = 238
 level = "MEDIUM"
 labels = [ "LC Patterns", "Arrays", ]
+solved = true
+solve_date = "2022-01-12"
 
 [[problems.leetcode]]
 name = "Missing Number"
@@ -229,6 +237,8 @@ url = "https://leetcode.com/problems/missing-number/"
 number = 268
 level = "EASY"
 labels = [ "LC Patterns", "Arrays", "Bit Manipulation", ]
+solved = true
+solve_date = "2022-01-11"
 
 [[problems.leetcode]]
 name = "Find the duplicate in an array of N+1 integers"
@@ -243,6 +253,8 @@ url = "https://leetcode.com/problems/find-all-duplicates-in-an-array/"
 number = 442
 level = "MEDIUM"
 labels = [ "LC Patterns", "Arrays", ]
+solved = true
+solve_date = "2022-01-12"
 
 [[problems.leetcode]]
 name = "Reverse Pairs (Leetcode)"
