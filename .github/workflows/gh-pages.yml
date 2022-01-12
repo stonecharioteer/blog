@@ -18,7 +18,7 @@ jobs:
         sudo apt-get install -y libbz2-dev libffi-dev liblzma-dev libncurses5-dev libncurses5w-dev libsqlite3-dev libssl-dev libxml-dev make zlib1g-dev tk-dev
     - name: Setup Python
       uses: actions/setup-python@v2
-      with':
+      with:
         fetch-depth: 0
     - name: Build and Commit
       uses: sphinx-notes/pages@v2
