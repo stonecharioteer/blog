@@ -2,19 +2,26 @@ name: Publish Github Pages
 on:
   push:
     branches: [master]
+  workflow_dispatch:
+    inputs:
+      debug_enabled:
+        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+        required: false
+        default: false
 
 jobs:
   gh-pages:
     name: Publish Github Pages
     runs-on: ubuntu-20.04
     steps:
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
         fetch-depth: 0
     - uses: actions/checkout@v2
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
     - name: Build and Commit
       run: |
         echo "$(pwd)"
