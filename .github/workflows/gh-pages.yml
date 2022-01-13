@@ -40,7 +40,6 @@ jobs:
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git config --local pull.rebase false
-        git checkout gh-pages
         git pull --all --no-edit
         git add docs
         git commit -m "[gh-actions] Build blog"
