@@ -32,8 +32,8 @@ jobs:
       run: |
         echo "$(pwd)"
         echo "$(ls)"
-        pip install --upgrade wheel
-        pip install -r requirements.txt
+        pip install -q --upgrade wheel
+        pip install -q -r requirements.txt
         ablog clean
         ablog build
         cp CNAME docs/
