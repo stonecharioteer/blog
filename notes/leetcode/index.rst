@@ -10,6 +10,55 @@ Leetcode
 
    All problems are the property of Leetcode and the rights thereof belong to
    them.
+
+.. {{{ using the json dataset with ``jq``
+
+----------------------------------------
+Using the Leetcode Dataset with ``jq``
+----------------------------------------
+
+.. note::
+   Make sure you install ``jq``, the CLI tool to filter and use JSONs for this
+   section.
+
+I've collected all the leetcode questions and metadata into a json which is
+placed `in the github repo for my blog.
+<https://github.com/stonecharioteer/blog/raw/master/notes/leetcode/data_sorted.json>`_
+I want to do more with it, but until I do, you should use ``jq`` to filter and
+look through it.
+
+I'll document some commands here.
+
+Getting Questions by Company
+--------------------------------
+
+.. code-block:: bash
+
+   jq '.[] | select(.companyTagStats | strings | ascii_downcase | test("COMPANY_NAME_LOWERCASE") | {id:
+   .questionId, category: categoryTitle, difficulty, url,
+   title, tags: [.topicTags[].slug]}' data_sorted.json
+
+.. warning::
+
+   This query will change, since right now, I'm storing ``companyTagStats`` in
+   its raw text form for now. I want to convert it to a list, but I don't have
+   time.
+
+Getting Questions by Tags
+-------------------------------
+.. code-block:: bash
+   jq '.[] | {id: .questionId, title, url, category: .categoryTitle, difficulty,
+   tags: [.topicTags[].slug]} | select(.tags[] | ascii_downcase | contains("TAG_NAME_LOWERCASE"))' data_sorted.json
+
+
+Getting Questions by Category
+-------------------------------
+.. code-block:: bash
+   jq '.[] | {id: .questionId, title, url, category: .categoryTitle, difficulty,
+   tags: [.topicTags[].slug]} | select((.category | ascii_downcase) == "CATEGORY_LOWERCASE")' data_sorted.json
+
+.. }}}
+
 .. {{{ Adding New Solutions
 
 ---------------------

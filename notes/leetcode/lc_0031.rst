@@ -3,7 +3,8 @@
 LC0031 - Next Permutation (MEDIUM)
 ================================================================================================================================================================================================================================
 
-This is the solution for `Leetcode Problem 31 - Next Permutation. <https://leetcode.com/problems/next-permutation/>`_
+This is the solution for `Leetcode Problem 31 - Next Permutation.
+<https://leetcode.com/problems/next-permutation/>`_
 
 .. literalinclude:: solutions/0031_next_permutation/solution.py
     :language: python

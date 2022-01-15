@@ -96,6 +96,13 @@ Chapter 3. How to Become an Ultralearner
 Chapter 4. Principle 1 - Metalearning - First Draw a Map
 ------------------------------------------------------------
 
+* What is **Metalearning**? - Learning about learning
+* The Power of your metalearning map:
+
+  * Being able to see how a subject works, what kinds of skills and information
+    must be mastered, and what methods are available to do so more effectively
+    is at the heart of success of all ultralearning
+
 .. todo::
 
    Write down notes and thoughts on the rest of the chapters
