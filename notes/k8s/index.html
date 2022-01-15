@@ -9,6 +9,7 @@
   <meta property="og:title" content="Kubernetes" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="notes/k8s/index.html" />
+  <meta property="og:description" content="I’ve installed both minikube and microk8s on my ThinkPad P14S, but for the sake of these exercises, I plan on using microk8s. There’s no reason, just that it’s configured and works. I also run`k3s ..." />
   
     <title>Kubernetes &#8212; Stonecharioteer&#39;s Blog</title>
     
@@ -717,9 +718,19 @@
               
               <div class="toc-item">
                 
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
-    
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals">
+   Goals
+  </a>
+ </li>
+</ul>
+
 </nav>
               </div>
               
@@ -740,6 +751,49 @@
               <div>
                  <section id="kubernetes">
 <h1>Kubernetes<a class="headerlink" href="#kubernetes" title="Permalink to this headline">¶</a></h1>
+<div class="admonition">
+<p>This section contains my notes on Kubernetes. As of this update, while I’ve
+gone through some resources and the <a class="reference external" href="https://learnk8s.io">learnk8s.io</a>
+course on K8s, I haven’t been able to use it at work. I’m going to work my
+way through the material from the course, which is <em>really</em>, <strong>really</strong>
+good, and also read <span class="xref std std-ref">books-k8s-in-action</span>.</p>
+</div>
+<p>I’ve installed both <a class="reference external" href="https://minikube.sigs.k8s.io/docs/">minikube</a> and
+<a class="reference external" href="https://microk8s.io/">microk8s</a> on my ThinkPad P14S, but for the sake of
+these exercises, I plan on using microk8s. There’s no reason, just that it’s
+configured and works. I also run <a href="#id1"><span class="problematic" id="id2">`k3s &lt;&gt;`_</span></a> on my Raspberry Pi 4 cluster,
+which I hope to better leverage after learning how to use k8s properly.</p>
+<section id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
+<p>I’d like to chart out my learning goals. I’m also learning <span class="xref std std-ref">notes-golang</span>
+at the moment, so I’d like to be able to understand Kubernetes <em>deeply</em>, so
+that I can perhaps meddle with its inner workings. That being said, my goals are:</p>
+<ol class="arabic simple">
+<li><p>Be able to run a CLI-based application on k8s.</p></li>
+<li><p>Be able to run a HTTP API service on k8s.</p></li>
+<li><p>Be able to run a HTTP API service on k8s which also speaks to Redis and RabbitMQ instances
+running on the cluster.</p></li>
+<li><p>Work with namespaces.</p>
+<ol class="arabic simple">
+<li><p>What are they for?</p></li>
+<li><p>How do I limit their resources?</p></li>
+<li><p>How do I manage access control?</p></li>
+<li><p>Is it possible to inter-communicate between resources?</p></li>
+</ol>
+</li>
+<li><p>Understand pods.</p>
+<ol class="arabic simple">
+<li><p>What are pods?</p></li>
+<li><p>Does 1 pod == 1 container?</p></li>
+<li><p>Can I run multiple containers on the same pod?</p></li>
+<li><p>Do services running on separate pods share the same resource pool?</p></li>
+<li><p>Limit pod resources</p></li>
+</ol>
+</li>
+<li><p>What are Linux Namespaces?</p></li>
+<li><p>Run an ETL job on k8s.</p></li>
+</ol>
+</section>
 </section>
 
 <div class="section">

@@ -9,7 +9,7 @@
   <meta property="og:title" content="Leetcode" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="notes/leetcode/index.html" />
-  <meta property="og:description" content="Adding New Solutions: Add an item to problems.toml and run create_solutions.py. Do not manually create solution files. A problem item in the toml file is defined as:[[problems.leetcode]] name = "2-..." />
+  <meta property="og:description" content="Using the Leetcode Dataset with jq: I’ve collected all the leetcode questions and metadata into a json which is placed in the github repo for my blog. I want to do more with it, but until I do, you..." />
   
     <title>Leetcode &#8212; Stonecharioteer&#39;s Blog</title>
     
@@ -725,6 +725,33 @@
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-the-leetcode-dataset-with-jq">
+   Using the Leetcode Dataset with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     jq
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-questions-by-company">
+     Getting Questions by Company
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-questions-by-tags">
+     Getting Questions by Tags
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-questions-by-category">
+     Getting Questions by Category
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#adding-new-solutions">
    Adding New Solutions
   </a>
@@ -766,6 +793,39 @@ that I can keep track of my preparation.</p>
 <p>All problems are the property of Leetcode and the rights thereof belong to
 them.</p>
 </div>
+<section id="using-the-leetcode-dataset-with-jq">
+<h2>Using the Leetcode Dataset with <code class="docutils literal notranslate"><span class="pre">jq</span></code><a class="headerlink" href="#using-the-leetcode-dataset-with-jq" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure you install <code class="docutils literal notranslate"><span class="pre">jq</span></code>, the CLI tool to filter and use JSONs for this
+section.</p>
+</div>
+<p>I’ve collected all the leetcode questions and metadata into a json which is
+placed <a class="reference external" href="https://github.com/stonecharioteer/blog/raw/master/notes/leetcode/data_sorted.json">in the github repo for my blog.</a>
+I want to do more with it, but until I do, you should use <code class="docutils literal notranslate"><span class="pre">jq</span></code> to filter and
+look through it.</p>
+<p>I’ll document some commands here.</p>
+<section id="getting-questions-by-company">
+<h3>Getting Questions by Company<a class="headerlink" href="#getting-questions-by-company" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jq <span class="s1">&#39;.[] | select(.companyTagStats | strings | ascii_downcase | test(&quot;COMPANY_NAME_LOWERCASE&quot;) | {id:</span>
+<span class="s1">.questionId, category: categoryTitle, difficulty, url,</span>
+<span class="s1">title, tags: [.topicTags[].slug]}&#39;</span> data_sorted.json
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This query will change, since right now, I’m storing <code class="docutils literal notranslate"><span class="pre">companyTagStats</span></code> in
+its raw text form for now. I want to convert it to a list, but I don’t have
+time.</p>
+</div>
+</section>
+<section id="getting-questions-by-tags">
+<h3>Getting Questions by Tags<a class="headerlink" href="#getting-questions-by-tags" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="getting-questions-by-category">
+<h3>Getting Questions by Category<a class="headerlink" href="#getting-questions-by-category" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
 <section id="adding-new-solutions">
 <h2>Adding New Solutions<a class="headerlink" href="#adding-new-solutions" title="Permalink to this headline">¶</a></h2>
 <p>Add an item to <code class="docutils literal notranslate"><span class="pre">problems.toml</span></code> and run <code class="docutils literal notranslate"><span class="pre">create_solutions.py</span></code>. Do not manually
