@@ -821,9 +821,17 @@ time.</p>
 </section>
 <section id="getting-questions-by-tags">
 <h3>Getting Questions by Tags<a class="headerlink" href="#getting-questions-by-tags" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jq <span class="s1">&#39;.[] | {id: .questionId, title, url, category: .categoryTitle, difficulty,</span>
+<span class="s1">tags: [.topicTags[].slug]} | select(.tags[] | ascii_downcase | contains(&quot;TAG_NAME_LOWERCASE&quot;))&#39;</span> data_sorted.json
+</pre></div>
+</div>
 </section>
 <section id="getting-questions-by-category">
 <h3>Getting Questions by Category<a class="headerlink" href="#getting-questions-by-category" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jq <span class="s1">&#39;.[] | {id: .questionId, title, url, category: .categoryTitle, difficulty,</span>
+<span class="s1">tags: [.topicTags[].slug]} | select((.category | ascii_downcase) == &quot;CATEGORY_LOWERCASE&quot;)&#39;</span> data_sorted.json
+</pre></div>
+</div>
 </section>
 </section>
 <section id="adding-new-solutions">
