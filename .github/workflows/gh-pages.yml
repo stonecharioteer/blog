@@ -32,18 +32,16 @@ jobs:
       run: |
         echo "$(pwd)"
         echo "$(ls)"
-        pip install --upgrade wheel
-        pip install -r requirements.txt
+        pip install -q --upgrade wheel
+        pip install -q -r requirements.txt
         ablog clean
         ablog build
         cp CNAME docs/
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git pull --all --ff
-        git add docs
-        git commit -m "[gh-actions] Build blog"
-    - name: Push Changes
-      uses: ad-m/github-push-action@master
+        git config --local pull.rebase false
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
+        publish_dir: ./docs
