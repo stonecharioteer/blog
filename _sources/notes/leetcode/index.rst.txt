@@ -18,7 +18,7 @@ Using the Leetcode Dataset with ``jq``
 ----------------------------------------
 
 .. note::
-   Make sure you install ``jq``, the CLI tool to filter and use JSONs for this
+   Make sure you install `jq, <https://stedolan.github.io/jq/>`_ the CLI tool to filter and use JSONs for this
    section.
 
 I've collected all the leetcode questions and metadata into a json which is
