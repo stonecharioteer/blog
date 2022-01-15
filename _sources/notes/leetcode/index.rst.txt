@@ -4,6 +4,7 @@ Leetcode
 =========================
 
 .. note::
+
    This section of my notes is directed towards interview prep and leetcode
    practice.  I'll host solutions and problems that I've worked on here, so
    that I can keep track of my preparation.
@@ -18,8 +19,8 @@ Using the Leetcode Dataset with ``jq``
 ----------------------------------------
 
 .. note::
-   Make sure you install `jq, <https://stedolan.github.io/jq/>`_ the CLI tool to filter and use JSONs for this
-   section.
+   Make sure you install `jq, <https://stedolan.github.io/jq/>`_ the CLI tool to
+   filter and use JSONs for this section.
 
 I've collected all the leetcode questions and metadata into a json which is
 placed `in the github repo for my blog.
