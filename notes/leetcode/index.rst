@@ -46,14 +46,18 @@ Getting Questions by Company
 
 Getting Questions by Tags
 -------------------------------
+
 .. code-block:: bash
+
    jq '.[] | {id: .questionId, title, url, category: .categoryTitle, difficulty,
    tags: [.topicTags[].slug]} | select(.tags[] | ascii_downcase | contains("TAG_NAME_LOWERCASE"))' data_sorted.json
 
 
 Getting Questions by Category
 -------------------------------
+
 .. code-block:: bash
+
    jq '.[] | {id: .questionId, title, url, category: .categoryTitle, difficulty,
    tags: [.topicTags[].slug]} | select((.category | ascii_downcase) == "CATEGORY_LOWERCASE")' data_sorted.json
 
