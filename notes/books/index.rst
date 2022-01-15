@@ -1,4 +1,3 @@
-.. vim: set foldmethod=marker
 :blogpost: true
 :category: Notes
 :tags: reading, tech, programming, learning
