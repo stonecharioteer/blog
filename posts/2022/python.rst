@@ -1,7 +1,7 @@
 :blogpost: true
 :date: Jan 7, 2022
-:category: Programming
-:tags: python, technology, work
+:category: Tech
+:tags: Python, Developer Experience, Development Environment
 
 =================================
 Python - A Reflection in 2022

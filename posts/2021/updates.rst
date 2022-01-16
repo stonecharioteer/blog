@@ -1,3 +1,7 @@
+:blogpost: true
+:date: Dec 6, 2021
+:category: Updates
+:tags: Life, Sphinx, Advent of Code, Oso, Jekyll, Hugo, Furo, Notes
 ================
 Updates
 ================
