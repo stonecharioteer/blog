@@ -16,6 +16,7 @@ Don't build this locally, it's annoying. But if you have to, use `ablog clean &&
 ## Categories
 
 - Health
+- Personal
 - Reading
 - Show and Tell
 - Tech
@@ -49,11 +50,13 @@ I'm going to use these tags:
 - Empathy
 - Flask
 - Focus
+- Furo
 - Goals
 - Golang
 - GopherCon
 - Hearing Loss
 - Hobbies
+- Hugo
 - K3s
 - Kubernetes
 - Learning
@@ -68,6 +71,8 @@ I'm going to use these tags:
 - Minikube
 - Mythology
 - Neovim
+- Nostalgia
+- Notes
 - Oso
 - Philosophy
 - Podcasts
@@ -97,5 +102,3 @@ I'm going to use these tags:
 - Visa
 - Web Development
 - Zen
-- Hugo
-- Furo
