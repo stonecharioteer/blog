@@ -1,12 +1,12 @@
+:blogpost: true
+:date: Dec 7, 2021
+:category: Tech
+:redirect: aoc-2021
+:tags: Programming, Advent of Code, Learning, Data Structures, Algorithms
+
 =======================
 Advent of Code 2021
 =======================
-
-.. post:: Dec 7, 2021
-   :tags: programming, learning, tech
-   :category: Tech
-   :redirect: aoc-2021
-
 
 I'm working on this year's `Advent of Code <https://adventofcode.com/2021>`_
 problems. I have wanted to work on this *live* for several years now, and

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-01-15T12:39:53.365850+00:00</updated>
+  <updated>2022-01-16T12:59:21.150730+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -848,8 +848,12 @@ notes website comes in.</summary>
 </content>
     <link href="https://stonecharioteer.com/posts/2021/personal-code/" rel="alternate"/>
     <summary>Explicit markup ends without a blank line; unexpected unindent.</summary>
-    <category term="meta" label="meta"/>
-    <category term="philosophy" label="philosophy"/>
+    <category term="Meta" label="Meta"/>
+    <category term="Philosophy" label="Philosophy"/>
+    <category term="Teaching" label="Teaching"/>
+    <category term="Learning" label="Learning"/>
+    <category term="DeveloperRelations" label="Developer Relations"/>
+    <category term="Technical&#10;Interviews" label="Technical&#10;Interviews"/>
     <published>2021-05-01T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -986,7 +990,14 @@ primary of which is a rather long article on Oso
 and how you can use it for authorization. This is an article I’ve been working
 on for a few months, and it is rather long. I want to get it out there this month,
 since I’d originally promised the article to the folks at Oso in Jan 2021.</summary>
-    <category term="life" label="life"/>
+    <category term="Life" label="Life"/>
+    <category term="Sphinx" label="Sphinx"/>
+    <category term="AdventofCode" label="Advent of Code"/>
+    <category term="Oso" label="Oso"/>
+    <category term="Jekyll" label="Jekyll"/>
+    <category term="Hugo" label="Hugo"/>
+    <category term="Furo" label="Furo"/>
+    <category term="Notes" label="Notes"/>
     <published>2021-12-06T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -1001,9 +1012,11 @@ this year, I’ve started allocating &lt;em&gt;some&lt;/em&gt; time to this ever
     <summary>I’m working on this year’s Advent of Code
 problems. I have wanted to work on this live for several years now, and
 this year, I’ve started allocating some time to this every day.</summary>
-    <category term="programming" label="programming"/>
-    <category term="learning" label="learning"/>
-    <category term="tech" label="tech"/>
+    <category term="Programming" label="Programming"/>
+    <category term="AdventofCode" label="Advent of Code"/>
+    <category term="Learning" label="Learning"/>
+    <category term="DataStructures" label="Data Structures"/>
+    <category term="Algorithms" label="Algorithms"/>
     <published>2021-12-07T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -1076,9 +1089,9 @@ this.&lt;/p&gt;
 lot to do. I’m focussing this year on doing things, which is something I’ve
 said multiple times last year as well. But this year, I’m working on fixing
 this.</summary>
-    <category term="learning" label="learning"/>
-    <category term="teaching" label="teaching"/>
-    <category term="goals" label="goals"/>
+    <category term="Learning" label="Learning"/>
+    <category term="Goals" label="Goals"/>
+    <category term="Teaching" label="Teaching"/>
     <published>2022-01-03T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -1101,9 +1114,9 @@ there, and I’d used Excel for it at first, until Excel couldn’t handle the
 queries anymore. I called my friend who recommended Python. I learnt Python,
 almost over a course of a weekend, and I was making a PyQT4 application in a few
 weeks.</summary>
-    <category term="python" label="python"/>
-    <category term="technology" label="technology"/>
-    <category term="work" label="work"/>
+    <category term="Python" label="Python"/>
+    <category term="DeveloperExperience" label="Developer Experience"/>
+    <category term="DevelopmentEnvironment" label="Development Environment"/>
     <published>2022-01-07T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -1118,8 +1131,9 @@ I’m creating Ansible playbooks for. It’s convenient.&lt;/p&gt;
     <summary>I’m late to the Vagrant train. I must have heard about it in 2014, but I’ve
 never bothered to look it up. I’m using it lately to test out my dotfiles, which
 I’m creating Ansible playbooks for. It’s convenient.</summary>
-    <category term="vagrant" label="vagrant"/>
-    <category term="dev-setup" label="dev-setup"/>
+    <category term="Vagrant" label="Vagrant"/>
+    <category term="DeveloperEnvironment" label="Developer Environment"/>
+    <category term="Ansible" label="Ansible"/>
     <published>2022-01-10T00:00:00+00:00</published>
   </entry>
 </feed>

@@ -1,7 +1,8 @@
 :blogpost: true
 :date: May 1, 2021
-:category: Life
-:tags: meta, philosophy
+:category: Personal
+:tags: Meta, Philosophy, Teaching, Learning, Developer Relations, Technical
+       Interviews
 :redirect: personal-code
 
 .. _personal-code:

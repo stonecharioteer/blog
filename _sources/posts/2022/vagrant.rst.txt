@@ -1,6 +1,6 @@
 :blogpost: true
 :category: Tech
-:tags: vagrant, dev-setup
+:tags: Vagrant, Developer Environment, Ansible
 :date: Jan 10, 2022
 
 ============================
