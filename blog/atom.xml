@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-01-16T12:59:21.150730+00:00</updated>
+  <updated>2022-01-16T13:12:55.560852+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -1135,5 +1135,26 @@ I’m creating Ansible playbooks for. It’s convenient.</summary>
     <category term="DeveloperEnvironment" label="Developer Environment"/>
     <category term="Ansible" label="Ansible"/>
     <published>2022-01-10T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/documentation-assumptions/</id>
+    <title>Documentation Without Assumption</title>
+    <updated>2022-01-16T00:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;Whenever you write documentation, always try to focus on your audience. I’ve
+written about this (in my embarassingly half-complete idea about documentation),
+and I’m always going back to this. Documentation is about caring. I see a lot of
+developers who don’t write good documentation. But what &lt;em&gt;is&lt;/em&gt; &lt;strong&gt;good&lt;/strong&gt;
+documentation?&lt;/p&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/documentation-assumptions/" rel="alternate"/>
+    <summary>Whenever you write documentation, always try to focus on your audience. I’ve
+written about this (in my embarassingly half-complete idea about documentation),
+and I’m always going back to this. Documentation is about caring. I see a lot of
+developers who don’t write good documentation. But what is good
+documentation?</summary>
+    <category term="Teaching" label="Teaching"/>
+    <category term="Documentation" label="Documentation"/>
+    <category term="DeveloperRelations" label="Developer Relations"/>
+    <published>2022-01-16T00:00:00+00:00</published>
   </entry>
 </feed>
