@@ -1,0 +1,1265 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta property="og:title" content="A System for Getting Better at Leetcode" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="posts/2022/leetcode.html" />
+  <meta property="og:description" content="For the longest time I was in denial about the benefits of studying algorithms and data structures. I wasn’t fascinated by Leetcode or other forms of competitive coding. It felt drab to me. I’d rat..." />
+  
+    <title>A System for Getting Better at Leetcode &#8212; Stonecharioteer&#39;s Blog</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../../../about/" />
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../../blog/atom.xml"
+  title="Stonecharioteer's Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../../">
+  <img src="../../../_static/stonecharioteer-banner.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../">
+  Stonecharioteer's Blog
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../about/">
+  About Me
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../2021/personal-code/">
+  Values
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../notes/">
+  Notes
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <form class="bd-search d-flex align-items-center" action="../../../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/stonecharioteer/" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/stonecharioteer" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter-square"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">  
+<h2>
+   <i class="fa fa-calendar"></i>
+  16 January 2022 
+</h2>
+
+<ul>
+      
+<li id="category">
+  <span
+    ><i class="fa-fw fa fa-folder-open"></i></span
+  >
+   
+  <a href="../../../blog/category/learning/">Learning</a>  
+</li>
+ 
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../../../blog/tag/leetcode/">Leetcode</a>   
+  <a href="../../../blog/tag/algorithms/">Algorithms</a>   
+  <a href="../../../blog/tag/data-structures/">Data Structures</a>   
+  <a href="../../../blog/tag/technical-interviews/">Technical Interviews</a>  
+</li>
+ 
+<li id="comments">
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = "stonecharioteer"; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  <i class="fa-fw fa fa-comments"></i>
+  <a
+    href="#disqus_thread"
+    data-disqus-identifier="/posts/2022/leetcode/"
+  >
+    </a
+  >
+</li>
+
+</ul>
+
+<h3>
+  <a href="../../../blog/">Recent Posts</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../documentation-assumptions/"
+      >16 January - Documentation Without Assumption</a
+    >
+  </li>
+  
+  <li>
+    <a href="../vagrant/"
+      >10 January - Vagrant</a
+    >
+  </li>
+  
+  <li>
+    <a href="../python/"
+      >07 January - Python - A Reflection in 2022</a
+    >
+  </li>
+  
+  <li>
+    <a href="../onward/"
+      >03 January - Onward</a
+    >
+  </li>
+  
+  <li>
+    <a href="../../2021/learning-golang/"
+      >28 December - Learning Golang</a
+    >
+  </li>
+  
+</ul>
+
+<h3><a href="../../../blog/tag/">Tags</a></h3>
+<style type="text/css">
+  ul.ablog-cloud {
+    list-style: none;
+    overflow: auto;
+  }
+  ul.ablog-cloud li {
+    float: left;
+    height: 20pt;
+    line-height: 18pt;
+    margin-right: 5px;
+  }
+  ul.ablog-cloud a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  li.ablog-cloud-1 {
+    font-size: 80%;
+  }
+  li.ablog-cloud-2 {
+    font-size: 95%;
+  }
+  li.ablog-cloud-3 {
+    font-size: 110%;
+  }
+  li.ablog-cloud-4 {
+    font-size: 125%;
+  }
+  li.ablog-cloud-5 {
+    font-size: 140%;
+  }
+</style>
+<ul class="ablog-cloud">
+         
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/advent-of-code/">Advent of Code</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/algorithms/">Algorithms</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/ansible/">Ansible</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/career-advice/">Career-Advice</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/data-structures/">Data Structures</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/developer-environment/">Developer Environment</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/developer-experience/">Developer Experience</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/developer-relations/">Developer Relations</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/development-environment/">Development Environment</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/documentation/">Documentation</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/furo/">Furo</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/goals/">Goals</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/hugo/">Hugo</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/jekyll/">Jekyll</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/learning/">Learning</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/leetcode/">Leetcode</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/life/">Life</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/meta/">Meta</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/notes/">Notes</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/oso/">Oso</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/philosophy/">Philosophy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/programming/">Programming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/python/">Python</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/ruby/">Ruby</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/sphinx/">Sphinx</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/teaching/">Teaching</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/tech/">Tech</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/technical-interviews/">Technical
+Interviews</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/technical-interviews/">Technical Interviews</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/vagrant/">Vagrant</a>
+  </li>
+          
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/bangalore/">bangalore</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/bangpypers/">bangpypers</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../../blog/tag/bibek-debroy/">bibek-debroy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../../blog/tag/books/">books</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/career/">career</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/coding/">coding</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/comics/">comics</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/computer-science/">computer-science</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/conda/">conda</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/conferences/">conferences</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/courses/">courses</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/covid/">covid</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/databases/">databases</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/discord/">discord</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/documentation/">documentation</a>
+  </li>
+        
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/editors/">editors</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/empathy/">empathy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/flask/">flask</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/flipkart/">flipkart</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/gaming/">gaming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/golang/">golang</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../../blog/tag/hampi/">hampi</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/health/">health</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/hearing-loss/">hearing-loss</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/hobbies/">hobbies</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/homelab/">homelab</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-4">
+    <a href="../../../blog/tag/indian-mythology/">indian-mythology</a>
+  </li>
+        
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/iot/">iot</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/japanese/">japanese</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/jekyll/">jekyll</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/kubernetes/">kubernetes</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/learning/">learning</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/letters/">letters</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/libraries/">libraries</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/life/">life</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/linux/">linux</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/livecast/">livecast</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/mahabharata/">mahabharata</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/meetup/">meetup</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/mental-health/">mental-health</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/meta/">meta</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/micropython/">micropython</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/neovim/">neovim</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/nostalgia/">nostalgia</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/notes/">notes</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/pip/">pip</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/podcasts/">podcasts</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/programming/">programming</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/pycon/">pycon</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../../blog/tag/python/">python</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/raspberry-pi/">raspberry-pi</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../../blog/tag/reading/">reading</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/rust/">rust</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/screencast/">screencast</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/security/">security</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/shelfie/">shelfie</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/snhl/">snhl</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/talks/">talks</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/tech/">tech</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/technology/">technology</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/thoughts/">thoughts</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/til/">til</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/tiny/">tiny</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/tutorial/">tutorial</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/updates/">updates</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/video/">video</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/videos/">videos</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/vim/">vim</a>
+  </li>
+      
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/webdev/">webdev</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/wfh/">wfh</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/work/">work</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/writing/">writing</a>
+  </li>
+        
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/zen/">zen</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../../../blog/category/">Categories</a>
+</h3>
+<ul>
+     
+  <li>
+    <a href="../../../blog/category/health/">Health (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/how-to/">How To (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/journal/">Journal (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/learning/">Learning (4)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/life/">Life (5)</a>
+  </li>
+        
+  <li>
+    <a href="../../../blog/category/personal/">Personal (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/programming/">Programming (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/reading/">Reading (22)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/review/">Review (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/show-and-tell/">Show and Tell (6)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/talks/">Talks (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/tech/">Tech (4)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/thoughts/">Thoughts (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/tips-and-tricks/">Tips and Tricks (1)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/tutorial/">Tutorial (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/update/">Update (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/updates/">Updates (3)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/category/writing/">Writing (1)</a>
+  </li>
+     
+</ul>
+
+<h3>
+  <a href="../../../blog/archive/">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../../blog/2022/">2022 (5)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/2021/">2021 (15)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/2020/">2020 (18)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/2019/">2019 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/2018/">2018 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/2017/">2017 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../../../blog/2016/">2016 (20)</a>
+  </li>
+   
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#build-a-habit-progressively">
+   Build a Habit, Progressively
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#show-up-consistently">
+   Show Up, Consistently
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#measure-measure-measure">
+   Measure, Measure, Measure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spaced-repetition">
+   Spaced Repetition
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learn-from-others">
+   Learn from Others
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#challenge-yourself">
+   Challenge Yourself
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#do-not-measure-the-wrong-things">
+   Do Not Measure the Wrong Things
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compete">
+   Compete
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#closing-note">
+   Closing Note
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                 <section id="a-system-for-getting-better-at-leetcode">
+<h1>A System for Getting Better at Leetcode<a class="headerlink" href="#a-system-for-getting-better-at-leetcode" title="Permalink to this headline">¶</a></h1>
+<p>For the longest time I was in denial about the benefits of studying algorithms
+and data structures. I wasn’t fascinated by Leetcode or other forms of
+competitive coding. It felt <em>drab</em> to me. I’d rather build something using
+programming. That’s more fun. Companies should consider my skills based on
+Github.</p>
+<p>I’ve seen this sentiment around Hacker News and Reddit as well, and I must
+admit, I was influenced by it. A friend of mine constantly recommended that I
+learn how to solve DSA problems, but I never got around to it. I tried several
+times, but I always failed.</p>
+<p>Today, I believe that every company <em>should</em> conduct a basic problem solving
+test for technical roles. You don’t have to use it as a filter, but <em>do the bare
+minimum</em>, and ask the candidate to actually read a problem that you set them,
+and attempt to write code in front of you.</p>
+<p>What does this exercise do? It shows you not just their coding skills, but also
+their <em>comprehension</em> skills. It shows you how your potential colleague asks
+questions, how they think. Take home tests might show you more valid parameters,
+but as a candidate they <em>tire</em> me out. This sentiment is shared by the community
+at large.</p>
+<p>I’m not saying you should reject candidates on their performance in these
+rounds. Far from it, you should just use these to weed out really red flags. If
+someone says they can code but they can’t even write the semblance of
+placeholder code, then that’s a red flag.</p>
+<p>Far too often I spot people in my organizations who struggle to write code.
+Perhaps they’re good at other things, but coding is definitely not their forte.
+They could be great sys admins or devops people, sure.</p>
+<p>It is not my objective, though, to attempt to convince anyone why you should
+conduct coding interviews. I’ve made up my mind to not work at places that don’t
+conduct them anymore. I’d like to know that the company wants to check my
+skills, and I’d also like to know that everyone I work with has been vetted the
+same way, so I can hope to expect at least a bare level of coding from them.</p>
+<p>So back to my problem. If I think coding interviews are so important, why was I
+failing at preparing for them? I wanted to crack interviews, so why was I not
+able to follow what it takes to do well at them?</p>
+<div class="note admonition">
+<p class="admonition-title"><strong>James Clear</strong> - <em>Atomic Habits</em></p>
+<blockquote>
+<div><p>Goals can provide direction and even push you forward in the short-term,
+but eventually a well-designed system will always win. Having a system is what
+matters. Committing to the process is what makes the difference.</p>
+</div></blockquote>
+</div>
+<p>My mistake was that I was not focussing on my system. I was focussing on the
+outcome of this system. I wanted to <em>crack coding interviews</em>. That is a worthy
+goal, at this juncture it’s as lofty a goal as any, especially if one sets their
+eyes on the large tech companies like Google, Apple or Netflix. But one piece of
+advice I offer anyone trying this is to focus on the system you’re building for
+yourself.</p>
+<p>I’ve been thinking a lot about what sort of system I want to build for studying
+how to become better at leetcode. I’ve offered segments of this advice to
+several people. I wanted to take the time to put my thoughts into words so that
+I can elaborate on my system, and perhaps track its evolution better.</p>
+<p>What does it mean to build a system for learning to leetcode better? Well, it
+means that this system won’t work if you have an interview in X days. That could
+be a month, 3 months, 6 months or half a year. You might get better at “cracking
+the coding interview”, perhaps, or you might not. Don’t focus on that.</p>
+<p>With that said, let’s begin.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Prerequisites</p>
+<p>First, pick a programming language and learn its syntax. You don’t need to know
+a lot, because you should not be looking at third-party libraries for these
+problems. Whatever you pick, ensure you learn enough of the syntax to be able to
+write simple problems with strings, arrays, integers, loops, conditionals,
+boolean algebra, functions and hashmaps.</p>
+<p>If you’ve every taken a class on Algorithms, you can probably skip this step.
+If you have confidence in being able to remember what you’ve learnt, you should
+stick to that. However, if you feel you’ve forgotten everything, then you should
+do one of the following, depending on what sort of learner you are.</p>
+<ol class="arabic simple">
+<li><p>Read <a class="reference external" href="https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/">A Common-Sense Guide to Data Structures and Algorithms</a></p></li>
+<li><p>Go through the <a class="reference external" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/">MIT 6.006 Introduction to Algorithms Course</a></p></li>
+<li><p>Go through the various sections of <a class="reference external" href="https://www.geeksforgeeks.org/data-structures/">data structures</a> and <a class="reference external" href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">algorithms</a>
+from Geeks for Geeks.</p></li>
+</ol>
+<p>If you’re really serious about grokking all of this, you should do all three.
+But these will take time, and <em>they should</em>, since you’re learning a lot of new
+things at the same time.</p>
+</div>
+<section id="build-a-habit-progressively">
+<h2>Build a Habit, Progressively<a class="headerlink" href="#build-a-habit-progressively" title="Permalink to this headline">¶</a></h2>
+<p>Your first week of leetcoding shouldn’t even be trying to solve a thing. You
+should focus on logging into the platform, once a day, for 7 days. Turn off your
+password manager. Type your user name and password. Stay logged in for 15
+minutes. Set a timer. Keep looking around the website. When you’re done, <strong>log
+out</strong>. I’d recommend using the Private or Incognito mode of your browser to do
+all leetcoding so you will have to type your user ID and password every time.</p>
+<p>Your second week, start <em>reading</em> problems. Just read them. Read them slowly,
+absorb the language. See what sort of words the questions use. Stay on the
+website for 30 minutes per day. I’d recommend looking at <em>Easy</em> problems with a
+high <strong>Acceptance Rate</strong>. That will give you the truly easy problems.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Remember that the labels for difficult are quite arbitrary and irrelevant.
+You should not consider yourself incapable if you do not do the <em>Easy</em>
+problems. Treat the words <em>Easy</em>, <em>Medium</em> and <em>Hard</em> as words from some
+other language. They could be gobbledegook for all you care. Use the labels
+as I recommend, and do not judge your performance on your ability or
+inability to solve problems of any difficulty. As I will elaborate further,
+<em>that</em> is not the thing you should measure.</p>
+</div>
+<p>On your third week, you begin trying to solve problems. I say <em>try</em> begrudgingly.
+Some of you might manage to solve one or two problems, or even more, although
+not with ease. That’s <strong>irrelevant</strong>. Don’t congratulate yourself on the number
+of problems you’re solving. Focus on spending 1 hour on the website. 1 hour.
+That’s how long you’re going to try to stay logged in. Again, at the end of it,
+<strong>log out</strong> and do not store your password on the browser.</p>
+<p>From your fourth week, start trying to solve 1 problem a day. Pick the <em>easy</em>
+ones with a higher acceptance ratio. And time yourself. Don’t spend more than an
+hour on the website just yet. But keep trying to do this.</p>
+</section>
+<section id="show-up-consistently">
+<h2>Show Up, Consistently<a class="headerlink" href="#show-up-consistently" title="Permalink to this headline">¶</a></h2>
+<p>The first step to “leetcoding” is <em>showing up</em>. You show up, consistently,
+<em>every</em>, <strong>single</strong> day. You are sick? Doesn’t matter, log into the platform,
+<strong>read</strong> a problem.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>My favorite metaphor for learning to leetcode is to treat it like going to
+the gym. Your first objective is not to bench 150 KG. Your objective is to
+not give up in the first few days. You should get up, no matter how bad your
+day has been, and show up for the workout. It is hard. Don’t let yourself
+believe that this isn’t. If showing up consistently were easy, everyone would
+do so. As time passes, it gets easy, but other things influence the
+difficulty. Good habits are easy to break, unfortunately.</p>
+</div>
+<p>You should consistently show up to the website. Do not break the habit. Do not
+give up. Try to log in on mobile and read a problem if you’re not near a laptop
+or a workstation.</p>
+<p>This is the first thing you’re going to measure. What is your <strong>streak</strong>? Not
+the number of problems you’re doing. How many consecutive days have you been
+logging in to the platform? Try to get it as close to 90 as possible. Logging in
+90 straight days will burn this habit into your routine so you will find it hard
+to break it.</p>
+</section>
+<section id="measure-measure-measure">
+<h2>Measure, Measure, Measure<a class="headerlink" href="#measure-measure-measure" title="Permalink to this headline">¶</a></h2>
+<p>You need to measure your progress. What do you measure?</p>
+<p>Are you logging in consistently?</p>
+<p>How long do you take for an <code class="docutils literal notranslate"><span class="pre">EASY</span></code> problem on <code class="docutils literal notranslate"><span class="pre">TOPIC</span></code> with <code class="docutils literal notranslate"><span class="pre">NN%</span></code> Acceptance?</p>
+<p>How long do you manage to stay on the platform until you’re bored or you’re
+done?</p>
+<p>How many problems have you attempted?</p>
+<p>How many problems have you solved?</p>
+<p>How long has it been since you’ve solved a problem on <code class="docutils literal notranslate"><span class="pre">TOPIC</span></code>?</p>
+<p>What time complexity are you managing for each problem?</p>
+<p>What space complexity are you managing for each problem?</p>
+<p>What’s the runtime on each solution?</p>
+<p>These measurements give you control parameters that you can tweak. You can use
+these to improve your consistency. You can use them to improve how you learn to
+leetcode, and how you get better. I’d recommend tracking them however you feel
+comfortable. I am going to use some tools I’m building myself to achieve this.
+I’m still not sure, but I have some ideas that I’ll blog about later.</p>
+</section>
+<section id="spaced-repetition">
+<h2>Spaced Repetition<a class="headerlink" href="#spaced-repetition" title="Permalink to this headline">¶</a></h2>
+<p>You shouldn’t keep doing problems in groups of the same topic. Space them out.
+Return to problems you’ve done before. Return to problems you attempted and
+perhaps gave up on. Return to problems where you couldn’t manage an optimal
+solution. Return to problems where you couldn’t manage to improve run time.</p>
+</section>
+<section id="learn-from-others">
+<h2>Learn from Others<a class="headerlink" href="#learn-from-others" title="Permalink to this headline">¶</a></h2>
+<p>Read some one else’s solution and try to work through it by hand. Sometimes
+reading code in another language helps. Remember that most of your job is
+<em>reading</em> code rather than writing it. But only read others’ solutions once
+you’ve managed some level of solution by yourself.</p>
+<p>Whenever you read their solutions, make sure you rewrite them in your own
+language. This is why I recommend reading them in some other language. If you
+code in python, read Javascript solutions. If you code in Java, read solutions
+in Python. If you code in Javascript, read code in golang.</p>
+<p>Keep an eye on the <a class="reference external" href="https://reddit.com/r/leetcode">/r/leetcode</a> subreddit. You
+can also find good solutions on Youtube and Github. The former might be easier
+to search on.</p>
+</section>
+<section id="challenge-yourself">
+<h2>Challenge Yourself<a class="headerlink" href="#challenge-yourself" title="Permalink to this headline">¶</a></h2>
+<p>Once you manage to consistently show up for 90 days, mix it up. Go on to a
+platform you haven’t been using. Hackerrank is good, so is Advent of Code. Try
+to do the problems there. Measure this as well.</p>
+<p>Explore uncharted territory. Try problems on Project Euler, while these are not
+exactly similar to Leetcode, these will help you get more practice in for
+writing such code.</p>
+</section>
+<section id="do-not-measure-the-wrong-things">
+<h2>Do Not Measure the Wrong Things<a class="headerlink" href="#do-not-measure-the-wrong-things" title="Permalink to this headline">¶</a></h2>
+<p>When you want to work through an exercise regimen, whether for weight loss or
+muscle gain, you shouldn’t be measuring how much you are able to do. You should
+measure the efficiency of your practice. You should be measuring your ability to
+show up consistently. Do not measure your inability to solve a problem you think
+you should be able to solve.</p>
+</section>
+<section id="compete">
+<h2>Compete<a class="headerlink" href="#compete" title="Permalink to this headline">¶</a></h2>
+<p>By this I don’t mean with others, but if you’re into that, you <em>should</em>. I mean
+compete with yourself. Repeat questions you’ve done before, your system should
+allow you to do that. Measure your new time. Compare. Try to see if you can gain
+a 10% improvement in a month. Redo the problem a year later. Are you even
+faster now?</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By repeating problems, your objective should not be to memorize the solution.
+It’s to look at an older problem with newer experience. You should be able to
+get better solutions with time. That helps you understand how you’re
+improving. If you feel that your older solution was the most optimum, then go
+ahead and retype that. Even retyping an older solution from memory will give
+you the practice you need. You will gain important muscle memory from it.</p>
+</div>
+</section>
+<section id="closing-note">
+<h2>Closing Note<a class="headerlink" href="#closing-note" title="Permalink to this headline">¶</a></h2>
+<p>Focussing on a system gives you a process to follow. A routine. You will learn
+to enjoy the process for itself. And when you’re ready, you should try out mock
+interviews. Or even better, you should try real interviews, even if you’re not
+looking for a job.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As an end note, you can replace leetcode in this article with your favorite
+competitive coding platform. I recommend buying a leetcode premium account
+when you’re actually interviewing, but you don’t need one to follow along
+with my system.</p>
+</div>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<p>Here are a few resources I like to rely on when I’m thinking about my system.
+Note that I’m still early in my methodology, and this is a system that will
+improve given time.</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://aliabdaal.com/spaced-repetition/">Ali Abdaal - Spaced Repetition</a></p></li>
+<li><p><a class="reference external" href="https://github.com/mridulghanshala/LeetRepeet">LeetRepeat - Spaced Repetition Tool for Leetcode</a></p></li>
+<li><p><a class="reference external" href="https://seanprashad.com/leetcode-patterns/">Leetcode Patterns</a></p></li>
+<li><p><a class="reference external" href="https://www.redblobgames.com/">Red Blob Games - Visual Explanations of Math &amp; Algorithms</a></p></li>
+<li><p><a class="reference external" href="https://cses.fi/problemset/">CSES Competitive Programming Problem Set</a></p></li>
+<li><p><a class="reference external" href="/_static/documents/competitive-programmers-handbook.pdf">Competitive Programmers Handbook [PDF]</a></p></li>
+<li><p><a class="reference external" href="https://jamesclear.com/goals-systems">Forget about Setting Goals. Focus on This Instead - James Clear</a></p></li>
+</ol>
+</section>
+</section>
+
+<div class="section">
+     
+<div class="section">
+  <span style="float: left">
+     
+    <a href="../vagrant/">
+      <i class="fa fa-arrow-circle-left"></i> Vagrant
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+     
+    <a href="../documentation-assumptions/">
+      Documentation Without Assumption <i
+        class="fa fa-arrow-circle-right"
+      ></i
+      >
+    </a>
+    
+  </span>
+</div>
+  
+  <div class="section">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = "stonecharioteer";
+      var disqus_identifier = "/posts/2022/leetcode/";
+      var disqus_title = "A System for Getting Better at Leetcode";
+      var disqus_url = "https://stonecharioteer.com/posts/2022/leetcode";
+
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+    <a href="https://disqus.com" class="dsq-brlink"
+      >comments powered by <span class="logo-disqus">Disqus</span></a
+    >
+  </div>
+  
+</div>
+
+              </div>
+              
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, Vinay Keerthi.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

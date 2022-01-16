@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-01-16T13:12:55.560852+00:00</updated>
+  <updated>2022-01-16T16:34:43.231704+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -1135,6 +1135,28 @@ I’m creating Ansible playbooks for. It’s convenient.</summary>
     <category term="DeveloperEnvironment" label="Developer Environment"/>
     <category term="Ansible" label="Ansible"/>
     <published>2022-01-10T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/leetcode/</id>
+    <title>A System for Getting Better at Leetcode</title>
+    <updated>2022-01-16T00:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;For the longest time I was in denial about the benefits of studying algorithms
+and data structures. I wasn’t fascinated by Leetcode or other forms of
+competitive coding. It felt &lt;em&gt;drab&lt;/em&gt; to me. I’d rather build something using
+programming. That’s more fun. Companies should consider my skills based on
+Github.&lt;/p&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/leetcode/" rel="alternate"/>
+    <summary>For the longest time I was in denial about the benefits of studying algorithms
+and data structures. I wasn’t fascinated by Leetcode or other forms of
+competitive coding. It felt drab to me. I’d rather build something using
+programming. That’s more fun. Companies should consider my skills based on
+Github.</summary>
+    <category term="Leetcode" label="Leetcode"/>
+    <category term="Algorithms" label="Algorithms"/>
+    <category term="DataStructures" label="Data Structures"/>
+    <category term="TechnicalInterviews" label="Technical Interviews"/>
+    <published>2022-01-16T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://stonecharioteer.com/posts/2022/documentation-assumptions/</id>
