@@ -57,7 +57,7 @@ blog_authors = {
 # -- Blog Post Related --------------------------------------------------------
 
 # Format date for a post.
-# post_date_format = '%%b %%d, %%Y'
+post_date_format = "%b %d, %Y"
 
 # Number of paragraphs (default is ``1``) that will be displayed as an excerpt
 # from the post. Setting this ``0`` will result in displaying no post excerpt
@@ -192,6 +192,7 @@ extensions = [
     "sphinx.ext.extlinks",
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
+    "sphinx_tabs.tabs",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
