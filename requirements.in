@@ -4,6 +4,7 @@ myst-parser>=0.15.2,<0.16.0
 pydata-sphinx-theme>=0.7.2,<0.8.0
 sphinx-panels>=0.6.0,<0.7.0
 sphinx-togglebutton>=0.2.3,<.0.3.0
+sphinx-tabs>=3.0.0,<4.0.0
 sphinxext-opengraph
 sphinxemoji>=0.2.0
 sphinxext-rediraffe>=0.2.7,<0.3.0
