@@ -96,13 +96,15 @@ blog_authors = {
 # sidebars that link to author and location archive pages.
 html_sidebars = {
     "**": [  # 'about.html',
+        "sidebar/scroll-start.html",
+        "sidebar/brand.html",
         "postcard.html",
-        # 'navigation.html',
         "recentposts.html",
         "tagcloud.html",
         "categories.html",
         "archives.html",
         "searchbox.html",
+        "sidebar/scroll-end.html",
     ],
 }
 
@@ -279,21 +281,21 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = "pydata_sphinx_theme"
+html_theme = "furo"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    "github_button": False,
-}
+
+# The name of an image file (relative to this directory) to place at the top
+# of the sidebar.
+html_static_path = ["_static"]
+html_logo = "images/logo/stonecharioteer-banner.png"
 
 html_theme_options = {
-    "github_url": "https://github.com/stonecharioteer/",
-    "twitter_url": "https://twitter.com/stonecharioteer",
-    "search_bar_text": "Search this site...",
-    # "google_analytics_id": "UA-88310237-1",
-    "navbar_end": ["search-field.html", "navbar-icon-links"],
+    "navigation_with_keys": True,
+    "light_logo": html_logo,
+    "dark_logo": html_logo,
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -306,19 +308,10 @@ html_title = "Stonecharioteer's Blog"
 # A shorter title for the navigation bar.  Default is the same as html_title.
 # html_short_title = None
 
-# The name of an image file (relative to this directory) to place at the top
-# of the sidebar.
-html_logo = "_static/images/logo/stonecharioteer-banner.png"
 
-# The name of an image file (within the static path) to use as favicon of the
-# docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
-# pixels large.
-# html_favicon = None
-
-# Add any paths that contain custom static files (such as style sheets) here,
+# The name of an image file (within the static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["_static"]
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -327,7 +320,7 @@ html_extra_path = ["feed.xml"]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-html_last_updated_fmt = "%%b %%d, %%Y"
+html_last_updated_fmt = "%b %d, %Y"
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -412,7 +405,8 @@ rediraffe_redirects = {}
 
 
 def setup(app):
-    app.add_css_file("custom.css")
+    # app.add_css_file("custom.css")
+    pass
 
 
 ablog_website = "docs"
