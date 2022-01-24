@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Onward" />
+  <meta property="og:title" content="Creating Fixed Length Iterables in Python" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="posts/2022/onward.html" />
-  <meta property="og:description" content="I’m beginning this year hopeful. It’s been a long three years, and I have a lot to do. I’m focussing this year on doing things, which is something I’ve said multiple times last year as well. But th..." />
+  <meta property="og:url" content="posts/2022/til-python-fixed-length.html" />
+  <meta property="og:description" content="If you want to create an iterable of a fixed length in python, use collections.deque with the maxlen parameter. Note that this merely calls appendleft." />
   
-    <title>Onward &#8212; Stonecharioteer&#39;s Blog</title>
+    <title>Creating Fixed Length Iterables in Python &#8212; Stonecharioteer&#39;s Blog</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -180,12 +180,12 @@
             <!-- Only show if we have sidebars configured, else just a small margin  -->
             <div class="col-12 col-md-3 bd-sidebar">  
 <h2>
-  Onward
+  Creating Fixed Length Iterables in Python
 </h2>
 <hr />
 <h2>
   <i class="fa fa-calendar"></i>
-  Jan 03, 2022 
+  Jan 24, 2022 
 </h2>
 
 <ul>
@@ -195,19 +195,9 @@
     ><i class="fa-fw fa fa-folder-open"></i></span
   >
    
-  <a href="../../../blog/category/life/">Life</a>  
+  <a href="../../../blog/category/learning/">Learning</a>  
 </li>
- 
-<li id="tags">
-  <span
-    ><i class="fa-fw fa fa-tags"></i> </span
-  >
-   
-  <a href="../../../blog/tag/learning/">Learning</a>   
-  <a href="../../../blog/tag/goals/">Goals</a>   
-  <a href="../../../blog/tag/teaching/">Teaching</a>  
-</li>
- 
+  
 <li id="comments">
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -228,7 +218,7 @@
   <i class="fa-fw fa fa-comments"></i>
   <a
     href="#disqus_thread"
-    data-disqus-identifier="/posts/2022/onward/"
+    data-disqus-identifier="/posts/2022/til-python-fixed-length/"
   >
     </a
   >
@@ -241,12 +231,6 @@
 </h3>
 <ul>
    
-  <li>
-    <a href="../til-python-fixed-length/"
-      >24 January - Creating Fixed Length Iterables in Python</a
-    >
-  </li>
-  
   <li>
     <a href="../documentation-assumptions/"
       >16 January - Documentation Without Assumption</a
@@ -268,6 +252,12 @@
   <li>
     <a href="../python/"
       >07 January - Python - A Reflection in 2022</a
+    >
+  </li>
+  
+  <li>
+    <a href="../onward/"
+      >03 January - Onward</a
     >
   </li>
   
@@ -881,46 +871,23 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <div class="section" id="onward">
-<h1>Onward<a class="headerlink" href="#onward" title="Permalink to this headline">¶</a></h1>
-<p>I’m beginning this year <em>hopeful</em>. It’s been a long three years, and I have a
-lot to do. I’m focussing this year on doing things, which is something I’ve
-said multiple times last year as well. But this year, I’m working on fixing
-this.</p>
-<p>I’ve been trying to work on how I solve problems, learning algorithms and data
-structures.  This is something that’s been on my mind for a while. I’m a first
-principles learner, so learning without understanding will not work for me. I
-once thought it prudent to try and write a complete textbook on a topic in
-college instead of sitting and doing what I needed to ace an exam. Others might
-see that as a fallacy, but I see it as a personality trait that I need to hone.</p>
-<p>I also want to hold back on being <em>available</em>. I have a bad habit of offering
-help even when the other person hasn’t asked me, and that has cost me my mental
-health. I need to hold back, stop being there for people who never asked. This
-includes friends who didn’t say they need me, and the <em>kids</em> I am currently
-mentoring. I’m going to hold back. This means no more asking how someone is
-doing, how someone is coping, how someone is faring. All those mean the same,
-but I’m leaving that as is.</p>
-<p>It might sound cold, but perhaps that’s what I need. I need to focus on my own
-mental health for a while.</p>
-<p>And that’s another topic. I’ve begun therapy. I’ve strongly suspected I have
-ADHD for the longest time, and I’ve sought the help of a local hospital for the
-associated tests. I’ve spoken to a Psychiatrist and a Psychologist so far, and
-I’m waiting for the results of several tests, including an <abbr title="Millon Clinical Multiaxial Inventory">MCMI</abbr>, Beck’s Depression Inventory, Hamilton
-Depression Rating Scale, an ADHD Self-Report Scale Checklist. I have strong
-suspicions that it is ADHD, and I’m hoping I can find ways to cope with it.</p>
-<p>I’ve never been good on things that require me to work <em>normally</em>. I mean I am
-horrible at doing repetitive tasks, or tasks I deem boring. I’m not good at
-working on <em>easy</em> problems, and this has been affecting how I work. I want to
-solve this. This has been annoying me for a long time, and I suspect this is
-what made working at Visa boring to me. I was not required to work on hard problems.
-This makes my todo-list really, really long. In fact, I have several dozen blog posts
-that are mere drafts because of this. I’d like to change that.</p>
-<p>I don’t make resolutions, I never keep them. Instead I’m going to start 2022
-with a prayer.  A wish. Some hope. I hope I can follow through, figure out why
-I cannot focus on my plans.  I want to be able to focus on writing once again,
-to be able to focus on what matters to me.  I want to be able to write stories
-again, to code for <em>fun</em> once again, and to just have fun with life. I’ve not
-been able to do that for 3 years now. And I want to change that.</p>
+                 <div class="section" id="creating-fixed-length-iterables-in-python">
+<h1>Creating Fixed Length Iterables in Python<a class="headerlink" href="#creating-fixed-length-iterables-in-python" title="Permalink to this headline">¶</a></h1>
+<p>If you want to create an iterable of a fixed length in python, use
+<code class="docutils literal notranslate"><span class="pre">collections.deque</span></code> with the <code class="docutils literal notranslate"><span class="pre">maxlen</span></code> parameter.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">collections</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">fixed_list</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">deque</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="p">[</span><span class="kc">None</span><span class="p">],</span> <span class="mi">10</span><span class="p">)</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="c1"># this is now a fixed list of items 10.</span>
+<span class="linenos"> 6</span><span class="c1"># by _appending_ more items, you&#39;d be dropping items</span>
+<span class="linenos"> 7</span><span class="c1"># from the beginning.</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="n">fixed_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="linenos">10</span><span class="nb">print</span><span class="p">(</span><span class="n">fixed_list</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Note that this merely calls <code class="docutils literal notranslate"><span class="pre">appendleft</span></code>.</p>
 </div>
 
 <div class="section">
@@ -929,20 +896,13 @@ been able to do that for 3 years now. And I want to change that.</p>
 <div class="section">
   <span style="float: left">
      
-    <a href="../../2021/learning-golang/">
-      <i class="fa fa-arrow-circle-left"></i> Learning Golang
+    <a href="../documentation-assumptions/">
+      <i class="fa fa-arrow-circle-left"></i> Documentation Without Assumption
     </a>
     
   </span>
   <span>&nbsp;</span>
   <span style="float: right">
-     
-    <a href="../python/">
-      Python - A Reflection in 2022 <i
-        class="fa fa-arrow-circle-right"
-      ></i
-      >
-    </a>
     
   </span>
 </div>
@@ -952,9 +912,9 @@ been able to do that for 3 years now. And I want to change that.</p>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_shortname = "stonecharioteer";
-      var disqus_identifier = "/posts/2022/onward/";
-      var disqus_title = "Onward";
-      var disqus_url = "https://stonecharioteer.com/posts/2022/onward";
+      var disqus_identifier = "/posts/2022/til-python-fixed-length/";
+      var disqus_title = "Creating Fixed Length Iterables in Python";
+      var disqus_url = "https://stonecharioteer.com/posts/2022/til-python-fixed-length";
 
       (function () {
         var dsq = document.createElement("script");

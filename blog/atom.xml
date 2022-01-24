@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-01-24T16:10:13.327760+00:00</updated>
+  <updated>2022-01-24T16:26:22.739082+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -1306,5 +1306,19 @@ documentation?</summary>
     <category term="Documentation" label="Documentation"/>
     <category term="DeveloperRelations" label="Developer Relations"/>
     <published>2022-01-16T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/til-python-fixed-length/</id>
+    <title>Creating Fixed Length Iterables in Python</title>
+    <updated>2022-01-24T00:00:00+00:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;If you want to create an iterable of a fixed length in python, use
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;collections.deque&lt;/span&gt;&lt;/code&gt; with the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;maxlen&lt;/span&gt;&lt;/code&gt; parameter.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/til-python-fixed-length/" rel="alternate"/>
+    <summary>If you want to create an iterable of a fixed length in python, use
+collections.deque with the maxlen parameter.</summary>
+    <published>2022-01-24T00:00:00+00:00</published>
   </entry>
 </feed>
