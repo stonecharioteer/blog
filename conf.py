@@ -242,6 +242,7 @@ exclude_patterns = [
     ".github/*",
     ".history",
     "github_submodule/*",
+    "node_modules/*",
     "LICENSE.md",
     "README.md",
 ]

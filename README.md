@@ -1,5 +1,7 @@
 # stonecharioteer.com
 
+[![Publish Github Pages](https://github.com/stonecharioteer/blog/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/stonecharioteer/blog/actions/workflows/gh-pages.yml)
+
 This is the sphinx-based source code for my [blog](https://stonecharioteer.com).
 
 To build this using gh-actions, I recommend starting a runner using docker. I
