@@ -4,8 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Sarathi - A Personal Discord Bot" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="posts/2020/2020-11-30-sarathi-discord-til-bot.html" />
@@ -31,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -180,8 +180,12 @@
             <!-- Only show if we have sidebars configured, else just a small margin  -->
             <div class="col-12 col-md-3 bd-sidebar">  
 <h2>
-   <i class="fa fa-calendar"></i>
-  30 November 2020 
+  Sarathi - A Personal Discord Bot
+</h2>
+<hr />
+<h2>
+  <i class="fa fa-calendar"></i>
+  Nov 30, 2020 
 </h2>
 
 <ul>
@@ -303,7 +307,7 @@
   }
 </style>
 <ul class="ablog-cloud">
-         
+   
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/advent-of-code/">Advent of Code</a>
   </li>
@@ -424,7 +428,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/vagrant/">Vagrant</a>
   </li>
-          
+        
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/bangalore/">bangalore</a>
   </li>
@@ -648,7 +652,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/shelfie/">shelfie</a>
   </li>
-    
+      
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
   </li>
@@ -940,7 +944,7 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <section id="sarathi-a-personal-discord-bot">
+                 <div class="section" id="sarathi-a-personal-discord-bot">
 <h1>Sarathi - A Personal Discord Bot<a class="headerlink" href="#sarathi-a-personal-discord-bot" title="Permalink to this headline">¶</a></h1>
 <p>I’ve been maintaining <a class="reference external" href="https://stonecharioteer.com/til.html">a TIL page</a> for a while now, and while the idea is great, I have had some issues updating the sheet daily.</p>
 <p><img alt="sarathi-bot add factoid" src="../../../_images/help.jpeg" /></p>
@@ -959,13 +963,13 @@ Interviews</a>
 <p>However, I have not gotten back to the task in ages, necessitating the use of my rudimentary manual method for months on end.
 So this weekend, as I prep myself to shift my body clock to attend <a class="reference external" href="http://dabeaz.com/raft.html">David Beazley’s RAFT Course</a>,
 I decided to use the midnight oil to write my own bot, one that I could add to.</p>
-<section id="why-discord">
+<div class="section" id="why-discord">
 <h2>Why Discord?<a class="headerlink" href="#why-discord" title="Permalink to this headline">¶</a></h2>
 <p>I’ve been using discord to talk to a few friends and communities lately, and I’ve found it’s integration with Linux to be amazing.
 I love the web-UI, and the desktop app which works quite well everywhere. I also use the mobile app on my phone and tablet.</p>
 <p>And [it has a Python library], with quite a robust API no less.</p>
-</section>
-<section id="resources">
+</div>
+<div class="section" id="resources">
 <h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
 <p>I relied on the following resources for this task.</p>
 <ol class="simple">
@@ -973,8 +977,8 @@ I love the web-UI, and the desktop app which works quite well everywhere. I also
 <li><p><a class="reference external" href="https://discord.com/developers/docs/intro">Discord Official Documentation</a></p></li>
 <li><p><a class="reference external" href="https://discordpy.readthedocs.io/en/latest/index.html"><code class="docutils literal notranslate"><span class="pre">discord.py</span></code> documentation (quite unsatisfactory docs IMO)</a></p></li>
 </ol>
-</section>
-<section id="goals">
+</div>
+<div class="section" id="goals">
 <h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
 <p>I wanted to be able to do the following:</p>
 <ol class="simple">
@@ -986,43 +990,43 @@ I love the web-UI, and the desktop app which works quite well everywhere. I also
 <li><p>Pushing code to Github so that the blog is update instantly.</p></li>
 <li><p>Allow querying of the knowledge-base with a simple search API.</p></li>
 </ol>
-</section>
-<section id="outcome">
+</div>
+<div class="section" id="outcome">
 <h2>Outcome<a class="headerlink" href="#outcome" title="Permalink to this headline">¶</a></h2>
 <p>While I won’t go to much lengths to describe how I coded this bot, the Real Python article manages to do that better, I’ll just go ahead and show off the result:</p>
-<section id="help">
+<div class="section" id="help">
 <h3>Help<a class="headerlink" href="#help" title="Permalink to this headline">¶</a></h3>
 <p><img alt="sarathi-bot help" src="../../../_images/help.jpeg" /></p>
 <p>The bot uses <code class="docutils literal notranslate"><span class="pre">/</span></code> as a command prefix and outputs a help string on querying with <code class="docutils literal notranslate"><span class="pre">/help</span></code>.</p>
 <p>One observation I’ve come to make to myself is that the API is quite robust, but the documentation is severly lacking.
 However, I feel users of <code class="docutils literal notranslate"><span class="pre">click</span></code> will really grok how this library is written.</p>
-</section>
-<section id="adding-a-url-to-til">
+</div>
+<div class="section" id="adding-a-url-to-til">
 <h3>Adding a URL to TIL<a class="headerlink" href="#adding-a-url-to-til" title="Permalink to this headline">¶</a></h3>
 <p><img alt="sarathi-bot add URL" src="../../../_images/add-url.jpeg" /></p>
 <p>To add a new URL to TIL, use <code class="docutils literal notranslate"><span class="pre">/til</span> <span class="pre">add</span> <span class="pre">&lt;url&gt;</span> <span class="pre">&lt;categories,</span> <span class="pre">space</span> <span class="pre">separated&gt;</span></code></p>
-</section>
-<section id="attempting-to-add-a-til-that-was-previously-added">
+</div>
+<div class="section" id="attempting-to-add-a-til-that-was-previously-added">
 <h3>Attempting to add a TIL that was previously added<a class="headerlink" href="#attempting-to-add-a-til-that-was-previously-added" title="Permalink to this headline">¶</a></h3>
 <p><img alt="sarathi-bot add URL same day" src="../../../_images/add-same-day.jpeg" /></p>
 <p>If you try adding the <em>same</em> TIL on the same date, Sarathi will just remind you that you just learnt this.</p>
 <p>If you try adding a TIL that exists elsewhere in the database, Sarathi will make note of this in the <code class="docutils literal notranslate"><span class="pre">repeated_added_on</span></code> column.
 While this is not yet used, I’d like to analyse whenever I encounter things I have encountered before and think I’ve not recorded.
 It could be a good way of identifying ineffectiveness in how I learn.</p>
-</section>
-<section id="adding-a-factoid">
+</div>
+<div class="section" id="adding-a-factoid">
 <h3>Adding a factoid<a class="headerlink" href="#adding-a-factoid" title="Permalink to this headline">¶</a></h3>
 <p>Some TILs are just factoids.</p>
 <p><img alt="sarathi-bot add factoid" src="../../../_images/add-factoid.jpeg" /></p>
-</section>
-<section id="querying-the-json">
+</div>
+<div class="section" id="querying-the-json">
 <h3>Querying the JSON<a class="headerlink" href="#querying-the-json" title="Permalink to this headline">¶</a></h3>
 <p>To query for a TIL or a couple, just use <code class="docutils literal notranslate"><span class="pre">/til</span> <span class="pre">find</span> <span class="pre">&lt;search-string&gt;</span></code>. Right now, the search does not support regex, but I plan to integrate that later.
 The search string is matched against the categories, or in the URL/factoid body.</p>
 <p><img alt="sarathi-bot find" src="../../../_images/find.jpeg" /></p>
-</section>
-</section>
-<section id="improvements">
+</div>
+</div>
+<div class="section" id="improvements">
 <h2>Improvements<a class="headerlink" href="#improvements" title="Permalink to this headline">¶</a></h2>
 <p>Some things I’m hoping to integrate in the future:</p>
 <ol class="simple">
@@ -1032,15 +1036,16 @@ The search string is matched against the categories, or in the URL/factoid body.
 <li><p>Anki Cards to assist in learning using the TILs and other notes.</p></li>
 <li><p>Interface with my notes repository to auto-generate learning packages.</p></li>
 </ol>
-</section>
-<section id="source-code">
+</div>
+<div class="section" id="source-code">
 <h2>Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/stonecharioteer/sarathi">You can find the repo to <code class="docutils literal notranslate"><span class="pre">sarathi</span></code> here.</a> While very esoteric in its usecase, you might be able to learn a few things about how to use the <code class="docutils literal notranslate"><span class="pre">discord.py</span></code> library from it.</p>
-</section>
-</section>
+</div>
+</div>
 
 <div class="section">
-     
+    
+
 <div class="section">
   <span style="float: left">
      
@@ -1120,7 +1125,7 @@ The search string is matched against the categories, or in the URL/factoid body.
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     

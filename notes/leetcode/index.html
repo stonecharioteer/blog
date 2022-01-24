@@ -4,8 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Leetcode" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="notes/leetcode/index.html" />
@@ -31,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -249,7 +249,7 @@
   }
 </style>
 <ul class="ablog-cloud">
-         
+   
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/advent-of-code/">Advent of Code</a>
   </li>
@@ -370,7 +370,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/vagrant/">Vagrant</a>
   </li>
-          
+        
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/bangalore/">bangalore</a>
   </li>
@@ -594,7 +594,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/shelfie/">shelfie</a>
   </li>
-    
+      
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
   </li>
@@ -868,7 +868,7 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <section id="leetcode">
+                 <div class="section" id="leetcode">
 <h1>Leetcode<a class="headerlink" href="#leetcode" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -878,7 +878,7 @@ that I can keep track of my preparation.</p>
 <p>All problems are the property of Leetcode and the rights thereof belong to
 them.</p>
 </div>
-<section id="using-the-leetcode-dataset-with-jq">
+<div class="section" id="using-the-leetcode-dataset-with-jq">
 <h2>Using the Leetcode Dataset with <code class="docutils literal notranslate"><span class="pre">jq</span></code><a class="headerlink" href="#using-the-leetcode-dataset-with-jq" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -890,7 +890,7 @@ placed <a class="reference external" href="https://github.com/stonecharioteer/bl
 I want to do more with it, but until I do, you should use <code class="docutils literal notranslate"><span class="pre">jq</span></code> to filter and
 look through it.</p>
 <p>I’ll document some commands here.</p>
-<section id="getting-questions-by-company">
+<div class="section" id="getting-questions-by-company">
 <h3>Getting Questions by Company<a class="headerlink" href="#getting-questions-by-company" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jq <span class="s1">&#39;.[] | select(.companyTagStats | strings | ascii_downcase | test(&quot;COMPANY_NAME_LOWERCASE&quot;) | {id:</span>
 <span class="s1">.questionId, category: categoryTitle, difficulty, url,</span>
@@ -903,37 +903,37 @@ look through it.</p>
 its raw text form for now. I want to convert it to a list, but I don’t have
 time.</p>
 </div>
-</section>
-<section id="getting-questions-by-tags">
+</div>
+<div class="section" id="getting-questions-by-tags">
 <h3>Getting Questions by Tags<a class="headerlink" href="#getting-questions-by-tags" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jq <span class="s1">&#39;.[] | {id: .questionId, title, url, category: .categoryTitle, difficulty,</span>
 <span class="s1">tags: [.topicTags[].slug]} | select(.tags[] | ascii_downcase | contains(&quot;TAG_NAME_LOWERCASE&quot;))&#39;</span> data_sorted.json
 </pre></div>
 </div>
-</section>
-<section id="getting-questions-by-category">
+</div>
+<div class="section" id="getting-questions-by-category">
 <h3>Getting Questions by Category<a class="headerlink" href="#getting-questions-by-category" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jq <span class="s1">&#39;.[] | {id: .questionId, title, url, category: .categoryTitle, difficulty,</span>
 <span class="s1">tags: [.topicTags[].slug]} | select((.category | ascii_downcase) == &quot;CATEGORY_LOWERCASE&quot;)&#39;</span> data_sorted.json
 </pre></div>
 </div>
-</section>
-</section>
-<section id="adding-new-solutions">
+</div>
+</div>
+<div class="section" id="adding-new-solutions">
 <h2>Adding New Solutions<a class="headerlink" href="#adding-new-solutions" title="Permalink to this headline">¶</a></h2>
 <p>Add an item to <code class="docutils literal notranslate"><span class="pre">problems.toml</span></code> and run <code class="docutils literal notranslate"><span class="pre">create_solutions.py</span></code>. Do not manually
 create solution files.</p>
 <p>A problem item in the <code class="docutils literal notranslate"><span class="pre">toml</span></code> file is defined as:</p>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[problems.leetcode]]</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s">&quot;2-Sum-Problem&quot;</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">&quot;https://leetcode.com/problems/two-sum/&quot;</span>
-<span class="n">number</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">level</span> <span class="o">=</span> <span class="s">&quot;EASY&quot;</span>
-<span class="n">labels</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&quot;striver&quot;</span><span class="p">,</span> <span class="s">&quot;striver-4&quot;</span><span class="p">,]</span>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[problems.leetcode]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;2-Sum-Problem&quot;</span><span class="w"></span>
+<span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://leetcode.com/problems/two-sum/&quot;</span><span class="w"></span>
+<span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="n">level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;EASY&quot;</span><span class="w"></span>
+<span class="n">labels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s">&quot;striver&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;striver-4&quot;</span><span class="p">,]</span><span class="w"></span>
 </pre></div>
 </div>
-</section>
-<section id="striver-list">
+</div>
+<div class="section" id="striver-list">
 <h2>Striver List<a class="headerlink" href="#striver-list" title="Permalink to this headline">¶</a></h2>
 <p>This is a rough timeline of problems that follow the <a class="reference external" href="https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/">Striver SDE Sheet.</a>
 Note that for now, I’m sticking only to the Leetcode problems linked therein, since I
@@ -1615,8 +1615,8 @@ have setup a testing pipeline targetting Leetcode only.</p>
 </div>
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
 <div class="section">
    
@@ -1647,7 +1647,7 @@ have setup a testing pipeline targetting Leetcode only.</p>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     

@@ -4,8 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Authorization in Python using Oso" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="posts/2021-11-19-authorization-using-oso.html" />
@@ -31,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -180,6 +180,10 @@
             <!-- Only show if we have sidebars configured, else just a small margin  -->
             <div class="col-12 col-md-3 bd-sidebar">  
 <h2>
+  Authorization in Python using Oso
+</h2>
+<hr />
+<h2>
    <i
     class="fa fa-pencil"
   ></i
@@ -276,7 +280,7 @@
   }
 </style>
 <ul class="ablog-cloud">
-         
+   
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/advent-of-code/">Advent of Code</a>
   </li>
@@ -397,7 +401,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/vagrant/">Vagrant</a>
   </li>
-          
+        
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/bangalore/">bangalore</a>
   </li>
@@ -621,7 +625,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/shelfie/">shelfie</a>
   </li>
-    
+      
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
   </li>
@@ -934,9 +938,9 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <section id="authorization-in-python-using-oso">
+                 <div class="section" id="authorization-in-python-using-oso">
 <h1>Authorization in Python using Oso<a class="headerlink" href="#authorization-in-python-using-oso" title="Permalink to this headline">¶</a></h1>
-<section id="outline">
+<div class="section" id="outline">
 <h2>Outline<a class="headerlink" href="#outline" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Prelude</p></li>
@@ -975,8 +979,8 @@ Interviews</a>
 <li><p>Getting Help</p></li>
 <li><p>Cookiecutter Template</p></li>
 </ol>
-</section>
-<section id="prelude">
+</div>
+<div class="section" id="prelude">
 <h2>Prelude<a class="headerlink" href="#prelude" title="Permalink to this headline">¶</a></h2>
 <p>This is an article I’ve been working on for almost a year now. Life got in the way,
 but it wasn’t just that. I haven’t been using Oso in the months since February,
@@ -997,8 +1001,8 @@ might not see mobvious from the first glance. I’ll save the fanboyism for the
 conclusion, but I’ll leave you with this.</p>
 <p>While Oso does a lot for you under the hood, it’s <em>what you can do</em> if you know
 it like a power user that empowers you.</p>
-</section>
-<section id="introduction">
+</div>
+<div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Auth is one of the more underrated features in software. Not only is it hard
 to do in a secure manner, it is also seldom appreciated when it is done well.
@@ -1021,8 +1025,8 @@ role. Easy-peasy.</p>
 code, time and again. Want to add a new feature only admins with <em>cat</em> in their
 username can perform on every third Sunday? Tough luck, you can’t do that.</p>
 <p>Or maybe you can.</p>
-</section>
-<section id="what-is-oso">
+</div>
+<div class="section" id="what-is-oso">
 <h2>What is Oso?<a class="headerlink" href="#what-is-oso" title="Permalink to this headline">¶</a></h2>
 <p>[Oso](<a class="reference external" href="https://osohq.com">https://osohq.com</a>) is a library that takes care of authorization. In
 coding terms, <cite>oso</cite> allows you to take code that looks like this:</p>
@@ -1062,8 +1066,8 @@ your policies <em>across</em> your organization: in <em>multiple</em> languages.
 to. Also, [/r/madlads](<a class="reference external" href="https://reddit.com/r/madlads">https://reddit.com/r/madlads</a>) is :point_right: that
 way.</p></li>
 </ol>
-</section>
-<section id="hello-oso">
+</div>
+<div class="section" id="hello-oso">
 <h2>Hello Oso<a class="headerlink" href="#hello-oso" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1093,7 +1097,7 @@ environment for your project.)</p>
 </pre></div>
 </div>
 <p>All examples from this post are available [here as a Github repository.](<a class="reference external" href="https://github.com/stonecharioteer/blog/tree/master/code/oso-examples">https://github.com/stonecharioteer/blog/tree/master/code/oso-examples</a>)</p>
-<section id="what-s-going-on">
+<div class="section" id="what-s-going-on">
 <h3>What’s Going On?<a class="headerlink" href="#what-s-going-on" title="Permalink to this headline">¶</a></h3>
 <p>The Oso documentation begins users with showing how you can integrate Oso
 into a web application written in native Python. However, I believe in a first
@@ -1127,7 +1131,7 @@ which has a matching pattern. (Again, don’t worry too much about this for now.
 And it finds the single policy we have defined and realizes that the policy
 matches and evaluates to <cite>True</cite> (this is on the Python side).</p>
 <p>Hence, the line <cite>print(“Hello from oso”)</cite> works.</p>
-<section id="what-happened">
+<div class="section" id="what-happened">
 <h4>What Happened?<a class="headerlink" href="#what-happened" title="Permalink to this headline">¶</a></h4>
 <p>Under the hood, Oso evaluates Polar rules and loads them into the <cite>oso.Oso</cite>
 object that we create. Those rules dictate the outcome of
@@ -1164,14 +1168,14 @@ or your own classes, but we’ll get to that later.</p>
 <p>For now, you need to just understand that <cite>oso</cite> essentially does a 1:1 match
 with the rules in your <cite>oso_object</cite> and evaluates <cite>is_allowed</cite> based on a
 suitable <cite>allow</cite> policy.</p>
-</section>
-</section>
-</section>
-<section id="oso-in-a-cli">
+</div>
+</div>
+</div>
+<div class="section" id="oso-in-a-cli">
 <h2>Oso in a CLI<a class="headerlink" href="#oso-in-a-cli" title="Permalink to this headline">¶</a></h2>
 <p>An interesting exercise to understand what you could do with Oso is to try building
 a command line tool.</p>
-<section id="using-argparse">
+<div class="section" id="using-argparse">
 <h3>Using argparse<a class="headerlink" href="#using-argparse" title="Permalink to this headline">¶</a></h3>
 <p>Let’s write a quick CLI using <cite>argparse</cite>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">argparse</span>
@@ -1331,8 +1335,8 @@ Repeat that to yourself. It is just a statement that evaluates to <cite>True</ci
 <p>_If_ you call <cite>oso.is_allowed</cite> with 2 arguments that match the parameters
 defined here, then the function <cite>oso.is_allowed</cite> will return a <cite>True</cite>. For
 <em>all</em> other scenarios, it will return <cite>False</cite>.</p>
-</section>
-<section id="writing-your-own-decorator-for-click">
+</div>
+<div class="section" id="writing-your-own-decorator-for-click">
 <h3>Writing your own decorator for Click<a class="headerlink" href="#writing-your-own-decorator-for-click" title="Permalink to this headline">¶</a></h3>
 <p>[Click](<a class="reference external" href="https://click.palletsprojects.com/en/8.0.x/">https://click.palletsprojects.com/en/8.0.x/</a>) is one of my favourite CLI
 tools. I’ve built several tools using it and I’ve found that it makes me more
@@ -1348,9 +1352,9 @@ Install it using:</p>
 <span class="linenos">4</span><span class="nd">@click</span><span class="o">.</span>
 </pre></div>
 </div>
-</section>
-</section>
-<section id="where-s-the-server">
+</div>
+</div>
+<div class="section" id="where-s-the-server">
 <h2>Where’s the Server?<a class="headerlink" href="#where-s-the-server" title="Permalink to this headline">¶</a></h2>
 <p>An easy misconception to make is that <cite>oso</cite> needs to be used with an API. It
 doesn’t.  In fact, you could use <cite>oso</cite> for regular applications or scripts. If
@@ -1367,8 +1371,8 @@ getting icecream.</p>
 <p>However, one place where authorization is definitely needed is in a web app.
 That’s where <cite>oso</cite> was designed to be used, despite my proclivity to use it
 in hacked-up scripts.</p>
-</section>
-<section id="oso-and-flask">
+</div>
+<div class="section" id="oso-and-flask">
 <h2>Oso and Flask<a class="headerlink" href="#oso-and-flask" title="Permalink to this headline">¶</a></h2>
 <p><cite>oso</cite> is a very simple way to decide what a particular user can do <cite>Flask</cite>
 app. However, remember that <cite>oso</cite> doesn’t care how or if a user is
@@ -1376,7 +1380,7 @@ authenticated. You can <em>choose</em> to integrate it with a user session, but 
 is not really needed.</p>
 <p>Depending on how you use logins and user sessions, I’d recommend going through
 the following three sections separately.</p>
-<section id="with-a-barebones-flask-application">
+<div class="section" id="with-a-barebones-flask-application">
 <h3>With a barebones Flask application<a class="headerlink" href="#with-a-barebones-flask-application" title="Permalink to this headline">¶</a></h3>
 <p>Consider the following <cite>app.py</cite></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
@@ -1490,8 +1494,8 @@ paradigm</em>.  Understanding this enables you do do this:</p>
 spend some time thinking why or how they could use something like this.</p>
 <p>That being said, let’s get into implementing <cite>oso</cite> with a proper authenticated
 session.</p>
-</section>
-<section id="with-flask-login">
+</div>
+<div class="section" id="with-flask-login">
 <h3>With Flask-Login<a class="headerlink" href="#with-flask-login" title="Permalink to this headline">¶</a></h3>
 <p><cite>Flask-Login</cite> is a popular <cite>flask</cite> extension for creating logins. I recommend
 going through its official docs to understand how to set it up.</p>
@@ -1608,9 +1612,9 @@ http <a class="reference external" href="http://localhost:5000/login">http://loc
 <p>Note that <cite>http</cite> is how you use the <cite>httpie</cite> command. Please [check the docs to learn more.](<a class="reference external" href="https://httpie.io/docs">https://httpie.io/docs</a>)</p>
 </div>
 <p>This gives us the following response:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;this is a login-only route&quot;</span>
-<span class="p">}</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;this is a login-only route&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>This is now a login-only route. While that solves our purpose of whether a
@@ -1886,12 +1890,13 @@ docs fulfill that requirement.</p>
 I’m leaving yet another promise to write a long post on hooking into <cite>resource</cite>
 by forking Oso itself, but that’s for another day. Greg, when you see this,
 remind me to get to work on that :smiling_imp:.</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 <div class="section">
-       
+    
+  
 </div>
 
               </div>
@@ -1919,7 +1924,7 @@ remind me to get to work on that :smiling_imp:.</p>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     

@@ -4,8 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Web Application Security with secure.py" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="posts/2020/2020-11-11-web-application-security.html" />
@@ -31,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -180,8 +180,12 @@
             <!-- Only show if we have sidebars configured, else just a small margin  -->
             <div class="col-12 col-md-3 bd-sidebar">  
 <h2>
-   <i class="fa fa-calendar"></i>
-  11 November 2020 
+  Web Application Security with secure.py
+</h2>
+<hr />
+<h2>
+  <i class="fa fa-calendar"></i>
+  Nov 11, 2020 
 </h2>
 
 <ul>
@@ -302,7 +306,7 @@
   }
 </style>
 <ul class="ablog-cloud">
-         
+   
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/advent-of-code/">Advent of Code</a>
   </li>
@@ -423,7 +427,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/vagrant/">Vagrant</a>
   </li>
-          
+        
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/bangalore/">bangalore</a>
   </li>
@@ -647,7 +651,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/shelfie/">shelfie</a>
   </li>
-    
+      
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
   </li>
@@ -930,25 +934,25 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <section id="web-application-security-with-secure-py">
+                 <div class="section" id="web-application-security-with-secure-py">
 <h1>Web Application Security with secure.py<a class="headerlink" href="#web-application-security-with-secure-py" title="Permalink to this headline">¶</a></h1>
 <p>A common pitfall when developing web applications is not knowing how to design a safe application.
 <code class="docutils literal notranslate"><span class="pre">secure.py</span></code> is a great Python module that helps deal with the basic foundations of web application security.</p>
-<section id="goal">
+<div class="section" id="goal">
 <h2>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
 <p>In this post, I go through web application security, and how to use <code class="docutils literal notranslate"><span class="pre">secure.py</span></code> to address
 common pitfalls. Note that by web application security, I am not addressing authentication or database security.
 I mean secure web headers, predominantly, as defined by the <a class="reference external" href="https://owasp.org/www-project-secure-headers/">OWASP Secure Headers Project.</a></p>
-</section>
-<section id="owasp">
+</div>
+<div class="section" id="owasp">
 <h2>OWASP<a class="headerlink" href="#owasp" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference external" href="https://owasp.org/">Open Web Application Security Project®</a> (OWASP) is a nonprofit foundation that works to improve the security of software.
 It provides resources and guidelines about web application security, and holds educational and training conferences.</p>
 <p>If you’re concerning yourself with writing a web application, I highly recommend going through the OWASP guidelines
 on various topics related to web application security.</p>
 <p>This particular post will be centered around the OWASP guidelines on HTTP Headers. Reference links are at the bottom of the post.</p>
-</section>
-<section id="a-little-bit-about-http-headers">
+</div>
+<div class="section" id="a-little-bit-about-http-headers">
 <h2>A Little Bit About HTTP Headers<a class="headerlink" href="#a-little-bit-about-http-headers" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers">HTTP Headers</a> are the sort of things that don’t <em>often</em> concern developers. We don’t think about them, until we encounter
 some issue with Cross-Site Requests or something similar. However, knowledge of headers gives you a lot to think about.</p>
@@ -1057,8 +1061,8 @@ The document has moved
 <p>In the response you get from flask, the first <em>red flag</em> should be <code class="docutils literal notranslate"><span class="pre">Server:</span> <span class="pre">Werkzeug/1.0.1</span> <span class="pre">Python/3.8.5</span></code>. Why?</p>
 <p>This is telling any potential users of your API that your server is running on Werkzeug 1.0.1, using Python 3.8.5. Any malevolent user will just need to search for “vulnerabilities to exploit in Python 3.8.5” to get a list of ideas on how to bring down your app.</p>
 <p>This is where we segui into the OWASP guidelines.</p>
-</section>
-<section id="owasp-guidelines-on-secure-headers">
+</div>
+<div class="section" id="owasp-guidelines-on-secure-headers">
 <h2>OWASP Guidelines on Secure Headers<a class="headerlink" href="#owasp-guidelines-on-secure-headers" title="Permalink to this headline">¶</a></h2>
 <p>Open the <a class="reference external" href="https://owasp.org/www-project-secure-headers/">OWASP Secure Headers Project</a> and click on the <code class="docutils literal notranslate"><span class="pre">Response</span> <span class="pre">Headers</span></code> Tab. This displays the following list:</p>
 <ul class="simple">
@@ -1077,8 +1081,8 @@ The document has moved
 Explaining that is out of the scope of this post.</p>
 <p>However, it is important that you add these headers into your own application. While you could theoretically learn how to do that with the flask
 <code class="docutils literal notranslate"><span class="pre">app.after_request</span></code> hook and manually baking in the rules into that, there’s an easier way: use <code class="docutils literal notranslate"><span class="pre">secure.py</span></code>.</p>
-</section>
-<section id="secure-py">
+</div>
+<div class="section" id="secure-py">
 <h2><code class="docutils literal notranslate"><span class="pre">secure.py</span></code><a class="headerlink" href="#secure-py" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">secure.py</span></code> is a minimal Python library that offers a way to add secure headers by default. It is designed with the OWASP guidelines in tow, and it is constantly updated
 with the best practices baked in. The best part of it is that it is a uniform library that is agnostic of your framework, so Django devs, rejoice!</p>
@@ -1204,8 +1208,8 @@ Date: Wed, <span class="m">11</span> Nov <span class="m">2020</span> <span class
 </div>
 <p>As you can see, the <code class="docutils literal notranslate"><span class="pre">Server</span></code> has been set to <code class="docutils literal notranslate"><span class="pre">Secure</span></code>, and there is now a <code class="docutils literal notranslate"><span class="pre">Set-Cookie</span></code> header.</p>
 <p>Each header added by <code class="docutils literal notranslate"><span class="pre">secure</span></code> can be customized. I recommend <a class="reference external" href="https://secure.readthedocs.io/en/latest/index.html">reading the documentation</a> and deciding which to omit, if you feel that’s absolutely necessary.</p>
-</section>
-<section id="x-powered-by">
+</div>
+<div class="section" id="x-powered-by">
 <h2>X-Powered-By<a class="headerlink" href="#x-powered-by" title="Permalink to this headline">¶</a></h2>
 <p>There are some flask plugins that enable this particular header. While I am glad Flask (unlike electron) does not do this out of the box, I will say this.</p>
 <p><em>Do not, under any circumstances, advertise to your users what your API runs on.</em></p>
@@ -1213,8 +1217,8 @@ Date: Wed, <span class="m">11</span> Nov <span class="m">2020</span> <span class
 <p>Both of these are <em>stupid ideas</em>. The only reason why you would like to advertise the stack of your API within the header would be if your API
 is only accessed internally, by people you absolutely trust. Even then, developer documentation and access to the code base are better ideas.
 Using <code class="docutils literal notranslate"><span class="pre">X-Powered-By</span></code> should never be a good idea.</p>
-</section>
-<section id="httpie">
+</div>
+<div class="section" id="httpie">
 <h2><code class="docutils literal notranslate"><span class="pre">httpie</span></code><a class="headerlink" href="#httpie" title="Permalink to this headline">¶</a></h2>
 <p>While <code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-s</span> <span class="pre">-D</span> <span class="pre">-</span> <span class="pre">&lt;url&gt;</span></code> solves the header visibility problem, I also recommend using <code class="docutils literal notranslate"><span class="pre">httpie</span></code> if you’re looking for a more beginner-friendly tool.</p>
 <p><code class="docutils literal notranslate"><span class="pre">httpie</span></code> is installed by <code class="docutils literal notranslate"><span class="pre">pip</span></code>.</p>
@@ -1244,8 +1248,8 @@ X-XSS-Protection: <span class="m">1</span><span class="p">;</span> <span class="
 </pre></div>
 </div>
 <p>While this offers the same output, it also does this by default, and adds some nice colors to the output. Refer the documentation for more.</p>
-</section>
-<section id="references-and-additional-tools">
+</div>
+<div class="section" id="references-and-additional-tools">
 <h2>References and Additional Tools<a class="headerlink" href="#references-and-additional-tools" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p><a class="reference external" href="https://owasp.org/www-project-secure-headers/">OWASP Secure Headers Project</a></p></li>
@@ -1257,11 +1261,12 @@ X-XSS-Protection: <span class="m">1</span><span class="p">;</span> <span class="
 <li><p><a class="reference external" href="https://owasp.org/www-project-web-security-testing-guide/v41/">OWASP Web Security Testing Guide</a></p></li>
 <li><p><a class="reference external" href="https://owasp.org/www-project-top-ten/">OWASP Top 10 Web Application Security Risks</a></p></li>
 </ol>
-</section>
-</section>
+</div>
+</div>
 
 <div class="section">
-     
+    
+
 <div class="section">
   <span style="float: left">
      
@@ -1341,7 +1346,7 @@ X-XSS-Protection: <span class="m">1</span><span class="p">;</span> <span class="
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     

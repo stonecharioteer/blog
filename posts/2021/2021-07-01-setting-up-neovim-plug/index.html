@@ -4,8 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Setting up Neovim with Vim Plug and YouCompleteMe" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="posts/2021/2021-07-01-setting-up-neovim-plug.html" />
@@ -31,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -180,8 +180,12 @@
             <!-- Only show if we have sidebars configured, else just a small margin  -->
             <div class="col-12 col-md-3 bd-sidebar">  
 <h2>
-   <i class="fa fa-calendar"></i>
-  01 July 2021 
+  Setting up Neovim with Vim Plug and YouCompleteMe
+</h2>
+<hr />
+<h2>
+  <i class="fa fa-calendar"></i>
+  Jul 01, 2021 
 </h2>
 
 <ul>
@@ -296,7 +300,7 @@
   }
 </style>
 <ul class="ablog-cloud">
-         
+   
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/advent-of-code/">Advent of Code</a>
   </li>
@@ -417,7 +421,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/vagrant/">Vagrant</a>
   </li>
-          
+        
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/bangalore/">bangalore</a>
   </li>
@@ -641,7 +645,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/shelfie/">shelfie</a>
   </li>
-    
+      
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
   </li>
@@ -901,7 +905,7 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <section id="setting-up-neovim-with-vim-plug-and-youcompleteme">
+                 <div class="section" id="setting-up-neovim-with-vim-plug-and-youcompleteme">
 <h1>Setting up Neovim with Vim Plug and YouCompleteMe<a class="headerlink" href="#setting-up-neovim-with-vim-plug-and-youcompleteme" title="Permalink to this headline">¶</a></h1>
 <p>I’m moving to neovim for my primary editing purposes. VSCode has served me
 well, but I’m growing wearing of its growing pains. Some extensions don’t work
@@ -914,21 +918,21 @@ problems that I didn’t delve into.</p>
 didn’t work for me. I am also very pedantic about messing with global python
 installations, since some of the plugins usually recommend installing
 packages willy-nilly in the global python install.</p>
-<section id="installing-neovim">
+<div class="section" id="installing-neovim">
 <h2>Installing Neovim<a class="headerlink" href="#installing-neovim" title="Permalink to this headline">¶</a></h2>
 <p>I’ve downloaded the latest development version of neovim from the website.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo mv ~/Downloads/nvim.AppImage /usr/bin/nvim
 </pre></div>
 </div>
-</section>
-<section id="configuration">
+</div>
+<div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <p>My dotfiles, as always, are
 <a class="reference external" href="https://github.com/stonecharioteer.com/jarl">here</a>.
 The README.md documents everything therein, but I’m taking the time here to
 talk about a particular problem I had personally when setting up YouCompleteMe.</p>
-</section>
-<section id="installing-vim-plug">
+</div>
+<div class="section" id="installing-vim-plug">
 <h2>Installing Vim Plug<a class="headerlink" href="#installing-vim-plug" title="Permalink to this headline">¶</a></h2>
 <p>I use <a class="reference external" href="https://github.com/junegunn/vim-plug">vim-plug</a> as my package manager of
 choice.</p>
@@ -937,8 +941,8 @@ choice.</p>
 </pre></div>
 </div>
 <p>The Plugins I’ve chosen are listed in the README of the github repository.</p>
-</section>
-<section id="installing-youcompleteme">
+</div>
+<div class="section" id="installing-youcompleteme">
 <h2>Installing YouCompleteMe<a class="headerlink" href="#installing-youcompleteme" title="Permalink to this headline">¶</a></h2>
 <p>These instructions are valid for Manjaro Linux running the 5.13.0-AMD-znver2
 kernel, however they shouldn’t vary for any version of Linux.</p>
@@ -973,16 +977,17 @@ folder.</p>
 symlink the system’s <code class="docutils literal notranslate"><span class="pre">libstdc++.so.6</span></code> file into this folder. This file is usually
 in <code class="docutils literal notranslate"><span class="pre">/usr/lib64</span></code>.</p>
 <p>Ensure you have the latest <code class="docutils literal notranslate"><span class="pre">glibc</span></code> package installed on your machine.</p>
-</section>
-<section id="note">
+</div>
+<div class="section" id="note">
 <h2>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h2>
 <p>This post is rather esoteric for a problem that I’ve faced just now. I thought
 I’d document it because I’m prone to forget how I fixed this.</p>
-</section>
-</section>
+</div>
+</div>
 
 <div class="section">
-     
+    
+
 <div class="section">
   <span style="float: left">
      
@@ -1062,7 +1067,7 @@ I’d document it because I’m prone to forget how I fixed this.</p>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     
