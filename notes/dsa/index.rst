@@ -13,3 +13,9 @@ Data Structures and Algorithms
    This section will contain my implementations and notes on data structures
    and algorithms. I'm mainly targetting Python and *may* extend my
    implementations to other languages, if I get the time.
+
+
+.. toctree:: Sections
+   :maxdepth: 1
+
+   linked-lists
