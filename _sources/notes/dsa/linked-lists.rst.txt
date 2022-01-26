@@ -109,7 +109,7 @@ Printing Each Item of a Linked List
                :linenos:
 
 .. }}}
-.. {{{ Summing a Linked List }}}
+.. {{{ Summing a Linked List
 ----------------------------------
 Summing a Linked List
 ----------------------------------
@@ -150,6 +150,47 @@ Summing a Linked List
                :language: javascript
                :linenos:
 
+.. }}}
+.. {{{ Reverse Linked List
+=============================
+Reverse Linked List
+=============================
+.. tabs::
+
+   .. group-tab:: Python
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/python/reverse_iterative.py
+               :language: python
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/python/reverse_recursive.py
+               :language: python
+               :linenos:
+
+
+   .. group-tab:: Javascript
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/reverse_iterative.js
+               :language: javascript
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/reverse_recursive.js
+               :language: javascript
+               :linenos:
 .. }}}
 .. {{{ Finding a value in a linked list
 -------------------------------------

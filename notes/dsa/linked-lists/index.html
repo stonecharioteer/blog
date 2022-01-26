@@ -810,45 +810,59 @@ Interviews</a>
 
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#definition-of-a-node">
-   Definition of a Node
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Linked Lists
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definition-of-a-node">
+     Definition of a Node
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-a-linked-list">
+     Creating a Linked List
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#printing-each-item-of-a-linked-list">
+     Printing Each Item of a Linked List
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#summing-a-linked-list">
+     Summing a Linked List
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#creating-a-linked-list">
-   Creating a Linked List
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reverse-linked-list">
+   Reverse Linked List
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#printing-each-item-of-a-linked-list">
-   Printing Each Item of a Linked List
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#summing-a-linked-list">
-   Summing a Linked List
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#finding-a-value-in-a-linked-list">
-   Finding a Value in a Linked List
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#get-node-value-at-index">
-   Get Node value at Index
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#reversing-the-order-of-a-linked-list">
-   Reversing the Order of a Linked List
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#zipping-two-linked-lists">
-   Zipping Two Linked Lists
-  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finding-a-value-in-a-linked-list">
+     Finding a Value in a Linked List
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#get-node-value-at-index">
+     Get Node value at Index
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reversing-the-order-of-a-linked-list">
+     Reversing the Order of a Linked List
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zipping-two-linked-lists">
+     Zipping Two Linked Lists
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -1063,11 +1077,69 @@ Interviews</a>
 </div></div>
 </div></div>
 </div>
+</div>
+<div class="section" id="reverse-linked-list">
+<h1>Reverse Linked List<a class="headerlink" href="#reverse-linked-list" title="Permalink to this headline">¶</a></h1>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-10-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-10-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-10-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-10-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-10-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-10-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-11-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-11-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-11-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-11-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-11-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-11-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">def</span> <span class="nf">reverse_linked_list</span><span class="p">(</span><span class="n">head</span><span class="p">):</span>
+<span class="linenos"> 2</span>    <span class="sd">&quot;&quot;&quot;Reverse the items in a linked list and return the new head&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span>    <span class="n">current_node</span> <span class="o">=</span> <span class="n">head</span>
+<span class="linenos"> 4</span>    <span class="n">previous_node</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="linenos"> 5</span>    <span class="k">while</span> <span class="n">current_node</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos"> 6</span>        <span class="n">next_node</span> <span class="o">=</span> <span class="n">current_node</span><span class="o">.</span><span class="n">next</span>
+<span class="linenos"> 7</span>        <span class="n">current_node</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">previous_node</span>
+<span class="linenos"> 8</span>        <span class="n">previous_node</span> <span class="o">=</span> <span class="n">current_node</span>
+<span class="linenos"> 9</span>        <span class="n">current_node</span> <span class="o">=</span> <span class="n">next_node</span>
+<span class="linenos">10</span>    <span class="k">return</span> <span class="n">previous_node</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-11-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-11-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">reverse_linked_list</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">prev</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="linenos">2</span>    <span class="sd">&quot;&quot;&quot;Reverses a linked list recursively&quot;&quot;&quot;</span>
+<span class="linenos">3</span>    <span class="k">if</span> <span class="n">head</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">4</span>        <span class="k">return</span> <span class="n">prev</span>
+<span class="linenos">5</span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos">6</span>        <span class="nb">next</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">next</span>
+<span class="linenos">7</span>        <span class="n">head</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">prev</span>
+<span class="linenos">8</span>        <span class="k">return</span> <span class="n">reverse_linked_list</span><span class="p">(</span><span class="nb">next</span><span class="p">,</span> <span class="n">head</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+</div><div aria-labelledby="tab-10-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-10-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-12-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-12-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-12-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-12-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-12-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-12-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/*</span>
+<span class="linenos"> 2</span><span class="cm">    * Reverses a linked list and returns the new head.</span>
+<span class="linenos"> 3</span><span class="cm">    */</span>
+<span class="linenos"> 4</span><span class="kd">function</span> <span class="nx">reverseLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 5</span>    <span class="kd">let</span> <span class="nx">previous</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="linenos"> 6</span>    <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="nx">head</span><span class="p">;</span>
+<span class="linenos"> 7</span>    <span class="k">while</span> <span class="p">(</span><span class="nx">current</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 8</span>        <span class="kd">let</span> <span class="nx">next</span> <span class="o">=</span> <span class="nx">head</span><span class="p">.</span><span class="nx">next</span><span class="p">;</span>
+<span class="linenos"> 9</span>        <span class="nx">current</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">previous</span><span class="p">;</span>
+<span class="linenos">10</span>        <span class="nx">previous</span> <span class="o">=</span> <span class="nx">current</span><span class="p">;</span>
+<span class="linenos">11</span>        <span class="nx">current</span> <span class="o">=</span> <span class="nx">next</span><span class="p">;</span>
+<span class="linenos">12</span>    <span class="p">}</span>
+<span class="linenos">13</span>    <span class="k">return</span> <span class="nx">previous</span><span class="p">;</span>
+<span class="linenos">14</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-12-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-12-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cm">/*</span>
+<span class="linenos">2</span><span class="cm">    * Reverses a linked list recursively and returns the head</span>
+<span class="linenos">3</span><span class="cm">    */</span>
+<span class="linenos">4</span><span class="kd">function</span> <span class="nx">reverseLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">prev</span><span class="o">=</span><span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos">5</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">head</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="nx">prev</span><span class="p">;</span>
+<span class="linenos">6</span>    <span class="kd">const</span> <span class="nx">next</span> <span class="o">=</span> <span class="nx">head</span><span class="p">.</span><span class="nx">next</span><span class="p">;</span>
+<span class="linenos">7</span>    <span class="nx">head</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">prev</span><span class="p">;</span>
+<span class="linenos">8</span>    <span class="k">return</span> <span class="nx">reverseLinkedList</span><span class="p">(</span><span class="nx">next</span><span class="p">,</span> <span class="nx">head</span><span class="p">);</span>
+<span class="linenos">9</span><span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+</div></div>
 <div class="section" id="finding-a-value-in-a-linked-list">
 <h2>Finding a Value in a Linked List<a class="headerlink" href="#finding-a-value-in-a-linked-list" title="Permalink to this headline">¶</a></h2>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-10-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-10-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-10-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-10-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-10-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-10-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-11-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-11-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-11-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-11-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-11-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-11-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">find_iterative</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-13-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-13-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-13-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-13-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-13-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-13-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-14-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-14-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-14-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-14-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-14-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-14-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">find_iterative</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="sd">&quot;&quot;&quot;Find a target value in the linked list&quot;&quot;&quot;</span>
 <span class="linenos">3</span>    <span class="k">while</span> <span class="n">head</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos">4</span>        <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="n">head</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
@@ -1076,7 +1148,7 @@ Interviews</a>
 <span class="linenos">7</span>    <span class="k">return</span> <span class="kc">False</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-11-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-11-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">find_linked_list</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+</div><div aria-labelledby="tab-14-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-14-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">find_linked_list</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="k">if</span> <span class="n">head</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="n">value</span><span class="p">:</span>
 <span class="linenos">3</span>        <span class="k">return</span> <span class="kc">True</span>
 <span class="linenos">4</span>    <span class="k">if</span> <span class="n">head</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
@@ -1085,8 +1157,8 @@ Interviews</a>
 </pre></div>
 </div>
 </div></div>
-</div><div aria-labelledby="tab-10-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-10-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-12-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-12-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-12-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-12-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-12-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-12-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">import</span> <span class="p">{</span><span class="nx">Node</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;./definition.js&quot;</span>
+</div><div aria-labelledby="tab-13-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-13-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-15-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-15-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-15-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-15-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-15-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-15-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">import</span> <span class="p">{</span><span class="nx">Node</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;./definition.js&quot;</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span><span class="kd">function</span> <span class="nx">findLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
 <span class="linenos"> 4</span>    <span class="k">while</span> <span class="p">(</span><span class="nx">head</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
@@ -1099,7 +1171,7 @@ Interviews</a>
 <span class="linenos">11</span><span class="p">}</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-12-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-12-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">function</span> <span class="nx">findLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+</div><div aria-labelledby="tab-15-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-15-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">function</span> <span class="nx">findLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
 <span class="linenos">2</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">head</span><span class="p">.</span><span class="nx">value</span> <span class="o">===</span> <span class="nx">value</span><span class="p">){</span>
 <span class="linenos">3</span>        <span class="k">return</span> <span class="kc">true</span>
 <span class="linenos">4</span>    <span class="p">}</span>
@@ -1116,8 +1188,8 @@ Interviews</a>
 <div class="section" id="get-node-value-at-index">
 <h2>Get Node value at Index<a class="headerlink" href="#get-node-value-at-index" title="Permalink to this headline">¶</a></h2>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-13-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-13-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-13-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-13-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-13-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-13-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-14-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-14-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-14-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-14-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-14-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-14-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">get_node_value</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-16-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-16-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-16-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-16-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-16-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-16-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-17-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-17-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-17-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-17-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-17-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-17-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">get_node_value</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos">3</span>    <span class="k">while</span> <span class="n">head</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos">4</span>        <span class="k">if</span> <span class="n">count</span> <span class="o">==</span> <span class="n">index</span><span class="p">:</span>
@@ -1127,7 +1199,7 @@ Interviews</a>
 <span class="linenos">8</span>    <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2"> doesn&#39;t have any value!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-14-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-14-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">get_node_value</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+</div><div aria-labelledby="tab-17-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-17-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">get_node_value</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="k">if</span> <span class="n">head</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
 <span class="linenos">3</span>        <span class="k">return</span> <span class="kc">None</span>
 <span class="linenos">4</span>    <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -1136,8 +1208,8 @@ Interviews</a>
 </pre></div>
 </div>
 </div></div>
-</div><div aria-labelledby="tab-13-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-13-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-15-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-15-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-15-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-15-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-15-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-15-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">function</span> <span class="nx">getNodeValue</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+</div><div aria-labelledby="tab-16-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-16-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-18-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-18-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-18-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-18-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-18-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-18-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">function</span> <span class="nx">getNodeValue</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
 <span class="linenos">2</span>    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">index</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
 <span class="linenos">3</span>        <span class="k">if</span> <span class="p">(</span><span class="nx">head</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
 <span class="linenos">4</span>
@@ -1148,7 +1220,7 @@ Interviews</a>
 <span class="linenos">9</span><span class="p">}</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-15-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-15-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">function</span> <span class="nx">getNodeValue</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+</div><div aria-labelledby="tab-18-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-18-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">function</span> <span class="nx">getNodeValue</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
 <span class="linenos">2</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">head</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
 <span class="linenos">3</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">index</span> <span class="o">===</span> <span class="mf">0</span><span class="p">)</span> <span class="k">return</span> <span class="nx">head</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
 <span class="linenos">4</span>    <span class="k">return</span> <span class="nx">getNodeValue</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">index</span><span class="o">-</span><span class="mf">1</span><span class="p">);</span>
@@ -1160,27 +1232,6 @@ Interviews</a>
 </div>
 <div class="section" id="reversing-the-order-of-a-linked-list">
 <h2>Reversing the Order of a Linked List<a class="headerlink" href="#reversing-the-order-of-a-linked-list" title="Permalink to this headline">¶</a></h2>
-<div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-16-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-16-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-16-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-16-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-16-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-16-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-17-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-17-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-17-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-17-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-17-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-17-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div><div aria-labelledby="tab-17-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-17-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div></div>
-</div><div aria-labelledby="tab-16-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-16-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-18-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-18-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-18-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-18-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-18-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-18-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div><div aria-labelledby="tab-18-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-18-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div></div>
-</div></div>
-</div>
-<div class="section" id="zipping-two-linked-lists">
-<h2>Zipping Two Linked Lists<a class="headerlink" href="#zipping-two-linked-lists" title="Permalink to this headline">¶</a></h2>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-19-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-19-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-19-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-19-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-19-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-19-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-20-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-20-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-20-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-20-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-20-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-20-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
@@ -1195,6 +1246,27 @@ Interviews</a>
 </pre></div>
 </div>
 </div><div aria-labelledby="tab-21-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-21-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+</div></div>
+</div>
+<div class="section" id="zipping-two-linked-lists">
+<h2>Zipping Two Linked Lists<a class="headerlink" href="#zipping-two-linked-lists" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-22-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-22-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-22-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-22-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-22-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-22-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-23-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-23-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-23-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-23-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-23-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-23-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-23-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-23-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+</div><div aria-labelledby="tab-22-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-22-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-24-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-24-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-24-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-24-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-24-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-24-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-24-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-24-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></div>
