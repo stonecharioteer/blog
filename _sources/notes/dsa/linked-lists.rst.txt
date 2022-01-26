@@ -152,9 +152,9 @@ Summing a Linked List
 
 .. }}}
 .. {{{ Reverse Linked List
-=============================
+--------------------
 Reverse Linked List
-=============================
+--------------------
 .. tabs::
 
    .. group-tab:: Python
