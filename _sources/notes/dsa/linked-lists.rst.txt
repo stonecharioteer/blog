@@ -24,6 +24,7 @@ Definition of a Node
          :language: javascript
          :linenos:
 
+.. }}}
 .. {{{ Creating a Linked List
 -----------------------
 Creating a Linked List
@@ -104,6 +105,132 @@ Printing Each Item of a Linked List
          .. group-tab:: Recursive
 
             .. literalinclude:: /code/dsa/linked_lists/javascript/printing_recursive.js
+               :language: javascript
+               :linenos:
+
+.. }}}
+.. {{{ Summing a Linked List }}}
+----------------------------------
+Summing a Linked List
+----------------------------------
+.. tabs::
+
+   .. group-tab:: Python
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/python/sum_list_iterative.py
+               :language: python
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/python/sum_list_recursive.py
+               :language: python
+               :linenos:
+
+
+   .. group-tab:: Javascript
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/sum_list_iterative.js
+               :language: javascript
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/sum_list_recursive.js
+               :language: javascript
+               :linenos:
+
+.. }}}
+.. {{{ Finding a value in a linked list
+-------------------------------------
+Finding a Value in a Linked List
+-------------------------------------
+.. tabs::
+
+   .. group-tab:: Python
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/python/find_iterative.py
+               :language: python
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/python/find_recursive.py
+               :language: python
+               :linenos:
+
+
+   .. group-tab:: Javascript
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/find_iterative.js
+               :language: javascript
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/find_recursive.js
+               :language: javascript
+               :linenos:
+
+.. }}}
+.. {{{ Get Node Value
+----------------------------
+Get Node value at Index
+----------------------------
+.. tabs::
+
+   .. group-tab:: Python
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/python/get_node_value_iterative.py
+               :language: python
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/python/get_node_value_recursive.py
+               :language: python
+               :linenos:
+
+
+   .. group-tab:: Javascript
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/get_node_value_iterative.js
+               :language: javascript
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/get_node_value_recursive.js
                :language: javascript
                :linenos:
 

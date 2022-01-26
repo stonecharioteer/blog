@@ -826,6 +826,21 @@ Interviews</a>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summing-a-linked-list">
+   Summing a Linked List
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finding-a-value-in-a-linked-list">
+   Finding a Value in a Linked List
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#get-node-value-at-index">
+   Get Node value at Index
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#reversing-the-order-of-a-linked-list">
    Reversing the Order of a Linked List
   </a>
@@ -889,19 +904,24 @@ Interviews</a>
 <h2>Creating a Linked List<a class="headerlink" href="#creating-a-linked-list" title="Permalink to this headline">¶</a></h2>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-1-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-1-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-1-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-2-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-2-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-2-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">.definition</span> <span class="kn">import</span> <span class="n">Node</span>
-<span class="linenos"> 2</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-2-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-2-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-2-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">os</span>
+<span class="linenos"> 2</span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="linenos"> 3</span>
-<span class="linenos"> 4</span><span class="k">def</span> <span class="nf">create_linked_list</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
-<span class="linenos"> 5</span>    <span class="sd">&quot;&quot;&quot;Creates a linked list from a list of items&quot;&quot;&quot;</span>
-<span class="linenos"> 6</span>    <span class="n">head</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">array</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="linenos"> 7</span>    <span class="n">current</span> <span class="o">=</span> <span class="n">head</span>
-<span class="linenos"> 8</span>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-<span class="linenos"> 9</span>        <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">array</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
-<span class="linenos">10</span>            <span class="n">next_item</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">val</span><span class="p">)</span>
-<span class="linenos">11</span>            <span class="n">current</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">next_item</span>
-<span class="linenos">12</span>            <span class="n">current</span> <span class="o">=</span> <span class="n">next_item</span>
-<span class="linenos">13</span>    <span class="k">return</span> <span class="n">head</span>
+<span class="linenos"> 4</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="kn">from</span> <span class="nn">definition</span> <span class="kn">import</span> <span class="n">Node</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="k">def</span> <span class="nf">create_linked_list</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+<span class="linenos">10</span>    <span class="sd">&quot;&quot;&quot;Creates a linked list from a list of items&quot;&quot;&quot;</span>
+<span class="linenos">11</span>    <span class="n">head</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">array</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="linenos">12</span>    <span class="n">current</span> <span class="o">=</span> <span class="n">head</span>
+<span class="linenos">13</span>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+<span class="linenos">14</span>        <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">array</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+<span class="linenos">15</span>            <span class="n">next_item</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">val</span><span class="p">)</span>
+<span class="linenos">16</span>            <span class="n">current</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">next_item</span>
+<span class="linenos">17</span>            <span class="n">current</span> <span class="o">=</span> <span class="n">next_item</span>
+<span class="linenos">18</span>    <span class="k">return</span> <span class="n">head</span>
 </pre></div>
 </div>
 </div><div aria-labelledby="tab-2-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
@@ -933,13 +953,19 @@ Interviews</a>
 <h2>Printing Each Item of a Linked List<a class="headerlink" href="#printing-each-item-of-a-linked-list" title="Permalink to this headline">¶</a></h2>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-4-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-4-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-4-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-4-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-5-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-5-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-5-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-5-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-5-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-5-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">print_linked_list</span><span class="p">(</span><span class="n">head</span><span class="p">):</span>
-<span class="linenos">2</span>    <span class="sd">&quot;&quot;&quot;Iteratively prints all the items in a linked list, given the head</span>
-<span class="linenos">3</span><span class="sd">    node&quot;&quot;&quot;</span>
-<span class="linenos">4</span>    <span class="n">current</span> <span class="o">=</span> <span class="n">head</span>
-<span class="linenos">5</span>    <span class="k">while</span> <span class="n">current</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="linenos">6</span>        <span class="nb">print</span><span class="p">(</span><span class="n">current</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
-<span class="linenos">7</span>        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">next</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-5-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-5-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-5-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-5-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-5-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-5-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">os</span>
+<span class="linenos"> 2</span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="k">def</span> <span class="nf">print_linked_list</span><span class="p">(</span><span class="n">head</span><span class="p">):</span>
+<span class="linenos"> 8</span>    <span class="sd">&quot;&quot;&quot;Iteratively prints all the items in a linked list, given the head</span>
+<span class="linenos"> 9</span><span class="sd">    node&quot;&quot;&quot;</span>
+<span class="linenos">10</span>    <span class="n">current</span> <span class="o">=</span> <span class="n">head</span>
+<span class="linenos">11</span>    <span class="k">while</span> <span class="n">current</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">12</span>        <span class="nb">print</span><span class="p">(</span><span class="n">current</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<span class="linenos">13</span>        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span><span class="o">.</span><span class="n">next</span>
 </pre></div>
 </div>
 </div><div aria-labelledby="tab-5-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-5-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">print_linked_list</span><span class="p">(</span><span class="n">head</span><span class="p">):</span>
@@ -974,22 +1000,180 @@ Interviews</a>
 </div></div>
 </div></div>
 </div>
-<div class="section" id="reversing-the-order-of-a-linked-list">
-<h2>Reversing the Order of a Linked List<a class="headerlink" href="#reversing-the-order-of-a-linked-list" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="summing-a-linked-list">
+<h2>Summing a Linked List<a class="headerlink" href="#summing-a-linked-list" title="Permalink to this headline">¶</a></h2>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-7-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-7-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-7-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-7-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-7-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-7-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-8-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-8-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-8-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-8-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-8-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-8-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-8-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-8-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-8-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-8-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-8-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-8-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="sd">&quot;&quot;&quot;Sum linked List Iterative method&quot;&quot;&quot;</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="k">def</span> <span class="nf">sum_linked_list</span><span class="p">(</span><span class="n">head</span><span class="p">):</span>
+<span class="linenos"> 5</span>    <span class="sd">&quot;&quot;&quot;Iteratively gets the sum of all items in a linked list&quot;&quot;&quot;</span>
+<span class="linenos"> 6</span>    <span class="n">sum_list</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos"> 7</span>    <span class="k">while</span> <span class="n">head</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos"> 8</span>        <span class="n">sum_list</span> <span class="o">+=</span> <span class="n">head</span><span class="o">.</span><span class="n">value</span>
+<span class="linenos"> 9</span>        <span class="n">head</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">next</span>
+<span class="linenos">10</span>    <span class="k">return</span> <span class="n">sum_list</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-8-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-8-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
+</div><div aria-labelledby="tab-8-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-8-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">os</span>
+<span class="linenos"> 2</span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="kn">from</span> <span class="nn">definition</span> <span class="kn">import</span> <span class="n">Node</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="k">def</span> <span class="nf">sum_linked_list</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">sum_list</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<span class="linenos">10</span>    <span class="k">if</span> <span class="n">head</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">11</span>        <span class="k">return</span> <span class="mi">0</span>
+<span class="linenos">12</span>    <span class="n">sum_list</span> <span class="o">+=</span> <span class="n">head</span><span class="o">.</span><span class="n">value</span>
+<span class="linenos">13</span>    <span class="n">sum_list</span> <span class="o">+=</span> <span class="n">sum_linked_list</span><span class="p">(</span><span class="n">head</span><span class="o">.</span><span class="n">next</span><span class="p">)</span>
+<span class="linenos">14</span>    <span class="k">return</span> <span class="n">sum_list</span>
 </pre></div>
 </div>
 </div></div>
 </div><div aria-labelledby="tab-7-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-7-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-9-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-9-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-9-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-9-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-9-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-9-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-9-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-9-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-9-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-9-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-9-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-9-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">import</span> <span class="p">{</span><span class="nx">Node</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;./definition.js&quot;</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kd">function</span> <span class="nx">sumLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 4</span>    <span class="kd">let</span> <span class="nx">sumList</span> <span class="o">=</span> <span class="mf">0</span>
+<span class="linenos"> 5</span>    <span class="k">while</span> <span class="p">(</span><span class="nx">head</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 6</span>        <span class="nx">sumList</span> <span class="o">+=</span> <span class="nx">head</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="linenos"> 7</span>        <span class="nx">head</span> <span class="o">=</span> <span class="nx">head</span><span class="p">.</span><span class="nx">next</span><span class="p">;</span>
+<span class="linenos"> 8</span>    <span class="p">}</span>
+<span class="linenos"> 9</span>    <span class="k">return</span> <span class="nx">sumList</span>
+<span class="linenos">10</span><span class="p">}</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-9-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-9-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</div><div aria-labelledby="tab-9-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-9-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">import</span> <span class="p">{</span><span class="nx">Node</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;./definition.js&quot;</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="kd">function</span> <span class="nx">sumLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">sum</span><span class="o">=</span><span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 5</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">head</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 6</span>        <span class="k">return</span> <span class="mf">0</span>
+<span class="linenos"> 7</span>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="linenos"> 8</span>        <span class="nx">sum</span> <span class="o">+=</span> <span class="nx">head</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="linenos"> 9</span>        <span class="nx">sum</span> <span class="o">+=</span> <span class="nx">sumLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">.</span><span class="nx">next</span><span class="p">);</span>
+<span class="linenos">10</span>        <span class="k">return</span> <span class="nx">sum</span>
+<span class="linenos">11</span>    <span class="p">}</span>
+<span class="linenos">12</span><span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+</div></div>
+</div>
+<div class="section" id="finding-a-value-in-a-linked-list">
+<h2>Finding a Value in a Linked List<a class="headerlink" href="#finding-a-value-in-a-linked-list" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-10-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-10-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-10-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-10-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-10-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-10-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-11-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-11-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-11-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-11-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-11-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-11-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">find_iterative</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="linenos">2</span>    <span class="sd">&quot;&quot;&quot;Find a target value in the linked list&quot;&quot;&quot;</span>
+<span class="linenos">3</span>    <span class="k">while</span> <span class="n">head</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">4</span>        <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="n">head</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
+<span class="linenos">5</span>            <span class="k">return</span> <span class="kc">True</span>
+<span class="linenos">6</span>        <span class="n">head</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">next</span>
+<span class="linenos">7</span>    <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-11-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-11-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">find_linked_list</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="linenos">2</span>    <span class="k">if</span> <span class="n">head</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="n">value</span><span class="p">:</span>
+<span class="linenos">3</span>        <span class="k">return</span> <span class="kc">True</span>
+<span class="linenos">4</span>    <span class="k">if</span> <span class="n">head</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">5</span>        <span class="k">return</span> <span class="kc">True</span>
+<span class="linenos">6</span>    <span class="k">return</span> <span class="n">find_linked_list</span><span class="p">(</span><span class="n">head</span><span class="o">.</span><span class="n">next</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+</div><div aria-labelledby="tab-10-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-10-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-12-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-12-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-12-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-12-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-12-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-12-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">import</span> <span class="p">{</span><span class="nx">Node</span><span class="p">}</span> <span class="kr">from</span> <span class="s2">&quot;./definition.js&quot;</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kd">function</span> <span class="nx">findLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 4</span>    <span class="k">while</span> <span class="p">(</span><span class="nx">head</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 5</span>        <span class="k">if</span> <span class="p">(</span><span class="nx">head</span><span class="p">.</span><span class="nx">value</span> <span class="o">==</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 6</span>            <span class="k">return</span> <span class="kc">true</span>
+<span class="linenos"> 7</span>        <span class="p">}</span>
+<span class="linenos"> 8</span>        <span class="nx">head</span> <span class="o">=</span> <span class="nx">head</span><span class="p">.</span><span class="nx">next</span>
+<span class="linenos"> 9</span>    <span class="p">}</span>
+<span class="linenos">10</span>    <span class="k">return</span> <span class="kc">false</span>
+<span class="linenos">11</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-12-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-12-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">function</span> <span class="nx">findLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos">2</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">head</span><span class="p">.</span><span class="nx">value</span> <span class="o">===</span> <span class="nx">value</span><span class="p">){</span>
+<span class="linenos">3</span>        <span class="k">return</span> <span class="kc">true</span>
+<span class="linenos">4</span>    <span class="p">}</span>
+<span class="linenos">5</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">head</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos">6</span>        <span class="k">return</span> <span class="kc">false</span>
+<span class="linenos">7</span>    <span class="p">}</span>
+<span class="linenos">8</span>    <span class="k">return</span> <span class="nx">findLinkedList</span><span class="p">(</span><span class="nx">head</span><span class="p">.</span><span class="nx">next</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
+<span class="linenos">9</span><span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+</div></div>
+</div>
+<div class="section" id="get-node-value-at-index">
+<h2>Get Node value at Index<a class="headerlink" href="#get-node-value-at-index" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-13-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-13-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-13-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-13-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-13-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-13-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-14-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-14-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-14-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-14-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-14-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-14-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">get_node_value</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+<span class="linenos">2</span>    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos">3</span>    <span class="k">while</span> <span class="n">head</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">4</span>        <span class="k">if</span> <span class="n">count</span> <span class="o">==</span> <span class="n">index</span><span class="p">:</span>
+<span class="linenos">5</span>            <span class="k">return</span> <span class="n">head</span><span class="o">.</span><span class="n">value</span>
+<span class="linenos">6</span>        <span class="k">else</span><span class="p">:</span>
+<span class="linenos">7</span>            <span class="n">head</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">next</span>
+<span class="linenos">8</span>    <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2"> doesn&#39;t have any value!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-14-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-14-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">get_node_value</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+<span class="linenos">2</span>    <span class="k">if</span> <span class="n">head</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos">3</span>        <span class="k">return</span> <span class="kc">None</span>
+<span class="linenos">4</span>    <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos">5</span>        <span class="k">return</span> <span class="n">head</span><span class="o">.</span><span class="n">value</span>
+<span class="linenos">6</span>    <span class="k">return</span> <span class="n">get_node_value</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+</div><div aria-labelledby="tab-13-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-13-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-15-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-15-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button><button aria-controls="panel-15-UmVjdXJzaXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-15-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="-1">Recursive</button></div><div aria-labelledby="tab-15-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-15-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">function</span> <span class="nx">getNodeValue</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos">2</span>    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">index</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos">3</span>        <span class="k">if</span> <span class="p">(</span><span class="nx">head</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span>        <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">index</span><span class="p">)</span> <span class="k">return</span> <span class="nx">head</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="linenos">6</span>        <span class="nx">head</span> <span class="o">=</span> <span class="nx">head</span><span class="p">.</span><span class="nx">next</span><span class="p">;</span>
+<span class="linenos">7</span>    <span class="p">}</span>
+<span class="linenos">8</span>    <span class="k">throw</span> <span class="sb">`Index=</span><span class="si">${</span><span class="nx">index</span><span class="si">}</span><span class="sb"> not found`</span>
+<span class="linenos">9</span><span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-15-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-15-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kd">function</span> <span class="nx">getNodeValue</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos">2</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">head</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+<span class="linenos">3</span>    <span class="k">if</span> <span class="p">(</span><span class="nx">index</span> <span class="o">===</span> <span class="mf">0</span><span class="p">)</span> <span class="k">return</span> <span class="nx">head</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="linenos">4</span>    <span class="k">return</span> <span class="nx">getNodeValue</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span> <span class="nx">index</span><span class="o">-</span><span class="mf">1</span><span class="p">);</span>
+<span class="linenos">5</span><span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+</div></div>
+</div>
+<div class="section" id="reversing-the-order-of-a-linked-list">
+<h2>Reversing the Order of a Linked List<a class="headerlink" href="#reversing-the-order-of-a-linked-list" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-16-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-16-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-16-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-16-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-16-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-16-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-17-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-17-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-17-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-17-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-17-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-17-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-17-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-17-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+</div><div aria-labelledby="tab-16-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-16-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-18-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-18-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-18-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-18-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-18-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-18-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-18-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-18-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></div>
@@ -998,19 +1182,19 @@ Interviews</a>
 <div class="section" id="zipping-two-linked-lists">
 <h2>Zipping Two Linked Lists<a class="headerlink" href="#zipping-two-linked-lists" title="Permalink to this headline">¶</a></h2>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-10-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-10-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-10-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-10-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-10-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-10-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-11-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-11-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-11-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-11-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-11-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-11-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-19-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-19-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-19-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-19-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-19-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-19-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-20-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-20-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-20-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-20-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-20-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-20-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-11-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-11-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
+</div><div aria-labelledby="tab-20-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-20-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></div>
-</div><div aria-labelledby="tab-10-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-10-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-12-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-12-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-12-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-12-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-12-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-12-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</div><div aria-labelledby="tab-19-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-19-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-21-UmVjdXJzaXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-21-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tab" tabindex="0">Recursive</button><button aria-controls="panel-21-SXRlcmF0aXZl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-21-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="-1">Iterative</button></div><div aria-labelledby="tab-21-UmVjdXJzaXZl" class="sphinx-tabs-panel group-tab" id="panel-21-UmVjdXJzaXZl" name="UmVjdXJzaXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-12-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-12-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</div><div aria-labelledby="tab-21-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-21-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></div>
