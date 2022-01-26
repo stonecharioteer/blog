@@ -1,10 +1,11 @@
----
-layout: post
-date: Dec 11, 2019
-category: Health
-tags: hearing-loss
----
-# The Sound of Music
+:blogpost: true
+:date: Dec 11, 2019
+:category: Health
+:tags: Hearing Loss, Single-Sided Deafness
+.. _sshl-1:
+========================
+The Sound of Music
+========================
 
 I don't know the first thing about music.
 
@@ -166,4 +167,4 @@ you without you raising your voice.
 I am **deaf** in one ear. I can hear 50% of the world. I just cannot tell where
 the music comes from anymore.
 
-[Continued in part 2: No Leaf Clover.]({% post_url 2020-02-02-no-leaf-clover %})
+`Continued in part 2: No Leaf Clover. </posts/2020/2020-02-02-no-leaf-clover>`_
