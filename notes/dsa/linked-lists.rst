@@ -5,6 +5,15 @@ Linked Lists
 
 I'll be documenting implementations and operations using a linked list here.
 
+-----------------------------
+Resources
+-----------------------------
+
+Here are some resources I've found useful when learning about linked lists:
+
+1. `freeCodeCamp.org's Video <https://www.youtube.com/watch?v=Hj_rA0dhr2I>`_
+
+
 .. {{{ Definition of a node
 -----------------------------
 Definition of a Node
@@ -24,6 +33,7 @@ Definition of a Node
          :language: javascript
          :linenos:
 
+.. }}}
 .. {{{ Creating a Linked List
 -----------------------
 Creating a Linked List
@@ -108,82 +118,212 @@ Printing Each Item of a Linked List
                :linenos:
 
 .. }}}
-.. {{{ Reversing the Order of a Linked List
---------------------------------------
-Reversing the Order of a Linked List
---------------------------------------
-
+.. {{{ Summing a Linked List
+----------------------------------
+Summing a Linked List
+----------------------------------
 .. tabs::
 
    .. group-tab:: Python
 
       .. tabs::
 
-         .. group-tab:: Recursive
-
-            .. code-block:: python
-
-               print("hello, world")
-
          .. group-tab:: Iterative
 
-            .. code-block:: python
+            .. literalinclude:: /code/dsa/linked_lists/python/sum_list_iterative.py
+               :language: python
+               :linenos:
 
-               print("hello, world")
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/python/sum_list_recursive.py
+               :language: python
+               :linenos:
+
 
    .. group-tab:: Javascript
 
       .. tabs::
 
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/sum_list_iterative.js
+               :language: javascript
+               :linenos:
+
+
          .. group-tab:: Recursive
 
-            .. code-block:: javascript
+            .. literalinclude:: /code/dsa/linked_lists/javascript/sum_list_recursive.js
+               :language: javascript
+               :linenos:
 
-               console.log("Hello, world!")
+.. }}}
+.. {{{ Finding a value in a linked list
+-------------------------------------
+Finding a Value in a Linked List
+-------------------------------------
+.. tabs::
+
+   .. group-tab:: Python
+
+      .. tabs::
 
          .. group-tab:: Iterative
 
-            .. code-block:: javascript
+            .. literalinclude:: /code/dsa/linked_lists/python/find_iterative.py
+               :language: python
+               :linenos:
 
-               console.log("Hello, world!")
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/python/find_recursive.py
+               :language: python
+               :linenos:
+
+
+   .. group-tab:: Javascript
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/find_iterative.js
+               :language: javascript
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/find_recursive.js
+               :language: javascript
+               :linenos:
+
+.. }}}
+.. {{{ Get Node Value
+----------------------------
+Get Node value at Index
+----------------------------
+.. tabs::
+
+   .. group-tab:: Python
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/python/get_node_value_iterative.py
+               :language: python
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/python/get_node_value_recursive.py
+               :language: python
+               :linenos:
+
+
+   .. group-tab:: Javascript
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/get_node_value_iterative.js
+               :language: javascript
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/get_node_value_recursive.js
+               :language: javascript
+               :linenos:
+
+.. }}}
+.. {{{ Reverse Linked List
+--------------------
+Reverse Linked List
+--------------------
+.. tabs::
+
+   .. group-tab:: Python
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/python/reverse_iterative.py
+               :language: python
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/python/reverse_recursive.py
+               :language: python
+               :linenos:
+
+
+   .. group-tab:: Javascript
+
+      .. tabs::
+
+         .. group-tab:: Iterative
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/reverse_iterative.js
+               :language: javascript
+               :linenos:
+
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/reverse_recursive.js
+               :language: javascript
+               :linenos:
 .. }}}
 .. {{{ Zipping Two Linked Lists
 ---------------------------
 Zipping Two Linked Lists
 ---------------------------
-
 .. tabs::
 
    .. group-tab:: Python
 
       .. tabs::
 
-         .. group-tab:: Recursive
-
-            .. code-block:: python
-
-               print("hello, world")
-
          .. group-tab:: Iterative
 
-            .. code-block:: python
+            .. literalinclude:: /code/dsa/linked_lists/python/zip_iterative.py
+               :language: python
+               :linenos:
 
-               print("hello, world")
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/python/zip_recursive.py
+               :language: python
+               :linenos:
+
 
    .. group-tab:: Javascript
 
       .. tabs::
 
-         .. group-tab:: Recursive
-
-            .. code-block:: javascript
-
-               console.log("Hello, world!")
-
          .. group-tab:: Iterative
 
-            .. code-block:: javascript
+            .. literalinclude:: /code/dsa/linked_lists/javascript/zip_iterative.js
+               :language: javascript
+               :linenos:
 
-               console.log("Hello, world!")
+
+         .. group-tab:: Recursive
+
+            .. literalinclude:: /code/dsa/linked_lists/javascript/zip_recursive.js
+               :language: javascript
+               :linenos:
 
 .. }}}
