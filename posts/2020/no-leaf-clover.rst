@@ -1,17 +1,24 @@
----
-blogpost: true
-date: Feb 2, 2020
-tags: hearing-loss, snhl, life, health
-category: Life
----
-# No Leaf Clover
+:blogpost: true
+:date: Feb 2, 2020
+:tags: Hearing loss, Single-Sided Deafness
+:category: Health
 
-[Continued from Part 1: The Sound of Music.]({% post_url 2019-12-11-the-sound-of-music %})
-
-![Hearing Aids](/assets/images/posts/hearing-loss/hearing-aid.png)
+.. _sshl-2:
+=====================
+No Leaf Clover
+=====================
 
 I do not believe in luck. There is no such thing. Things happen and we must
 accept them or reject them. What we do defines us.
+
+.. note::
+
+    This post is `continued from Part 1: The Sound of Music </posts/2019/the-sound-of-music>`_
+
+
+.. image:: /assets/images/posts/hearing-loss/hearing-aid.png)
+   :alt: Hearing Loss
+
 
 I knew my left ear would not work again. I had it for 32 and a quarter years. I
 used it well. I have to make do for the rest of my life with one ear.
@@ -21,7 +28,7 @@ fool.
 
 I am not. I'm stating the truth. My left ear is **dead.**
 
-**And that's *okay.***
+*And that's *okay.**
 
 One month after the hearing loss I was scheduled to speak at PyCon India. It was
 something I had wanted to do for over a year. I wondered if I had to cancel now
@@ -164,8 +171,14 @@ However, that does not stop me. It does not have to.
 I picked up a “no leaf clover”. What I choose to do with it is how I define who
 I am.
 
----
+.. update:: 15 July, 2020
 
-**Update** : The hearing aid does not help me hear everything. It gives me *a sense* of sounds to my left. It's very, very low, because of how much nerve damage there has been to my ear. That has not dismayed me, and WFH is a blessing.
+    The hearing aid does not help me hear everything. It gives me *a
+    sense* of sounds to my left. It's very, very low, because of how much nerve
+    damage there has been to my ear. That has not dismayed me, and WFH is a
+    blessing.
 
-[Read the 1 Year update of my experience to understand more.](https://stonecharioteer.com/2020/09/01/ear-one.html)
+.. update:: 1 September, 2020
+
+    Read the `1 Year update </posts/2020/ear-one/>`_ of my experience to understand
+    more.
