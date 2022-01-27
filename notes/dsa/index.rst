@@ -19,3 +19,4 @@ Data Structures and Algorithms
    :maxdepth: 1
 
    linked-lists
+   graphs
