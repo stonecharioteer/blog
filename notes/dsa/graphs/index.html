@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="The Sound of Music" />
+  <meta property="og:title" content="Graphs" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="posts/2019/2019-12-11-the-sound-of-music.html" />
-  <meta property="og:description" content="I don’t know the first thing about music. I learned how to play the flute as a kid. I didn’t like it. My mother wanted me to be a great flautist. I wanted to play the drums. I quit flute class afte..." />
+  <meta property="og:url" content="notes/dsa/graphs.html" />
+  <meta property="og:description" content="Resources: freeCodeCamp.org, Red Blob Games - Grids and Graphs, Red Blob Games - Introduction to the A* Algorithm. Terminology: Graphs: A graph is a way of describing the relationship between thing..." />
   
-    <title>The Sound of Music &#8212; Stonecharioteer&#39;s Blog</title>
+    <title>Graphs &#8212; Stonecharioteer&#39;s Blog</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -40,6 +40,7 @@
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/tabs.js"></script>
     <link rel="author" title="About these documents" href="../../../about/" />
     <link rel="index" title="Index" href="../../../genindex/" />
     <link rel="search" title="Search" href="../../../search/" /> 
@@ -124,13 +125,13 @@
 </li>
 
 <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../2021/personal-code/">
+ <a class="reference internal nav-link" href="../../../posts/2021/personal-code/">
   Values
  </a>
 </li>
 
 <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../../notes/">
+ <a class="reference internal nav-link" href="../../">
   Notes
  </a>
 </li>
@@ -178,96 +179,38 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">  
-<h2>
-  The Sound of Music
-</h2>
-<hr />
-<h2>
-  <i class="fa fa-calendar"></i>
-  Dec 11, 2019 
-</h2>
-
-<ul>
-      
-<li id="category">
-  <span
-    ><i class="fa-fw fa fa-folder-open"></i></span
-  >
-   
-  <a href="../../../blog/category/health/">Health</a>  
-</li>
- 
-<li id="tags">
-  <span
-    ><i
-      class="fa-fw fa fa-tag"
-    ></i
-    ></span
-  >
-   
-  <a href="../../../blog/tag/hearing-loss/">hearing-loss</a>  
-</li>
- 
-<li id="comments">
-  <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = "stonecharioteer"; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-      var s = document.createElement("script");
-      s.async = true;
-      s.type = "text/javascript";
-      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
-      (
-        document.getElementsByTagName("HEAD")[0] ||
-        document.getElementsByTagName("BODY")[0]
-      ).appendChild(s);
-    })();
-  </script>
-  <i class="fa-fw fa fa-comments"></i>
-  <a
-    href="#disqus_thread"
-    data-disqus-identifier="/posts/2019/2019-12-11-the-sound-of-music/"
-  >
-    </a
-  >
-</li>
-
-</ul>
-
+            <div class="col-12 col-md-3 bd-sidebar">
 <h3>
   <a href="../../../blog/">Recent Posts</a>
 </h3>
 <ul>
    
   <li>
-    <a href="../../2022/til-python-fixed-length/"
+    <a href="../../../posts/2022/til-python-fixed-length/"
       >24 January - Creating Fixed Length Iterables in Python</a
     >
   </li>
   
   <li>
-    <a href="../../2022/documentation-assumptions/"
+    <a href="../../../posts/2022/documentation-assumptions/"
       >16 January - Documentation Without Assumption</a
     >
   </li>
   
   <li>
-    <a href="../../2022/leetcode/"
+    <a href="../../../posts/2022/leetcode/"
       >16 January - A System for Getting Better at Leetcode</a
     >
   </li>
   
   <li>
-    <a href="../../2022/vagrant/"
+    <a href="../../../posts/2022/vagrant/"
       >10 January - Vagrant</a
     >
   </li>
   
   <li>
-    <a href="../../2022/python/"
+    <a href="../../../posts/2022/python/"
       >07 January - Python - A Reflection in 2022</a
     >
   </li>
@@ -357,6 +300,14 @@
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/hearing-loss/">Hearing Loss</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/hearing-loss/">Hearing loss</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/hugo/">Hugo</a>
   </li>
     
@@ -402,6 +353,10 @@
     
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/ruby/">Ruby</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/single-sided-deafness/">Single-Sided Deafness</a>
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
@@ -654,14 +609,6 @@ Interviews</a>
   </li>
       
   <li class="ablog-cloud ablog-cloud-1">
-    <a href="../../../blog/tag/single-sided-deafness/">single-sided-deafness</a>
-  </li>
-    
-  <li class="ablog-cloud ablog-cloud-1">
-    <a href="../../../blog/tag/snhl/">snhl</a>
-  </li>
-    
-  <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/talks/">talks</a>
   </li>
     
@@ -733,7 +680,7 @@ Interviews</a>
 <ul>
      
   <li>
-    <a href="../../../blog/category/health/">Health (1)</a>
+    <a href="../../../blog/category/health/">Health (2)</a>
   </li>
     
   <li>
@@ -749,7 +696,7 @@ Interviews</a>
   </li>
     
   <li>
-    <a href="../../../blog/category/life/">Life (5)</a>
+    <a href="../../../blog/category/life/">Life (3)</a>
   </li>
         
   <li>
@@ -820,7 +767,7 @@ Interviews</a>
   </li>
     
   <li>
-    <a href="../../../blog/2020/">2020 (18)</a>
+    <a href="../../../blog/2020/">2020 (17)</a>
   </li>
     
   <li>
@@ -861,9 +808,80 @@ Interviews</a>
               
               <div class="toc-item">
                 
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
-    
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terminology">
+   Terminology
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Graphs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nodes">
+     Nodes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#edges">
+     Edges
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neighbour-nodes">
+     Neighbour Nodes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#types-of-graphs">
+   Types of Graphs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#directed-graphs">
+     Directed Graphs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#undirected-graphs">
+     Undirected Graphs
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representation-of-graphs">
+   Representation of Graphs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graph-traversals">
+   Graph Traversals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#depth-first-traversal">
+     Depth First Traversal
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
               </div>
               
@@ -882,174 +900,121 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <div class="section" id="the-sound-of-music">
-<h1>The Sound of Music<a class="headerlink" href="#the-sound-of-music" title="Permalink to this headline">¶</a></h1>
-<p>I don’t know the first thing about music.</p>
-<p>I learned how to play the flute as a kid. I didn’t like it. My mother wanted me
-to be a great flautist. I wanted to play the drums. I quit flute class after a
-year and never picked it up again. I never learned how to play drums either.</p>
-<p>I don’t believe in whatever some call destiny, fate or kismat. Things happen and
-the only thing I know I can control is how I feel about them.</p>
-<p>I read voraciously as a kid. At one point, I read 250 pages an hour. I devoured
-stories. They meant the world to me. I read comics, I read mystery novels,
-fantasy fiction, thrillers and some science fiction. When I couldn’t afford more
-books, I turned to writing stories myself.</p>
-<p>In the 9th grade I started writing a massive series of books. It would span 9
-books in all. For the next ten years I’d focus on writing books over my
-education.</p>
-<p>My process was simple. Wear my headphones, lose myself in my fantasy world and
-create stories. I <em>love</em> listening to Metallica and ACDC. I’ve written chapters
-of my books to the tune of Harbinger of Sorrow and Master of Puppets. Music
-lends me a trance that alcohol hasn’t managed to replicate. I work best when
-listening to music.</p>
-<p>I graduated in 2010, finished my bachelor’s degree in Mechanical Engineering,
-and began my career. I had long nights at the beginning, long commutes and night
-shifts.</p>
-<p>Music kept me sane. It lent me control over things I couldn’t control. I
-listened to Chester Bennington scream out his depression and it mirrored my own
-feelings about my life. I was sad and in a dark place. I had hope because there
-were others like me who were trying to find meaning in life.</p>
-<p>Music was a release.</p>
-<p>I slowly became happier, found friends who made me laugh with joy and found a
-career that I absolutely love. I realized I could create wonders with code, make
-things that I could envision, and I realized that programming was so much fun.</p>
-<p>And I let that get to me.</p>
-<p>I became workaholic, I spent 12 hours at work and then returned home to code
-side projects and have work calls in the dead of the night.</p>
-<p>I spent a lot of time telling myself I was doing what I love and spending lesser
-time taking care of my health.</p>
-<p>I began interviewing and eventually changed jobs, joining Visa. The work life
-balance here was so much better, but little did I know the damage was done.</p>
-<p>I lost one of my ears on August 31, 2019. I lost it at 7.20 AM, I know the time
-because that’s when I opened the door to my office cab. I heard a pop, and then
-I heard nothing else from my left ear.</p>
-<p>As the day progressed, I realized that I had lost my sense of balance. I assumed
-the hearing loss was akin to your ear popping in the flight. I thought I’d get
-it back. But somehow, I think I knew as the day progressed, that I wasn’t going
-to get that ear back.</p>
-<p>I was right.</p>
-<p>By 12 noon that day, my sense of balance was completely gone. I couldn’t walk
-properly. I puked thrice. Visa offered flexi Friday, so I took it and left for
-home.</p>
-<p>The cab stopped on the opposite side of the road. Crossing the road that day and
-walking home is the scariest thing I have ever done. And I say this as someone
-who has thalassophobia.</p>
-<p>I returned home, and fell asleep on the floor. I asked my sister to book an
-appointment with the ENT Department of the local hospital the next day.</p>
-<p>I woke up the next day and realized that I was right.</p>
-<p>I still couldn’t hear.</p>
-<p>I was admitted to the emergency ward since my Blood Pressure was extremely high.
-250/180, the doctor said the ear was the least of my problems.</p>
-<p>Have you ever been inside an MRI machine? It feels so claustrophobic inside, but
-without one ear, it feels so much worse. I was given an emergency switch and
-told that if I press it, they’ll pull me out, but then they would have to start
-at the beginning.</p>
-<p>I didn’t dare press that switch. I didn’t want to repeat the MRI.</p>
-<p>All my reports came out fine, and the doctors finally told me what was wrong
-with me.</p>
-<p>Senso-Neural Hearing Loss.</p>
-<p>My ailment had a name. I knew him now. I could go on overdrive in researching
-it.</p>
-<p>No known cure.</p>
-<p>30% chance of recovery in the first month.</p>
-<p>No known cause.</p>
-<p>Recommended course of medication? Steroids.</p>
-<p>Expected result? Unknown.</p>
-<p>That wasn’t very hopeful. My family was in denial. They thought my ear was
-coming back. I was trying to think of what life with one ear feels like.</p>
-<p>Beethoven went deaf over the course of his life. But deafness is absolute. One
-ear is something else. I needed another model. I watch a lot of Stephen Colbert.
-I knew the man was one eared. He had lost one ear early in his life.</p>
-<p>But it didn’t help much. You <em>can</em> live with one ear.</p>
-<p>What does it feel like though?</p>
-<p>I cannot tell where sounds come from anymore. I cannot hear you if you come and
-stand to my left and say hi. I cannot hear my colleagues and friends who sit to
-the left of me during lunch.</p>
-<p>I cannot hear you in stairwells, because apparently two ears are necessary when
-trying to separate sounds in a poor auditory space.</p>
-<p>I cannot hear you if you whisper.</p>
-<p>If I sleep on my right ear, I cannot hear the world. One day, I will have
-children, and the thought that I might sleep through their cries frightens me.
-What if my mother needs me from another room and I cannot hear her scream?</p>
-<p>The world has become so frightening.</p>
-<p>I cannot listen to music anymore. I cannot hear Freddie Mercury’s voice move
-from left to right.</p>
-<p>I cannot listen to the John Williams’ Superman theme anymore, because apparently
-the first thing I lost was the ability to appreciate low tones such as those of
-a tuba or a trumpet.</p>
-<p>I cannot hear the leaves move in the wind. I cannot tell what direction birds
-are chirping from.</p>
-<p>If you call me and then say “Here! I am here!” that makes no sense to me. The
-words here and there do not compute any longer.</p>
-<p>I cannot concentrate on one sound any longer, so if you call me on Skype or on
-the phone and there is noise around me, I cannot hear you very well.</p>
-<p>I need to choose a seat in a meeting room wisely. Because I need to always sit
-at the leftmost corner of any audience so as to let my good ear hear you.</p>
-<p>If I turn my head away from you while you speak now, it is not because I am
-trying to ignore you.</p>
-<p>Indeed, it could be because I am trying to hear you better.</p>
-<p>If I stand closer, it could be because we are in an open space and I cannot hear
-you without you raising your voice.</p>
-<p>I am <strong>deaf</strong> in one ear. I can hear 50% of the world. I just cannot tell where
-the music comes from anymore.</p>
-<p>[Continued in part 2: No Leaf Clover.]({% post_url 2020-02-02-no-leaf-clover %})</p>
+                 <div class="section" id="graphs">
+<h1>Graphs<a class="headerlink" href="#graphs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=tWVWeAqZ0WU">freeCodeCamp.org</a></p></li>
+<li><p><a class="reference external" href="https://www.redblobgames.com/pathfinding/grids/graphs.html">Red Blob Games - Grids and Graphs</a></p></li>
+<li><p><a class="reference external" href="https://www.redblobgames.com/pathfinding/a-star/introduction.html">Red Blob Games - Introduction to the A* Algorithm</a></p></li>
+</ol>
+</div>
+<div class="section" id="terminology">
+<h2>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Graphs<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>A graph is a way of describing the relationship between things. Graphs don’t really have to represent a way to get to
+a place. That’s a kind of graph, but you could have graphs that only just say that something is related to another thing.</p>
+</div>
+<div class="section" id="nodes">
+<h3>Nodes<a class="headerlink" href="#nodes" title="Permalink to this headline">¶</a></h3>
+<p>A node is a unit of data, it could be used to represent anything. In programming terms, it could be an <em>object</em>.
+Nodes are also called Vertices.</p>
+</div>
+<div class="section" id="edges">
+<h3>Edges<a class="headerlink" href="#edges" title="Permalink to this headline">¶</a></h3>
+<p>An edge is a connection between 2 nodes. An edge can be visualized as the relationship between things.</p>
+</div>
+<div class="section" id="neighbour-nodes">
+<h3>Neighbour Nodes<a class="headerlink" href="#neighbour-nodes" title="Permalink to this headline">¶</a></h3>
+<p>A Neighboring node is a node that is connected to the current node by an edge.</p>
+</div>
+</div>
+<div class="section" id="types-of-graphs">
+<h2>Types of Graphs<a class="headerlink" href="#types-of-graphs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="directed-graphs">
+<h3>Directed Graphs<a class="headerlink" href="#directed-graphs" title="Permalink to this headline">¶</a></h3>
+<p>A directed graph shows the <em>direction</em> of the relationship between nodes. You can only travel in the direction
+that is shown on the graph.</p>
+</div>
+<div class="section" id="undirected-graphs">
+<h3>Undirected Graphs<a class="headerlink" href="#undirected-graphs" title="Permalink to this headline">¶</a></h3>
+<p>These are graphs wherein the direction has no importance. So you can travel in any direction and the relationship
+is the same.</p>
+</div>
+</div>
+<div class="section" id="representation-of-graphs">
+<h2>Representation of Graphs<a class="headerlink" href="#representation-of-graphs" title="Permalink to this headline">¶</a></h2>
+<p>An adjacency list (something like a hashmap) is used to repesent a graph. It shows how each node is related to
+other nodes.</p>
+<p><a href="#id2"><span class="problematic" id="id3">``</span></a><a href="#id4"><span class="problematic" id="id5">`</span></a>json
+{</p>
+<blockquote>
+<div><p>“a”: [“b”, “c”],
+“b”: [“d”],
+“c”: [“e”],
+“d”: [],
+“e”: [“b”],
+“f”: [“d”]</p>
+</div></blockquote>
+</div>
+<div class="section" id="graph-traversals">
+<h2>Graph Traversals<a class="headerlink" href="#graph-traversals" title="Permalink to this headline">¶</a></h2>
+<p>Traversal of a graph is a way of moving around in a graph.</p>
+<div class="section" id="depth-first-traversal">
+<h3>Depth First Traversal<a class="headerlink" href="#depth-first-traversal" title="Permalink to this headline">¶</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This uses a stack.</p>
+</div>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-0-SmF2YXNjcmlwdA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tab" tabindex="-1">Javascript</button></div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel group-tab" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button></div><div aria-labelledby="tab-1-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-1-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">def</span> <span class="nf">depth_first_traversal</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">source</span><span class="p">):</span>
+<span class="linenos"> 2</span>    <span class="sd">&quot;&quot;&quot;Use stack to traverse a graph.&quot;&quot;&quot;</span>
+<span class="linenos"> 3</span>    <span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="n">source</span><span class="p">]</span>
+<span class="linenos"> 4</span>    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos"> 5</span>        <span class="n">current</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="linenos"> 6</span>        <span class="nb">print</span><span class="p">(</span><span class="n">current</span><span class="p">)</span>
+<span class="linenos"> 7</span>        <span class="n">neighbors</span> <span class="o">=</span> <span class="n">graph</span><span class="p">[</span><span class="n">current</span><span class="p">]</span>
+<span class="linenos"> 8</span>        <span class="k">for</span> <span class="n">neighbor</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">:</span>
+<span class="linenos"> 9</span>            <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">neighbor</span><span class="p">)</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="n">graph</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">],</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;d&quot;</span><span class="p">],</span> <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;e&quot;</span><span class="p">],</span> <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="p">[],</span> <span class="s2">&quot;e&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">],</span> <span class="s2">&quot;f&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;d&quot;</span><span class="p">]}</span>
+</pre></div>
+</div>
+</div></div>
+</div><div aria-labelledby="tab-0-SmF2YXNjcmlwdA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SmF2YXNjcmlwdA==" name="SmF2YXNjcmlwdA==" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-SXRlcmF0aXZl" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tab" tabindex="0">Iterative</button></div><div aria-labelledby="tab-2-SXRlcmF0aXZl" class="sphinx-tabs-panel group-tab" id="panel-2-SXRlcmF0aXZl" name="SXRlcmF0aXZl" role="tabpanel" tabindex="0"><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kd">function</span> <span class="nx">depthFirstTraversal</span><span class="p">(</span><span class="nx">graph</span><span class="p">,</span> <span class="nx">source</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 2</span>    <span class="kd">const</span> <span class="nx">stack</span> <span class="o">=</span> <span class="p">[</span><span class="nx">source</span><span class="p">];</span>
+<span class="linenos"> 3</span>    <span class="k">while</span> <span class="p">(</span><span class="nx">stack</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
+<span class="linenos"> 4</span>        <span class="kd">const</span> <span class="nx">current</span> <span class="o">=</span> <span class="nx">stack</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+<span class="linenos"> 5</span>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">current</span><span class="p">);</span>
+<span class="linenos"> 6</span>        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">neighbor</span> <span class="k">of</span> <span class="nx">graph</span><span class="p">[</span><span class="nx">current</span><span class="p">])</span> <span class="p">{</span>
+<span class="linenos"> 7</span>            <span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">neighbor</span><span class="p">)</span>
+<span class="linenos"> 8</span>        <span class="p">}</span>
+<span class="linenos"> 9</span>    <span class="p">}</span>
+<span class="linenos">10</span><span class="p">}</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="kd">const</span> <span class="nx">graph</span> <span class="o">=</span> <span class="p">{</span>
+<span class="linenos">13</span>   <span class="s2">&quot;a&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">],</span>
+<span class="linenos">14</span>   <span class="s2">&quot;b&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;d&quot;</span><span class="p">],</span>
+<span class="linenos">15</span>   <span class="s2">&quot;c&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;e&quot;</span><span class="p">],</span>
+<span class="linenos">16</span>   <span class="s2">&quot;d&quot;</span><span class="o">:</span> <span class="p">[],</span>
+<span class="linenos">17</span>   <span class="s2">&quot;e&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">],</span>
+<span class="linenos">18</span>   <span class="s2">&quot;f&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;d&quot;</span><span class="p">]</span>
+<span class="linenos">19</span><span class="p">}</span>
+</pre></div>
+</div>
+</div></div>
+</div></div>
+</div>
+</div>
 </div>
 
 <div class="section">
-    
-
-<div class="section">
-  <span style="float: left">
-     
-    <a href="../2019-10-12-pycon/">
-      <i class="fa fa-arrow-circle-left"></i> PyCon India 2019 Talk - MicroPython
-    </a>
-    
-  </span>
-  <span>&nbsp;</span>
-  <span style="float: right">
-     
-    <a href="../../2020/2020-02-02-no-leaf-clover/">
-      No Leaf Clover <i
-        class="fa fa-arrow-circle-right"
-      ></i
-      >
-    </a>
-    
-  </span>
-</div>
-  
-  <div class="section">
-    <h2>Comments</h2>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname = "stonecharioteer";
-      var disqus_identifier = "/posts/2019/2019-12-11-the-sound-of-music/";
-      var disqus_title = "The Sound of Music";
-      var disqus_url = "https://stonecharioteer.com/posts/2019/2019-12-11-the-sound-of-music";
-
-      (function () {
-        var dsq = document.createElement("script");
-        dsq.type = "text/javascript";
-        dsq.async = true;
-        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
-        (
-          document.getElementsByTagName("head")[0] ||
-          document.getElementsByTagName("body")[0]
-        ).appendChild(dsq);
-      })();
-    </script>
-    <noscript
-      >Please enable JavaScript to view the
-      <a href="https://disqus.com/?ref_noscript"
-        >comments powered by Disqus.</a
-      ></noscript
-    >
-    <a href="https://disqus.com" class="dsq-brlink"
-      >comments powered by <span class="logo-disqus">Disqus</span></a
-    >
-  </div>
-  
+   
 </div>
 
               </div>

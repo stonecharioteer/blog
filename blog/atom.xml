@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-01-26T15:53:11.787186+00:00</updated>
+  <updated>2022-01-27T08:10:46.106276+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -536,33 +536,32 @@ which is a blessing for someone who is single-sided deaf, like me.PyCon India 20
     <published>2019-10-12T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/posts/2019/2019-12-11-the-sound-of-music/</id>
+    <id>https://stonecharioteer.com/posts/2019/the-sound-of-music/</id>
     <title>The Sound of Music</title>
     <updated>2019-12-11T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
-&lt;p&gt;I don’t know the first thing about music.&lt;/p&gt;
+&lt;p&gt;Explicit markup ends without a blank line; unexpected unindent.&lt;/p&gt;
 &lt;/div&gt;
 </content>
-    <link href="https://stonecharioteer.com/posts/2019/2019-12-11-the-sound-of-music/" rel="alternate"/>
-    <summary>I don’t know the first thing about music.</summary>
-    <category term="hearing-loss" label="hearing-loss"/>
+    <link href="https://stonecharioteer.com/posts/2019/the-sound-of-music/" rel="alternate"/>
+    <summary>Explicit markup ends without a blank line; unexpected unindent.</summary>
+    <category term="HearingLoss" label="Hearing Loss"/>
+    <category term="Single-SidedDeafness" label="Single-Sided Deafness"/>
     <published>2019-12-11T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/posts/2020/2020-02-02-no-leaf-clover/</id>
+    <id>https://stonecharioteer.com/posts/2020/no-leaf-clover/</id>
     <title>No Leaf Clover</title>
-    <updated>2020-02-02T00:00:00+00:00</updated>
+    <updated>2020-09-01T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
-&lt;p&gt;[Continued from Part 1: The Sound of Music.]({% post_url 2019-12-11-the-sound-of-music %})&lt;/p&gt;
-&lt;img alt="Hearing Aids" src="../_images/hearing-aid.png" /&gt;
+&lt;p&gt;Explicit markup ends without a blank line; unexpected unindent.&lt;/p&gt;
+&lt;img alt="Hearing Loss" src="assets/images/posts/hearing-loss/hearing-aid.png)" /&gt;
 &lt;/div&gt;
 </content>
-    <link href="https://stonecharioteer.com/posts/2020/2020-02-02-no-leaf-clover/" rel="alternate"/>
-    <summary>[Continued from Part 1: The Sound of Music.]({% post_url 2019-12-11-the-sound-of-music %})Hearing Aids</summary>
-    <category term="hearing-loss" label="hearing-loss"/>
-    <category term="snhl" label="snhl"/>
-    <category term="life" label="life"/>
-    <category term="health" label="health"/>
+    <link href="https://stonecharioteer.com/posts/2020/no-leaf-clover/" rel="alternate"/>
+    <summary>Explicit markup ends without a blank line; unexpected unindent.Hearing Loss</summary>
+    <category term="Hearingloss" label="Hearing loss"/>
+    <category term="Single-SidedDeafness" label="Single-Sided Deafness"/>
     <published>2020-02-02T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -722,23 +721,6 @@ to keep track of the episodes I love, as well as podcasts I love.</summary>
     <category term="podcasts" label="podcasts"/>
     <category term="learning" label="learning"/>
     <published>2020-07-23T00:00:00+00:00</published>
-  </entry>
-  <entry>
-    <id>https://stonecharioteer.com/posts/2020/2020-09-01-ear-one/</id>
-    <title>(Y)ear One</title>
-    <updated>2020-09-01T00:00:00+00:00</updated>
-    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
-&lt;p&gt;&lt;img alt="Headphones image" src="../_images/ear-one.jpeg" /&gt;&lt;/p&gt;
-&lt;img alt="Headphones image" src="../_images/ear-one.jpeg" /&gt;
-&lt;/div&gt;
-</content>
-    <link href="https://stonecharioteer.com/posts/2020/2020-09-01-ear-one/" rel="alternate"/>
-    <summary>Headphones imageHeadphones image</summary>
-    <category term="hearing-loss" label="hearing-loss"/>
-    <category term="health" label="health"/>
-    <category term="single-sided-deafness" label="single-sided-deafness"/>
-    <category term="snhl" label="snhl"/>
-    <published>2020-09-01T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://stonecharioteer.com/posts/2020/2020-11-11-web-application-security/</id>
