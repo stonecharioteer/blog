@@ -1,4 +1,4 @@
-.. notes-dsa-linked-list:
+.. _notes-dsa-linked-list:
 ================================
 Linked Lists
 ================================

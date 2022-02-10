@@ -1,4 +1,4 @@
-.. notes-dsa-graphs:
+.. _notes-dsa-graphs:
 ==========================
 Graphs
 ==========================
