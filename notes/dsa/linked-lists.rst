@@ -327,3 +327,24 @@ Zipping Two Linked Lists
                :linenos:
 
 .. }}}
+
+.. {{{ Design of a Linked List (LC)
+--------------------
+Linked List Design
+--------------------
+
+This is an implementation of a Linked List to satisfy the `Leetcode Linked List
+card. <https://leetcode.com/explore/learn/card/linked-list/209/singly-linked-list/1290/>`_
+
+.. tip::
+
+   This has a few adjustments I made because of how the tests are structured on LeetCode,
+   but I wouldn't do this exactly this way. For instance ``node = MyLinkedList()`` is meaningless
+   since it references a node without a value. I think this was done only to allow deleting the head
+   node of a single-value linked list that would now become an empty linked list.
+
+.. literalinclude:: /code/dsa/linked_lists/python/design.py
+   :language: python
+   :linenos:
+
+.. }}}
