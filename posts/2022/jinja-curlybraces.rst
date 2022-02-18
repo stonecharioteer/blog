@@ -1,10 +1,7 @@
----
 :blogpost: true
-:title: Using Non-Standard Jinja Templates
 :category: Tech
 :tags: airflow, jinja, python, templating
 :date: Feb 18, 2022
----
 
 =====================================
 Using Non-Standard Jinja Templates
