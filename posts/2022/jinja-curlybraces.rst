@@ -52,3 +52,12 @@ documentation on the Template class.
    You can use these to override the need to implement your own hacks for nested template variables. This will even
    help with Flask or Django templates. Note that you probably shouldn't implement too much of your logic within
    a template, but it is useful to know that this exists.
+
+.. warning::
+
+      Another way of doing this is to use `jinja2.Undefined <https://jinja.palletsprojects.com/en/3.0.x/api/#jinja2.DebugUndefined>`_
+      so that ``Template.Render`` ignores your undefined values, so that the values can be filled
+      in later.
+
+      While this *works*, you shouldn't use something that's implemented inorder to help you debug code,
+      and you should instead use the provided APIs to do this.
