@@ -936,6 +936,14 @@ documentation on the Template class.</a></p>
 help with Flask or Django templates. Note that you probably shouldn’t implement too much of your logic within
 a template, but it is useful to know that this exists.</p>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Another way of doing this is to use <a class="reference external" href="https://jinja.palletsprojects.com/en/3.0.x/api/#jinja2.DebugUndefined">jinja2.Undefined</a>
+so that <code class="docutils literal notranslate"><span class="pre">Template.Render</span></code> ignores your undefined values, so that the values can be filled
+in later.</p>
+<p>While this <em>works</em>, you shouldn’t use something that’s implemented inorder to help you debug code,
+and you should instead use the provided APIs to do this.</p>
+</div>
 </div>
 
 <div class="section">
