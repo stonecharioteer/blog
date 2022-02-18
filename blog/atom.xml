@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-02-18T06:08:27.091186+00:00</updated>
+  <updated>2022-02-18T06:43:16.386244+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -1302,5 +1302,29 @@ documentation?</summary>
     <summary>If you want to create an iterable of a fixed length in python, use
 collections.deque with the maxlen parameter.</summary>
     <published>2022-01-24T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/jinja-curlybraces/</id>
+    <title>Using Non-Standard Jinja Templates</title>
+    <updated>2022-02-18T00:00:00+00:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Apache Airflow uses Jinja templates for variable expansion and templating.
+Whenever you write a DAG, you can use &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;{{&lt;/span&gt; &lt;span class="pre"&gt;}}&lt;/span&gt;&lt;/code&gt; blocks to expand variable
+names, often using Airflow configurations or &lt;em&gt;macros&lt;/em&gt; to fill in the values.
+While that is great, you get a problem when you have Jinja templates inside
+your code that has nothing to do with Airflow.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/jinja-curlybraces/" rel="alternate"/>
+    <summary>Apache Airflow uses Jinja templates for variable expansion and templating.
+Whenever you write a DAG, you can use {{ }} blocks to expand variable
+names, often using Airflow configurations or macros to fill in the values.
+While that is great, you get a problem when you have Jinja templates inside
+your code that has nothing to do with Airflow.</summary>
+    <category term="airflow" label="airflow"/>
+    <category term="jinja" label="jinja"/>
+    <category term="python" label="python"/>
+    <category term="templating" label="templating"/>
+    <published>2022-02-18T00:00:00+00:00</published>
   </entry>
 </feed>

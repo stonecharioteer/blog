@@ -8,7 +8,7 @@
   <meta property="og:title" content="Using Non-Standard Jinja Templates" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="posts/2022/jinja-curlybraces.html" />
-  <meta property="og:description" content="— :blogpost: true :title: Using Non-Standard Jinja Templates :category: Tech :tags: airflow, jinja, python, templating :date: Feb 18, 2022 — Apache Airflow uses Jinja templates for variable expansi..." />
+  <meta property="og:description" content="Apache Airflow uses Jinja templates for variable expansion and templating. Whenever you write a DAG, you can use{{ }} blocks to expand variable names, often using Airflow configurations or macros t..." />
   
     <title>Using Non-Standard Jinja Templates &#8212; Stonecharioteer&#39;s Blog</title>
     
@@ -178,7 +178,65 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">
+            <div class="col-12 col-md-3 bd-sidebar">  
+<h2>
+  Using Non-Standard Jinja Templates
+</h2>
+<hr />
+<h2>
+  <i class="fa fa-calendar"></i>
+  Feb 18, 2022 
+</h2>
+
+<ul>
+      
+<li id="category">
+  <span
+    ><i class="fa-fw fa fa-folder-open"></i></span
+  >
+   
+  <a href="../../../blog/category/tech/">Tech</a>  
+</li>
+ 
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../../../blog/tag/airflow/">airflow</a>   
+  <a href="../../../blog/tag/jinja/">jinja</a>   
+  <a href="../../../blog/tag/python/">python</a>   
+  <a href="../../../blog/tag/templating/">templating</a>  
+</li>
+ 
+<li id="comments">
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = "stonecharioteer"; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  <i class="fa-fw fa fa-comments"></i>
+  <a
+    href="#disqus_thread"
+    data-disqus-identifier="/posts/2022/jinja-curlybraces/"
+  >
+    </a
+  >
+</li>
+
+</ul>
+
 <h3>
   <a href="../../../blog/">Recent Posts</a>
 </h3>
@@ -382,6 +440,10 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/vagrant/">Vagrant</a>
   </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/airflow/">airflow</a>
+  </li>
         
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/bangalore/">bangalore</a>
@@ -504,6 +566,10 @@ Interviews</a>
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/jinja/">jinja</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/kubernetes/">kubernetes</a>
   </li>
     
@@ -620,6 +686,10 @@ Interviews</a>
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/templating/">templating</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/thoughts/">thoughts</a>
   </li>
     
@@ -723,7 +793,7 @@ Interviews</a>
   </li>
     
   <li>
-    <a href="../../../blog/category/tech/">Tech (4)</a>
+    <a href="../../../blog/category/tech/">Tech (5)</a>
   </li>
     
   <li>
@@ -758,7 +828,7 @@ Interviews</a>
 <ul>
    
   <li>
-    <a href="../../../blog/2022/">2022 (6)</a>
+    <a href="../../../blog/2022/">2022 (7)</a>
   </li>
     
   <li>
@@ -828,14 +898,7 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <p>—
-:blogpost: true
-:title: Using Non-Standard Jinja Templates
-:category: Tech
-:tags: airflow, jinja, python, templating
-:date: Feb 18, 2022
-—</p>
-<div class="section" id="using-non-standard-jinja-templates">
+                 <div class="section" id="using-non-standard-jinja-templates">
 <h1>Using Non-Standard Jinja Templates<a class="headerlink" href="#using-non-standard-jinja-templates" title="Permalink to this headline">¶</a></h1>
 <p>Apache Airflow uses Jinja templates for variable expansion and templating.
 Whenever you write a DAG, you can use <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">}}</span></code> blocks to expand variable
@@ -876,7 +939,53 @@ a template, but it is useful to know that this exists.</p>
 </div>
 
 <div class="section">
-   
+    
+
+<div class="section">
+  <span style="float: left">
+     
+    <a href="../til-python-fixed-length/">
+      <i class="fa fa-arrow-circle-left"></i> Creating Fixed Length Iterables in Python
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+    
+  </span>
+</div>
+  
+  <div class="section">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = "stonecharioteer";
+      var disqus_identifier = "/posts/2022/jinja-curlybraces/";
+      var disqus_title = "Using Non-Standard Jinja Templates";
+      var disqus_url = "https://stonecharioteer.com/posts/2022/jinja-curlybraces";
+
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+    <a href="https://disqus.com" class="dsq-brlink"
+      >comments powered by <span class="logo-disqus">Disqus</span></a
+    >
+  </div>
+  
 </div>
 
               </div>

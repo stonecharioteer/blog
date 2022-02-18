@@ -181,6 +181,12 @@
 <ul>
    
   <li>
+    <a href="../../../posts/2022/jinja-curlybraces/"
+      >18 February - Using Non-Standard Jinja Templates</a
+    >
+  </li>
+  
+  <li>
     <a href="../../../posts/2022/til-python-fixed-length/"
       >24 January - Creating Fixed Length Iterables in Python</a
     >
@@ -201,12 +207,6 @@
   <li>
     <a href="../../../posts/2022/vagrant/"
       >10 January - Vagrant</a
-    >
-  </li>
-  
-  <li>
-    <a href="../../../posts/2022/python/"
-      >07 January - Python - A Reflection in 2022</a
     >
   </li>
   
@@ -378,6 +378,10 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../vagrant/">Vagrant</a>
   </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../airflow/">airflow</a>
+  </li>
         
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../bangalore/">bangalore</a>
@@ -500,6 +504,10 @@ Interviews</a>
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../jinja/">jinja</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
     <a href="../kubernetes/">kubernetes</a>
   </li>
     
@@ -616,6 +624,10 @@ Interviews</a>
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../templating/">templating</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
     <a href="../thoughts/">thoughts</a>
   </li>
     
@@ -719,7 +731,7 @@ Interviews</a>
   </li>
     
   <li>
-    <a href="../../category/tech/">Tech (4)</a>
+    <a href="../../category/tech/">Tech (5)</a>
   </li>
     
   <li>
@@ -754,7 +766,7 @@ Interviews</a>
 <ul>
    
   <li>
-    <a href="../../2022/">2022 (6)</a>
+    <a href="../../2022/">2022 (7)</a>
   </li>
     
   <li>
@@ -816,6 +828,51 @@ Interviews</a>
      Posts tagged  python 
   </h1>
    
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../../../posts/2022/jinja-curlybraces/"
+        >Using Non-Standard Jinja Templates</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> Feb 18, 2022 
+      </li>
+          
+<li id="category">
+  <span
+    ><i class="fa-fw fa fa-folder-open"></i></span
+  >
+   
+  <a href="../../category/tech/">Tech</a>  
+</li>
+ 
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../airflow/">airflow</a>   
+  <a href="../jinja/">jinja</a>   
+  <a href="#">python</a>   
+  <a href="../templating/">templating</a>  
+</li>
+ 
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>Apache Airflow uses Jinja templates for variable expansion and templating.
+Whenever you write a DAG, you can use <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">}}</span></code> blocks to expand variable
+names, often using Airflow configurations or <em>macros</em> to fill in the values.
+While that is great, you get a problem when you have Jinja templates inside
+your code that has nothing to do with Airflow.</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../../../posts/2022/jinja-curlybraces/"><em>Read more ...</em></a></p>
+    <hr />
+  </div>
+  
 
   <div class="section ablog-post">
     <h2 class="ablog-post-title">
