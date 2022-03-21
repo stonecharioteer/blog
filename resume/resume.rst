@@ -17,11 +17,24 @@ Resume - Vinay Keerthi K. T.
 
 -----
 
+-------------------------------
+Merkle Science
+-------------------------------
+
+**Lead Software Developer** | **Bangalore** - **Remote** | Started: **JULY 2021**
+
+* Designed and wrote the data quality service using Rust - this application goes through the
+  data of various blockchains to identify missing or newer data.
+* Designed and wrote a websocket client to ingest blockchain data from various
+  websocket implementions of chains using Rust.
+* Overhauled Apache Airflow DAGs for modularity.
+* Developed a central Python library for all utilities and internal code.
+
 -----------------
 VISA Inc.
 -----------------
 
-**Sr. Software Engineer - Data Platform** | **Bangalore** | Started: **MAY 2019**
+**Sr. Software Engineer - Data Platform** | **Bangalore** | **MAY 2019 - June 2021**
 
 * [PATENT PENDING] Designed and spearheaded the security portal project, a REST layer that
   facilitates automation of Qualys security updates for PCI compliance
@@ -79,7 +92,7 @@ Flipkart Internet Pvt. Ltd.
 Tech Stack
 -------------
 
-* Programming Languages: Python, Nodejs, MicroPython, Rust
+* Programming Languages: Python, Nodejs, Rust
 * Web Frameworks: Flask, Express
 * UI: React, CSS, ES6
 * Databases: PostgreSQL, MariaDB
