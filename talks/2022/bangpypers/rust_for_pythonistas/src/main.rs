@@ -23,6 +23,7 @@ fn main() {
         7 => examples::ex07::run(),
         8 => examples::ex08::run(),
         9 => examples::ex09::run(),
+        10 => examples::ex10::run(),
         _ => eprintln!("ERROR: There is no exercise number {}.", opt.number),
     };
 }
