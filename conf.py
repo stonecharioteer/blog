@@ -193,6 +193,7 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
     "sphinx_tabs.tabs",
+    "sphinxcontrib.youtube",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
