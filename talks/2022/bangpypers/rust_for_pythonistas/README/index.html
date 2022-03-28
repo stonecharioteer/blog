@@ -882,6 +882,9 @@ blocks with <code class="docutils literal notranslate"><span class="pre">//</spa
 <p>To read the examples, ignore the <code class="docutils literal notranslate"><span class="pre">src/main.rs</span></code> and other files, focus only on
 the files within <code class="docutils literal notranslate"><span class="pre">src/examples/exNN</span></code> folders. Each of these files will have a
 <code class="docutils literal notranslate"><span class="pre">run</span></code> function that contains the main logic.</p>
+<p>When reading the examples, note that the line that reads <code class="docutils literal notranslate"><span class="pre">pub</span> <span class="pre">fn</span> <span class="pre">run()</span></code> is
+<em>usually</em> going to be in a <code class="docutils literal notranslate"><span class="pre">main.rs</span></code> file, and it will instead be <code class="docutils literal notranslate"><span class="pre">fn</span> <span class="pre">main()</span></code>.
+I’ve had to change this because I’m shipping this as a command-line interface.</p>
 </div>
 </div>
 
