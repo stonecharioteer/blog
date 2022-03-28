@@ -30,8 +30,6 @@ jobs:
         fetch-depth: 0
     - name: Build and Commit
       run: |
-        echo "$(pwd)"
-        echo "$(ls)"
         pip install -q --upgrade wheel
         pip install -q -r requirements.txt
         ablog clean
