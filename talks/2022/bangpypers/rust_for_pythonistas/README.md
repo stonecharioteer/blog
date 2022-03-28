@@ -28,3 +28,7 @@ To run the examples, you can just run `cargo run -- --number <Example number>`.
 To read the examples, ignore the `src/main.rs` and other files, focus only on
 the files within `src/examples/exNN` folders. Each of these files will have a
 `run` function that contains the main logic.
+
+When reading the examples, note that the line that reads `pub fn run()` is
+*usually* going to be in a `main.rs` file, and it will instead be `fn main()`.
+I've had to change this because I'm shipping this as a command-line interface.

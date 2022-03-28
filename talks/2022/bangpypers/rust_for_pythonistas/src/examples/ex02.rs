@@ -17,7 +17,7 @@ pub fn run() {
 /// that quacks.
 fn sale_price(price: i32) -> i32 {
     if is_even(price) {
-        price - 10
+        return price - 10
     } else {
         price - 3
     }

@@ -60,7 +60,7 @@ pub fn run() {
     wave_for_me(&junior);
     wave_for_me(&tiny);
     // ERROR IF UNCOMMENTED
-    // wave_for_me(chotu);
+    // wave_for_me(&chotu);
     // This will not compile because `Dog` doesn't implement CanWave, and thus cannot
     // be used with `wave_for_me`.
     println!("{} hasn't been trained to wave. Maybe you could teach him?", chotu.name);
