@@ -61,6 +61,7 @@ I'm going to use these tags:
 - Hugo
 - K3s
 - Kubernetes
+- Leadership
 - Learning
 - Leetcode
 - Libraries
@@ -91,6 +92,7 @@ I'm going to use these tags:
 - Security
 - Single-Sided Deafness
 - Sphinx
+- Statistics
 - TIL
 - Teaching
 - Technical Interviews

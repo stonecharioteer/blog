@@ -208,3 +208,17 @@ Books
       :classes: btn-outline-primary btn-block stretched-link
 
    .. }}}
+   ---
+   .. {{{ Elements of Programming Interviews in Python
+   Elements of Programming Interviews in Python
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. figure:: elements_of_programming_interviews/cover.jpg
+      :figwidth: 250
+
+   This book teaches how to ace programming interviews. This is the Python
+   edition of the book.
+
+
+
+   .. }}}

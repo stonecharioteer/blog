@@ -14,24 +14,24 @@ Instagram, but I'd like to move all the posts here, for easy retrieval.
 I've migrated my Instagram posts on reading the Mahabharata in Hampi, and I've
 reproduced the letter to Mr. Bibek Debroy in its entirety here.
 
-1. [Day 1]({% post_url 2016-12-01-mahabharata-day-01 %})
-1. [Day 2]({% post_url 2016-12-02-mahabharata-day-02 %})
-1. [Day 3]({% post_url 2016-12-03-mahabharata-day-03 %})
-1. [Day 4]({% post_url 2016-12-04-mahabharata-day-04 %})
-1. [Day 5]({% post_url 2016-12-05-mahabharata-day-05 %})
-1. [Day 6]({% post_url 2016-12-06-mahabharata-day-06 %})
-1. [Day 7]({% post_url 2016-12-08-mahabharata-day-07 %})
-1. [Day 8]({% post_url 2016-12-10-mahabharata-day-08 %})
-1. [Day 9]({% post_url 2016-12-15-mahabharata-day-09 %})
-1. [Day 10]({% post_url 2016-12-16-mahabharata-day-10 %})
-1. [Day 11]({% post_url 2016-12-17-mahabharata-day-11 %})
-1. [Day 12]({% post_url 2016-12-18-mahabharata-day-12 %})
-1. [Day 13]({% post_url 2016-12-19-mahabharata-day-13 %})
-1. [Day 14]({% post_url 2016-12-20-mahabharata-day-14 %})
-1. [Day 15]({% post_url 2016-12-21-mahabharata-day-15 %})
-1. [Day 16]({% post_url 2016-12-23-mahabharata-day-16 %})
-1. [Day 17]({% post_url 2016-12-25-mahabharata-day-17 %})
-1. [Day 18]({% post_url 2016-12-27-mahabharata-day-18 %})
-1. [Day 19]({% post_url 2016-12-28-mahabharata-day-19 %})
-1. [Day 20]({% post_url 2016-12-29-mahabharata-day-20 %})
-1. [Letter to the Author]({% post_url 2017-03-22-debroy-letter %})
+1. :ref:`Day 1<mahabharata-day-01>`
+2. :ref:`Day 2<mahabharata-day-02>`
+3. :ref:`Day 3<mahabharata-day-03>`
+4. :ref:`Day 4<mahabharata-day-04>`
+5. :ref:`Day 5<mahabharata-day-05>`
+6. :ref:`Day 6<mahabharata-day-06>`
+7. :ref:`Day 7<mahabharata-day-07>`
+8. :ref:`Day 8<mahabharata-day-08>`
+9. :ref:`Day 9<mahabharata-day-09>`
+10. :ref:`Day 10<mahabharata-day-10>`
+11. :ref:`Day 11<mahabharata-day-11>`
+12. :ref:`Day 12<mahabharata-day-12>`
+13. :ref:`Day 13<mahabharata-day-13>`
+14. :ref:`Day 14<mahabharata-day-14>`
+15. :ref:`Day 15<mahabharata-day-15>`
+16. :ref:`Day 16<mahabharata-day-16>`
+17. :ref:`Day 17<mahabharata-day-17>`
+18. :ref:`Day 18<mahabharata-day-18>`
+19. :ref:`Day 19<mahabharata-day-19>`
+20. :ref:`Day 20<mahabharata-day-20>`
+21. :ref:`Letter to the Author<debroy-mahabharata>`

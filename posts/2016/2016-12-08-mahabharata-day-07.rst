@@ -1,12 +1,14 @@
----
-blogpost: true
-date: Dec 8, 2016
-location: Hampi, Karnataka, India
-category: Reading
-tags: indian-mythology, reading, bibek-debroy, books, hampi
-image: 0
----
-# Reading the Mahabharata by the Tungabhadra - Day 7
+:blogpost: true
+:date: Dec 8, 2016
+:location: Hampi, Karnataka, India
+:category: Reading
+:tags: indian-mythology, reading, bibek-debroy, books, hampi
+:image: 0
+
+.. _mahabharata-day-07:
+===========================================================
+Reading the Mahabharata by the Tungabhadra - Day 7
+===========================================================
 
 As I read the Mahabharata today, a British lady came up to me to ask me about
 Hampi. She was wondering if the heat had something to do with global warming. I
@@ -14,7 +16,7 @@ assured her that it has always been this hot here. It's why Krishnadevaraya
 built so many pushkarinis, and why the landscape is filled with mantapas for
 weary travellers to rest as they walked in the hot sun.
 
-![Mahabharata Day 7](/assets/images/posts/india/mahabharata-day-07.jpg)
+.. figure:: /assets/images/posts/india/mahabharata-day-07.jpg
 
 
 Indeed, even the trees seem to be growing where travellers can find shade. Even
@@ -31,26 +33,28 @@ Today, I went to read the Mahabharata by the Tungabhadra, and I did. As I read,
 I could hear the wind blow down from the Anjanadri Parvatha, and I wonder if
 Vayu was listening as I read how Bhima defeated Jatasura.
 
-## Other Posts in the Series
+---------------------------
+Other Posts in the Series
+---------------------------
 
-1. [Day 1]({% post_url 2016-12-01-mahabharata-day-01 %})
-1. [Day 2]({% post_url 2016-12-02-mahabharata-day-02 %})
-1. [Day 3]({% post_url 2016-12-03-mahabharata-day-03 %})
-1. [Day 4]({% post_url 2016-12-04-mahabharata-day-04 %})
-1. [Day 5]({% post_url 2016-12-05-mahabharata-day-05 %})
-1. [Day 6]({% post_url 2016-12-06-mahabharata-day-06 %})
-1. **Day 7**
-1. [Day 8]({% post_url 2016-12-10-mahabharata-day-08 %})
-1. [Day 9]({% post_url 2016-12-15-mahabharata-day-09 %})
-1. [Day 10]({% post_url 2016-12-16-mahabharata-day-10 %})
-1. [Day 11]({% post_url 2016-12-17-mahabharata-day-11 %})
-1. [Day 12]({% post_url 2016-12-18-mahabharata-day-12 %})
-1. [Day 13]({% post_url 2016-12-19-mahabharata-day-13 %})
-1. [Day 14]({% post_url 2016-12-20-mahabharata-day-14 %})
-1. [Day 15]({% post_url 2016-12-21-mahabharata-day-15 %})
-1. [Day 16]({% post_url 2016-12-23-mahabharata-day-16 %})
-1. [Day 17]({% post_url 2016-12-25-mahabharata-day-17 %})
-1. [Day 18]({% post_url 2016-12-27-mahabharata-day-18 %})
-1. [Day 19]({% post_url 2016-12-28-mahabharata-day-19 %})
-1. [Day 20]({% post_url 2016-12-29-mahabharata-day-20 %})
-1. [Letter to the Author]({% post_url 2017-03-22-debroy-letter %})
+1. :ref:`Day 1<mahabharata-day-01>`
+2. :ref:`Day 2<mahabharata-day-02>`
+3. :ref:`Day 3<mahabharata-day-03>`
+4. :ref:`Day 4<mahabharata-day-04>`
+5. :ref:`Day 5<mahabharata-day-05>`
+6. :ref:`Day 6<mahabharata-day-06>`
+7. *Day 7 (Current Post)*
+8. :ref:`Day 8<mahabharata-day-08>`
+9. :ref:`Day 9<mahabharata-day-09>`
+10. :ref:`Day 10<mahabharata-day-10>`
+11. :ref:`Day 11<mahabharata-day-11>`
+12. :ref:`Day 12<mahabharata-day-12>`
+13. :ref:`Day 13<mahabharata-day-13>`
+14. :ref:`Day 14<mahabharata-day-14>`
+15. :ref:`Day 15<mahabharata-day-15>`
+16. :ref:`Day 16<mahabharata-day-16>`
+17. :ref:`Day 17<mahabharata-day-17>`
+18. :ref:`Day 18<mahabharata-day-18>`
+19. :ref:`Day 19<mahabharata-day-19>`
+20. :ref:`Day 20<mahabharata-day-20>`
+21. :ref:`Letter to the Author<debroy-mahabharata>`
