@@ -86,6 +86,7 @@ sphinx==4.4.0
     #   sphinx-panels
     #   sphinx-tabs
     #   sphinx-togglebutton
+    #   sphinxcontrib-youtube
     #   sphinxemoji
     #   sphinxext-opengraph
     #   sphinxext-rediraffe
@@ -107,6 +108,8 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
+sphinxcontrib-youtube==1.1.0
+    # via -r requirements.in
 sphinxemoji==0.2.0
     # via -r requirements.in
 sphinxext-opengraph==0.5.1
