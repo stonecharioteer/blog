@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-02-18T07:30:14.671784+00:00</updated>
+  <updated>2022-03-28T06:57:00.676358+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -1326,5 +1326,24 @@ your code that has nothing to do with Airflow.</summary>
     <category term="python" label="python"/>
     <category term="templating" label="templating"/>
     <published>2022-02-18T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/learning-rust/</id>
+    <title>Learning Rust</title>
+    <updated>2022-03-28T00:00:00+00:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;I’ve been trying to learn Rust for nearly 3 years now. Oddly, I find that
+the process has been extremely similar to how I’ve learnt Python. I tried
+picking up Python in 2010, and I couldn’t. I tried again in 2015, and I was
+finally ready. The process has been the same.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/learning-rust/" rel="alternate"/>
+    <summary>I’ve been trying to learn Rust for nearly 3 years now. Oddly, I find that
+the process has been extremely similar to how I’ve learnt Python. I tried
+picking up Python in 2010, and I couldn’t. I tried again in 2015, and I was
+finally ready. The process has been the same.</summary>
+    <category term="Rust" label="Rust"/>
+    <published>2022-03-28T00:00:00+00:00</published>
   </entry>
 </feed>
