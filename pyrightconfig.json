@@ -1,0 +1,21 @@
+{
+  "pythonPath": "/home/stonecharioteer/.venvs/python3.10/blog/bin/python",
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/env",
+    "vinay-scripts"
+  ],
+  "ignore": [
+    "src/oldstuff"
+  ],
+  "stubPath": "src/stubs",
+  "venv": "env367",
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+  "pythonVersion": "3.7",
+  "pythonPlatform": "Linux"
+}
