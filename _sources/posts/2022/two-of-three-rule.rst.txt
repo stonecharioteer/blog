@@ -193,7 +193,7 @@ And this is a page I'm taking out of distributed programming, and the CAP
 theorem.
 
 .. admonition:: CAP Theorem
-   :tip:
+   :class: tip
 
    The CAP theorem says that for any distributed data store, you will never be
    able to achieve high consistency and high availability when a partition
@@ -307,6 +307,9 @@ was the driving factor will no longer make a difference.
    holds at **every** company; indeed, it holds at *any company* you should and
    would work at. Shift the second factor, and you won't want to work there, no
    matter how awesome the first factor you picked is.
+
+   The Two of Three Rule is: *Pay, people, work. Two of these three things will
+   either make you really love your job, or really hate your job.*
 
 It's funny how this works.
 
