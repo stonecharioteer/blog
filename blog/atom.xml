@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-03-28T07:49:59.732483+00:00</updated>
+  <updated>2022-05-19T15:45:54.746328+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -1256,5 +1256,26 @@ picking up Python in 2010, and I couldn’t. I tried again in 2015, and I was
 finally ready. The process has been the same.</summary>
     <category term="Rust" label="Rust"/>
     <published>2022-03-28T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/two-of-three-rule/</id>
+    <title>The Two of Three Rule</title>
+    <updated>2022-05-19T00:00:00+00:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;I’ve worked at my fair share of companies, both &lt;em&gt;in&lt;/em&gt; and &lt;em&gt;out&lt;/em&gt; of the computer
+technology space. I don’t think I’m leaving companies because I have a problem
+with consistency; in fact it’s quite the opposite.&lt;/p&gt;
+&lt;img alt="../_images/control-charts.png" src="../_images/control-charts.png" /&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/two-of-three-rule/" rel="alternate"/>
+    <summary>I’ve worked at my fair share of companies, both in and out of the computer
+technology space. I don’t think I’m leaving companies because I have a problem
+with consistency; in fact it’s quite the opposite.</summary>
+    <category term="CareerAdvice" label="Career Advice"/>
+    <category term="Statistics" label="Statistics"/>
+    <category term="Leadership" label="Leadership"/>
+    <category term="HearingLoss" label="Hearing Loss"/>
+    <published>2022-05-19T00:00:00+00:00</published>
   </entry>
 </feed>
