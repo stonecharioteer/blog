@@ -2,6 +2,7 @@
 :date: May 19, 2022
 :category: Tech
 :tags: Career Advice, Statistics, Leadership, Hearing Loss
+:description: How do you decide when to join a company, when to stay and when to leave?
 :redirect: two-of-three
 
 ======================
