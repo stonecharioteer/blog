@@ -406,9 +406,21 @@ my opinion. To others, those scales are definitely going to be different.
    :class: info
 
    My scales are currently balanced at Merkle Science, and I'm trying to improve
-   on the crew part. I'm looking for great people to work with me, so if you
-   are looking for work, and have `something passionate you want to talk about,
-   <https://jobs.lever.co/merklescience/>`_
+   on the crew part. I truly believe that *culture* is something each and
+   everyone of us brings into a company. If you're in the leadership team, and
+   if you're not trying to bring in people that improve your company's culture,
+   you're not doing your best to keep people from tipping their personal scales.
+
+   By hiring great people and satisfying their scales, you'll achieve a balance
+   when it comes to your company as a whole. You won't be know as the company
+   where money is astounding but work is horrible. You will be bringing in
+   people that are genuinely interested in writing a few lines of a masterful
+   play, and that is `a play to which I'd like to contribute a verse.
+   <https://www.poetryfoundation.org/poems/51568/o-me-o-life>`_
+
+   To this end, I'm looking for great people to work with me, so if you are looking for work,
+   and have `something passionate you
+   want to talk about, <https://jobs.lever.co/merklescience/>`_
    hit me up on `Twitter <https://twitter.com/stonecharioteer>`_ or LinkedIn and
    let me know what you're looking for. `Let's set up an interview.
    <careers@merklescience.com>`_
