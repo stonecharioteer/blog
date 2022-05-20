@@ -359,7 +359,6 @@ German boss wanted me to build -- a project I still think about fondly.
 
 Then I joined Visa. Here I got great pay. My colleagues were good people. And
 the work was horrendous. I left in two years because that changed, and it would
-circumstances. I left in two years because that changed, and it would
 have been sooner if not for The Great Pandemic of 2020.
 
 I'm not explaining all of this to say that my workplaces were negative. No. I
