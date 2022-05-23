@@ -415,7 +415,7 @@ my opinion. To others, those scales are definitely going to be different.
    you're not doing your best to keep people from tipping their personal scales.
 
    By hiring great people and satisfying their scales, you'll achieve a balance
-   when it comes to your company as a whole. You won't be know as the company
+   when it comes to your company as a whole. You won't be known as the company
    where money is astounding but work is horrible. You will be bringing in
    people that are genuinely interested in writing a few lines of a masterful
    play, and that is `a play to which I'd like to contribute a verse.
