@@ -1,10 +1,12 @@
----
-blogpost: true
-date: Mar 10, 2021
-category: Update, Reading
-tags: bibek-debroy, hampi, reading, mahabharata, letters
----
-# Migrating the Mahabharata Posts
+:blogpost: true
+:date: Mar 10, 2021
+:category: Update, Reading
+:tags: bibek-debroy, hampi, reading, mahabharata, letters
+
+.. _mahabharata:
+=============================================
+Reading the Mahabharata by the Tungabhadra
+=============================================
 
 In 2016, I spent a month in Hampi to read Bibek Debroy's 10-volume translation
 of the Mahabharata. It was a life-changing experience, and I formed a bond with

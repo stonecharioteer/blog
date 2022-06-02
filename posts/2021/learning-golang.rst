@@ -26,6 +26,7 @@ To help me measure my journey, I'm going to target being able to do the followin
    * Read environment variables to get overrides for custom settings
 
 2. Interact with an API
+
    * Create a CLI (again) which interacts with some public API (Maybe the Starwars or Pokemon API)
    * Find the equivalent of ``retrying`` to backoff from requests.
    * Find out how to pass Authentication headers/tokens
