@@ -56,20 +56,20 @@ Additionally, I want to learn the following things.
 
 1. Rust
 
-It is high time I learn to program in a low level language, relatively speaking.
-I want to code in Rust.
+    It is high time I learn to program in a low level language, relatively speaking.
+    I want to code in Rust.
 
 2. Elixir / Erlang
 
-I have wanted to learn Elixir or Erlang for over 3 years now. And I am going to do that.
+    I have wanted to learn Elixir or Erlang for over 3 years now. And I am going to do that.
 
 3. Linux Kernel Internals
 
-This is a topic that deeply interests me, and I want to learn more.
+    This is a topic that deeply interests me, and I want to learn more.
 
 4. Database Internals
 
-One of my weakpoints is database tuning and designing for performant CRUD apps. I would like to fix that in the upcoming weeks.
+    One of my weakpoints is database tuning and designing for performant CRUD apps. I would like to fix that in the upcoming weeks.
 
 Most importantly, I am also going to write a book on MicroPython. Apress has expressed
 interest in publishing it, but I am severly late, due to several reasons. I need to contact

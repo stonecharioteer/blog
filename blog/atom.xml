@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-05-23T05:44:50.176323+00:00</updated>
+  <updated>2022-06-04T15:17:13.123170+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -489,7 +489,7 @@ which is a blessing for someone who is single-sided deaf, like me.PyCon India 20
     <updated>2020-09-01T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;Explicit markup ends without a blank line; unexpected unindent.&lt;/p&gt;
-&lt;img alt="Hearing Loss" src="assets/images/posts/hearing-loss/hearing-aid.png)" /&gt;
+&lt;img alt="Hearing Loss" src="../_images/hearing-aid.png" /&gt;
 &lt;/div&gt;
 </content>
     <link href="https://stonecharioteer.com/posts/2020/no-leaf-clover/" rel="alternate"/>
@@ -657,6 +657,23 @@ to keep track of the episodes I love, as well as podcasts I love.</summary>
     <published>2020-07-23T00:00:00+00:00</published>
   </entry>
   <entry>
+    <id>https://stonecharioteer.com/posts/2020/ear-one/</id>
+    <title>(Y)ear One</title>
+    <updated>2020-09-01T00:00:00+00:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Explicit markup ends without a blank line; unexpected unindent.&lt;/p&gt;
+&lt;img alt="Headphones" src="../_images/ear-one.jpeg" /&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2020/ear-one/" rel="alternate"/>
+    <summary>Explicit markup ends without a blank line; unexpected unindent.Headphones</summary>
+    <category term="hearing-loss" label="hearing-loss"/>
+    <category term="health" label="health"/>
+    <category term="single-sided-deafness" label="single-sided-deafness"/>
+    <category term="snhl" label="snhl"/>
+    <published>2020-09-01T00:00:00+00:00</published>
+  </entry>
+  <entry>
     <id>https://stonecharioteer.com/posts/2020/2020-11-11-web-application-security/</id>
     <title>Web Application Security with secure.py</title>
     <updated>2020-11-11T00:00:00+00:00</updated>
@@ -729,14 +746,14 @@ In this article, I show you how to get around that.</summary>
     <published>2020-11-30T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/posts/2020/2020-12-04-a-year-of-rest/</id>
+    <id>https://stonecharioteer.com/posts/2020/a-year-of-rust/</id>
     <title>A Year Of Rest</title>
     <updated>2020-12-04T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;I have been taking it easy for a year.&lt;/p&gt;
 &lt;/div&gt;
 </content>
-    <link href="https://stonecharioteer.com/posts/2020/2020-12-04-a-year-of-rest/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/posts/2020/a-year-of-rust/" rel="alternate"/>
     <summary>I have been taking it easy for a year.</summary>
     <category term="hobbies" label="hobbies"/>
     <category term="coding" label="coding"/>
