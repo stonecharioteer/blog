@@ -13,7 +13,7 @@ Indian Mythology
 ---------------------
 Health
 ---------------------
-* Hearing Loss Articles :ref:`1 <sshl-1>`, :ref:`2 <sshl-2`, :ref:`3 <sshl-3>`
+* Hearing Loss Articles :ref:`1, <sshl-1>` :ref:`2, <sshl-2>` :ref:`3. <sshl-3>`
 
 -----------------------
 Career
