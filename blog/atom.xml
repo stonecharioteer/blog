@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-06-04T15:17:13.123170+00:00</updated>
+  <updated>2022-06-04T15:18:57.528324+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -809,6 +809,29 @@ Sydrome, and I needed a chance to get over it.</summary>
     <category term="courses" label="courses"/>
     <category term="covid" label="covid"/>
     <published>2020-12-25T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2021/2021-03-10-mahabharata-instagram/</id>
+    <title># Migrating the Mahabharata Posts</title>
+    <updated>2021-03-10T00:00:00+00:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;In 2016, I spent a month in Hampi to read Bibek Debroy’s 10-volume translation
+of the Mahabharata. It was a life-changing experience, and I formed a bond with
+the author through correspondence ever since. I’d posted about my experience on
+Instagram, but I’d like to move all the posts here, for easy retrieval.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2021/2021-03-10-mahabharata-instagram/" rel="alternate"/>
+    <summary>In 2016, I spent a month in Hampi to read Bibek Debroy’s 10-volume translation
+of the Mahabharata. It was a life-changing experience, and I formed a bond with
+the author through correspondence ever since. I’d posted about my experience on
+Instagram, but I’d like to move all the posts here, for easy retrieval.</summary>
+    <category term="bibek-debroy" label="bibek-debroy"/>
+    <category term="hampi" label="hampi"/>
+    <category term="reading" label="reading"/>
+    <category term="mahabharata" label="mahabharata"/>
+    <category term="letters" label="letters"/>
+    <published>2021-03-10T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://stonecharioteer.com/posts/2021/2021-03-26-notes/</id>
