@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-06-04T15:42:20.767358+00:00</updated>
+  <updated>2022-06-04T15:51:32.308421+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -943,13 +943,11 @@ features all that much.</summary>
     <title>For Those Who Came in Late</title>
     <updated>2021-07-20T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
-&lt;p&gt;This is a very personal post. It’s about my journey so far. A few of you might
-know this already, but I thought this is a good time to document this journey.&lt;/p&gt;
+&lt;p&gt;Explicit markup ends without a blank line; unexpected unindent.&lt;/p&gt;
 &lt;/div&gt;
 </content>
     <link href="https://stonecharioteer.com/posts/2021/2021-07-20-for-those-who-came-in-late/" rel="alternate"/>
-    <summary>This is a very personal post. It’s about my journey so far. A few of you might
-know this already, but I thought this is a good time to document this journey.</summary>
+    <summary>Explicit markup ends without a blank line; unexpected unindent.</summary>
     <category term="Tech" label="Tech"/>
     <category term="Meta" label="Meta"/>
     <category term="Python" label="Python"/>

@@ -5,7 +5,6 @@
 :redirect: for-those-who-came-in-late
 
 .. _for-those-who-came-in-late:
-
 ==============================
 For Those Who Came in Late
 ==============================

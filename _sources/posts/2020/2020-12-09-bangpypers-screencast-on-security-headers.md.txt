@@ -4,6 +4,7 @@ date: Dec 9, 2020
 category: Talks
 tags: webdev, python, meetup, videos, tutorial, screencast, bangpypers
 ---
+
 # BangPypers Screencast On Security Headers
 
 The video for my screencast has finally been uploaded. This was a screencast conducted by BangPypers.
