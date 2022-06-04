@@ -21,3 +21,4 @@ Here is a list of most recent posts:
    about.md
    Values<posts/2021/personal-code.rst>
    Notes<notes/index.rst>
+   Must Read<mustread.rst>

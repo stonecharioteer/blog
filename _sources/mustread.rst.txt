@@ -1,0 +1,21 @@
+=====================
+Must Read Articles
+=====================
+
+This is a list of my personal favorite articles that I believe anyone will
+enjoy.
+
+--------------------
+Indian Mythology
+--------------------
+* :ref:`Reading the Mahabharata By The Tungabhadra <mahabharata>`
+
+---------------------
+Health
+---------------------
+* Hearing Loss Articles :ref:`1 <sshl-1>`, :ref:`2 <sshl-2`, :ref:`3 <sshl-3>`
+
+-----------------------
+Career
+-----------------------
+* :ref:`two-of-three`

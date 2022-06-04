@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-06-04T15:20:21.398360+00:00</updated>
+  <updated>2022-06-04T15:32:18.901356+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -812,20 +812,14 @@ Sydrome, and I needed a chance to get over it.</summary>
   </entry>
   <entry>
     <id>https://stonecharioteer.com/posts/2021/2021-03-10-mahabharata-instagram/</id>
-    <title>Migrating the Mahabharata Posts</title>
+    <title>Reading the Mahabharata by the Tungabhadra</title>
     <updated>2021-03-10T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
-&lt;p&gt;In 2016, I spent a month in Hampi to read Bibek Debroy’s 10-volume translation
-of the Mahabharata. It was a life-changing experience, and I formed a bond with
-the author through correspondence ever since. I’d posted about my experience on
-Instagram, but I’d like to move all the posts here, for easy retrieval.&lt;/p&gt;
+&lt;p&gt;Explicit markup ends without a blank line; unexpected unindent.&lt;/p&gt;
 &lt;/div&gt;
 </content>
     <link href="https://stonecharioteer.com/posts/2021/2021-03-10-mahabharata-instagram/" rel="alternate"/>
-    <summary>In 2016, I spent a month in Hampi to read Bibek Debroy’s 10-volume translation
-of the Mahabharata. It was a life-changing experience, and I formed a bond with
-the author through correspondence ever since. I’d posted about my experience on
-Instagram, but I’d like to move all the posts here, for easy retrieval.</summary>
+    <summary>Explicit markup ends without a blank line; unexpected unindent.</summary>
     <category term="bibek-debroy" label="bibek-debroy"/>
     <category term="hampi" label="hampi"/>
     <category term="reading" label="reading"/>
@@ -1302,16 +1296,12 @@ finally ready. The process has been the same.</summary>
     <title>The Two of Three Rule</title>
     <updated>2022-05-19T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
-&lt;p&gt;I’ve worked at my fair share of companies, both &lt;em&gt;in&lt;/em&gt; and &lt;em&gt;out&lt;/em&gt; of the computer
-technology space. I don’t think I’m leaving companies because I have a problem
-with consistency; in fact it’s quite the opposite.&lt;/p&gt;
+&lt;p&gt;Explicit markup ends without a blank line; unexpected unindent.&lt;/p&gt;
 &lt;img alt="../_images/control-charts.png" src="../_images/control-charts.png" /&gt;
 &lt;/div&gt;
 </content>
     <link href="https://stonecharioteer.com/posts/2022/two-of-three-rule/" rel="alternate"/>
-    <summary>I’ve worked at my fair share of companies, both in and out of the computer
-technology space. I don’t think I’m leaving companies because I have a problem
-with consistency; in fact it’s quite the opposite.</summary>
+    <summary>Explicit markup ends without a blank line; unexpected unindent.</summary>
     <category term="CareerAdvice" label="Career Advice"/>
     <category term="Statistics" label="Statistics"/>
     <category term="Leadership" label="Leadership"/>

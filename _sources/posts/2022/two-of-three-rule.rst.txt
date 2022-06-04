@@ -5,6 +5,8 @@
 :description: How do you decide when to join a company, when to stay and when to leave?
 :redirect: two-of-three
 
+
+.. _two-of-three:
 ======================
 The Two of Three Rule
 ======================
