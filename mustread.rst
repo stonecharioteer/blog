@@ -13,10 +13,20 @@ Indian Mythology
 ---------------------
 Health
 ---------------------
-* Hearing Loss Articles :ref:`The Sound of Music, <sshl-1>` :ref:`No Leaf
-  Clover, <sshl-2>` :ref:`(Y)ear One. <sshl-3>`
+
+* :ref:`The Sound of Music <sshl-1>`
+* :ref:`No Leaf Clover <sshl-2>`
+* :ref:`(Y)ear One <sshl-3>`
 
 -----------------------
 Career
 -----------------------
+* :ref:`For Those Who Came In Late <for-those-who-came-in-late>`
 * :ref:`The Two of Three Rule <two-of-three>`
+
+--------------------------------
+Speaking
+--------------------------------
+
+.. todo::
+   Add links to posts where I've spoken at conferences and/or events.
