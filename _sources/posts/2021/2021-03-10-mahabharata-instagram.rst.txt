@@ -4,7 +4,7 @@
 :tags: bibek-debroy, hampi, reading, mahabharata, letters
 
 ===================================
-# Migrating the Mahabharata Posts
+Migrating the Mahabharata Posts
 ===================================
 
 In 2016, I spent a month in Hampi to read Bibek Debroy's 10-volume translation
