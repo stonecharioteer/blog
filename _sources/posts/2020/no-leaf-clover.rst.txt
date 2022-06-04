@@ -13,8 +13,8 @@ accept them or reject them. What we do defines us.
 
 .. note::
 
-    This post is :ref:`continued from Part 1: The Sound of Music
-    <sshl-1>`_
+    This post is :ref:`continued from Part 1: The Sound of Music.
+    <sshl-1>`
 
 
 .. image:: /assets/images/posts/hearing-loss/hearing-aid.png
