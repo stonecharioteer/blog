@@ -2,14 +2,15 @@
 :date: May 19, 2022
 :category: Tech
 :tags: Career Advice, Statistics, Leadership, Hearing Loss
-:description: How do you decide when to join a company, when to stay and when to leave?
 :redirect: two-of-three
 
-
 .. _two-of-three:
+
 ======================
 The Two of Three Rule
 ======================
+
+How do you decide when to join a company, when to stay and when to leave?
 
 I've worked at my fair share of companies, both *in* and *out* of the computer
 technology space. I don't think I'm leaving companies because I have a problem
