@@ -1,5 +1,6 @@
 .. vim: set shiftwidth=2 expandtab=2
 .. _book-ultralearning:
+
 ================================
 Ultralearning - Scott H. Young
 ================================

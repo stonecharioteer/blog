@@ -38,7 +38,7 @@ plans and calendars. I'm not certain I've been great following them, though.
    ^^^
 
    * :ref:`book-common-sense-guide`
-   * :ref:`book-cracking-the-coding-interview`
+   * :ref:`book-ctci`
    * :ref:`book-problem-solving-dsalgo`
 
    ---
