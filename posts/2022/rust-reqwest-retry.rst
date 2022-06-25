@@ -239,4 +239,4 @@ and I'm learning about Rust along the way.
    If you enjoy coding in Rust, or are interested enough to learn, and are
    interested in engineering problems in general, I'm hiring. Hit me up on
    Twitter or LinkedIn for a role at Merkle Science. Alternately, send us an
-   email at `careers@merklescience.com`_
+   email at `careers@merklescience.com <mailto:careers@merklescience.com>`_
