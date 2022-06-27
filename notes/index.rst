@@ -93,6 +93,20 @@ Interview Preparation
       :text: View
       :classes: btn-outline-primary btn-block stretched-link
 
+   ---
+
+   System Design
+   ^^^^^^^^^^^^^^^
+
+   My notes on System Design.
+
+   +++
+
+   .. link-button:: notes-system-design
+      :type: ref
+      :text: View
+      :classes: btn-outline-primary btn-block stretched-link
+
 
 -----------
 Tools
