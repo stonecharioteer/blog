@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-06-25T17:47:13.938546+00:00</updated>
+  <updated>2022-06-27T07:37:47.495405+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -1320,5 +1320,27 @@ finally ready. The process has been the same.</summary>
     <summary>How do you retry an HTTP request in Rust?</summary>
     <category term="Rust" label="Rust"/>
     <published>2022-06-25T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/bipolar/</id>
+    <title>Bipolar and ADHD – I Know Your Names Now</title>
+    <updated>2022-06-27T00:00:00+00:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;For the longest time of my life I wondered if I have ADHD. I dismissed that
+feeling, and it didn’t really affect me. I functioned, and I had moments of
+sheer &lt;em&gt;inspiration.&lt;/em&gt; I called this many, many things. At one point, I chalked my
+bursts of productivity off to me being a person who likes operating in bursts.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/bipolar/" rel="alternate"/>
+    <summary>For the longest time of my life I wondered if I have ADHD. I dismissed that
+feeling, and it didn’t really affect me. I functioned, and I had moments of
+sheer inspiration. I called this many, many things. At one point, I chalked my
+bursts of productivity off to me being a person who likes operating in bursts.</summary>
+    <category term="bipolar" label="bipolar"/>
+    <category term="adhd" label="adhd"/>
+    <category term="health" label="health"/>
+    <category term="mental-health" label="mental-health"/>
+    <published>2022-06-27T00:00:00+00:00</published>
   </entry>
 </feed>
