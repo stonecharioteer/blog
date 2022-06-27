@@ -17,6 +17,7 @@ Health
 * :ref:`The Sound of Music <sshl-1>`
 * :ref:`No Leaf Clover <sshl-2>`
 * :ref:`(Y)ear One <sshl-3>`
+* :ref:`Bipolar and ADHD -- I Know Your Names Now <bipolar-1>`
 
 -----------------------
 Career
