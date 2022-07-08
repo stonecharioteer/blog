@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-07-08T05:23:42.071397+00:00</updated>
+  <updated>2022-07-08T08:45:40.406986+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -994,7 +994,7 @@ know this already, but I thought this is a good time to document this journey.</
     <published>2021-07-20T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/posts/2021/2021-07-23-empathy-in-tech/</id>
+    <id>https://stonecharioteer.com/posts/2021/empathy-in-tech/</id>
     <title>Empathy in Tech</title>
     <updated>2021-07-25T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
@@ -1006,7 +1006,7 @@ has more to do with teaching than it does with personal relationships outside
 of tech.&lt;/p&gt;
 &lt;/div&gt;
 </content>
-    <link href="https://stonecharioteer.com/posts/2021/2021-07-23-empathy-in-tech/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/posts/2021/empathy-in-tech/" rel="alternate"/>
     <summary>I’ve been meaning to write about empathy in tech for a long time. Oddly, this
 is a topic that I’m the most hesitant to write about, for personal reasons.
 I’m not the most empathetic person, and I have trouble understanding how to
