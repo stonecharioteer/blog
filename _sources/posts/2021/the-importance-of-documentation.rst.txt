@@ -1,9 +1,13 @@
----
-blogpost: true
-category: Blog
-category: [documentation, software-development]
----
-# The Importance of Documentation
+:blogpost: true
+:date: April 28, 2021
+:category: Tech
+:tags: [documentation, teaching, writing]
+
+.. _documentation-1:
+
+================================
+The Importance of Documentation
+================================
 
 Nod if you've come across this before. You find an *amazing* software library
 that you can use for your project, whether at work or one of your many
@@ -12,7 +16,7 @@ side-projects, and you find the documentation just *lacking*.
 I've been here, and I'm certain you have as well.
 
 My first job began with me writing what is called a Standard Operating
-Procedure or `SOP` document. In other circles, this is called a Work
+Procedure or ``SOP`` document. In other circles, this is called a Work
 Instruction, or a Run Book. This was *not* a fun exercise. I naively believed
 that as long as I wrote it well, I was doing a good job.
 
@@ -30,7 +34,8 @@ documentation needs to stay cognizant of *who* is going to read it.
 
 This is hard though.
 
-When you write a `README.md` in your Git repository, *who* is going to read it?
+When you write a ``README.md`` in your Git repository, *who* is going to read
+it?
 
 When you write a blog post in your company's tech blog, *who* is going to read
 it?
@@ -40,7 +45,7 @@ When you write a conference talk submission, *who* is going to read it?
 When you write the API section of your documentation, *who* is going to read
 it?
 
-When you write a `Getting Started` guide, *who* is going to read it?
+When you write a ``Getting Started`` guide, *who* is going to read it?
 
 When you write an Invention Submission document for the Legal and Invention
 Protection department in your organization because you'd like to file for a
@@ -51,7 +56,7 @@ writing your documentation as though the *same* sort of people are going to
 read all these sections, then you might as well stop writing the document in
 the first place.
 
-Consider the README.md file. Someone who arrives at this file comes to it in
+Consider the ``README.md`` file. Someone who arrives at this file comes to it in
 one of three ways:
 
 1. They found the repository on Google, when they were searching for something.
@@ -77,7 +82,7 @@ The audience here, is someone who can get started with your code with just this
 file.  Give them the same credit you give yourself. This is someone who wants
 to figure out how your tool/code works with your source code.
 
-Things to remember when you are doing this:
+Here are some things to remember when you are doing this.
 
 1. This might be a co-worker. So if you're going to need to point them to
    relevant setup instructions that may or may not involve package managers.
@@ -91,7 +96,7 @@ Things to remember when you are doing this:
 
 However, a README file is not the same as a Getting Started Guide, for example.
 
-In a Getting Started Guide, you need to ensure you talk about the following:
+In a Getting Started Guide, you need to ensure you talk about the following.
 
 1. How do you install your code in the most-relevant fashion?
 2. How do you check whether the code has installed (usually by checking the
@@ -102,7 +107,7 @@ In a Getting Started Guide, you need to ensure you talk about the following:
 6. How do you find the developer manual?
 7. How do you report bugs?
 
-Some of these are the same as the ones in the README.md section, but the way
+Some of these are the same as the ones in the ``README.md`` section, but the way
 you write this will change. Now, your user may not even be a developer. They're
 going to be your *user*, the person for whom you wrote this tool or library in
 the first place. How do you ensure they have the least friction in getting
@@ -115,21 +120,25 @@ reader doesn't care about. Instead, they want to know how to get started.
 Remember that this tonal shift keeps happening constantly. Every single page of
 your documentation should feed off this belief.
 
-*Your Getting Started Guide is not your `README.md` file.*
+*Your Getting Started Guide is not your ``README.md`` file.*
 
-One of my favourite resources on writing documentation is [Divio's Documentation System](https://documentation.divio.com/).
-There's also a [great talk that was delivered at PyCon Australia 2017 on the topic](https://www.youtube.com/watch?v=t4vKPhjcMZg&feature=youtu.be).
+One of my favourite resources on writing documentation is `Divio's Documentation
+System. <https://documentation.divio.com/>`_ There's also a `great talk that was
+delivered at PyCon Australia 2017 on the topic.
+<https://www.youtube.com/watch?v=t4vKPhjcMZg&feature=youtu.be>`_
 
 While those are great resources, I'm starting a series of blog-posts on writing
 different parts of your documentation, and I'll update them over the next few
 weeks.
 
-I'd like to expand on my idea of what goes into a `README.md` first, and then
+I'd like to expand on my idea of what goes into a ``README.md`` first, and then
 tackle how to write the other parts of documentation in dedicated posts.
 
-## Series
+---------
+Series
+---------
 
-1. [How to Write Documentation: The README.md file]({% post_url 2021-04-30-how-to-write-documentation-the-readme-file %})
+1. :ref:`How to Write Documentation: The README.md file <documentation-2>`
 2. How to Write Documentation: The Getting Started Section
 3. How to Write Documentation: The Installation Guide
 4. How to Write Documentation: The API Reference

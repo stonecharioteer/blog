@@ -1,24 +1,32 @@
----
-blogpost: true
-category: Opinion
-tags: [documentation, writing, meta, side-projects]
----
-# How to Write Documentation - The README.md File
+:blogpost: true
+:date: April 30, 2021
+:category: Tech
+:tags: [documentation, teaching, writing]
 
-In the introduction post to this series, I discussed how to write a `README.md`
-file in a `git` repository. I'm digging deeper into this here.
+
+.. _documentation-2:
+
+====================================================
+How to Write Documentation - The README.md File
+====================================================
+
+In the introduction post to this series, I discussed how to write a ``README.md``
+file in a ``git`` repository. I'm digging deeper into this here.
 
 Remember the perennial question when you write docs: "Who is your audience?"
 
 With a Readme file, that person can safely be assumed to be tech-savvy.
 
 So, to satiate their thirst, you need to cut to the chase as well. Your
-`README.md` file should seek to inform instantly. It shouldn't be too long,
+``README.md`` file should seek to inform instantly. It shouldn't be too long,
 because the user might be reading this on Github's mobile site, or, god-forbid,
 something with a horrible UI. So instead of lengthy descriptions of what your
 project does, what *should* you describe?
 
-## The Project Name
+---------------------
+The Project Name
+---------------------
+
 
 Use your project's title as the top-most heading. That gives your project more
 visibility, it shows what your project *is*. While this doesn't seem like much,
@@ -38,30 +46,46 @@ repository names do indicate the purpose of these repositories, do not always
 assume someone who *fumbles* on your repository knows that this is attached to
 a larger project.
 
-So declare that at the *very top*. Use a project name title, just `server`
-won't make sense. Instead, use `Sprint Web Service`. Remember that your
+So declare that at the *very top*. Use a project name title, just ``server``
+won't make sense. Instead, use ``Sprint Web Service``. Remember that your
 repository name doesn't have to be your project's name. Different people use
 repository names for different purposes.
 
-## The CICD Stickers
+.. note::
+   If your project name is an esoteric reference, go ahead and add that at the
+   very bottom of your README. Do not add that at the top
+
+   If you have a logo that reflects this, ensure that you're not copying over
+   another organization's Intellectual Property.
+
+---------------------
+The CICD Stickers
+---------------------
 
 I'm not a big proponent of the pipeline stickers. If you need your pipeline to
 alert you that there's something wrong, then your docs aren't the place to do
-that. Do not pollute your `README.md` file with a dozen stickers. However, do
+that. Do not pollute your ``README.md`` file with a dozen stickers. However, do
 use it to indicate helpful stuff. however, you can make do *without* the
 stickers, that's better.
 
-## A Note
+---------
+A Note
+---------
+
 
 Add a note on who this is for. That greatly helps people perusing your README.
 Especially if you have an actual developer and contributor guide somewhere.
 
-## A Link to the Documentation
+--------------------------------
+A Link to the Documentation
+--------------------------------
 
 Add a link to your complete documentation website. Add a note stating that
 that's where the user manual and other errata are.
 
-## Installation Guide
+--------------------------
+Installation Guide
+--------------------------
 
 Add a *very* short installation guide, albeit from source. Do not list out the
 5000 package managers that you support in your tool. Those belong in your docs,
@@ -81,13 +105,17 @@ docs is for.
 However, remember that even with the best of warnings, you are going to have
 people who come here and think that these docs are for them.
 
-## Building the Documentation
+-------------------------------
+Building the Documentation
+-------------------------------
 
 This is an optional step, but it is necessary if building local docs is
 something someone who wants to use your tool should do. However, this can also
 go into your developer documentation.
 
-## Screenshots / Recordings
+----------------------------
+Screenshots / Recordings
+----------------------------
 
 *If* you are building a User Interface, be it a TUI, GUI or CLI, you need to
 show what the interface looks like in a screenshot. You do not need to add a
@@ -98,14 +126,18 @@ very different in their installation, they can immediately note that the
 screenshot is from a different version. Note that if you can, you should always
 update the screenshot whenever something major changes.
 
-## License
+-----------
+License
+-----------
 
 Add a relevant, short licence note on this readme to help people understand
 what license the project is using. Do not replicate the entire license here,
 instead link to the relevant file. If your license has changed over time, note
 the version from which the version has changed as well.
 
-## Contributing
+---------------
+Contributing
+---------------
 
 In the Contributing section, link to the issue tracker, and to the Developer
 guide if you have one. If you don't have one, think about how many developers
@@ -115,7 +147,9 @@ section right here if you need it.
 If you're not going to maintain a separate section, then make sure you show users
 how to run tests in this section. Treat it like a mini-Developer's guide.
 
-## Other Notes
+---------------
+Other Notes
+---------------
 
 Some other notes you can put in your README are:
 
@@ -125,7 +159,9 @@ Some other notes you can put in your README are:
    channel that's moderated by a bot.
 3. A link to your company's website, if this is a company's open source project.
 
-## What does not belong in your README
+------------------------------------
+What does not belong in your README
+------------------------------------
 
 1. Authors and Contributors list.
 2. Changelog
@@ -138,7 +174,9 @@ Some other notes you can put in your README are:
 There *are* usecases for each of these, but they don't belong in the README.
 Instead, make a project website with dedicated sections for the,.
 
-## Final Note
+-------------------
+Final Note
+-------------------
 
 I'm going to be re-stating this time and again. While you have the best of
 intentions, you will not be able to make everyone happy. However, that doesn't
@@ -146,25 +184,29 @@ mean you shouldn't at least consider *who* your documentation is for. Make sure
 that you know this. That way, you will at least help some of the audience
 instead of triggering everyone.
 
-## Exceptions - `httpie`
+---------------------------
+Exceptions - ``httpie``
+---------------------------
 
-[`httpie`](https://github.com/httpie/httpie) goes against many of the points
+`httpie <https://github.com/httpie/httpie>`_ goes against many of the points
 I've listed above, but it does so with an important note at the top. It *tells*
 the reader that this *is* a development version of the official docs which are
 best viewed on the docs website.
 
-It provides a `GIF` right at the top, showing users what this tool can do. You
+It provides a ``GIF`` right at the top, showing users what this tool can do. You
 are *sold* at the very beginning.
 
 While the entire README actually is their documentation, they do it in a way
-that showcases different aspects of this tool effectively. The `README.md` does
+that showcases different aspects of this tool effectively. The ``README.md`` does
 what it's supposed to do: introduce the tool, and gives users help whenever
 they need it. Right at the top, the stickers are used to grand effect: to link
 to Discord where users can get help.
 
-## Series
+----------
+Series
+----------
 
-1. [The Importance of Documentation - Series Introduction]({% post_url 2021-04-28-the-importance-of-documentation %})
+1. :ref:`The Importance of Documentation - Series Introduction <documentation-1>`
 2. **How to Write Documentation: The README.md file**
 3. How to Write Documentation: The Getting Started Section
 4. How to Write Documentation: The Installation Guide

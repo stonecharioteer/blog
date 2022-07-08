@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-06-27T07:37:47.495405+00:00</updated>
+  <updated>2022-07-08T05:23:42.071397+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -860,6 +860,42 @@ notes website comes in.</summary>
     <category term="tiny" label="tiny"/>
     <category term="thoughts" label="thoughts"/>
     <published>2021-03-30T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2021/the-importance-of-documentation/</id>
+    <title>The Importance of Documentation</title>
+    <updated>2021-04-28T00:00:00+00:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;Nod if you’ve come across this before. You find an &lt;em&gt;amazing&lt;/em&gt; software library
+that you can use for your project, whether at work or one of your many
+side-projects, and you find the documentation just &lt;em&gt;lacking&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2021/the-importance-of-documentation/" rel="alternate"/>
+    <summary>Nod if you’ve come across this before. You find an amazing software library
+that you can use for your project, whether at work or one of your many
+side-projects, and you find the documentation just lacking.</summary>
+    <category term="[documentation" label="[documentation"/>
+    <category term="teaching" label="teaching"/>
+    <category term="writing]" label="writing]"/>
+    <published>2021-04-28T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2021/how-to-write-docs-the-readme-file/</id>
+    <title>How to Write Documentation - The README.md File</title>
+    <updated>2021-04-30T00:00:00+00:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;In the introduction post to this series, I discussed how to write a &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;README.md&lt;/span&gt;&lt;/code&gt;
+file in a &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;git&lt;/span&gt;&lt;/code&gt; repository. I’m digging deeper into this here.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2021/how-to-write-docs-the-readme-file/" rel="alternate"/>
+    <summary>In the introduction post to this series, I discussed how to write a README.md
+file in a git repository. I’m digging deeper into this here.</summary>
+    <category term="[documentation" label="[documentation"/>
+    <category term="teaching" label="teaching"/>
+    <category term="writing]" label="writing]"/>
+    <published>2021-04-30T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://stonecharioteer.com/posts/2021/personal-code/</id>
