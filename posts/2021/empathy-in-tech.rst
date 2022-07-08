@@ -1,11 +1,14 @@
----
-blogpost: true
-date: July 25, 2021
-category: Thoughts
-tags: meta, technology, career, empathy
-redirect: 2021/07/23/empathy-in-tech.html,empathy-in-tech
----
-# Empathy in Tech
+:blogpost: true
+:date: July 25, 2021
+:category: Thoughts
+:tags: meta, technology, career, empathy
+
+
+.. _empathy-in-tech:
+
+======================
+Empathy in Tech
+======================
 
 I've been meaning to write about empathy in tech for a long time. Oddly, this
 is a topic that I'm the most hesitant to write about, for personal reasons.
@@ -87,7 +90,7 @@ An architect I once knew was someone I wouldn't recommend learning from. I am
 adamant about this belief constantly. This person was a bully, and he would
 chide people telling them that they are "not a developer" because they didn't
 use his preferred editor, or his preferred shell. He'd tell college graduates
-that they were not developers because they didn't know how to use `git`. And
+that they were not developers because they didn't know how to use ``git``. And
 he constantly made others around him feel that they either had to conform to
 his whims, or that they wouldn't be given any encouragement from the
 management.
@@ -118,7 +121,7 @@ considering flushing my settings just before a presentation so that it doesn't
 detract from the message of the presentation.
 
 However, I used to wonder why *other* developers didn't use the command line
-interface as much as I did. I *love* the terminal. `neovim` and `tmux` fuel
+interface as much as I did. I *love* the terminal. ``neovim`` and ``tmux`` fuel
 my workflow constantly. I've tried VS Code and Sublime Text and I've kept
 returning to the terminal constantly. I use Linux over Mac or Windows, and
 almost always prefer a Linux laptop for work. My new workplace agreed to give
