@@ -23,8 +23,12 @@ Merkle Science
 
 **Lead Software Developer** | **Bangalore** - **Remote** | Started: **JULY 2021**
 
-* Designed and wrote the data quality service using Rust - this application goes through the
-  data of various blockchains to identify missing or newer data.
+* Conceptualized and developed the data-engineering toolkit - a multi-faceted
+  CLI that facilitates the movement of data across data stores, and opens up our
+  data layers for quality and consistency-related metrics.
+* Designed the alerting system for all our services.
+* Designed and wrote the data quality service using Rust - this application goes
+  through the data of various blockchains to identify missing or newer data.
 * Designed and wrote a websocket client to ingest blockchain data from various
   websocket implementions of chains using Rust.
 * Overhauled Apache Airflow DAGs for modularity.
@@ -36,14 +40,15 @@ VISA Inc.
 
 **Sr. Software Engineer - Data Platform** | **Bangalore** | **MAY 2019 - June 2021**
 
-* [PATENT PENDING] Designed and spearheaded the security portal project, a REST layer that
-  facilitates automation of Qualys security updates for PCI compliance
-  while adhering to company-specific rules regarding service availability,
-  using OSS and internal APIs to minimize maintenance time. Reduced contractual
-  manpower by 75% and downtime by 70 hours a month for 2400 servers.
-* [PATENT PENDING] Developed a library to create concurrent and self-cleaning containerized
-  sessions that can be used to automate parallel workflows for testing and automation
-  of complex applications: example threat analysis of cross-border transactions using a single VISA card.
+* Designed and spearheaded the security portal project, a REST layer that
+  facilitates automation of Qualys security updates for PCI compliance while
+  adhering to company-specific rules regarding service availability, using OSS
+  and internal APIs to minimize maintenance time. Reduced contractual manpower
+  by 75% and downtime by 70 hours a month for 2400 servers.
+* Developed a library to create concurrent and self-cleaning containerized
+  sessions that can be used to automate parallel workflows for testing and
+  automation of complex applications: example threat analysis of cross-border
+  transactions using a single VISA card.
 * Mentored college graduates to build their first applications, integrating
   native pipelines, helped them craft detailed documentation and tune the performance
   of their apps.
