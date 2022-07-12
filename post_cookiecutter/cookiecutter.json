@@ -1,0 +1,18 @@
+{
+  "post_title": null,
+  "draft": true,
+  "blogpost": "{{ not cookiecutter.draft }}",
+  "post_date": "{% now 'local', '%b %d, %Y'%}",
+  "file_name": "{{ cookiecutter.post_title.lower().replace(' ', '-')}}",
+  "subdir": "posts",
+  "year": "{% now 'local', '%Y'%}",
+  "categories": [
+    "Health",
+    "Personal",
+    "Reading",
+    "Show and Tell",
+    "Tech",
+    "Updates",
+    "Writing"
+  ]
+}
