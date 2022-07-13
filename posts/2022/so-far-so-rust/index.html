@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Dear Mr. Debroy" />
+  <meta property="og:title" content="So Far So Rust" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="posts/2017/2017-03-22-debroy-letter.html" />
-  <meta property="og:description" content="Dear Mr. Debroy, I’d planned on writing this letter a few weeks ago. I drafted it a month ago but I wanted to rewrite it entirely because I wasn’t entirely happy with the first draft. I do not know..." />
+  <meta property="og:url" content="posts/2022/so-far-so-rust.html" />
+  <meta property="og:description" content="I’ve been using Rust as my primary programming language for 145 days now. In this article, I’m going to discuss my journey so far. While I’ve talked about this at length to my friends and even at m..." />
   
-    <title>Dear Mr. Debroy &#8212; Stonecharioteer&#39;s Blog</title>
+    <title>So Far So Rust &#8212; Stonecharioteer&#39;s Blog</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -186,12 +186,12 @@
             <!-- Only show if we have sidebars configured, else just a small margin  -->
             <div class="col-12 col-md-3 bd-sidebar">  
 <h2>
-  Dear Mr. Debroy
+  So Far So Rust
 </h2>
 <hr />
 <h2>
   <i class="fa fa-calendar"></i>
-  Mar 22, 2017 
+  Jul 13, 2022 
 </h2>
 
 <ul>
@@ -201,21 +201,18 @@
     ><i class="fa-fw fa fa-folder-open"></i></span
   >
    
-  <a href="../../../blog/category/writing/">Writing</a>  
+  <a href="../../../blog/category/tech/">Tech</a>  
 </li>
  
 <li id="tags">
   <span
-    ><i class="fa-fw fa fa-tags"></i> </span
+    ><i
+      class="fa-fw fa fa-tag"
+    ></i
+    ></span
   >
    
-  <a href="../../../blog/tag/bibek-debroy/">bibek-debroy</a>   
-  <a href="../../../blog/tag/letters/">letters</a>   
-  <a href="../../../blog/tag/mahabharata/">mahabharata</a>   
-  <a href="../../../blog/tag/indian-mythology/">indian-mythology</a>   
-  <a href="../../../blog/tag/books/">books</a>   
-  <a href="../../../blog/tag/reading/">reading</a>   
-  <a href="../../../blog/tag/writing/">writing</a>  
+  <a href="../../../blog/tag/rust/">Rust</a>  
 </li>
  
 <li id="comments">
@@ -238,7 +235,7 @@
   <i class="fa-fw fa fa-comments"></i>
   <a
     href="#disqus_thread"
-    data-disqus-identifier="/posts/2017/2017-03-22-debroy-letter/"
+    data-disqus-identifier="/posts/2022/so-far-so-rust/"
   >
     </a
   >
@@ -252,32 +249,32 @@
 <ul>
    
   <li>
-    <a href="../../2022/so-far-so-rust/"
-      >13 July - So Far So Rust</a
-    >
-  </li>
-  
-  <li>
-    <a href="../../2022/bipolar/"
+    <a href="../bipolar/"
       >27 June - Bipolar and ADHD – I Know Your Names Now</a
     >
   </li>
   
   <li>
-    <a href="../../2022/rust-reqwest-retry/"
+    <a href="../rust-reqwest-retry/"
       >25 June - Retrying a HTTP Reqwest with Rust</a
     >
   </li>
   
   <li>
-    <a href="../../2022/two-of-three-rule/"
+    <a href="../two-of-three-rule/"
       >19 May - The Two of Three Rule</a
     >
   </li>
   
   <li>
-    <a href="../../2022/learning-rust/"
+    <a href="../learning-rust/"
       >28 March - Learning Rust</a
+    >
+  </li>
+  
+  <li>
+    <a href="../jinja-curlybraces/"
+      >18 February - Using Non-Standard Jinja Templates</a
     >
   </li>
   
@@ -937,9 +934,46 @@ Interviews</a>
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#other-posts-in-the-series">
-   Other Posts in the Series
+  <a class="reference internal nav-link" href="#choosing-rust-a-retrospective">
+   Choosing Rust - A Retrospective
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#books">
+     Books
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#podcasts">
+     Podcasts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#youtube-channels-video-compilations">
+     Youtube Channels &amp; Video Compilations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#videos">
+     Videos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#blog-articles">
+     Blog Articles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#others">
+     Others
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -961,303 +995,281 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <div class="section" id="dear-mr-debroy">
-<h1>Dear Mr. Debroy<a class="headerlink" href="#dear-mr-debroy" title="Permalink to this headline">¶</a></h1>
+                 <div class="section" id="so-far-so-rust">
+<span id="id1"></span><h1>So Far So Rust<a class="headerlink" href="#so-far-so-rust" title="Permalink to this headline">¶</a></h1>
+<p>I’ve been using Rust as my primary programming language for 145 days now.
+In this article, I’m going to discuss my journey so far.</p>
+<p>While I’ve talked about this at length to my friends and even at meetups, I
+haven’t written about Rust as much as I’d like to. I came into this language the
+same way as I did to Python: sheer gut feeling. While I was considering Ruby
+instead of Python, here my alternative was Golang. Back then, I wasn’t educated
+enough to make a decision so I left it to a friend who recommended I choose
+Python. Today, that choice oddly involved the same friend who’s been using Rust
+at work. However, it also stemmed from a gut feeling that I wanted to learn Rust
+and not Golang for my side-projects.</p>
+<div class="tip admonition">
+<p class="admonition-title">An Aside</p>
+<p>A funny thing about my journey with Rust and Ruby is that <a class="reference external" href="https://steveklabnik.com/">Steve Klabnik</a> is involved in both of them. I chose Python
+over Ruby, and Steve is one of the most prolific contributors to Ruby on
+Rails. And I chose Rust over Golang, and was mildly surprised to find that
+Steve is involved with Rust and is one of the co-authors of the defacto book
+on the topic.</p>
+<p>Another fun fact is that <a class="reference external" href="https://lucumr.pocoo.org/">Armin Ronacher,</a> the
+creator of Flask, my favourite Web Framework, also shifted to Rust. In fact,
+<a class="reference external" href="https://www.youtube.com/watch?v=-4fzFKihmJw">Armin’s talk at PyCon India 2018</a> convinced me that my gut
+feeling about Rust was right.</p>
+</div>
+<p>How did I go about learning Rust? As someone who’s only coded in Python and a
+little bit of Javascript, I didn’t have much of an understanding of low-level
+programming constructs such as memory management to really grok stuff at the
+beginning. The advice most newbies get is “read The Book”, and while that is
+great advice, I kept faltering when trying to read it. I wanted to get my hands
+dirty ASAP and I wanted to build something that I could use.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The following is the content of handwritten letter I sent to Mr. Debroy dated
-Feb 12th, 2017. I’ve reproduced it in its entirety here.</p>
+<p>Rust has the reputation of being a Systems Programming Language.
+While the language did originally target itself as being an accessible
+systems language, the home page now says this instead.</p>
+<div class="line-block">
+<div class="line"><em>A language empowering everyone</em></div>
+<div class="line"><em>to build reliable and efficient software.</em></div>
 </div>
-<div class="figure align-default">
-<img alt="../../../_images/debroy-letter-01.jpg" src="../../../_images/debroy-letter-01.jpg" />
+<p>Don’t let the systems programming language tag scare you. Rust is designed to
+be used everywhere.</p>
 </div>
-<p>Dear Mr. Debroy,</p>
-<p>I’d planned on writing this letter a few weeks ago. I drafted it a month ago
-but I wanted to rewrite it entirely because I wasn’t entirely happy with the
-first draft. I do not know when this will reach you, but I believe in our
-postal service. Thank you for giving me your address by the way.</p>
-<p>My name is Vinay Keerthi, and I am writing to you regarding your translation of
-the Mahabharata.</p>
-<p>I come from an orthodox South Indian Brahmin family. I had the fortune of being
-introduced to our country’s <em>itihasa</em> by a rather liberal paternal grandfather.
-He imbued me with a fascination for stories of all kinds. Primarily though, I
-remember his retelling of the Ramayana, the Vishnu Purana, and the Shiva
-Purana. I vividly remember his rendition of the War in Lanka.</p>
-<p>He passed in 1996, when I was 8, and that severed my classical education. But
-his stories remained with me, and I was still hungry for more.</p>
-<p>I began reading at an early age. I’d read a children’s version of the Ramayana,
-a collection of stories from the Jatakas, the Hitopadesa and the Panchatantra.
-I also read a few stories from the Amar Chitra Katha series.</p>
-<p>I knew more stories than most kids my age, but what my childhood appeared to
-lack was the experience of the Mahabharata. I had a very vague idea of it, but
-mostly that it involved Krishna.</p>
-<p>I remember my grandfather resting in a comfortable chair to watch the old TV
-series on DD2. I remember a scene or two. I also remember it being covered in
-school. I remember yawning during Hindi class. That reinforces my faith that
-the fastest way to ensure kids don’t learn our classics is to shove them down
-their throats in high school. I’m sorry but far too few teachers are good with
-teaching.</p>
-<p>I loved stories and I grew up without access to the Mahabharata.</p>
-<p>Late in high school, I encountered the Rajagopalachari version, and frankly, I
-did not enjoy it as much as I did his Ramayana. But it piqued my interest.</p>
-<p>In the summer of 2002, I inherited my maternal grandfather’s vast collection of
-the Bhawan’s Journals: a few hundred of from from the 40s and 50s. In reading
-these, I discovered Kulapathi K. M. Munshi. And, by extension, I discovered his
-Krishnavatara series. I fell in love with Munshiji’s writing. How fortunate the
-Bhawan was to have him at the helm!</p>
-<p>Munshi’s books did what the rest could not. They made me want to read the
-Mahabharata in its true form: or as close to an unabridged translation as I
-possibly could.</p>
-<p>Between 2010 and 2011, I was working at the Indian Institute of Science. On my
-way back home, I often visited a bookshop where I knew the owner quite well. As
-I was about to ask him if there was a “good version” of the Mahabharata, he
-stopped me.</p>
-<p>&gt; If you want the full story, read this.</p>
-<p>He said, handing me a copy of an oddly bound book with curious symbols on the
-cover. It said:</p>
-<p>&gt; The Mahabharata 1: <em>Translated</em> by Bibek Debroy</p>
-<p><em>Translated</em>. Not a retelling. Not an abridgement. I was <em>sold</em>.</p>
-<p>The shopkeeper only had 3 volumes back then. So I decided to wait util I could
-buy the complete set. I wanted to read this at a stretch. So, I waited.</p>
-<p>In 2015, I learnt that you’d finished the series. I leapt at the chance and
-bought a box set. I love the new black covers.</p>
-<p>I devoured the first book in a week, on my daily commute. As I read the book,
-in the minute details that crept in, I was flooded by memories. My paternal
-grandfather <em>had</em> told me stories from the Adi Parva. He’d told me of
-Shakuntala and Dushyanta, of Parashurama, of Takshaka and Astika, of Jaratkaru
-and his condition that his wife must have the same name, and of Ganga’s descent
-to our world at the behest of Bhagiratha. My grandfather had told me stories
-and so many more. I just did not know that these were from the Mahabharata.</p>
-<p>When I realized this, I stopped reading. I realized that I was making a
-mistake.</p>
-<p>I decided to wait.</p>
-<p>This was the Mahabharata. I could not read this in a concrete jungle. I wanted
-to read it without distractions. I wanted to read it where no one would disturb
-me.</p>
-<p>So, I did.</p>
-<p>I wanted to read your translation of the tale that contains all tales in a
-place that was as hallowed as the stories themselves.</p>
-<p>So, I did.</p>
-<p>In December 2016, I took a month off from work and went to the land of my
-birth. I went to Kishkinda. I went to <em>Hampi</em>.</p>
-<p>For 18 days, I sat in the ruins of Vijayanagara, near the river Tungabhadra,
-and read the Mahabharata.</p>
-<p>I wanted to read these stories in Hampi, a place where bards probably recited
-versions of it to the King, centuries ago, to earn their keep.</p>
-<p>I wanted to read the Mahabharata in plain sight of a river.</p>
-<p>So, I did.</p>
-<p>On the first day, I sat in an abandoned temple to Vishnu and reread the first
-book. As I read stories of the Adi Parva, I was enveloped by the breeze of the
-hilltops of Hampi. Langoors frolicked in the trees and tried to steal fruits
-visitors offered to the temple below the hill where I read. That temple, the
-locals claim, is where Rama meets Sugreeva. As I read, a lone flautist played
-from across the Tungabhadra, and his song blended with the cries of the cheeky
-monkeys and the whispers of the flowing river.</p>
-<p>There, over the next three days, I read of Ganga and Shantanu, Satyavathi and
-Parashara, and learnt of the birth of Krishna Dvaipayana Vyaasa.</p>
-<p>As I progressed, I left that temple and sought the shade of a lone tree from
-where I could see several prominent hills in Kishkinda. As I read the next two
-books there, I must have been a strange sight to the tourists. SOme commented
-that I looked like a rishi!</p>
-<p>As I read the Mahabharata, I began to question it continuously. Shantanu’s love
-for Satyavathi, the terrible oath that Gangeya took for his father’s sake, and,
-by extension, Puru’s sacrifice for the sake of Yayati, made me wonder if any
-son today could do that for his father.</p>
-<p>&gt; Bhishma of the Terrible Oath indeed!</p>
-<p>After I read of the births of the Pandavas and the Kauravas, I climbed a hill
-where the rishi Matanga is supposed to have cursed the Vanara King Vali, and
-read of the misfortunes of the Pandavas.</p>
-<p>I read how Bhima bullied the Kauravas as a child. What else could an elder
-brother like Suyodhana do but grow to despise him? It is so easy to paint the
-Kauravas as villains but Dharma is way to subtle for that.</p>
-<p>I sat in an abandoned temple to Shiva, long desecrated by Muslims, as I read of
-Shakuni’s machinations. The temple is adored with symbols of a boar, and for
-that reason, is called the Varaha temple. Here, I read of the dice game at the
-sabha built by Maya.</p>
-<p><em>Why?</em></p>
-<p>If sons back then respected their fathers enough to give up their youth and
-sexual pleasure, why did Duryodhana not heed his father’s words?</p>
-<p>Dharma? Did Dharma compel the Son of Yama to wager Panchali away?</p>
-<p>Time and again Shakuni resorts to deceit and tells Yudishtira:</p>
-<p>&gt; “I have won!”</p>
-<p>What Dharma is this that allows it?</p>
-<p>Such irony that in a Sabha built by Maya, Dharma had to fall before Shakuni’s
-illusions.</p>
-<p>I climbed 500 odd stairs to a temple of Hanuman, atop a hill called Anjanadri -
-which locals claim as his birthplace. There, under yet another lonely tree, I
-pondered about the foolishness of the Sons of Dhritarashtra.</p>
-<p>Surely, they knew it was coming.</p>
-<p>Vyaasa’s story makes it seem like Parashurama’s slaying of Kartavirya Arjuna
-and his clansmen was a kind of preparation for the war that was about to follow
-on that very soil.</p>
-<p>Kurukshetra.</p>
-<p>War.</p>
-<p>But there already <em>was</em> war, right?</p>
-<p>I enjoyed the Virata Parva the most. Narada’s account of Nala and Damayanti was
-very new to me. I’d never heard of them before. Narada offering to bestow
-Dharmaraja with the knowledge of dice games - the knowledge Nala was known -
-seemed just. If only Yudishtira knew dice before his match with Shakuni.</p>
-<p>&gt; How subtle <em>is</em> Dharma?</p>
-<p>The day I finished the Virata Parva, it rained in Hampi. In <em>December!</em> The
-cyclone from the Bay of Bengal caught up with me. Or, like my aunts claim, King
-Virata’s love for the rain knows no bounds. I should read that portion once a
-month to save Bangalore from its water woes then.</p>
-<p>I laughed at the end of that Parva. How effortlessly Arjuna dismisses the sons
-of Dhritarashtra. In a poetic way, this should have been the end.</p>
-<p>Suyodhana should have listened.</p>
-<p>Naturally, he would not.</p>
-<p>All my life I have wanted to be a writer. With my love for stories, I began
-making up stories of my own as a child. I love the Mahabharata for its
-structure, for its flow, and for its unfathomable scale. The Mahabharata is
-impossible to avoid, I believe. Almost every Indian will at least assume that
-it is about the war.</p>
-<p>I wonder what it would feel like to read the Mahabharata knowing <em>nothing</em>
-about it. What an <em>experience</em> that would be! No wonder Lomaharshana could make
-people get goosebumps!</p>
-<p>One constant figure in the Mahabharata that I feel only pain for is Karna. My
-maternal aunt tells me that he is her favorite character. I can understand why.</p>
-<p>There is a beautiful Telugu movie called <em>Daana Veera Soora Karna</em>.
-Self-explanatory, don’t you think?</p>
-<p>Karna.</p>
-<p>Oh, Karna!</p>
-<p>Why? Why did he have to be so <em>giving?</em> Why couldn’t he say no? There is such a
-thing as being <em>too</em> generous. Even after his father beseeched him to refuse
-Indra’s plea, he gave up his <em>kavacha kundalam</em>.</p>
-<p>Is this Dharma?</p>
-<p>I sat at the entrance of a temple to Vishnu that has not seen worship in over
-four-hundred years and asked the idol if he thought it was fair.</p>
-<p>Naturally, he was silent.</p>
-<p>Flow.</p>
-<p>As a writer, it is hard to ignore the flow of the Mahabharata. As soon as he
-receives omniscience, Sanjaya cries out that <em>all</em> is <em>lost</em>. Bhishma has
-fallen.</p>
-<p>How cruel is it, then, for the story to recap events from the first day?</p>
-<p>But how wondrous it is to know that the reader is not alone in his or her
-doubts. Gandhivadhanva, Partha Arjuna has his doubts as well.</p>
-<p>Yet, he is fortunate to have the wielder of the Sudharshana as his charioteer.</p>
-<p>The Bhagavad Gita is such an icon part of the Mahabharata. I smiled as I read
-your translation.</p>
-<p><em>So many footnotes!</em> Completely necessary of course. But I could tell that the
-Gita itself needed much more explanation.</p>
-<p>Bhishma.</p>
-<p>Gangeya is the first character in this story I completely respect. What is
-Dharma if not Bhishma? Why couldn’t <em>he</em> have been King? Such a loss!</p>
-<p>As Bhishma stood, the battle followed all the rules of conflict.</p>
-<p>So, after his fall, chaos erupted.</p>
-<p>That image, of the aged warrior who hunbled Bhargava Rama of the Battle Axe,
-lying on a bed of arrows, is haunting.</p>
-<p>As Drona takes control, Dharma seems to whither.</p>
-<p>Angered by Duryodhana’s doubt in his abilities, Drona orders his army to form
-the <em>Chakravyuham</em> formation.</p>
-<p>Abhimanyu.</p>
-<p>The way that young boy was slain was far too cruel. I felt so angry at
-Jayadratha.</p>
-<p>&gt; Where was Dharma then? Does it not protect those who protect it?</p>
-<p>Why did Dharmaraja have to ask such a young boy to break in?</p>
-<p>&gt; Dharma. All of the Mahabharata is about Dharma, or one’s interpretation of
-&gt; it. Was Abhimanyu wronged? Or was Arjuna committing sin as he shot
-&gt; Bhurishrava in the arm to save Yuyudhana? As Jayadratha falls, Karna vows to
-&gt; use the Pashupati against Arjuna and Drona struggles to prove his worth.
-&gt; Dharma!</p>
-<p>Again, where is Dharma in the killing of Drona by tricking him into believing
-his son has fallen?</p>
-<p>Is Ashwattama’s anger not justified?</p>
-<p>As I read of Karna’s death, the sun was setting. The orange star was just
-behind the main <em>gopuram</em> of the Virupaksha temple. I looked at it from three
-kilometres away, by an abandoned temple to Narasimha.</p>
-<p>Karna. Oh, Vaikartana! how can anyone not cheer for your? When faced with the
-task of killing Ghatotkacha, you used the very weapon you’d saved to use on
-your nemesis Partha. Who could be <em>more</em> deserving of cheer?</p>
-<p>Even now I feel so much anguish at his death.</p>
-<p>For the death of Suyodhana, I sat near the Stone Chariot. It seemed fitting
-that I sit in the Vijaya Vittala Temple for this portion.</p>
-<p>It was very crowded but I was lost in this tale.</p>
-<p>I loved the portion where Samkarshana Balarama calls Suyodhana out to face the
-Pandavas. How much Duryodhana must have loved his teacher to leave the depths
-of lake Dvaipayana!</p>
-<p>Again, we witness Krishna’s guile.</p>
-<p>Suyodhana could have chosen to fight <em>any</em> one of the Pandavas. but Krishna
-knew.</p>
-<p>He knew who he would pick.</p>
-<p>An equal.</p>
-<p>Bhimasena.</p>
-<p>How? Why do I feel the most sympathy for Suyodhana? I did not expect this.</p>
-<p>In his death, I grieved as though my kin had passed.</p>
-<p>Where was Dharma?</p>
-<p>And what of Dhritarashtra and Gandhari? What of Kunti who had just lost her
-first son? And what of Subhadra? And Droupadi? Her honour had been restored at
-what cost? And what of Uttara? How could anyone stay sane after watching the
-wife of Karna lament for him?</p>
-<p>What does Dharma mean when all those who fought for it lay dead?</p>
-<p>Why! Why couldn’t Suyodhana share? Wasn’t all of this that <em>Yadava’s</em> fault? I
-agree with Gandhari.</p>
-<p>I can only imagine how much Dhritarashtra wanted to crush Bhima. Who can blame
-him?</p>
-<p>All that followed was destruction.</p>
-<p>Destruction of the Yadavas. The death of Krishna.</p>
-<p>Is this victory?</p>
-<p>Or is this the way of Dharma?</p>
-<p>Fitting, then, that even in death, Dharmaraja needed testing. What manner of
-soul could pass through this without scars?</p>
-<p>Truly fitting.</p>
-<p>Mr. Debroy, I could go on and on for ten more pages and still not run out of
-things I would like to share with you.</p>
-<p>I have read the Bible, the Epic of Gilgamesh, the Homeric Epics, a few tales
-from the Norse Eddas, and Buddhist stories, and nothing comes close.</p>
-<p>Everything pales in comparison. This story has it all. I can only hope it
-reaches more people.</p>
-<p>Three years ago, under the weight of several rejection letters, I put my
-writing aside to focus on my career instead. But reading the Mahabharata by the
-Tungabhadra has given me what I needed.</p>
-<p>Peace.</p>
-<p>This is what anyone should hope for, isn’t it?</p>
-<p>Peace.</p>
-<p>It’s more than what the Pandavas got for all their troubles.</p>
-<p>I have so many questions sir. In the entire story, I couldn’t help notice that
-Ganesha was never even mentioned.</p>
-<p>I was partly named after him, so naturally I searched for his name. It is so
-odd.</p>
-<p>I have other questions, on the historicity of this tale, but, I digress.</p>
-<p>Mr. Debroy, thank you.</p>
-<p>I cna only imagine how you did it. Managing your career, your family, and
-translating the greatest story of them all.</p>
-<p>I have only one thing to say to anyone who asks me about the Mahabharata.</p>
-<p>&gt; Bibek Debroy’s translation is the only one you should read. Unless you can
-&gt; read Sanskrit.</p>
-<p>Thank you sir.</p>
-<p>Thank you for giving us this. I will return to Hampi to read the Harivamsha and
-the Ramayana.</p>
-<p>I hope this letter reaches you in good health.</p>
-<p>Give my regards to your family. I have them to thank as well.</p>
-<p>Once again, sir, thank you for bringing a few memories of my grandfather back
-to me.</p>
-<p>Regards,</p>
-<p>Vinay Keerthi</p>
-<div class="section" id="other-posts-in-the-series">
-<h2>Other Posts in the Series<a class="headerlink" href="#other-posts-in-the-series" title="Permalink to this headline">¶</a></h2>
+<p>The opportunity came at work when I needed to build a health-check endpoint atop
+of our data services at Merkle Science. The original requirements needed me to
+hit our internal APIs and measure latency in realtime, and the prototype had
+been written in Python. It was introducing latency of its own and clearly that
+was an effect of the way it had been written. I could have rewritten it so that
+it stayed in Python, but that felt like a perfect reason to use Rust. I needed
+to write a webservice, so I sought the framework that looked the most like
+Flask, my preferred web-framework of choice: Rocket. In retrospect I was thrown off the
+more popular choice in Rust, actix-web, because I <em>thought</em> I had to use the
+actor-framework model that actix came with. Surprisingly, I learnt a long time
+later that actix-web doesn’t use actix under the hood anymore. The names are an
+unfortunate left-over from when the projects stemmed together. However, Rocket
+was easy to understand and I liked what I saw.</p>
+<p>The funny thing about how I started Rust is this. I’d been trying to learn it
+for months and I came upon a book called <a class="reference external" href="https://www.packtpub.com/product/rust-web-programming/9781800560819">Rust Web Programming by Maxwell Filton</a> and
+began reading it. I didn’t complete the book, but the first two chapters gave me
+more than enough to try writing code on my own. Another resource I found helpful
+earlier was <a class="reference external" href="https://fasterthanli.me/articles/a-half-hour-to-learn-rust">A Half-Hour to Learn Rust</a>, by Amos Wenger.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These resources worked for me, but again, <strong>read</strong> <a class="reference external" href="https://doc.rust-lang.org/book/">The Book</a>, which is the <em>definitive</em> resource for
+newbie Rustaceans. I am working my way through the book now, and it teaches
+me a lot that I wish I knew earlier.</p>
+</div>
+<p>I had seen the trait system at work, and wanted to use it for my task, since it
+involved hitting similar APIs which all had their own nuances, while returning a
+synonymous result. I wanted to create a trait that all the checks would
+implement, so that it would be extensible later down the line.</p>
+<p>After trying to write a little rust for a few days, I decided to tackle the
+<a class="reference external" href="https://github.com/rust-lang/rustlings">Rustlings course</a>, which provide
+interactive exercises for you to follow along. I solved all of them over a
+period of 3 days and I had to google for the answers to some of them. In
+particular, I recommend the exercises on strings to really grind some of the
+basics into your brain.</p>
+<p>While trying to grok how strings work in Rust, my friend recommended the <a class="reference external" href="https://www.youtube.com/c/LetsGetRusty">Let’s
+Get Rusty</a> YouTube Channel and, in
+particular, the <a class="reference external" href="https://www.youtube.com/watch?v=Mcuqzx3rBWc">video on Strings</a>.</p>
+<p>After going through these resources, I began building my service and encountered
+a few gotchas that seem trivial today.</p>
+<ul class="simple">
+<li><p>I couldn’t return a string slice from within a function because it was created
+inside the function and essentially points to something that no longer exists.</p></li>
+<li><p>Async functions could be called from within a synchronous functions as long as
+I wrap them inside a blocking runtime, such as the one offered by the <a class="reference external" href="https://docs.rs/futures/latest/futures/">futures</a> crate or the <a class="reference external" href="https://tokio.rs/">tokio crate</a></p></li>
+<li><p>To implement something I’d take for granted in Python, such as a retrying
+mechanism, I’d have to understand <em>how</em> to write a function that returns a
+generic response. This is <a class="reference internal" href="../rust-reqwest-retry/#rust-reqwest-retry"><span class="std std-ref">something I’ve documented here.</span></a></p></li>
+</ul>
+<p>There are a few more gotchas that I ran into, especially when it came to
+something as simple as the <code class="docutils literal notranslate"><span class="pre">return</span></code> keyword.</p>
+<p>When I first started learning Rust, the fact that a function could be written
+like below, stumped me.</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">fn</span> <span class="nf">add_ten</span><span class="p">(</span><span class="n">x</span>: <span class="kt">i32</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">i32</span> <span class="p">{</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">   </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+<span class="linenos">3</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Where’s the return statement? Turns out Rust <code class="docutils literal notranslate"><span class="pre">blocks</span></code> all operate this way. A
+block can <em>evaluate</em> to some value, and you could also write code like this.</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">fn</span> <span class="nf">add_ten</span><span class="p">(</span><span class="n">x</span>: <span class="kt">i32</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">i32</span> <span class="p">{</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">   </span><span class="kd">let</span><span class="w"> </span><span class="n">result</span>: <span class="kt">i32</span> <span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">      </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;I&#39;m going to add 10 to {x}&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">      </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">   </span><span class="p">};</span><span class="w"></span>
+<span class="linenos">6</span><span class="w">   </span><span class="n">result</span><span class="w"></span>
+<span class="linenos">7</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">block</span></code> that contains the <code class="docutils literal notranslate"><span class="pre">println!</span></code> statement and its subsequent line
+<em>evaluates</em> to <code class="docutils literal notranslate"><span class="pre">x+10</span></code>. Take this in for a second. Every single statement you
+will see eventually runs on this simple assertion. Match statements, <code class="docutils literal notranslate"><span class="pre">if-let</span></code>
+statements, or even a simple block like above that’s only written this way to
+show you what you <em>could</em> do, all of them can evaluate to a result.</p>
+<p>And the type annotations can coerce functions that use generics to return
+appropriate values.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Rust is the first strongly typed language I have used, so forgive me if I
+sound like a fanboy when it comes to this. I have serious beef with Python’s
+type hints, and how it’s just a hint and nothing more. I <em>love</em> how Rust
+handles types and how constraining it feels, just so that I can use these
+constraints to not only <em>be a better developer</em>, but also to control my
+program from going haywire.</p>
+</div>
+<p>One of the things I’ve learnt writing Rust as opposed to Python is that my code
+fails, frequently.</p>
+<p>I wrote a crawler to get data out of a paginated API, and my code had to account
+for edgecases pretty early on. The structs I wrote to deserialize payloads would
+fail at the first hint of a mismatch, especially when it came to types. I needed
+to know what <em>could</em> be a null value and what wouldn’t be. I needed to know the
+exact format for a timestamp and how to parse it.</p>
+<p>Other things about Rust seemed to be harder to grasp. The import system was
+something else that I really struggled with.</p>
+<p>In this above block, I <em>assumed</em> the <code class="docutils literal notranslate"><span class="pre">use</span> <span class="pre">std::env</span></code> line was an <em>import
+statement. I was blissfully unaware that I didn’t *need</em> to import something
+like this. I could, instead, have written it like follows.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">use</span></code> keyword wasn’t synonymous with Pythons <code class="docutils literal notranslate"><span class="pre">import</span></code> keyword. It was
+more akin to <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">requests.client</span> <span class="pre">as</span> <span class="pre">client</span></code>, bringing something into my namespace so
+that I didn’t need to constantly refer to the entire import resolution path.</p>
+<p>When I didn’t know this, using the <code class="docutils literal notranslate"><span class="pre">env_logger</span></code> <a class="reference external" href="https://docs.rs/env_logger/latest/env_logger/">crate</a> was unnerving.
+I didn’t know if Rust was injecting <code class="docutils literal notranslate"><span class="pre">env_logger</span></code> into my namespace somehow. It
+made me really uncomfortable because I hate having variables in my namespace
+that I didn’t control.</p>
+<p>However, Rust was doing something else. Every crate was available to use, if I
+didn’t want to <code class="docutils literal notranslate"><span class="pre">use</span></code> it, I could have just written out the entire import path.</p>
+<p>Those are not all of the gotchas, though. I continue to run into them every day,
+but you get the idea.</p>
+<p>Today, I’m using Rust in two projects at Merkle Science. First is the health
+check application I mentioned, while the second is a data-ops CLI that I wrote
+to help us load data into our datastores.</p>
+<div class="section" id="choosing-rust-a-retrospective">
+<h2>Choosing Rust - A Retrospective<a class="headerlink" href="#choosing-rust-a-retrospective" title="Permalink to this headline">¶</a></h2>
+<p>This article has been about <em>how</em> I learnt Rust, and trust me, there’s a lot
+more to say about that. My advice is pick a problem you’d choose any language
+for and choose Rust to solve it. Remember that it will take you longer, not just
+at first, than it would in a language like Python or Javascript. I don’t even
+profess to know that you’ll get guaranteed benefits, but what I <em>can</em> tell you
+is that you will learn new things; new <strong>paradigms.</strong></p>
+<p>I chose Rust because I <em>felt</em> like I wanted to code in Rust. I don’t claim to
+have a performance or memory-safety related answer to you. I’ve been falling
+slightly out of love with Python, largely because of the state of its virtual
+environments ecosystem or the “ship your development machine” gimic that
+containers seem to inculcate into every developer.</p>
+<p>Rust is fun. I’ve had so much fun coding in Rust that it reminds me of how much
+fun Python used to be. I am glad I can use it at work, and I am glad I can use
+it for my side projects. It’s a language that feels fresh, and coding in it has
+taught me so much already.</p>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="../../2016/2016-12-01-mahabharata-day-01/#mahabharata-day-01"><span class="std std-ref">Day 1</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-02-mahabharata-day-02/#mahabharata-day-02"><span class="std std-ref">Day 2</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-03-mahabharata-day-03/#mahabharata-day-03"><span class="std std-ref">Day 3</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-04-mahabharata-day-04/#mahabharata-day-04"><span class="std std-ref">Day 4</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-05-mahabharata-day-05/#mahabharata-day-05"><span class="std std-ref">Day 5</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-06-mahabharata-day-06/#mahabharata-day-06"><span class="std std-ref">Day 6</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-08-mahabharata-day-07/#mahabharata-day-07"><span class="std std-ref">Day 7</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-10-mahabharata-day-08/#mahabharata-day-08"><span class="std std-ref">Day 8</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-15-mahabharata-day-09/#mahabharata-day-09"><span class="std std-ref">Day 9</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-16-mahabharata-day-10/#mahabharata-day-10"><span class="std std-ref">Day 10</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-17-mahabharata-day-11/#mahabharata-day-11"><span class="std std-ref">Day 11</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-18-mahabharata-day-12/#mahabharata-day-12"><span class="std std-ref">Day 12</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-19-mahabharata-day-13/#mahabharata-day-13"><span class="std std-ref">Day 13</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-20-mahabharata-day-14/#mahabharata-day-14"><span class="std std-ref">Day 14</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-21-mahabharata-day-15/#mahabharata-day-15"><span class="std std-ref">Day 15</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-23-mahabharata-day-16/#mahabharata-day-16"><span class="std std-ref">Day 16</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-25-mahabharata-day-17/#mahabharata-day-17"><span class="std std-ref">Day 17</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-27-mahabharata-day-18/#mahabharata-day-18"><span class="std std-ref">Day 18</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-28-mahabharata-day-19/#mahabharata-day-19"><span class="std std-ref">Day 19</span></a></p></li>
-<li><p><a class="reference internal" href="../../2016/2016-12-29-mahabharata-day-20/#mahabharata-day-20"><span class="std std-ref">Day 20</span></a></p></li>
-<li><p><em>Letter to the Author (Current Post)</em></p></li>
+<li><p>I have learnt how to think about the mutability of my variables.</p></li>
+<li><p>I think a lot more about the <em>types</em> of my variables and the scopes they live
+in.</p></li>
+<li><p>I have learnt a lot about accounting for errors in my code. <code class="docutils literal notranslate"><span class="pre">Result</span></code> is
+<em>amazing</em>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Enums</span></code> are mind-blowingly amazing.</p></li>
+<li><p>Pattern matching is just <em>chef’s kiss.</em></p></li>
 </ol>
+<p>All of this being said and done, I don’t know if Rust is for <em>you</em>. Perhaps
+Golang is. There’s no reason to try both. I did, and I still don’t have a
+problem with Go. I prefer Rust, that’s all. If you’re trying to look for a job,
+I don’t recommend Rust. There are so few jobs out there for you. If you’re
+trying to rewrite your codebase for performance, let me tell you that you might
+be able to do it in the language of your choice. Look into distributed
+programming patterns, or even see if you can learn to profile and DRY your code.
+Learn to use caching and memoization. Improve your algorithms and
+datastructures. At times, your code might not even be the bottle-neck; for most
+web-applications, it’s your database queries. Don’t use an ORM blindly. Learn
+how SQL’s <code class="docutils literal notranslate"><span class="pre">EXPLAIN</span></code> statement works, you will build more efficient web
+applications with ease.</p>
+<p>Sometimes, a shell-script does everything you need a fancy CLI to do. So do
+that instead.</p>
+<p>However, should you choose Rust, great job. You will struggle for a while, I
+know I do even today, but you will also be able to build an amazing application
+because you’re closer to the metal. You will enjoy not having to install
+<code class="docutils literal notranslate"><span class="pre">build-essential</span></code>, or other build-time dependencies on your production
+machine. You don’t need to install <code class="docutils literal notranslate"><span class="pre">libgit</span></code> or those pesky <code class="docutils literal notranslate"><span class="pre">openssl</span></code>
+libraries either. Your compiled application has everything it needs.</p>
+<p>Rust is fun. Get used to the compiler shouting at you, because it’s a good
+teacher.</p>
+</div>
+<div class="section" id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I’ll update this list as and when I get a chance or come across something
+that helps me learn a newer concept.</p>
+</div>
+<p>While I used some pretty nondescript resources to learn Rust, I don’t recommend
+you do the same. At the time I began, a lot of the below resources didn’t exist,
+so I didn’t have an opportunity to use them. However, I recommend you go through
+these instead of following my path.</p>
+<div class="section" id="books">
+<h3>Books<a class="headerlink" href="#books" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://doc.rust-lang.org/book/">The Rust Programming Language by Steve Klabnik &amp; Carol Nichols</a></p></li>
+<li><p><a class="reference external" href="https://nostarch.com/rust-rustaceans">Rust for Rustaceans by Jon Gjengset</a></p></li>
+<li><p><a class="reference external" href="https://www.zero2prod.com/index.html">Zero to Production in Rust: An Introduction to Backend Development by Luca
+Palmieri</a></p></li>
+<li><p><a class="reference external" href="https://www.manning.com/books/rust-in-action">Rust in Action by Tim McNamara</a></p></li>
+<li><p><a class="reference external" href="https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/">Programming Rust by Jeff Blandy, Jason Orendorff &amp; Leonara F. S. Tindall</a></p></li>
+</ol>
+</div>
+<div class="section" id="podcasts">
+<h3>Podcasts<a class="headerlink" href="#podcasts" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://newrustacean.com/">New Rustcean</a> (discontinued)</p></li>
+<li><p><a class="reference external" href="https://rustacean-station.org/">Rustacean Station</a></p></li>
+</ol>
+</div>
+<div class="section" id="youtube-channels-video-compilations">
+<h3>Youtube Channels &amp; Video Compilations<a class="headerlink" href="#youtube-channels-video-compilations" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.youtube.com/c/LetsGetRusty">Let’s Get Rusty</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/c/JonGjengset">Jon Gjengset</a></p></li>
+<li><p><a class="reference external" href="http://dtrace.org/blogs/bmc/2018/02/03/talks/">Bryan Cantrill’s Talks</a></p></li>
+</ol>
+</div>
+<div class="section" id="videos">
+<h3>Videos<a class="headerlink" href="#videos" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=bnnacleqg6k">Type-Driven API Design in Rust by Will Crichton at StrangeLoop</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=A3AdN7U24iU">Rust: A Language for the Next 40 Years by Carol Nichols</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=rAF8mLI0naQ">Error Handling isn’t all About Errors by Jane Lusby at RustConf 2020</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=sDtQaO5_SOw">How to Learn Rust by Tim McNamara at Rust Linz Meetup</a></p></li>
+<li><p><a class="reference external" href="https://jvns.ca/blog/2016/09/11/rustconf-keynote/">Learning Systems Programming with Rust by Julia Evans at RustConf 2016</a></p></li>
+</ol>
+</div>
+<div class="section" id="blog-articles">
+<h3>Blog Articles<a class="headerlink" href="#blog-articles" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://fasterthanli.me/articles/a-half-hour-to-learn-rust">A Half-hour to Learn Rust</a></p></li>
+<li><p><a class="reference external" href="https://aws.amazon.com/blogs/opensource/sustainability-with-rust/">Sustainability with Rust - AWS</a></p></li>
+<li><p><a class="reference external" href="https://lucumr.pocoo.org/2015/5/27/rust-for-pythonistas/">Rust for Python Developers by Armin Ronacher</a> (2015)</p></li>
+<li><p><a class="reference external" href="https://lucumr.pocoo.org/2018/3/31/you-cant-rust-that/">You Can’t Rust That by Armin Ronacher</a> (2018)</p></li>
+<li><p><a class="reference external" href="https://thesquareplanet.com/blog/rust-tips-and-tricks/">Rust Tips and Tricks by Jon Gjengset</a> (2018)</p></li>
+</ol>
+</div>
+<div class="section" id="others">
+<h3>Others<a class="headerlink" href="#others" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="http://bfnightly.bracketproductions.com/">Roguelike Tutorial In Rust</a></p></li>
+<li><p><a class="reference external" href="https://rust-cli.github.io/book/index.html">Command Line Apps in Rust</a></p></li>
+<li><p><a class="reference external" href="https://rust-lang.github.io/async-book/">Asynchronous Programming in Rust</a></p></li>
+<li><p><a class="reference external" href="https://doc.rust-lang.org/nomicon/">The Rustonomicon</a></p></li>
+<li><p><a class="reference external" href="https://rust-unofficial.github.io/patterns/">Rust Design Patterns</a></p></li>
+<li><p><a class="reference external" href="https://danielkeep.github.io/tlborm/book/index.html">The Little Book of Rust Macros</a> (WIP)</p></li>
+<li><p><a class="reference external" href="https://doc.rust-lang.org/rust-by-example/">Rust by Example</a></p></li>
+<li><p><a class="reference external" href="https://github.com/rust-lang/rustlings">Rustlings - Interactive Exercises to Learn Rust</a></p></li>
+<li><p><a class="reference external" href="https://doc.rust-lang.org/cargo/">The Cargo Book</a></p></li>
+<li><p><a class="reference external" href="https://stackoverflow.com/a/24159933/18407535">StackOverflow - What are the differences between Rust’s `String` and `str`?</a></p></li>
+<li><p><a class="reference external" href="http://dtrace.org/blogs/bmc/2018/09/28/the-relative-performance-of-c-and-rust/">The Relative Performance of C and Rust by Bryan Cantrill</a></p></li>
+<li><p><a class="reference external" href="https://os.phil-opp.com/">Writing an OS in Rust</a></p></li>
+</ol>
+</div>
 </div>
 </div>
 
@@ -1267,20 +1279,13 @@ to me.</p>
 <div class="section">
   <span style="float: left">
      
-    <a href="../../2016/2016-12-29-mahabharata-day-20/">
-      <i class="fa fa-arrow-circle-left"></i> Reading the Mahabharata by the Tungabhadra - Day 20
+    <a href="../bipolar/">
+      <i class="fa fa-arrow-circle-left"></i> Bipolar and ADHD – I Know Your Names Now
     </a>
     
   </span>
   <span>&nbsp;</span>
   <span style="float: right">
-     
-    <a href="../2017-09-02-harivamsha/">
-      Reading the Harivamsha by the Tungabhadra <i
-        class="fa fa-arrow-circle-right"
-      ></i
-      >
-    </a>
     
   </span>
 </div>
@@ -1290,9 +1295,9 @@ to me.</p>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_shortname = "stonecharioteer";
-      var disqus_identifier = "/posts/2017/2017-03-22-debroy-letter/";
-      var disqus_title = "Dear Mr. Debroy";
-      var disqus_url = "https://stonecharioteer.com/posts/2017/2017-03-22-debroy-letter";
+      var disqus_identifier = "/posts/2022/so-far-so-rust/";
+      var disqus_title = "So Far So Rust";
+      var disqus_url = "https://stonecharioteer.com/posts/2022/so-far-so-rust";
 
       (function () {
         var dsq = document.createElement("script");

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-07-13T05:07:39.694090+00:00</updated>
+  <updated>2022-07-13T08:08:13.223930+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -1378,5 +1378,20 @@ bursts of productivity off to me being a person who likes operating in bursts.</
     <category term="health" label="health"/>
     <category term="mental-health" label="mental-health"/>
     <published>2022-06-27T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://stonecharioteer.com/posts/2022/so-far-so-rust/</id>
+    <title>So Far So Rust</title>
+    <updated>2022-07-13T00:00:00+00:00</updated>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;I’ve been using Rust as my primary programming language for 145 days now.
+In this article, I’m going to discuss my journey so far.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://stonecharioteer.com/posts/2022/so-far-so-rust/" rel="alternate"/>
+    <summary>I’ve been using Rust as my primary programming language for 145 days now.
+In this article, I’m going to discuss my journey so far.</summary>
+    <category term="Rust" label="Rust"/>
+    <published>2022-07-13T00:00:00+00:00</published>
   </entry>
 </feed>
