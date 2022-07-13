@@ -8,7 +8,7 @@
   <meta property="og:title" content="<no title>" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="post_cookiecutter/{{cookiecutter.subdir}}/{{cookiecutter.year}}/{{cookiecutter.file_name}}.html" />
-  <meta property="og:description" content="{% set title_length = cookiecutter|length %} {% set title_length = title_length + 10 %} {% for characters in range(title_length+10) %}={%endfor%} {{ cookiecutter.post_title }} {% for characters in ..." />
+  <meta property="og:description" content="{% set title_length = cookiecutter|length %}{% set title_length = title_length + 10 %} .. _{{cookiecutter.file_name}}:{% for characters in range(title_length+10) %}={%endfor%} {{ cookiecutter.post_..." />
   
     <title>&lt;no title&gt; &#8212; Stonecharioteer&#39;s Blog</title>
     
@@ -895,9 +895,9 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <p>{% set title_length = cookiecutter|length %}
-{% set title_length = title_length + 10 %}
-{% for characters in range(title_length+10) %}={%endfor%}
+                 <p>{% set title_length = cookiecutter|length %}{% set title_length = title_length + 10 %}
+.. _{{cookiecutter.file_name}}:</p>
+<p>{% for characters in range(title_length+10) %}={%endfor%}
 {{ cookiecutter.post_title }}
 {% for characters in range(title_length+10) %}={%endfor%}</p>
 
