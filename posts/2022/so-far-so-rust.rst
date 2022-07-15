@@ -177,6 +177,7 @@ something else that I really struggled with.
 
 .. code-block:: Rust
    :linenos:
+
    use std::env;
 
    fn main() {
