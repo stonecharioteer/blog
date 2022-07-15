@@ -1130,6 +1130,17 @@ to know what <em>could</em> be a null value and what wouldn’t be. I needed to 
 exact format for a timestamp and how to parse it.</p>
 <p>Other things about Rust seemed to be harder to grasp. The import system was
 something else that I really struggled with.</p>
+<div class="highlight-Rust notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">use</span><span class="w"> </span><span class="n">std</span>::<span class="n">env</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">   </span><span class="kd">let</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">env</span>::<span class="n">var</span><span class="p">(</span><span class="s">&quot;SOME_ENVIRONMENT_VARIABLE&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">   </span><span class="k">match</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">6</span><span class="w">      </span><span class="nb">Ok</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;SOME_ENVIRONMENT_VARIABLE = `{}`&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="linenos">7</span><span class="w">      </span><span class="nb">Err</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="fm">eprintln!</span><span class="p">(</span><span class="s">&quot;Error: {e:?}&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">8</span><span class="w">   </span><span class="p">};</span><span class="w"></span>
+<span class="linenos">9</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
 <p>In this above block, I <em>assumed</em> the <code class="docutils literal notranslate"><span class="pre">use</span> <span class="pre">std::env</span></code> line was an <em>import
 statement. I was blissfully unaware that I didn’t *need</em> to import something
 like this. I could, instead, have written it like follows.</p>
