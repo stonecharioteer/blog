@@ -6,7 +6,7 @@
   "file_name": "{{ cookiecutter.post_title.lower().replace(' ', '-')}}",
   "subdir": "posts",
   "year": "{% now 'local', '%Y'%}",
-  "categories": [
+  "category": [
     "Health",
     "Personal",
     "Reading",
