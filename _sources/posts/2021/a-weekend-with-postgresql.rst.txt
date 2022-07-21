@@ -85,5 +85,6 @@ than others.
 2. `Notes on Notion <https://www.notion.so/A-Weekend-With-PostgreSQL-68b98f680d8c4cbdb0f80fb99223c742>`_
 3. `Twitch Livestream Link <https://www.twitch.tv/stonecharioteer>`_ (You *will*
    need an account to comment, but you don't need one to watch.)
-4. YouTube Recordings `Day 1 <https://www.youtube.com/watch?v=d6DgYRfK0-Q>`_ and `Day 2 <https://www.youtube.com/watch?v=p-cj14f5D5E>`_
+4. YouTube Recordings `Day 1 <https://www.youtube.com/watch?v=d6DgYRfK0-Q>`_ and
+   `Day 2 <https://www.youtube.com/watch?v=p-cj14f5D5E>`_
 5. `PostgreSQL Documentation v13.3 <https://www.postgresql.org/docs/13/index.html>`_
