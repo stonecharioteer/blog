@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Moving a Window to the Next Monitor on XFCE" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="posts/2021/2021-09-01-moving-a-window-to-the-next-monitor.html" />
-  <meta property="og:description" content="Step 1: Install yay: yay is a package manager for AUR. It’s super useful when installing Arch packages in Manjaro. From the Github README.md: Step 2: Dependencies: The core dependencies for this to..." />
+  <meta property="og:url" content="posts/2021/xfce-move-monitor.html" />
+  <meta property="og:description" content=":blogpost:true :tags: linux, manjaro, xfce, x11 :category: Tech :date: Sept 1, 2021 Step 1 - Install yay: yay is a package manager for AUR. It’s super useful when installing Arch packages in Manjar..." />
   
     <title>Moving a Window to the Next Monitor on XFCE &#8212; Stonecharioteer&#39;s Blog</title>
     
@@ -184,38 +184,7 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">  
-<h2>
-  Moving a Window to the Next Monitor on XFCE
-</h2>
-<hr />
-<h2>
-   <i
-    class="fa fa-pencil"
-  ></i
-  >  Draft  
-</h2>
-
-<ul>
-      
-<li id="category">
-  <span
-    ><i class="fa-fw fa fa-folder-open"></i></span
-  >
-   
-  <a href="../../../blog/category/tutorial/">Tutorial</a>  
-</li>
- 
-<li id="tags">
-  <span
-    ><i class="fa-fw fa fa-tags"></i> </span
-  >
-   
-  <a href="../../../blog/tag/linux/">linux</a>   manjaro  xfce  x11 
-</li>
- 
-</ul>
-
+            <div class="col-12 col-md-3 bd-sidebar">
 <h3>
   <a href="../../../blog/">Recent Posts</a>
 </h3>
@@ -615,7 +584,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/mahabharata/">mahabharata</a>
   </li>
-      
+    
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/meetup/">meetup</a>
   </li>
@@ -767,7 +736,7 @@ Interviews</a>
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/writing/">writing]</a>
   </li>
-        
+    
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/zen/">zen</a>
   </li>
@@ -916,7 +885,7 @@ Interviews</a>
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#step-1-install-yay">
-   Step 1: Install
+   Step 1 - Install
    <code class="docutils literal notranslate">
     <span class="pre">
      yay
@@ -926,12 +895,12 @@ Interviews</a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#step-2-dependencies">
-   Step 2: Dependencies
+   Step 2 - Dependencies
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#step-3-clone-move-to-next-monitor-to-a-folder-in-your-path">
-   Step 3: Clone
+   Step 3 - Clone
    <code class="docutils literal notranslate">
     <span class="pre">
      move-to-next-monitor
@@ -942,7 +911,7 @@ Interviews</a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#step-4-add-keyboard-bindings-to-invoke-this-script">
-   Step 4: Add Keyboard bindings to invoke this script
+   Step 4 - Add Keyboard bindings to invoke this script
   </a>
  </li>
 </ul>
@@ -965,11 +934,15 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <div class="section" id="moving-a-window-to-the-next-monitor-on-xfce">
-<h1>Moving a Window to the Next Monitor on XFCE<a class="headerlink" href="#moving-a-window-to-the-next-monitor-on-xfce" title="Permalink to this headline">¶</a></h1>
+                 <p>:blogpost:true
+:tags: linux, manjaro, xfce, x11
+:category: Tech
+:date: Sept 1, 2021</p>
+<div class="section" id="moving-a-window-to-the-next-monitor-on-xfce">
+<span id="xfce-move-monitor"></span><h1>Moving a Window to the Next Monitor on XFCE<a class="headerlink" href="#moving-a-window-to-the-next-monitor-on-xfce" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="step-1-install-yay">
-<h2>Step 1: Install <code class="docutils literal notranslate"><span class="pre">yay</span></code><a class="headerlink" href="#step-1-install-yay" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://github.com/Jguer/yay"><code class="docutils literal notranslate"><span class="pre">yay</span></code> is a package manager for AUR</a>.
+<h2>Step 1 - Install <code class="docutils literal notranslate"><span class="pre">yay</span></code><a class="headerlink" href="#step-1-install-yay" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">yay</span></code> <a class="reference external" href="https://github.com/Jguer/yay">is a package manager for AUR.</a>
 It’s super useful when installing Arch packages in Manjaro.</p>
 <p>From the Github README.md:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo pacman -S --needed git base-devel
@@ -980,37 +953,36 @@ makepkg -si
 </div>
 </div>
 <div class="section" id="step-2-dependencies">
-<h2>Step 2: Dependencies<a class="headerlink" href="#step-2-dependencies" title="Permalink to this headline">¶</a></h2>
+<h2>Step 2 - Dependencies<a class="headerlink" href="#step-2-dependencies" title="Permalink to this headline">¶</a></h2>
 <p>The core dependencies for this to work are:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">xdtool</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">wmctrl</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">xorg-xwinfo</span></code></p></li>
 </ol>
 </div>
 <div class="section" id="step-3-clone-move-to-next-monitor-to-a-folder-in-your-path">
-<h2>Step 3: Clone <code class="docutils literal notranslate"><span class="pre">move-to-next-monitor</span></code> to a folder in your path<a class="headerlink" href="#step-3-clone-move-to-next-monitor-to-a-folder-in-your-path" title="Permalink to this headline">¶</a></h2>
-<p>Personally, I prefer <code class="docutils literal notranslate"><span class="pre">~/.local/bin</span></code>, but you can use <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code>, or any folder
-that’s in your path.</p>
+<h2>Step 3 - Clone <code class="docutils literal notranslate"><span class="pre">move-to-next-monitor</span></code> to a folder in your path<a class="headerlink" href="#step-3-clone-move-to-next-monitor-to-a-folder-in-your-path" title="Permalink to this headline">¶</a></h2>
+<p>Personally, I prefer <code class="docutils literal notranslate"><span class="pre">~/.local/bin</span></code>, but you can use <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code>, or any
+folder that’s in your path.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/jc00ke/move-to-next-monitor
 </pre></div>
 </div>
 <p>Note that I’m maintaining a fork at <code class="docutils literal notranslate"><span class="pre">stonecharioteer/move-to-next-monitor</span></code>. I
 want to see if I can rewrite this to work natively.</p>
 <p>Add execution permissions to this file.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod +x move-to-next-monitor
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="n">move</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">monitor</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="step-4-add-keyboard-bindings-to-invoke-this-script">
-<h2>Step 4: Add Keyboard bindings to invoke this script<a class="headerlink" href="#step-4-add-keyboard-bindings-to-invoke-this-script" title="Permalink to this headline">¶</a></h2>
+<h2>Step 4 - Add Keyboard bindings to invoke this script<a class="headerlink" href="#step-4-add-keyboard-bindings-to-invoke-this-script" title="Permalink to this headline">¶</a></h2>
 <p>Use your XFCE window manager tools to bind a keyboard shortcut to invoke this tool.</p>
 </div>
 </div>
 
 <div class="section">
-    
-  
+   
 </div>
 
               </div>
