@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-07-15T04:38:14.502809+00:00</updated>
+  <updated>2022-07-21T04:39:43.486834+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -387,16 +387,16 @@
     <published>2017-03-22T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/posts/2017/2017-09-02-harivamsha/</id>
+    <id>https://stonecharioteer.com/posts/2017/harivamsha/</id>
     <title>Reading the Harivamsha by the Tungabhadra</title>
     <updated>2017-09-02T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;Krishna. The dark one.&lt;/p&gt;
-&lt;img alt="Harivamsha" src="../_images/harivamsha-01.jpg" /&gt;
+&lt;img alt="../_images/harivamsha-01.jpg" src="../_images/harivamsha-01.jpg" /&gt;
 &lt;/div&gt;
 </content>
-    <link href="https://stonecharioteer.com/posts/2017/2017-09-02-harivamsha/" rel="alternate"/>
-    <summary>Krishna. The dark one.Harivamsha</summary>
+    <link href="https://stonecharioteer.com/posts/2017/harivamsha/" rel="alternate"/>
+    <summary>Krishna. The dark one.</summary>
     <category term="indian-mythology" label="indian-mythology"/>
     <category term="reading" label="reading"/>
     <category term="bibek-debroy" label="bibek-debroy"/>
@@ -1020,7 +1020,7 @@ of tech.</summary>
     <published>2021-07-25T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/posts/2021/2021-08-24-merkle-science/</id>
+    <id>https://stonecharioteer.com/posts/2021/merkle-science/</id>
     <title>I joined Merkle Science as an Architect</title>
     <updated>2021-08-24T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
@@ -1033,7 +1033,7 @@ excited since I knew &lt;em&gt;nothing&lt;/em&gt; about Cryptocurrencies and Dec
 Finance, and today I can say I understand at least a little.&lt;/p&gt;
 &lt;/div&gt;
 </content>
-    <link href="https://stonecharioteer.com/posts/2021/2021-08-24-merkle-science/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/posts/2021/merkle-science/" rel="alternate"/>
     <summary>I left Visa on July 21, and joined Merkle Science
 as an Architect and Lead Software Engineer. I’m working with the Data
 Engineering team, and have some cross-over work with the Product team as well.
