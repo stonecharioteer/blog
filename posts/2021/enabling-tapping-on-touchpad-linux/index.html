@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="<no title>" />
+  <meta property="og:title" content="Enabling Tapping on the Touchpad in Linux" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="posts/2021/2021-08-23-enabling-tapping-on-touchpad-linux.html" />
+  <meta property="og:url" content="posts/2021/enabling-tapping-on-touchpad-linux.html" />
   <meta property="og:description" content="I’ve been trying to improve my Linux user experience lately. I use a Dell G5 SE laptop, and it isn’t the best laptop to use Linux in. I bought this thing only because I didn’t find another pure-AMD..." />
   
-    <title>&lt;no title&gt; &#8212; Stonecharioteer&#39;s Blog</title>
+    <title>Enabling Tapping on the Touchpad in Linux &#8212; Stonecharioteer&#39;s Blog</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -184,7 +184,63 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">
+            <div class="col-12 col-md-3 bd-sidebar">  
+<h2>
+  Enabling Tapping on the Touchpad in Linux
+</h2>
+<hr />
+<h2>
+  <i class="fa fa-calendar"></i>
+  Aug 23, 2021 
+</h2>
+
+<ul>
+      
+<li id="category">
+  <span
+    ><i class="fa-fw fa fa-folder-open"></i></span
+  >
+   
+  <a href="../../../blog/category/tech/">Tech</a>  
+</li>
+ 
+<li id="tags">
+  <span
+    ><i class="fa-fw fa fa-tags"></i> </span
+  >
+   
+  <a href="../../../blog/tag/linux/">Linux</a>   
+  <a href="../../../blog/tag/productivity/">Productivity</a>  
+</li>
+ 
+<li id="comments">
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = "stonecharioteer"; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  <i class="fa-fw fa fa-comments"></i>
+  <a
+    href="#disqus_thread"
+    data-disqus-identifier="/posts/2021/enabling-tapping-on-touchpad-linux/"
+  >
+    </a
+  >
+</li>
+
+</ul>
+
 <h3>
   <a href="../../../blog/">Recent Posts</a>
 </h3>
@@ -341,6 +397,10 @@
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/linux/">Linux</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/meta/">Meta</a>
   </li>
     
@@ -354,6 +414,10 @@
     
   <li class="ablog-cloud ablog-cloud-1">
     <a href="../../../blog/tag/philosophy/">Philosophy</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/productivity/">Productivity</a>
   </li>
     
   <li class="ablog-cloud ablog-cloud-1">
@@ -785,7 +849,7 @@ Interviews</a>
   </li>
     
   <li>
-    <a href="../../../blog/category/tech/">Tech (11)</a>
+    <a href="../../../blog/category/tech/">Tech (12)</a>
   </li>
     
   <li>
@@ -824,7 +888,7 @@ Interviews</a>
   </li>
     
   <li>
-    <a href="../../../blog/2021/">2021 (17)</a>
+    <a href="../../../blog/2021/">2021 (18)</a>
   </li>
     
   <li>
@@ -869,14 +933,9 @@ Interviews</a>
               
               <div class="toc-item">
                 
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
 
 <nav id="bd-toc-nav">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
+    
 </nav>
               </div>
               
@@ -895,7 +954,9 @@ Interviews</a>
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
               <div>
-                 <p>I’ve been trying to improve my Linux user experience lately. I use a Dell G5 SE
+                 <div class="section" id="enabling-tapping-on-the-touchpad-in-linux">
+<span id="linux-touchpad-tapping"></span><h1>Enabling Tapping on the Touchpad in Linux<a class="headerlink" href="#enabling-tapping-on-the-touchpad-in-linux" title="Permalink to this headline">¶</a></h1>
+<p>I’ve been trying to improve my Linux user experience lately. I use a Dell G5 SE
 laptop, and it isn’t the best laptop to use Linux in. I bought this thing only
 because I didn’t find another pure-AMD laptop at the time.</p>
 <p>I run Manjaro XFCE, and I’ve had some issues running it. I’m a Linux Mint user
@@ -906,21 +967,21 @@ touchpad. Earlier, I used to run <code class="docutils literal notranslate"><spa
 <p>First, run <code class="docutils literal notranslate"><span class="pre">xinput</span> <span class="pre">list</span></code> to get the <code class="docutils literal notranslate"><span class="pre">id</span></code> value of the touchpad.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>xinput list
 
-⎡ Virtual core pointer                    	id=2	[master pointer  (3)]
-⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]
-⎜   ↳ Logitech M720 Triathlon                 	id=10	[slave  pointer  (2)]
-⎜   ↳ DELL09F5:00 04F3:30CB Mouse             	id=12	[slave  pointer  (2)]
-⎜   ↳ DELL09F5:00 04F3:30CB Touchpad          	id=13	[slave  pointer  (2)]
-⎜   ↳ ETPS/2 Elantech Touchpad                	id=15	[slave  pointer  (2)]
-⎣ Virtual core keyboard                   	id=3	[master keyboard (2)]
-    ↳ Virtual core XTEST keyboard             	id=5	[slave  keyboard (3)]
-    ↳ Video Bus                               	id=6	[slave  keyboard (3)]
-    ↳ Power Button                            	id=7	[slave  keyboard (3)]
-    ↳ Sleep Button                            	id=8	[slave  keyboard (3)]
-    ↳ liliums Lily58                          	id=9	[slave  keyboard (3)]
-    ↳ Integrated_Webcam_HD: Integrate         	id=11	[slave  keyboard (3)]
-    ↳ AT Translated Set 2 keyboard            	id=14	[slave  keyboard (3)]
-    ↳ Logitech M720 Triathlon                 	id=16	[slave  keyboard (3)]
+⎡ Virtual core pointer                       id=2    [master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer                     id=4    [slave  pointer  (2)]
+⎜   ↳ Logitech M720 Triathlon                        id=10   [slave  pointer  (2)]
+⎜   ↳ DELL09F5:00 04F3:30CB Mouse                    id=12   [slave  pointer  (2)]
+⎜   ↳ DELL09F5:00 04F3:30CB Touchpad                 id=13   [slave  pointer  (2)]
+⎜   ↳ ETPS/2 Elantech Touchpad                       id=15   [slave  pointer  (2)]
+⎣ Virtual core keyboard                      id=3    [master keyboard (2)]
+↳ Virtual core XTEST keyboard                id=5    [slave  keyboard (3)]
+↳ Video Bus                                  id=6    [slave  keyboard (3)]
+↳ Power Button                               id=7    [slave  keyboard (3)]
+↳ Sleep Button                               id=8    [slave  keyboard (3)]
+↳ liliums Lily58                             id=9    [slave  keyboard (3)]
+↳ Integrated_Webcam_HD: Integrate            id=11   [slave  keyboard (3)]
+↳ AT Translated Set 2 keyboard               id=14   [slave  keyboard (3)]
+↳ Logitech M720 Triathlon                    id=16   [slave  keyboard (3)]
 </pre></div>
 </div>
 <p>Here, the device I want is <code class="docutils literal notranslate"><span class="pre">DELL09F5:00</span> <span class="pre">04F3:30CB</span> <span class="pre">Touchpad</span></code> and as you can see,
@@ -929,61 +990,62 @@ the <code class="docutils literal notranslate"><span class="pre">id</span></code
 
 
 <span class="n">Device</span> <span class="s1">&#39;DELL09F5:00 04F3:30CB Touchpad&#39;</span><span class="p">:</span>
-	<span class="n">Device</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">163</span><span class="p">):</span>	<span class="mi">1</span>
-	<span class="n">Coordinate</span> <span class="n">Transformation</span> <span class="n">Matrix</span> <span class="p">(</span><span class="mi">165</span><span class="p">):</span>	<span class="mf">1.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">1.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">1.000000</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">320</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">321</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">322</span><span class="p">):</span>	<span class="mi">1</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">323</span><span class="p">):</span>	<span class="mi">1</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Lock</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">324</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Lock</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">325</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Button</span> <span class="n">Mapping</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">326</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Button</span> <span class="n">Mapping</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">327</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Natural</span> <span class="n">Scrolling</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">298</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Natural</span> <span class="n">Scrolling</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">299</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Disable</span> <span class="n">While</span> <span class="n">Typing</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">328</span><span class="p">):</span>	<span class="mi">1</span>
-	<span class="n">libinput</span> <span class="n">Disable</span> <span class="n">While</span> <span class="n">Typing</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">329</span><span class="p">):</span>	<span class="mi">1</span>
-	<span class="n">libinput</span> <span class="n">Scroll</span> <span class="n">Methods</span> <span class="n">Available</span> <span class="p">(</span><span class="mi">300</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Scroll</span> <span class="n">Method</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">301</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Scroll</span> <span class="n">Method</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">302</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Click</span> <span class="n">Methods</span> <span class="n">Available</span> <span class="p">(</span><span class="mi">330</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
-	<span class="n">libinput</span> <span class="n">Click</span> <span class="n">Method</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">331</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Click</span> <span class="n">Method</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">332</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Middle</span> <span class="n">Emulation</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">307</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Middle</span> <span class="n">Emulation</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">308</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Accel</span> <span class="n">Speed</span> <span class="p">(</span><span class="mi">309</span><span class="p">):</span>	<span class="mf">0.000000</span>
-	<span class="n">libinput</span> <span class="n">Accel</span> <span class="n">Speed</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">310</span><span class="p">):</span>	<span class="mf">0.000000</span>
-	<span class="n">libinput</span> <span class="n">Accel</span> <span class="n">Profiles</span> <span class="n">Available</span> <span class="p">(</span><span class="mi">311</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
-	<span class="n">libinput</span> <span class="n">Accel</span> <span class="n">Profile</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">312</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Accel</span> <span class="n">Profile</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">313</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Left</span> <span class="n">Handed</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">314</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Left</span> <span class="n">Handed</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">315</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Send</span> <span class="n">Events</span> <span class="n">Modes</span> <span class="n">Available</span> <span class="p">(</span><span class="mi">283</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
-	<span class="n">libinput</span> <span class="n">Send</span> <span class="n">Events</span> <span class="n">Mode</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">284</span><span class="p">):</span>	<span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Send</span> <span class="n">Events</span> <span class="n">Mode</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">285</span><span class="p">):</span>	<span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">Device</span> <span class="n">Node</span> <span class="p">(</span><span class="mi">286</span><span class="p">):</span>	<span class="s2">&quot;/dev/input/event10&quot;</span>
-	<span class="n">Device</span> <span class="n">Product</span> <span class="n">ID</span> <span class="p">(</span><span class="mi">287</span><span class="p">):</span>	<span class="mi">1267</span><span class="p">,</span> <span class="mi">12491</span>
-	<span class="n">libinput</span> <span class="n">Drag</span> <span class="n">Lock</span> <span class="n">Buttons</span> <span class="p">(</span><span class="mi">316</span><span class="p">):</span>	<span class="o">&lt;</span><span class="n">no</span> <span class="n">items</span><span class="o">&gt;</span>
-	<span class="n">libinput</span> <span class="n">Horizontal</span> <span class="n">Scroll</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">317</span><span class="p">):</span>	<span class="mi">1</span>
-	<span class="n">libinput</span> <span class="n">Scrolling</span> <span class="n">Pixel</span> <span class="n">Distance</span> <span class="p">(</span><span class="mi">318</span><span class="p">):</span>	<span class="mi">15</span>
-	<span class="n">libinput</span> <span class="n">Scrolling</span> <span class="n">Pixel</span> <span class="n">Distance</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">319</span><span class="p">):</span>	<span class="mi">15</span>
+     <span class="n">Device</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">163</span><span class="p">):</span>   <span class="mi">1</span>
+     <span class="n">Coordinate</span> <span class="n">Transformation</span> <span class="n">Matrix</span> <span class="p">(</span><span class="mi">165</span><span class="p">):</span> <span class="mf">1.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">1.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">0.000000</span><span class="p">,</span> <span class="mf">1.000000</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">320</span><span class="p">):</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">321</span><span class="p">):</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">322</span><span class="p">):</span>    <span class="mi">1</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">323</span><span class="p">):</span>    <span class="mi">1</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Lock</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">324</span><span class="p">):</span>       <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Lock</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">325</span><span class="p">):</span>       <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Button</span> <span class="n">Mapping</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">326</span><span class="p">):</span>  <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Button</span> <span class="n">Mapping</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">327</span><span class="p">):</span>  <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Natural</span> <span class="n">Scrolling</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">298</span><span class="p">):</span>       <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Natural</span> <span class="n">Scrolling</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">299</span><span class="p">):</span>       <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Disable</span> <span class="n">While</span> <span class="n">Typing</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">328</span><span class="p">):</span>    <span class="mi">1</span>
+     <span class="n">libinput</span> <span class="n">Disable</span> <span class="n">While</span> <span class="n">Typing</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">329</span><span class="p">):</span>    <span class="mi">1</span>
+     <span class="n">libinput</span> <span class="n">Scroll</span> <span class="n">Methods</span> <span class="n">Available</span> <span class="p">(</span><span class="mi">300</span><span class="p">):</span>        <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Scroll</span> <span class="n">Method</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">301</span><span class="p">):</span>   <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Scroll</span> <span class="n">Method</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">302</span><span class="p">):</span>   <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Click</span> <span class="n">Methods</span> <span class="n">Available</span> <span class="p">(</span><span class="mi">330</span><span class="p">):</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+     <span class="n">libinput</span> <span class="n">Click</span> <span class="n">Method</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">331</span><span class="p">):</span>    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Click</span> <span class="n">Method</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">332</span><span class="p">):</span>    <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Middle</span> <span class="n">Emulation</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">307</span><span class="p">):</span>        <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Middle</span> <span class="n">Emulation</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">308</span><span class="p">):</span>        <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Accel</span> <span class="n">Speed</span> <span class="p">(</span><span class="mi">309</span><span class="p">):</span>     <span class="mf">0.000000</span>
+     <span class="n">libinput</span> <span class="n">Accel</span> <span class="n">Speed</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">310</span><span class="p">):</span>     <span class="mf">0.000000</span>
+     <span class="n">libinput</span> <span class="n">Accel</span> <span class="n">Profiles</span> <span class="n">Available</span> <span class="p">(</span><span class="mi">311</span><span class="p">):</span>        <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+     <span class="n">libinput</span> <span class="n">Accel</span> <span class="n">Profile</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">312</span><span class="p">):</span>   <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Accel</span> <span class="n">Profile</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">313</span><span class="p">):</span>   <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Left</span> <span class="n">Handed</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">314</span><span class="p">):</span>     <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Left</span> <span class="n">Handed</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">315</span><span class="p">):</span>     <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Send</span> <span class="n">Events</span> <span class="n">Modes</span> <span class="n">Available</span> <span class="p">(</span><span class="mi">283</span><span class="p">):</span>     <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+     <span class="n">libinput</span> <span class="n">Send</span> <span class="n">Events</span> <span class="n">Mode</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">284</span><span class="p">):</span>        <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Send</span> <span class="n">Events</span> <span class="n">Mode</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">285</span><span class="p">):</span>        <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">Device</span> <span class="n">Node</span> <span class="p">(</span><span class="mi">286</span><span class="p">):</span>      <span class="s2">&quot;/dev/input/event10&quot;</span>
+     <span class="n">Device</span> <span class="n">Product</span> <span class="n">ID</span> <span class="p">(</span><span class="mi">287</span><span class="p">):</span>        <span class="mi">1267</span><span class="p">,</span> <span class="mi">12491</span>
+     <span class="n">libinput</span> <span class="n">Drag</span> <span class="n">Lock</span> <span class="n">Buttons</span> <span class="p">(</span><span class="mi">316</span><span class="p">):</span>       <span class="o">&lt;</span><span class="n">no</span> <span class="n">items</span><span class="o">&gt;</span>
+     <span class="n">libinput</span> <span class="n">Horizontal</span> <span class="n">Scroll</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">317</span><span class="p">):</span>       <span class="mi">1</span>
+     <span class="n">libinput</span> <span class="n">Scrolling</span> <span class="n">Pixel</span> <span class="n">Distance</span> <span class="p">(</span><span class="mi">318</span><span class="p">):</span>        <span class="mi">15</span>
+     <span class="n">libinput</span> <span class="n">Scrolling</span> <span class="n">Pixel</span> <span class="n">Distance</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">319</span><span class="p">):</span>        <span class="mi">15</span>
 </pre></div>
 </div>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a></p>
 <p>The line we are interested in shows something regarding tapping. So let’s
 filter the nonsense out.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xinput</span> <span class="nb">list</span><span class="o">-</span><span class="n">props</span> <span class="mi">13</span> <span class="o">|</span> <span class="n">grep</span> <span class="o">-</span><span class="n">i</span> <span class="n">tap</span>
 
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">320</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">321</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">322</span><span class="p">):</span>	<span class="mi">1</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">323</span><span class="p">):</span>	<span class="mi">1</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Lock</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">324</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Lock</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">325</span><span class="p">):</span>	<span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Button</span> <span class="n">Mapping</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">326</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
-	<span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Button</span> <span class="n">Mapping</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">327</span><span class="p">):</span>	<span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">320</span><span class="p">):</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">321</span><span class="p">):</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">322</span><span class="p">):</span>    <span class="mi">1</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">323</span><span class="p">):</span>    <span class="mi">1</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Lock</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">324</span><span class="p">):</span>       <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Drag</span> <span class="n">Lock</span> <span class="n">Enabled</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">325</span><span class="p">):</span>       <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Button</span> <span class="n">Mapping</span> <span class="n">Enabled</span> <span class="p">(</span><span class="mi">326</span><span class="p">):</span>  <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+     <span class="n">libinput</span> <span class="n">Tapping</span> <span class="n">Button</span> <span class="n">Mapping</span> <span class="n">Default</span> <span class="p">(</span><span class="mi">327</span><span class="p">):</span>  <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
 </pre></div>
 </div>
-<p>The first line here, <code class="docutils literal notranslate"><span class="pre">libinput</span> <span class="pre">Tapping</span> <span class="pre">Enabled</span> <span class="pre">(320):	0</span></code> is what we are
+<p>The first line here, <code class="docutils literal notranslate"><span class="pre">libinput</span> <span class="pre">Tapping</span> <span class="pre">Enabled</span> <span class="pre">(320):</span>&#160; <span class="pre">0</span></code> is what we are
 interested in. Let’s set that to <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xinput</span> <span class="nb">set</span><span class="o">-</span><span class="n">prop</span> <span class="mi">13</span> <span class="mi">320</span> <span class="mi">1</span>
 </pre></div>
@@ -994,11 +1056,11 @@ need.</p>
 changed to <code class="docutils literal notranslate"><span class="pre">1</span></code>. However, you can also check that merely tapping your touchpad
 to click works now.</p>
 <p>While you <em>could</em> stuff this line into your <code class="docutils literal notranslate"><span class="pre">.xinputrc</span></code> file and have it run
-there, know that the device ID <em>will</em> change often. You shouldn’t rely on it.
+there, know that the device ID _will_ change often. You shouldn’t rely on it.
 Instead, you need to persist these settings by modifying the xinput settings
 file for your touchpad. Default configurations for xinput are in
 <code class="docutils literal notranslate"><span class="pre">/usr/share/X11/xorg.conf.d/40-libinput.conf</span></code>, which you <em>should not modify</em>.
-Instead, <em>copy</em> the file to <code class="docutils literal notranslate"><span class="pre">/etc/X11/xorg.conf.d/40-libinput.conf</span></code>, which
+Instead, _copy_ the file to <code class="docutils literal notranslate"><span class="pre">/etc/X11/xorg.conf.d/40-libinput.conf</span></code>, which
 normally shouldn’t exist.</p>
 <p>Now, find the section that looks like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Section</span> <span class="s2">&quot;InputClass&quot;</span>
@@ -1022,10 +1084,64 @@ looks like:</p>
 </div>
 <p>Now, save this file and reboot. This should preserve your settings even if your
 touchpad device ID changes.</p>
-<p>To see more settings you can modify for <code class="docutils literal notranslate"><span class="pre">libinput</span></code>, check out the <a class="reference external" href="https://www.mankier.com/4/libinput">man pages</a>.</p>
+<p>To see more settings you can modify for <code class="docutils literal notranslate"><span class="pre">libinput</span></code>, check out the <a class="reference external" href="https://www.mankier.com/4/libinput">man pages.</a></p>
+</div>
 
 <div class="section">
-   
+    
+
+<div class="section">
+  <span style="float: left">
+     
+    <a href="../empathy-in-tech/">
+      <i class="fa fa-arrow-circle-left"></i> Empathy in Tech
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+     
+    <a href="../merkle-science/">
+      I joined Merkle Science as an Architect <i
+        class="fa fa-arrow-circle-right"
+      ></i
+      >
+    </a>
+    
+  </span>
+</div>
+  
+  <div class="section">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = "stonecharioteer";
+      var disqus_identifier = "/posts/2021/enabling-tapping-on-touchpad-linux/";
+      var disqus_title = "Enabling Tapping on the Touchpad in Linux";
+      var disqus_url = "https://stonecharioteer.com/posts/2021/enabling-tapping-on-touchpad-linux";
+
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+    <a href="https://disqus.com" class="dsq-brlink"
+      >comments powered by <span class="logo-disqus">Disqus</span></a
+    >
+  </div>
+  
 </div>
 
               </div>
