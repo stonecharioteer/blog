@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://stonecharioteer.com</id>
   <title>Stonecharioteer's Blog</title>
-  <updated>2022-07-21T04:51:57.483824+00:00</updated>
+  <updated>2022-07-21T05:19:40.059107+00:00</updated>
   <link href="https://stonecharioteer.com"/>
   <link href="https://stonecharioteer.com/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
@@ -934,7 +934,7 @@ life, family, and health. However, I finally feel ready to return to it.Raspberr
     <published>2021-06-03T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>https://stonecharioteer.com/posts/2021/2021-06-28-a-weekend-with-postgresql/</id>
+    <id>https://stonecharioteer.com/posts/2021/a-weekend-with-postgresql/</id>
     <title>A Weekend With Postgresql</title>
     <updated>2021-06-28T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
@@ -942,7 +942,7 @@ life, family, and health. However, I finally feel ready to return to it.Raspberr
 year now. This is the best time to do it.&lt;/p&gt;
 &lt;/div&gt;
 </content>
-    <link href="https://stonecharioteer.com/posts/2021/2021-06-28-a-weekend-with-postgresql/" rel="alternate"/>
+    <link href="https://stonecharioteer.com/posts/2021/a-weekend-with-postgresql/" rel="alternate"/>
     <summary>I’ve wanted to read the postgresql documentation live, on video, for over a
 year now. This is the best time to do it.</summary>
     <category term="databases" label="databases"/>
