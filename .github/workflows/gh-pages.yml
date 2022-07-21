@@ -11,7 +11,7 @@ on:
 
 jobs:
   gh-pages:
-    name: Publish Github Pages
+    name: Publish Website to Github Pages
     runs-on: self-hosted
     steps:
     - name: Setup tmate session
@@ -28,13 +28,12 @@ jobs:
       uses: actions/checkout@master
       with:
         fetch-depth: 0
-    - name: Build and Commit
+    - name: Build Website and Commit
       run: |
         pip install -q --upgrade wheel
         pip install -q -r requirements.txt
-        ablog clean
-        ablog build
-        cp CNAME docs/
+        make html
+        cp CNAME build/html/
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git config --local pull.rebase false
@@ -42,4 +41,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs
+        publish_dir: ./build/html
