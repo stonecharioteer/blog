@@ -50,6 +50,7 @@ I'm going to use these tags:
 - Dotfiles
 - Electronics
 - Empathy
+- Fiction
 - Flask
 - Focus
 - Furo
