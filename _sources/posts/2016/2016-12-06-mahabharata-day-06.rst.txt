@@ -6,16 +6,19 @@
 :image: 0
 
 .. _mahabharata-day-06:
+
 =======================================================
 Reading the Mahabharata by the Tungabhadra - Day 6
 =======================================================
+
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
 
 Wherever I sit down in Hampi, I can't help but ask myself if once, a long time
 ago, Krishnadevaraya walked past this very spot. I wonder if I have walked
 along paths he liked to walk through, I wonder if he could appreciate the
 poetry of sitting under a tree to read the Mahabharata.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-06.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-06.jpg
 
 The Mahabharata is daunting in scope. I sat under this tree and read of the
 lament of Damayanti as her husband Nala forsook her in the woods. I read how

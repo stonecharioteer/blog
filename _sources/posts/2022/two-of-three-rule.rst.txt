@@ -1,14 +1,16 @@
-:blogpost: true
-:date: May 19, 2022
-:category: Tech
-:tags: Career Advice, Statistics, Leadership, Hearing Loss
-:redirect: two-of-three
+.. index:: career-advice, statistics, leadership, hearing-loss
 
 .. _two-of-three:
 
 ======================
 The Two of Three Rule
 ======================
+
+.. admonition:: Meta
+
+   **Original Publication Date**
+
+   :Date: May 19, 2022
 
 How do you decide when to join a company, when to stay and when to leave?
 
@@ -51,7 +53,7 @@ Limit (LCL), which tell us *how* much our process is *capable* of fluctuating.
 
 .. chart 1 : show an x-bar-R chart. Label all the parts
 
-.. figure:: /assets/images/posts/two-of-three/control-charts.png
+.. figure:: /_static/images/posts/two-of-three/control-charts.png
    :figwidth: 450
 
    A sample control chart, marking the limits and showing how a process is

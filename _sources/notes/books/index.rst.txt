@@ -1,11 +1,9 @@
-:blogpost: true
-:category: Notes
-:tags: reading, tech, programming, learning
-:redirect: books
+.. index:: books, technology
 
 .. _notes-books:
+
 ===================
-Books
+Technical Books
 ===================
 
 
@@ -14,6 +12,28 @@ Books
    This section contains my notes on various *technical* books I am reading
    or have read. Like the rest of my *notes* section, these are largely WIP,
    since I'm migrating them from various other locations.
+
+   Additionally, I have also moved to a physical notes system for books, and I
+   later digitize my notes, so these notes will not be up to date.
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+
+   common_sense_guide/index.rst
+   cpython_internals/index.rst
+   ctci/index.rst
+   database_internals/index.rst
+   elements_of_programming_interviews/index.rst
+   high_performance_browser_networking/index.rst
+   k8s_in_action/index.rst
+   kleppmann/index.rst
+   practices_python_pro/index.rst
+   problem_solving_dsa_python/index.rst
+   secure_by_design/index.rst
+   ultralearning/index.rst
+
 
 .. panels::
    .. {{{ CTCI

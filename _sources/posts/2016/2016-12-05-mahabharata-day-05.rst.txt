@@ -6,16 +6,19 @@
 :image: 0
 
 .. _mahabharata-day-05:
+
 =======================================================
 Reading the Mahabharata by the Tungabhadra - Day 5
 =======================================================
+
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
 
 I do not believe in religion, I despise the organized rituals that exist today.
 That is not Sanathana Dharma.  Dharma is subtle, it is imbued into the blood of
 people such as Prahalada and Bali. It runs through the veins of Markandeya, and
 it is in the pillars of the sabha Maya built for Dharmaraja.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-05.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-05.jpg
 
 The Mahabharata's scope and expanse is mindblowing. What words can I use to
 explain how the powerful Bhima had to stay his hand angry at Duhshasana? I am

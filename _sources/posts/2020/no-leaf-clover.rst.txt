@@ -1,12 +1,17 @@
-:blogpost: true
-:date: Feb 2, 2020
-:tags: Hearing loss, Single-Sided Deafness
-:category: Health
+.. index:: hearing-loss, single-sided-deafness, health, life
 
 .. _sshl-2:
+
 =====================
 No Leaf Clover
 =====================
+
+.. admonition:: Meta
+
+   **Original Publication Date**
+
+
+   :Date: Feb 2, 2020
 
 I do not believe in luck. There is no such thing. Things happen and we must
 accept them or reject them. What we do defines us.
@@ -17,7 +22,7 @@ accept them or reject them. What we do defines us.
     <sshl-1>`
 
 
-.. image:: /assets/images/posts/hearing-loss/hearing-aid.png
+.. image:: /_static/images/posts/hearing-loss/hearing-aid.png
    :alt: Hearing Loss
 
 
@@ -172,14 +177,16 @@ However, that does not stop me. It does not have to.
 I picked up a “no leaf clover”. What I choose to do with it is how I define who
 I am.
 
-.. update:: 15 July, 2020
+.. admonition:: Update - 15 July, 2020
+   :class: note
 
-    The hearing aid does not help me hear everything. It gives me *a
-    sense* of sounds to my left. It's very, very low, because of how much nerve
-    damage there has been to my ear. That has not dismayed me, and WFH is a
-    blessing.
+   The hearing aid does not help me hear everything. It gives me *a
+   sense* of sounds to my left. It's very, very low, because of how much nerve
+   damage there has been to my ear. That has not dismayed me, and WFH is a
+   blessing.
 
-.. update:: 1 September, 2020
+.. admonition:: Update - 1 September, 2020
+   :class: note
 
-    Read the :ref:`1 Year update <sshl-3>`_ of my experience to understand
-    more.
+   Read the :ref:`1 Year update <sshl-3>`_ of my experience to understand
+   more.

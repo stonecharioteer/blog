@@ -1,15 +1,17 @@
-:blogpost: true
-:category: Life
-:date: Sept 1, 2020
-:tags: hearing-loss, health, single-sided-deafness, snhl
-:image: 1
+.. index:: hearing-loss, health, single-sided-deafness, snhl
 
 .. _sshl-3:
 =================
 (Y)ear One
 =================
 
-.. figure:: /assets/images/posts/hearing-loss/ear-one.jpeg
+.. admonition:: Meta
+
+   **Original Publication Date**
+
+   :Date: Sept 1, 2020
+
+.. figure:: /_static/images/posts/hearing-loss/ear-one.jpeg
    :alt: Headphones
 
 

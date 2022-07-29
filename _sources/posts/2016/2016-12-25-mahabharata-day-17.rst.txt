@@ -6,9 +6,12 @@
 :image: 0
 
 .. _mahabharata-day-17:
+
 ============================================================
 Reading the Mahabharata by the Tungabhadra - Day 17
 ============================================================
+
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
 
 The empty temples scare me. They stand here, stripped of their purpose by the
 invaders from Golkonda, Bijapur and Delhi. The idols are destroyed, nothing
@@ -16,7 +19,7 @@ remains except the stories. Some temples don't even have the stories. Guides
 make stuff up, they tell unsuspecting travellers that there's some story here.
 There is, but it isn't the story the guides are feeding them.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-17.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-17.jpg
 
 Hampi enthralls me on a level that I couldn't begin to understand as a child. I
 feel at peace, sitting under a tree, not realizing that a spider was climbing

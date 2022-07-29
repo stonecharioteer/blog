@@ -6,15 +6,18 @@
 :image: 0
 
 .. _mahabharata-day-18:
+
 ============================================================
 Reading the Mahabharata by the Tungabhadra - Day 18
 ============================================================
+
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
 
 In the aftermath of the battle and after all the funerals, Krishna instructs
 Dharmaraja to go and seek Bhishma's teachings. On his deathbed, Gangeya recites
 the hundred names of Vishnu, and begins revealing the nature of Dharma.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-18.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-18.jpg
 
 He teaches Yudhishtira how to be a just king, and how to rule over the kingdom.
 He expounds the ways to placate the gods, the way to attain moksha and the

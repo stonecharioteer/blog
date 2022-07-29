@@ -6,14 +6,17 @@
 :image: 0
 
 .. _mahabharata-day-15:
+
 ============================================================
 Reading the Mahabharata by the Tungabhadra - Day 15
 ============================================================
 
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+
 My skin feels good against cold stone. I love the feeling in my toes as the
 cold air and the heat of the sun combine to give me shivers.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-15.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-15.jpg
 
 In the three weeks that I have been in Hampi, I haven't just read the Mahabharata.
 I have also been looking closely at the ruins. The people selling coconuts by

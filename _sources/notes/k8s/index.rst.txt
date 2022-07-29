@@ -3,7 +3,8 @@
 Kubernetes
 =================================
 
-.. update:: Dec 30, 2021
+.. admonition:: Update - Dec 30, 2021
+   :class: note
 
    This section contains my notes on Kubernetes. As of this update, while I've
    gone through some resources and the `learnk8s.io <https://learnk8s.io>`_

@@ -6,16 +6,19 @@
 :image: 0
 
 .. _mahabharata-day-08:
+
 ===============================================================
 Reading the Mahabharata by the Tungabhadra - Day 8
 ===============================================================
+
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
 
 There is some justice in reading Markandeya's rendition of the Ramayana,
 recited to the Pandavas, as I sit in Hampi. A large part of the Kishkinda Kanda
 is supposed to have occurred here, and I remember the stories that my
 grandfather told me about how Hanuman was born on Anjanadri Hill.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-08.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-08.jpg
 
 I read of Yudhishtira's answers to the questions posed by the Yaksha and
 somehow, I lost myself for the first time since I began reading the

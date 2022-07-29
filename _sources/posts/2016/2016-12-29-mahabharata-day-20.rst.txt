@@ -6,15 +6,18 @@
 :image: 0
 
 .. _mahabharata-day-20:
+
 ============================================================
 Reading the Mahabharata by the Tungabhadra - Day 20
 ============================================================
+
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
 
 This journey has been relieving. I have done all that I set out to do. I came
 for a larger purpose, to start writing once again. It has been too long, and I
 have been scared of something.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-20.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-20.jpg
 
 Fear is a gripping thing, and it has defined a lot in my life. My closest
 friends know how much I fear some things. When I think about the thing I fear

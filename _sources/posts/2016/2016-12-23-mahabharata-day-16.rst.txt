@@ -6,13 +6,16 @@
 :image: 0
 
 .. _mahabharata-day-16:
+
 ============================================================
 Reading the Mahabharata by the Tungabhadra - Day 16
 ============================================================
 
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+
 Karna.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-16.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-16.jpg
 
 Oh Karna!
 

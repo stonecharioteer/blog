@@ -1,0 +1,822 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="author" title="About these documents" href="../../about.html" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Posts (Archived)" href="../index.html" /><link rel="prev" title="Creating Fixed Length Iterables in Python" href="til-python-fixed-length.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
+        <title>The Two of Three Rule - Stonecharioteer</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --font-stack: Newsreader, Garamond, Helvetica, Times New Roman, Serif;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --font-stack: Newsreader, Garamond, Helvetica, Times New Roman, Serif;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --font-stack: Newsreader, Garamond, Helvetica, Times New Roman, Serif;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">Stonecharioteer</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../_static/images/logo/stonecharioteer-banner.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/images/logo/stonecharioteer-banner-bnw.png" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Stonecharioteer</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About Me</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2021/personal-code.html">Values</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/index.html">Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/learnit/index.html">The Learn It List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/advent_of_code/index.html">Advent of Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/airflow/index.html">Apache Airflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/ansible/index.html">Ansible</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/books/index.html">Technical Books</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/common_sense_guide/index.html">A Common-Sense Guide to Data Structures and Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/cpython_internals/index.html">CPython Internals - Anthony Shaw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/ctci/index.html">Cracking the Coding Interview - Gayle Laakmann McDowell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/database_internals/index.html">Database Internals - Alex Petrov</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/elements_of_programming_interviews/index.html">Elements of Programming Interviews in Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/high_performance_browser_networking/index.html">High Performance Browser Networking - Ilya Grigorik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/k8s_in_action/index.html">Kubernetes in Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/kleppmann/index.html">Designing Data Intensive Applications - Martin Kleppmann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/practices_python_pro/index.html">Practices of the Python Pro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/problem_solving_dsa_python/index.html">Problem Solving with Data Structures and Algorithms using Python - Bradley N. Miller &amp; David L. Ranum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/secure_by_design/index.html">Secure by Design - Daniel Deogun, Dan Bergh Johnsson, Daniel Sawano</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/ultralearning/index.html">Ultralearning - Scott H. Young</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/courses/index.html">Courses</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/courses/mit6.006/index.html">MIT 6.006 - Introduction to Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/courses/mit6.824/index.html">MIT 6.824 - Distributed Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/django/index.html">Django</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/dsa/index.html">Data Structures and Algorithms</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/dsa/linked-lists.html">Linked Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/dsa/graphs.html">Graphs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/flask/index.html">Flask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/golang/index.html">Golang</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/k8s/index.html">Kubernetes</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/leetcode/index.html">Leetcode</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0073.html">LC0073 - Set Matrix Zeroes (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0118.html">LC0118 - Pascal’s Triangle (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0031.html">LC0031 - Next Permutation (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0053.html">LC0053 - Kadane’s Algorithm (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0075.html">LC0075 - Sort an array of 0’s 1’s 2’s (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0048.html">LC0048 - Rotate Matrix (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0056.html">LC0056 - Merge Overlapping Subintervals (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0088.html">LC0088 - Merge two sorted Arrays without extra space (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0287.html">LC0287 - Find the duplicate in an array of N+1 integers (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0074.html">LC0074 - Search in a 2d Matrix (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0050.html">LC0050 - Pow(X,n) (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0169.html">LC0169 - Majority Element (&gt;N/2 times) (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0229.html">LC0229 - Majority Element (&gt;N/3 times) (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0062.html">LC0062 - Grid Unique Paths (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0493.html">LC0493 - Reverse Pairs (Leetcode) (HARD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0018.html">LC0018 - 4-sum-Problem (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0128.html">LC0128 - Longest Consecutive Sequence (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0001.html">LC0001 - 2-Sum-Problem (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0003.html">LC0003 - Longest Substring without repeat (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0206.html">LC0206 - Reverse a LinkedList (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0876.html">LC0876 - Find the middle of LinkedList (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0021.html">LC0021 - Merge two sorted Linked List (use method used in mergeSort) (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0019.html">LC0019 - Remove N-th node from back of LinkedList (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0002.html">LC0002 - Add two numbers as LinkedList (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0237.html">LC0237 - Delete a given Node when a node is given. (0(1) solution) (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0160.html">LC0160 - Find intersection point of Y LinkedList (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0141.html">LC0141 - Detect a cycle in Linked List (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0025.html">LC0025 - Reverse a LinkedList in groups of size k (HARD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0234.html">LC0234 - Check if a LinkedList is palindrome or not (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0142.html">LC0142 - Find the starting point of the Loop of LinkedList (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0061.html">LC0061 - Rotate a LinkedList (MEDIUM)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/lua/index.html">Lua</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/rust/index.html">Rust</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/system_design/index.html">System Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/vagrant/index.html">Vagrant</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../mustread.html">Must Read</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recent Posts</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="no-blog.html">This is Not a Blog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="so-far-so-rust.html">So Far So Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bipolar.html">Bipolar and ADHD – I Know Your Names Now</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rust-reqwest-retry.html">Retrying a HTTP Reqwest with Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="til-python-fixed-length.html">Creating Fixed Length Iterables in Python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Two of Three Rule</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Archive</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">Posts</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">2022</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="bipolar.html">Bipolar and ADHD – I Know Your Names Now</a></li>
+<li class="toctree-l3"><a class="reference internal" href="documentation-assumptions.html">Documentation Without Assumption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="jinja-curlybraces.html">Using Non-Standard Jinja Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="learning-rust.html">Learning Rust</a></li>
+<li class="toctree-l3"><a class="reference internal" href="leetcode.html">A System for Getting Better at Leetcode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="no-blog.html">This is Not a Blog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="onward.html">Onward</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html">Python - A Reflection in 2022</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rust-reqwest-retry.html">Retrying a HTTP Reqwest with Rust</a></li>
+<li class="toctree-l3"><a class="reference internal" href="so-far-so-rust.html">So Far So Rust</a></li>
+<li class="toctree-l3"><a class="reference internal" href="til-python-fixed-length.html">Creating Fixed Length Iterables in Python</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">The Two of Three Rule</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vagrant.html">Vagrant</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2021/index.html">2021</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2021/2021-03-10-mahabharata-instagram.html">Reading the Mahabharata by the Tungabhadra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/2021-07-20-for-those-who-came-in-late.html">For Those Who Came in Late</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/a-weekend-with-postgresql.html">A Weekend With Postgresql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/advent-of-code.html">Advent of Code 2021</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/cracking-the-coding-interview.html">Cracking the Coding Interview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/empathy-in-tech.html">Empathy in Tech</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/enabling-tapping-on-touchpad-linux.html">Enabling Tapping on the Touchpad in Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/how-to-write-docs-the-readme-file.html">How to Write Documentation - The README.md File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/learning-golang.html">Learning Golang</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/merkle-science.html">I joined Merkle Science as an Architect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/personal-code.html">A Personal Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/reflections-on-doing-more.html">Reflections on Doing More</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/serene-library.html">Memories of a Circulating Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/the-importance-of-documentation.html">The Importance of Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/updates.html">Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/xfce-move-monitor.html">Moving a Window to the Next Monitor on XFCE</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2020/index.html">2020</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2020/a-year-of-rest.html">A Year Of Rest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2020/ear-one.html">(Y)ear One</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2020/no-leaf-clover.html">No Leaf Clover</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2019/index.html">2019</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2019/the-sound-of-music.html">The Sound of Music</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2018/index.html">2018</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2018/kana.html">Learn the Kana Using Python and a Raspberry Pi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2018/leonardo.html">Leonardo - Generating Product Unique Specification Images Using Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2017/index.html">2017</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2017/harivamsha.html">Reading the Harivamsha by the Tungabhadra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2017/2017-03-22-debroy-letter.html">Dear Mr. Debroy</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2016/index.html">2016</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-01-mahabharata-day-01.html">Reading the Mahabharata by the Tungabhadra - Day 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-02-mahabharata-day-02.html">Reading the Mahabharata by the Tungabhadra - Day 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-03-mahabharata-day-03.html">Reading the Mahabharata by the Tungabhadra - Day 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-04-mahabharata-day-04.html">Reading the Mahabharata by the Tungabhadra - Day 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-05-mahabharata-day-05.html">Reading the Mahabharata by the Tungabhadra - Day 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-06-mahabharata-day-06.html">Reading the Mahabharata by the Tungabhadra - Day 6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-08-mahabharata-day-07.html">Reading the Mahabharata by the Tungabhadra - Day 7</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-10-mahabharata-day-08.html">Reading the Mahabharata by the Tungabhadra - Day 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-15-mahabharata-day-09.html">Reading the Mahabharata by the Tungabhadra - Day 9</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-16-mahabharata-day-10.html">Reading the Mahabharata by the Tungabhadra - Day 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-17-mahabharata-day-11.html">Reading the Mahabharata by the Tungabhadra - Day 11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-18-mahabharata-day-12.html">Reading the Mahabharata by the Tungabhadra - Day 12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-19-mahabharata-day-13.html">Reading the Mahabharata by the Tungabhadra - Day 13</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-20-mahabharata-day-14.html">Reading the Mahabharata by the Tungabhadra - Day 14</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-21-mahabharata-day-15.html">Reading the Mahabharata by the Tungabhadra - Day 15</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-23-mahabharata-day-16.html">Reading the Mahabharata by the Tungabhadra - Day 16</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-25-mahabharata-day-17.html">Reading the Mahabharata by the Tungabhadra - Day 17</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-27-mahabharata-day-18.html">Reading the Mahabharata by the Tungabhadra - Day 18</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-28-mahabharata-day-19.html">Reading the Mahabharata by the Tungabhadra - Day 19</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-29-mahabharata-day-20.html">Reading the Mahabharata by the Tungabhadra - Day 20</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../2015/index.html">2015</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="the-two-of-three-rule">
+<span id="two-of-three"></span><span id="index-0"></span><h1>The Two of Three Rule<a class="headerlink" href="#the-two-of-three-rule" title="Permalink to this headline">#</a></h1>
+<div class="admonition-meta admonition">
+<p class="admonition-title">Meta</p>
+<p><strong>Original Publication Date</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Date</dt>
+<dd class="field-odd"><p>May 19, 2022</p>
+</dd>
+</dl>
+</div>
+<p>How do you decide when to join a company, when to stay and when to leave?</p>
+<p>I’ve worked at my fair share of companies, both <em>in</em> and <em>out</em> of the computer
+technology space. I don’t think I’m leaving companies because I have a problem
+with consistency; in fact it’s quite the opposite.</p>
+<p>I’m a trained statistician. I worked on a motorcycle manufacturing shop floor
+for 3 years of my early career, and compared to tech companies, that was <em>hell</em>.
+However, the lessons I learnt there have moulded me forever.</p>
+<p>The most important lessons revolved around a statistical quality tool called
+<em>control charts</em> or <em>Shewart charts</em>, named after <a class="reference external" href="https://en.wikipedia.org/wiki/Walter_A._Shewhart">Walter A. Shewart,</a> who pioneered them.
+Shewart’s name is spoken in the same tones as that of <a class="reference external" href="https://en.wikipedia.org/wiki/W._Edwards_Deming">Deming,</a> who is responsible for the
+<a class="reference external" href="https://mitpress.mit.edu/books/out-crisis">14 Principles of Management.</a></p>
+<section id="an-aside-control-charts">
+<h2>An Aside - Control Charts<a class="headerlink" href="#an-aside-control-charts" title="Permalink to this headline">#</a></h2>
+<p>A control chart, in its multiple forms, monitors a process for changes in a
+<em>specific</em> parameter, designated as the <em>control</em> parameter. This parameter
+helps us measure a desired outcome of a process. If a factory wishes to produce
+a shaft of diameter 25mm with a tolerance of 1mm on either side, then they
+should strive to make shafts from 24-26mm in size. While that’s a worthwhile
+exercise, it’s better to <em>further</em> limit the manufacturing process so that while
+the process sticks to the design requirements, it is also consistent within
+itself. This doesn’t mean you’re striving for a better design tolerance, but it
+speaks about <em>whether</em> your process even <em>allows</em> for better tolerances.
+The <em>control chart</em> is a line plot that measures this parameter, or a statistic
+associated with it such as the average of a couple of readings taken at
+consistent timestamps. Control charts are divided into 2 areas, a portion of the
+chart is <em>above</em> a line called the control limit (CL), and the range of values
+is bounded on either side by an Upper Control Limit (UCL), and a Lower Control
+Limit (LCL), which tell us <em>how</em> much our process is <em>capable</em> of fluctuating.</p>
+<figure class="align-default" id="id2" style="width: 450px">
+<img alt="../../_images/control-charts.png" src="../../_images/control-charts.png" />
+<figcaption>
+<p><span class="caption-text">A sample control chart, marking the limits and showing how a process is
+slowly deviation from its control limits.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>These limits aren’t decided by us. Indeed, they have <em>nothing</em> to do with the
+tolerances that the design engineer has set. Instead, they have everything to do
+with the statistical limits of your process. That means that the last 25
+readings you take in your process decide the UCL, CL and LCL for the next couple
+of readings.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>25 is an arbitrary number, mind you. It is the <em>bare minimum</em> that you need
+to start plotting charts. However, it is not even statistically viable to do
+this. Instead start with a 100 readings if you want to do some meaningful
+analytics of process control study.</p>
+</div>
+<p>If 7 consecutive readings on a control chart fall on one side of the limits,
+that’s your chart telling you that you have <em>serious</em> problems. Your process is
+slowly deviating to one side of your limits. It doesn’t need to be negative by
+the way. Perhaps you <em>want</em> your process to shift in one direction. This is an
+indication that whatever you’re doing to your process is shifting the metric to
+one side.</p>
+<p>These shifts are <em>predicatable</em>, and they also indicate a shift in your process
+that could arise from inherent causes. However, there are sudden shifts that
+could happen because of uncontrollable causes. These problems will not cause
+long-lasting errors in your readings, and they’re usually the sort that need a
+lot of brain-wracking to solve immediately. If they’re not addressed
+immediately, this will indicate that something is really wrong with your process
+management, and not really reflect whether your process is doing well or now.</p>
+<p>While a control chart is something you can definitely use in technology
+companies – in fact, control charts are strongly associated with LEAN
+manufacturing, but I’m not experienced enough at Software applications in LEAN
+to say whether these are actually used in a tech company – this article is
+<em>not</em> about the applications of LEAN manufacturing methods in software
+development. Instead, it’s about my career. It’s even about your career.</p>
+</section>
+<section id="when-do-you-join-a-company">
+<h2>When Do You Join a Company?<a class="headerlink" href="#when-do-you-join-a-company" title="Permalink to this headline">#</a></h2>
+<p>I’m dividing this article into two parts. First, think about why you’d join a
+company. You’ve left an older company, and the reasons why are irrelevant – for
+now.</p>
+<ol class="arabic simple">
+<li><p>You’ve interviewed with a company, and this has involved anywhere from a
+couple of hours to weeks of your time. If this company has a lengthy
+interview process that requires a DevOps engineer to know how to invert a
+Binary Tree or how to write a Binary Tree where every node is a Linked List,
+then this process could also have taken months of your time.</p></li>
+<li><p>You have an offer from them that cites <em>concrete</em> numbers that you find
+attractive. Let’s not kid ourselves, there’s money involved. Money is
+<em>always</em> involved.</p></li>
+<li><p>You spoke to a couple of cool people who you <em>may</em> work with, or at least
+grab a beer with at the office parties.</p></li>
+<li><p>You also like what the manager seems to promise that you <em>may</em> work on.</p></li>
+</ol>
+<p>Think about those four points for a moment.</p>
+<p>The first one is sunk cost. You’ve invested time into the process. You’ve
+invested your effort. <em>Set this aside for now.</em></p>
+<p>The second is money. Money. <em>Money</em>. You now have bragging rights on
+teamblind.com and you can leave reviews on Glassdoor.com and levels.fyi,
+improving the sample size for what is obviously a very positively or a very
+negatively skewed chart.</p>
+<p>The third is people. You have laughed with them during the interview. Perhaps
+they were amazed at your data structures and algorithms prowess. Or perhaps one
+of them told you that your installation of Pi-Hole and Unbound could be
+improved; this happened to me, and I joined Merkle Science because I trust this
+dude. This is an interesting point, but it <em>depends</em> on what sort of a person
+you are. It might not matter to you. Your colleagues are your colleagues, and
+perhaps they’re not going to be your friends.</p>
+<p>The fourth is work. Actual work. You are promised a paintbrush and the Sistine
+Chapel. However, it depends on your personal goals. Maybe you wanted to be a
+sculptor and not a painter. Perhaps you wanted to write Rust and not Golang.</p>
+<p>So when do you join a company? Perhaps, quite simply put, when one of them is so
+convincing that you ignore the others. When I say <em>one of them</em>, I mean points
+two to five. If you’re joining a company because of the sunk cost fallacy, then
+you have different problems, and you’ll quickly move on to the next part of this
+post.</p>
+</section>
+<section id="when-do-you-leave-a-company">
+<h2>When Do You Leave A Company?<a class="headerlink" href="#when-do-you-leave-a-company" title="Permalink to this headline">#</a></h2>
+<p>When you decide to leave a company, what pushes you out the door? There are
+several things.</p>
+<ol class="arabic simple">
+<li><p>Internal politics; I know I’ve run away from that a couple of times.</p></li>
+<li><p>Poor pay; Perhaps your manager cannot fight for your rightful worth.</p></li>
+<li><p>Horrible work; Nothing pushes me out the door better than SharePoint and
+Oracle SQL.</p></li>
+<li><p>Horrible boss; Perhaps he’s not promoting you because of some reason you
+think is relevant.</p></li>
+<li><p>Horrible peers; Perhaps you think your team members are not fun to work with.</p></li>
+<li><p>Late promotion; You didn’t get that promotion you were promised 18 months
+ago.</p></li>
+</ol>
+<p>You feel like you could go on? Sure, I used to think the same thing.</p>
+<p>But today I don’t. I think there are only three reasons why you’d want to leave.
+Actually there will only ever be two reasons why you’d want to leave.</p>
+<ol class="arabic simple">
+<li><p>Pay</p></li>
+<li><p>People</p></li>
+<li><p>Work</p></li>
+</ol>
+<p>Wherever you go, whatever the company, there will only be these three things
+that you need to decide whether to join the company, whether to stay there, or
+whether to leave.</p>
+<p>If you’re running your own company, there will only be these three reasons that
+you can use to hire or keep great people at your company.</p>
+<p>But what about all the other points?</p>
+</section>
+<section id="the-three-control-parameters-of-a-career">
+<h2>The Three Control Parameters of a Career<a class="headerlink" href="#the-three-control-parameters-of-a-career" title="Permalink to this headline">#</a></h2>
+<p>This is where I come full circle with my control chart paradigm. The three
+points that I brought up in the previous section have everything to do with
+control charts. No, I don’t need you to plot statistical charts to monitor them,
+but you’re already plotting such charts in your head, subconsciously.</p>
+<p>Wherever you go, whichever the company, the only three things you will feel
+changes in, the only three <em>control parameters</em> you are granted, are pay, people
+and work.</p>
+<p>And this is a page I’m taking out of distributed programming, and the CAP
+theorem.</p>
+<div class="tip admonition">
+<p class="admonition-title">CAP Theorem</p>
+<p>The CAP theorem says that for any distributed data store, you will never be
+able to achieve high consistency and high availability when a partition
+occurs.</p>
+</div>
+<p>Wherever you work, you will <em>never</em>, <strong>ever</strong>, achieve great pay, great people
+and great work.</p>
+<p>Wherever you go, strive to get <em>one</em> great thing. Get great pay, great people,
+or great work. <em>Just one</em>.</p>
+<p>Of the rest, choose a place where one of them is <em>bearable</em>. You will find
+places with <strong>great pay and okay work</strong>, or <strong>great work and okay pay</strong>, or <strong>great
+work and okay people</strong>, or <strong>great pay and okay people.</strong></p>
+<p>And the last parameter? Well… it will <em>automatically</em> be horrible.</p>
+<p>It doesn’t matter how great you think your company is. One of these three
+features is going to be amazing.</p>
+<p>You will love your work, you will find your colleagues okay to hang around, and
+you will bemoan your pay.</p>
+<p>You will love your pay, you will find your work palatable, and you will loathe
+your collegues.</p>
+<p>You will love your colleagues, you will find your pay acceptable, and you will
+fear signing in every day because your work is pointless.</p>
+<p>You will love your work, you will find your pay is acceptable, and you will hate
+your colleagues.</p>
+<p>You will love your pay, you will be able to withstand your colleagues, and your
+work will be ridiculous in your eyes.</p>
+<p>I could go on.</p>
+<p>The point is that irrespective of your company – <em>irrespective</em> of your company
+– this will be true. If you want to join a company, or, if you want to stay at a
+company, you must love one of these three things the company can give you, and
+you must find one of the other two to be acceptable. You will <em>hate</em> the third
+thing, so make sure it’s something you’re not passionate about.</p>
+<p>But as a hiring manager, or a CEO or CTO, what can you do? Make pay
+exhorbitantly high and make the work amazing? No. That’ll only attract
+psychopaths who hate working together. Remember that the two things that matter
+to people <em>vary</em> from person to person. One employee might want amazing work for
+mediocre pay - how do you motivate her to work on database administration if
+what she loves is hardcore engineering? One employee might care about his
+colleagues, he loves to discuss the technical aspects with a team that’s the
+sort you hear from on stage at Goto Conf and KubeConf, and he’s okay as long as
+the work is bearable. Pay doesn’t matter to him. How will you try to attract
+this sort of employee. Then there’s the sociopath who wants amazing pay and
+bearable work. He’s not going to care about what sort of people he works with –
+he’ll be polite to them of course, but then he only cares about delivering
+excellent work himself. What will you offer him?</p>
+<p>So when do you leave?</p>
+</section>
+<section id="id1">
+<h2>The Two Of Three Rule<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>You must definitely leave when two of the three control parameters are horrible.
+Think of your job as a see-saw. On one side is the “great” control parameter,
+and on the other is the “horrible” parameter. At the center is the fulcrum,
+which can move either to the good side or the bad side. That’s where the third
+parameter is currently concentrated. And that’s the important part, surprisingly.</p>
+<p>When this parameter is right at the center you realize that it doesn’t really
+make you super happy, but that it’s also not annoying you constantly. It’s a
+fine balance between the great parameter and the horrible parameter.</p>
+<p>Yes, it’s not the “great” parameter, or the “horrible” parameter that decides
+when you will leave. Instead it’s a shift in the central parameter that you once
+found <em>palpatable</em>, <em>bearable</em> or <em>just okay</em>, when you joined.</p>
+<p>When <em>that</em> parameter shifts to the horrible side, it doesn’t matter how <em>great</em>
+the other parameter is.</p>
+<p>Your pay could be astounding, but you will not be able to work on a horrible
+project with horrible people.</p>
+<p>Your colleagues could all be amazing engineers, but nothing will make you work
+on stuff you <em>hate</em> for peanuts.</p>
+<p>Your work could be amazing and will revolutionize the world, but you cannot work
+on it with people you do not get along with, for horrendous pay.</p>
+<p>If two of these parameters are on the horrible side, it doesn’t matter just how
+amazing the other parameter is. Your constant annoyance at the other two will
+upset you constantly. Indeed, the fact that a parameter you found just
+<em>bearable</em> and not an annoyance is going to annoy you multiple times more than
+the other horrible parameter.</p>
+<p>At any workplace, no matter how awesome, employees will care only about one
+of three things. People, Pay and Work. One of these things will drive people
+to join you, one of them will be something they don’t really find
+disagreeable, and one of them will be something they would rather not talk
+about with their friends. If the one thing that they don’t really hate tips
+too far to the other end, people will leave, and improving the one thing that
+was the driving factor will no longer make a difference.</p>
+<div class="info admonition">
+<p class="admonition-title">The Two of Three Rule</p>
+<p>Pay, People, Work. Pick one that you need to be awesome. Pick one that you
+don’t mind being lack-lustre. The third one <em>will</em> be horrible. This rule
+holds at <strong>every</strong> company; indeed, it holds at <em>any company</em> you should and
+would work at. Shift the second factor, and you won’t want to work there, no
+matter how awesome the first factor you picked is.</p>
+<p>The Two of Three Rule is: <em>Pay, people, work. Two of these three things will
+either make you really love your job, or really hate your job.</em></p>
+</div>
+<p>It’s funny how this works.</p>
+<p>When I was at Flipkart, I was paid to write about books. I am a voracious
+reader, or I was at one point. I was being paid to write about J.R.R. Tolkien,
+about Dr. Seuss, and about the Wheel of Time. Sure, there were moments I was
+writing about horrible books that I feel aren’t worth the paper they’re printed
+on, but that didn’t matter to me. So the work was <em>okay</em>. The pay was <em>bad</em>. I
+was earning peanuts before, and compared to that, this was okay pay, <em>bearable</em>
+pay, but it was still <em>peanuts</em>. The people I worked with were <em>fun</em> to work
+with. I made several <em>friends</em> among them, and I opened up to them like I never
+had with others. I was able to have lunch with them and talk about their lives.
+I was able to have heated discussions about comic books, about movies, and I was
+able to be myself.</p>
+<p>What happened though? Why did I leave?</p>
+<p>One day, the Catalogue team decided to scrap the books content. The team leads
+and the manager decided to tell me at the last minute. They didn’t even sugar
+coat that fact. That didn’t really matter, but it was the fact that they treated
+it as an afterthought that someone who constantly went on and on about how much
+he loved books would be “relieved” that he didn’t have to write about books
+again. It didn’t help that the news was also given to me by a team lead who was
+hired despite being clearly incompetent. I was doing the job of both team leads
+at that point. I had automated so much of their job, and they were really not
+doing much. The manager didn’t care about how much I was improving things.
+Instead, they chose to pull the rug from under my feet.</p>
+<p>I left as soon as I found a new job. I wasn’t working with people I loved for
+horrible pay and horrible work.</p>
+<p>Then I went to GKN.  I worked on some amazing projects, and I didn’t hate the
+people around me. Some of them are friends today, close friends who were there
+for me at hard moments. Here, I got shafted with the pay once again. At one
+stage, my salary was revised because I managed to prove to the HR how underpaid
+I was – this came under the threat of leaving the company. But it was still 30%
+of my market value at that point.</p>
+<p>But eventually, the people I cared about were making plans to leave, or move
+away. And the people who were left around me became <em>toxic</em>. The local leaders
+of my division were <em>toxic</em>, and that made my life hell. I couldn’t hire
+competent team members since I wasn’t given power to do so.</p>
+<p>I left within 3 months. I couldn’t change their minds. I couldn’t choose the
+people I worked with, I couldn’t build a team to build that amazing project my
+German boss wanted me to build – a project I still think about fondly.</p>
+<p>Then I joined Visa. Here I got great pay. My colleagues were good people. And
+the work was horrendous. I left in two years because that changed, and it would
+have been sooner if not for The Great Pandemic of 2020.</p>
+<p>I’m not explaining all of this to say that my workplaces were negative. No. I
+still recommend Visa to all my friends who want a good place to work. Remember,
+the <em>two</em> things that matter to me out of the three might not be the same for
+you.</p>
+<p>Control charts tell us that there’s something inherently wrong with a process.
+When a process begins to deviate from its established “norm”, it is slowly
+progressing to a stage where if you want it to go back to how it was, or to
+another <em>acceptable</em> state, you need to exert considerable effort. Sometimes,
+this won’t be in your hands. This will instead be something you need your upper
+management to step in and change. And, oftentimes, you’ll find that they have no
+horse in this race.</p>
+<p>If you want to hire good people who will work for you for a long time and
+deliver great things, ask them which of the three things matter to them, and
+ensure that you meet those two things. The definition of a “Great Place to Work”
+is multi-faceted. It is very different to different people, but you will find
+that for a given person, these points are more or less the same unless they have
+a life-changing event.</p>
+<p>When I was at Visa, I lost my left ear due to circumstances not under my
+control. Indeed, no one at Visa could have helped me. That changed the ball game
+drastically. That’s what is called a random error in a control chart. In such a
+scenario, no one can help you really. In such times, as a leader, the only thing
+you can do is try to be there for your employees. But as an employee, you need
+to decide what matters to you and whether staying at a place will help you
+achieve that sooner.</p>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h2>
+<p>So the next time you’re evaluating an offer, or if you’re evaluating whether to
+leave a company or to stay; or if an employee is leaving and you’re trying to
+figure out how to convince her to stay, remember that money isn’t always the
+prime bargaining chip. Sometimes money doesn’t matter. It’s the other two that
+upset the scale.</p>
+<p>There are always two out of three things that make or break the experience of
+working at a company. To me, today, that’s money and people. Money because of
+the responsibilities I have, and people because I don’t just want a team, but a
+<em>crew</em>. I want a <em>unit</em> that functions together. The work is after the fact in
+my opinion. To others, those scales are definitely going to be different.</p>
+<div class="info admonition">
+<p class="admonition-title">Side Note</p>
+<p>My scales are currently balanced at Merkle Science, and I’m trying to improve
+on the crew part. I truly believe that <em>culture</em> is something each and
+everyone of us brings into a company. If you’re in the leadership team, and
+if you’re not trying to bring in people that improve your company’s culture,
+you’re not doing your best to keep people from tipping their personal scales.</p>
+<p>By hiring great people and satisfying their scales, you’ll achieve a balance
+when it comes to your company as a whole. You won’t be known as the company
+where money is astounding but work is horrible. You will be bringing in
+people that are genuinely interested in writing a few lines of a masterful
+play, and that is <a class="reference external" href="https://www.poetryfoundation.org/poems/51568/o-me-o-life">a play to which I’d like to contribute a verse.</a></p>
+<p>To this end, I’m looking for great people to work with me, so if you are looking for work,
+and have <a class="reference external" href="https://jobs.lever.co/merklescience/">something passionate you
+want to talk about,</a>
+hit me up on <a class="reference external" href="https://twitter.com/stonecharioteer">Twitter</a> or LinkedIn and
+let me know what you’re looking for. <a class="reference external" href="mailto:careers&#37;&#52;&#48;merklescience&#46;com">Let’s set up an interview<span>&#46;</span></a></p>
+</div>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<p>These are a list of books I love recommending if you’re interested in the topic
+of statistics and process control.</p>
+<ol class="arabic simple">
+<li><p>Edward Deming - Out of the Crisis</p></li>
+<li><p>Walter A. Shewart - Statistical Method From the Viewpoint of Quality Control</p></li>
+<li><p>Taiichi Ohno - Toyota Production System: Beyond Large-Scale Production</p></li>
+<li><p>Taiichi Ohno - Workplace Management</p></li>
+</ol>
+<p>These books were written in a time where statistical quality control was applied
+predominantly to manufacturing processes, but I’d recommend looking at them
+through the lens of a general engineer, as opposed to a software engineer. If
+you ever find yourself wanting to discuss these topics, I’m always available.
+Reach out to me <a class="reference external" href="https://twitter.com/stonecharioteer">on Twitter.</a></p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Posts <em>(Archived)</em></div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="til-python-fixed-length.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Creating Fixed Length Iterables in Python</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, Vinay Keerthi
+            </div>
+            Made with 
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on Jul 29, 2022</div>
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">The Two of Three Rule</a><ul>
+<li><a class="reference internal" href="#an-aside-control-charts">An Aside - Control Charts</a></li>
+<li><a class="reference internal" href="#when-do-you-join-a-company">When Do You Join a Company?</a></li>
+<li><a class="reference internal" href="#when-do-you-leave-a-company">When Do You Leave A Company?</a></li>
+<li><a class="reference internal" href="#the-three-control-parameters-of-a-career">The Three Control Parameters of a Career</a></li>
+<li><a class="reference internal" href="#id1">The Two Of Three Rule</a></li>
+<li><a class="reference internal" href="#conclusion">Conclusion</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

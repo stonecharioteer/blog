@@ -1,8 +1,7 @@
-:blogpost: true
-:category: Notes
-:tags: tech, programming, learning
+.. index:: tech, programming, learning, books
 
 .. _notes:
+
 ===================
 Notes
 ===================
@@ -11,9 +10,35 @@ This section hosts my notes on various topics.
 
 .. warning::
 
-   These notes will be, by definition, rather unpolished and incomplete. I was hosting them separately,
-   but I want to merge this with my blog, so I can consolidate my knowledge-base.
+   These notes will be, by definition, rather unpolished and incomplete. I was
+   hosting them separately, but I want to merge this with my website, so I can
+   consolidate my knowledge-base.
 
+
+.. todo::
+
+   Need to migrate this to use ``sphinx-design`` instead of ``sphinx-panels``.
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   learnit/index
+   advent_of_code/index
+   airflow/index
+   ansible/index
+   books/index
+   courses/index
+   django/index
+   dsa/index
+   flask/index
+   golang/index
+   k8s/index
+   leetcode/index
+   lua/index
+   rust/index
+   system_design/index
+   vagrant/index
 
 ------------
 General

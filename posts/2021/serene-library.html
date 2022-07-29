@@ -1,0 +1,574 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="author" title="About these documents" href="../../about.html" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="The Importance of Documentation" href="the-importance-of-documentation.html" /><link rel="prev" title="Reflections on Doing More" href="reflections-on-doing-more.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
+        <title>Memories of a Circulating Library - Stonecharioteer</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --font-stack: Newsreader, Garamond, Helvetica, Times New Roman, Serif;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --font-stack: Newsreader, Garamond, Helvetica, Times New Roman, Serif;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --font-stack: Newsreader, Garamond, Helvetica, Times New Roman, Serif;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">Stonecharioteer</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../_static/images/logo/stonecharioteer-banner.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/images/logo/stonecharioteer-banner-bnw.png" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Stonecharioteer</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About Me</a></li>
+<li class="toctree-l1"><a class="reference internal" href="personal-code.html">Values</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/index.html">Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/learnit/index.html">The Learn It List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/advent_of_code/index.html">Advent of Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/airflow/index.html">Apache Airflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/ansible/index.html">Ansible</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/books/index.html">Technical Books</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/common_sense_guide/index.html">A Common-Sense Guide to Data Structures and Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/cpython_internals/index.html">CPython Internals - Anthony Shaw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/ctci/index.html">Cracking the Coding Interview - Gayle Laakmann McDowell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/database_internals/index.html">Database Internals - Alex Petrov</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/elements_of_programming_interviews/index.html">Elements of Programming Interviews in Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/high_performance_browser_networking/index.html">High Performance Browser Networking - Ilya Grigorik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/k8s_in_action/index.html">Kubernetes in Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/kleppmann/index.html">Designing Data Intensive Applications - Martin Kleppmann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/practices_python_pro/index.html">Practices of the Python Pro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/problem_solving_dsa_python/index.html">Problem Solving with Data Structures and Algorithms using Python - Bradley N. Miller &amp; David L. Ranum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/secure_by_design/index.html">Secure by Design - Daniel Deogun, Dan Bergh Johnsson, Daniel Sawano</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/ultralearning/index.html">Ultralearning - Scott H. Young</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/courses/index.html">Courses</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/courses/mit6.006/index.html">MIT 6.006 - Introduction to Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/courses/mit6.824/index.html">MIT 6.824 - Distributed Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/django/index.html">Django</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/dsa/index.html">Data Structures and Algorithms</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/dsa/linked-lists.html">Linked Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/dsa/graphs.html">Graphs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/flask/index.html">Flask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/golang/index.html">Golang</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/k8s/index.html">Kubernetes</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/leetcode/index.html">Leetcode</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0073.html">LC0073 - Set Matrix Zeroes (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0118.html">LC0118 - Pascal’s Triangle (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0031.html">LC0031 - Next Permutation (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0053.html">LC0053 - Kadane’s Algorithm (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0075.html">LC0075 - Sort an array of 0’s 1’s 2’s (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0048.html">LC0048 - Rotate Matrix (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0056.html">LC0056 - Merge Overlapping Subintervals (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0088.html">LC0088 - Merge two sorted Arrays without extra space (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0287.html">LC0287 - Find the duplicate in an array of N+1 integers (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0074.html">LC0074 - Search in a 2d Matrix (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0050.html">LC0050 - Pow(X,n) (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0169.html">LC0169 - Majority Element (&gt;N/2 times) (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0229.html">LC0229 - Majority Element (&gt;N/3 times) (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0062.html">LC0062 - Grid Unique Paths (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0493.html">LC0493 - Reverse Pairs (Leetcode) (HARD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0018.html">LC0018 - 4-sum-Problem (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0128.html">LC0128 - Longest Consecutive Sequence (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0001.html">LC0001 - 2-Sum-Problem (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0003.html">LC0003 - Longest Substring without repeat (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0206.html">LC0206 - Reverse a LinkedList (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0876.html">LC0876 - Find the middle of LinkedList (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0021.html">LC0021 - Merge two sorted Linked List (use method used in mergeSort) (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0019.html">LC0019 - Remove N-th node from back of LinkedList (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0002.html">LC0002 - Add two numbers as LinkedList (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0237.html">LC0237 - Delete a given Node when a node is given. (0(1) solution) (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0160.html">LC0160 - Find intersection point of Y LinkedList (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0141.html">LC0141 - Detect a cycle in Linked List (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0025.html">LC0025 - Reverse a LinkedList in groups of size k (HARD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0234.html">LC0234 - Check if a LinkedList is palindrome or not (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0142.html">LC0142 - Find the starting point of the Loop of LinkedList (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0061.html">LC0061 - Rotate a LinkedList (MEDIUM)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/lua/index.html">Lua</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/rust/index.html">Rust</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/system_design/index.html">System Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/vagrant/index.html">Vagrant</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../mustread.html">Must Read</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recent Posts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2022/no-blog.html">This is Not a Blog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2022/so-far-so-rust.html">So Far So Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2022/bipolar.html">Bipolar and ADHD – I Know Your Names Now</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2022/rust-reqwest-retry.html">Retrying a HTTP Reqwest with Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2022/til-python-fixed-length.html">Creating Fixed Length Iterables in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2022/two-of-three-rule.html">The Two of Three Rule</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Archive</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">Posts</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2022/index.html">2022</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2022/bipolar.html">Bipolar and ADHD – I Know Your Names Now</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/documentation-assumptions.html">Documentation Without Assumption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/jinja-curlybraces.html">Using Non-Standard Jinja Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/learning-rust.html">Learning Rust</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/leetcode.html">A System for Getting Better at Leetcode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/no-blog.html">This is Not a Blog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/onward.html">Onward</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/python.html">Python - A Reflection in 2022</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/rust-reqwest-retry.html">Retrying a HTTP Reqwest with Rust</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/so-far-so-rust.html">So Far So Rust</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/til-python-fixed-length.html">Creating Fixed Length Iterables in Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/two-of-three-rule.html">The Two of Three Rule</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2022/vagrant.html">Vagrant</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">2021</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="2021-03-10-mahabharata-instagram.html">Reading the Mahabharata by the Tungabhadra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2021-07-20-for-those-who-came-in-late.html">For Those Who Came in Late</a></li>
+<li class="toctree-l3"><a class="reference internal" href="a-weekend-with-postgresql.html">A Weekend With Postgresql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advent-of-code.html">Advent of Code 2021</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cracking-the-coding-interview.html">Cracking the Coding Interview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="empathy-in-tech.html">Empathy in Tech</a></li>
+<li class="toctree-l3"><a class="reference internal" href="enabling-tapping-on-touchpad-linux.html">Enabling Tapping on the Touchpad in Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="how-to-write-docs-the-readme-file.html">How to Write Documentation - The README.md File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="learning-golang.html">Learning Golang</a></li>
+<li class="toctree-l3"><a class="reference internal" href="merkle-science.html">I joined Merkle Science as an Architect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="personal-code.html">A Personal Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reflections-on-doing-more.html">Reflections on Doing More</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Memories of a Circulating Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="the-importance-of-documentation.html">The Importance of Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="updates.html">Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="xfce-move-monitor.html">Moving a Window to the Next Monitor on XFCE</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2020/index.html">2020</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2020/a-year-of-rest.html">A Year Of Rest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2020/ear-one.html">(Y)ear One</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2020/no-leaf-clover.html">No Leaf Clover</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2019/index.html">2019</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2019/the-sound-of-music.html">The Sound of Music</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2018/index.html">2018</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2018/kana.html">Learn the Kana Using Python and a Raspberry Pi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2018/leonardo.html">Leonardo - Generating Product Unique Specification Images Using Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2017/index.html">2017</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2017/harivamsha.html">Reading the Harivamsha by the Tungabhadra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2017/2017-03-22-debroy-letter.html">Dear Mr. Debroy</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2016/index.html">2016</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-01-mahabharata-day-01.html">Reading the Mahabharata by the Tungabhadra - Day 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-02-mahabharata-day-02.html">Reading the Mahabharata by the Tungabhadra - Day 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-03-mahabharata-day-03.html">Reading the Mahabharata by the Tungabhadra - Day 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-04-mahabharata-day-04.html">Reading the Mahabharata by the Tungabhadra - Day 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-05-mahabharata-day-05.html">Reading the Mahabharata by the Tungabhadra - Day 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-06-mahabharata-day-06.html">Reading the Mahabharata by the Tungabhadra - Day 6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-08-mahabharata-day-07.html">Reading the Mahabharata by the Tungabhadra - Day 7</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-10-mahabharata-day-08.html">Reading the Mahabharata by the Tungabhadra - Day 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-15-mahabharata-day-09.html">Reading the Mahabharata by the Tungabhadra - Day 9</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-16-mahabharata-day-10.html">Reading the Mahabharata by the Tungabhadra - Day 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-17-mahabharata-day-11.html">Reading the Mahabharata by the Tungabhadra - Day 11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-18-mahabharata-day-12.html">Reading the Mahabharata by the Tungabhadra - Day 12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-19-mahabharata-day-13.html">Reading the Mahabharata by the Tungabhadra - Day 13</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-20-mahabharata-day-14.html">Reading the Mahabharata by the Tungabhadra - Day 14</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-21-mahabharata-day-15.html">Reading the Mahabharata by the Tungabhadra - Day 15</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-23-mahabharata-day-16.html">Reading the Mahabharata by the Tungabhadra - Day 16</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-25-mahabharata-day-17.html">Reading the Mahabharata by the Tungabhadra - Day 17</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-27-mahabharata-day-18.html">Reading the Mahabharata by the Tungabhadra - Day 18</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-28-mahabharata-day-19.html">Reading the Mahabharata by the Tungabhadra - Day 19</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-29-mahabharata-day-20.html">Reading the Mahabharata by the Tungabhadra - Day 20</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../2015/index.html">2015</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="memories-of-a-circulating-library">
+<h1>Memories of a Circulating Library<a class="headerlink" href="#memories-of-a-circulating-library" title="Permalink to this headline">#</a></h1>
+<p>When I was 9, my mother enrolled me into a circulating library in Jayanagar 4th
+Block. It was named <em>Serene</em>, and it was operating out of what was a smallish
+garage. The <em>librarian</em>, whose name I cannot really recall (I think it was
+Kumar or some other common Kannadiga name), was thin, silent and didn’t strike
+me as someone who read himself. It was a living for him.</p>
+<p>The library was one of many like it. Bangalore had a lot of these tiny
+libraries, operated by either old men, enjoying their retirement, or by some
+random uncle who would hang out there all day, and perhaps break for lunch. The
+fees, as I remember them, were 60 INR for a month: you were allowed 2 books per
+day, and if you finished your book early, you could pay 2 INR extra per day for
+subsequent books.</p>
+<p>The road to the library was flanked by trees and tiny houses. Most of the
+houses are still there today, although I wonder if any of the original
+residents live there. I walked alone, with my head usually buried in a book. I
+<em>loved</em> comics, and I’d read and re-read all the comics that Serene had. I
+walked to the library every single day that summer.  I remember reading 2 or 3
+books a day, if my mother was feeling annoyed by my talkativeness enough to
+give me an additional 2 INR.</p>
+<p>The library had a huge collection of Archies’ comics, and a respectable
+collection of Asterix comics. They also had some Popeye, World War and Marvel
+Comics. There were very few superhero comics in those days. I read and re-read
+almost all the Archie comics I could find.  The books were usually covered in
+plastic covers, <em>stapled</em> to the books. They would have signs of wear, the sort
+that comes from folding the cover all the way to the back. I don’t remember if
+I did that myself sometimes. I think not, because to <em>this</em> day I cannot bear
+damaging books.</p>
+<p>The library was about 1 km from my house in Jayanagar 4th Block, Bangalore.
+That’s the area I grew up in, and the road leading up to the library is one of
+my most favourite streets. It was calm, and had a few stray dogs. I remember
+being scared of the dogs, which is strange since today you couldn’t keep me
+from petting strays.</p>
+<p>I’m certain that the librarian wondered if this child who kept coming had other
+friends, because I mostly went alone. It wasn’t until a few years later that I
+convinced my friend Akshay to get a membership. I don’t remember if I ever
+convinced anyone else to try the place out.</p>
+<p>I am curious what I spoke with the librarian, because I didn’t learn to speak
+Kannada until I went to college. I could understand it in school, but could not
+speak enough to have a conversation. I spoke English I suppose, and it’s odd
+because I remember the Librarian speaking kannada.</p>
+<p>I remember the first time I tried reaching for one of the “adult” novels, by
+which I mean novels by Alistair MacLean or Agatha Christie. It was the first
+time I was not reaching for the comics. I remember looking at a Fredrik Forsyth
+novel - something to do with the “Dogs of War”, I think - and the librarian was
+asking me when I got into those.</p>
+<p>I also remember picking up White Ninja by Eric van Lustbader and thinking it
+was something I’d enjoy. I never finished that book. I wonder if I should read
+it today.</p>
+<p>The books I most associate with the library are Asterix, Tintin (I read very
+little of these since I didn’t know they were continuous), and Archie comics.
+I remember the antics of Archie Andrews and Jughead Jones with fondness. I
+especially loved the Halloween stories, which sometimes blended Josie and the
+Pussycats, Scooby-Doo and the Gang, and others. I vaguely remember there being
+a single copy of Captain America, but I remember reading more comics of the
+Shield (the Archie comics character), and the associated super heroes.</p>
+<p>I remember reading <em>The Four Just Men</em>, which was a novel about vigilante
+justice.  I keep thinking to myself that I should buy a copy of that book for
+myself, but I never do.</p>
+<p>The library had an open entrance, with a shutter - the sort of roll-upwards
+shutter you’d find at smallish condiment stores, and it had books on 3 walls.
+As you entered - on your right you’d find a wooden desk where the librarian
+sat, he had a tray full of A4 sized cards - these were the cards in which he
+entered who borrowed which book. He sat on a wooden chair, and behind him was a
+white bookshelf full of magazines. He also proudly featured the latest Archie
+comic there.  Premium books, or the ones that were the most popular, were
+always on this desk. This was a time where Harry Potter hadn’t yet reached
+India to much fame.</p>
+<p>On the right wall were the comics. These were usually stacked cover-to-cover,
+so you had to rummage through them to find anything good.  I remember he had
+some books piled on the floor as well. There would be a row of stacked books
+alongside the wall, and a row in front of that.  The rear row usually had some
+rare gems, dusty and without a cover page at times. These were the <em>old</em> Archie
+comics, and some others which kids usually loved.</p>
+<p>At the centre of the room was a table. You’d find a selection of books on this
+as well. I remember seeing the Asterix and Tintin comics there first, stacked
+again, cover to cover. I spent most of my attention here. Oddly, I do not
+remember running into anyone my age at the library. In retrospect, that’s quite
+odd, but given my penchant for not being an extroverted child, that seems to
+fit right in. I’m certain I didn’t see them because I was too busy with the
+books.</p>
+<p>I can’t remember if there were books under the table. Perhaps that’s where the
+librarian kept the older books, all of them dusty. On the wall at the end, he’d
+placed the romance novels.  I remember that’s where the Mills &amp; Boon novels
+were. I never really had much curiosity for those, and I don’t remember reading
+any of them. I do remember picking up a single Danielle Steele novel, mostly
+because I read her name as Daniel Steel, and that sounded like someone who
+would be writing the next great action novel. If I’d watched Die Hard back
+then, I’d have probably thought this was the same writer.</p>
+<p>The right wall had the fast movers towards the entrance. That section had the
+James Hadley Chase, Sidney Sheldon, Agatha Christie, Alistair MacLean, Desmond
+Bagley, Fredrik Forsyth, Eric van Lustbader, Robert Ludlum, Michael Crichton
+and others. Towards the right corner were the books no one usually wanted. It
+had a few classics, some old magazines that I cannot really remember, and books
+without covers. The bookshelves went up to the roof, but perhaps it seemed that
+way because I was a child looking up. I wonder about that.</p>
+<p>There are no more circulating libraries operating out of garages in Bangalore.
+I haven’t been to any of the other libraries in years, and while I’ve wanted a
+British Library membership forever, I don’t think I’d use a library while I can
+buy my own books - my collection is already large enough for most people to
+call it a library.</p>
+<p>I frequented Serene largely between 1998 and 2001. By the time I started
+reading Harry Potter, I’d stopped going, and I started asking my parents for my
+own books.  Street-side vendors of used and, unfortunately, pirated books, made
+it easy to get one’s hands on many books, including Agatha Christie. There were
+also book sales that sold by the kilogram, and I’d pick up some books from such
+places. This is why I never touched the Harry Potter books there. I only
+returned once in a while to see if they had something interesting. I once lost
+a book from the library in 2000 because the teacher in class confiscated it. He
+never returned it and he left school, so I never got the book back. That’s when
+I stopped going there for a couple of years.</p>
+<p>Walking to Serene is how I picked up my habit of reading while I walk. I’ve
+been warned about that by a lot of people, ranging from friends to strangers. I
+don’t read on the road, mostly on footpaths. It’s therapeutic.</p>
+<p>I wonder what happened to the librarian. The garage where he operated out of is
+still there, closed. I wonder if I’ll find books if I open it. The shutter
+hasn’t been open in the years since. There’s a Cafe Coffee Day there, but there
+used to be a pet store next to it as well.</p>
+<p>I think the last time I went to see Serene was in 2003, and it probably closed
+after that. My membership number was <code class="docutils literal notranslate"><span class="pre">683</span></code>, if I remember correctly. I
+remember opening a second account because I’d lost my first library card after
+the gap in my visits. I think he gave me the same account number. I didn’t
+really go very often even after making the account. I mostly used the books at
+the school library. The last time I went was to riscind my membership so that I
+could use the safety deposit of 250 INR. I wish I’d kept the membership card
+instead.</p>
+<p>If you asked the younger me what he thought about the absence of circulating
+libraries, he’d call it tragic. I’m not sure I feel the same way. I have a the
+resources to own over at thousand books, and I also own a Kindle Oasis. I’m not
+reading as much as I used to, not even nearly as much. I read the occassional
+book on tech, and I’m trying to reread my favourites from childhood, starting
+with The Wheel of Time and the Tolkien collection. I never read those at
+Serene, and I wonder if somewhere in the shelves lurked a copy of The Lord of
+the Rings or the Hobbit that I never found. I’d like to think that there was.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is more I want to write about Serene, and the route I took to get
+there, especially because it introduced me to a kind man who changed my
+life. I hope to write more about that later.</p>
+</div>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="the-importance-of-documentation.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">The Importance of Documentation</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="reflections-on-doing-more.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Reflections on Doing More</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, Vinay Keerthi
+            </div>
+            Made with 
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on Jul 29, 2022</div>
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

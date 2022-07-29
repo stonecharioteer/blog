@@ -1,0 +1,24 @@
+---
+title: Today I Learned
+layout: post
+categories: [learning]
+permalink: /til.html
+description: "A list of things I learn every day."
+customexcerpt: "This is a page of things I learn/encounter daily."
+---
+
+This is a page of things I learn/encounter daily.
+I am trying to organize these so that I can classify them better.
+Some are links to blogs, others to github or to other websites where
+I learn something interesting every day.
+I usually structure this with some helpful description so I can find it later.
+To be honest, this is mainly so I can track links in a way that is
+not reliant on external services.
+
+<i>This page is automatically updated by my discord bot.</i> [More details can be found here.](https://stonecharioteer.com/sarathi.html)
+
+{% for date in dates %}## {{ date }}
+
+{% for til in til_json[date] %}{{loop.index}}. {% if til["type"] == "url" %}[{{til["title"].replace("|", "\|")}}]({{ til["value"] }}){% else %}{{til["value"].replace("|", "\|")}}{% endif %}
+{% endfor %}
+{% endfor %}

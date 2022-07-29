@@ -6,9 +6,12 @@
 :image: 0
 
 .. _mahabharata-day-02:
+
 ==========================================================
 Reading the Mahabharata by the Tungabhadra - Day 2
 ==========================================================
+
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
 
 It is unbelievably calm atop a hill. I was right when I chose this spot to read
 the Mahabharata.  Reading of Shakuntala and Dushyantha, I lost myself in her
@@ -16,7 +19,7 @@ pain as he denied loving her. Reading about Yayati and how he beseeched his
 sons to share with him their youth, I could agree with him that one thousand
 years could never be enough time to enjoy the wonders of this world.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-02.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-02.jpg
 
 As I read, someone in the distance began to play the flute. It was someone
 selling flutes, perhaps, but in this valley you cannot say how far sound

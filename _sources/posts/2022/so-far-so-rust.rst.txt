@@ -194,6 +194,7 @@ like this. I could, instead, have written it like follows.
 
 .. code-block:: Rust
    :linenos:
+
    fn main() {
       let value = std::env::var("SOME_ENVIRONMENT_VARIABLE");
       match value {
@@ -350,6 +351,6 @@ Others
 7. `Rust by Example <https://doc.rust-lang.org/rust-by-example/>`_
 8. `Rustlings - Interactive Exercises to Learn Rust <https://github.com/rust-lang/rustlings>`_
 9. `The Cargo Book <https://doc.rust-lang.org/cargo/>`_
-10. `StackOverflow - What are the differences between Rust's \`String\` and \`str\`? <https://stackoverflow.com/a/24159933/18407535>`_
+10. `StackOverflow - What are the differences between Rust's String and str? <https://stackoverflow.com/a/24159933/18407535>`_
 11. `The Relative Performance of C and Rust by Bryan Cantrill <http://dtrace.org/blogs/bmc/2018/09/28/the-relative-performance-of-c-and-rust/>`_
 12. `Writing an OS in Rust <https://os.phil-opp.com/>`_

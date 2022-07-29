@@ -1,14 +1,16 @@
-:blogpost: true
-:date: Dec 6, 2021
-:category: Updates
-:tags: Life, Sphinx, Advent of Code, Oso, Jekyll, Hugo, Furo, Notes
+.. index:: life, sphinx, advent-of-code, oso, jekyll, hugo, furo, notes
+
+.. _2021-updates:
+
 ================
 Updates
 ================
 
-.. post:: Dec 6, 2021
-   :tags: life
-   :category: Updates
+.. admonition:: Meta
+
+   **Original Publication Date**
+
+   :date: Dec 6, 2021
 
 I've been silent for a while, not because I haven't been writing,
 but *because* I've been writing. I've been working on a few blog articles,

@@ -6,13 +6,17 @@
 :image: 0
 
 .. _mahabharata-day-11:
+
 ============================================================
 Reading the Mahabharata by the Tungabhadra - Day 11
 ============================================================
 
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+
 Oh Suyodhana! Oh, Suyodhana!
 
-.. figure:: /assets/images/posts/india/mahabharata-day-11.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-11.jpg
+   :figwidth: 350
 
 Why won't you listen to them? When Sanjaya gave you the message sent by
 DharmaRaja, why did you mock him? When Krishna Vasudeva himself descended with

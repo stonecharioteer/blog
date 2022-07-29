@@ -6,14 +6,17 @@
 :image: 0
 
 .. _mahabharata-day-03:
+
 ========================================================
 Reading the Mahabharata by the Tungabhadra - Day 3
 ========================================================
 
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+
 This land belongs to the monkeys. It is theirs to frolic in, it is theirs to
 own. We have somehow faltered here, and they know it far better than we.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-03.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-03.jpg
 
 The wind blows my hair into my eyes, it cries out, howling like a dog in the
 distance. Perhaps it really is a dog, perhaps Dharma is watching me read the

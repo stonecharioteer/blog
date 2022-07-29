@@ -6,13 +6,16 @@
 :image: 0
 
 .. _mahabharata-day-12:
+
 ============================================================
 Reading the Mahabharata by the Tungabhadra - Day 12
 ============================================================
 
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+
 Bhishma Parva.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-12.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-12.jpg
 
 Here it all begins. The story of the downfall of the Kuru Dynasty, the downfall
 of the sons of Dhritarashtra.  As I sit atop the mountain where Hanuman, the

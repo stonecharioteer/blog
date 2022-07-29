@@ -34,9 +34,9 @@ The core dependencies for this to work are:
 2. ``wmctrl``
 3. ``xorg-xwinfo``
 
----------------------------------------------------------------
+------------------------------------------------------------------
 Step 3 - Clone ``move-to-next-monitor`` to a folder in your path
----------------------------------------------------------------
+------------------------------------------------------------------
 
 Personally, I prefer ``~/.local/bin``, but you can use ``/usr/bin``, or any
 folder that's in your path.

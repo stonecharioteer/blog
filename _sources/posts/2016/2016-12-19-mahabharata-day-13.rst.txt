@@ -6,13 +6,16 @@
 :image: 0
 
 .. _mahabharata-day-13:
+
 ============================================================
 Reading the Mahabharata by the Tungabhadra - Day 13
 ============================================================
 
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+
 It begins.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-13.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-13.jpg
 
 Struck by doubt, Kounteya Dhananjeya casts away his bows and arrows, refusing
 to strike down his relatives.

@@ -1,4 +1,7 @@
+.. index:: data-structues, linked-lists
+
 .. _notes-dsa-linked-list:
+
 ================================
 Linked Lists
 ================================

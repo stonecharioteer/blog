@@ -6,9 +6,12 @@
 :image: 0
 
 .. _mahabharata-day-07:
+
 ===========================================================
 Reading the Mahabharata by the Tungabhadra - Day 7
 ===========================================================
+
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
 
 As I read the Mahabharata today, a British lady came up to me to ask me about
 Hampi. She was wondering if the heat had something to do with global warming. I
@@ -16,7 +19,7 @@ assured her that it has always been this hot here. It's why Krishnadevaraya
 built so many pushkarinis, and why the landscape is filled with mantapas for
 weary travellers to rest as they walked in the hot sun.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-07.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-07.jpg
 
 
 Indeed, even the trees seem to be growing where travellers can find shade. Even

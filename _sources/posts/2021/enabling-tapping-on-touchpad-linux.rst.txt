@@ -50,7 +50,6 @@ the ``id`` is 13. So next, let's see the properties of the touchpad.
 
    xinput list-props 13
 
-
    Device 'DELL09F5:00 04F3:30CB Touchpad':
    	Device Enabled (163):	1
    	Coordinate Transformation Matrix (165):	1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000
@@ -90,7 +89,7 @@ the ``id`` is 13. So next, let's see the properties of the touchpad.
    	libinput Horizontal Scroll Enabled (317):	1
    	libinput Scrolling Pixel Distance (318):	15
    	libinput Scrolling Pixel Distance Default (319):	15
-```
+
 
 The line we are interested in shows something regarding tapping. So let's
 filter the nonsense out.

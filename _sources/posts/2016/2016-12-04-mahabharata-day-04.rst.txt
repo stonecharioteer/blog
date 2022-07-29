@@ -6,14 +6,17 @@
 :image: 0
 
 .. _mahabharata-day-04:
+
 =======================================================
 Reading the Mahabharata by the Tungabhadra - Day 4
 =======================================================
 
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+
 How we ruin ourselves. Mankind has always fallen flat on its face when faced
 with the questions of Dharma.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-04.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-04.jpg
 
 Dharma isn't difficult to comprehend, adharma is just easier.
 

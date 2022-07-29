@@ -14,7 +14,7 @@ Dear Mr. Debroy
     The following is the content of handwritten letter I sent to Mr. Debroy dated
     Feb 12th, 2017. I've reproduced it in its entirety here.
 
-.. figure:: /assets/images/posts/india/debroy-letter-01.jpg
+.. figure:: /_static/images/posts/india/debroy-letter-01.jpg
 
 Dear Mr. Debroy,
 

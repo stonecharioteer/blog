@@ -6,14 +6,17 @@
 :image: 0
 
 .. _mahabharata-day-14:
+
 ============================================================
 Reading the Mahabharata by the Tungabhadra - Day 14
 ============================================================
 
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+
 My very first introduction to the Mahabharata was one of two comics, from Amar
 Chitra Katha, bought at the railway station in Mumbai, over twenty years ago.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-14.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-14.jpg
 
 It was either the story of Karna or the story of Abhimanyu, I cannot recall
 which one it was. I remember reading both when I was younger and being

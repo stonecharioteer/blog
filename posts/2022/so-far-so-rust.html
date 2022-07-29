@@ -1,0 +1,758 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="author" title="About these documents" href="../../about.html" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Bipolar and ADHD – I Know Your Names Now" href="bipolar.html" /><link rel="prev" title="This is Not a Blog" href="no-blog.html" />
+
+    <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
+        <title>So Far So Rust - Stonecharioteer</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --font-stack: Newsreader, Garamond, Helvetica, Times New Roman, Serif;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --font-stack: Newsreader, Garamond, Helvetica, Times New Roman, Serif;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --font-stack: Newsreader, Garamond, Helvetica, Times New Roman, Serif;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">Stonecharioteer</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../_static/images/logo/stonecharioteer-banner.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../_static/images/logo/stonecharioteer-banner-bnw.png" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Stonecharioteer</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Meta</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About Me</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2021/personal-code.html">Values</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/index.html">Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/learnit/index.html">The Learn It List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/advent_of_code/index.html">Advent of Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/airflow/index.html">Apache Airflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/ansible/index.html">Ansible</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/books/index.html">Technical Books</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/common_sense_guide/index.html">A Common-Sense Guide to Data Structures and Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/cpython_internals/index.html">CPython Internals - Anthony Shaw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/ctci/index.html">Cracking the Coding Interview - Gayle Laakmann McDowell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/database_internals/index.html">Database Internals - Alex Petrov</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/elements_of_programming_interviews/index.html">Elements of Programming Interviews in Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/high_performance_browser_networking/index.html">High Performance Browser Networking - Ilya Grigorik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/k8s_in_action/index.html">Kubernetes in Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/kleppmann/index.html">Designing Data Intensive Applications - Martin Kleppmann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/practices_python_pro/index.html">Practices of the Python Pro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/problem_solving_dsa_python/index.html">Problem Solving with Data Structures and Algorithms using Python - Bradley N. Miller &amp; David L. Ranum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/secure_by_design/index.html">Secure by Design - Daniel Deogun, Dan Bergh Johnsson, Daniel Sawano</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/books/ultralearning/index.html">Ultralearning - Scott H. Young</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/courses/index.html">Courses</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/courses/mit6.006/index.html">MIT 6.006 - Introduction to Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/courses/mit6.824/index.html">MIT 6.824 - Distributed Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/django/index.html">Django</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/dsa/index.html">Data Structures and Algorithms</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/dsa/linked-lists.html">Linked Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/dsa/graphs.html">Graphs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/flask/index.html">Flask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/golang/index.html">Golang</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/k8s/index.html">Kubernetes</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/leetcode/index.html">Leetcode</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0073.html">LC0073 - Set Matrix Zeroes (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0118.html">LC0118 - Pascal’s Triangle (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0031.html">LC0031 - Next Permutation (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0053.html">LC0053 - Kadane’s Algorithm (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0075.html">LC0075 - Sort an array of 0’s 1’s 2’s (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0048.html">LC0048 - Rotate Matrix (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0056.html">LC0056 - Merge Overlapping Subintervals (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0088.html">LC0088 - Merge two sorted Arrays without extra space (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0287.html">LC0287 - Find the duplicate in an array of N+1 integers (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0074.html">LC0074 - Search in a 2d Matrix (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0050.html">LC0050 - Pow(X,n) (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0169.html">LC0169 - Majority Element (&gt;N/2 times) (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0229.html">LC0229 - Majority Element (&gt;N/3 times) (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0062.html">LC0062 - Grid Unique Paths (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0493.html">LC0493 - Reverse Pairs (Leetcode) (HARD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0018.html">LC0018 - 4-sum-Problem (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0128.html">LC0128 - Longest Consecutive Sequence (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0001.html">LC0001 - 2-Sum-Problem (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0003.html">LC0003 - Longest Substring without repeat (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0206.html">LC0206 - Reverse a LinkedList (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0876.html">LC0876 - Find the middle of LinkedList (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0021.html">LC0021 - Merge two sorted Linked List (use method used in mergeSort) (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0019.html">LC0019 - Remove N-th node from back of LinkedList (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0002.html">LC0002 - Add two numbers as LinkedList (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0237.html">LC0237 - Delete a given Node when a node is given. (0(1) solution) (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0160.html">LC0160 - Find intersection point of Y LinkedList (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0141.html">LC0141 - Detect a cycle in Linked List (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0025.html">LC0025 - Reverse a LinkedList in groups of size k (HARD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0234.html">LC0234 - Check if a LinkedList is palindrome or not (EASY)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0142.html">LC0142 - Find the starting point of the Loop of LinkedList (MEDIUM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/leetcode/lc_0061.html">LC0061 - Rotate a LinkedList (MEDIUM)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/lua/index.html">Lua</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/rust/index.html">Rust</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/system_design/index.html">System Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/vagrant/index.html">Vagrant</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../mustread.html">Must Read</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recent Posts</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="no-blog.html">This is Not a Blog</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">So Far So Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bipolar.html">Bipolar and ADHD – I Know Your Names Now</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rust-reqwest-retry.html">Retrying a HTTP Reqwest with Rust</a></li>
+<li class="toctree-l1"><a class="reference internal" href="til-python-fixed-length.html">Creating Fixed Length Iterables in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two-of-three-rule.html">The Two of Three Rule</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Archive</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">Posts</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">2022</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="bipolar.html">Bipolar and ADHD – I Know Your Names Now</a></li>
+<li class="toctree-l3"><a class="reference internal" href="documentation-assumptions.html">Documentation Without Assumption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="jinja-curlybraces.html">Using Non-Standard Jinja Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="learning-rust.html">Learning Rust</a></li>
+<li class="toctree-l3"><a class="reference internal" href="leetcode.html">A System for Getting Better at Leetcode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="no-blog.html">This is Not a Blog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="onward.html">Onward</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python.html">Python - A Reflection in 2022</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rust-reqwest-retry.html">Retrying a HTTP Reqwest with Rust</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">So Far So Rust</a></li>
+<li class="toctree-l3"><a class="reference internal" href="til-python-fixed-length.html">Creating Fixed Length Iterables in Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="two-of-three-rule.html">The Two of Three Rule</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vagrant.html">Vagrant</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2021/index.html">2021</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2021/2021-03-10-mahabharata-instagram.html">Reading the Mahabharata by the Tungabhadra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/2021-07-20-for-those-who-came-in-late.html">For Those Who Came in Late</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/a-weekend-with-postgresql.html">A Weekend With Postgresql</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/advent-of-code.html">Advent of Code 2021</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/cracking-the-coding-interview.html">Cracking the Coding Interview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/empathy-in-tech.html">Empathy in Tech</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/enabling-tapping-on-touchpad-linux.html">Enabling Tapping on the Touchpad in Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/how-to-write-docs-the-readme-file.html">How to Write Documentation - The README.md File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/learning-golang.html">Learning Golang</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/merkle-science.html">I joined Merkle Science as an Architect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/personal-code.html">A Personal Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/reflections-on-doing-more.html">Reflections on Doing More</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/serene-library.html">Memories of a Circulating Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/the-importance-of-documentation.html">The Importance of Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/updates.html">Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2021/xfce-move-monitor.html">Moving a Window to the Next Monitor on XFCE</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2020/index.html">2020</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2020/a-year-of-rest.html">A Year Of Rest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2020/ear-one.html">(Y)ear One</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2020/no-leaf-clover.html">No Leaf Clover</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2019/index.html">2019</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2019/the-sound-of-music.html">The Sound of Music</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2018/index.html">2018</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2018/kana.html">Learn the Kana Using Python and a Raspberry Pi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2018/leonardo.html">Leonardo - Generating Product Unique Specification Images Using Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2017/index.html">2017</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2017/harivamsha.html">Reading the Harivamsha by the Tungabhadra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2017/2017-03-22-debroy-letter.html">Dear Mr. Debroy</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../2016/index.html">2016</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-01-mahabharata-day-01.html">Reading the Mahabharata by the Tungabhadra - Day 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-02-mahabharata-day-02.html">Reading the Mahabharata by the Tungabhadra - Day 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-03-mahabharata-day-03.html">Reading the Mahabharata by the Tungabhadra - Day 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-04-mahabharata-day-04.html">Reading the Mahabharata by the Tungabhadra - Day 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-05-mahabharata-day-05.html">Reading the Mahabharata by the Tungabhadra - Day 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-06-mahabharata-day-06.html">Reading the Mahabharata by the Tungabhadra - Day 6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-08-mahabharata-day-07.html">Reading the Mahabharata by the Tungabhadra - Day 7</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-10-mahabharata-day-08.html">Reading the Mahabharata by the Tungabhadra - Day 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-15-mahabharata-day-09.html">Reading the Mahabharata by the Tungabhadra - Day 9</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-16-mahabharata-day-10.html">Reading the Mahabharata by the Tungabhadra - Day 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-17-mahabharata-day-11.html">Reading the Mahabharata by the Tungabhadra - Day 11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-18-mahabharata-day-12.html">Reading the Mahabharata by the Tungabhadra - Day 12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-19-mahabharata-day-13.html">Reading the Mahabharata by the Tungabhadra - Day 13</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-20-mahabharata-day-14.html">Reading the Mahabharata by the Tungabhadra - Day 14</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-21-mahabharata-day-15.html">Reading the Mahabharata by the Tungabhadra - Day 15</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-23-mahabharata-day-16.html">Reading the Mahabharata by the Tungabhadra - Day 16</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-25-mahabharata-day-17.html">Reading the Mahabharata by the Tungabhadra - Day 17</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-27-mahabharata-day-18.html">Reading the Mahabharata by the Tungabhadra - Day 18</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-28-mahabharata-day-19.html">Reading the Mahabharata by the Tungabhadra - Day 19</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2016/2016-12-29-mahabharata-day-20.html">Reading the Mahabharata by the Tungabhadra - Day 20</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../2015/index.html">2015</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="so-far-so-rust">
+<span id="id1"></span><h1>So Far So Rust<a class="headerlink" href="#so-far-so-rust" title="Permalink to this headline">#</a></h1>
+<p>I’ve been using Rust as my primary programming language for 145 days now.
+In this article, I’m going to discuss my journey so far.</p>
+<p>While I’ve talked about this at length to my friends and even at meetups, I
+haven’t written about Rust as much as I’d like to. I came into this language the
+same way as I did to Python: sheer gut feeling. While I was considering Ruby
+instead of Python, here my alternative was Golang. Back then, I wasn’t educated
+enough to make a decision so I left it to a friend who recommended I choose
+Python. Today, that choice oddly involved the same friend who’s been using Rust
+at work. However, it also stemmed from a gut feeling that I wanted to learn Rust
+and not Golang for my side-projects.</p>
+<div class="tip admonition">
+<p class="admonition-title">An Aside</p>
+<p>A funny thing about my journey with Rust and Ruby is that <a class="reference external" href="https://steveklabnik.com/">Steve Klabnik</a> is involved in both of them. I chose Python
+over Ruby, and Steve is one of the most prolific contributors to Ruby on
+Rails. And I chose Rust over Golang, and was mildly surprised to find that
+Steve is involved with Rust and is one of the co-authors of the defacto book
+on the topic.</p>
+<p>Another fun fact is that <a class="reference external" href="https://lucumr.pocoo.org/">Armin Ronacher,</a> the
+creator of Flask, my favourite Web Framework, also shifted to Rust. In fact,
+<a class="reference external" href="https://www.youtube.com/watch?v=-4fzFKihmJw">Armin’s talk at PyCon India 2018</a> convinced me that my gut
+feeling about Rust was right.</p>
+</div>
+<p>How did I go about learning Rust? As someone who’s only coded in Python and a
+little bit of Javascript, I didn’t have much of an understanding of low-level
+programming constructs such as memory management to really grok stuff at the
+beginning. The advice most newbies get is “read The Book”, and while that is
+great advice, I kept faltering when trying to read it. I wanted to get my hands
+dirty ASAP and I wanted to build something that I could use.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Rust has the reputation of being a Systems Programming Language.
+While the language did originally target itself as being an accessible
+systems language, the home page now says this instead.</p>
+<div class="line-block">
+<div class="line"><em>A language empowering everyone</em></div>
+<div class="line"><em>to build reliable and efficient software.</em></div>
+</div>
+<p>Don’t let the systems programming language tag scare you. Rust is designed to
+be used everywhere.</p>
+</div>
+<p>The opportunity came at work when I needed to build a health-check endpoint atop
+of our data services at Merkle Science. The original requirements needed me to
+hit our internal APIs and measure latency in realtime, and the prototype had
+been written in Python. It was introducing latency of its own and clearly that
+was an effect of the way it had been written. I could have rewritten it so that
+it stayed in Python, but that felt like a perfect reason to use Rust. I needed
+to write a webservice, so I sought the framework that looked the most like
+Flask, my preferred web-framework of choice: Rocket. In retrospect I was thrown off the
+more popular choice in Rust, actix-web, because I <em>thought</em> I had to use the
+actor-framework model that actix came with. Surprisingly, I learnt a long time
+later that actix-web doesn’t use actix under the hood anymore. The names are an
+unfortunate left-over from when the projects stemmed together. However, Rocket
+was easy to understand and I liked what I saw.</p>
+<p>The funny thing about how I started Rust is this. I’d been trying to learn it
+for months and I came upon a book called <a class="reference external" href="https://www.packtpub.com/product/rust-web-programming/9781800560819">Rust Web Programming by Maxwell Filton</a> and
+began reading it. I didn’t complete the book, but the first two chapters gave me
+more than enough to try writing code on my own. Another resource I found helpful
+earlier was <a class="reference external" href="https://fasterthanli.me/articles/a-half-hour-to-learn-rust">A Half-Hour to Learn Rust</a>, by Amos Wenger.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These resources worked for me, but again, <strong>read</strong> <a class="reference external" href="https://doc.rust-lang.org/book/">The Book</a>, which is the <em>definitive</em> resource for
+newbie Rustaceans. I am working my way through the book now, and it teaches
+me a lot that I wish I knew earlier.</p>
+</div>
+<p>I had seen the trait system at work, and wanted to use it for my task, since it
+involved hitting similar APIs which all had their own nuances, while returning a
+synonymous result. I wanted to create a trait that all the checks would
+implement, so that it would be extensible later down the line.</p>
+<p>After trying to write a little rust for a few days, I decided to tackle the
+<a class="reference external" href="https://github.com/rust-lang/rustlings">Rustlings course</a>, which provide
+interactive exercises for you to follow along. I solved all of them over a
+period of 3 days and I had to google for the answers to some of them. In
+particular, I recommend the exercises on strings to really grind some of the
+basics into your brain.</p>
+<p>While trying to grok how strings work in Rust, my friend recommended the <a class="reference external" href="https://www.youtube.com/c/LetsGetRusty">Let’s
+Get Rusty</a> YouTube Channel and, in
+particular, the <a class="reference external" href="https://www.youtube.com/watch?v=Mcuqzx3rBWc">video on Strings</a>.</p>
+<p>After going through these resources, I began building my service and encountered
+a few gotchas that seem trivial today.</p>
+<ul class="simple">
+<li><p>I couldn’t return a string slice from within a function because it was created
+inside the function and essentially points to something that no longer exists.</p></li>
+<li><p>Async functions could be called from within a synchronous functions as long as
+I wrap them inside a blocking runtime, such as the one offered by the <a class="reference external" href="https://docs.rs/futures/latest/futures/">futures</a> crate or the <a class="reference external" href="https://tokio.rs/">tokio crate</a></p></li>
+<li><p>To implement something I’d take for granted in Python, such as a retrying
+mechanism, I’d have to understand <em>how</em> to write a function that returns a
+generic response. This is <a class="reference internal" href="rust-reqwest-retry.html#rust-reqwest-retry"><span class="std std-ref">something I’ve documented here.</span></a></p></li>
+</ul>
+<p>There are a few more gotchas that I ran into, especially when it came to
+something as simple as the <code class="docutils literal notranslate"><span class="pre">return</span></code> keyword.</p>
+<p>When I first started learning Rust, the fact that a function could be written
+like below, stumped me.</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">fn</span> <span class="nf">add_ten</span><span class="p">(</span><span class="n">x</span>: <span class="kt">i32</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">i32</span> <span class="p">{</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">   </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+<span class="linenos">3</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Where’s the return statement? Turns out Rust <code class="docutils literal notranslate"><span class="pre">blocks</span></code> all operate this way. A
+block can <em>evaluate</em> to some value, and you could also write code like this.</p>
+<div class="highlight-rust notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">fn</span> <span class="nf">add_ten</span><span class="p">(</span><span class="n">x</span>: <span class="kt">i32</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">i32</span> <span class="p">{</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">   </span><span class="kd">let</span><span class="w"> </span><span class="n">result</span>: <span class="kt">i32</span> <span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">      </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;I&#39;m going to add 10 to {x}&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">      </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">   </span><span class="p">};</span><span class="w"></span>
+<span class="linenos">6</span><span class="w">   </span><span class="n">result</span><span class="w"></span>
+<span class="linenos">7</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">block</span></code> that contains the <code class="docutils literal notranslate"><span class="pre">println!</span></code> statement and its subsequent line
+<em>evaluates</em> to <code class="docutils literal notranslate"><span class="pre">x+10</span></code>. Take this in for a second. Every single statement you
+will see eventually runs on this simple assertion. Match statements, <code class="docutils literal notranslate"><span class="pre">if-let</span></code>
+statements, or even a simple block like above that’s only written this way to
+show you what you <em>could</em> do, all of them can evaluate to a result.</p>
+<p>And the type annotations can coerce functions that use generics to return
+appropriate values.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Rust is the first strongly typed language I have used, so forgive me if I
+sound like a fanboy when it comes to this. I have serious beef with Python’s
+type hints, and how it’s just a hint and nothing more. I <em>love</em> how Rust
+handles types and how constraining it feels, just so that I can use these
+constraints to not only <em>be a better developer</em>, but also to control my
+program from going haywire.</p>
+</div>
+<p>One of the things I’ve learnt writing Rust as opposed to Python is that my code
+fails, frequently.</p>
+<p>I wrote a crawler to get data out of a paginated API, and my code had to account
+for edgecases pretty early on. The structs I wrote to deserialize payloads would
+fail at the first hint of a mismatch, especially when it came to types. I needed
+to know what <em>could</em> be a null value and what wouldn’t be. I needed to know the
+exact format for a timestamp and how to parse it.</p>
+<p>Other things about Rust seemed to be harder to grasp. The import system was
+something else that I really struggled with.</p>
+<div class="highlight-Rust notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">use</span><span class="w"> </span><span class="n">std</span>::<span class="n">env</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">   </span><span class="kd">let</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">env</span>::<span class="n">var</span><span class="p">(</span><span class="s">&quot;SOME_ENVIRONMENT_VARIABLE&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">   </span><span class="k">match</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">6</span><span class="w">      </span><span class="nb">Ok</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;SOME_ENVIRONMENT_VARIABLE = `{}`&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="linenos">7</span><span class="w">      </span><span class="nb">Err</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="fm">eprintln!</span><span class="p">(</span><span class="s">&quot;Error: {e:?}&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">8</span><span class="w">   </span><span class="p">};</span><span class="w"></span>
+<span class="linenos">9</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In this above block, I <em>assumed</em> the <code class="docutils literal notranslate"><span class="pre">use</span> <span class="pre">std::env</span></code> line was an <em>import
+statement. I was blissfully unaware that I didn’t *need</em> to import something
+like this. I could, instead, have written it like follows.</p>
+<div class="highlight-Rust notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">   </span><span class="kd">let</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span>::<span class="n">env</span>::<span class="n">var</span><span class="p">(</span><span class="s">&quot;SOME_ENVIRONMENT_VARIABLE&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">   </span><span class="k">match</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">      </span><span class="nb">Ok</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;SOME_ENVIRONMENT_VARIABLE = `{}`&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">      </span><span class="nb">Err</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="fm">eprintln!</span><span class="p">(</span><span class="s">&quot;Error: {e:?}&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">6</span><span class="w">   </span><span class="p">};</span><span class="w"></span>
+<span class="linenos">7</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">use</span></code> keyword wasn’t synonymous with Pythons <code class="docutils literal notranslate"><span class="pre">import</span></code> keyword. It was
+more akin to <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">requests.client</span> <span class="pre">as</span> <span class="pre">client</span></code>, bringing something into my namespace so
+that I didn’t need to constantly refer to the entire import resolution path.</p>
+<p>When I didn’t know this, using the <code class="docutils literal notranslate"><span class="pre">env_logger</span></code> <a class="reference external" href="https://docs.rs/env_logger/latest/env_logger/">crate</a> was unnerving.
+I didn’t know if Rust was injecting <code class="docutils literal notranslate"><span class="pre">env_logger</span></code> into my namespace somehow. It
+made me really uncomfortable because I hate having variables in my namespace
+that I didn’t control.</p>
+<p>However, Rust was doing something else. Every crate was available to use, if I
+didn’t want to <code class="docutils literal notranslate"><span class="pre">use</span></code> it, I could have just written out the entire import path.</p>
+<p>Those are not all of the gotchas, though. I continue to run into them every day,
+but you get the idea.</p>
+<p>Today, I’m using Rust in two projects at Merkle Science. First is the health
+check application I mentioned, while the second is a data-ops CLI that I wrote
+to help us load data into our datastores.</p>
+<section id="choosing-rust-a-retrospective">
+<h2>Choosing Rust - A Retrospective<a class="headerlink" href="#choosing-rust-a-retrospective" title="Permalink to this headline">#</a></h2>
+<p>This article has been about <em>how</em> I learnt Rust, and trust me, there’s a lot
+more to say about that. My advice is pick a problem you’d choose any language
+for and choose Rust to solve it. Remember that it will take you longer, not just
+at first, than it would in a language like Python or Javascript. I don’t even
+profess to know that you’ll get guaranteed benefits, but what I <em>can</em> tell you
+is that you will learn new things; new <strong>paradigms.</strong></p>
+<p>I chose Rust because I <em>felt</em> like I wanted to code in Rust. I don’t claim to
+have a performance or memory-safety related answer to you. I’ve been falling
+slightly out of love with Python, largely because of the state of its virtual
+environments ecosystem or the “ship your development machine” gimic that
+containers seem to inculcate into every developer.</p>
+<p>Rust is fun. I’ve had so much fun coding in Rust that it reminds me of how much
+fun Python used to be. I am glad I can use it at work, and I am glad I can use
+it for my side projects. It’s a language that feels fresh, and coding in it has
+taught me so much already.</p>
+<ol class="arabic simple">
+<li><p>I have learnt how to think about the mutability of my variables.</p></li>
+<li><p>I think a lot more about the <em>types</em> of my variables and the scopes they live
+in.</p></li>
+<li><p>I have learnt a lot about accounting for errors in my code. <code class="docutils literal notranslate"><span class="pre">Result</span></code> is
+<em>amazing</em>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Enums</span></code> are mind-blowingly amazing.</p></li>
+<li><p>Pattern matching is just <em>chef’s kiss.</em></p></li>
+</ol>
+<p>All of this being said and done, I don’t know if Rust is for <em>you</em>. Perhaps
+Golang is. There’s no reason to try both. I did, and I still don’t have a
+problem with Go. I prefer Rust, that’s all. If you’re trying to look for a job,
+I don’t recommend Rust. There are so few jobs out there for you. If you’re
+trying to rewrite your codebase for performance, let me tell you that you might
+be able to do it in the language of your choice. Look into distributed
+programming patterns, or even see if you can learn to profile and DRY your code.
+Learn to use caching and memoization. Improve your algorithms and
+datastructures. At times, your code might not even be the bottle-neck; for most
+web-applications, it’s your database queries. Don’t use an ORM blindly. Learn
+how SQL’s <code class="docutils literal notranslate"><span class="pre">EXPLAIN</span></code> statement works, you will build more efficient web
+applications with ease.</p>
+<p>Sometimes, a shell-script does everything you need a fancy CLI to do. So do
+that instead.</p>
+<p>However, should you choose Rust, great job. You will struggle for a while, I
+know I do even today, but you will also be able to build an amazing application
+because you’re closer to the metal. You will enjoy not having to install
+<code class="docutils literal notranslate"><span class="pre">build-essential</span></code>, or other build-time dependencies on your production
+machine. You don’t need to install <code class="docutils literal notranslate"><span class="pre">libgit</span></code> or those pesky <code class="docutils literal notranslate"><span class="pre">openssl</span></code>
+libraries either. Your compiled application has everything it needs.</p>
+<p>Rust is fun. Get used to the compiler shouting at you, because it’s a good
+teacher.</p>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I’ll update this list as and when I get a chance or come across something
+that helps me learn a newer concept.</p>
+</div>
+<p>While I used some pretty nondescript resources to learn Rust, I don’t recommend
+you do the same. At the time I began, a lot of the below resources didn’t exist,
+so I didn’t have an opportunity to use them. However, I recommend you go through
+these instead of following my path.</p>
+<section id="books">
+<h3>Books<a class="headerlink" href="#books" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://doc.rust-lang.org/book/">The Rust Programming Language by Steve Klabnik &amp; Carol Nichols</a></p></li>
+<li><p><a class="reference external" href="https://nostarch.com/rust-rustaceans">Rust for Rustaceans by Jon Gjengset</a></p></li>
+<li><p><a class="reference external" href="https://www.zero2prod.com/index.html">Zero to Production in Rust: An Introduction to Backend Development by Luca
+Palmieri</a></p></li>
+<li><p><a class="reference external" href="https://www.manning.com/books/rust-in-action">Rust in Action by Tim McNamara</a></p></li>
+<li><p><a class="reference external" href="https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/">Programming Rust by Jeff Blandy, Jason Orendorff &amp; Leonara F. S. Tindall</a></p></li>
+</ol>
+</section>
+<section id="podcasts">
+<h3>Podcasts<a class="headerlink" href="#podcasts" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://newrustacean.com/">New Rustcean</a> (discontinued)</p></li>
+<li><p><a class="reference external" href="https://rustacean-station.org/">Rustacean Station</a></p></li>
+</ol>
+</section>
+<section id="youtube-channels-video-compilations">
+<h3>Youtube Channels &amp; Video Compilations<a class="headerlink" href="#youtube-channels-video-compilations" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.youtube.com/c/LetsGetRusty">Let’s Get Rusty</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/c/JonGjengset">Jon Gjengset</a></p></li>
+<li><p><a class="reference external" href="http://dtrace.org/blogs/bmc/2018/02/03/talks/">Bryan Cantrill’s Talks</a></p></li>
+</ol>
+</section>
+<section id="videos">
+<h3>Videos<a class="headerlink" href="#videos" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=bnnacleqg6k">Type-Driven API Design in Rust by Will Crichton at StrangeLoop</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=A3AdN7U24iU">Rust: A Language for the Next 40 Years by Carol Nichols</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=rAF8mLI0naQ">Error Handling isn’t all About Errors by Jane Lusby at RustConf 2020</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=sDtQaO5_SOw">How to Learn Rust by Tim McNamara at Rust Linz Meetup</a></p></li>
+<li><p><a class="reference external" href="https://jvns.ca/blog/2016/09/11/rustconf-keynote/">Learning Systems Programming with Rust by Julia Evans at RustConf 2016</a></p></li>
+</ol>
+</section>
+<section id="blog-articles">
+<h3>Blog Articles<a class="headerlink" href="#blog-articles" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://fasterthanli.me/articles/a-half-hour-to-learn-rust">A Half-hour to Learn Rust</a></p></li>
+<li><p><a class="reference external" href="https://aws.amazon.com/blogs/opensource/sustainability-with-rust/">Sustainability with Rust - AWS</a></p></li>
+<li><p><a class="reference external" href="https://lucumr.pocoo.org/2015/5/27/rust-for-pythonistas/">Rust for Python Developers by Armin Ronacher</a> (2015)</p></li>
+<li><p><a class="reference external" href="https://lucumr.pocoo.org/2018/3/31/you-cant-rust-that/">You Can’t Rust That by Armin Ronacher</a> (2018)</p></li>
+<li><p><a class="reference external" href="https://thesquareplanet.com/blog/rust-tips-and-tricks/">Rust Tips and Tricks by Jon Gjengset</a> (2018)</p></li>
+</ol>
+</section>
+<section id="others">
+<h3>Others<a class="headerlink" href="#others" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="http://bfnightly.bracketproductions.com/">Roguelike Tutorial In Rust</a></p></li>
+<li><p><a class="reference external" href="https://rust-cli.github.io/book/index.html">Command Line Apps in Rust</a></p></li>
+<li><p><a class="reference external" href="https://rust-lang.github.io/async-book/">Asynchronous Programming in Rust</a></p></li>
+<li><p><a class="reference external" href="https://doc.rust-lang.org/nomicon/">The Rustonomicon</a></p></li>
+<li><p><a class="reference external" href="https://rust-unofficial.github.io/patterns/">Rust Design Patterns</a></p></li>
+<li><p><a class="reference external" href="https://danielkeep.github.io/tlborm/book/index.html">The Little Book of Rust Macros</a> (WIP)</p></li>
+<li><p><a class="reference external" href="https://doc.rust-lang.org/rust-by-example/">Rust by Example</a></p></li>
+<li><p><a class="reference external" href="https://github.com/rust-lang/rustlings">Rustlings - Interactive Exercises to Learn Rust</a></p></li>
+<li><p><a class="reference external" href="https://doc.rust-lang.org/cargo/">The Cargo Book</a></p></li>
+<li><p><a class="reference external" href="https://stackoverflow.com/a/24159933/18407535">StackOverflow - What are the differences between Rust’s String and str?</a></p></li>
+<li><p><a class="reference external" href="http://dtrace.org/blogs/bmc/2018/09/28/the-relative-performance-of-c-and-rust/">The Relative Performance of C and Rust by Bryan Cantrill</a></p></li>
+<li><p><a class="reference external" href="https://os.phil-opp.com/">Writing an OS in Rust</a></p></li>
+</ol>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="bipolar.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Bipolar and ADHD – I Know Your Names Now</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="no-blog.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">This is Not a Blog</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, Vinay Keerthi
+            </div>
+            Made with 
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on Jul 29, 2022</div>
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">So Far So Rust</a><ul>
+<li><a class="reference internal" href="#choosing-rust-a-retrospective">Choosing Rust - A Retrospective</a></li>
+<li><a class="reference internal" href="#resources">Resources</a><ul>
+<li><a class="reference internal" href="#books">Books</a></li>
+<li><a class="reference internal" href="#podcasts">Podcasts</a></li>
+<li><a class="reference internal" href="#youtube-channels-video-compilations">Youtube Channels &amp; Video Compilations</a></li>
+<li><a class="reference internal" href="#videos">Videos</a></li>
+<li><a class="reference internal" href="#blog-articles">Blog Articles</a></li>
+<li><a class="reference internal" href="#others">Others</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    </body>
+</html>

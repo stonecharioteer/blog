@@ -2,18 +2,21 @@
 :date: Dec 1, 2016
 :location: Hampi, Karnataka, India
 :category: Reading
-:tags: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+:tags:
 :image: 0
 
 .. _mahabharata-day-01:
+
 ==========================================================
 Reading the Mahabharata by the Tungabhadra - Day 1
 ==========================================================
 
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+
 Hampi. As a kid, I didn't like going to Hampi. I had nothing to see there, it
 was full of tanks and wells. I didn't care much for the heat either.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-01-01.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-01-01.jpg
 
 Today, as I sat atop a small hill, reading the first volume of the Mahabharata,
 a stranger came up to me, to ask about the sights. He asked me why this place
@@ -30,7 +33,7 @@ After he listened to me, he gave me a book he had, of the stories of
 Travancore's royalty, and said he believed I was the right person to give it
 to.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-01.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-01.jpg
 
 Today I went to read the Mahabharata by the Tungabhadra, and I did. My only
 neighbors were squirrels and langoors, and a watchman who was trying to sleep

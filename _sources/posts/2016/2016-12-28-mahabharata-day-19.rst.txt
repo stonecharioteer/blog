@@ -6,13 +6,16 @@
 :image: 0
 
 .. _mahabharata-day-19:
+
 ============================================================
 Reading the Mahabharata by the Tungabhadra - Day 19
 ============================================================
 
+.. index:: mahabharata, bibek-debroy, reading, books, hampi, indian-mythology
+
 The End.
 
-.. figure:: /assets/images/posts/india/mahabharata-day-19.jpg
+.. figure:: /_static/images/posts/india/mahabharata-day-19.jpg
 
 The 1008 names of Shiva, the 1000 names of Vishnu, the Anu Gita and the Purusha
 Suktam. Bhishma leaves Dharmaraja with this and other words of Dharma. And
