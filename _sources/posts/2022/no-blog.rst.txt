@@ -23,11 +23,14 @@ thoughts, just that I won't be attaching chronological limitations to them.
 
 I am abandoning the blog format for the following reasons.
 
-1. I want to continue to write using Sphinx, which, in my opinion, is the best
+1. I want to continue to write using `Sphinx,
+   <https://www.sphinx-doc.org/en/master/>`_ which, in my opinion, is the best
    framework for static-site generation you can find.
-2. I like `ablog, <https://github.com/sunpy/ablog>`_ but I've been meaning to
-   switch to the `Furo theme <https://github.com/pradyunsg/furo>`_ and ablog
-   `doesn't have support for it. <https://github.com/sunpy/ablog/issues/108>`_
+2. I like `the ablog plugin for sphinx, <https://github.com/sunpy/ablog>`_ but
+   I've been meaning to switch to the `Furo theme
+   <https://github.com/pradyunsg/furo>`_ and ablog `doesn't have support for
+   it yet.
+   <https://github.com/sunpy/ablog/issues/108>`_
 3. I don't like how I've organized my content for the past few years and I'm
    overhauling all of it. Some of my long-form post ideas were severely limited by
    the format and have been in draft-limbo forever.
@@ -41,7 +44,7 @@ I'm happy with this change, but while this is going on, there will be a few
 caveats to how my older blog-posts render. I'm trying my best to restore the old
 style ``/title/`` format instead of the ``index.html`` or ``title.html`` format, but
 it might end up being too much work. I'll also need to figure out how to not
-breakt the RSS format. But these are things I'll update later.
+break the RSS format. But these are things I'll update later.
 
 ----------------
 What changes?
