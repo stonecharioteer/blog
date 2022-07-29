@@ -54,7 +54,7 @@ What changes?
 3. Finding some of my older posts might be difficult for now, but I *will* fix
    this. However, the sphinx search page is amazing and you should try to use
    that to find it.
-4. The ref:`index <genindex>` is going to be the most powerful feature you can
+4. The `index </genindex.html>`_ is going to be the most powerful feature you can
    find on this website. I'm also going to see about trying to render an epub
    and PDF when I have more long-form articles.
 5. The biggest change you will see is that my *fictional* content will also
