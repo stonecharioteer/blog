@@ -19,9 +19,9 @@ jobs:
       if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
     - name: Setup dependencies
       run: |
-        add-apt-repository ppa:git-core/ppa -y
-        apt-get update
-        apt-get install -y --upgrade libffi-dev git curl libssl-dev make build-essential
+        sudo add-apt-repository ppa:git-core/ppa -y
+        sudo apt-get update
+        sudo apt-get install -y --upgrade libffi-dev git curl libssl-dev make build-essential
     - name: Setup Python
       uses: actions/setup-python@v2
     - name: Pull Code
