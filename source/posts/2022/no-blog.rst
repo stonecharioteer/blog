@@ -11,7 +11,7 @@ This is Not a Blog
 
 As of this post, this website ceases to function as a *blog*. What does that
 mean? I have been thinking about the kind of content I want to put out and I
-realized that I don't like to blog format. If the reasons don't matter to you,
+realized that I don't like the blog format. If the reasons don't matter to you,
 you can be assured that I will continue to write posts and publish my notes and
 thoughts, just that I won't be attaching chronological limitations to them.
 
