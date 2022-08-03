@@ -1,0 +1,12 @@
+"Topic","Date","Reasons for Learning","Status","Link to Notes"
+"Airflow","2022-07-29","Used at work; curious about how its underlying architecture works","On-going",":ref:`notes-airflow`"
+"Kakfa","2022-07-29","Used at work","Not Started",
+"BigQuery","2022-07-29","Used at work","On-going",
+"TigerGraph","2022-07-29","Used at work","Not Started",
+"Blockchain Technology","2022-07-29","Used at work","Not Started",
+"Cloud Billing","2022-07-29","Used at work; Want to learn to do napkin math for estimation","Not Started",
+"Rust – Python Interfacing","2022-07-29","Want to write python packages in rust so others can use them","Not Started",
+"actix-web","2022-07-29","Want to write a webserver in actix instead of Rocket so that I can learn what the architecural differences are.","Not Started",
+"Django","2022-07-29","Used at work","Not Started",
+"Rust","2019-04-01","Curiosity; gut feeling","On-going",
+"Kubernetes","2019-04-01","Curiosity","Stalled",
