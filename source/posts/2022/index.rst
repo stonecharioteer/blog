@@ -16,7 +16,7 @@
    onward.rst
    python.rst
    rust-reqwest-retry.rst
-   so-far-so-rust.rst
+   so-far-so-rust/index
    til-python-fixed-length.rst
    two-of-three-rule.rst
    vagrant.rst

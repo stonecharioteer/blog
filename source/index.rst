@@ -30,7 +30,7 @@ any employer, past or present.
    :maxdepth: 1
 
    posts/2022/no-blog.rst
-   posts/2022/so-far-so-rust.rst
+   posts/2022/so-far-so-rust/index
    posts/2022/bipolar.rst
    posts/2022/rust-reqwest-retry.rst
    posts/2022/til-python-fixed-length.rst
