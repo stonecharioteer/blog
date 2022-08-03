@@ -7,6 +7,7 @@ extensions = [
     "sphinx.ext.githubpages",
     "sphinx_panels",
     "sphinxcontrib.youtube",
+    "notfound.extension",
     # "sphinx_last_updated_by_git",
     # "yasfb",
 ]
