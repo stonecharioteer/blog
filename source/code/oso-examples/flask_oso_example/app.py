@@ -1,6 +1,5 @@
-from flask import Flask
-
 import oso
+from flask import Flask
 from flask_oso import FlaskOso, skip_authorization
 
 app = Flask(__name__)
@@ -13,6 +12,7 @@ base_oso.load_str("""allow("anyone","can_visit","index");""")
 
 
 oso_extension.init_app(app)
+
 
 @app.route("/")
 def index_route():
@@ -29,5 +29,6 @@ def unpermissable_route():
 @skip_authorization
 def hello_route():
     return "hello again"
+
 
 oso_extension.require_authorization(app)

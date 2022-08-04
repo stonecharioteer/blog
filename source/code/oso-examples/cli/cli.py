@@ -3,12 +3,14 @@ import argparse
 from enum import Enum
 
 parser = argparse.ArgumentParser(
-        description="Simple rmdir clone command-line-tool to demonstrate Oso's usage.")
+    description="Simple rmdir clone command-line-tool to demonstrate Oso's usage."
+)
 parser.add_argument("path", metavar="P", type=str, help="Path to remove")
 
 
 class PathAttributes(Enum):
     """A bunch of enums to help understand the path attributes"""
+
     # path isn't a directory
     NOTADIRECTORY = 1
     # path is a writable directory
@@ -21,8 +23,8 @@ class PathAttributes(Enum):
 
 def get_path_attributes(path):
     """Returns a tuple of path attributes"""
-    import pathlib
     import os
+    import pathlib
 
     path = pathlib.Path(path)
     if not path.exists():
@@ -39,9 +41,11 @@ def get_path_attributes(path):
 
 
 def rmdir(path):
-    import shutil
     import getpass
+    import shutil
+
     from oso import Oso
+
     oso = Oso()
     oso.register_class(PathAttributes)
     oso.load_files(["rmdir.polar"])
@@ -51,6 +55,7 @@ def rmdir(path):
         shutil.rmtree(path)
     else:
         raise PermissionError(f"You cannot delete {path}")
+
 
 if __name__ == "__main__":
     args = parser.parse_args()

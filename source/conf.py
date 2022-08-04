@@ -35,3 +35,4 @@ html_show_sphinx = False
 
 feed_base_url = "https://stonecharioteer.com"
 feed_author = author
+notfound_default_version = "latest"

@@ -1,6 +1,11 @@
-from flask import Flask, request, jsonify
-from flask_login import LoginManager, login_required, login_user, logout_user, current_user
-
+from flask import Flask, jsonify, request
+from flask_login import (
+    LoginManager,
+    current_user,
+    login_required,
+    login_user,
+    logout_user,
+)
 from oso import Oso
 
 app = Flask(__name__)
