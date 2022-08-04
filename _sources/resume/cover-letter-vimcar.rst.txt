@@ -1,3 +1,5 @@
+:orphan:
+
 =========================
 Vinay Keerthi
 =========================
@@ -5,7 +7,7 @@ Vinay Keerthi
 
 Hello Vimcar!
 
-I'm Vinay, a developer based out of Bangalore, India. I am a `pythonista`
+I'm Vinay, a developer based out of Bangalore, India. I am a ``pythonista``
 who is known for automating anything I can get my hands on, whether that is
 the creation of infographics in the advent of a sale for Amazon's largest
 online retail competitor in India, or to search through 14TB of 3D models
