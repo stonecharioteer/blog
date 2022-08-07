@@ -1,12 +1,12 @@
-:blogpost: true
-:category: Learning
-:tags: Leetcode, Algorithms, Data Structures, Technical Interviews
-:date: Jan 16, 2022
-:redirect: leetcode-system
+
+.. _leetcode-system:
 
 =======================================
 A System for Getting Better at Leetcode
 =======================================
+
+.. index:: meta, learning, interview-prep, leetcode, data-structures,
+   algorithms, computer-science
 
 For the longest time I was in denial about the benefits of studying algorithms
 and data structures. I wasn't fascinated by Leetcode or other forms of

@@ -4,6 +4,7 @@
 :tags: Career Advice, Learning, Thoughts
 
 .. _post-2022-career:
+
 ===============================================================
 How to Start a Career in Software Development in 2022
 ===============================================================

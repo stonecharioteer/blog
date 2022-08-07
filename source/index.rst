@@ -18,10 +18,10 @@ any employer, past or present.
    :hidden:
    :maxdepth: 1
 
-   about
+   about/index
    Values<posts/2021/personal-code.rst>
-   Notes<notes/index.rst>
-   Must Read<mustread/index.rst>
+   notes/index
+   mustread/index
    genindex
    search
 

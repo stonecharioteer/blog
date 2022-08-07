@@ -4,6 +4,7 @@
 :tags: Python, Rust
 
 .. _post-replacing-python-with-rust:
+
 ========================================
 Building Tiny Tools in Rust
 ========================================

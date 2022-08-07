@@ -9,7 +9,7 @@ extensions = [
     "sphinxcontrib.youtube",
     "notfound.extension",
     # "sphinx_last_updated_by_git",
-    # "yasfb",
+    "yasfb",
 ]
 templates_path = ["_templates"]
 exclude_patterns = ["_drafts/**"]
