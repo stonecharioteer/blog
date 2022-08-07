@@ -13,6 +13,48 @@ Leetcode
    All problems are the property of Leetcode and the rights thereof belong to
    them.
 
+.. toctree::
+   :caption: Leetcode Problems
+
+   lc_0001.rst
+   lc_0002.rst
+   lc_0003.rst
+   lc_0018.rst
+   lc_0019.rst
+   lc_0021.rst
+   lc_0025.rst
+   lc_0031.rst
+   lc_0048.rst
+   lc_0050.rst
+   lc_0053.rst
+   lc_0056.rst
+   lc_0061.rst
+   lc_0062.rst
+   lc_0073.rst
+   lc_0074.rst
+   lc_0075.rst
+   lc_0088.rst
+   lc_0118.rst
+   lc_0121.rst
+   lc_0128.rst
+   lc_0136.rst
+   lc_0141.rst
+   lc_0142.rst
+   lc_0160.rst
+   lc_0169.rst
+   lc_0206.rst
+   lc_0217.rst
+   lc_0229.rst
+   lc_0234.rst
+   lc_0237.rst
+   lc_0238.rst
+   lc_0268.rst
+   lc_0287.rst
+   lc_0442.rst
+   lc_0493.rst
+   lc_0876.rst
+   lc_2022.rst
+
 .. {{{ using the json dataset with ``jq``
 
 ----------------------------------------

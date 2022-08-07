@@ -1,10 +1,3 @@
-:blogpost: true
-:date: Dec 1, 2016
-:location: Hampi, Karnataka, India
-:category: Reading
-:tags:
-:image: 0
-
 .. _mahabharata-day-01:
 
 ==========================================================

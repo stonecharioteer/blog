@@ -1,11 +1,7 @@
-:blogpost: true
-:date: May 1, 2021
-:category: Personal
-:tags: Meta, Philosophy, Teaching, Learning, Developer Relations, Technical
-       Interviews
-:redirect: personal-code
+.. index:: life, opinion, teaching, hobbies, principles, stoicism
 
 .. _personal-code:
+
 ===================
 A Personal Code
 ===================

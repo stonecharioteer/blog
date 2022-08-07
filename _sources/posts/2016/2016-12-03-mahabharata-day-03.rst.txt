@@ -1,10 +1,3 @@
-:blogpost: true
-:date: Dec 3, 2016
-:location: Hampi, Karnataka, India
-:category: Reading
-:tags: indian-mythology, bibek-debroy, mahabharata, hampi
-:image: 0
-
 .. _mahabharata-day-03:
 
 ========================================================
