@@ -1,10 +1,3 @@
-:blogpost: true
-:date: Dec 28, 2016
-:location: Hampi, Karnataka, India
-:category: Reading
-:tags: indian-mythology, reading, bibek-debroy, books, hampi
-:image: 0
-
 .. _mahabharata-day-19:
 
 ============================================================
