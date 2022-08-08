@@ -29,6 +29,7 @@ any employer, past or present.
    :caption: Recent Posts
    :maxdepth: 1
 
+   posts/life/career/learning.rst
    posts/2022/no-blog.rst
    posts/2022/so-far-so-rust/index
    posts/2022/bipolar.rst
