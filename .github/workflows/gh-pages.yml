@@ -23,6 +23,8 @@ jobs:
         sudo apt-get install -y --upgrade libffi-dev git curl libssl-dev make build-essential
     - name: Setup Python
       uses: actions/setup-python@v2
+      with:
+        python-version: 3.10.6
     - name: Get Blog Code
       uses: actions/checkout@master
       with:
