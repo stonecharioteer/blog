@@ -254,6 +254,8 @@ and content-creators to leverage their output.&lt;/p&gt;&lt;/li&gt;
 &lt;section id="personal-projects-oss"&gt;
 &lt;h2&gt;Personal Projects &amp;amp; OSS&lt;/h2&gt;
 &lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Write regularly about technology and a life as a software engineer at
+&lt;a class="reference external" href="https://stonecharioteer.com"&gt;stonecharioteer.com&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Spoke at IndiaFoss2.0 in a Birds-of-a-feather event - &lt;a class="reference external" href="https://hasgeek.com/rootconf/is-rust-ready-for-enterprise-adoption/sub/is-rust-language-ready-for-enterprise-adoption-sum-54yCDYud7csgx3sbT9GAFd"&gt;Is Rust Ready for
 Enterprise Adoption?&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Spoke at the Bangalore Python Meetup about using Rust as a Python developer -
@@ -282,7 +284,7 @@ at TVS group companies.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr class="docutils"/&gt;
 &lt;/section&gt;
-</description><pubDate>Mon, 08 Aug 2022 00:00:00 </pubDate></item><item><title>Binary Trees</title><link>https://stonecharioteer.com/notes/dsa/trees.html</link><description>
+</description><pubDate>Thu, 18 Aug 2022 00:00:00 </pubDate></item><item><title>Binary Trees</title><link>https://stonecharioteer.com/notes/dsa/trees.html</link><description>
 &lt;span id="notes-dsa-trees"/&gt; 
 &lt;p&gt;A Binary Tree:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
