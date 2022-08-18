@@ -39,7 +39,6 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git config --local pull.rebase false
     - name: Deploy built website to stonecharioteer.com
-      uses: peaceiris/actions-gh-pages@v3
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build/html
+        folder: ./build/html
