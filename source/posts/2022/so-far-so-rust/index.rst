@@ -9,8 +9,8 @@
 So Far So Rust
 =============================
 
-I've been using Rust as my primary programming language for 145 days now.
-In this article, I'm going to discuss my journey so far.
+As of July 13, 2022, I've been using Rust as my primary programming language for
+145 days now. In this article, I'm going to discuss my journey so far.
 
 While I've talked about this at length to my friends and even at meetups, I
 haven't written about Rust as much as I'd like to. I came into this language the
