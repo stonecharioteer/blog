@@ -5,14 +5,21 @@ Posts *(Archived)*
 =======================
 
 
+
+
+.. toctree::
+   :caption: Posts
+   :maxdepth: 1
+   :titlesonly:
+
+   technology/index.rst
+
 .. admonition:: Update
    :class: Tip
 
    I've dropped the blog format as of July 2022, but this place serves to store
    my "blog-posts" as such. I will be moving content around eventually, into a
    more non-blog manner. See :ref:`This is not a blog <no-blog>` for details.
-
-
 
 .. toctree::
    :caption: Years

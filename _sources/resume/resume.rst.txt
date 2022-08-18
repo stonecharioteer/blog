@@ -1,5 +1,3 @@
-:orphan:
-
 ==================================
 Resume - Vinay Keerthi K. T.
 ==================================
@@ -25,16 +23,24 @@ Merkle Science
 
 **Lead Software Developer** | **Bangalore** - **Remote** | Started: **JULY 2021**
 
+* Built a team for internal tooling, managed scouting for talent, hiring and
+  interviewing.
+* Created a **Rust** library for the **Polkadot** blockchain for internal use, exposed
+  via ``PyO3`` and ``maturin`` into **Python.**
+* Created a **Rust** library for **Hedera hashgraph,** to ingest data from the mainnet
+  API into our local data stores.
 * Conceptualized and developed the data-engineering toolkit - a multi-faceted
-  CLI that facilitates the movement of data across data stores, and opens up our
-  data layers for quality and consistency-related metrics.
+  **CLI** that facilitates the movement of data across data stores, and opens up
+  our data layers for quality and consistency-related metrics, using **Rust**.
 * Designed the alerting system for all our services.
-* Designed and wrote the data quality service using Rust - this application goes
-  through the data of various blockchains to identify missing or newer data.
+* Designed and wrote the data quality service using **Rust** - this application goes
+  through the data of various **blockchains** to identify missing or newer data.
+* Designed a load-balancer to place over our blockchain nodes (internal and
+  vendor-hosted). Led a team of 2 engineers who built this.
 * Designed and wrote a websocket client to ingest blockchain data from various
-  websocket implementions of chains using Rust.
-* Overhauled Apache Airflow DAGs for modularity.
-* Developed a central Python library for all utilities and internal code.
+  websocket implementions of chains using **Rust.**
+* Overhauled **Apache Airflow DAGs** for modularity.
+* Developed a central **Python** library for all utilities and internal code.
 
 -----------------
 VISA Inc.
@@ -93,35 +99,39 @@ Flipkart Internet Pvt. Ltd.
   that allowed them to report their work and set up pipelines for editors
   and content-creators to leverage their output.
 * Created an application to generate thousands of
-  |web| `Infographics on Products for sale during the Big Billion Day <https://stonecharioteer.com/2018/10/28/leonardo.html>`_
+  |web| `Infographics on Products for sale during the Big Billion Day <https://stonecharioteer.com/posts/2018/leonardo.html>`_
 
 -------------
 Tech Stack
 -------------
 
-* Programming Languages: Python, Nodejs, Rust
-* Web Frameworks: Flask, Express
+* Programming Languages: Rust, Python, Javascript
+* Web Frameworks: Flask, Express, Rocket
 * UI: React, CSS, ES6
-* Databases: PostgreSQL, MariaDB
-* Containers: Docker, Kubernetes
+* Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph
+* Containers: Docker, Podman, Kubernetes
 * Others: RabbitMQ, Elastic Search, Redis, Jenkins, Gitlab CI, pre-commit
 
 ------------------------
 Personal Projects & OSS
 ------------------------
 
-* Spoke at PyCon India 2019 on `MicroPython: Building a Physical Inventory Search Engine. <https://stonecharioteer.com/2019/10/12/pycon.html>`_
-* (Developed @ VISA) Built a visualization dashboard atop of BitBucket and Github,
-  to visualize developer productivity and project momentum using statistical control charts.
-* Regularly conduct workshops on ``Flask`` and ``Python`` at the `Bangalore Python meetup group. <https://stonecharioteer.com/2020/05/23/flask-workshop.html>`_
-* `Built a discord bot to help me automate the updation of my blog. <https://stonecharioteer.com/sarathi.html>`_
+* Spoke at IndiaFoss2.0 in a Birds-of-a-feather event - `Is Rust Ready for
+  Enterprise Adoption?
+  <https://hasgeek.com/rootconf/is-rust-ready-for-enterprise-adoption/sub/is-rust-language-ready-for-enterprise-adoption-sum-54yCDYud7csgx3sbT9GAFd>`_
+* Spoke at the Bangalore Python Meetup about using Rust as a Python developer -
+  `Explicit is Better than Implicit - Rust for Pythonistas <https://www.youtube.com/watch?v=62yfBiHrUis>`_
+* Spoke at PyCon India 2019 on `MicroPython: Building a Physical Inventory
+  Search Engine. <https://www.youtube.com/watch?v=aEYftBZz6ag>`_
+* Built a visualization dashboard atop of BitBucket and Github, to visualize
+  developer productivity and project momentum using statistical control charts.
+* Regularly conduct workshops on ``Flask`` and ``Python`` at the Bangalore
+  Python meetup group - `Web Application Security with OWASP Principles,
+  <https://www.youtube.com/watch?v=xickNijifOs>`_ `Flask Workshop
+  <https://www.youtube.com/watch?v=1C7Oj0KEhgo>`_
 * Built my own Raspberry Pi Kubernetes Cluster out of 4 Raspberry Pi 4 and 4 Raspberry Pi Zero W boards.
 * Built my own Mechanical Keyboards using the QMK framework.
-* Conducted a `Screencast on Web Application Security and OWASP principles <https://stonecharioteer.com/2020/12/09/bangpypers-screencast-on-security-headers.html>`_.
-* Working on an open source alternative to ``readthedocs``, to build and host documentation.
-* Working on a command-line-interface to templates for ``Jekyll``, the static site generator.
 * Completed the Advanced Kubernetes Training from ``learnk8s.io``
-* Presenting a guest lecture at the University of Utah's Master of Software Development Program on navigating a career in tech.
 
 ----------------------
 Other Experience
