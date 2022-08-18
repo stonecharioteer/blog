@@ -8,8 +8,11 @@ To build this using gh-actions, I recommend starting a runner using docker. I
 prefer running the runner locally instead of using a cloud runner.
 
 ```bash
-    docker run -d -e RUNNER_NAME= -e RUNNER_WORKDIR=/tmp/runner -e ACCESS_TOKEN= -e REPO_URL= -v /tmp/runner:/tmp/runner myoung34/github-runner:ubuntu-bionic
+    docker run -d --name blog-runner --rm --pull=always -e RUNNER_WORK_DIR=/tmp/runner/ \
+        -e RUNNER_NAME=$RUNNER_NAME -e GITHUB_ACCESS_TOKEN=$ACCESS_TOKEN -e RUNNER_REPOSITORY_URL=$REPO_URL \
+        -v /tmp/runner:/tmp/runner--rm tcardonne/github-runner:ubuntu-20.04
 ```
+
 Set the values of those envvars using `direnv`, it makes things easy.
 
 Don't build this locally, it's annoying. But if you have to, use `ablog clean && ablog build``
