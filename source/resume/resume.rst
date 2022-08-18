@@ -116,6 +116,8 @@ Tech Stack
 Personal Projects & OSS
 ------------------------
 
+* Write regularly about technology and a life as a software engineer at
+  `stonecharioteer.com <https://stonecharioteer.com>`_
 * Spoke at IndiaFoss2.0 in a Birds-of-a-feather event - `Is Rust Ready for
   Enterprise Adoption?
   <https://hasgeek.com/rootconf/is-rust-ready-for-enterprise-adoption/sub/is-rust-language-ready-for-enterprise-adoption-sum-54yCDYud7csgx3sbT9GAFd>`_
