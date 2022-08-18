@@ -77,7 +77,13 @@ Sometimes you don't get answers. The biggest reason I love books is that they
 will reveal whatever they contain to you. Sure, some authors are bad at
 explaining things. Some of them are downright liars when it comes to the format
 of their content. However, it's still a superior medium to asking people
-directly.
+directly. Yet, I believe in asking questions. Most importantly, I love asking
+*why*. *Why is something the way it is?* *Why does this work?* *Why does that
+not work?* *Why did this happen?*
+
+My time :ref:`working at a shop floor <memories-of-a-shop-floor>` taught me `the
+importance of asking why. <https://en.wikipedia.org/wiki/Five_whys>`_
+
 
 .. warning::
 
