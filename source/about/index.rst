@@ -45,18 +45,18 @@ I assembled these keyboards and flashed the QMK framework on them, programming
 them to suit my preferred layout.
 
 
-.. figure:: _static/images/about/corne_keyboard.jpg
+.. figure:: /_static/images/about/corne_keyboard.jpg
    :figwidth: 450
 
    Corne Keyboard with Cherry MX Blue Switches
 
 
-.. figure:: _static/images/about/daisy_keyboard.jpg
+.. figure:: /_static/images/about/daisy_keyboard.jpg
    :figwidth: 450
 
    Daisy 40% (Cherry MX Green)
 
-.. figure:: _static/images/about/lily58_keyboard.jpeg
+.. figure:: /_static/images/about/lily58_keyboard.jpeg
    :figwidth: 450
 
    Lily58 Keyboard (Cherry MX Blue)
@@ -69,7 +69,7 @@ This is my older workspace from my previous house. I've since moved into a
 larger house, where my books are right behind mehouse, where my books are
 right behind me.
 
-.. figure:: _static/images/about/workspace.jpeg
+.. figure:: /_static/images/about/workspace.jpeg
    :figwidth: 450
 
 
@@ -83,26 +83,26 @@ I've also bought a gorgeous standing desk from Monarch Ergo, which I use for wor
 
 For writing, I've bought a custom made desk that's mostly commandeered by my cats.
 
-.. figure:: _static/images/about/workspace-shelves-1.jpg
+.. figure:: /_static/images/about/workspace-shelves-1.jpg
    :figwidth: 450
 
-.. figure:: _static/images/about/workspace-shelves-2.jpg
+.. figure:: /_static/images/about/workspace-shelves-2.jpg
    :figwidth: 450
 
-.. figure:: _static/images/about/workspace-shelves-3.jpg
+.. figure:: /_static/images/about/workspace-shelves-3.jpg
    :figwidth: 450
 
-.. figure:: _static/images/about/workspace-shelves-4.jpg
+.. figure:: /_static/images/about/workspace-shelves-4.jpg
    :figwidth: 450
 
-.. figure:: _static/images/about/workspace-shelves-5.jpg
+.. figure:: /_static/images/about/workspace-shelves-5.jpg
    :figwidth: 450
 
 ----------------------
 Why Stonecharioteer?
 ----------------------
 
-.. figure:: _static/images/logo/stonecharioteer-large.png
+.. figure:: /_static/images/logo/stonecharioteer-large.png
    :figwidth: 450
 
 I was born in Hampi, Karnataka, India, and I often write about it as well.  I
@@ -117,7 +117,7 @@ Sept 2019, and she's one of the friendliest dogs we've met. She's an indie,
 adopted off the road when she was a few weeks old. She's the cuddliest thing
 ever!
 
-.. figure:: _static/images/about/subbi.jpg
+.. figure:: /_static/images/about/subbi.jpg
    :figwidth: 450
 
 -------------
@@ -128,7 +128,7 @@ I got a cat in Jan 2021, and his name is "Vibhishana" (Vibhi). He's an indie
 too, and I got tricked into adopting him and becoming his servant. He doesn not
 love cuddles.
 
-.. figure:: _static/images/about/vibhi.jpg
+.. figure:: /_static/images/about/vibhi.jpg
    :figwidth: 450
 
 --------------
@@ -139,12 +139,12 @@ I have always wanted more cats, so I adopted this feisty monster in October
 2021. Her name is Ganga, and she's just as naughty as her elder brother, if not
 more so.
 
-.. figure:: _static/images/about/ganga.jpg
+.. figure:: /_static/images/about/ganga.jpg
    :figwidth: 450
 
 The two of them love each other very much.
 
-.. figure:: _static/images/about/ganga_vibhi.jpg
+.. figure:: /_static/images/about/ganga_vibhi.jpg
    :figwidth: 450
 
    Exhibit A
