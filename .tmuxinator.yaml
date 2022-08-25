@@ -61,4 +61,4 @@ windows:
   - github-runner:
       layout: main-vertical
       panes:
-        - docker run -it --name blog-runner --rm --pull=always -e RUNNER_NAME=$RUNNER_NAME -e GITHUB_ACCESS_TOKEN=$ACCESS_TOKEN -e RUNNER_REPOSITORY_URL=$REPO_URL tcardonne/github-runner:latest
+        - docker run -it --name blog-runner --rm --pull=always -e RUNNER_NAME=$RUNNER_NAME -e GITHUB_ACCESS_TOKEN=$ACCESS_TOKEN -e RUNNER_REPOSITORY_URL=$REPO_URL tcardonne/github-runner:ubuntu-20.04
