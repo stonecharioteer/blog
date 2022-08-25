@@ -5,15 +5,18 @@ About Me
 Hi! I'm Vinay Keerthi.
 
 I am a software developer based in Bangalore, India. I write about technology,
-Python, Raspberry Pi, the Internet of Things, and I also speak at Meetups and
+Rust, Python, Raspberry Pi, the Internet of Things, and I also speak at Meetups and
 Conferences.
 
-I currently work at Visa Inc, the credit processing company, where I work for
-the Data Platform team, helping them build tools and services to orchestrate
-the flow of data across Visa.
+I currently work at Merkle Science, where I build internal tools that help accelerate
+developer productivity and data engineering.
+
+Previously, I've worked at Visa Inc, building tools and internal services that powered
+the Data Platform team, and before that, I worked at GKN Driveline, helping the Engineers
+automate mathematical calculations that power cars around the world.
 
 The stuff I enjoy building are usually distributed systems, developer tools and
-the odd automations that no one else usually enjoys. I love making things work
+the odd automation that no one else usually enjoys. I love making things work
 like clockwork.
 
 I have a :ref:`code of values<personal-code>` that I adhere to, and I
