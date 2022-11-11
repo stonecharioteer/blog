@@ -165,7 +165,7 @@ Unorganized Links
 * `GitHub - nschloe/termplotlib: Plotting on the command line <https://github.com/nschloe/termplotlib>`_
 * `https://twitter.com/happyautomata?s=08 <https://twitter.com/happyautomata?s=08>`_
 * `GitHub - GoogleChromeLabs/dark-mode-toggle: A custom element that allows you to easily put a Dark Mode 🌒 toggle or switch on your site: <https://github.com/GoogleChromeLabs/dark-mode-toggle>`_
-* `python - What's the difference between eval, exec, and compile? - Stack Overflow <https://stackoverflow.com/questions/2220699/whats-the-difference-between-eval-exec-and-compile/29456463?stw=2`_
+* `python - What's the difference between eval, exec, and compile? - Stack Overflow <https://stackoverflow.com/questions/2220699/whats-the-difference-between-eval-exec-and-compile/29456463?stw=2>`_
 * `Camelot: PDF Table Extraction for Humans — Camelot 0.8.2 documentation <https://camelot-py.readthedocs.io/en/master/>`_
 * `Multi-tenant data isolation with PostgreSQL Row Level Security \| AWS Database Blog <https://aws.amazon.com/blogs/database/multi-tenant-data-isolation-with-postgresql-row-level-security/>`_
 * `Varsity by Zerodha – Markets, Trading, and Investing Simplified. <https://zerodha.com/varsity/>`_
@@ -200,13 +200,12 @@ Unorganized Links
 * `CS:APP3e, Bryant and O'Hallaron <http://csapp.cs.cmu.edu/3e/home.html>`_
 * `GitHub - httpie/http-prompt: An interactive command-line HTTP and API testing client built on top of HTTPie featuring autocomplete, syntax highlighting, and more. https://twitter.com/httpie <https://github.com/httpie/http-prompt>`_
 * `Home · angrave/SystemProgramming Wiki · GitHub <https://github.com/angrave/SystemProgramming/wiki/Home>`_
-* `patma/README.md at master · gvanrossum/patma · GitHub <https://github.com/gvanrossum/patma/blob/master/README.md`_
+* `patma/README.md at master · gvanrossum/patma · GitHub <https://github.com/gvanrossum/patma/blob/master/README.md>`_
 * `An Introduction to Microservices. The essential concepts that every… \| by Amanda Bennett \| Microservice Geeks \| Feb, 2021 \| Medium <https://medium.com/microservicegeeks/an-introduction-to-microservices-a3a7e2297ee0>`_
 * `Introduction to Event-Driven Architecture \| by Kacey Bui \| Microservice Geeks \| Feb, 2021 \| Medium <https://medium.com/microservicegeeks/introduction-to-event-driven-architecture-e94ef442d824>`_
 * `Technical Writing One introduction  \|  Google Developers <https://developers.google.com/tech-writing/one>`_
 * `GitHub - alqamahjsr/Algorithms: leetcode.com , algoexpert.io solutions in python and swift <https://github.com/alqamahjsr/Algorithms>`_
 * `PEP 636 -- Structural Pattern Matching: Tutorial \| Python.org <https://www.python.org/dev/peps/pep-0636/>`_
-* `Visit any repo in @github and replace the 'github' with 'github1s' in the URL.`_
 * `FIGlet - hosted by PLiG <http://www.figlet.org/>`_
 * `What Is JWT and Why Should You Use JWT - YouTube <https://youtu.be/7Q17ubqLfaM>`_
 * `GitHub - mosaic-org/mosaic: Terminal workspace  <WIP> <https://github.com/mosaic-org/mosaic>`_
@@ -278,7 +277,6 @@ Unorganized Links
 * `New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time - Blind <https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU>`_
 * `Tengwar Feanor Elvish Transcriber <https://tengwartranscriber.github.io>`_
 * `Web Browsers \| PrivacyTools <https://www.privacytools.io/browsers/>`_
-* `If you're settingLESSto a value, ensure that you use-Ror colors in your terminal will be rendered in raw mode  <their full escape sequence is printed> in any view that useslessas a pager, such asgit`_
 * `GitHub - Xfennec/progress: Linux tool to show progress for cp, mv, dd, ...  <formerly known as cv> <https://github.com/Xfennec/progress>`_
 * `Linux Handbook <https://linuxhandbook.com/>`_
 * `The Robot Overlord Manual. A robotics, machine learning and math… \| by Mark Saroufim \| Medium <https://marksaroufim.medium.com/the-robot-overlord-manual-d4ee709155bc>`_
@@ -348,11 +346,11 @@ Unorganized Links
 * `Rust Language Cheat Sheet <https://cheats.rs/>`_
 * `GitHub - solarkennedy/uq: Universal serialized data reader to JSON <https://github.com/solarkennedy/uq>`_
 * `Java for Python Programmers — Java for Python Programmers <https://runestone.academy/runestone/books/published/java4python/Java4Python/toctree.html>`_
-* `contextlib — Utilities for with-statement contexts — Python 3.9.1 documentation <https://docs.python.org/3/library/contextlib.html`_
+* `contextlib — Utilities for with-statement contexts — Python 3.9.1 documentation <https://docs.python.org/3/library/contextlib.html>`_
 * `How Margins and Line Lengths Affect Readability <https://uxmovement.com/content/how-margins-and-line-lengths-affect-readability/>`_
 * `Organizing Background Worker Queues \| Brightball, Inc <https://www.brightball.com/articles/organizing-background-worker-queues>`_
 * `The Big Little Guide to Message Queues <https://sudhir.io/the-big-little-guide-to-message-queues/>`_
-* `hosts <5> - Linux manual page <https://man7.org/linux/man-pages/man5/hosts.5.html`_
+* `hosts <5> - Linux manual page <https://man7.org/linux/man-pages/man5/hosts.5.html>`_
 * `xxd <1>: make hexdump/do reverse - Linux man page <https://linux.die.net/man/1/xxd>`_
 * `Brandon Invergo - Using GNU Stow to manage your dotfiles <http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html>`_
 * `Bridgy <https://brid.gy/>`_
@@ -397,7 +395,7 @@ Unorganized Links
 * `Remove Background from Image – remove.bg <https://www.remove.bg/>`_
 * `When Free Software Isn't  <Practically> Superior - GNU Project - Free Software Foundation <https://www.gnu.org/philosophy/when-free-software-isnt-practically-superior.html>`_
 * `Napkin Math <https://sirupsen.com/napkin/>`_
-* `Shitlist Driven Development`_ * <https://sirupsen.com/shitlists/>`_
+* `Shitlist Driven Development <https://sirupsen.com/shitlists/>`_
 * `Building Software Systems At Google and Lessons Learned - YouTube <https://youtu.be/modXC5IWTJI>`_
 * `SREcon19 Europe/Middle East/Africa - Advanced Napkin Math: Estimating System... - YouTube <https://www.youtube.com/watch?v=IxkSlnrRFqc>`_
 * `Templating tmux with tmuxinator <https://thoughtbot.com/blog/templating-tmux-with-tmuxinator>`_
@@ -414,7 +412,6 @@ Unorganized Links
 * `Pandoc - Getting started with pandoc <https://pandoc.org/getting-started.html>`_
 * `Pandoc - Pandoc filters <https://pandoc.org/filters.html>`_
 * `Top  <GNU make> <https://www.gnu.org/software/make/manual/html_node/index.html>`_
-* `get HN replies here https://hnrss.org/replies?id=stonecharioteer`_
 * `markup.rocks <http://markup.rocks/>`_
 * `GitHub - haimgel/display-switch: Turn a $30 USB switch into a full-featured multi-monitor KVM switch <https://github.com/haimgel/display-switch>`_
 * `GitHub - mvp/uhubctl: uhubctl - USB hub per-port power control <https://github.com/mvp/uhubctl>`_
@@ -460,7 +457,7 @@ Unorganized Links
 * `The Modern JavaScript Tutorial <https://javascript.info/>`_
 * `aria-label, aria-labelledby, and aria-describedby: What's the Difference? <https://benmyers.dev/blog/aria-labels-and-descriptions/>`_
 * `Generating fantasy maps <http://mewo2.com/notes/terrain/?utm_source=mybridge&utm_medium=email&utm_campaign=read_more>`_
-* `Is there a way to disable a laptop's internal keyboard? - Ask Ubuntu <https://askubuntu.com/questions/160945/is-there-a-way-to-disable-a-laptops-internal-keyboard`_
+* `Is there a way to disable a laptop's internal keyboard? - Ask Ubuntu <https://askubuntu.com/questions/160945/is-there-a-way-to-disable-a-laptops-internal-keyboard>`_
 * `DWIM <http://www.catb.org/~esr/jargon/html/D/DWIM.html>`_
 * `Raft <http://thesecretlivesofdata.com/raft/>`_
 * `The Jargon File <http://www.catb.org/~esr/jargon/html/index.html>`_
@@ -515,8 +512,6 @@ Unorganized Links
 * `Good comments read well and are to the point <https://www.arp242.net/comments.html>`_
 * `How to write an essay well <https://www.julian.com/guide/write/intro?s=09>`_
 * `Portainer - A Tool for Managing Containers <https://www.portainer.io/>`_
-* `In python, *everything* is an object. This doesn't make complete sense until later. When it does, you'll see that the way__doc__is used in a *module* is the same way it is used in a *class definition* or in a *function*.`_
-* `The Paxos Distributed consensus paper is written like it is a novel about a greco-roman senate`_
 * `jinja2 - How to output loop.counter in python jinja template? - Stack Overflow <https://stackoverflow.com/questions/12145434/how-to-output-loop-counter-in-python-jinja-template>`_
 * `talent-plan/courses/rust at master · pingcap/talent-plan · GitHub <https://github.com/pingcap/talent-plan/tree/master/courses/rust>`_
 * `Announcing quiver: a new commutative diagram editor for the web \| varkor’s blog <https://varkor.github.io/blog/2020/11/25/announcing-quiver.html>`_
@@ -541,7 +536,6 @@ Unorganized Links
 * `The Purpose Of Writing <https://limitlesscuriosity.com/the-purpose-of-writing/>`_
 * `adventures in uncertainty: Existential Haskell <https://blog.sumtypeofway.com/posts/existential-haskell.html>`_
 * `terminology - What does the term "porcelain" mean in Git? - Stack Overflow <https://stackoverflow.com/questions/6976473/what-does-the-term-porcelain-mean-in-git>`_
-* `killtakes readable arguments. Usekill -KILLorkill -TSTPinstead of the numbers.`_
 * `Advanced System-On-Chip Lecture Notes <https://iis-people.ee.ethz.ch/~gmichi/asocd/lecturenotes/>`_
 * `MDN HTTP Headers <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers>`_
 * `OWASP Cheat Sheets <https://github.com/OWASP/CheatSheetSeries>`_
@@ -556,14 +550,8 @@ Unorganized Links
 * `Secure by Design - Book on Security best practices by Manning Publications <https://www.manning.com/books/secure-by-design>`_
 * `hsecscan- Python Tool to Check Headers of an API <https://github.com/riramar/hsecscan>`_
 * `pidofcan be used to snoop the PID of a process matching a regex. <https://manpages.ubuntu.com/manpages/focal/en/man8/pidof.8.html>`_
-* `secure.py<https://secure.readthedocs.io/en/latest/index.html>`_
-* `Uselsofto scan processes running in a given path.`_
+* `secure.py <https://secure.readthedocs.io/en/latest/index.html>`_
 * `How Linux Works by No Starch Code is a good book on the internals of Linux <https://nostarch.com/howlinuxworks2>`_
-* `Docker images will by default be able to reach any server that the`_
-* `When running theselenium/standalone-chromeensure that the docker`_
-* `roxy is configured correctly so that it can find the pages it needs to,`_
-* `command\|trcan *translate*stdinfrom one format to another.`_
-* `/dev/urandomand/dev/randomcan be used to generate random`_
 * `ox - Text editor written in Rust <https://github.com/curlpipe/ox>`_
 * `Cargo/crossterm <https://crates.io/crates/crossterm>`_
 * `Cargo/termium <https://crates.io/crates/termium>`_
@@ -580,7 +568,7 @@ Unorganized Links
 * `Finding your first remote job - Part 1 <https://joshwcomeau.com/career/remote-work/>`_
 * `Finding your first remote job - Part 2 <https://joshwcomeau.com/career/remote-work-pt2/>`_
 * `How Facism Works <https://www.reddit.com/r/books/comments/iyu3nz/how_facism_works_should_be_part_of_every/>`_
-* `How to Ignore binaries withou extensions using gitignore <https://stackoverflow.com/questions/5711120/gitignore-without-binary-files/25592735`_
+* `How to Ignore binaries without extensions using gitignore <https://stackoverflow.com/questions/5711120/gitignore-without-binary-files/25592735>`_
 * `Learn Git Branching  <interactively> <https://learngitbranching.js.org/>`_
 * `TL:DR Rust <https://christine.website/blog/TLDR-rust-2020-09-19>`_
 * `WASM Video Compressor/Transcoder <https://modfy.video/>`_
@@ -593,7 +581,7 @@ Unorganized Links
 * `Architecture of Open Source Applications <https://www.aosabook.org/en/index.html>`_
 * `Articles on Writing a Compiler <https://notes.eatonphil.com/tags/compiler.html>`_
 * `Cannoli - A Compiler for a Subset of Python, Written in Rust <https://github.com/joncatanio/cannoli>`_
-* `Empathy for those who don't know LaTeX well <https://tex.meta.stackexchange.com/questions/8467/empathy-for-those-who-dont-know-latex-well/8472`_
+* `Empathy for those who don't know LaTeX well <https://tex.meta.stackexchange.com/questions/8467/empathy-for-those-who-dont-know-latex-well/8472>`_
 * `How to implement a programming language in JavaScript <http://lisperator.net/pltut/>`_
 * `Mango.pdf.zone - Finding Passport Number Online <https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram>`_
 * `Ned Batchelder - How to be Helpful Online <https://nedbatchelder.com//blog/202009/how_to_be_helpful_online.html>`_
@@ -605,7 +593,6 @@ Unorganized Links
 * `Write your own programmer and compiler with Python <https://blog.usejournal.com/writing-your-own-programming-language-and-compiler-with-python-a468970ae6df>`_
 * `Writing a basic x86 JIT Compiler from scratch in stock Python <https://csl.name/post/python-jit/>`_
 * `functools.singledispatchcan be used to created *overloaded* functions in Python, but only for the first argument <https://docs.python.org/3.4/library/functools.html?highlight=singledispatch>`_
-* `Python provides *no* way to override theandororkeywords actions on a new/custom datatype. This is why you get theValueError: The truth value of an array with more than one element is ambiguous. Use a.any <> or a.all <>in Pandas  <this actually comes from numpy>.`_
 * `Rosie the Robot: Social Accountability, One Tweet at a Time <https://blogs.worldbank.org/governance/rosie-robot-social-accountability-one-tweet-time>`_
 * `A Minimal FORTH Compiler for Linux / i386 Systems <https://github.com/nornagon/jonesforth/blob/master/jonesforth.S>`_
 * `Bootstrapping a FORTH in 40 Lines of Lua Code <http://angg.twu.net/miniforth-article.html>`_
@@ -626,7 +613,7 @@ Unorganized Links
 * `Mastering the Hard Parts of Javascript <https://dev.to/ryanameri/mastering-hard-parts-of-javascript-callbacks-i-3aj0>`_
 * `Ben Root - Anatomy of Matplotlib <https://youtu.be/rARMKS8jE9g>`_
 * `Github Readme Chess <https://github.com/timburgan/timburgan>`_
-* `Interactive Github Readme <https://github.com/veggiedefender/typing`_
+* `Interactive Github Readme <https://github.com/veggiedefender/typing>`_
 * `ReactJS docs with hooks <https://kickstartcoding.online/learn/articles/i-converted-reactjs-org-to-use-hooks/>`_
 * `Regex101 <https://regex101.com/>`_
 * `Regexr <https://regexr.com/>`_
@@ -715,7 +702,7 @@ Unorganized Links
 * `Diff Highlight Tool for Javascript <https://prismjs.com/plugins/diff-highlight/>`_
 * `How to Stop Procrastinating by Using the Fogg Behavior Model <https://www.deprocrastination.co/blog/how-to-stop-procrastinating-by-using-the-fogg-behavior-model>`_
 * `How to build a web application completely in Rust <https://github.com/saschagrunert/webapp.rs>`_
-* `A Baseline compuler forguile<https://wingolog.org/archives/2020/06/03/a-baseline-compiler-for-guile>`_
+* `A Baseline compuler for guile <https://wingolog.org/archives/2020/06/03/a-baseline-compiler-for-guile>`_
 * `Bartosz Milewski - Category Theory for Programmers <https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/>`_
 * `Bigloo Lisp Implementation <https://www-sop.inria.fr/mimosa/fp/Bigloo/>`_
 * `How to Design Programs <https://htdp.org/2003-09-26/Book/>`_
@@ -729,9 +716,9 @@ Unorganized Links
 * `What does Process Accounting mean in Linux <https://unix.stackexchange.com/questions/468909/what-does-process-accounting-mean-in-linux>`_
 * `Why are there so many implementations of Lisp? <https://stackoverflow.com/questions/2114819/why-is-the-lisp-community-so-fragmented>`_
 * `Wingolog <https://wingolog.org/>`_
-* `arcis a Programming Language written inRacket<http://www.arclanguage.org/>`_
+* `arc is a Programming Language written in Racket <http://www.arclanguage.org/>`_
 * `guile Programming Language <https://www.gnu.org/software/guile/>`_
-* `ApacheSamza<https://samza.apache.org/>`_
+* `Apache Samza <https://samza.apache.org/>`_
 * `Awesome System Design <https://github.com/madd86/awesome-system-design>`_
 * `Geeks for Geeks PDFs <https://github.com/dufferzafar/geeksforgeeks.pdf/releases>`_
 * `Linux Networking <https://www.reddit.com/r/ITCareerQuestions/comments/i669yn/ive_been_in_tech_for_8_years_and_dont_know_shit/>`_
@@ -750,17 +737,9 @@ Unorganized Links
 * `Releases - XanMod Kernel <https://xanmod.org/>`_
 * `The Laws of UX <https://lawsofux.com/>`_
 * `phoronix-test-suite is a bunch of open source hardware benchmarking tools for all platforms <https://www.phoronix-test-suite.com/>`_
-* `Linux Kernel 5.8 has a lot of hardware level optimizations.`_
-* `You can install more than one kernel into a Linux installation and choose which to boot from in Grub.`_
-* `EC2 has a Free tier! I can request a bunch of machines here.`_
-* `Juju is a tool that helps manage server providers, whether they are GCP, AWS, your own servers or Azure, among others, giving you one way to start, setup and run your servers.`_
-* `Juju's configurations are called charms. These are written in Python.`_
-* `collections.defaultdicttakes a *type* not a value. It will initialize based on the default value for that type.`_
-* `git log --format="%H" -n 1 \| catoutputs the last commit ID.`_
-* `nodejsjust usesprocessto get command line arguments.`_
 * `Brutally Honest Guide to Docker Graphdrivers <https://blog.jessfraz.com/post/the-brutally-honest-guide-to-docker-graphdrivers/>`_
 * `Container Networking <https://docs.docker.com/config/containers/container-networking/>`_
-* `Everything in Linux is a File <https://www.tecmint.com/explanation-of-everything-is-a-file-and-types-of-files-in-linux/`_
+* `Everything in Linux is a File <https://www.tecmint.com/explanation-of-everything-is-a-file-and-types-of-files-in-linux/>`_
 * `Everything is a File. Note: See theISSOCKcheck. <https://unix.stackexchange.com/a/225542>`_
 * `Google Technical Publications <https://research.google/pubs/>`_
 * `How to Read a Technical Paper <http://www.cs.jhu.edu/~jason/advice/how-to-read-a-paper.html>`_
@@ -786,8 +765,6 @@ Unorganized Links
 * `Useos.stat <path>.st_mode.S_ISSOCKto check if a file is a socket <https://stackoverflow.com/questions/17877296/checking-if-path-is-a-socket-in-python-2-7>`_
 * `lwan- Lightweight Asynchronous Multi-Threaded Event-Based Web-Server <https://lwan.ws/>`_
 * `osqueryis a tool to snoop around a Linux system's OS in an SQL syntax <https://linuxhint.com/install_osquery_ubuntu/>`_
-* `A TCP Request also has a port on the client`_
-* `UAT's should not be run in CICDs, it should be done completely external to the setup and bringing up an application.`_
 * `4 Rules to Getting Better <https://www.reddit.com/r/getdisciplined/comments/1q96b5/i_just_dont_care_about_myself/cdah4af/>`_
 * `Adding a Volume Control to xmonad <http://dmwit.com/volume/>`_
 * `Disabling Turbo Boost on AMD Laptops <https://www.kernel.org/doc/Documentation/cpu-freq/boost.txt>`_
@@ -799,7 +776,7 @@ Unorganized Links
 * `A Job To Love <https://www.theschooloflife.com/shop/tsol-press-a-job-to-love/>`_
 * `A Viewer for Git and Diff Output <https://github.com/dandavison/delta>`_
 * `Advent of Code is a bunch of programming exercises that are more fun than Leetcode, with annual sprints <https://adventofcode.com/>`_
-* `Attack of Pythons : Gotchas <https://gist.githubusercontent.com/manojpandey/41b90cba1fd62095e247d1b2448ef85b/raw/0413c4805336b8030efc7de1e9fa0e229ca9903d/gotchas.md>`_
+* `Attack of Pythons - Gotchas <https://gist.githubusercontent.com/manojpandey/41b90cba1fd62095e247d1b2448ef85b/raw/0413c4805336b8030efc7de1e9fa0e229ca9903d/gotchas.md>`_
 * `Bartosz Milewski - School of Haskell <https://www.schoolofhaskell.com/user/bartosz/basics-of-haskell>`_
 * `BurntSushi's Rust Solutions to Advent of Code 2018 <https://github.com/bcmyers/aoc2019>`_
 * `Code and Exercises from Bartosz's School of Haskell <https://github.com/raviksharma/bartosz-basics-of-haskell>`_
@@ -819,7 +796,7 @@ Unorganized Links
 * `Racketlang is 25 <https://news.ycombinator.com/item?id=23132621>`_
 * `RyzenAdj is a tool to adjust AMD's Ryzen processor settings <https://github.com/FlyGoat/RyzenAdj>`_
 * `Sweet Expressions For Racket <https://github.com/takikawa/sweet-racket>`_
-* `Tiny Python Projects <https://www.manning.com/books/tiny-python-projects?a_aid=bnpodcasts&utm_source=rss&utm_medium=rss`_
+* `Tiny Python Projects <https://www.manning.com/books/tiny-python-projects>`_
 * `Trying to findnvidia-smifor AMD Radeon Cards <https://www.reddit.com/r/linuxquestions/comments/af8sdl/something_as_sophisticated_as_nvidiasmi_or_nvtop/>`_
 * `What Should Truly Motivate Us At Work <https://www.theschooloflife.com/thebookoflife/what-should-truly-motivate-us-at-work/>`_
 * `Writing a file system in Rust <https://news.ycombinator.com/item?id=23967016>`_
@@ -881,7 +858,6 @@ Unorganized Links
 * `PEP 622 Structural Pattern Matching in Python <https://www.python.org/dev/peps/pep-0622/>`_
 * `Pablo Salgado - Soul of the Beast EuroPython 2019 Talk on CPython <https://www.youtube.com/watch?v=1_23AVsiQEc>`_
 * `Playground for PEP 622 <https://mybinder.org/v2/gh/gvanrossum/patma/master?urlpath=lab/tree/playground-622.ipynb>`_
-* `Python Bytes_
 * `Python Code Quality Authority <https://github.com/PyCQA>`_
 * `Python Guppy / Heapy for Profiling Code <https://github.com/zhuyifei1999/guppy3>`_
 * `Python Implements library <https://pypi.org/project/implements/>`_
@@ -902,7 +878,6 @@ Unorganized Links
 * `Using the src folder with python <https://blog.ionelmc.ro/2014/05/25/python-packaging>`_
 * `What Nobody Tells You about Documentation - the greatest video on how to structure docs that I have seen <https://www.youtube.com/watch?v=t4vKPhjcMZg>`_
 * `docker-compose has *no* docstrings <https://github.com/docker/compose/blob/master/compose/cli/main.py>`_
-* `When mocking python functions in a flask test, ensure you reference the module where the function is called, not where it originates from.`_
 * `Book on Real World Cryptography <https://livebook.manning.com/book/real-world-cryptography/welcome/v-7/>`_
 * `Brown University: Programming and Programming Languages <https://papl.cs.brown.edu/2020/>`_
 * `CS 61B Data Structures, Spring 2019 <https://sp19.datastructur.es/>`_
@@ -939,7 +914,7 @@ Unorganized Links
 * `Poetry for Python Projects - Manage environments for Python, as well as project dependency information. <https://github.com/python-poetry/poetry>`_
 * `Profiling Flask Apps using werkzeug.contrib.profiler.ProfilerMiddleware <https://gist.github.com/stonecharioteer/23cbba9f0a8ff7520cb07372dd56ef4a>`_
 * `SCons <https://scons.org/>`_
-* `The Baader-Meinhof Phenomenon or Frequency Illusion is when you discover something and see it everywhere <https://en.m.wikipedia.org/wiki/List_of_cognitive_biases`_
+* `The Baader-Meinhof Phenomenon or Frequency Illusion is when you discover something and see it everywhere. Serendipity <https://en.m.wikipedia.org/wiki/List_of_cognitive_biases>`_
 * `What the heck is Pyproject.toml? <https://snarky.ca/what-the-heck-is-pyproject-toml/>`_
 * `sphinx-tabs is a great way to add tabbed views in Sphinx <https://github.com/djungelorm/sphinx-tabs>`_
 * `ss is a tool to inspect sockets on Linux <https://www.redhat.com/sysadmin/dss-command>`_
@@ -959,19 +934,19 @@ Unorganized Links
 * `Compiling Python Code <https://docs.python.org/3/library/codeop.html>`_
 * `Complete Guide to calc in CSS <https://css-tricks.com/a-complete-guide-to-calc-in-css/>`_
 * `Conflict-Free Replicated Data Type  <CRDT <https://en.m.wikipedia.org/wiki/Conflict-free_replicated_data_type>`_
-* `Core Algorithms Deployed - Stack Overflow Question <https://cstheory.stackexchange.com/questions/19759/core-algorithms-deployed/19773`_
+* `Core Algorithms Deployed - Stack Overflow Question <https://cstheory.stackexchange.com/questions/19759/core-algorithms-deployed/19773>`_
 * `Debugging Memory on Linux <https://www.linuxjournal.com/article/4681>`_
 * `Designing a delightful command line interface <https://devrel.net/developer-experience/designing-a-delightful-command-line-interface>`_
 * `Django Class Based Views <https://docs.djangoproject.com/en/2.2/topics/class-based-views/intro/>`_
 * `Don't Overthink It Grids <https://css-tricks.com/dont-overthink-it-grids/>`_
 * `ELI5: What is Virtual Memory? Why do we Need it? <https://www.reddit.com/r/explainlikeimfive/comments/kpoz3/eli5_what_is_virtual_memory_why_we_need_it/>`_
-* `Front End Developer Handbook <https://frontendmasters.com/books/front-end-handbook/2019/`_
+* `Front End Developer Handbook <https://frontendmasters.com/books/front-end-handbook/2019/>`_
 * `Functional Light Javascript <https://github.com/getify/Functional-Light-JS/blob/master/manuscript/foreword.md>`_
 * `GUI for youtube-dl <https://github.com/MrS0m30n3/youtube-dl-gui>`_
 * `Generate Fake Data in Python using mimesis <https://github.com/lk-geimfari/mimesis>`_
 * `Grok the GIL: How to Write Fast and Thread-Safe Python <https://opensource.com/article/17/4/grok-gil>`_
 * `HTML5 for Web Designers <https://html5forwebdesigners.com/>`_
-* `How Does asyncio work? <https://stackoverflow.com/questions/49005651/how-does-asyncio-actually-work/51116910`_
+* `How Does asyncio work? <https://stackoverflow.com/questions/49005651/how-does-asyncio-actually-work/51116910>`_
 * `Intermediate Vim <https://www.hillelwayne.com/post/intermediate-vim/>`_
 * `Introducing Linux Network Namespaces <https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/>`_
 * `Javascript Questions <https://github.com/lydiahallie/javascript-questions>`_
@@ -1026,4 +1001,4 @@ Unorganized Links
 * `fzf is amazing for searching through linux history <https://github.com/junegunn/fzf>`_
 * `node's live-server module is good for live reloading static html <https://github.com/tapio/live-server>`_
 * `pre-commit allows you to setup version control for your hooks <https://pre-commit.com/>`_
-* `youtube-dl allows you to download youtube videos easily and convert them <https://github.com/ytdl-org/youtube-dl>`_
+* `Yt-dlp - Youtube Video Downloader <https://github.com/yt-dlp/yt-dlp>`_
