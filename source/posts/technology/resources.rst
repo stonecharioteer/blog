@@ -666,7 +666,7 @@ Unorganized Links
 * `PyVideo.org · FlaskCon 2020 <https://pyvideo.org/events/flaskcon-2020.html>`_
 * `Python Code Quality Authority <https://github.com/PyCQA>`_
 * `Python Design Patterns <https://python-patterns.guide/>`_
-* `Python Gotchas <https://docs.python-guide.org/writing/gotchas/`_
+* `Python Gotchas <https://docs.python-guide.org/writing/gotchas/>`_
 * `Python Guppy / Heapy for Profiling Code <https://github.com/zhuyifei1999/guppy3>`_
 * `Python Implements library <https://pypi.org/project/implements/>`_
 * `Python Quality Link by Abhiram <https://github.com/abhiramr/pyquality>`_
