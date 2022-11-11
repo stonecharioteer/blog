@@ -434,7 +434,7 @@ Unorganized Links
 * `Pieter Levels <https://levels.io/>`_
 * `Remote Jobs in Programming, Design, Sales and more <https://remoteok.io/>`_
 * `Ruby Under a Microscope - Pat Shaughnessy <http://patshaughnessy.net/ruby-under-a-microscope>`_
-* `Shell Command Language <https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html`_
+* `Shell Command Language <https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html>`_
 * `Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more \| Y Combinator's Work at a Startup <https://www.workatastartup.com/>`_
 * `Writing Program <http://rlstine.com/writing-program>`_
 * `Writing a Memory Allocator – Dmitry Soshnikov <http://dmitrysoshnikov.com/compilers/writing-a-memory-allocator/>`_
