@@ -8,6 +8,7 @@ This section will host a list of my resources and references,
 usually stuff I've enjoyed reading from someone else's blogs
 or books and RFCs I recommend people read if they want to learn
 how to build software *well*.
+
 * `[Blog] Amos' Blog <https://fasterthanli.me/>`_
 * `[Blog] Brendan Gregg's Blog <https://www.brendangregg.com/blog/>`_
 * `[Blog] Daniel Stenberg <https://daniel.haxx.se/blog/>`_
