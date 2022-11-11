@@ -5,12 +5,43 @@
 usually stuff I’ve enjoyed reading from someone else’s blogs
 or books and RFCs I recommend people read if they want to learn
 how to build software &lt;em&gt;well&lt;/em&gt;.&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://jvns.ca/"&gt;Julia Evans’ Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.linuxfromscratch.org/"&gt;Linux from Scratch&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://paulgraham.com/"&gt;Paul Graham’s blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.rfc-editor.org/rfc/rfc2616"&gt;Hypertext Transfer Protocol – HTTP/1.1 RFC&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://fasterthanli.me/"&gt;[Blog] Amos’ Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.brendangregg.com/blog/"&gt;[Blog] Brendan Gregg’s Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://daniel.haxx.se/blog/"&gt;[Blog] Daniel Stenberg&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.gwern.net/index"&gt;[Blog] Gwern Branwen’s Website&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.jeffgeerling.com/blog"&gt;[Blog] Jeff Geerling’s Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://joelonsoftware.com/"&gt;[Blog] Joel Spolksky’s Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://jvns.ca/"&gt;[Blog] Julia Evans’ Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.kalzumeus.com/archive/"&gt;[Blog] Kalzumeus Software - Patrick McKenzie’s Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://paulgraham.com/"&gt;[Blog] Paul Graham’s blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://realpython.cot"&gt;[Blog] Real Python&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://blog.acolyer.org/"&gt;[Blog] The Morning Paper -&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://blog.cleancoder.com/"&gt;[Blog] Uncle Bob’s Clean Coder Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://realpython.com/products/cpython-internals-book/"&gt;[Book] CPython Internals - Anthony Shaw&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.databass.dev/"&gt;[Book] Database Internals - Alex Petrov&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://dataintensive.net/"&gt;[Book] Designing Data-Intensive Application - Martin Kleppman&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.amazon.in/Expert-Programming-Peter-van-Linden/dp/0131774298"&gt;[Book] Expert C Programming - Deep C Secrets&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://exploreflask.com/en/latest/"&gt;[Book] Explore Flask&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://hpbn.co/"&gt;[Book] High Performance Browser Networking&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://rust-cli.github.io/book/index.html"&gt;[Book] Rust CLI Book&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://rustwasm.github.io/book/"&gt;[Book] Rust WASM Book&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.navalmanack.com/"&gt;[Book] The Almanack of Naval Ravikant&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.aosabook.org/en/index.html"&gt;[Book] The Architecture of Open Source Applications&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://doc.rust-lang.org/stable/book/"&gt;[Book] The Rust Programming Language - Steve Klabnik and Carol Nichols&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.postgresql.org/docs/13/"&gt;[Docs] PostgreSQL 13.9&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://pythonbytes.fm/"&gt;[Podcast] PythonBytes&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://talkpython.fm/"&gt;[Podcast] Talk Python to Me&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://rustacean-station.org/"&gt;[Podcast] The Rustacean Station&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.rfc-editor.org/rfc/rfc2616"&gt;[RFC] Hypertext Transfer Protocol – HTTP/1.1 RFC&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://rfcs.io/tcp"&gt;[RFC] TCP RFCs&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.linuxfromscratch.org/"&gt;[Resource] Linux from Scratch&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://charm.sh/"&gt;[Tool] Charm.sh - Go based Terminal Tools&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://github.com/tpn/pdfs/blob/master/BigQuery%20Technical%20Whitepaper%20-%20Google.pdf"&gt;[Whitepaper] An Inside Look at Google BigQuery&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://research.google/pubs/pub36632/"&gt;[Whitepaper] Dremel - Interactive Analysis of Web-Scale Datasets&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://research.google/pubs/pub43119/"&gt;[Whitepaper] Storing and Querying Tree-Structured Records in Dremel&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://storageconference.us/2010/Papers/MSST/Shvachko.pdf"&gt;[Whitepaper] The Hadoop Distributed File System&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description><pubDate>Fri, 11 Nov 2022 00:00:00 </pubDate></item><item><title>Meditations on Learning</title><link>https://stonecharioteer.com/posts/life/career/learning.html</link><description>
  
 &lt;section id="study-every-day"&gt;
