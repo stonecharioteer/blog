@@ -19,7 +19,7 @@ how to build software *well*.
 * `[Blog] Julia Evans' Blog <https://jvns.ca/>`_
 * `[Blog] Kalzumeus Software - Patrick McKenzie's Blog <https://www.kalzumeus.com/archive/>`_
 * `[Blog] Paul Graham's blog <http://paulgraham.com/>`_
-* `[Blog] Real Python <https://realpython.cot>`_
+* `[Blog] Real Python <https://realpython.com>`_
 * `[Blog] The Morning Paper - <https://blog.acolyer.org/>`_
 * `[Blog] Uncle Bob's Clean Coder Blog <http://blog.cleancoder.com/>`_
 * `[Book] CPython Internals - Anthony Shaw <https://realpython.com/products/cpython-internals-book/>`_
