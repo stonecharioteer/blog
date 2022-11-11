@@ -5,6 +5,8 @@
 usually stuff I’ve enjoyed reading from someone else’s blogs
 or books and RFCs I recommend people read if they want to learn
 how to build software &lt;em&gt;well&lt;/em&gt;.&lt;/p&gt;
+&lt;section id="organized-links"&gt;
+&lt;h2&gt;Organized Links&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://fasterthanli.me/"&gt;[Blog] Amos’ Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.brendangregg.com/blog/"&gt;[Blog] Brendan Gregg’s Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -45,12 +47,13 @@ how to build software &lt;em&gt;well&lt;/em&gt;.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://storageconference.us/2010/Papers/MSST/Shvachko.pdf"&gt;[Whitepaper] The Hadoop Distributed File System&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://steveklabnik.com/"&gt;[Blog] Steve Klabnik&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/section&gt;
 &lt;section id="unorganized-links"&gt;
 &lt;h2&gt;Unorganized Links&lt;/h2&gt;
 &lt;div class="admonition warning"&gt;
 &lt;p class="admonition-title"&gt;Warning&lt;/p&gt;
-&lt;p&gt;I copied these over from my TIL page. I need to clean these up, but it’ll
-take a lot of time.&lt;/p&gt;
+&lt;p&gt;I copied these over from the automated TIL page I used to run a while ago using a discord bot.
+I need to clean these up, but it’ll take a lot of time.&lt;/p&gt;
 &lt;/div&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.folklore.org/StoryView.py?project=Macintosh&amp;amp;story=Negative_2000_Lines_Of_Code.txt&amp;amp;sortOrder=Sort%20by%20Date&amp;amp;detail=medium"&gt;-2000 Lines of Code&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
