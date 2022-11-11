@@ -12,3 +12,4 @@ Technology
    :titlesonly:
 
    crews-not-teams.rst
+   resources.rst

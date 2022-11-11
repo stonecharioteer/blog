@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Meditations on Learning</title><link>https://stonecharioteer.com/posts/life/career/learning.html</link><description>
+<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Resources and References</title><link>https://stonecharioteer.com/posts/technology/resources.html</link><description>
+&lt;span id="resources"/&gt; 
+&lt;p&gt;This section will host a list of my resources and references,
+usually stuff I’ve enjoyed reading from someone else’s blogs
+or books and RFCs I recommend people read if they want to learn
+how to build software &lt;em&gt;well&lt;/em&gt;.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://jvns.ca/"&gt;Julia Evans’ Blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.linuxfromscratch.org/"&gt;Linux from Scratch&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="http://paulgraham.com/"&gt;Paul Graham’s blog&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class="reference external" href="https://www.rfc-editor.org/rfc/rfc2616"&gt;Hypertext Transfer Protocol – HTTP/1.1 RFC&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description><pubDate>Fri, 11 Nov 2022 00:00:00 </pubDate></item><item><title>Meditations on Learning</title><link>https://stonecharioteer.com/posts/life/career/learning.html</link><description>
  
 &lt;section id="study-every-day"&gt;
 &lt;span id="index-0"/&gt;&lt;h2&gt;Study Every Day&lt;/h2&gt;
