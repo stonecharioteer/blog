@@ -24,6 +24,7 @@ any employer, past or present.
    mustread/index
    writing/index
    talks/index
+   posts/technology/resources
    genindex
    search
 
