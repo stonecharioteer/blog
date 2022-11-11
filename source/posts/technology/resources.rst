@@ -14,6 +14,10 @@ usually stuff I've enjoyed reading from someone else's blogs
 or books and RFCs I recommend people read if they want to learn
 how to build software *well*.
 
+--------------------------------------------------
+Organized Links
+--------------------------------------------------
+
 * `[Blog] Amos' Blog <https://fasterthanli.me/>`_
 * `[Blog] Brendan Gregg's Blog <https://www.brendangregg.com/blog/>`_
 * `[Blog] Daniel Stenberg <https://daniel.haxx.se/blog/>`_
@@ -59,9 +63,8 @@ Unorganized Links
 
 .. warning::
 
-   I copied these over from my TIL page. I need to clean these up, but it'll
-   take a lot of time.
-
+   I copied these over from the automated TIL page I used to run a while ago using a discord bot.
+   I need to clean these up, but it'll take a lot of time.
 
 * `-2000 Lines of Code <https://www.folklore.org/StoryView.py?project=Macintosh&story=Negative_2000_Lines_Of_Code.txt&sortOrder=Sort%20by%20Date&detail=medium>`_
 * `/r/cscareerquestions resume FAQ and Wiki <https://www.reddit.com/r/cscareerquestions/wiki/faq_resumes>`_
