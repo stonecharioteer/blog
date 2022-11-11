@@ -1,4 +1,9 @@
+.. meta::
+   :description: Stonecharioteer's resources. Links to books, blogs, RFCs, whitepapers, websites, articles and tools I recommend people read to learn more about software and computers in general
+   :keywords: computers, engineering, software-development, 10x-developer
+
 .. _resources:
+
 
 ========================================
 Resources and References
