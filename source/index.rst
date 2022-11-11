@@ -1,3 +1,6 @@
+.. meta::
+   :description: Stonecharioteer's Website - Vinay Keerthi's personal thoughts on software development, books, writing, travel and life as a pet parent
+
 .. _home:
 
 ============================
