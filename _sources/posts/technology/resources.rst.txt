@@ -28,6 +28,7 @@ Organized Links
 * `[Blog] Kalzumeus Software - Patrick McKenzie's Blog <https://www.kalzumeus.com/archive/>`_
 * `[Blog] Paul Graham's blog <http://paulgraham.com/>`_
 * `[Blog] Real Python <https://realpython.com>`_
+* `[Blog] Steve Klabnik <https://steveklabnik.com/>`_
 * `[Blog] The Morning Paper - <https://blog.acolyer.org/>`_
 * `[Blog] Uncle Bob's Clean Coder Blog <http://blog.cleancoder.com/>`_
 * `[Book] CPython Internals - Anthony Shaw <https://realpython.com/products/cpython-internals-book/>`_
@@ -35,9 +36,9 @@ Organized Links
 * `[Book] Designing Data-Intensive Application - Martin Kleppman <https://dataintensive.net/>`_
 * `[Book] Expert C Programming - Deep C Secrets <https://www.amazon.in/Expert-Programming-Peter-van-Linden/dp/0131774298>`_
 * `[Book] Explore Flask <https://exploreflask.com/en/latest/>`_
-* `[Book] Kubernetes in Action <https://www.manning.com/books/kubernetes-in-action>`_
-* `[Book] How Linux Works - Brian Ward <https://nostarch.com/howlinuxworks3>`_
 * `[Book] High Performance Browser Networking <https://hpbn.co/>`_
+* `[Book] How Linux Works - Brian Ward <https://nostarch.com/howlinuxworks3>`_
+* `[Book] Kubernetes in Action <https://www.manning.com/books/kubernetes-in-action>`_
 * `[Book] Rust CLI Book <https://rust-cli.github.io/book/index.html>`_
 * `[Book] Rust WASM Book <https://rustwasm.github.io/book/>`_
 * `[Book] The Almanack of Naval Ravikant <https://www.navalmanack.com/>`_
@@ -55,7 +56,6 @@ Organized Links
 * `[Whitepaper] Dremel - Interactive Analysis of Web-Scale Datasets <https://research.google/pubs/pub36632/>`_
 * `[Whitepaper] Storing and Querying Tree-Structured Records in Dremel <https://research.google/pubs/pub43119/>`_
 * `[Whitepaper] The Hadoop Distributed File System <https://storageconference.us/2010/Papers/MSST/Shvachko.pdf>`_
-* `[Blog] Steve Klabnik <https://steveklabnik.com/>`_
 
 ----------------------------------------------------------------
 Unorganized Links
