@@ -674,8 +674,8 @@ Unorganized Links
 * `Python for Kids <https://github.com/mytechnotalent/Python-For-Kids>`_
 * `Python isort for sorting imports automatically <https://pypi.org/project/isort/>`_
 * `Python line-profiler <https://github.com/pyutils/line_profiler>`_
-* `Python's raise statement has afromclause, to preserve full tracebacks. <https://stackoverflow.com/questions/24752395/python-raise-from-usage>`_
-* `Python:breakpointin emptyexceptclause does not have access to the bound exception even if it is aliased <https://stackoverflow.com/questions/62796591/breakpoint-in-except-clause-doesnt-have-access-to-the-bound-exception>`_
+* `Python's raise statement has a from clause, to preserve full tracebacks. <https://stackoverflow.com/questions/24752395/python-raise-from-usage>`_
+* `Python - breakpoint in empty except clause does not have access to the bound exception even if it is aliased <https://stackoverflow.com/questions/62796591/breakpoint-in-except-clause-doesnt-have-access-to-the-bound-exception>`_
 * `REST APIs must be hypertext-driven » Untangled <https://roy.gbiv.com/untangled/2008/rest-APIs-must-be-hypertext-driven>`_
 * `RFC1149 - Standard for the transmission of IP datagrams on avian carriers <https://tools.ietf.org/html/rfc1149>`_
 * `RFC2549 - IP over Avian Carriers with Quality of Service <https://tools.ietf.org/html/rfc2549>`_
@@ -807,7 +807,7 @@ Unorganized Links
 * `The Paging Game - Game on Learning the Virtual Memory Paging Process <https://en.m.wikisource.org/wiki/The_Paging_Game>`_
 * `The Purpose Of Writing <https://limitlesscuriosity.com/the-purpose-of-writing/>`_
 * `The Python Language Reference — Python 3.9.1 documentation <https://docs.python.org/3/reference/index.html>`_
-* `The Python raise statement <https://docs.python.org/3/reference/simple_stmts.html`_
+* `The Python raise statement <https://docs.python.org/3/reference/simple_stmts.html>`_
 * `The Rise, Fall and Revival of AMD \| TechSpot <https://www.techspot.com/article/2043-amd-rise-fall-revival-history/>`_
 * `The Road to the JIT – A Blog from the Erlang/OTP team – The Erlang/OTP team at Ericsson, the implementors and maintainers of Erlang/OTP. <http://blog.erlang.org/the-road-to-the-jit/>`_
 * `The Robot Overlord Manual. A robotics, machine learning and math… \| by Mark Saroufim \| Medium <https://marksaroufim.medium.com/the-robot-overlord-manual-d4ee709155bc>`_
@@ -818,11 +818,11 @@ Unorganized Links
 * `The Untold Story Of The Invention Of The Game Cartridge <https://www.fastcompany.com/3040889/the-untold-story-of-the-invention-of-the-game-cartridge>`_
 * `The complete guide to using localStorage in JavaScript apps - LogRocket Blog <https://blog.logrocket.com/the-complete-guide-to-using-localstorage-in-javascript-apps-ba44edb53a36/>`_
 * `The first 4 bytes of every Java class file has the magic value 0xCAFEBABE <https://www.artima.com/insidejvm/whyCAFEBABE.html>`_
-* `The gambit schemesystem <https://github.com/gambit/gambit>`_
+* `The gambit scheme system <https://github.com/gambit/gambit>`_
 * `The moment CSS started making 'Sense' <https://css-tricks.com/moment-css-started-making-sense/>`_
-* `There are other Pyramids in Africa: The Forgotten Pyramids of Meroe <https://amp.theatlantic.com/amp/photo/392312/>`_
-* `Theseus OS: OSDI 2020 Long Talk - YouTube <https://youtu.be/j4ZPZoPNjkw>`_
-* `TimescaleDB vs. Amazon Timestream: 6000x faster inserts, 5-175x query speed <https://blog.timescale.com/blog/timescaledb-vs-amazon-timestream-6000x-higher-inserts-175x-faster-queries-220x-cheaper/>`_
+* `There are other Pyramids in Africa - The Forgotten Pyramids of Meroe <https://amp.theatlantic.com/amp/photo/392312/>`_
+* `Theseus OS - OSDI 2020 Long Talk - YouTube <https://youtu.be/j4ZPZoPNjkw>`_
+* `TimescaleDB vs. Amazon Timestream - 6000x faster inserts, 5-175x query speed <https://blog.timescale.com/blog/timescaledb-vs-amazon-timestream-6000x-higher-inserts-175x-faster-queries-220x-cheaper/>`_
 * `Tiny Python Projects <https://www.manning.com/books/tiny-python-projects>`_
 * `Tips for faster Rust Compile Times <https://endler.dev/2020/rust-compile-times/>`_
 * `Title Page - The Rust Performance Book <https://nnethercote.github.io/perf-book/title-page.html>`_
