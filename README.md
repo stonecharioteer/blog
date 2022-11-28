@@ -13,7 +13,6 @@ First, set the following environment variables:
 2. GITHUB_ACCESS_TOKEN
 3. REPO_URL
 
-
 ```bash
 
 docker run -d --name blog-runner --rm --pull=always -e RUNNER_WORK_DIR=/tmp/runner/ \
@@ -21,9 +20,15 @@ docker run -d --name blog-runner --rm --pull=always -e RUNNER_WORK_DIR=/tmp/runn
     -v /tmp/runner:/tmp/runner--rm tcardonne/github-runner:ubuntu-20.04
 ```
 
+## Tips
+
 Set the values of those envvars using `direnv`, it makes things easy.
 
-Don't build this locally, it's annoying. But if you have to, use `ablog clean && ablog build``
+Use `incrontab` to configure the autobuild. Here's what I use right now:
+
+```bash
+$HOME/code/checkouts/personal/blog/source	IN_MODIFY,IN_ATTRIB,IN_CREATE,IN_DELETE,IN_MOVE	/usr/bin/bash $HOME/code/checkouts/personal/blog/build.sh $@/$#
+```
 
 
 ## Categories
