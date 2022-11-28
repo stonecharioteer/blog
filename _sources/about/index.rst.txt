@@ -8,12 +8,14 @@ I am a software developer based in Bangalore, India. I write about technology,
 Rust, Python, Raspberry Pi, the Internet of Things, and I also speak at Meetups and
 Conferences.
 
-I currently work at Merkle Science, where I build internal tools that help accelerate
-developer productivity and data engineering.
+I currently work at **ChainSafe,** where I work on tools and libraries to help further
+web3 and blockchain-related tech.
 
-Previously, I've worked at Visa Inc, building tools and internal services that powered
-the Data Platform team, and before that, I worked at GKN Driveline, helping the Engineers
-automate mathematical calculations that power cars around the world.
+Previously, I've worked at **Merkle Science,** where I've built tools and ETL
+pipelines for cryptocurrency-analytics, and at **Visa Inc,** building tools and internal
+services that powered the Data Platform team, and before that, I worked at **GKN
+Driveline,** helping the engineers automate mathematical calculations that power
+cars around the world.
 
 The stuff I enjoy building are usually distributed systems, developer tools and
 the odd automation that no one else usually enjoys. I love making things work
