@@ -1,0 +1,19 @@
+session_name: blog
+start_directory: ./
+shell_command_before:
+- source $HOME/.python/venvs/py3.9/blog/bin/activate.fish && source .envrc && /usr/bin/bash $HOME/code/checkouts/personal/blog/build.sh
+start_directory: ~/code/checkouts/personal/blog/
+windows:
+- layout: main-horizontal
+  panes:
+  - nvim
+  - null
+  window_name: editor
+- window_name: server
+  panes:
+  - live-server --host '0.0.0.0' build/html
+- layout: main-vertical
+  panes:
+  - docker run -it --name blog-runner --rm --pull=always -e RUNNER_NAME=$RUNNER_NAME
+    -e GITHUB_ACCESS_TOKEN=$GITHUB_ACCESS_TOKEN -e RUNNER_REPOSITORY_URL=$REPO_URL tcardonne/github-runner:ubuntu-20.04
+  window_name: github-runner

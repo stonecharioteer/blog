@@ -7,10 +7,18 @@ This is the sphinx-based source code for my [blog](https://stonecharioteer.com).
 To build this using gh-actions, I recommend starting a runner using docker. I
 prefer running the runner locally instead of using a cloud runner.
 
+First, set the following environment variables:
+
+1. RUNNER_NAME
+2. GITHUB_ACCESS_TOKEN
+3. REPO_URL
+
+
 ```bash
-    docker run -d --name blog-runner --rm --pull=always -e RUNNER_WORK_DIR=/tmp/runner/ \
-        -e RUNNER_NAME=$RUNNER_NAME -e GITHUB_ACCESS_TOKEN=$ACCESS_TOKEN -e RUNNER_REPOSITORY_URL=$REPO_URL \
-        -v /tmp/runner:/tmp/runner--rm tcardonne/github-runner:ubuntu-20.04
+
+docker run -d --name blog-runner --rm --pull=always -e RUNNER_WORK_DIR=/tmp/runner/ \
+    -e RUNNER_NAME=$RUNNER_NAME -e GITHUB_ACCESS_TOKEN=$GITHUB_ACCESS_TOKEN -e RUNNER_REPOSITORY_URL=$REPO_URL \
+    -v /tmp/runner:/tmp/runner--rm tcardonne/github-runner:ubuntu-20.04
 ```
 
 Set the values of those envvars using `direnv`, it makes things easy.
