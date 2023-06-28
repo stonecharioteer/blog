@@ -18,10 +18,21 @@ Resume - Vinay Keerthi K. T.
 -----
 
 -------------------------------
+ChainSafe
+-------------------------------
+
+**Technical Team Lead** | **Fully Remote** | Started: **November 2022**
+
+* Managed a team of 4, providing technical and career-based guidance.
+* Worked on a networking library integrating ``libp2p`` with blockchain protocols.
+* Reviewed Rust code across projects, providing insight into improving code
+  quality and adherance to the core spirit of the language.
+
+-------------------------------
 Merkle Science
 -------------------------------
 
-**Lead Software Developer** | **Bangalore** - **Remote** | Started: **JULY 2021**
+**Lead Software Developer** | **Bangalore** - **Remote** | Started: **JULY 2021 - November 2022**
 
 * Built a team for internal tooling, managed scouting for talent, hiring and
   interviewing.
@@ -123,6 +134,7 @@ Personal Projects & OSS
   <https://hasgeek.com/rootconf/is-rust-ready-for-enterprise-adoption/sub/is-rust-language-ready-for-enterprise-adoption-sum-54yCDYud7csgx3sbT9GAFd>`_
 * Spoke at the Bangalore Python Meetup about using Rust as a Python developer -
   `Explicit is Better than Implicit - Rust for Pythonistas <https://www.youtube.com/watch?v=62yfBiHrUis>`_
+* Livecasted myself reading the `PostgreSQL Documentation <https://youtube.com/playlist?list=PLyW7jj8atph9VO9UoMPXIKNiyK-q5GZWj>`_ over a weekend for fun.
 * Spoke at PyCon India 2019 on `MicroPython: Building a Physical Inventory
   Search Engine. <https://www.youtube.com/watch?v=aEYftBZz6ag>`_
 * Built a visualization dashboard atop of BitBucket and Github, to visualize
