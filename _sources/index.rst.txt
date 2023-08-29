@@ -35,6 +35,7 @@ any employer, past or present.
    :caption: Recent Posts
    :maxdepth: 1
 
+   posts/life/learning-to-swim.rst
    posts/technology/crews-not-teams.rst
    posts/life/career/learning.rst
    posts/life/career/memories-of-a-shopfloor.rst

@@ -1,5 +1,857 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Resources and References</title><link>https://stonecharioteer.com/posts/technology/resources.html</link><description>
+<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>The Two of Three Rule</title><link>https://stonecharioteer.com/posts/2022/two-of-three-rule.html</link><description>
+&lt;span id="two-of-three"/&gt;&lt;span id="index-0"/&gt; 
+&lt;div class="admonition-meta admonition"&gt;
+&lt;p class="admonition-title"&gt;Meta&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original Publication Date&lt;/strong&gt;&lt;/p&gt;
+&lt;dl class="field-list simple"&gt;
+&lt;dt class="field-odd"&gt;Date&lt;/dt&gt;
+&lt;dd class="field-odd"&gt;&lt;p&gt;May 19, 2022&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;p&gt;How do you decide when to join a company, when to stay and when to leave?&lt;/p&gt;
+&lt;p&gt;I’ve worked at my fair share of companies, both &lt;em&gt;in&lt;/em&gt; and &lt;em&gt;out&lt;/em&gt; of the computer
+technology space. I don’t think I’m leaving companies because I have a problem
+with consistency; in fact it’s quite the opposite.&lt;/p&gt;
+&lt;p&gt;I’m a trained statistician. I worked on a motorcycle manufacturing shop floor
+for 3 years of my early career, and compared to tech companies, that was &lt;em&gt;hell&lt;/em&gt;.
+However, the lessons I learnt there have moulded me forever.&lt;/p&gt;
+&lt;p&gt;The most important lessons revolved around a statistical quality tool called
+&lt;em&gt;control charts&lt;/em&gt; or &lt;em&gt;Shewart charts&lt;/em&gt;, named after &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Walter_A._Shewhart"&gt;Walter A. Shewart,&lt;/a&gt; who pioneered them.
+Shewart’s name is spoken in the same tones as that of &lt;a class="reference external" href="https://en.wikipedia.org/wiki/W._Edwards_Deming"&gt;Deming,&lt;/a&gt; who is responsible for the
+&lt;a class="reference external" href="https://mitpress.mit.edu/books/out-crisis"&gt;14 Principles of Management.&lt;/a&gt;&lt;/p&gt;
+&lt;section id="an-aside-control-charts"&gt;
+&lt;h2&gt;An Aside - Control Charts&lt;/h2&gt;
+&lt;p&gt;A control chart, in its multiple forms, monitors a process for changes in a
+&lt;em&gt;specific&lt;/em&gt; parameter, designated as the &lt;em&gt;control&lt;/em&gt; parameter. This parameter
+helps us measure a desired outcome of a process. If a factory wishes to produce
+a shaft of diameter 25mm with a tolerance of 1mm on either side, then they
+should strive to make shafts from 24-26mm in size. While that’s a worthwhile
+exercise, it’s better to &lt;em&gt;further&lt;/em&gt; limit the manufacturing process so that while
+the process sticks to the design requirements, it is also consistent within
+itself. This doesn’t mean you’re striving for a better design tolerance, but it
+speaks about &lt;em&gt;whether&lt;/em&gt; your process even &lt;em&gt;allows&lt;/em&gt; for better tolerances.
+The &lt;em&gt;control chart&lt;/em&gt; is a line plot that measures this parameter, or a statistic
+associated with it such as the average of a couple of readings taken at
+consistent timestamps. Control charts are divided into 2 areas, a portion of the
+chart is &lt;em&gt;above&lt;/em&gt; a line called the control limit (CL), and the range of values
+is bounded on either side by an Upper Control Limit (UCL), and a Lower Control
+Limit (LCL), which tell us &lt;em&gt;how&lt;/em&gt; much our process is &lt;em&gt;capable&lt;/em&gt; of fluctuating.&lt;/p&gt;
+&lt;figure class="align-default" id="id2" style="width: 450px"&gt;
+&lt;img alt="../../_images/control-charts.png" src="../../_images/control-charts.png"/&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;A sample control chart, marking the limits and showing how a process is
+slowly deviation from its control limits.&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;These limits aren’t decided by us. Indeed, they have &lt;em&gt;nothing&lt;/em&gt; to do with the
+tolerances that the design engineer has set. Instead, they have everything to do
+with the statistical limits of your process. That means that the last 25
+readings you take in your process decide the UCL, CL and LCL for the next couple
+of readings.&lt;/p&gt;
+&lt;div class="admonition tip"&gt;
+&lt;p class="admonition-title"&gt;Tip&lt;/p&gt;
+&lt;p&gt;25 is an arbitrary number, mind you. It is the &lt;em&gt;bare minimum&lt;/em&gt; that you need
+to start plotting charts. However, it is not even statistically viable to do
+this. Instead start with a 100 readings if you want to do some meaningful
+analytics of process control study.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If 7 consecutive readings on a control chart fall on one side of the limits,
+that’s your chart telling you that you have &lt;em&gt;serious&lt;/em&gt; problems. Your process is
+slowly deviating to one side of your limits. It doesn’t need to be negative by
+the way. Perhaps you &lt;em&gt;want&lt;/em&gt; your process to shift in one direction. This is an
+indication that whatever you’re doing to your process is shifting the metric to
+one side.&lt;/p&gt;
+&lt;p&gt;These shifts are &lt;em&gt;predicatable&lt;/em&gt;, and they also indicate a shift in your process
+that could arise from inherent causes. However, there are sudden shifts that
+could happen because of uncontrollable causes. These problems will not cause
+long-lasting errors in your readings, and they’re usually the sort that need a
+lot of brain-wracking to solve immediately. If they’re not addressed
+immediately, this will indicate that something is really wrong with your process
+management, and not really reflect whether your process is doing well or now.&lt;/p&gt;
+&lt;p&gt;While a control chart is something you can definitely use in technology
+companies – in fact, control charts are strongly associated with LEAN
+manufacturing, but I’m not experienced enough at Software applications in LEAN
+to say whether these are actually used in a tech company – this article is
+&lt;em&gt;not&lt;/em&gt; about the applications of LEAN manufacturing methods in software
+development. Instead, it’s about my career. It’s even about your career.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="when-do-you-join-a-company"&gt;
+&lt;h2&gt;When Do You Join a Company?&lt;/h2&gt;
+&lt;p&gt;I’m dividing this article into two parts. First, think about why you’d join a
+company. You’ve left an older company, and the reasons why are irrelevant – for
+now.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;You’ve interviewed with a company, and this has involved anywhere from a
+couple of hours to weeks of your time. If this company has a lengthy
+interview process that requires a DevOps engineer to know how to invert a
+Binary Tree or how to write a Binary Tree where every node is a Linked List,
+then this process could also have taken months of your time.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You have an offer from them that cites &lt;em&gt;concrete&lt;/em&gt; numbers that you find
+attractive. Let’s not kid ourselves, there’s money involved. Money is
+&lt;em&gt;always&lt;/em&gt; involved.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You spoke to a couple of cool people who you &lt;em&gt;may&lt;/em&gt; work with, or at least
+grab a beer with at the office parties.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You also like what the manager seems to promise that you &lt;em&gt;may&lt;/em&gt; work on.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Think about those four points for a moment.&lt;/p&gt;
+&lt;p&gt;The first one is sunk cost. You’ve invested time into the process. You’ve
+invested your effort. &lt;em&gt;Set this aside for now.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The second is money. Money. &lt;em&gt;Money&lt;/em&gt;. You now have bragging rights on
+teamblind.com and you can leave reviews on Glassdoor.com and levels.fyi,
+improving the sample size for what is obviously a very positively or a very
+negatively skewed chart.&lt;/p&gt;
+&lt;p&gt;The third is people. You have laughed with them during the interview. Perhaps
+they were amazed at your data structures and algorithms prowess. Or perhaps one
+of them told you that your installation of Pi-Hole and Unbound could be
+improved; this happened to me, and I joined Merkle Science because I trust this
+dude. This is an interesting point, but it &lt;em&gt;depends&lt;/em&gt; on what sort of a person
+you are. It might not matter to you. Your colleagues are your colleagues, and
+perhaps they’re not going to be your friends.&lt;/p&gt;
+&lt;p&gt;The fourth is work. Actual work. You are promised a paintbrush and the Sistine
+Chapel. However, it depends on your personal goals. Maybe you wanted to be a
+sculptor and not a painter. Perhaps you wanted to write Rust and not Golang.&lt;/p&gt;
+&lt;p&gt;So when do you join a company? Perhaps, quite simply put, when one of them is so
+convincing that you ignore the others. When I say &lt;em&gt;one of them&lt;/em&gt;, I mean points
+two to five. If you’re joining a company because of the sunk cost fallacy, then
+you have different problems, and you’ll quickly move on to the next part of this
+post.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="when-do-you-leave-a-company"&gt;
+&lt;h2&gt;When Do You Leave A Company?&lt;/h2&gt;
+&lt;p&gt;When you decide to leave a company, what pushes you out the door? There are
+several things.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Internal politics; I know I’ve run away from that a couple of times.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Poor pay; Perhaps your manager cannot fight for your rightful worth.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Horrible work; Nothing pushes me out the door better than SharePoint and
+Oracle SQL.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Horrible boss; Perhaps he’s not promoting you because of some reason you
+think is relevant.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Horrible peers; Perhaps you think your team members are not fun to work with.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Late promotion; You didn’t get that promotion you were promised 18 months
+ago.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You feel like you could go on? Sure, I used to think the same thing.&lt;/p&gt;
+&lt;p&gt;But today I don’t. I think there are only three reasons why you’d want to leave.
+Actually there will only ever be two reasons why you’d want to leave.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Pay&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;People&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Work&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Wherever you go, whatever the company, there will only be these three things
+that you need to decide whether to join the company, whether to stay there, or
+whether to leave.&lt;/p&gt;
+&lt;p&gt;If you’re running your own company, there will only be these three reasons that
+you can use to hire or keep great people at your company.&lt;/p&gt;
+&lt;p&gt;But what about all the other points?&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="the-three-control-parameters-of-a-career"&gt;
+&lt;h2&gt;The Three Control Parameters of a Career&lt;/h2&gt;
+&lt;p&gt;This is where I come full circle with my control chart paradigm. The three
+points that I brought up in the previous section have everything to do with
+control charts. No, I don’t need you to plot statistical charts to monitor them,
+but you’re already plotting such charts in your head, subconsciously.&lt;/p&gt;
+&lt;p&gt;Wherever you go, whichever the company, the only three things you will feel
+changes in, the only three &lt;em&gt;control parameters&lt;/em&gt; you are granted, are pay, people
+and work.&lt;/p&gt;
+&lt;p&gt;And this is a page I’m taking out of distributed programming, and the CAP
+theorem.&lt;/p&gt;
+&lt;div class="tip admonition"&gt;
+&lt;p class="admonition-title"&gt;CAP Theorem&lt;/p&gt;
+&lt;p&gt;The CAP theorem says that for any distributed data store, you will never be
+able to achieve high consistency and high availability when a partition
+occurs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Wherever you work, you will &lt;em&gt;never&lt;/em&gt;, &lt;strong&gt;ever&lt;/strong&gt;, achieve great pay, great people
+and great work.&lt;/p&gt;
+&lt;p&gt;Wherever you go, strive to get &lt;em&gt;one&lt;/em&gt; great thing. Get great pay, great people,
+or great work. &lt;em&gt;Just one&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Of the rest, choose a place where one of them is &lt;em&gt;bearable&lt;/em&gt;. You will find
+places with &lt;strong&gt;great pay and okay work&lt;/strong&gt;, or &lt;strong&gt;great work and okay pay&lt;/strong&gt;, or &lt;strong&gt;great
+work and okay people&lt;/strong&gt;, or &lt;strong&gt;great pay and okay people.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;And the last parameter? Well… it will &lt;em&gt;automatically&lt;/em&gt; be horrible.&lt;/p&gt;
+&lt;p&gt;It doesn’t matter how great you think your company is. One of these three
+features is going to be amazing.&lt;/p&gt;
+&lt;p&gt;You will love your work, you will find your colleagues okay to hang around, and
+you will bemoan your pay.&lt;/p&gt;
+&lt;p&gt;You will love your pay, you will find your work palatable, and you will loathe
+your collegues.&lt;/p&gt;
+&lt;p&gt;You will love your colleagues, you will find your pay acceptable, and you will
+fear signing in every day because your work is pointless.&lt;/p&gt;
+&lt;p&gt;You will love your work, you will find your pay is acceptable, and you will hate
+your colleagues.&lt;/p&gt;
+&lt;p&gt;You will love your pay, you will be able to withstand your colleagues, and your
+work will be ridiculous in your eyes.&lt;/p&gt;
+&lt;p&gt;I could go on.&lt;/p&gt;
+&lt;p&gt;The point is that irrespective of your company – &lt;em&gt;irrespective&lt;/em&gt; of your company
+– this will be true. If you want to join a company, or, if you want to stay at a
+company, you must love one of these three things the company can give you, and
+you must find one of the other two to be acceptable. You will &lt;em&gt;hate&lt;/em&gt; the third
+thing, so make sure it’s something you’re not passionate about.&lt;/p&gt;
+&lt;p&gt;But as a hiring manager, or a CEO or CTO, what can you do? Make pay
+exhorbitantly high and make the work amazing? No. That’ll only attract
+psychopaths who hate working together. Remember that the two things that matter
+to people &lt;em&gt;vary&lt;/em&gt; from person to person. One employee might want amazing work for
+mediocre pay - how do you motivate her to work on database administration if
+what she loves is hardcore engineering? One employee might care about his
+colleagues, he loves to discuss the technical aspects with a team that’s the
+sort you hear from on stage at Goto Conf and KubeConf, and he’s okay as long as
+the work is bearable. Pay doesn’t matter to him. How will you try to attract
+this sort of employee. Then there’s the sociopath who wants amazing pay and
+bearable work. He’s not going to care about what sort of people he works with –
+he’ll be polite to them of course, but then he only cares about delivering
+excellent work himself. What will you offer him?&lt;/p&gt;
+&lt;p&gt;So when do you leave?&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="id1"&gt;
+&lt;h2&gt;The Two Of Three Rule&lt;/h2&gt;
+&lt;p&gt;You must definitely leave when two of the three control parameters are horrible.
+Think of your job as a see-saw. On one side is the “great” control parameter,
+and on the other is the “horrible” parameter. At the center is the fulcrum,
+which can move either to the good side or the bad side. That’s where the third
+parameter is currently concentrated. And that’s the important part, surprisingly.&lt;/p&gt;
+&lt;p&gt;When this parameter is right at the center you realize that it doesn’t really
+make you super happy, but that it’s also not annoying you constantly. It’s a
+fine balance between the great parameter and the horrible parameter.&lt;/p&gt;
+&lt;p&gt;Yes, it’s not the “great” parameter, or the “horrible” parameter that decides
+when you will leave. Instead it’s a shift in the central parameter that you once
+found &lt;em&gt;palpatable&lt;/em&gt;, &lt;em&gt;bearable&lt;/em&gt; or &lt;em&gt;just okay&lt;/em&gt;, when you joined.&lt;/p&gt;
+&lt;p&gt;When &lt;em&gt;that&lt;/em&gt; parameter shifts to the horrible side, it doesn’t matter how &lt;em&gt;great&lt;/em&gt;
+the other parameter is.&lt;/p&gt;
+&lt;p&gt;Your pay could be astounding, but you will not be able to work on a horrible
+project with horrible people.&lt;/p&gt;
+&lt;p&gt;Your colleagues could all be amazing engineers, but nothing will make you work
+on stuff you &lt;em&gt;hate&lt;/em&gt; for peanuts.&lt;/p&gt;
+&lt;p&gt;Your work could be amazing and will revolutionize the world, but you cannot work
+on it with people you do not get along with, for horrendous pay.&lt;/p&gt;
+&lt;p&gt;If two of these parameters are on the horrible side, it doesn’t matter just how
+amazing the other parameter is. Your constant annoyance at the other two will
+upset you constantly. Indeed, the fact that a parameter you found just
+&lt;em&gt;bearable&lt;/em&gt; and not an annoyance is going to annoy you multiple times more than
+the other horrible parameter.&lt;/p&gt;
+&lt;p&gt;At any workplace, no matter how awesome, employees will care only about one
+of three things. People, Pay and Work. One of these things will drive people
+to join you, one of them will be something they don’t really find
+disagreeable, and one of them will be something they would rather not talk
+about with their friends. If the one thing that they don’t really hate tips
+too far to the other end, people will leave, and improving the one thing that
+was the driving factor will no longer make a difference.&lt;/p&gt;
+&lt;div class="info admonition"&gt;
+&lt;p class="admonition-title"&gt;The Two of Three Rule&lt;/p&gt;
+&lt;p&gt;Pay, People, Work. Pick one that you need to be awesome. Pick one that you
+don’t mind being lack-lustre. The third one &lt;em&gt;will&lt;/em&gt; be horrible. This rule
+holds at &lt;strong&gt;every&lt;/strong&gt; company; indeed, it holds at &lt;em&gt;any company&lt;/em&gt; you should and
+would work at. Shift the second factor, and you won’t want to work there, no
+matter how awesome the first factor you picked is.&lt;/p&gt;
+&lt;p&gt;The Two of Three Rule is: &lt;em&gt;Pay, people, work. Two of these three things will
+either make you really love your job, or really hate your job.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It’s funny how this works.&lt;/p&gt;
+&lt;p&gt;When I was at Flipkart, I was paid to write about books. I am a voracious
+reader, or I was at one point. I was being paid to write about J.R.R. Tolkien,
+about Dr. Seuss, and about the Wheel of Time. Sure, there were moments I was
+writing about horrible books that I feel aren’t worth the paper they’re printed
+on, but that didn’t matter to me. So the work was &lt;em&gt;okay&lt;/em&gt;. The pay was &lt;em&gt;bad&lt;/em&gt;. I
+was earning peanuts before, and compared to that, this was okay pay, &lt;em&gt;bearable&lt;/em&gt;
+pay, but it was still &lt;em&gt;peanuts&lt;/em&gt;. The people I worked with were &lt;em&gt;fun&lt;/em&gt; to work
+with. I made several &lt;em&gt;friends&lt;/em&gt; among them, and I opened up to them like I never
+had with others. I was able to have lunch with them and talk about their lives.
+I was able to have heated discussions about comic books, about movies, and I was
+able to be myself.&lt;/p&gt;
+&lt;p&gt;What happened though? Why did I leave?&lt;/p&gt;
+&lt;p&gt;One day, the Catalogue team decided to scrap the books content. The team leads
+and the manager decided to tell me at the last minute. They didn’t even sugar
+coat that fact. That didn’t really matter, but it was the fact that they treated
+it as an afterthought that someone who constantly went on and on about how much
+he loved books would be “relieved” that he didn’t have to write about books
+again. It didn’t help that the news was also given to me by a team lead who was
+hired despite being clearly incompetent. I was doing the job of both team leads
+at that point. I had automated so much of their job, and they were really not
+doing much. The manager didn’t care about how much I was improving things.
+Instead, they chose to pull the rug from under my feet.&lt;/p&gt;
+&lt;p&gt;I left as soon as I found a new job. I wasn’t working with people I loved for
+horrible pay and horrible work.&lt;/p&gt;
+&lt;p&gt;Then I went to GKN.  I worked on some amazing projects, and I didn’t hate the
+people around me. Some of them are friends today, close friends who were there
+for me at hard moments. Here, I got shafted with the pay once again. At one
+stage, my salary was revised because I managed to prove to the HR how underpaid
+I was – this came under the threat of leaving the company. But it was still 30%
+of my market value at that point.&lt;/p&gt;
+&lt;p&gt;But eventually, the people I cared about were making plans to leave, or move
+away. And the people who were left around me became &lt;em&gt;toxic&lt;/em&gt;. The local leaders
+of my division were &lt;em&gt;toxic&lt;/em&gt;, and that made my life hell. I couldn’t hire
+competent team members since I wasn’t given power to do so.&lt;/p&gt;
+&lt;p&gt;I left within 3 months. I couldn’t change their minds. I couldn’t choose the
+people I worked with, I couldn’t build a team to build that amazing project my
+German boss wanted me to build – a project I still think about fondly.&lt;/p&gt;
+&lt;p&gt;Then I joined Visa. Here I got great pay. My colleagues were good people. And
+the work was horrendous. I left in two years because that changed, and it would
+have been sooner if not for The Great Pandemic of 2020.&lt;/p&gt;
+&lt;p&gt;I’m not explaining all of this to say that my workplaces were negative. No. I
+still recommend Visa to all my friends who want a good place to work. Remember,
+the &lt;em&gt;two&lt;/em&gt; things that matter to me out of the three might not be the same for
+you.&lt;/p&gt;
+&lt;p&gt;Control charts tell us that there’s something inherently wrong with a process.
+When a process begins to deviate from its established “norm”, it is slowly
+progressing to a stage where if you want it to go back to how it was, or to
+another &lt;em&gt;acceptable&lt;/em&gt; state, you need to exert considerable effort. Sometimes,
+this won’t be in your hands. This will instead be something you need your upper
+management to step in and change. And, oftentimes, you’ll find that they have no
+horse in this race.&lt;/p&gt;
+&lt;p&gt;If you want to hire good people who will work for you for a long time and
+deliver great things, ask them which of the three things matter to them, and
+ensure that you meet those two things. The definition of a “Great Place to Work”
+is multi-faceted. It is very different to different people, but you will find
+that for a given person, these points are more or less the same unless they have
+a life-changing event.&lt;/p&gt;
+&lt;p&gt;When I was at Visa, I lost my left ear due to circumstances not under my
+control. Indeed, no one at Visa could have helped me. That changed the ball game
+drastically. That’s what is called a random error in a control chart. In such a
+scenario, no one can help you really. In such times, as a leader, the only thing
+you can do is try to be there for your employees. But as an employee, you need
+to decide what matters to you and whether staying at a place will help you
+achieve that sooner.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;So the next time you’re evaluating an offer, or if you’re evaluating whether to
+leave a company or to stay; or if an employee is leaving and you’re trying to
+figure out how to convince her to stay, remember that money isn’t always the
+prime bargaining chip. Sometimes money doesn’t matter. It’s the other two that
+upset the scale.&lt;/p&gt;
+&lt;p&gt;There are always two out of three things that make or break the experience of
+working at a company. To me, today, that’s money and people. Money because of
+the responsibilities I have, and people because I don’t just want a team, but a
+&lt;em&gt;crew&lt;/em&gt;. I want a &lt;em&gt;unit&lt;/em&gt; that functions together. The work is after the fact in
+my opinion. To others, those scales are definitely going to be different.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="references"&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;p&gt;These are a list of books I love recommending if you’re interested in the topic
+of statistics and process control.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Edward Deming - Out of the Crisis&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Walter A. Shewart - Statistical Method From the Viewpoint of Quality Control&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Taiichi Ohno - Toyota Production System: Beyond Large-Scale Production&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Taiichi Ohno - Workplace Management&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These books were written in a time where statistical quality control was applied
+predominantly to manufacturing processes, but I’d recommend looking at them
+through the lens of a general engineer, as opposed to a software engineer. If
+you ever find yourself wanting to discuss these topics, I’m always available.
+Reach out to me &lt;a class="reference external" href="https://twitter.com/stonecharioteer"&gt;on Twitter.&lt;/a&gt;&lt;/p&gt;
+&lt;/section&gt;
+</description><pubDate>Tue, 29 Aug 2023 00:00:00 </pubDate></item><item><title>Learning to Swim</title><link>https://stonecharioteer.com/posts/life/learning-to-swim.html</link><description>
+&lt;span id="swimming-01"/&gt;&lt;span id="index-0"/&gt; 
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;This post &lt;em&gt;should&lt;/em&gt; have photos of the things I fear. It does not because I’m
+terrified to look at them. I do have photos of me in swimming gear and my
+pool, but by learning to swim, I have not &lt;em&gt;conquered&lt;/em&gt; my fear. I merely face
+it.&lt;/p&gt;
+&lt;p&gt;If you want the TLDR; of this post, you might want to check out my
+&lt;a class="reference internal" href="#swimming-progress"&gt;&lt;span class="std std-ref"&gt;progress table.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;section id="fear"&gt;
+&lt;h2&gt;Fear&lt;/h2&gt;
+&lt;p&gt;I am terrified of water tanks, stepped wells, regular wells, temple tanks, over
+head water tanks, monolithic statues partially or fully submerged. I’m not
+fully scared of oceans, rivers, ponds or lakes. What I have is termed
+&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Submechanophobia"&gt;submechanophobia&lt;/a&gt;, but oddly
+enough I’m not too scared of watching documentaries of the Titanic Wreck. I’m
+absolutely terrified of looking at even photos or videos of the former stuff
+though.&lt;/p&gt;
+&lt;p&gt;I’m &lt;em&gt;beyond&lt;/em&gt; terrified of these things because in my ancestral home in Hampi,
+we have a &lt;em&gt;well&lt;/em&gt; in the bathroom. This is par for the course for the older homes
+in South India - especially older homes of Brahmins (that’s a topic for later).
+We also had a water tank, one built out of brick and concrete in the bathroom.
+It was &lt;em&gt;massive&lt;/em&gt; to my childhood self, and it was about 6ft x 6ft x 3ft
+(length, breadth, and height) in size.&lt;/p&gt;
+&lt;p&gt;I used to bathe in the open, in a makeshift washroom which was used to wash
+utensils, in fact, for almost my entire life, because my grandmother promised
+me that I could and no one could ever question my right to do so. The house now
+has two other bathrooms, so even though the water tank is long gone, broken apart
+at the behest of my grandmother and maternal aunt, I still do not enter because
+the well is still there, and I can see the tank in my imagination quite well.&lt;/p&gt;
+&lt;p&gt;One of my paternal aunt claims that when I was a child, she had once scared me
+by attempting to dunk me into that tank. She says this proudly (More on that in
+another post). I do not remember. All I remember whenever I think about tanks
+is &lt;em&gt;death&lt;/em&gt;. Deeply terrifying death. Which is weird because I’ve assumed I do
+not fear death. I guess I am human after all.&lt;/p&gt;
+&lt;p&gt;Another thing I fear the most has something to do with the monolithic statues
+at Hampi. There is a Shiva Lingam in Hampi that I am absolutely terrified off.
+I visit it every time I go to Hampi. It is known as the &lt;strong&gt;Badava Lingam&lt;/strong&gt;, and
+it is located next to the Narasimha statue near the entrance to the ruins. This
+phallic symbol absolutely terrifies me. I cannot look at photos of it, I
+sometimes have nightmares about it, and I randomly have a sinking feeling that
+wherever I am in the world, if I turn my head, I will see it. The reason I am
+so terrified of it is because of a Paternal Uncle who decided it was a great
+idea to &lt;em&gt;make&lt;/em&gt; a 9 year old boy who was already terrified of wells to approach
+a barely-lit temple, which housed a 20 foot &lt;em&gt;black&lt;/em&gt; monolith, &lt;em&gt;surrounded by
+pitch-black water&lt;/em&gt; in the &lt;em&gt;dusk&lt;/em&gt;. The temple &lt;em&gt;does not have lights to this
+day&lt;/em&gt;, and this happened in 1998. I remember having to kneel down and being
+forced to touch the water so that I can put some on my head. I remember crying
+and telling him that I didn’t want to do this, but when have Indians known how
+to bring up a child?&lt;/p&gt;
+&lt;p&gt;From that day on, I had been &lt;em&gt;terrified&lt;/em&gt; of the wells of Hampi, and of
+dimly-lit water bodies in general. I had never been near a stepped well, and I
+avoided that temple in particular for over 20 years. I visited it again, years
+later, when I &lt;a class="reference internal" href="../2021/2021-03-10-mahabharata-instagram.html#mahabharata"&gt;&lt;span class="std std-ref"&gt;read the Mahabharata by the Tungabhadra River&lt;/span&gt;&lt;/a&gt;, and I have visited the temple multiple times since. I don’t go
+close, I stay about 10ft away, but the last time I went there, in 2022, I asked
+the priest to pour some of the water on me. I stood closer, but I had my sister
+and mother with me. But I was still scared. One day I will write more about
+this particular feat, because it will probably be too incoherent with seemingly
+religious ramblings that I usually have when I speak about reading the epics by
+the Tungabhadra and about Hampi in general.&lt;/p&gt;
+&lt;p&gt;This entire section exists to help people that I have a &lt;em&gt;very strong, and very
+particular phobia&lt;/em&gt;. I am not “scared of water” in the general sense of it.
+However, I have a very strong imagination and when I’m in the water, I
+&lt;em&gt;remember&lt;/em&gt; these events extremely well.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="deciding-to-learn-to-swim"&gt;
+&lt;h2&gt;Deciding to Learn to Swim&lt;/h2&gt;
+&lt;p&gt;I was not really scared of swimming pools, as long as they’re well lit. But I
+never ever sat next to a pool and put my feet into the water. I’m only aware of
+putting my feet into the Tungabhadra river, because &lt;em&gt;she&lt;/em&gt; is home.&lt;/p&gt;
+&lt;p&gt;In February 2023, I began wondering if I should learn to swim. It’s an unvoiced
+dream, something I’d harboured all my life and I’d never ever imagined that I’d
+ever do. I didn’t tell anyone because the idea that &lt;em&gt;I would want to swim&lt;/em&gt;
+would usually be followed by “first, learn to go to the main bathroom at
+Hampi.”&lt;/p&gt;
+&lt;p&gt;My family never really went about addressing this fear well. They were
+dismissive of it, and, like I described above, my Paternal family was
+horrendous about this fear. I was a stubborn child. I only recently learnt how
+to process my fear.&lt;/p&gt;
+&lt;p&gt;Why did I decide to learn to swim in February 2023? It was an odd thing. I was
+looking at Coorg for my next workation trip, and chose a resort which happened
+to have a pool. I told myself, isn’t it odd that I selected such a resort and
+didn’t know how to swim or had ever so much as sat by a pool? I began wondering
+if it would be even possible to learn to swim. I had made new friends in 2022,
+Mehul and Susrita, who were both accomplished swimmers. I was wondering how
+feasible it was to learn to swim. I was 35, almost 36 when these thoughts went
+on in my head.&lt;/p&gt;
+&lt;p&gt;I told myself that I’d tell none of my family. And I didn’t tell anyone, except
+for my mother. My closest friends knew, and some of them knew just how
+important this was. Truth be told, I didn’t think I’d return to more than one
+class.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="enrolling-for-classes"&gt;
+&lt;h2&gt;Enrolling for Classes&lt;/h2&gt;
+&lt;figure class="align-default" id="id1" style="width: 350px"&gt;
+&lt;img alt="Zee Swim Academy" src="../../_images/zee-swim-academy.jpeg"/&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;The pool at &lt;a class="reference external" href="http://www.zeeswimacademy.com/"&gt;Zee Swim Academy, Kadugodi Bangalore&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;In February 2023, I decided to enroll for swimming lessons, and I began looking
+for schools around my house. I had other problems I somehow overcame thanks to
+a good friend. I have been anxious about my appearance since childhood. I was
+made fun of for being a fat child, and I’ve been left out of sports, games, and
+it eventually became such that I just &lt;em&gt;hated&lt;/em&gt; being around other kids my age
+because of how alone they made me feel. To add to this, I especially &lt;em&gt;hated&lt;/em&gt;
+wearing shorts. They would emphasize how fat my thighs were, and I didn’t want
+to relive this. I used to be the person who would wear jeans even in the
+&lt;em&gt;hottest&lt;/em&gt; summers. In January 2023, I went to Auroville and had the toughest
+time walking around in jeans. While I switched to kurta trousers, I didn’t
+really have a great time with them either. My friend Shrayas joined me at
+Auroville for the first two days and while he was completely unaware of my
+feelings of self-esteem, he was strutting around in shorts and was rather
+nonchallant about it. It somehow struck me that I &lt;em&gt;was&lt;/em&gt; being silly - although
+good luck to anyone who would have told me this to my face before my
+realization. I came back to Bangalore and began buying shorts. It is funny how
+I &lt;em&gt;almost&lt;/em&gt; always wear only shorts now. I feel super comfortable wearing them,
+and if not for that one trip to Auroville and Shrayas telling me he’d join me
+on a mere &lt;em&gt;whim&lt;/em&gt;, I would not have had that epiphany.&lt;/p&gt;
+&lt;p&gt;So in February, I was completely over my feelings for wearing shorts in public.
+I wore my shorts everywhere. I’m halfway certain that some of the shorts I wear
+now are mostly boxers, but shame be damned, I’m going to wear shorts.&lt;/p&gt;
+&lt;p&gt;So when my swimming lessons were to begin, I had the following concerns.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;What gear to do I need?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Will the pool be sufficiently lit?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Will the coach throw me into the water for me to get over the fear?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Will I even go the second day?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Will I get powered swimming goggles? (I have myopia, and I am blind without
+my glasses.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These were some of the questions I had, and I got answers for the glasses on
+Twitter. I was able to find powered swimming goggles and all the gear I needed
+at the Decathlon nearby.&lt;/p&gt;
+&lt;div class="admonition tip"&gt;
+&lt;p class="admonition-title"&gt;Tip&lt;/p&gt;
+&lt;p&gt;For those shopping at Decathlon for powered lenses, the online shop lists
+the “power” as &lt;em&gt;size&lt;/em&gt;, so I had to buy &lt;cite&gt;L:-5&lt;/cite&gt;, because -5 is the nearest to
+the power I have. Buy something just a little lesser than what you have. I
+have -5.5 and -5.25 vision, so I picked -5.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I picked &lt;a class="reference external" href="http://www.zeeswimacademy.com/"&gt;Zee Swim Academy&lt;/a&gt; just because it
+said it had a 50m long pool, and that it trained folks for competitions. The
+place has a great set of coaches for para-swimming competitions, and for state
+and national level children’s competitions. I enquired about the fees and
+signed up on February 9th, 2023.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="month-one"&gt;
+&lt;h2&gt;Month One&lt;/h2&gt;
+&lt;figure class="align-default" id="id2" style="width: 350px"&gt;
+&lt;img alt="Wearing a swim suit during my first week." src="../../_images/swim-suit-first-time.jpeg"/&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;Wearing a swim suit during my first week.&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;My very first day, I was taught a bunch of warmup exercises, and I was asked to
+get into the pool using the ladder at the shallow end. I didn’t know what to
+expect. The water was cold, but fortunately, I’d shifted to cold water baths in
+October 2022. I was asked to wade around the water, to walk around the wall,
+until the 15m mark. At 15m, my shoulders were inside the water. I’m 5’7”, so
+the water was about 4” at that point. Then, I was asked to “bubble out”, which
+is to say, I put my head in the water, look around and exhale slowly. I was a
+little anxious, but managed to do this much. I did just this a couple of times
+that day, and after 30 to 40 minutes, was asked to get out of the pool and go
+home. As I took my first steps outside the pool, I realized that my body felt
+so much heavier. After 30 minutes in the water, I felt like I’d somehow
+forgotten my body weight.&lt;/p&gt;
+&lt;p&gt;You must understand, I’d never really exercised until then. I’d been to the gym
+for 3 months in 2014, and I’d done 3 months of Yoga in 2019, but I’d never
+managed to stay interested in any of these things. I was completely out of
+shape, but I wasn’t really getting into swimming to get fit or anything.&lt;/p&gt;
+&lt;p&gt;I returned the second day, and my anxiety was reduced. I was taught how to
+float, and I must admit that I capsized like a poorly built cruise ship
+multiple times. I felt afraid kicking myself forward from the centre of my
+lane, away from the wall, and I felt panic dawning on me as I put my head under
+the water and lifted my legs up.&lt;/p&gt;
+&lt;p&gt;The first week, I couldn’t even float very well. Sure, I went a bit forward,
+and I managed to float a little, but not in a straight line. I was going
+diagonally, and when the coach asked me to kick my legs, I could manage only
+one or two kicks and I fumbled, standing up out of fear.&lt;/p&gt;
+&lt;p&gt;The second week, some stuff changed, but most of it managed to stay the same. I
+could float, but kicking and going ahead were super difficult. The coach asked
+me to use the kickboard to practice floating and kicking as I moved forward,
+but I’d stop thrice before reaching the 15m mark. Some of my other batch mates
+were at 25m already.&lt;/p&gt;
+&lt;figure class="align-default" id="id3" style="width: 350px"&gt;
+&lt;img alt="Somewhere one month into my classes." src="../../_images/jaws-tee-first-month.jpg"/&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;Somewhere one month into my classes.&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;I learnt somethings about myself, and about teaching in general from this
+experience. The coach was super appreciative about any and all progress, and
+managed to cheer me on for showing up and staying the entire hour. And I began
+catching myself every time I reacted negatively towards failure. It is weird,
+because I have constantly told myself I do not fear failure. I thought I did
+not. It’s how I switched my career multiple times, how I managed to learn
+things without giving up, especially when it came to my career. And for
+physical activities, I just didn’t have that same attitude. It might have
+something to do with the fact that I was ridiculed for not performing the
+morning assembly exercises at school - we had a PE teacher who should have
+never been allowed near children - then again, my school in Bangalore didn’t
+have more than a handful of faculty who should have been near children. I saw
+the children at ZSA perform and take their coach’s loud admonitions sportively.
+They cheered one another on, even in a sport that was not a team activity like
+football or cricket. It was very different from the atmosphere I was used to.&lt;/p&gt;
+&lt;p&gt;I went to classes each week, and my growth was slow, but it was visible. After
+two months of classes, I managed to reach the 25m mark by swimming with the
+kickboard, although doing so with the freestyle strokes was hard. I would stop
+multiple times to reach the point, and even then, at each stop I’d pause for
+minutes to catch my breath.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="months-two-to-three-fear-is-the-mind-killer"&gt;
+&lt;h2&gt;Months Two to Three - Fear is the Mind Killer&lt;/h2&gt;
+&lt;figure class="align-default" id="id4" style="width: 350px"&gt;
+&lt;img alt="Somewhere two months into my classes!" src="../../_images/month-two.jpg"/&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;Somewhere two months into my classes!&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;One day, after 2 months of classes, my coach called me to the deep end of the
+pool. I had not crossed the 25m mark, where I had to bounce up and down to keep
+my head out of the water. I was terrified, but my batch mates were also with
+me, and just recently, I’d been reminded of the one thing that would make a
+world of difference in my journey.&lt;/p&gt;
+&lt;blockquote class="epigraph"&gt;
+&lt;div&gt;&lt;p&gt;&lt;strong&gt;The Litany Against Fear&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;I must not fear.&lt;/div&gt;
+&lt;div class="line"&gt;Fear is the mind-killer.&lt;/div&gt;
+&lt;div class="line"&gt;Fear is the little-death that brings total obliteration.&lt;/div&gt;
+&lt;div class="line"&gt;I will face my fear.&lt;/div&gt;
+&lt;div class="line"&gt;I will permit it to pass over me and through me.&lt;/div&gt;
+&lt;div class="line"&gt;And when it has gone past I will turn the inner eye to see its path.&lt;/div&gt;
+&lt;div class="line"&gt;Where the fear has gone there will be nothing.&lt;/div&gt;
+&lt;div class="line"&gt;Only I will remain.&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;em&gt;Frank Herbert&lt;/em&gt; - &lt;strong&gt;Dune.&lt;/strong&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;When I stood over the deep end, trying to get into it so I could swim to
+&lt;em&gt;safety&lt;/em&gt;, all I told myself was this. &lt;em&gt;Fear is the mind-killer. Fear is the
+little-death that brings total obliteration.&lt;/em&gt; I repeated this under my breath
+several times, and then jumped into the water. The first time my toes touched
+the bottom of the deep end, I felt… nothing. I didn’t feel like I’d die, I
+didn’t feel like I’d erupt from fear. I really felt nothing. Only I remained.
+My choices mattered. I began kicking my feet, and my body began to remember
+that it could swim. I rose upwards, and I began moving forward, toward the
+safety of the wall.&lt;/p&gt;
+&lt;figure class="align-default" id="id5" style="width: 350px"&gt;
+&lt;img alt="Surviving my first dive into the 7ft deep end!" src="../../_images/first-time-diving.jpg"/&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;Surviving my first dive into 7ft!&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Doing it again a second and third time that day was still terrifying, and I
+hoped I would not have to do it again for a while. But I felt &lt;em&gt;good&lt;/em&gt;. I did it.
+I was in the deep end. I &lt;em&gt;still&lt;/em&gt; didn’t know how to swim well, or honestly at
+&lt;em&gt;all&lt;/em&gt;, but I did this.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="setting-goals-and-feeling-good"&gt;
+&lt;h2&gt;Setting Goals and Feeling Good&lt;/h2&gt;
+&lt;p&gt;I returned to swimming classes in July, after wrapping up a bunch of things I
+needed to in my private life, and I was doing worse than before. My batch mates
+had reached the deep end. I didn’t feel left behind, since everyone was
+cheering me on, and telling me that I’d do it in no time.&lt;/p&gt;
+&lt;p&gt;I was still stopping thrice to reach 25m, and for the rest of July, I spent my
+efforts on building my endurance. I tried to show up four times a week, and I
+pushed myself to swim till 25m every time. Things managed to improve, but I was
+still faltering and having trouble with swimming freestyle. But things
+improved.&lt;/p&gt;
+&lt;p&gt;You could say I spent about 3 months’ worth of classes before I managed to swim
+to the 35m mark with the kickboard. I was still uncomfortable there, and I
+stuck close to the wall, but surely yet steadily, I managed to push myself
+further and further.&lt;/p&gt;
+&lt;p&gt;And one day, I decided to return to the deep end. Fear is the mind-killer, I
+told myself, and I jumped back into the deep end and swam freestyle. To my
+surprise, I swam 35m without stopping. I must have made 18 stroke repetitions
+in all, and I managed to go without stopping.&lt;/p&gt;
+&lt;figure class="align-default" id="id6" style="width: 350px"&gt;
+&lt;img alt="End of August 2023 - First time doing 700m!" src="../../_images/august-end.jpg"/&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;End of August 2023 - 700m!&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;From that day on, I have returned to the pool, urging myself to swim to the deep
+end. It took me almost 4 months, but I did it. I manage to swim 300m without
+stopping when using the kickboard, and without the kickboard, I manage to get
+to the deep end (50m) only stopping once or twice at most.  I completed 700m on
+August 28, 2023, and I’m managing to jump into the deep end, and I’m able to
+dunk myself until the bottom and rise upwards again, confident that I will not
+fear.&lt;/p&gt;
+&lt;p&gt;I will not fear.&lt;/p&gt;
+&lt;p&gt;Something changes in you, when you face your fear. It dawns on you that
+somehow, doing the thing that you are terrified of, gives you willpower and
+energy. It doesn’t make you powerful, or a different person. Fear, quite
+simply, is the mind-killer. I am still not going to go near wells, stepped
+wells, overhead water tanks, reservoirs, or even near overly large water drums,
+but I will push myself to swim as much as I can.&lt;/p&gt;
+&lt;p&gt;Learn to swim. You will love every minute of it.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="my-progress"&gt;
+&lt;span id="swimming-progress"/&gt;&lt;h2&gt;My Progress&lt;/h2&gt;
+&lt;div class="table-wrapper colwidths-auto docutils container" id="id7"&gt;
+&lt;table class="colwidths-auto docutils align-default" id="id7"&gt;
+&lt;caption&gt;&lt;span class="caption-text"&gt;Table - Swimming Progress&lt;/span&gt;&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class="row-odd"&gt;&lt;th class="head"&gt;&lt;p&gt;Date&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;Distance Per Session&lt;/p&gt;&lt;/th&gt;
+&lt;th class="head"&gt;&lt;p&gt;Particulars&lt;/p&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class="row-even"&gt;&lt;td&gt;&lt;p&gt;February 2023&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;50m&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;First month of lessons, unable to cross the 15m mark out of fear. Still having trouble with freestyle swimming, can do 2 strokes before having to stand because I can’t breathe.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-odd"&gt;&lt;td&gt;&lt;p&gt;March 2023&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;100m&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;I managed to get till the 20 m marker, but I was still unable to freestyle swim. I was flailing all over the place, and I was capsizing.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-even"&gt;&lt;td&gt;&lt;p&gt;April 2023&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;100m (not sure)&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;I skipped about 2 weeks in April, mostly because I was out of town, but I returned mid-April I think. I was still struggling to complete laps of 25m.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-odd"&gt;&lt;td&gt;&lt;p&gt;May 2023&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;300m&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;I am still at the 25m mark, but my coach helped me dive into the deep end 2-3 times on my last day before my break.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-even"&gt;&lt;td&gt;&lt;p&gt;June 2023&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul class="simple"&gt;
+&lt;li/&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Didn’t go to the classes; attempted to swim in my neighborhood pool, but didn’t enjoy it as such.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-odd"&gt;&lt;td&gt;&lt;p&gt;July 2023&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;300m – 500m&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;I returned to classes after a 45day break, was able to go till the 25m mark, but for the entire of July, I stuck to 25m. Managed to do about 10 laps in all by the end of July.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-even"&gt;&lt;td&gt;&lt;p&gt;August 2023&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;500m-600m&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;I began focussing on my leg skills, using the kickboard to go till 25, and then 35m without stopping. Once I managed to do a week of 35m laps, my friends helped motivate me to go to the deep end once more. I dove into the deep end a couple of times, but I’m still unable to thread water. I want to build up the endurance to do multiple laps of this pool.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-odd"&gt;&lt;td&gt;&lt;p&gt;August 21, 2023&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;600m&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;I’m managing to do 150m using the kickboard, and I’m feeling the burn on my legs. It is a great feeling, being in the water again. And the best part is that I’m making tangible progress now!&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-even"&gt;&lt;td&gt;&lt;p&gt;August 24 2023&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;600m&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;300m freestyle; 250m kickboard; 50m backstroke.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class="row-odd"&gt;&lt;td&gt;&lt;p&gt;August 28, 2023&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;700m&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;300m freestyle (2-3 stops per 50m, but I’m working on taking in 2 sets of strokes before I take a breath); 
+300m with the kickboard (I do the entire 300m without stopping now)
+100m backstroke (with kickboard) - I did 25m x 2 sets (so that’s 50m x 2).&lt;/p&gt;
+&lt;p&gt;That’s 700m in all!&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</description><pubDate>Tue, 29 Aug 2023 00:00:00 </pubDate></item><item><title>Resume - Vinay Keerthi K. T.</title><link>https://stonecharioteer.com/resume/resume.html</link><description>
+ 
+&lt;hr class="docutils"/&gt;
+&lt;section id="chainsafe"&gt;
+&lt;h2&gt;ChainSafe&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Technical Team Lead&lt;/strong&gt; | &lt;strong&gt;Fully Remote&lt;/strong&gt; | Started: &lt;strong&gt;November 2022&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Managed a team of 4, providing technical and career-based guidance.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on a networking library integrating &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;libp2p&lt;/span&gt;&lt;/code&gt; with blockchain protocols.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reviewed Rust code across projects, providing insight into improving code
+quality and adherance to the core spirit of the language.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="merkle-science"&gt;
+&lt;h2&gt;Merkle Science&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Lead Software Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; - &lt;strong&gt;Remote&lt;/strong&gt; | Started: &lt;strong&gt;JULY 2021 - November 2022&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Built a team for internal tooling, managed scouting for talent, hiring and
+interviewing.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for the &lt;strong&gt;Polkadot&lt;/strong&gt; blockchain for internal use, exposed
+via &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyO3&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;maturin&lt;/span&gt;&lt;/code&gt; into &lt;strong&gt;Python.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for &lt;strong&gt;Hedera hashgraph,&lt;/strong&gt; to ingest data from the mainnet
+API into our local data stores.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conceptualized and developed the data-engineering toolkit - a multi-faceted
+&lt;strong&gt;CLI&lt;/strong&gt; that facilitates the movement of data across data stores, and opens up
+our data layers for quality and consistency-related metrics, using &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed the alerting system for all our services.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed and wrote the data quality service using &lt;strong&gt;Rust&lt;/strong&gt; - this application goes
+through the data of various &lt;strong&gt;blockchains&lt;/strong&gt; to identify missing or newer data.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed a load-balancer to place over our blockchain nodes (internal and
+vendor-hosted). Led a team of 2 engineers who built this.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed and wrote a websocket client to ingest blockchain data from various
+websocket implementions of chains using &lt;strong&gt;Rust.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Overhauled &lt;strong&gt;Apache Airflow DAGs&lt;/strong&gt; for modularity.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Developed a central &lt;strong&gt;Python&lt;/strong&gt; library for all utilities and internal code.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="visa-inc"&gt;
+&lt;h2&gt;VISA Inc.&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Sr. Software Engineer - Data Platform&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;MAY 2019 - June 2021&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Designed and spearheaded the security portal project, a REST layer that
+facilitates automation of Qualys security updates for PCI compliance while
+adhering to company-specific rules regarding service availability, using OSS
+and internal APIs to minimize maintenance time. Reduced contractual manpower
+by 75% and downtime by 70 hours a month for 2400 servers.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Developed a library to create concurrent and self-cleaning containerized
+sessions that can be used to automate parallel workflows for testing and
+automation of complex applications: example threat analysis of cross-border
+transactions using a single VISA card.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mentored college graduates to build their first applications, integrating
+native pipelines, helped them craft detailed documentation and tune the performance
+of their apps.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Developed internal tools to orchestrate servers, including a tool to run
+parallel ssh-based connections, like &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ansible&lt;/span&gt;&lt;/code&gt;, but with company-specific requirements.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed and developed a tool that allows developers to quickly get started with
+projects, building pipelines and bootstrapping the initial code for them, while
+setting up quality checks, running automated tests and uploading artifacts to
+the right registry in JFrog Artifactory.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conducted Python workshops with a varied audience, training them on how to set up
+Python projects, how to package them and how to build python modules so that they are
+shareable.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mentored and trained SDE-1s and interns, guiding them in design and implementation details.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="gkn-aerospace-india"&gt;
+&lt;h2&gt;GKN Aerospace India&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;DEC 2015 - MAY 2019&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Built a company-wide search engine that indexed all files in an Elastic-Search
+server and allowed users to query even the contents of files such as spreadsheets
+&lt;em&gt;and&lt;/em&gt; 3D models of Gearboxes using specific classification criteria.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Built wrapper libraries in Python leveraging &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyCuda&lt;/span&gt;&lt;/code&gt; and NVIDIA libraries
+for engineers to use within &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Jupyter&lt;/span&gt;&lt;/code&gt; notebooks.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Managed &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Jenkins&lt;/span&gt;&lt;/code&gt; pipelines and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Subversion&lt;/span&gt;&lt;/code&gt; source code registry singlehandedly.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed and developed a microservice-based application to automate complex
+engineering pipelines involving proprietary software and protocols.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed the system interaction and data pipelines for a large-scale
+application that submits HPC jobs to servers placed across the world.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conducted annual training in Python and Data Analytics for Mechanical Engineers.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="flipkart-internet-pvt-ltd"&gt;
+&lt;h2&gt;Flipkart Internet Pvt. Ltd.&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Copy Editor / Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;FEB 2014 - DEC 2015&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Used &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyQt&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Python&lt;/span&gt;&lt;/code&gt; to build a work allocation tool for writers,
+that allowed them to report their work and set up pipelines for editors
+and content-creators to leverage their output.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Created an application to generate thousands of
+&lt;a class="reference internal" href="../_images/grid-world.png"&gt;&lt;img alt="web" src="../_images/grid-world.png" style="height: 32px;"/&gt;&lt;/a&gt; &lt;a class="reference external" href="https://stonecharioteer.com/posts/2018/leonardo.html"&gt;Infographics on Products for sale during the Big Billion Day&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="tech-stack"&gt;
+&lt;h2&gt;Tech Stack&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Programming Languages: Rust, Python, Javascript&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Web Frameworks: Flask, Express, Rocket&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;UI: React, CSS, ES6&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Containers: Docker, Podman, Kubernetes&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Others: RabbitMQ, Elastic Search, Redis, Jenkins, Gitlab CI, pre-commit&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="personal-projects-oss"&gt;
+&lt;h2&gt;Personal Projects &amp;amp; OSS&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Write regularly about technology and a life as a software engineer at
+&lt;a class="reference external" href="https://stonecharioteer.com"&gt;stonecharioteer.com&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Spoke at IndiaFoss2.0 in a Birds-of-a-feather event - &lt;a class="reference external" href="https://hasgeek.com/rootconf/is-rust-ready-for-enterprise-adoption/sub/is-rust-language-ready-for-enterprise-adoption-sum-54yCDYud7csgx3sbT9GAFd"&gt;Is Rust Ready for
+Enterprise Adoption?&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Spoke at the Bangalore Python Meetup about using Rust as a Python developer -
+&lt;a class="reference external" href="https://www.youtube.com/watch?v=62yfBiHrUis"&gt;Explicit is Better than Implicit - Rust for Pythonistas&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Livecasted myself reading the &lt;a class="reference external" href="https://youtube.com/playlist?list=PLyW7jj8atph9VO9UoMPXIKNiyK-q5GZWj"&gt;PostgreSQL Documentation&lt;/a&gt; over a weekend for fun.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Spoke at PyCon India 2019 on &lt;a class="reference external" href="https://www.youtube.com/watch?v=aEYftBZz6ag"&gt;MicroPython: Building a Physical Inventory
+Search Engine.&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Built a visualization dashboard atop of BitBucket and Github, to visualize
+developer productivity and project momentum using statistical control charts.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Regularly conduct workshops on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Flask&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Python&lt;/span&gt;&lt;/code&gt; at the Bangalore
+Python meetup group - &lt;a class="reference external" href="https://www.youtube.com/watch?v=xickNijifOs"&gt;Web Application Security with OWASP Principles,&lt;/a&gt; &lt;a class="reference external" href="https://www.youtube.com/watch?v=1C7Oj0KEhgo"&gt;Flask Workshop&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Built my own Raspberry Pi Kubernetes Cluster out of 4 Raspberry Pi 4 and 4 Raspberry Pi Zero W boards.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Built my own Mechanical Keyboards using the QMK framework.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Completed the Advanced Kubernetes Training from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;learnk8s.io&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="other-experience"&gt;
+&lt;h2&gt;Other Experience&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;FEB 2011 - FEB 2014&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Trained in using statistical control methods for improving quality and production
+at TVS group companies.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Interned at IISc, Bangalore, used Python to study the strength of airplane wing composites.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr class="docutils"/&gt;
+&lt;/section&gt;
+</description><pubDate>Wed, 28 Jun 2023 00:00:00 </pubDate></item><item><title>Resources and References</title><link>https://stonecharioteer.com/posts/technology/resources.html</link><description>
 &lt;span id="resources"/&gt; 
 &lt;p&gt;This section will host a list of my resources and references,
 usually stuff I’ve enjoyed reading from someone else’s blogs
@@ -1155,133 +2007,6 @@ If some tasks are less glorious but improve things long-term, then so be it. If
 you work alongside sculptors, it doesn’t hurt to be the one to offer to sharpen
 their chisels.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Be a crew. Build a crew. Find a crew.&lt;/strong&gt;&lt;/p&gt;
-</description><pubDate>Thu, 18 Aug 2022 00:00:00 </pubDate></item><item><title>Resume - Vinay Keerthi K. T.</title><link>https://stonecharioteer.com/resume/resume.html</link><description>
- 
-&lt;hr class="docutils"/&gt;
-&lt;section id="merkle-science"&gt;
-&lt;h2&gt;Merkle Science&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Lead Software Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; - &lt;strong&gt;Remote&lt;/strong&gt; | Started: &lt;strong&gt;JULY 2021&lt;/strong&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Built a team for internal tooling, managed scouting for talent, hiring and
-interviewing.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for the &lt;strong&gt;Polkadot&lt;/strong&gt; blockchain for internal use, exposed
-via &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyO3&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;maturin&lt;/span&gt;&lt;/code&gt; into &lt;strong&gt;Python.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for &lt;strong&gt;Hedera hashgraph,&lt;/strong&gt; to ingest data from the mainnet
-API into our local data stores.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Conceptualized and developed the data-engineering toolkit - a multi-faceted
-&lt;strong&gt;CLI&lt;/strong&gt; that facilitates the movement of data across data stores, and opens up
-our data layers for quality and consistency-related metrics, using &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed the alerting system for all our services.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed and wrote the data quality service using &lt;strong&gt;Rust&lt;/strong&gt; - this application goes
-through the data of various &lt;strong&gt;blockchains&lt;/strong&gt; to identify missing or newer data.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed a load-balancer to place over our blockchain nodes (internal and
-vendor-hosted). Led a team of 2 engineers who built this.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed and wrote a websocket client to ingest blockchain data from various
-websocket implementions of chains using &lt;strong&gt;Rust.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Overhauled &lt;strong&gt;Apache Airflow DAGs&lt;/strong&gt; for modularity.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Developed a central &lt;strong&gt;Python&lt;/strong&gt; library for all utilities and internal code.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="visa-inc"&gt;
-&lt;h2&gt;VISA Inc.&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Sr. Software Engineer - Data Platform&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;MAY 2019 - June 2021&lt;/strong&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Designed and spearheaded the security portal project, a REST layer that
-facilitates automation of Qualys security updates for PCI compliance while
-adhering to company-specific rules regarding service availability, using OSS
-and internal APIs to minimize maintenance time. Reduced contractual manpower
-by 75% and downtime by 70 hours a month for 2400 servers.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Developed a library to create concurrent and self-cleaning containerized
-sessions that can be used to automate parallel workflows for testing and
-automation of complex applications: example threat analysis of cross-border
-transactions using a single VISA card.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mentored college graduates to build their first applications, integrating
-native pipelines, helped them craft detailed documentation and tune the performance
-of their apps.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Developed internal tools to orchestrate servers, including a tool to run
-parallel ssh-based connections, like &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ansible&lt;/span&gt;&lt;/code&gt;, but with company-specific requirements.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed and developed a tool that allows developers to quickly get started with
-projects, building pipelines and bootstrapping the initial code for them, while
-setting up quality checks, running automated tests and uploading artifacts to
-the right registry in JFrog Artifactory.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Conducted Python workshops with a varied audience, training them on how to set up
-Python projects, how to package them and how to build python modules so that they are
-shareable.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mentored and trained SDE-1s and interns, guiding them in design and implementation details.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="gkn-aerospace-india"&gt;
-&lt;h2&gt;GKN Aerospace India&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;DEC 2015 - MAY 2019&lt;/strong&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Built a company-wide search engine that indexed all files in an Elastic-Search
-server and allowed users to query even the contents of files such as spreadsheets
-&lt;em&gt;and&lt;/em&gt; 3D models of Gearboxes using specific classification criteria.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built wrapper libraries in Python leveraging &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyCuda&lt;/span&gt;&lt;/code&gt; and NVIDIA libraries
-for engineers to use within &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Jupyter&lt;/span&gt;&lt;/code&gt; notebooks.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Managed &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Jenkins&lt;/span&gt;&lt;/code&gt; pipelines and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Subversion&lt;/span&gt;&lt;/code&gt; source code registry singlehandedly.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed and developed a microservice-based application to automate complex
-engineering pipelines involving proprietary software and protocols.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed the system interaction and data pipelines for a large-scale
-application that submits HPC jobs to servers placed across the world.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Conducted annual training in Python and Data Analytics for Mechanical Engineers.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="flipkart-internet-pvt-ltd"&gt;
-&lt;h2&gt;Flipkart Internet Pvt. Ltd.&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Copy Editor / Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;FEB 2014 - DEC 2015&lt;/strong&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Used &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyQt&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Python&lt;/span&gt;&lt;/code&gt; to build a work allocation tool for writers,
-that allowed them to report their work and set up pipelines for editors
-and content-creators to leverage their output.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Created an application to generate thousands of
-&lt;a class="reference internal" href="../_images/grid-world.png"&gt;&lt;img alt="web" src="../_images/grid-world.png" style="height: 32px;"/&gt;&lt;/a&gt; &lt;a class="reference external" href="https://stonecharioteer.com/posts/2018/leonardo.html"&gt;Infographics on Products for sale during the Big Billion Day&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="tech-stack"&gt;
-&lt;h2&gt;Tech Stack&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Programming Languages: Rust, Python, Javascript&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Web Frameworks: Flask, Express, Rocket&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;UI: React, CSS, ES6&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Containers: Docker, Podman, Kubernetes&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Others: RabbitMQ, Elastic Search, Redis, Jenkins, Gitlab CI, pre-commit&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="personal-projects-oss"&gt;
-&lt;h2&gt;Personal Projects &amp;amp; OSS&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Write regularly about technology and a life as a software engineer at
-&lt;a class="reference external" href="https://stonecharioteer.com"&gt;stonecharioteer.com&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Spoke at IndiaFoss2.0 in a Birds-of-a-feather event - &lt;a class="reference external" href="https://hasgeek.com/rootconf/is-rust-ready-for-enterprise-adoption/sub/is-rust-language-ready-for-enterprise-adoption-sum-54yCDYud7csgx3sbT9GAFd"&gt;Is Rust Ready for
-Enterprise Adoption?&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Spoke at the Bangalore Python Meetup about using Rust as a Python developer -
-&lt;a class="reference external" href="https://www.youtube.com/watch?v=62yfBiHrUis"&gt;Explicit is Better than Implicit - Rust for Pythonistas&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Spoke at PyCon India 2019 on &lt;a class="reference external" href="https://www.youtube.com/watch?v=aEYftBZz6ag"&gt;MicroPython: Building a Physical Inventory
-Search Engine.&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built a visualization dashboard atop of BitBucket and Github, to visualize
-developer productivity and project momentum using statistical control charts.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Regularly conduct workshops on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Flask&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Python&lt;/span&gt;&lt;/code&gt; at the Bangalore
-Python meetup group - &lt;a class="reference external" href="https://www.youtube.com/watch?v=xickNijifOs"&gt;Web Application Security with OWASP Principles,&lt;/a&gt; &lt;a class="reference external" href="https://www.youtube.com/watch?v=1C7Oj0KEhgo"&gt;Flask Workshop&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built my own Raspberry Pi Kubernetes Cluster out of 4 Raspberry Pi 4 and 4 Raspberry Pi Zero W boards.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built my own Mechanical Keyboards using the QMK framework.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Completed the Advanced Kubernetes Training from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;learnk8s.io&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="other-experience"&gt;
-&lt;h2&gt;Other Experience&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;FEB 2011 - FEB 2014&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Trained in using statistical control methods for improving quality and production
-at TVS group companies.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Interned at IISc, Bangalore, used Python to study the strength of airplane wing composites.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr class="docutils"/&gt;
-&lt;/section&gt;
 </description><pubDate>Thu, 18 Aug 2022 00:00:00 </pubDate></item><item><title>Binary Trees</title><link>https://stonecharioteer.com/notes/dsa/trees.html</link><description>
 &lt;span id="notes-dsa-trees"/&gt; 
 &lt;p&gt;A Binary Tree:&lt;/p&gt;
@@ -6771,369 +7496,6 @@ email at &lt;a class="reference external" href="mailto:careers%40merklescience.c
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Note that this merely calls &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;appendleft&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
-</description><pubDate>Thu, 21 Jul 2022 00:00:00 </pubDate></item><item><title>The Two of Three Rule</title><link>https://stonecharioteer.com/posts/2022/two-of-three-rule.html</link><description>
-&lt;span id="two-of-three"/&gt;&lt;span id="index-0"/&gt; 
-&lt;div class="admonition-meta admonition"&gt;
-&lt;p class="admonition-title"&gt;Meta&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original Publication Date&lt;/strong&gt;&lt;/p&gt;
-&lt;dl class="field-list simple"&gt;
-&lt;dt class="field-odd"&gt;Date&lt;/dt&gt;
-&lt;dd class="field-odd"&gt;&lt;p&gt;May 19, 2022&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/div&gt;
-&lt;p&gt;How do you decide when to join a company, when to stay and when to leave?&lt;/p&gt;
-&lt;p&gt;I’ve worked at my fair share of companies, both &lt;em&gt;in&lt;/em&gt; and &lt;em&gt;out&lt;/em&gt; of the computer
-technology space. I don’t think I’m leaving companies because I have a problem
-with consistency; in fact it’s quite the opposite.&lt;/p&gt;
-&lt;p&gt;I’m a trained statistician. I worked on a motorcycle manufacturing shop floor
-for 3 years of my early career, and compared to tech companies, that was &lt;em&gt;hell&lt;/em&gt;.
-However, the lessons I learnt there have moulded me forever.&lt;/p&gt;
-&lt;p&gt;The most important lessons revolved around a statistical quality tool called
-&lt;em&gt;control charts&lt;/em&gt; or &lt;em&gt;Shewart charts&lt;/em&gt;, named after &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Walter_A._Shewhart"&gt;Walter A. Shewart,&lt;/a&gt; who pioneered them.
-Shewart’s name is spoken in the same tones as that of &lt;a class="reference external" href="https://en.wikipedia.org/wiki/W._Edwards_Deming"&gt;Deming,&lt;/a&gt; who is responsible for the
-&lt;a class="reference external" href="https://mitpress.mit.edu/books/out-crisis"&gt;14 Principles of Management.&lt;/a&gt;&lt;/p&gt;
-&lt;section id="an-aside-control-charts"&gt;
-&lt;h2&gt;An Aside - Control Charts&lt;/h2&gt;
-&lt;p&gt;A control chart, in its multiple forms, monitors a process for changes in a
-&lt;em&gt;specific&lt;/em&gt; parameter, designated as the &lt;em&gt;control&lt;/em&gt; parameter. This parameter
-helps us measure a desired outcome of a process. If a factory wishes to produce
-a shaft of diameter 25mm with a tolerance of 1mm on either side, then they
-should strive to make shafts from 24-26mm in size. While that’s a worthwhile
-exercise, it’s better to &lt;em&gt;further&lt;/em&gt; limit the manufacturing process so that while
-the process sticks to the design requirements, it is also consistent within
-itself. This doesn’t mean you’re striving for a better design tolerance, but it
-speaks about &lt;em&gt;whether&lt;/em&gt; your process even &lt;em&gt;allows&lt;/em&gt; for better tolerances.
-The &lt;em&gt;control chart&lt;/em&gt; is a line plot that measures this parameter, or a statistic
-associated with it such as the average of a couple of readings taken at
-consistent timestamps. Control charts are divided into 2 areas, a portion of the
-chart is &lt;em&gt;above&lt;/em&gt; a line called the control limit (CL), and the range of values
-is bounded on either side by an Upper Control Limit (UCL), and a Lower Control
-Limit (LCL), which tell us &lt;em&gt;how&lt;/em&gt; much our process is &lt;em&gt;capable&lt;/em&gt; of fluctuating.&lt;/p&gt;
-&lt;figure class="align-default" id="id2" style="width: 450px"&gt;
-&lt;img alt="../../_images/control-charts.png" src="../../_images/control-charts.png"/&gt;
-&lt;figcaption&gt;
-&lt;p&gt;&lt;span class="caption-text"&gt;A sample control chart, marking the limits and showing how a process is
-slowly deviation from its control limits.&lt;/span&gt;&lt;/p&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;These limits aren’t decided by us. Indeed, they have &lt;em&gt;nothing&lt;/em&gt; to do with the
-tolerances that the design engineer has set. Instead, they have everything to do
-with the statistical limits of your process. That means that the last 25
-readings you take in your process decide the UCL, CL and LCL for the next couple
-of readings.&lt;/p&gt;
-&lt;div class="admonition tip"&gt;
-&lt;p class="admonition-title"&gt;Tip&lt;/p&gt;
-&lt;p&gt;25 is an arbitrary number, mind you. It is the &lt;em&gt;bare minimum&lt;/em&gt; that you need
-to start plotting charts. However, it is not even statistically viable to do
-this. Instead start with a 100 readings if you want to do some meaningful
-analytics of process control study.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;If 7 consecutive readings on a control chart fall on one side of the limits,
-that’s your chart telling you that you have &lt;em&gt;serious&lt;/em&gt; problems. Your process is
-slowly deviating to one side of your limits. It doesn’t need to be negative by
-the way. Perhaps you &lt;em&gt;want&lt;/em&gt; your process to shift in one direction. This is an
-indication that whatever you’re doing to your process is shifting the metric to
-one side.&lt;/p&gt;
-&lt;p&gt;These shifts are &lt;em&gt;predicatable&lt;/em&gt;, and they also indicate a shift in your process
-that could arise from inherent causes. However, there are sudden shifts that
-could happen because of uncontrollable causes. These problems will not cause
-long-lasting errors in your readings, and they’re usually the sort that need a
-lot of brain-wracking to solve immediately. If they’re not addressed
-immediately, this will indicate that something is really wrong with your process
-management, and not really reflect whether your process is doing well or now.&lt;/p&gt;
-&lt;p&gt;While a control chart is something you can definitely use in technology
-companies – in fact, control charts are strongly associated with LEAN
-manufacturing, but I’m not experienced enough at Software applications in LEAN
-to say whether these are actually used in a tech company – this article is
-&lt;em&gt;not&lt;/em&gt; about the applications of LEAN manufacturing methods in software
-development. Instead, it’s about my career. It’s even about your career.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="when-do-you-join-a-company"&gt;
-&lt;h2&gt;When Do You Join a Company?&lt;/h2&gt;
-&lt;p&gt;I’m dividing this article into two parts. First, think about why you’d join a
-company. You’ve left an older company, and the reasons why are irrelevant – for
-now.&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;You’ve interviewed with a company, and this has involved anywhere from a
-couple of hours to weeks of your time. If this company has a lengthy
-interview process that requires a DevOps engineer to know how to invert a
-Binary Tree or how to write a Binary Tree where every node is a Linked List,
-then this process could also have taken months of your time.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;You have an offer from them that cites &lt;em&gt;concrete&lt;/em&gt; numbers that you find
-attractive. Let’s not kid ourselves, there’s money involved. Money is
-&lt;em&gt;always&lt;/em&gt; involved.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;You spoke to a couple of cool people who you &lt;em&gt;may&lt;/em&gt; work with, or at least
-grab a beer with at the office parties.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;You also like what the manager seems to promise that you &lt;em&gt;may&lt;/em&gt; work on.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Think about those four points for a moment.&lt;/p&gt;
-&lt;p&gt;The first one is sunk cost. You’ve invested time into the process. You’ve
-invested your effort. &lt;em&gt;Set this aside for now.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The second is money. Money. &lt;em&gt;Money&lt;/em&gt;. You now have bragging rights on
-teamblind.com and you can leave reviews on Glassdoor.com and levels.fyi,
-improving the sample size for what is obviously a very positively or a very
-negatively skewed chart.&lt;/p&gt;
-&lt;p&gt;The third is people. You have laughed with them during the interview. Perhaps
-they were amazed at your data structures and algorithms prowess. Or perhaps one
-of them told you that your installation of Pi-Hole and Unbound could be
-improved; this happened to me, and I joined Merkle Science because I trust this
-dude. This is an interesting point, but it &lt;em&gt;depends&lt;/em&gt; on what sort of a person
-you are. It might not matter to you. Your colleagues are your colleagues, and
-perhaps they’re not going to be your friends.&lt;/p&gt;
-&lt;p&gt;The fourth is work. Actual work. You are promised a paintbrush and the Sistine
-Chapel. However, it depends on your personal goals. Maybe you wanted to be a
-sculptor and not a painter. Perhaps you wanted to write Rust and not Golang.&lt;/p&gt;
-&lt;p&gt;So when do you join a company? Perhaps, quite simply put, when one of them is so
-convincing that you ignore the others. When I say &lt;em&gt;one of them&lt;/em&gt;, I mean points
-two to five. If you’re joining a company because of the sunk cost fallacy, then
-you have different problems, and you’ll quickly move on to the next part of this
-post.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="when-do-you-leave-a-company"&gt;
-&lt;h2&gt;When Do You Leave A Company?&lt;/h2&gt;
-&lt;p&gt;When you decide to leave a company, what pushes you out the door? There are
-several things.&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;Internal politics; I know I’ve run away from that a couple of times.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Poor pay; Perhaps your manager cannot fight for your rightful worth.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Horrible work; Nothing pushes me out the door better than SharePoint and
-Oracle SQL.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Horrible boss; Perhaps he’s not promoting you because of some reason you
-think is relevant.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Horrible peers; Perhaps you think your team members are not fun to work with.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Late promotion; You didn’t get that promotion you were promised 18 months
-ago.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;You feel like you could go on? Sure, I used to think the same thing.&lt;/p&gt;
-&lt;p&gt;But today I don’t. I think there are only three reasons why you’d want to leave.
-Actually there will only ever be two reasons why you’d want to leave.&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;Pay&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;People&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Work&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Wherever you go, whatever the company, there will only be these three things
-that you need to decide whether to join the company, whether to stay there, or
-whether to leave.&lt;/p&gt;
-&lt;p&gt;If you’re running your own company, there will only be these three reasons that
-you can use to hire or keep great people at your company.&lt;/p&gt;
-&lt;p&gt;But what about all the other points?&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="the-three-control-parameters-of-a-career"&gt;
-&lt;h2&gt;The Three Control Parameters of a Career&lt;/h2&gt;
-&lt;p&gt;This is where I come full circle with my control chart paradigm. The three
-points that I brought up in the previous section have everything to do with
-control charts. No, I don’t need you to plot statistical charts to monitor them,
-but you’re already plotting such charts in your head, subconsciously.&lt;/p&gt;
-&lt;p&gt;Wherever you go, whichever the company, the only three things you will feel
-changes in, the only three &lt;em&gt;control parameters&lt;/em&gt; you are granted, are pay, people
-and work.&lt;/p&gt;
-&lt;p&gt;And this is a page I’m taking out of distributed programming, and the CAP
-theorem.&lt;/p&gt;
-&lt;div class="tip admonition"&gt;
-&lt;p class="admonition-title"&gt;CAP Theorem&lt;/p&gt;
-&lt;p&gt;The CAP theorem says that for any distributed data store, you will never be
-able to achieve high consistency and high availability when a partition
-occurs.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Wherever you work, you will &lt;em&gt;never&lt;/em&gt;, &lt;strong&gt;ever&lt;/strong&gt;, achieve great pay, great people
-and great work.&lt;/p&gt;
-&lt;p&gt;Wherever you go, strive to get &lt;em&gt;one&lt;/em&gt; great thing. Get great pay, great people,
-or great work. &lt;em&gt;Just one&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Of the rest, choose a place where one of them is &lt;em&gt;bearable&lt;/em&gt;. You will find
-places with &lt;strong&gt;great pay and okay work&lt;/strong&gt;, or &lt;strong&gt;great work and okay pay&lt;/strong&gt;, or &lt;strong&gt;great
-work and okay people&lt;/strong&gt;, or &lt;strong&gt;great pay and okay people.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;And the last parameter? Well… it will &lt;em&gt;automatically&lt;/em&gt; be horrible.&lt;/p&gt;
-&lt;p&gt;It doesn’t matter how great you think your company is. One of these three
-features is going to be amazing.&lt;/p&gt;
-&lt;p&gt;You will love your work, you will find your colleagues okay to hang around, and
-you will bemoan your pay.&lt;/p&gt;
-&lt;p&gt;You will love your pay, you will find your work palatable, and you will loathe
-your collegues.&lt;/p&gt;
-&lt;p&gt;You will love your colleagues, you will find your pay acceptable, and you will
-fear signing in every day because your work is pointless.&lt;/p&gt;
-&lt;p&gt;You will love your work, you will find your pay is acceptable, and you will hate
-your colleagues.&lt;/p&gt;
-&lt;p&gt;You will love your pay, you will be able to withstand your colleagues, and your
-work will be ridiculous in your eyes.&lt;/p&gt;
-&lt;p&gt;I could go on.&lt;/p&gt;
-&lt;p&gt;The point is that irrespective of your company – &lt;em&gt;irrespective&lt;/em&gt; of your company
-– this will be true. If you want to join a company, or, if you want to stay at a
-company, you must love one of these three things the company can give you, and
-you must find one of the other two to be acceptable. You will &lt;em&gt;hate&lt;/em&gt; the third
-thing, so make sure it’s something you’re not passionate about.&lt;/p&gt;
-&lt;p&gt;But as a hiring manager, or a CEO or CTO, what can you do? Make pay
-exhorbitantly high and make the work amazing? No. That’ll only attract
-psychopaths who hate working together. Remember that the two things that matter
-to people &lt;em&gt;vary&lt;/em&gt; from person to person. One employee might want amazing work for
-mediocre pay - how do you motivate her to work on database administration if
-what she loves is hardcore engineering? One employee might care about his
-colleagues, he loves to discuss the technical aspects with a team that’s the
-sort you hear from on stage at Goto Conf and KubeConf, and he’s okay as long as
-the work is bearable. Pay doesn’t matter to him. How will you try to attract
-this sort of employee. Then there’s the sociopath who wants amazing pay and
-bearable work. He’s not going to care about what sort of people he works with –
-he’ll be polite to them of course, but then he only cares about delivering
-excellent work himself. What will you offer him?&lt;/p&gt;
-&lt;p&gt;So when do you leave?&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="id1"&gt;
-&lt;h2&gt;The Two Of Three Rule&lt;/h2&gt;
-&lt;p&gt;You must definitely leave when two of the three control parameters are horrible.
-Think of your job as a see-saw. On one side is the “great” control parameter,
-and on the other is the “horrible” parameter. At the center is the fulcrum,
-which can move either to the good side or the bad side. That’s where the third
-parameter is currently concentrated. And that’s the important part, surprisingly.&lt;/p&gt;
-&lt;p&gt;When this parameter is right at the center you realize that it doesn’t really
-make you super happy, but that it’s also not annoying you constantly. It’s a
-fine balance between the great parameter and the horrible parameter.&lt;/p&gt;
-&lt;p&gt;Yes, it’s not the “great” parameter, or the “horrible” parameter that decides
-when you will leave. Instead it’s a shift in the central parameter that you once
-found &lt;em&gt;palpatable&lt;/em&gt;, &lt;em&gt;bearable&lt;/em&gt; or &lt;em&gt;just okay&lt;/em&gt;, when you joined.&lt;/p&gt;
-&lt;p&gt;When &lt;em&gt;that&lt;/em&gt; parameter shifts to the horrible side, it doesn’t matter how &lt;em&gt;great&lt;/em&gt;
-the other parameter is.&lt;/p&gt;
-&lt;p&gt;Your pay could be astounding, but you will not be able to work on a horrible
-project with horrible people.&lt;/p&gt;
-&lt;p&gt;Your colleagues could all be amazing engineers, but nothing will make you work
-on stuff you &lt;em&gt;hate&lt;/em&gt; for peanuts.&lt;/p&gt;
-&lt;p&gt;Your work could be amazing and will revolutionize the world, but you cannot work
-on it with people you do not get along with, for horrendous pay.&lt;/p&gt;
-&lt;p&gt;If two of these parameters are on the horrible side, it doesn’t matter just how
-amazing the other parameter is. Your constant annoyance at the other two will
-upset you constantly. Indeed, the fact that a parameter you found just
-&lt;em&gt;bearable&lt;/em&gt; and not an annoyance is going to annoy you multiple times more than
-the other horrible parameter.&lt;/p&gt;
-&lt;p&gt;At any workplace, no matter how awesome, employees will care only about one
-of three things. People, Pay and Work. One of these things will drive people
-to join you, one of them will be something they don’t really find
-disagreeable, and one of them will be something they would rather not talk
-about with their friends. If the one thing that they don’t really hate tips
-too far to the other end, people will leave, and improving the one thing that
-was the driving factor will no longer make a difference.&lt;/p&gt;
-&lt;div class="info admonition"&gt;
-&lt;p class="admonition-title"&gt;The Two of Three Rule&lt;/p&gt;
-&lt;p&gt;Pay, People, Work. Pick one that you need to be awesome. Pick one that you
-don’t mind being lack-lustre. The third one &lt;em&gt;will&lt;/em&gt; be horrible. This rule
-holds at &lt;strong&gt;every&lt;/strong&gt; company; indeed, it holds at &lt;em&gt;any company&lt;/em&gt; you should and
-would work at. Shift the second factor, and you won’t want to work there, no
-matter how awesome the first factor you picked is.&lt;/p&gt;
-&lt;p&gt;The Two of Three Rule is: &lt;em&gt;Pay, people, work. Two of these three things will
-either make you really love your job, or really hate your job.&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;It’s funny how this works.&lt;/p&gt;
-&lt;p&gt;When I was at Flipkart, I was paid to write about books. I am a voracious
-reader, or I was at one point. I was being paid to write about J.R.R. Tolkien,
-about Dr. Seuss, and about the Wheel of Time. Sure, there were moments I was
-writing about horrible books that I feel aren’t worth the paper they’re printed
-on, but that didn’t matter to me. So the work was &lt;em&gt;okay&lt;/em&gt;. The pay was &lt;em&gt;bad&lt;/em&gt;. I
-was earning peanuts before, and compared to that, this was okay pay, &lt;em&gt;bearable&lt;/em&gt;
-pay, but it was still &lt;em&gt;peanuts&lt;/em&gt;. The people I worked with were &lt;em&gt;fun&lt;/em&gt; to work
-with. I made several &lt;em&gt;friends&lt;/em&gt; among them, and I opened up to them like I never
-had with others. I was able to have lunch with them and talk about their lives.
-I was able to have heated discussions about comic books, about movies, and I was
-able to be myself.&lt;/p&gt;
-&lt;p&gt;What happened though? Why did I leave?&lt;/p&gt;
-&lt;p&gt;One day, the Catalogue team decided to scrap the books content. The team leads
-and the manager decided to tell me at the last minute. They didn’t even sugar
-coat that fact. That didn’t really matter, but it was the fact that they treated
-it as an afterthought that someone who constantly went on and on about how much
-he loved books would be “relieved” that he didn’t have to write about books
-again. It didn’t help that the news was also given to me by a team lead who was
-hired despite being clearly incompetent. I was doing the job of both team leads
-at that point. I had automated so much of their job, and they were really not
-doing much. The manager didn’t care about how much I was improving things.
-Instead, they chose to pull the rug from under my feet.&lt;/p&gt;
-&lt;p&gt;I left as soon as I found a new job. I wasn’t working with people I loved for
-horrible pay and horrible work.&lt;/p&gt;
-&lt;p&gt;Then I went to GKN.  I worked on some amazing projects, and I didn’t hate the
-people around me. Some of them are friends today, close friends who were there
-for me at hard moments. Here, I got shafted with the pay once again. At one
-stage, my salary was revised because I managed to prove to the HR how underpaid
-I was – this came under the threat of leaving the company. But it was still 30%
-of my market value at that point.&lt;/p&gt;
-&lt;p&gt;But eventually, the people I cared about were making plans to leave, or move
-away. And the people who were left around me became &lt;em&gt;toxic&lt;/em&gt;. The local leaders
-of my division were &lt;em&gt;toxic&lt;/em&gt;, and that made my life hell. I couldn’t hire
-competent team members since I wasn’t given power to do so.&lt;/p&gt;
-&lt;p&gt;I left within 3 months. I couldn’t change their minds. I couldn’t choose the
-people I worked with, I couldn’t build a team to build that amazing project my
-German boss wanted me to build – a project I still think about fondly.&lt;/p&gt;
-&lt;p&gt;Then I joined Visa. Here I got great pay. My colleagues were good people. And
-the work was horrendous. I left in two years because that changed, and it would
-have been sooner if not for The Great Pandemic of 2020.&lt;/p&gt;
-&lt;p&gt;I’m not explaining all of this to say that my workplaces were negative. No. I
-still recommend Visa to all my friends who want a good place to work. Remember,
-the &lt;em&gt;two&lt;/em&gt; things that matter to me out of the three might not be the same for
-you.&lt;/p&gt;
-&lt;p&gt;Control charts tell us that there’s something inherently wrong with a process.
-When a process begins to deviate from its established “norm”, it is slowly
-progressing to a stage where if you want it to go back to how it was, or to
-another &lt;em&gt;acceptable&lt;/em&gt; state, you need to exert considerable effort. Sometimes,
-this won’t be in your hands. This will instead be something you need your upper
-management to step in and change. And, oftentimes, you’ll find that they have no
-horse in this race.&lt;/p&gt;
-&lt;p&gt;If you want to hire good people who will work for you for a long time and
-deliver great things, ask them which of the three things matter to them, and
-ensure that you meet those two things. The definition of a “Great Place to Work”
-is multi-faceted. It is very different to different people, but you will find
-that for a given person, these points are more or less the same unless they have
-a life-changing event.&lt;/p&gt;
-&lt;p&gt;When I was at Visa, I lost my left ear due to circumstances not under my
-control. Indeed, no one at Visa could have helped me. That changed the ball game
-drastically. That’s what is called a random error in a control chart. In such a
-scenario, no one can help you really. In such times, as a leader, the only thing
-you can do is try to be there for your employees. But as an employee, you need
-to decide what matters to you and whether staying at a place will help you
-achieve that sooner.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="conclusion"&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;So the next time you’re evaluating an offer, or if you’re evaluating whether to
-leave a company or to stay; or if an employee is leaving and you’re trying to
-figure out how to convince her to stay, remember that money isn’t always the
-prime bargaining chip. Sometimes money doesn’t matter. It’s the other two that
-upset the scale.&lt;/p&gt;
-&lt;p&gt;There are always two out of three things that make or break the experience of
-working at a company. To me, today, that’s money and people. Money because of
-the responsibilities I have, and people because I don’t just want a team, but a
-&lt;em&gt;crew&lt;/em&gt;. I want a &lt;em&gt;unit&lt;/em&gt; that functions together. The work is after the fact in
-my opinion. To others, those scales are definitely going to be different.&lt;/p&gt;
-&lt;div class="info admonition"&gt;
-&lt;p class="admonition-title"&gt;Side Note&lt;/p&gt;
-&lt;p&gt;My scales are currently balanced at Merkle Science, and I’m trying to improve
-on the crew part. I truly believe that &lt;em&gt;culture&lt;/em&gt; is something each and
-everyone of us brings into a company. If you’re in the leadership team, and
-if you’re not trying to bring in people that improve your company’s culture,
-you’re not doing your best to keep people from tipping their personal scales.&lt;/p&gt;
-&lt;p&gt;By hiring great people and satisfying their scales, you’ll achieve a balance
-when it comes to your company as a whole. You won’t be known as the company
-where money is astounding but work is horrible. You will be bringing in
-people that are genuinely interested in writing a few lines of a masterful
-play, and that is &lt;a class="reference external" href="https://www.poetryfoundation.org/poems/51568/o-me-o-life"&gt;a play to which I’d like to contribute a verse.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;To this end, I’m looking for great people to work with me, so if you are looking for work,
-and have &lt;a class="reference external" href="https://jobs.lever.co/merklescience/"&gt;something passionate you
-want to talk about,&lt;/a&gt;
-hit me up on &lt;a class="reference external" href="https://twitter.com/stonecharioteer"&gt;Twitter&lt;/a&gt; or LinkedIn and
-let me know what you’re looking for. &lt;a class="reference external" href="mailto:careers%40merklescience.com"&gt;Let’s set up an interview&lt;span&gt;.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-&lt;section id="references"&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;p&gt;These are a list of books I love recommending if you’re interested in the topic
-of statistics and process control.&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;Edward Deming - Out of the Crisis&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Walter A. Shewart - Statistical Method From the Viewpoint of Quality Control&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Taiichi Ohno - Toyota Production System: Beyond Large-Scale Production&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Taiichi Ohno - Workplace Management&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;These books were written in a time where statistical quality control was applied
-predominantly to manufacturing processes, but I’d recommend looking at them
-through the lens of a general engineer, as opposed to a software engineer. If
-you ever find yourself wanting to discuss these topics, I’m always available.
-Reach out to me &lt;a class="reference external" href="https://twitter.com/stonecharioteer"&gt;on Twitter.&lt;/a&gt;&lt;/p&gt;
-&lt;/section&gt;
 </description><pubDate>Thu, 21 Jul 2022 00:00:00 </pubDate></item><item><title>Vagrant</title><link>https://stonecharioteer.com/posts/2022/vagrant.html</link><description>
  
 &lt;p&gt;I’m late to the Vagrant train. I must have heard about it in 2014, but I’ve
