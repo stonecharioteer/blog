@@ -14,6 +14,7 @@ Indian Mythology
 Health
 ---------------------
 
+* :ref:`Learning to Swim <swimming-01>`
 * :ref:`The Sound of Music <sshl-1>`
 * :ref:`No Leaf Clover <sshl-2>`
 * :ref:`(Y)ear One <sshl-3>`
