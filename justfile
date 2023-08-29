@@ -12,7 +12,7 @@ install-python:
 
 # build the blog locally
 build:
-  ./build.sh
+  ./build.sh html
 
 # watch directory for file changes and rebuild. note, you'll have to rerun this command if you add new files/folders to be watched.
 build-watch:
