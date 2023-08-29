@@ -12,7 +12,7 @@ on:
 jobs:
   gh-pages:
     name: Build website and publish to github-pages
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
