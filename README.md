@@ -13,6 +13,9 @@ First, set the following environment variables:
 2. GITHUB_ACCESS_TOKEN
 3. REPO_URL
 
+Check the `justfile` for easier ways to do this. Currently, the actions uses
+the cloud runner, but this is left documented for legacy purposes.
+
 ```bash
 
 docker run -d --name blog-runner --rm --pull=always -e RUNNER_WORK_DIR=/tmp/runner/ \
