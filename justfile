@@ -1,3 +1,4 @@
+set shell := ["bash", "-uc"]
 default: (build)
 alias b:= build
 alias bw:= build-watch
@@ -27,3 +28,9 @@ gh-runner:
 # serve build folder using live-server
 serve:
   live-server -h "0.0.0.0" build/html
+
+build-resume:
+  rst2pdf -o source/resume/resume.pdf source/resume/resume.rst
+
+release-resume: build-resume
+  gh release create "v$(date -u +%Y.%m.%d)" source/resume/resume.pdf
