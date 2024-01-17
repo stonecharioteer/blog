@@ -17,6 +17,7 @@ Resume - Vinay Keerthi K. T.
 
 -----
 
+
 -------------------------------
 ChainSafe
 -------------------------------
@@ -27,6 +28,11 @@ ChainSafe
 * Worked on a networking library integrating ``libp2p`` with blockchain protocols.
 * Reviewed Rust code across projects, providing insight into improving code
   quality and adherance to the core spirit of the language.
+* Worked with technology leaders in requirements gathering, writing work proposals and
+  ran sprints with developers to meet customer deadlines.
+* Worked on POCs for an ``ssv`` **Rust** implementation.
+* Worked on building tooling for ``foundry`` to deploy to multiple chains using the ``Sygma`` framework.
+* Worked on **Python**-based tooling for developers, including internal monitoring scripts.
 
 -------------------------------
 Merkle Science
@@ -46,6 +52,7 @@ Merkle Science
 * Designed the alerting system for all our services.
 * Designed and wrote the data quality service using **Rust** - this application goes
   through the data of various **blockchains** to identify missing or newer data.
+* Reworked the internal packaging system to leverage modern **Python** practices such as ``poetry``.
 * Designed a load-balancer to place over our blockchain nodes (internal and
   vendor-hosted). Led a team of 2 engineers who built this.
 * Designed and wrote a websocket client to ingest blockchain data from various
