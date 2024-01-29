@@ -13,3 +13,4 @@ Technology
 
    crews-not-teams.rst
    resources.rst
+   zenity-screen-lock.rst
