@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Resume - Vinay Keerthi K. T.</title><link>https://stonecharioteer.com/resume/resume.html</link><description>
+<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>My Screen Lock Solution Cinnamon Desktop using Zenity and Terminal Commands</title><link>https://stonecharioteer.com/posts/technology/zenity-screen-lock.html</link><description>
+&lt;span id="zenity-screen-lock"/&gt; 
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;This post is more of a “this is how I did it incase I forget”.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p id="index-0"&gt;I’ve switched to Cinnamon Desktop (on Fedora 39) last year, after giving up on trying to maintain my Qtile configuration. I was wasting too much time on it.&lt;/p&gt;
+&lt;p&gt;One personal painpoint I had is that I wanted to lock my screen without resorting to using the main Cinnamon menu all the time. I could use the keyboard shortcuts dialog to trigger the built-in screen lock but I also wanted a _confirmation_, which I haven’t yet figured out how to do with the built-in features. Plus, I’m a creature of habit, so I wanted something that I could preserve and use in another window manager if need be.&lt;/p&gt;
+&lt;p&gt;To that end, I remembered a friend once showed me &lt;a class="reference external" href="https://www.linux.org/threads/introduction-to-zenity-part-1.44381/"&gt;Zenity&lt;/a&gt; to create simple GUIs for Linux. I strung up this one liner that prompts me if I want to lock my screen and then locks it if I click yes.&lt;/p&gt;
+&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;`bash&lt;/span&gt;
+&lt;span class="pre"&gt;bash&lt;/span&gt; &lt;span class="pre"&gt;-c&lt;/span&gt; &lt;span class="pre"&gt;"zenity&lt;/span&gt; &lt;span class="pre"&gt;--question&lt;/span&gt; &lt;span class="pre"&gt;--text='Lock&lt;/span&gt; &lt;span class="pre"&gt;screen?'&lt;/span&gt; &lt;span class="pre"&gt;--title='Screen&lt;/span&gt; &lt;span class="pre"&gt;lock?'&lt;/span&gt; &lt;span class="pre"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="pre"&gt;cinnamon-screensaver-command&lt;/span&gt; &lt;span class="pre"&gt;-l&lt;/span&gt; &lt;span class="pre"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="pre"&gt;xset&lt;/span&gt; &lt;span class="pre"&gt;dpms&lt;/span&gt; &lt;span class="pre"&gt;force&lt;/span&gt; &lt;span class="pre"&gt;off;"&lt;/span&gt;
+&lt;span class="pre"&gt;`&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;figure class="align-default" id="id1" style="width: 450px"&gt;
+&lt;img alt="Screenlock prompt with Zenity" src="../../_images/zenity-screenlock.png"/&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;Screenlock prompt with Zenity&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;I needed the &lt;cite&gt;bash -c “”&lt;/cite&gt; bit since this would be within the cinnamon launch options and I’d want to ensure that this is reproducible all the time.&lt;/p&gt;
+&lt;p&gt;If I move to another window manager, I just need to replace &lt;cite&gt;cinnamon-screensave-command&lt;/cite&gt;. I also use &lt;cite&gt;xset dpms force off&lt;/cite&gt; because it takes a while to turn off my laptop screen and sometimes I do this just before sleeping or turning the lights off and I don’t want to wait.&lt;/p&gt;
+&lt;p&gt;I don’t close the lid because I use my current laptop, an Asus RoG X13 Flow in the tent mode, and would have to disconnect my docking station to flip it around and close the lid.&lt;/p&gt;
+</description><pubDate>Mon, 29 Jan 2024 00:00:00 </pubDate></item><item><title>Resume - Vinay Keerthi K. T.</title><link>https://stonecharioteer.com/resume/resume.html</link><description>
  
 &lt;hr class="docutils"/&gt;
 &lt;section id="chainsafe"&gt;
