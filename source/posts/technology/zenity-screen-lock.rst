@@ -20,9 +20,9 @@ One personal painpoint I had is that I wanted to lock my screen without resortin
 
 To that end, I remembered a friend once showed me `Zenity <https://www.linux.org/threads/introduction-to-zenity-part-1.44381/>`_ to create simple GUIs for Linux. I strung up this one liner that prompts me if I want to lock my screen and then locks it if I click yes.
 
-```bash
-bash -c "zenity --question --text='Lock screen?' --title='Screen lock?' && cinnamon-screensaver-command -l && xset dpms force off;"
-```
+.. code-block:: bash
+
+   bash -c "zenity --question --text='Lock screen?' --title='Screen lock?' && cinnamon-screensaver-command -l && xset dpms force off;"
 
 
 .. figure:: /_static/images/posts/zenity-screenlock.png
