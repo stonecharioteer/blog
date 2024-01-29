@@ -2,7 +2,7 @@
 
 
 =============================================================================
-My Screen Lock Solution Cinnamon Desktop using Zenity and Terminal Commands
+Screen Lock for Cinnamon Desktop using Zenity and Terminal Commands
 =============================================================================
 
 
