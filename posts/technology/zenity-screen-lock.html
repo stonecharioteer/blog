@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Learning to Swim" href="../life/learning-to-swim.html" /><link rel="prev" title="Index" href="../../genindex.html" />
 
     <meta name="generator" content="sphinx-4.5.0, furo 2022.06.21"/>
         <title>My Screen Lock Solution Cinnamon Desktop using Zenity and Terminal Commands - Stonecharioteer</title>
@@ -313,7 +313,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recent Posts</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">My Screen Lock Solution Cinnamon Desktop using Zenity and Terminal Commands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../life/learning-to-swim.html">Learning to Swim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="crews-not-teams.html">Crews Not Teams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../life/career/learning.html">Meditations on Learning</a></li>
@@ -456,9 +457,9 @@
 <p id="index-0">I’ve switched to Cinnamon Desktop (on Fedora 39) last year, after giving up on trying to maintain my Qtile configuration. I was wasting too much time on it.</p>
 <p>One personal painpoint I had is that I wanted to lock my screen without resorting to using the main Cinnamon menu all the time. I could use the keyboard shortcuts dialog to trigger the built-in screen lock but I also wanted a _confirmation_, which I haven’t yet figured out how to do with the built-in features. Plus, I’m a creature of habit, so I wanted something that I could preserve and use in another window manager if need be.</p>
 <p>To that end, I remembered a friend once showed me <a class="reference external" href="https://www.linux.org/threads/introduction-to-zenity-part-1.44381/">Zenity</a> to create simple GUIs for Linux. I strung up this one liner that prompts me if I want to lock my screen and then locks it if I click yes.</p>
-<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
-<span class="pre">bash</span> <span class="pre">-c</span> <span class="pre">&quot;zenity</span> <span class="pre">--question</span> <span class="pre">--text='Lock</span> <span class="pre">screen?'</span> <span class="pre">--title='Screen</span> <span class="pre">lock?'</span> <span class="pre">&amp;&amp;</span> <span class="pre">cinnamon-screensaver-command</span> <span class="pre">-l</span> <span class="pre">&amp;&amp;</span> <span class="pre">xset</span> <span class="pre">dpms</span> <span class="pre">force</span> <span class="pre">off;&quot;</span>
-<span class="pre">`</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash -c <span class="s2">&quot;zenity --question --text=&#39;Lock screen?&#39; --title=&#39;Screen lock?&#39; &amp;&amp; cinnamon-screensaver-command -l &amp;&amp; xset dpms force off;&quot;</span>
+</pre></div>
+</div>
 <figure class="align-default" id="id1" style="width: 450px">
 <img alt="Screenlock prompt with Zenity" src="../../_images/zenity-screenlock.png" />
 <figcaption>
@@ -475,8 +476,26 @@
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="../life/learning-to-swim.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Learning to Swim</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../../genindex.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Index</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">

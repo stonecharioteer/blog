@@ -8,9 +8,9 @@
 &lt;p id="index-0"&gt;I’ve switched to Cinnamon Desktop (on Fedora 39) last year, after giving up on trying to maintain my Qtile configuration. I was wasting too much time on it.&lt;/p&gt;
 &lt;p&gt;One personal painpoint I had is that I wanted to lock my screen without resorting to using the main Cinnamon menu all the time. I could use the keyboard shortcuts dialog to trigger the built-in screen lock but I also wanted a _confirmation_, which I haven’t yet figured out how to do with the built-in features. Plus, I’m a creature of habit, so I wanted something that I could preserve and use in another window manager if need be.&lt;/p&gt;
 &lt;p&gt;To that end, I remembered a friend once showed me &lt;a class="reference external" href="https://www.linux.org/threads/introduction-to-zenity-part-1.44381/"&gt;Zenity&lt;/a&gt; to create simple GUIs for Linux. I strung up this one liner that prompts me if I want to lock my screen and then locks it if I click yes.&lt;/p&gt;
-&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;`bash&lt;/span&gt;
-&lt;span class="pre"&gt;bash&lt;/span&gt; &lt;span class="pre"&gt;-c&lt;/span&gt; &lt;span class="pre"&gt;"zenity&lt;/span&gt; &lt;span class="pre"&gt;--question&lt;/span&gt; &lt;span class="pre"&gt;--text='Lock&lt;/span&gt; &lt;span class="pre"&gt;screen?'&lt;/span&gt; &lt;span class="pre"&gt;--title='Screen&lt;/span&gt; &lt;span class="pre"&gt;lock?'&lt;/span&gt; &lt;span class="pre"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="pre"&gt;cinnamon-screensaver-command&lt;/span&gt; &lt;span class="pre"&gt;-l&lt;/span&gt; &lt;span class="pre"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="pre"&gt;xset&lt;/span&gt; &lt;span class="pre"&gt;dpms&lt;/span&gt; &lt;span class="pre"&gt;force&lt;/span&gt; &lt;span class="pre"&gt;off;"&lt;/span&gt;
-&lt;span class="pre"&gt;`&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight-bash notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;bash -c &lt;span class="s2"&gt;"zenity --question --text='Lock screen?' --title='Screen lock?' &amp;amp;&amp;amp; cinnamon-screensaver-command -l &amp;amp;&amp;amp; xset dpms force off;"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;figure class="align-default" id="id1" style="width: 450px"&gt;
 &lt;img alt="Screenlock prompt with Zenity" src="../../_images/zenity-screenlock.png"/&gt;
 &lt;figcaption&gt;
