@@ -1,37 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Goodbye, Social Networks</title><link>https://stonecharioteer.com/posts/life/no-social-networks.html</link><description>
- 
-&lt;p&gt;&lt;strong&gt;Monday, 2023-01-29&lt;/strong&gt;&lt;/p&gt;
-&lt;p id="index-0"&gt;Over the last 2 months, I’ve deleted my Reddit, Twitter, Instagram and Facebook accounts. I have been thinking about it for a while now, and I’d already stopped using Facebook in 2016. I switched to Instagram, and while I had some memorable posts there, the short-video format that has plagued every video platform thus far has been an enormouse attention drain. I stopped using the app mid last year, and I deleted my account in December.&lt;/p&gt;
-&lt;p&gt;I haven’t really opened Instagram much besides to send some memes to friends, which was once a month or so. But the cognitive overload has not done me any good, so I decided to get rid of it completely.&lt;/p&gt;
-&lt;p&gt;Then Reddit. While I consider Reddit to have been a great source of fun to me personally, once they purged the third-party apps, I could no longer use my app of choice, Joey. Joey allowed me to &lt;strong&gt;filter&lt;/strong&gt; posts on Reddit so I wouldn’t see posts on topics I particularly didn’t want to see or cared about. I had keywords removing political posts from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;/r/india&lt;/span&gt;&lt;/code&gt;, removing cosplay posts from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;/r/OnePiece&lt;/span&gt;&lt;/code&gt; and removing cryptocurrency stuff from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;/r/technology&lt;/span&gt;&lt;/code&gt;. I had about a hundred or so filters, and my experience was pretty amazing. Now that it was gone, I didn’t fall back to the official Reddit app. I instead used the webpage, and defaulted to &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;old.reddit.com&lt;/span&gt;&lt;/code&gt;. But lately I decided I was spending too much time there as well. So I figured I’d just get rid of that as well. I deleted every alt account I had, and I also deleted my primary account, only after purging all the posts and comments entirely so as to remove any history of my usage.&lt;/p&gt;
-&lt;p&gt;Finally, I realized Twitter had to go as well. I wasn’t using it much, besides to ping around and ask questions about the city or something in general into the void. I realized I was headed down the spiral of the tweets there too and thought it’s time I said goodbye completely.&lt;/p&gt;
-&lt;p&gt;So, how you do you reach me if you want to?&lt;/p&gt;
-&lt;p&gt;The short answer is, you don’t. I don’t want to be &lt;em&gt;reachable&lt;/em&gt;. I want to be private in my life and I have a lot of friends I cherish already. I don’t really want to exist in a bubble where I have superficial relationships with people I am coaxed into impressing.&lt;/p&gt;
-&lt;p&gt;I still am on LinkedIn, for my career sanity, and on Hackernews, but I might purge that too. I don’t want to &lt;em&gt;share&lt;/em&gt; my posts here as thought I have something to say that no one else already has. I want to write these posts for myself, to preserve my semi-public notes.&lt;/p&gt;
-&lt;p&gt;And that’s why we used to have websites back in the day, wasn’t it?&lt;/p&gt;
-</description><pubDate>Mon, 29 Jan 2024 00:00:00 </pubDate></item><item><title>Screen Lock for Cinnamon Desktop using Zenity and Terminal Commands</title><link>https://stonecharioteer.com/posts/technology/zenity-screen-lock.html</link><description>
-&lt;span id="zenity-screen-lock"/&gt; 
-&lt;div class="admonition note"&gt;
-&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
-&lt;p&gt;This post is more of a “this is how I did it incase I forget”.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p id="index-0"&gt;I’ve switched to Cinnamon Desktop (on Fedora 39) last year, after giving up on trying to maintain my Qtile configuration. I was wasting too much time on it.&lt;/p&gt;
-&lt;p&gt;One personal painpoint I had is that I wanted to lock my screen without resorting to using the main Cinnamon menu all the time. I could use the keyboard shortcuts dialog to trigger the built-in screen lock but I also wanted a _confirmation_, which I haven’t yet figured out how to do with the built-in features. Plus, I’m a creature of habit, so I wanted something that I could preserve and use in another window manager if need be.&lt;/p&gt;
-&lt;p&gt;To that end, I remembered a friend once showed me &lt;a class="reference external" href="https://www.linux.org/threads/introduction-to-zenity-part-1.44381/"&gt;Zenity&lt;/a&gt; to create simple GUIs for Linux. I strung up this one liner that prompts me if I want to lock my screen and then locks it if I click yes.&lt;/p&gt;
-&lt;div class="highlight-bash notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;bash -c &lt;span class="s2"&gt;"zenity --question --text='Lock screen?' --title='Screen lock?' &amp;amp;&amp;amp; cinnamon-screensaver-command -l &amp;amp;&amp;amp; xset dpms force off;"&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;figure class="align-default" id="id1" style="width: 450px"&gt;
-&lt;img alt="Screenlock prompt with Zenity" src="../../_images/zenity-screenlock.png"/&gt;
-&lt;figcaption&gt;
-&lt;p&gt;&lt;span class="caption-text"&gt;Screenlock prompt with Zenity&lt;/span&gt;&lt;/p&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;I needed the &lt;cite&gt;bash -c “”&lt;/cite&gt; bit since this would be within the cinnamon launch options and I’d want to ensure that this is reproducible all the time.&lt;/p&gt;
-&lt;p&gt;If I move to another window manager, I just need to replace &lt;cite&gt;cinnamon-screensave-command&lt;/cite&gt;. I also use &lt;cite&gt;xset dpms force off&lt;/cite&gt; because it takes a while to turn off my laptop screen and sometimes I do this just before sleeping or turning the lights off and I don’t want to wait.&lt;/p&gt;
-&lt;p&gt;I don’t close the lid because I use my current laptop, an Asus RoG X13 Flow in the tent mode, and would have to disconnect my docking station to flip it around and close the lid.&lt;/p&gt;
-</description><pubDate>Mon, 29 Jan 2024 00:00:00 </pubDate></item><item><title>Resume - Vinay Keerthi K. T.</title><link>https://stonecharioteer.com/resume/resume.html</link><description>
+<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Resume - Vinay Keerthi K. T.</title><link>https://stonecharioteer.com/resume/resume.html</link><description>
  
 &lt;hr class="docutils"/&gt;
 &lt;section id="chainsafe"&gt;
@@ -39,6 +7,9 @@
 &lt;p&gt;&lt;strong&gt;Technical Team Lead&lt;/strong&gt; | &lt;strong&gt;Fully Remote&lt;/strong&gt; | Started: &lt;strong&gt;November 2022&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;Managed a team of 4, providing technical and career-based guidance.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on building a &lt;strong&gt;GPT&lt;/strong&gt; that interfaces with internal and external APIs,
+providing a chat-based interface for managers to track and manage their teams’
+OKRs in line with the organization’s goals.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Worked on a networking library integrating &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;libp2p&lt;/span&gt;&lt;/code&gt; with blockchain protocols.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Reviewed Rust code across projects, providing insight into improving code
 quality and adherance to the core spirit of the language.&lt;/p&gt;&lt;/li&gt;
@@ -175,7 +146,39 @@ at TVS group companies.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr class="docutils"/&gt;
 &lt;/section&gt;
-</description><pubDate>Wed, 17 Jan 2024 00:00:00 </pubDate></item><item><title>The Two of Three Rule</title><link>https://stonecharioteer.com/posts/2022/two-of-three-rule.html</link><description>
+</description><pubDate>Mon, 05 Feb 2024 00:00:00 </pubDate></item><item><title>Goodbye, Social Networks</title><link>https://stonecharioteer.com/posts/life/no-social-networks.html</link><description>
+ 
+&lt;p&gt;&lt;strong&gt;Monday, 2023-01-29&lt;/strong&gt;&lt;/p&gt;
+&lt;p id="index-0"&gt;Over the last 2 months, I’ve deleted my Reddit, Twitter, Instagram and Facebook accounts. I have been thinking about it for a while now, and I’d already stopped using Facebook in 2016. I switched to Instagram, and while I had some memorable posts there, the short-video format that has plagued every video platform thus far has been an enormouse attention drain. I stopped using the app mid last year, and I deleted my account in December.&lt;/p&gt;
+&lt;p&gt;I haven’t really opened Instagram much besides to send some memes to friends, which was once a month or so. But the cognitive overload has not done me any good, so I decided to get rid of it completely.&lt;/p&gt;
+&lt;p&gt;Then Reddit. While I consider Reddit to have been a great source of fun to me personally, once they purged the third-party apps, I could no longer use my app of choice, Joey. Joey allowed me to &lt;strong&gt;filter&lt;/strong&gt; posts on Reddit so I wouldn’t see posts on topics I particularly didn’t want to see or cared about. I had keywords removing political posts from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;/r/india&lt;/span&gt;&lt;/code&gt;, removing cosplay posts from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;/r/OnePiece&lt;/span&gt;&lt;/code&gt; and removing cryptocurrency stuff from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;/r/technology&lt;/span&gt;&lt;/code&gt;. I had about a hundred or so filters, and my experience was pretty amazing. Now that it was gone, I didn’t fall back to the official Reddit app. I instead used the webpage, and defaulted to &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;old.reddit.com&lt;/span&gt;&lt;/code&gt;. But lately I decided I was spending too much time there as well. So I figured I’d just get rid of that as well. I deleted every alt account I had, and I also deleted my primary account, only after purging all the posts and comments entirely so as to remove any history of my usage.&lt;/p&gt;
+&lt;p&gt;Finally, I realized Twitter had to go as well. I wasn’t using it much, besides to ping around and ask questions about the city or something in general into the void. I realized I was headed down the spiral of the tweets there too and thought it’s time I said goodbye completely.&lt;/p&gt;
+&lt;p&gt;So, how you do you reach me if you want to?&lt;/p&gt;
+&lt;p&gt;The short answer is, you don’t. I don’t want to be &lt;em&gt;reachable&lt;/em&gt;. I want to be private in my life and I have a lot of friends I cherish already. I don’t really want to exist in a bubble where I have superficial relationships with people I am coaxed into impressing.&lt;/p&gt;
+&lt;p&gt;I still am on LinkedIn, for my career sanity, and on Hackernews, but I might purge that too. I don’t want to &lt;em&gt;share&lt;/em&gt; my posts here as thought I have something to say that no one else already has. I want to write these posts for myself, to preserve my semi-public notes.&lt;/p&gt;
+&lt;p&gt;And that’s why we used to have websites back in the day, wasn’t it?&lt;/p&gt;
+</description><pubDate>Mon, 29 Jan 2024 00:00:00 </pubDate></item><item><title>Screen Lock for Cinnamon Desktop using Zenity and Terminal Commands</title><link>https://stonecharioteer.com/posts/technology/zenity-screen-lock.html</link><description>
+&lt;span id="zenity-screen-lock"/&gt; 
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;This post is more of a “this is how I did it incase I forget”.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p id="index-0"&gt;I’ve switched to Cinnamon Desktop (on Fedora 39) last year, after giving up on trying to maintain my Qtile configuration. I was wasting too much time on it.&lt;/p&gt;
+&lt;p&gt;One personal painpoint I had is that I wanted to lock my screen without resorting to using the main Cinnamon menu all the time. I could use the keyboard shortcuts dialog to trigger the built-in screen lock but I also wanted a _confirmation_, which I haven’t yet figured out how to do with the built-in features. Plus, I’m a creature of habit, so I wanted something that I could preserve and use in another window manager if need be.&lt;/p&gt;
+&lt;p&gt;To that end, I remembered a friend once showed me &lt;a class="reference external" href="https://www.linux.org/threads/introduction-to-zenity-part-1.44381/"&gt;Zenity&lt;/a&gt; to create simple GUIs for Linux. I strung up this one liner that prompts me if I want to lock my screen and then locks it if I click yes.&lt;/p&gt;
+&lt;div class="highlight-bash notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;bash -c &lt;span class="s2"&gt;"zenity --question --text='Lock screen?' --title='Screen lock?' &amp;amp;&amp;amp; cinnamon-screensaver-command -l &amp;amp;&amp;amp; xset dpms force off;"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;figure class="align-default" id="id1" style="width: 450px"&gt;
+&lt;img alt="Screenlock prompt with Zenity" src="../../_images/zenity-screenlock.png"/&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;Screenlock prompt with Zenity&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;I needed the &lt;cite&gt;bash -c “”&lt;/cite&gt; bit since this would be within the cinnamon launch options and I’d want to ensure that this is reproducible all the time.&lt;/p&gt;
+&lt;p&gt;If I move to another window manager, I just need to replace &lt;cite&gt;cinnamon-screensave-command&lt;/cite&gt;. I also use &lt;cite&gt;xset dpms force off&lt;/cite&gt; because it takes a while to turn off my laptop screen and sometimes I do this just before sleeping or turning the lights off and I don’t want to wait.&lt;/p&gt;
+&lt;p&gt;I don’t close the lid because I use my current laptop, an Asus RoG X13 Flow in the tent mode, and would have to disconnect my docking station to flip it around and close the lid.&lt;/p&gt;
+</description><pubDate>Mon, 29 Jan 2024 00:00:00 </pubDate></item><item><title>The Two of Three Rule</title><link>https://stonecharioteer.com/posts/2022/two-of-three-rule.html</link><description>
 &lt;span id="two-of-three"/&gt;&lt;span id="index-0"/&gt; 
 &lt;div class="admonition-meta admonition"&gt;
 &lt;p class="admonition-title"&gt;Meta&lt;/p&gt;
