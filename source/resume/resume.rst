@@ -25,17 +25,21 @@ ChainSafe
 **Technical Team Lead** | **Fully Remote** | Started: **November 2022**
 
 * Managed a team of 4, providing technical and career-based guidance.
+* Worked on **Python**-based tooling for developers, including internal
+  monitoring scripts.
 * Worked on building a **GPT** that interfaces with internal and external APIs,
   providing a chat-based interface for managers to track and manage their teams'
   OKRs in line with the organization's goals.
-* Worked on a networking library integrating ``libp2p`` with blockchain protocols.
-* Reviewed Rust code across projects, providing insight into improving code
+* Worked with technology leaders in requirements gathering, writing work
+  proposals and ran sprints with developers to meet customer deadlines.
+* Reviewed **Rust** code across projects, providing insight into improving code
   quality and adherance to the core spirit of the language.
-* Worked with technology leaders in requirements gathering, writing work proposals and
-  ran sprints with developers to meet customer deadlines.
-* Worked on POCs for an ``ssv`` **Rust** implementation.
-* Worked on building tooling for ``foundry`` to deploy to multiple chains using the ``Sygma`` framework.
-* Worked on **Python**-based tooling for developers, including internal monitoring scripts.
+* Worked on a **Rust** networking library integrating ``libp2p`` with blockchain
+  protocols.
+* Worked on building **solidity** tooling for ``foundry`` to deploy to multiple
+  chains using the ``Sygma`` framework.
+* Developed tutorials for on-boarding new developers to the company's technology
+  stack, including **Substrate** and **Rust**.
 
 -------------------------------
 Merkle Science
