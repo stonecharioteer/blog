@@ -25,6 +25,9 @@ ChainSafe
 **Technical Team Lead** | **Fully Remote** | Started: **November 2022**
 
 * Managed a team of 4, providing technical and career-based guidance.
+* Worked on building a **GPT** that interfaces with internal and external APIs,
+  providing a chat-based interface for managers to track and manage their teams'
+  OKRs in line with the organization's goals.
 * Worked on a networking library integrating ``libp2p`` with blockchain protocols.
 * Reviewed Rust code across projects, providing insight into improving code
   quality and adherance to the core spirit of the language.
