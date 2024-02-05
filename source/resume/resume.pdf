@@ -254,7 +254,7 @@ endobj
 endobj
 36 0 obj
 <<
-/Author () /CreationDate (D:20240117112822-05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20240117112822-05'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20240205115428-05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20240205115428-05'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Resume - Vinay Keerthi K. T.) /Trapped /False
 >>
 endobj
@@ -270,7 +270,7 @@ endobj
 endobj
 39 0 obj
 <<
-/Dest [ 15 0 R /XYZ 57.02362 463.6772 0 ] /Next 40 0 R /Parent 37 0 R /Prev 38 0 R /Title (Merkle Science)
+/Dest [ 15 0 R /XYZ 57.02362 433.6772 0 ] /Next 40 0 R /Parent 37 0 R /Prev 38 0 R /Title (Merkle Science)
 >>
 endobj
 40 0 obj
@@ -310,7 +310,7 @@ endobj
 endobj
 47 0 obj
 <<
-/Length 9957
+/Length 10493
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -371,7 +371,32 @@ q
 1 0 0 1 57.02362 601.6772 cm
 Q
 q
-1 0 0 1 57.02362 589.6772 cm
+1 0 0 1 57.02362 577.6772 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 2.200596 Tw 12 TL /F1 10 Tf 0 0 0 rg (Worked on building a ) Tj /F3 10 Tf (GPT) Tj /F1 10 Tf ( that interfaces with internal and external APIs, providing a chat-based) Tj T* 0 Tw (interface for managers to track and manage their teams' OKRs in line with the organization's goals.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 571.6772 cm
+Q
+q
+1 0 0 1 57.02362 559.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -386,32 +411,6 @@ q
 1 0 0 1 23 -3 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Worked on a networking library integrating ) Tj /F4 10 Tf (libp2p) Tj /F1 10 Tf ( with blockchain protocols.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 57.02362 583.6772 cm
-Q
-q
-1 0 0 1 57.02362 559.6772 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .017739 Tw (Reviewed Rust code across projects, providing insight into improving code quality and adherance to the) Tj T* 0 Tw (core spirit of the language.) Tj T* ET
 Q
 Q
 q
@@ -437,7 +436,7 @@ q
 1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .49218 Tw (Worked with technology leaders in requirements gathering, writing work proposals and ran sprints with) Tj T* 0 Tw (developers to meet customer deadlines.) Tj T* ET
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .017739 Tw (Reviewed Rust code across projects, providing insight into improving code quality and adherance to the) Tj T* 0 Tw (core spirit of the language.) Tj T* ET
 Q
 Q
 q
@@ -448,7 +447,33 @@ q
 1 0 0 1 57.02362 523.6772 cm
 Q
 q
-1 0 0 1 57.02362 511.6772 cm
+1 0 0 1 57.02362 499.6772 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .49218 Tw (Worked with technology leaders in requirements gathering, writing work proposals and ran sprints with) Tj T* 0 Tw (developers to meet customer deadlines.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 493.6772 cm
+Q
+q
+1 0 0 1 57.02362 481.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -470,10 +495,10 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 505.6772 cm
+1 0 0 1 57.02362 475.6772 cm
 Q
 q
-1 0 0 1 57.02362 493.6772 cm
+1 0 0 1 57.02362 463.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -495,10 +520,10 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 487.6772 cm
+1 0 0 1 57.02362 457.6772 cm
 Q
 q
-1 0 0 1 57.02362 475.6772 cm
+1 0 0 1 57.02362 445.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -520,28 +545,28 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 475.6772 cm
+1 0 0 1 57.02362 445.6772 cm
 Q
 q
-1 0 0 1 57.02362 442.6772 cm
+1 0 0 1 57.02362 412.6772 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf .133333 .133333 .133333 rg (Merkle Science) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 424.6772 cm
+1 0 0 1 57.02362 394.6772 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (Lead Software Developer) Tj /F1 10 Tf ( | ) Tj /F3 10 Tf (Bangalore) Tj /F1 10 Tf ( - ) Tj /F3 10 Tf (Remote) Tj /F1 10 Tf ( | Started: ) Tj /F3 10 Tf (JULY 2021 - November 2022) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 418.6772 cm
+1 0 0 1 57.02362 388.6772 cm
 Q
 q
-1 0 0 1 57.02362 418.6772 cm
+1 0 0 1 57.02362 388.6772 cm
 Q
 q
-1 0 0 1 57.02362 406.6772 cm
+1 0 0 1 57.02362 376.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -557,31 +582,6 @@ q
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Built a team for internal tooling, managed scouting for talent, hiring and interviewing.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 57.02362 400.6772 cm
-Q
-q
-1 0 0 1 57.02362 376.6772 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .953223 Tw 12 TL /F1 10 Tf 0 0 0 rg (Created a ) Tj /F3 10 Tf (Rust) Tj /F1 10 Tf ( library for the ) Tj /F3 10 Tf (Polkadot) Tj /F1 10 Tf ( blockchain for internal use, exposed via ) Tj /F4 10 Tf (PyO3) Tj /F1 10 Tf ( and ) Tj /F4 10 Tf (maturin) Tj /F1 10 Tf  T* 0 Tw (into ) Tj /F3 10 Tf (Python.) Tj T* ET
 Q
 Q
 q
@@ -606,7 +606,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .60402 Tw 12 TL /F1 10 Tf 0 0 0 rg (Created a ) Tj /F3 10 Tf (Rust) Tj /F1 10 Tf ( library for ) Tj /F3 10 Tf (Hedera hashgraph,) Tj /F1 10 Tf ( to ingest data from the mainnet API into our local data) Tj T* 0 Tw (stores.) Tj T* ET
+BT 1 0 0 1 0 14 Tm .953223 Tw 12 TL /F1 10 Tf 0 0 0 rg (Created a ) Tj /F3 10 Tf (Rust) Tj /F1 10 Tf ( library for the ) Tj /F3 10 Tf (Polkadot) Tj /F1 10 Tf ( blockchain for internal use, exposed via ) Tj /F4 10 Tf (PyO3) Tj /F1 10 Tf ( and ) Tj /F4 10 Tf (maturin) Tj /F1 10 Tf  T* 0 Tw (into ) Tj /F3 10 Tf (Python.) Tj T* ET
 Q
 Q
 q
@@ -617,7 +617,32 @@ q
 1 0 0 1 57.02362 340.6772 cm
 Q
 q
-1 0 0 1 57.02362 304.6772 cm
+1 0 0 1 57.02362 316.6772 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .60402 Tw 12 TL /F1 10 Tf 0 0 0 rg (Created a ) Tj /F3 10 Tf (Rust) Tj /F1 10 Tf ( library for ) Tj /F3 10 Tf (Hedera hashgraph,) Tj /F1 10 Tf ( to ingest data from the mainnet API into our local data) Tj T* 0 Tw (stores.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 310.6772 cm
+Q
+q
+1 0 0 1 57.02362 274.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -639,10 +664,10 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 298.6772 cm
+1 0 0 1 57.02362 268.6772 cm
 Q
 q
-1 0 0 1 57.02362 286.6772 cm
+1 0 0 1 57.02362 256.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -665,10 +690,10 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 280.6772 cm
+1 0 0 1 57.02362 250.6772 cm
 Q
 q
-1 0 0 1 57.02362 256.6772 cm
+1 0 0 1 57.02362 226.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -690,10 +715,10 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 250.6772 cm
+1 0 0 1 57.02362 220.6772 cm
 Q
 q
-1 0 0 1 57.02362 238.6772 cm
+1 0 0 1 57.02362 208.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -708,32 +733,6 @@ q
 1 0 0 1 23 -3 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Reworked the internal packaging system to leverage modern ) Tj /F3 10 Tf (Python) Tj /F1 10 Tf ( practices such as ) Tj /F4 10 Tf (poetry) Tj /F1 10 Tf (.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 57.02362 232.6772 cm
-Q
-q
-1 0 0 1 57.02362 208.6772 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .214882 Tw (Designed a load-balancer to place over our blockchain nodes \(internal and vendor-hosted\). Led a team) Tj T* 0 Tw (of 2 engineers who built this.) Tj T* ET
 Q
 Q
 q
@@ -758,7 +757,8 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm 5.347362 Tw 12 TL /F1 10 Tf 0 0 0 rg (Designed and wrote a websocket client to ingest blockchain data from various websocket) Tj T* 0 Tw (implementions of chains using ) Tj /F3 10 Tf (Rust.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .214882 Tw (Designed a load-balancer to place over our blockchain nodes \(internal and vendor-hosted\). Led a team) Tj T* 0 Tw (of 2 engineers who built this.) Tj T* ET
 Q
 Q
 q
@@ -769,7 +769,32 @@ q
 1 0 0 1 57.02362 172.6772 cm
 Q
 q
-1 0 0 1 57.02362 160.6772 cm
+1 0 0 1 57.02362 148.6772 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 5.347362 Tw 12 TL /F1 10 Tf 0 0 0 rg (Designed and wrote a websocket client to ingest blockchain data from various websocket) Tj T* 0 Tw (implementions of chains using ) Tj /F3 10 Tf (Rust.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 142.6772 cm
+Q
+q
+1 0 0 1 57.02362 130.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -791,10 +816,10 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 154.6772 cm
+1 0 0 1 57.02362 124.6772 cm
 Q
 q
-1 0 0 1 57.02362 142.6772 cm
+1 0 0 1 57.02362 112.6772 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -816,7 +841,7 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 142.6772 cm
+1 0 0 1 57.02362 112.6772 cm
 Q
 q
 1 0 0 1 51.02362 66.51969 cm
@@ -845,7 +870,7 @@ Q
 q
 1 0 0 1 51.02362 42.51969 cm
 q
-BT 1 0 0 1 0 2 Tm 115.1542 0 Td 12 TL /F5 10 Tf 0 0 0 rg (Autogenerated from an rst file on) Tj /F1 10 Tf ( 2024-01-17 ) Tj /F5 10 Tf (using Python.) Tj T* -115.1542 0 Td ET
+BT 1 0 0 1 0 2 Tm 115.1542 0 Td 12 TL /F5 10 Tf 0 0 0 rg (Autogenerated from an rst file on) Tj /F1 10 Tf ( 2024-02-05 ) Tj /F5 10 Tf (using Python.) Tj T* -115.1542 0 Td ET
 Q
 Q
  
@@ -1338,7 +1363,7 @@ Q
 q
 1 0 0 1 51.02362 42.51969 cm
 q
-BT 1 0 0 1 0 2 Tm 115.1542 0 Td 12 TL /F5 10 Tf 0 0 0 rg (Autogenerated from an rst file on) Tj /F1 10 Tf ( 2024-01-17 ) Tj /F5 10 Tf (using Python.) Tj T* -115.1542 0 Td ET
+BT 1 0 0 1 0 2 Tm 115.1542 0 Td 12 TL /F5 10 Tf 0 0 0 rg (Autogenerated from an rst file on) Tj /F1 10 Tf ( 2024-02-05 ) Tj /F5 10 Tf (using Python.) Tj T* -115.1542 0 Td ET
 Q
 Q
  
@@ -1899,7 +1924,7 @@ Q
 q
 1 0 0 1 51.02362 42.51969 cm
 q
-BT 1 0 0 1 0 2 Tm 115.1542 0 Td 12 TL /F5 10 Tf 0 0 0 rg (Autogenerated from an rst file on) Tj /F1 10 Tf ( 2024-01-17 ) Tj /F5 10 Tf (using Python.) Tj T* -115.1542 0 Td ET
+BT 1 0 0 1 0 2 Tm 115.1542 0 Td 12 TL /F5 10 Tf 0 0 0 rg (Autogenerated from an rst file on) Tj /F1 10 Tf ( 2024-02-05 ) Tj /F5 10 Tf (using Python.) Tj T* -115.1542 0 Td ET
 Q
 Q
  
@@ -1975,16 +2000,16 @@ xref
 0000034932 00000 n 
 0000035050 00000 n 
 0000035125 00000 n 
-0000045134 00000 n 
-0000055260 00000 n 
-0000064028 00000 n 
-0000064087 00000 n 
-0000064121 00000 n 
-0000064155 00000 n 
+0000045671 00000 n 
+0000055797 00000 n 
+0000064565 00000 n 
+0000064624 00000 n 
+0000064658 00000 n 
+0000064692 00000 n 
 trailer
 <<
 /ID 
-[<2caf02dbd7b4f2c3093bf9ac4f1c6740><2caf02dbd7b4f2c3093bf9ac4f1c6740>]
+[<db4976f003dcdfb69d7bb61f6a711424><db4976f003dcdfb69d7bb61f6a711424>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 36 0 R
@@ -1992,5 +2017,5 @@ trailer
 /Size 54
 >>
 startxref
-64189
+64726
 %%EOF
