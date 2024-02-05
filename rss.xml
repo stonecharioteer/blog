@@ -7,17 +7,21 @@
 &lt;p&gt;&lt;strong&gt;Technical Team Lead&lt;/strong&gt; | &lt;strong&gt;Fully Remote&lt;/strong&gt; | Started: &lt;strong&gt;November 2022&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;Managed a team of 4, providing technical and career-based guidance.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on &lt;strong&gt;Python&lt;/strong&gt;-based tooling for developers, including internal
+monitoring scripts.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Worked on building a &lt;strong&gt;GPT&lt;/strong&gt; that interfaces with internal and external APIs,
 providing a chat-based interface for managers to track and manage their teams’
 OKRs in line with the organization’s goals.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on a networking library integrating &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;libp2p&lt;/span&gt;&lt;/code&gt; with blockchain protocols.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Reviewed Rust code across projects, providing insight into improving code
+&lt;li&gt;&lt;p&gt;Worked with technology leaders in requirements gathering, writing work
+proposals and ran sprints with developers to meet customer deadlines.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reviewed &lt;strong&gt;Rust&lt;/strong&gt; code across projects, providing insight into improving code
 quality and adherance to the core spirit of the language.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked with technology leaders in requirements gathering, writing work proposals and
-ran sprints with developers to meet customer deadlines.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on POCs for an &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ssv&lt;/span&gt;&lt;/code&gt; &lt;strong&gt;Rust&lt;/strong&gt; implementation.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on building tooling for &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;foundry&lt;/span&gt;&lt;/code&gt; to deploy to multiple chains using the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Sygma&lt;/span&gt;&lt;/code&gt; framework.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on &lt;strong&gt;Python&lt;/strong&gt;-based tooling for developers, including internal monitoring scripts.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on a &lt;strong&gt;Rust&lt;/strong&gt; networking library integrating &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;libp2p&lt;/span&gt;&lt;/code&gt; with blockchain
+protocols.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on building &lt;strong&gt;solidity&lt;/strong&gt; tooling for &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;foundry&lt;/span&gt;&lt;/code&gt; to deploy to multiple
+chains using the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Sygma&lt;/span&gt;&lt;/code&gt; framework.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Developed tutorials for on-boarding new developers to the company’s technology
+stack, including &lt;strong&gt;Substrate&lt;/strong&gt; and &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
 &lt;section id="merkle-science"&gt;
