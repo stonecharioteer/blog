@@ -6,7 +6,7 @@ Goodbye, Social Networks
 
 .. index:: reddit, instagram, facebook, hackernews, twitter, social-networks, adhd
 
-Over the last 2 months, I've deleted my Reddit, Twitter, Instagram and Facebook accounts. I have been thinking about it for a while now, and I'd already stopped using Facebook in 2016. I switched to Instagram, and while I had some memorable posts there, the short-video format that has plagued every video platform thus far has been an enormouse attention drain. I stopped using the app mid last year, and I deleted my account in December.
+Over the last 2 months, I've deleted my Reddit, Twitter, Instagram and Facebook accounts. I have been thinking about it for a while now, and I'd already stopped using Facebook in 2016. I switched to Instagram, and while I had some memorable posts there, the short-video format that has plagued every video platform thus far has been an enormous attention drain. I stopped using the app mid last year, and I deleted my account in December.
 
 I haven't really opened Instagram much besides to send some memes to friends, which was once a month or so. But the cognitive overload has not done me any good, so I decided to get rid of it completely.
 

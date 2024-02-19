@@ -16,6 +16,7 @@ Dear Mr. Debroy
     Feb 12th, 2017. I've reproduced it in its entirety here.
 
 .. figure:: /_static/images/posts/india/debroy-letter-01.jpg
+    :width: 300
 
 Dear Mr. Debroy,
 
@@ -71,12 +72,14 @@ way back home, I often visited a bookshop where I knew the owner quite well. As
 I was about to ask him if there was a "good version" of the Mahabharata, he
 stopped me.
 
-> If you want the full story, read this.
+::
+    If you want the full story, read this.
 
 He said, handing me a copy of an oddly bound book with curious symbols on the
 cover. It said:
 
-> The Mahabharata 1: *Translated* by Bibek Debroy
+:: 
+    The Mahabharata 1: *Translated* by Bibek Debroy
 
 *Translated*. Not a retelling. Not an abridgement. I was *sold*.
 
@@ -144,7 +147,7 @@ for Satyavathi, the terrible oath that Gangeya took for his father's sake, and,
 by extension, Puru's sacrifice for the sake of Yayati, made me wonder if any
 son today could do that for his father.
 
-> Bhishma of the Terrible Oath indeed!
+*Bhishma of the Terrible Oath indeed!*
 
 After I read of the births of the Pandavas and the Kauravas, I climbed a hill
 where the rishi Matanga is supposed to have cursed the Vanara King Vali, and
@@ -168,7 +171,8 @@ Dharma? Did Dharma compel the Son of Yama to wager Panchali away?
 
 Time and again Shakuni resorts to deceit and tells Yudishtira:
 
-> "I have won!"
+::
+    "I have won!"
 
 What Dharma is this that allows it?
 
@@ -196,7 +200,8 @@ very new to me. I'd never heard of them before. Narada offering to bestow
 Dharmaraja with the knowledge of dice games - the knowledge Nala was known -
 seemed just. If only Yudishtira knew dice before his match with Shakuni.
 
-> How subtle *is* Dharma?
+::
+    How subtle *is* Dharma?
 
 The day I finished the Virata Parva, it rained in Hampi. In *December!* The
 cyclone from the Bay of Bengal caught up with me. Or, like my aunts claim, King
@@ -241,7 +246,7 @@ four-hundred years and asked the idol if he thought it was fair.
 
 Naturally, he was silent.
 
-Flow.
+*Flow.*
 
 As a writer, it is hard to ignore the flow of the Mahabharata. As soon as he
 receives omniscience, Sanjaya cries out that *all* is *lost*. Bhishma has
@@ -282,15 +287,17 @@ Abhimanyu.
 The way that young boy was slain was far too cruel. I felt so angry at
 Jayadratha.
 
-> Where was Dharma then? Does it not protect those who protect it?
+
+*Where was Dharma then? Does it not protect those who protect it?*
 
 Why did Dharmaraja have to ask such a young boy to break in?
 
-> Dharma. All of the Mahabharata is about Dharma, or one's interpretation of
-> it. Was Abhimanyu wronged? Or was Arjuna committing sin as he shot
-> Bhurishrava in the arm to save Yuyudhana? As Jayadratha falls, Karna vows to
-> use the Pashupati against Arjuna and Drona struggles to prove his worth.
-> Dharma!
+::
+    Dharma. All of the Mahabharata is about Dharma, or one's interpretation of
+    it. Was Abhimanyu wronged? Or was Arjuna committing sin as he shot
+    Bhurishrava in the arm to save Yuyudhana? As Jayadratha falls, Karna vows to
+    use the Pashupati against Arjuna and Drona struggles to prove his worth.
+    Dharma!
 
 Again, where is Dharma in the killing of Drona by tricking him into believing
 his son has fallen?
@@ -331,7 +338,7 @@ How? Why do I feel the most sympathy for Suyodhana? I did not expect this.
 
 In his death, I grieved as though my kin had passed.
 
-Where was Dharma?
+Where *was* Dharma?
 
 And what of Dhritarashtra and Gandhari? What of Kunti who had just lost her
 first son? And what of Subhadra? And Droupadi? Her honour had been restored at
@@ -363,7 +370,7 @@ Mr. Debroy, I could go on and on for ten more pages and still not run out of
 things I would like to share with you.
 
 I have read the Bible, the Epic of Gilgamesh, the Homeric Epics, a few tales
-from the Norse Eddas, and Buddhist stories, and nothing comes close.
+from the Norse Eddas, and Buddhist stories, and *nothing* comes close.
 
 Everything pales in comparison. This story has it all. I can only hope it
 reaches more people.
@@ -395,8 +402,9 @@ translating the greatest story of them all.
 
 I have only one thing to say to anyone who asks me about the Mahabharata.
 
-> Bibek Debroy's translation is the only one you should read. Unless you can
-> read Sanskrit.
+::
+    Bibek Debroy's translation is the only one you should read. Unless you can
+    read Sanskrit.
 
 Thank you sir.
 
@@ -412,7 +420,7 @@ to me.
 
 Regards,
 
-Vinay Keerthi
+*Vinay Keerthi*
 
 ---------------------------
 Other Posts in the Series
