@@ -72,14 +72,12 @@ way back home, I often visited a bookshop where I knew the owner quite well. As
 I was about to ask him if there was a "good version" of the Mahabharata, he
 stopped me.
 
-::
-    If you want the full story, read this.
+"If you want the full story, read this."
 
 He said, handing me a copy of an oddly bound book with curious symbols on the
 cover. It said:
 
-:: 
-    The Mahabharata 1: *Translated* by Bibek Debroy
+**The Mahabharata 1: *Translated* by Bibek Debroy**
 
 *Translated*. Not a retelling. Not an abridgement. I was *sold*.
 
@@ -171,8 +169,7 @@ Dharma? Did Dharma compel the Son of Yama to wager Panchali away?
 
 Time and again Shakuni resorts to deceit and tells Yudishtira:
 
-::
-    "I have won!"
+"I have won!"
 
 What Dharma is this that allows it?
 
@@ -200,8 +197,7 @@ very new to me. I'd never heard of them before. Narada offering to bestow
 Dharmaraja with the knowledge of dice games - the knowledge Nala was known -
 seemed just. If only Yudishtira knew dice before his match with Shakuni.
 
-::
-    How subtle *is* Dharma?
+How subtle *is* Dharma?
 
 The day I finished the Virata Parva, it rained in Hampi. In *December!* The
 cyclone from the Bay of Bengal caught up with me. Or, like my aunts claim, King
@@ -292,12 +288,11 @@ Jayadratha.
 
 Why did Dharmaraja have to ask such a young boy to break in?
 
-::
-    Dharma. All of the Mahabharata is about Dharma, or one's interpretation of
-    it. Was Abhimanyu wronged? Or was Arjuna committing sin as he shot
-    Bhurishrava in the arm to save Yuyudhana? As Jayadratha falls, Karna vows to
-    use the Pashupati against Arjuna and Drona struggles to prove his worth.
-    Dharma!
+Dharma. All of the Mahabharata is about Dharma, or one's interpretation of
+it. Was Abhimanyu wronged? Or was Arjuna committing sin as he shot
+Bhurishrava in the arm to save Yuyudhana? As Jayadratha falls, Karna vows to
+use the Pashupati against Arjuna and Drona struggles to prove his worth.
+Dharma!
 
 Again, where is Dharma in the killing of Drona by tricking him into believing
 his son has fallen?
@@ -402,9 +397,8 @@ translating the greatest story of them all.
 
 I have only one thing to say to anyone who asks me about the Mahabharata.
 
-::
-    Bibek Debroy's translation is the only one you should read. Unless you can
-    read Sanskrit.
+Bibek Debroy's translation is the only one you should read. Unless you can
+read Sanskrit.
 
 Thank you sir.
 
