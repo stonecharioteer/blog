@@ -17,7 +17,9 @@ build:
 
 # watch directory for file changes and rebuild. note, you'll have to rerun this command if you add new files/folders to be watched.
 build-watch:
-  fd --type file | entr just build
+  # fd --type file | entr just build
+  watchexec --watch source/ --debounce 2000 --clear --notify -- just build
+
 
 # run github actions runner
 gh-runner:
@@ -27,7 +29,7 @@ gh-runner:
 
 # serve build folder using live-server
 serve:
-  live-server -h "0.0.0.0" build/html
+  live-server --host "0.0.0.0" --port 8001 build/html
 
 build-resume:
   rst2pdf -o source/resume/resume.pdf source/resume/resume.rst
