@@ -9,6 +9,14 @@ My letter to Bibek Debroy about his translation of the Valmiki Ramayana
     This letter is reproduced *almost* verbatim, except for some minor
     additions, to add context for readers. these are marked with footnotes.
 
+.. warning:: 
+
+    I haven't digitized the entire thing yet, this is still 25%. But I'm doing
+    it piece by piece.  This is a *long* letter, and was 42 pages in length when
+    I wrote it in
+    paper. I don't have a wordcount yet.
+
+
 **Dated** : *May 6, 2018 - May 26, 2018*
 
 Dear Mr. Debroy,
