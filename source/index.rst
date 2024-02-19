@@ -24,6 +24,7 @@ any employer, past or present.
    about/index
    Values<posts/2021/personal-code.rst>
    notes/index
+   reading/index
    mustread/index
    writing/index
    talks/index
