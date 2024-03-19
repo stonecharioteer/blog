@@ -32,7 +32,7 @@ But what I do remember is discovering Dragonball Z. As many Indian children who
 could afford one back then, I owned a bootleg gaming console. [#india_famiclone]_ It was a
 famicom/SNES/NES mix that had some weird releases that you didn't find in other
 places. Some of the games were the usual ensemble, Super Mario Bros,
-[#mario_bros]_ Contra, [#contra]_ Contra Force, [#contra_force]_ TMNT III The
+[#mario_bros]_ Contra, [#nes_contra]_ Contra Force, [#contra_force]_ TMNT III The
 Manhatten Project, [#tmnt_manhatten]_ Mortal Kombat, [#famicom_mortal_kombat]_
 Street Fighter [#famicom_street_fighter]_ and Ninja Gaiden 3. [#ninja_gaiden_3]_
 
@@ -127,7 +127,7 @@ years later!
 I don't remember getting all the episodes of DBZ, but it must have been after I
 got a broadband connection at home. It was a measly 64kbps, but I remember that
 it would take 37 minutes to download one anime episode. The episodes were 320p,
-encoded with *rmvb* [#rmvb]_ back then. I got them from websites like freeza.nl and
+encoded with *rmvb* [#rmvb_format]_ back then. I got them from websites like freeza.nl and
 dbzfighters.com. The latter would become the first forum I joined online, where
 I would have heated discussions with people I'd come to call friends. One of
 them is still in touch with me today. We lovingly call you Bird Mountain Man.
@@ -216,7 +216,7 @@ teach a dinosaur to ride a ball. [#cha_la_head_cha_la]_
 
 .. [#mario_bros] `Super Mario Bros <https://en.wikipedia.org/wiki/Super_Mario_Bros.>`_
 
-.. [#contra] This was a bootleg of the NES version of `Contra <https://en.wikipedia.org/wiki/Contra_(video_game)>`_
+.. [#nes_contra] This was a bootleg of the NES version of `Contra <https://en.wikipedia.org/wiki/Contra_(video_game)>`_
 
 .. [#contra_force] `Contra Force <https://en.wikipedia.org/wiki/Contra_Force>`_
 
@@ -234,7 +234,7 @@ teach a dinosaur to ride a ball. [#cha_la_head_cha_la]_
 
 .. [#toonami_ocean_dub] Cartoon Network India started airing Dragonball Z in 2000, and the original run was the same as the `Ocean Dub (Saban Dub) fiasco of the US. <https://dragonball.fandom.com/wiki/Ocean_Group_dubs#The_Saban_dub_(1996-1998)>`_ So we only got the cut episodes from the Arrival of Raditz to Goku... a Super-Saiyan?
 
-.. [#rmvb] Because of its low bitrate, and probably because of the presence of the Real Media Player back in the early 2000s, most anime was shared in the `RMVB <https://en.wikipedia.org/wiki/RMVB>`_ format. I remember going to buy a TV at a store armed with a thumbdrive with some RMVB files, to see if the TV would support it. Panasonic was the only one that supported it all.
+.. [#rmvb_format] Because of its low bitrate, and probably because of the presence of the Real Media Player back in the early 2000s, most anime was shared in the `RMVB <https://en.wikipedia.org/wiki/RMVB>`_ format. I remember going to buy a TV at a store armed with a thumbdrive with some RMVB files, to see if the TV would support it. Panasonic was the only one that supported it all.
 
 .. [#dbz_dot_com] Funimation used to run `dragonballz.com <https://dragonballz.com>`_, and for the longest time, this was the only website I'd spend time on. They introduced region locking sometime in the early '10s, and ever since, the site has been inaccessible in India.
 
