@@ -38,3 +38,8 @@ html_show_sphinx = False
 feed_base_url = "https://stonecharioteer.com"
 feed_author = author
 notfound_urls_prefix = None
+
+html_meta = {
+    'property="og:image"': 'https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png',
+    'name="twitter:image"': 'https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png',
+} 
