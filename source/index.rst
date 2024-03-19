@@ -36,6 +36,7 @@ any employer, past or present.
    :caption: Recent Posts
    :maxdepth: 1
 
+   posts/life/dear-toriyama-sensei.rst
    posts/life/no-social-networks.rst
    posts/technology/zenity-screen-lock.rst
    posts/life/learning-to-swim.rst

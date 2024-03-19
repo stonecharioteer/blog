@@ -19,11 +19,13 @@ serif_fonts = "Newsreader, Garamond, Helvetica, Times New Roman, Serif"
 html_theme_options = {
     "light_css_variables": {
         "font-stack": serif_fonts,
+        "font-size": 16
     },
     "light_logo": "images/logo/stonecharioteer-banner.png",
     "dark_logo": "images/logo/stonecharioteer-banner-bnw.png",
     "dark_css_variables": {
         "font-stack": serif_fonts,
+        "font-size": 16
     },
 }
 html_static_path = ["_static"]
