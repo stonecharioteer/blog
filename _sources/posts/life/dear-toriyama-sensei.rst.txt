@@ -71,7 +71,7 @@ revealing lore and exposition. I was hooked by the time Raditz was killed. I
 
 I didn't know, sensei, what I was getting into.
 
-Cartoon Network only aired 52 episodes, in repetition. [#toonami_ocean_dub]_ I
+Cartoon Network only aired 53 episodes, in repetition. [#toonami_ocean_dub]_ I
 didn't know what happened after Goku beats Recoome on Namek with one blow. I
 didn't know what a *Super Saiyan* was, something that Vegeta kept going on and
 on about. I wanted to know more, and that was around the time that the internet
@@ -154,11 +154,18 @@ letter where I want to talk about the artistic greatness of your work. There are
 several, amazing analyses of your work already, and I have nothing to add there.
 This is something more personal.
 
-I have a career because of you, Toriyama-sensei. After spending hours looking
-through Dragonballz.com, [#dbz_dot_com]_ I wanted to make my own website for the
-show, where I would have chapter summaries, and even detailed scene
-descriptions. I wanted to have a novelized Dragonball Z. I began learning web
-development to do this, and spent every moment I could trying to build a
+I learnt how to use a computer because of you. I wanted a computer just so I
+could watch episodes, and once I began finding them, I started making Anime
+Music Videos based off the few episodes I had.  I learnt how to use video
+editing software, how to use image editing software because of the love I had
+for DBZ. I like to think that if I pursued it, I'd have made a good career there
+as well. I went a different direction.
+
+I have a career in software because of you, Toriyama-sensei. After spending
+hours looking through Dragonballz.com, [#dbz_dot_com]_ I wanted to make my own
+website for the show, where I would have chapter summaries, and even detailed
+scene descriptions. I wanted to have a novelized Dragonball Z. I began learning
+web development to do this, and spent every moment I could trying to build a
 website. I never launched this online since it needed money, but this started my
 interest in computers.
 
