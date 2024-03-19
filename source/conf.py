@@ -8,6 +8,7 @@ extensions = [
     "sphinx_panels",
     "sphinxcontrib.youtube",
     "notfound.extension",
+    "sphinxext.opengraph",
     # "sphinx_last_updated_by_git",
     "yasfb",
 ]
@@ -43,3 +44,9 @@ html_meta = {
     'property="og:image"': 'https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png',
     'name="twitter:image"': 'https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png',
 } 
+
+ogp_site_url = "https://stonecharioteer.com"
+ogp_image = "https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png"
+ogp_type = "article"
+
+ogp_enable_meta_description = True

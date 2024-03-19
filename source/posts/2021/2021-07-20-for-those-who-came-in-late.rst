@@ -1,8 +1,6 @@
-:blogpost: true
-:date: July 20, 2021
-:category: Programming
-:tags: Tech, Meta, Python, Ruby, Career-Advice
-:redirect: for-those-who-came-in-late
+.. meta::
+    :description: A post on my personal career journey.
+    :date: 2017-07-20
 
 .. _for-those-who-came-in-late:
 
@@ -83,7 +81,7 @@ all that data.
 I was asked to abandon the project, since I clearly didn't know what I was
 doing. That ticked me off. I called my old school friends, who I looked to as
 guides and mentors, and one of them recommended I try doing this in either
-Python on Ruby. The other friend told me to choose Python and try using PyQt
+Python or Ruby. The other friend told me to choose Python and try using PyQt
 to write a desktop application that would write to a SQL database.
 
 All of this was extremely new to me. I'd tried learning Python in 2011, when I
