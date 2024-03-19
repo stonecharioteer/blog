@@ -1,4 +1,11 @@
-.. index:: akira-toriyama, dragonball, anime, manga
+.. meta::
+    :description: A letter to Akira Toriyama, the creator of Dragon Ball and Dr. Slump, about what he means to someone who grew up in India.
+    :keywords: dragonball, anime, manga, india, videogames
+   :property="og:image": https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png
+   :name="twitter:image": https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png
+
+.. index:: akira-toriyama, dragonball, anime, manga, video-games
+
 
 ========================================================
 Dear Toriyama-sensei
