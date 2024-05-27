@@ -38,6 +38,7 @@ Posts
    :caption: Life
    :maxdepth: 1
 
+   posts/life/why-do-i-swim.rst
    posts/life/dear-toriyama-sensei.rst
    posts/life/no-social-networks.rst
    posts/life/learning-to-swim.rst
