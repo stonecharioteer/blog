@@ -1,6 +1,11 @@
+
 =======================================================
 Why Do I Swim?
 =======================================================
+
+**Monday, 2024-05-27**:
+
+.. index:: swimming
 
 In my 20s people used to ask me a strange question. "Why do you write?" In my
 naivete, I'd offer some pretentious answer about finding the meaning to my
