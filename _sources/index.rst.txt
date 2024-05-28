@@ -21,7 +21,6 @@ any employer, past or present.
    about/index
    Values<posts/2021/personal-code.rst>
    notes/index
-   reading/index
    mustread/index
    writing/index
    talks/index
@@ -52,6 +51,20 @@ Posts
    posts/2019/the-sound-of-music.rst
 
 .. toctree::
+   :caption: Reading
+   :maxdepth: 1
+
+   reading/catalogue/index
+   reading/index
+   posts/2021/2021-03-10-mahabharata-instagram.rst
+
+.. toctree::
+   :caption: Writing
+   :maxdepth: 1
+
+   posts/2022/no-blog.rst
+
+.. toctree::
    :caption: Travel
    :maxdepth: 1
 
@@ -75,19 +88,6 @@ Posts
    posts/2022/two-of-three-rule.rst
    posts/2021/empathy-in-tech.rst
    posts/life/career/memories-of-a-shopfloor.rst
-
-.. toctree::
-   :caption: Reading
-   :maxdepth: 1
-
-   posts/2021/2021-03-10-mahabharata-instagram.rst
-
-.. toctree::
-   :caption: Writing
-   :maxdepth: 1
-
-   posts/2022/no-blog.rst
-
 
 .. toctree::
    :caption: Archive

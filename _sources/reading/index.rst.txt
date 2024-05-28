@@ -7,7 +7,7 @@ Books & Reading
 .. note::
     
     This section is about the books I'm reading or have read. I'm not active on any social networks,
-    including Goodreads, and I'll move as much of my books on reading here.
+    including Goodreads, and I'll move as much of my reading activity here.
 
 
 ------------------------------------------------
@@ -20,7 +20,10 @@ Works by Bibek Debroy
 
     These are not *reviews*, since I cannot really be unbiased about
     Mr. Debroy's works. Instead, I'm reproducing letters of correspondence
-    that I've sent to him over the years. It started off with the Mahabharata letter, after reading the 10 volume translation over a period of 18-20 days in the ruins of Hampi, progressed to the Harivamsha, some unrelated questions/essays, and then the Ramayana.
+    that I've sent to him over the years. It started off with the Mahabharata
+    letter, after reading the 10 volume translation over a period of 18-20 days
+    in the ruins of Hampi, progressed to the Harivamsha, some unrelated
+    questions/essays, and then the Ramayana.
 
 - :ref:`The Mahabharata <mahabharata>` 
 - :ref:`The Harivamsha <debroy-harivamsha-letter>` (letter not yet digitized)
