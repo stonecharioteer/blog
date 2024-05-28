@@ -36,3 +36,7 @@ build-resume:
 
 release-resume: build-resume
   gh release create "v$(date -u +%Y.%m.%d)" source/resume/resume.pdf
+
+# Recipe to call the create_book.sh script with arguments
+create-book *ARGS:
+    ./scripts/create-book.sh {{ARGS}}

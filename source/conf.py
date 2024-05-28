@@ -13,21 +13,19 @@ extensions = [
     "yasfb",
 ]
 templates_path = ["_templates"]
-exclude_patterns = ["_drafts/**"]
+exclude_patterns = [
+    "_drafts/**",
+    "source/reading/catalogue/books/new-book-template.rst",
+    "source/reading/catalogue/books/records/*.json",
+]
 html_theme = "furo"
 html_title = "Stonecharioteer"
 serif_fonts = "Newsreader, Garamond, Helvetica, Times New Roman, Serif"
 html_theme_options = {
-    "light_css_variables": {
-        "font-stack": serif_fonts,
-        "font-size": 16
-    },
+    "light_css_variables": {"font-stack": serif_fonts, "font-size": 16},
     "light_logo": "images/logo/stonecharioteer-banner.png",
     "dark_logo": "images/logo/stonecharioteer-banner-bnw.png",
-    "dark_css_variables": {
-        "font-stack": serif_fonts,
-        "font-size": 16
-    },
+    "dark_css_variables": {"font-stack": serif_fonts, "font-size": 16},
 }
 html_static_path = ["_static"]
 html_css_files = ["css/custom.css"]
@@ -41,9 +39,9 @@ feed_author = author
 notfound_urls_prefix = None
 
 html_meta = {
-    'property="og:image"': 'https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png',
-    'name="twitter:image"': 'https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png',
-} 
+    'property="og:image"': "https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png",
+    'name="twitter:image"': "https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png",
+}
 
 ogp_site_url = "https://stonecharioteer.com"
 ogp_image = "https://stonecharioteer.com/_static/images/logo/stonecharioteer-banner.png"
