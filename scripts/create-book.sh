@@ -71,31 +71,31 @@ if [ -n "$JSON_FILE" ]; then
 fi
 
 # Prompt for input using gum if arguments are not provided, offering default values from JSON
-if [ -z "$BOOK_TITLE" ];then
+if [ -z "$BOOK_TITLE" ]; then
     BOOK_TITLE=$(gum input --placeholder "Book Title" --value "$BOOK_TITLE")
 fi
-if [ -z "$AUTHOR_NAME" ];then
+if [ -z "$AUTHOR_NAME" ]; then
     AUTHOR_NAME=$(gum input --placeholder "Author Name" --value "$AUTHOR_NAME")
 fi
-if [ -z "$BOOK_IMAGE_PATH" ];then
+if [ -z "$BOOK_IMAGE_PATH" ]; then
     BOOK_IMAGE_PATH=$(gum input --placeholder "Book Image Path" --value "$BOOK_IMAGE_PATH")
-    if [ ! -f "$BOOK_IMAGE_PATH" ];then
+    if [ ! -f "$BOOK_IMAGE_PATH" ]; then
         echo "Error: Image file does not exist at path $BOOK_IMAGE_PATH" >&2
         exit 2
     fi
 fi
-if [ -z "$ISBN" ];then
+if [ -z "$ISBN" ]; then
     ISBN=$(gum input --placeholder "ISBN" --value "$ISBN")
 fi
-if [ -z "$TAGS" ];then
+if [ -z "$TAGS" ]; then
     TAGS=$(gum input --placeholder "Tags (comma separated)" --value "$TAGS")
 fi
-if [ -z "$DATE_OF_PURCHASE" ];then
+if [ -z "$DATE_OF_PURCHASE" ]; then
     DATE_OF_PURCHASE=$(gum input --placeholder "Date of Purchase" --value "$DATE_OF_PURCHASE")
 fi
 
 # Convert author name from "Firstname Lastname" to "Lastname-Firstname"
-if [ -n "$AUTHOR_NAME" ];then
+if [ -n "$AUTHOR_NAME" ]; then
     AUTHOR_NAME_FILENAME=$(echo "$AUTHOR_NAME" | awk '{print $2"-"$1}' | tr -d ' ')
 fi
 
@@ -107,6 +107,7 @@ JSON_OUTPUT="./${AUTHOR_NAME_FILENAME}--${BOOK_TITLE_FILENAME}.json"
 # Get the image extension and create the new image path
 IMAGE_EXTENSION="${BOOK_IMAGE_PATH##*.}"
 NEW_IMAGE_PATH="./source/_static/images/catalogue/books/${AUTHOR_NAME_FILENAME}--${BOOK_TITLE_FILENAME}.${IMAGE_EXTENSION}"
+RELATIVE_IMAGE_PATH="${NEW_IMAGE_PATH#./source}"
 
 # Output the new values and paths
 echo "Book Title: $BOOK_TITLE"
@@ -119,7 +120,7 @@ echo "New Book File Path: $(realpath "$FILE_PATH")"
 echo "New Image Path: $(realpath "$NEW_IMAGE_PATH")"
 
 # Confirm whether to proceed
-if ! gum confirm "Do you want to proceed with these values?";then
+if ! gum confirm "Do you want to proceed with these values?"; then
     echo "Operation cancelled."
     exit 0
 fi
@@ -145,7 +146,7 @@ cp "$BOOK_IMAGE_PATH" "$NEW_IMAGE_PATH"
 # Replace the keywords in the new file
 sed -i "s|{{BOOK_TITLE}}|$BOOK_TITLE|g" $FILE_PATH
 sed -i "s|{{AUTHOR_NAME}}|$AUTHOR_NAME|g" $FILE_PATH
-sed -i "s|{{BOOK_IMAGE_PATH}}|$NEW_IMAGE_PATH|g" $FILE_PATH
+sed -i "s|{{BOOK_IMAGE_PATH}}|$RELATIVE_IMAGE_PATH|g" $FILE_PATH
 sed -i "s|{{ISBN}}|$ISBN|g" $FILE_PATH
 sed -i "s|{{TAGS}}|$TAGS|g" $FILE_PATH
 sed -i "s|{{DATE_OF_PURCHASE}}|$DATE_OF_PURCHASE|g" $FILE_PATH
