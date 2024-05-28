@@ -9,6 +9,7 @@ This page lists books I currently own in my library.
    :numbered:
 
    books/Debroy-Bibek--The-Mahabharata.rst
+   books/Debroy-Bibek--Harivamsha.rst
    books/Nair-Madhavan--Rocketing-Through-the-Skies.rst
    books/Ramanujan-AK--Soma.rst
    books/Spinoza-Benedict--Ethics.rst
