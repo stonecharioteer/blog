@@ -19,3 +19,7 @@ The Color of Hate
   | The colour of hate changes, from violet to red,
   | Perhaps to you it is green,
   | But for others saffron is your spleen.
+
+.. note::
+
+   If you wish to share this poem, please use `this image. </_static/images/posts/the-colour-of-hate/the-colour-of-hate.png>`_
