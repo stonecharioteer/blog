@@ -30,6 +30,11 @@ ChainSafe
 * Worked on building a **GPT** that interfaces with internal and external APIs,
   providing a chat-based interface for managers to track and manage their teams'
   OKRs in line with the organization's goals.
+* Worked on building an inhouse **GPT** that uses Solidity audit data to
+  provide customers with a bot that can assist them in self-audits.
+* Created dashboards and metric collectors for EVM wallets to track balances
+  and alert cross-chain contract creators when the balance is below the
+  threshold.
 * Worked with technology leaders in requirements gathering, writing work
   proposals and ran sprints with developers to meet customer deadlines.
 * Reviewed **Rust** code across projects, providing insight into improving code
