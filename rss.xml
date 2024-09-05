@@ -1,5 +1,161 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>The Color of Hate</title><link>https://stonecharioteer.com/writing/random/the-colour-of-hate.html</link><description>
+<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Resume - Vinay Keerthi K. T.</title><link>https://stonecharioteer.com/resume/resume.html</link><description>
+ 
+&lt;hr class="docutils"/&gt;
+&lt;section id="chainsafe"&gt;
+&lt;h2&gt;ChainSafe&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Technical Team Lead&lt;/strong&gt; | &lt;strong&gt;Fully Remote&lt;/strong&gt; | Started: &lt;strong&gt;November 2022&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Managed a team of 4, providing technical and career-based guidance.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on &lt;strong&gt;Python&lt;/strong&gt;-based tooling for developers, including internal
+monitoring scripts.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on building a &lt;strong&gt;GPT&lt;/strong&gt; that interfaces with internal and external APIs,
+providing a chat-based interface for managers to track and manage their teams’
+OKRs in line with the organization’s goals.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on building an inhouse &lt;strong&gt;GPT&lt;/strong&gt; that uses Solidity audit data to
+provide customers with a bot that can assist them in self-audits.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Created dashboards and metric collectors for EVM wallets to track balances
+and alert cross-chain contract creators when the balance is below the
+threshold.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked with technology leaders in requirements gathering, writing work
+proposals and ran sprints with developers to meet customer deadlines.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reviewed &lt;strong&gt;Rust&lt;/strong&gt; code across projects, providing insight into improving code
+quality and adherance to the core spirit of the language.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on a &lt;strong&gt;Rust&lt;/strong&gt; networking library integrating &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;libp2p&lt;/span&gt;&lt;/code&gt; with blockchain
+protocols.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on building &lt;strong&gt;solidity&lt;/strong&gt; tooling for &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;foundry&lt;/span&gt;&lt;/code&gt; to deploy to multiple
+chains using the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Sygma&lt;/span&gt;&lt;/code&gt; framework.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Developed tutorials for on-boarding new developers to the company’s technology
+stack, including &lt;strong&gt;Substrate&lt;/strong&gt; and &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="merkle-science"&gt;
+&lt;h2&gt;Merkle Science&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Lead Software Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; - &lt;strong&gt;Remote&lt;/strong&gt; | Started: &lt;strong&gt;JULY 2021 - November 2022&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Built a team for internal tooling, managed scouting for talent, hiring and
+interviewing.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for the &lt;strong&gt;Polkadot&lt;/strong&gt; blockchain for internal use, exposed
+via &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyO3&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;maturin&lt;/span&gt;&lt;/code&gt; into &lt;strong&gt;Python.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for &lt;strong&gt;Hedera hashgraph,&lt;/strong&gt; to ingest data from the mainnet
+API into our local data stores.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conceptualized and developed the data-engineering toolkit - a multi-faceted
+&lt;strong&gt;CLI&lt;/strong&gt; that facilitates the movement of data across data stores, and opens up
+our data layers for quality and consistency-related metrics, using &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed the alerting system for all our services.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed and wrote the data quality service using &lt;strong&gt;Rust&lt;/strong&gt; - this application goes
+through the data of various &lt;strong&gt;blockchains&lt;/strong&gt; to identify missing or newer data.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reworked the internal packaging system to leverage modern &lt;strong&gt;Python&lt;/strong&gt; practices such as &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;poetry&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed a load-balancer to place over our blockchain nodes (internal and
+vendor-hosted). Led a team of 2 engineers who built this.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed and wrote a websocket client to ingest blockchain data from various
+websocket implementions of chains using &lt;strong&gt;Rust.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Overhauled &lt;strong&gt;Apache Airflow DAGs&lt;/strong&gt; for modularity.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Developed a central &lt;strong&gt;Python&lt;/strong&gt; library for all utilities and internal code.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="visa-inc"&gt;
+&lt;h2&gt;VISA Inc.&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Sr. Software Engineer - Data Platform&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;MAY 2019 - June 2021&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Designed and spearheaded the security portal project, a REST layer that
+facilitates automation of Qualys security updates for PCI compliance while
+adhering to company-specific rules regarding service availability, using OSS
+and internal APIs to minimize maintenance time. Reduced contractual manpower
+by 75% and downtime by 70 hours a month for 2400 servers.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Developed a library to create concurrent and self-cleaning containerized
+sessions that can be used to automate parallel workflows for testing and
+automation of complex applications: example threat analysis of cross-border
+transactions using a single VISA card.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mentored college graduates to build their first applications, integrating
+native pipelines, helped them craft detailed documentation and tune the performance
+of their apps.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Developed internal tools to orchestrate servers, including a tool to run
+parallel ssh-based connections, like &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ansible&lt;/span&gt;&lt;/code&gt;, but with company-specific requirements.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed and developed a tool that allows developers to quickly get started with
+projects, building pipelines and bootstrapping the initial code for them, while
+setting up quality checks, running automated tests and uploading artifacts to
+the right registry in JFrog Artifactory.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conducted Python workshops with a varied audience, training them on how to set up
+Python projects, how to package them and how to build python modules so that they are
+shareable.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mentored and trained SDE-1s and interns, guiding them in design and implementation details.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="gkn-aerospace-india"&gt;
+&lt;h2&gt;GKN Aerospace India&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;DEC 2015 - MAY 2019&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Built a company-wide search engine that indexed all files in an Elastic-Search
+server and allowed users to query even the contents of files such as spreadsheets
+&lt;em&gt;and&lt;/em&gt; 3D models of Gearboxes using specific classification criteria.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Built wrapper libraries in Python leveraging &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyCuda&lt;/span&gt;&lt;/code&gt; and NVIDIA libraries
+for engineers to use within &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Jupyter&lt;/span&gt;&lt;/code&gt; notebooks.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Managed &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Jenkins&lt;/span&gt;&lt;/code&gt; pipelines and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Subversion&lt;/span&gt;&lt;/code&gt; source code registry singlehandedly.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed and developed a microservice-based application to automate complex
+engineering pipelines involving proprietary software and protocols.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed the system interaction and data pipelines for a large-scale
+application that submits HPC jobs to servers placed across the world.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conducted annual training in Python and Data Analytics for Mechanical Engineers.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="flipkart-internet-pvt-ltd"&gt;
+&lt;h2&gt;Flipkart Internet Pvt. Ltd.&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Copy Editor / Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;FEB 2014 - DEC 2015&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Used &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyQt&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Python&lt;/span&gt;&lt;/code&gt; to build a work allocation tool for writers,
+that allowed them to report their work and set up pipelines for editors
+and content-creators to leverage their output.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Created an application to generate thousands of
+&lt;a class="reference internal" href="../_images/grid-world.png"&gt;&lt;img alt="web" src="../_images/grid-world.png" style="height: 32px;"/&gt;&lt;/a&gt; &lt;a class="reference external" href="https://stonecharioteer.com/posts/2018/leonardo.html"&gt;Infographics on Products for sale during the Big Billion Day&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="tech-stack"&gt;
+&lt;h2&gt;Tech Stack&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Programming Languages: Rust, Python, Javascript&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Web Frameworks: Flask, Express, Rocket&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;UI: React, CSS, ES6&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Containers: Docker, Podman, Kubernetes&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Others: RabbitMQ, Elastic Search, Redis, Jenkins, Gitlab CI, pre-commit&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="personal-projects-oss"&gt;
+&lt;h2&gt;Personal Projects &amp;amp; OSS&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Write regularly about technology and a life as a software engineer at
+&lt;a class="reference external" href="https://stonecharioteer.com"&gt;stonecharioteer.com&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Spoke at IndiaFoss2.0 in a Birds-of-a-feather event - &lt;a class="reference external" href="https://hasgeek.com/rootconf/is-rust-ready-for-enterprise-adoption/sub/is-rust-language-ready-for-enterprise-adoption-sum-54yCDYud7csgx3sbT9GAFd"&gt;Is Rust Ready for
+Enterprise Adoption?&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Spoke at the Bangalore Python Meetup about using Rust as a Python developer -
+&lt;a class="reference external" href="https://www.youtube.com/watch?v=62yfBiHrUis"&gt;Explicit is Better than Implicit - Rust for Pythonistas&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Livecasted myself reading the &lt;a class="reference external" href="https://youtube.com/playlist?list=PLyW7jj8atph9VO9UoMPXIKNiyK-q5GZWj"&gt;PostgreSQL Documentation&lt;/a&gt; over a weekend for fun.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Spoke at PyCon India 2019 on &lt;a class="reference external" href="https://www.youtube.com/watch?v=aEYftBZz6ag"&gt;MicroPython: Building a Physical Inventory
+Search Engine.&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Built a visualization dashboard atop of BitBucket and Github, to visualize
+developer productivity and project momentum using statistical control charts.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Regularly conduct workshops on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Flask&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Python&lt;/span&gt;&lt;/code&gt; at the Bangalore
+Python meetup group - &lt;a class="reference external" href="https://www.youtube.com/watch?v=xickNijifOs"&gt;Web Application Security with OWASP Principles,&lt;/a&gt; &lt;a class="reference external" href="https://www.youtube.com/watch?v=1C7Oj0KEhgo"&gt;Flask Workshop&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Built my own Raspberry Pi Kubernetes Cluster out of 4 Raspberry Pi 4 and 4 Raspberry Pi Zero W boards.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Built my own Mechanical Keyboards using the QMK framework.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Completed the Advanced Kubernetes Training from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;learnk8s.io&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="other-experience"&gt;
+&lt;h2&gt;Other Experience&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;FEB 2011 - FEB 2014&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Trained in using statistical control methods for improving quality and production
+at TVS group companies.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Interned at IISc, Bangalore, used Python to study the strength of airplane wing composites.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr class="docutils"/&gt;
+&lt;/section&gt;
+</description><pubDate>Thu, 05 Sep 2024 00:00:00 </pubDate></item><item><title>The Color of Hate</title><link>https://stonecharioteer.com/writing/random/the-colour-of-hate.html</link><description>
  
 &lt;figure class="align-default" style="width: 350px"&gt;
 &lt;img alt="../../_images/stonecharioteer-banner.png" src="../../_images/stonecharioteer-banner.png"/&gt;
@@ -1017,158 +1173,7 @@ Could Not Be Strung&lt;/em&gt;, and how Rama broke it in an attempt to string it
 &lt;dd&gt;&lt;p&gt;I meant the Rajaji Ramayana, and the Ashok Banker version I suppose.&lt;/p&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;
-</description><pubDate>Mon, 19 Feb 2024 00:00:00 </pubDate></item><item><title>Resume - Vinay Keerthi K. T.</title><link>https://stonecharioteer.com/resume/resume.html</link><description>
- 
-&lt;hr class="docutils"/&gt;
-&lt;section id="chainsafe"&gt;
-&lt;h2&gt;ChainSafe&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Technical Team Lead&lt;/strong&gt; | &lt;strong&gt;Fully Remote&lt;/strong&gt; | Started: &lt;strong&gt;November 2022&lt;/strong&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Managed a team of 4, providing technical and career-based guidance.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on &lt;strong&gt;Python&lt;/strong&gt;-based tooling for developers, including internal
-monitoring scripts.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on building a &lt;strong&gt;GPT&lt;/strong&gt; that interfaces with internal and external APIs,
-providing a chat-based interface for managers to track and manage their teams’
-OKRs in line with the organization’s goals.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked with technology leaders in requirements gathering, writing work
-proposals and ran sprints with developers to meet customer deadlines.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Reviewed &lt;strong&gt;Rust&lt;/strong&gt; code across projects, providing insight into improving code
-quality and adherance to the core spirit of the language.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on a &lt;strong&gt;Rust&lt;/strong&gt; networking library integrating &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;libp2p&lt;/span&gt;&lt;/code&gt; with blockchain
-protocols.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on building &lt;strong&gt;solidity&lt;/strong&gt; tooling for &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;foundry&lt;/span&gt;&lt;/code&gt; to deploy to multiple
-chains using the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Sygma&lt;/span&gt;&lt;/code&gt; framework.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Developed tutorials for on-boarding new developers to the company’s technology
-stack, including &lt;strong&gt;Substrate&lt;/strong&gt; and &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="merkle-science"&gt;
-&lt;h2&gt;Merkle Science&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Lead Software Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; - &lt;strong&gt;Remote&lt;/strong&gt; | Started: &lt;strong&gt;JULY 2021 - November 2022&lt;/strong&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Built a team for internal tooling, managed scouting for talent, hiring and
-interviewing.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for the &lt;strong&gt;Polkadot&lt;/strong&gt; blockchain for internal use, exposed
-via &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyO3&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;maturin&lt;/span&gt;&lt;/code&gt; into &lt;strong&gt;Python.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for &lt;strong&gt;Hedera hashgraph,&lt;/strong&gt; to ingest data from the mainnet
-API into our local data stores.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Conceptualized and developed the data-engineering toolkit - a multi-faceted
-&lt;strong&gt;CLI&lt;/strong&gt; that facilitates the movement of data across data stores, and opens up
-our data layers for quality and consistency-related metrics, using &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed the alerting system for all our services.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed and wrote the data quality service using &lt;strong&gt;Rust&lt;/strong&gt; - this application goes
-through the data of various &lt;strong&gt;blockchains&lt;/strong&gt; to identify missing or newer data.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Reworked the internal packaging system to leverage modern &lt;strong&gt;Python&lt;/strong&gt; practices such as &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;poetry&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed a load-balancer to place over our blockchain nodes (internal and
-vendor-hosted). Led a team of 2 engineers who built this.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed and wrote a websocket client to ingest blockchain data from various
-websocket implementions of chains using &lt;strong&gt;Rust.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Overhauled &lt;strong&gt;Apache Airflow DAGs&lt;/strong&gt; for modularity.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Developed a central &lt;strong&gt;Python&lt;/strong&gt; library for all utilities and internal code.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="visa-inc"&gt;
-&lt;h2&gt;VISA Inc.&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Sr. Software Engineer - Data Platform&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;MAY 2019 - June 2021&lt;/strong&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Designed and spearheaded the security portal project, a REST layer that
-facilitates automation of Qualys security updates for PCI compliance while
-adhering to company-specific rules regarding service availability, using OSS
-and internal APIs to minimize maintenance time. Reduced contractual manpower
-by 75% and downtime by 70 hours a month for 2400 servers.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Developed a library to create concurrent and self-cleaning containerized
-sessions that can be used to automate parallel workflows for testing and
-automation of complex applications: example threat analysis of cross-border
-transactions using a single VISA card.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mentored college graduates to build their first applications, integrating
-native pipelines, helped them craft detailed documentation and tune the performance
-of their apps.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Developed internal tools to orchestrate servers, including a tool to run
-parallel ssh-based connections, like &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ansible&lt;/span&gt;&lt;/code&gt;, but with company-specific requirements.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed and developed a tool that allows developers to quickly get started with
-projects, building pipelines and bootstrapping the initial code for them, while
-setting up quality checks, running automated tests and uploading artifacts to
-the right registry in JFrog Artifactory.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Conducted Python workshops with a varied audience, training them on how to set up
-Python projects, how to package them and how to build python modules so that they are
-shareable.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mentored and trained SDE-1s and interns, guiding them in design and implementation details.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="gkn-aerospace-india"&gt;
-&lt;h2&gt;GKN Aerospace India&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;DEC 2015 - MAY 2019&lt;/strong&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Built a company-wide search engine that indexed all files in an Elastic-Search
-server and allowed users to query even the contents of files such as spreadsheets
-&lt;em&gt;and&lt;/em&gt; 3D models of Gearboxes using specific classification criteria.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built wrapper libraries in Python leveraging &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyCuda&lt;/span&gt;&lt;/code&gt; and NVIDIA libraries
-for engineers to use within &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Jupyter&lt;/span&gt;&lt;/code&gt; notebooks.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Managed &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Jenkins&lt;/span&gt;&lt;/code&gt; pipelines and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Subversion&lt;/span&gt;&lt;/code&gt; source code registry singlehandedly.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed and developed a microservice-based application to automate complex
-engineering pipelines involving proprietary software and protocols.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed the system interaction and data pipelines for a large-scale
-application that submits HPC jobs to servers placed across the world.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Conducted annual training in Python and Data Analytics for Mechanical Engineers.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="flipkart-internet-pvt-ltd"&gt;
-&lt;h2&gt;Flipkart Internet Pvt. Ltd.&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Copy Editor / Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;FEB 2014 - DEC 2015&lt;/strong&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Used &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyQt&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Python&lt;/span&gt;&lt;/code&gt; to build a work allocation tool for writers,
-that allowed them to report their work and set up pipelines for editors
-and content-creators to leverage their output.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Created an application to generate thousands of
-&lt;a class="reference internal" href="../_images/grid-world.png"&gt;&lt;img alt="web" src="../_images/grid-world.png" style="height: 32px;"/&gt;&lt;/a&gt; &lt;a class="reference external" href="https://stonecharioteer.com/posts/2018/leonardo.html"&gt;Infographics on Products for sale during the Big Billion Day&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="tech-stack"&gt;
-&lt;h2&gt;Tech Stack&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Programming Languages: Rust, Python, Javascript&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Web Frameworks: Flask, Express, Rocket&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;UI: React, CSS, ES6&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Containers: Docker, Podman, Kubernetes&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Others: RabbitMQ, Elastic Search, Redis, Jenkins, Gitlab CI, pre-commit&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="personal-projects-oss"&gt;
-&lt;h2&gt;Personal Projects &amp;amp; OSS&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Write regularly about technology and a life as a software engineer at
-&lt;a class="reference external" href="https://stonecharioteer.com"&gt;stonecharioteer.com&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Spoke at IndiaFoss2.0 in a Birds-of-a-feather event - &lt;a class="reference external" href="https://hasgeek.com/rootconf/is-rust-ready-for-enterprise-adoption/sub/is-rust-language-ready-for-enterprise-adoption-sum-54yCDYud7csgx3sbT9GAFd"&gt;Is Rust Ready for
-Enterprise Adoption?&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Spoke at the Bangalore Python Meetup about using Rust as a Python developer -
-&lt;a class="reference external" href="https://www.youtube.com/watch?v=62yfBiHrUis"&gt;Explicit is Better than Implicit - Rust for Pythonistas&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Livecasted myself reading the &lt;a class="reference external" href="https://youtube.com/playlist?list=PLyW7jj8atph9VO9UoMPXIKNiyK-q5GZWj"&gt;PostgreSQL Documentation&lt;/a&gt; over a weekend for fun.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Spoke at PyCon India 2019 on &lt;a class="reference external" href="https://www.youtube.com/watch?v=aEYftBZz6ag"&gt;MicroPython: Building a Physical Inventory
-Search Engine.&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built a visualization dashboard atop of BitBucket and Github, to visualize
-developer productivity and project momentum using statistical control charts.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Regularly conduct workshops on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Flask&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Python&lt;/span&gt;&lt;/code&gt; at the Bangalore
-Python meetup group - &lt;a class="reference external" href="https://www.youtube.com/watch?v=xickNijifOs"&gt;Web Application Security with OWASP Principles,&lt;/a&gt; &lt;a class="reference external" href="https://www.youtube.com/watch?v=1C7Oj0KEhgo"&gt;Flask Workshop&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built my own Raspberry Pi Kubernetes Cluster out of 4 Raspberry Pi 4 and 4 Raspberry Pi Zero W boards.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built my own Mechanical Keyboards using the QMK framework.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Completed the Advanced Kubernetes Training from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;learnk8s.io&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;section id="other-experience"&gt;
-&lt;h2&gt;Other Experience&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;FEB 2011 - FEB 2014&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Trained in using statistical control methods for improving quality and production
-at TVS group companies.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Interned at IISc, Bangalore, used Python to study the strength of airplane wing composites.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr class="docutils"/&gt;
-&lt;/section&gt;
-</description><pubDate>Mon, 05 Feb 2024 00:00:00 </pubDate></item><item><title>Screen Lock for Cinnamon Desktop using Zenity and Terminal Commands</title><link>https://stonecharioteer.com/posts/technology/zenity-screen-lock.html</link><description>
+</description><pubDate>Mon, 19 Feb 2024 00:00:00 </pubDate></item><item><title>Screen Lock for Cinnamon Desktop using Zenity and Terminal Commands</title><link>https://stonecharioteer.com/posts/technology/zenity-screen-lock.html</link><description>
 &lt;span id="zenity-screen-lock"/&gt; 
 &lt;div class="admonition note"&gt;
 &lt;p class="admonition-title"&gt;Note&lt;/p&gt;
