@@ -1,3 +1,5 @@
+:og:description: I'm not going to open that link you just shared because short content is bad for us.
+
 .. index: social-media,internet,mental-health
 
 .. _not-opening-that:
