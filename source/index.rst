@@ -65,6 +65,7 @@ Posts
    posts/2022/no-blog.rst
    writing/random/if-i-adopt-an-elephant/index
    writing/random/the-colour-of-hate.rst
+   writing/random/how-do-i-read-of-thee-o-rama.rst
 
 .. toctree::
    :caption: Travel
