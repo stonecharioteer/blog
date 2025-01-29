@@ -22,11 +22,12 @@ Resume - Vinay Keerthi K. T.
 ChainSafe
 -------------------------------
 
-**Technical Team Lead** | **Fully Remote** | Started: **November 2022**
+**Technical Team Lead** | **Fully Remote** | **November 2022 - February 2025**
 
 * Managed a team of 4, providing technical and career-based guidance.
 * Worked on **Python**-based tooling for developers, including internal
-  monitoring scripts.
+  monitoring scripts, data-quality alerting systems and setup **dagster** for data pipelines
+  for accounting and blockchain event tracking.
 * Worked on building a **GPT** that interfaces with internal and external APIs,
   providing a chat-based interface for managers to track and manage their teams'
   OKRs in line with the organization's goals.
@@ -35,6 +36,8 @@ ChainSafe
 * Created dashboards and metric collectors for EVM wallets to track balances
   and alert cross-chain contract creators when the balance is below the
   threshold.
+* Worked with external stakeholders for proof-of-concept in projects across blockchains, including,
+  but not limited to, nym, filecoin and **ethereum**.
 * Worked with technology leaders in requirements gathering, writing work
   proposals and ran sprints with developers to meet customer deadlines.
 * Reviewed **Rust** code across projects, providing insight into improving code
@@ -50,7 +53,7 @@ ChainSafe
 Merkle Science
 -------------------------------
 
-**Lead Software Developer** | **Bangalore** - **Remote** | Started: **JULY 2021 - November 2022**
+**Lead Software Developer** | **Bangalore** - **Remote** | **JULY 2021 - November 2022**
 
 * Built a team for internal tooling, managed scouting for talent, hiring and
   interviewing.
