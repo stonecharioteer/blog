@@ -13,13 +13,18 @@ install-python:
 
 # build the blog locally
 build:
-  ./build.sh html
+  rm -rf build
+  docker build -t sphinx-docs .
+  docker rm sphinx-docs-container || echo "Didn't need to cleanup container"
+  docker run --name sphinx-docs-container sphinx-docs
+  docker cp sphinx-docs-container:/app/build ./build
+  docker rm sphinx-docs-container
+
 
 # watch directory for file changes and rebuild. note, you'll have to rerun this command if you add new files/folders to be watched.
 build-watch:
   # fd --type file | entr just build
   watchexec --watch source/ --debounce 2000 --clear --notify -- just build
-
 
 # run github actions runner
 gh-runner:

@@ -9,6 +9,7 @@ extensions = [
     "sphinxcontrib.youtube",
     "notfound.extension",
     "sphinxext.opengraph",
+    "sphinx.ext.extlinks",
     # "sphinx_last_updated_by_git",
     "yasfb",
 ]
