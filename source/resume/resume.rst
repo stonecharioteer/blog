@@ -143,7 +143,7 @@ Tech Stack
 * UI: React, CSS, ES6
 * Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph
 * Containers: Docker, Podman, Kubernetes
-* Others: RabbitMQ, Elastic Search, Redis, Jenkins, Gitlab CI, pre-commit
+* Others: RabbitMQ, ElasticSearch, Redis, Jenkins, Gitlab CI, pre-commit
 
 ------------------------
 Personal Projects & OSS
