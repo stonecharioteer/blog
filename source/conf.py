@@ -26,6 +26,7 @@ html_theme_options = {
     "light_logo": "images/logo/stonecharioteer-banner.png",
     "dark_logo": "images/logo/stonecharioteer-banner-bnw.png",
     "dark_css_variables": {"font-stack": serif_fonts, "font-size": 16},
+    "announcement": "<em>Open to Hire!</em> I'm currently open to hire. <a href='https://github.com/stonecharioteer/blog/releases/latest'>Here's my resume.</a>",
 }
 html_static_path = ["_static"]
 html_css_files = ["css/custom.css"]
