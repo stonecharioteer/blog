@@ -242,7 +242,7 @@ endobj
 endobj
 34 0 obj
 <<
-/Author () /CreationDate (D:20250204220941+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250204220941+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20250204222213+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250204222213+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Resume - Vinay Keerthi K. T.) /Trapped /False
 >>
 endobj
@@ -825,7 +825,7 @@ endstream
 endobj
 47 0 obj
 <<
-/Length 10967
+/Length 10999
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -1312,8 +1312,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 2.739269 Tw (Conducted Python workshops with a varied audience, training them on how to set up Python) Tj T* 0 Tw (projects, how to package them and how to build python modules so that they are shareable.) Tj T* ET
+BT 1 0 0 1 0 14 Tm 2.184983 Tw 12 TL /F1 10 Tf 0 0 0 rg (Conducted ) Tj /F2 10 Tf (Python workshops) Tj /F1 10 Tf ( with a varied audience, training them on how to set up Python) Tj T* 0 Tw (projects, how to package them and how to build python modules so that they are shareable.) Tj T* ET
 Q
 Q
 q
@@ -1402,7 +1401,7 @@ endstream
 endobj
 48 0 obj
 <<
-/Length 9042
+/Length 9040
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -1540,7 +1539,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm 1.453735 Tw 12 TL /F1 10 Tf 0 0 0 rg (Used ) Tj /F3 10 Tf (PyQt) Tj /F1 10 Tf ( and ) Tj 1 0 0 rg (**) Tj 0 0 0 rg (Python* to build a work allocation tool for content writers, that allowed them to) Tj T* 0 Tw (report their work and set up pipelines for editors and content-creators to leverage their output.) Tj T* ET
+BT 1 0 0 1 0 14 Tm .192339 Tw 12 TL /F1 10 Tf 0 0 0 rg (Used ) Tj /F3 10 Tf (PyQt) Tj /F1 10 Tf ( and ) Tj /F2 10 Tf (Python) Tj /F1 10 Tf ( to build a work allocation tool for content writers, that allowed them to report) Tj T* 0 Tw (their work and set up pipelines for editors and content-creators to leverage their output.) Tj T* ET
 Q
 Q
 q
@@ -1970,15 +1969,15 @@ xref
 0000034895 00000 n 
 0000034970 00000 n 
 0000044615 00000 n 
-0000055635 00000 n 
-0000064729 00000 n 
-0000064788 00000 n 
-0000064822 00000 n 
-0000064856 00000 n 
+0000055667 00000 n 
+0000064759 00000 n 
+0000064818 00000 n 
+0000064852 00000 n 
+0000064886 00000 n 
 trailer
 <<
 /ID 
-[<86a335661e0de8ad50af2e4459589c05><86a335661e0de8ad50af2e4459589c05>]
+[<07ed2b3a83cf20aa999ae4c349ecee7b><07ed2b3a83cf20aa999ae4c349ecee7b>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 34 0 R
@@ -1986,5 +1985,5 @@ trailer
 /Size 53
 >>
 startxref
-64890
+64920
 %%EOF

@@ -35,7 +35,8 @@ build-resume:
   rst2pdf -o source/resume/resume.pdf source/resume/resume.rst
 
 release-resume: build-resume
-  gh release create "v$(date -u +%Y.%m.%d)" source/resume/resume.pdf
+  cp source/resume/resume.pdf "/tmp/vinay-keerthi-resume-v$(date +%F).pdf"
+  gh release create "v$(date -u +%Y.%m.%d)" "/tmp/vinay-keerthi-resume-v$(date +%F).pdf"
 
 # Recipe to call the create_book.sh script with arguments
 create-book *ARGS:
