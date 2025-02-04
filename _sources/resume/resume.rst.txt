@@ -108,7 +108,7 @@ VISA Inc.
 * Developed internal tools to orchestrate servers, including a tool to run
   parallel ssh-based connections, like ``ansible``, but with company-specific requirements.
 * Designed and developed a bootstrapping tool for developers to quicken onboarding.
-* Conducted Python workshops with a varied audience, training them on how to set up
+* Conducted **Python workshops** with a varied audience, training them on how to set up
   Python projects, how to package them and how to build python modules so that they are
   shareable.
 * Mentored and trained SDE-1s and interns, guiding them in design and implementation details.
@@ -130,7 +130,7 @@ Flipkart Internet Pvt. Ltd.
 
 **Bangalore** | **FEB 2014 - DEC 2015**
 
-* Used ``PyQt`` and **Python* to build a work allocation tool for content writers,
+* Used ``PyQt`` and **Python** to build a work allocation tool for content writers,
   that allowed them to report their work and set up pipelines for editors
   and content-creators to leverage their output.
 * Created an application to generate thousands of
