@@ -21,15 +21,12 @@ Resume - Vinay Keerthi K. T.
 Key Skills
 ---------------------------
 
-* Programming Languages: Python, Rust, Javascript
+* Languages: Python, Rust, Javascript
 * Generative AI: Deepseek R1 (locally hosted the distilled model), Llama 3.1, ChatGPT
 * GenAI Tooling: ollama, ChatGPT API Development, LM-Studio
 * Web Frameworks: Flask (Python), Axum (Rust), Expressjs (Node/Deno)
+* Others: Apache Airflow, Dagster, Redis, Jenkins, Github Actions, Docker, K8s
 * Have been using Linux for over 20 years (since 2005)
-* UI: React, CSS, ES6
-* Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph
-* Containers: Docker, Podman, Kubernetes
-* Others: Apache Airflow, Dagster, RabbitMQ, ElasticSearch, Redis, Jenkins, Github Actions, pre-commit
 
 ------------------------------------
 Experience 
@@ -52,6 +49,7 @@ ChainSafe
   OKRs in line with the organization's goals.
 * Worked on building an inhouse **LLM** that uses Solidity audit data to
   provide customers with a bot that can assist them in self-audits.
+  This used Llama 3.1 and stored the training data on Chroma DB.
 * Created dashboards and metric collectors for EVM wallets to track balances
   and alert cross-chain contract creators when the balance is below the
   threshold.
@@ -101,19 +99,15 @@ VISA Inc.
 * Created dashboards to visualize productivity during the onset of COVID-19
   so that managers could identify the distribution of workload.
 * Designed and spearheaded the security portal project, a REST layer that
-  facilitates automation of Qualys security updates for PCI compliance while
+  facilitates automation of security updates for PCI compliance while
   adhering to company-specific rules regarding service availability, using OSS
-  and internal APIs to minimize maintenance time. Reduced contractual manpower
-  by 75% and downtime by 70 hours a month for 2400 servers.
+  and internal APIs to minimize maintenance time.
 * Mentored college graduates to build their first applications, integrating
   native pipelines, helped them craft detailed documentation and tune the performance
   of their apps.
 * Developed internal tools to orchestrate servers, including a tool to run
   parallel ssh-based connections, like ``ansible``, but with company-specific requirements.
-* Designed and developed a tool that allows developers to quickly get started with
-  projects, building pipelines and bootstrapping the initial code for them, while
-  setting up quality checks, running automated tests and uploading artifacts to
-  the right registry in JFrog Artifactory.
+* Designed and developed a bootstrapping tool for developers to quicken onboarding.
 * Conducted Python workshops with a varied audience, training them on how to set up
   Python projects, how to package them and how to build python modules so that they are
   shareable.
@@ -125,46 +119,27 @@ GKN Aerospace India
 **Sofware Engineer** | **Bangalore** | **DEC 2015 - MAY 2019**
 
 * Built a company-wide search engine that indexed all files in an Elastic-Search
-  server and allowed users to query even the contents of files such as spreadsheets
-  *and* 3D models of Gearboxes using specific classification criteria.
-* Built wrapper libraries in Python leveraging ``PyCuda`` and NVIDIA libraries
-  for engineers to use within ``Jupyter`` notebooks.
+  server and allowed users to query both text and proprietary binary formats.
+* Built wrapper libraries in **Python** leveraging **PyCuda** and **NVIDIA** libraries
+  for engineers to use within **Jupyter** notebooks.
 * Managed ``Jenkins`` pipelines and ``Subversion`` source code registry singlehandedly.
-* Designed and developed a microservice-based application to automate complex
-  engineering pipelines involving proprietary software and protocols.
-* Designed the system interaction and data pipelines for a large-scale
-  application that submits HPC jobs to servers placed across the world.
-* Conducted annual training in Python and Data Analytics for Mechanical Engineers.
+* Conducted annual training in **Python** and Data Analytics for Mechanical Engineers.
 
 Flipkart Internet Pvt. Ltd.
 -------------------------------
 
-**Copy Editor / Developer** | **Bangalore** | **FEB 2014 - DEC 2015**
+**Bangalore** | **FEB 2014 - DEC 2015**
 
-* Used ``PyQt`` and ``Python`` to build a work allocation tool for writers,
+* Used ``PyQt`` and **Python* to build a work allocation tool for content writers,
   that allowed them to report their work and set up pipelines for editors
   and content-creators to leverage their output.
 * Created an application to generate thousands of
   |web| `Infographics on Products for sale during the Big Billion Day <https://stonecharioteer.com/posts/2018/leonardo.html>`_
 
--------------
-Tech Stack
--------------
-
-* Programming Languages: Rust, Python, Javascript
-* Web Frameworks: Flask (Python), Axum (Rust), Expressjs (Node/Deno)
-* UI: React, CSS, ES6
-* Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph
-* Containers: Docker, Podman, Kubernetes
-* Others: Apache Airflow, Dagster, RabbitMQ, ElasticSearch, Redis, Jenkins, Gitlab CI, pre-commit
-* Have been using Linux for over 20 years (since 2005)
-
 ------------------------
 Personal Projects & OSS
 ------------------------
 
-* Write regularly about technology and a life as a software engineer at
-  `stonecharioteer.com <https://stonecharioteer.com>`_
 * Spoke at IndiaFoss2.0 in a Birds-of-a-feather event - `Is Rust Ready for
   Enterprise Adoption?
   <https://hasgeek.com/rootconf/is-rust-ready-for-enterprise-adoption/sub/is-rust-language-ready-for-enterprise-adoption-sum-54yCDYud7csgx3sbT9GAFd>`_
@@ -179,8 +154,6 @@ Personal Projects & OSS
   Python meetup group - `Web Application Security with OWASP Principles,
   <https://www.youtube.com/watch?v=xickNijifOs>`_ `Flask Workshop
   <https://www.youtube.com/watch?v=1C7Oj0KEhgo>`_
-* Built my own Raspberry Pi Kubernetes Cluster out of 4 Raspberry Pi 4 and 4 Raspberry Pi Zero W boards.
-* Built my own Mechanical Keyboards using the QMK framework.
 * Completed the Advanced Kubernetes Training from ``learnk8s.io``
 
 ----------------------
@@ -190,7 +163,7 @@ Other Experience
 * **FEB 2011 - FEB 2014**
 
   * Trained in using statistical control methods for improving quality and production
-    at TVS group companies.
+    at TVS group companies. Used Excel and Python for improvements across the shop floor
   * Interned at IISc, Bangalore, used Python to study the strength of airplane wing composites.
 
 -----
