@@ -1,20 +1,569 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Resume - Vinay Keerthi K. T.</title><link>https://stonecharioteer.com/resume/resume.html</link><description>
+<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Retrying a HTTP Reqwest with Rust</title><link>https://stonecharioteer.com/posts/2022/rust-reqwest-retry.html</link><description>
+&lt;span id="rust-reqwest-retry"/&gt; 
+&lt;p&gt;How do you retry an HTTP request in Rust?&lt;/p&gt;
+&lt;p&gt;I have been using Rust as my only programming language for a few months now at
+Merkle Science. One of the things I have been building lately has been a crawler
+that looks through a paginated API for responses.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;If you’re building something like this and shipping a single light-weight
+binary isn’t your requirement, I’d recommend doing this in Python and using
+the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;tenacity&lt;/span&gt;&lt;/code&gt; package for retrying queries.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;When building one of these, you will definitely need something that incorporates
+a “retry when you fail” mechanism because repeated API calls, or &lt;em&gt;any&lt;/em&gt; API calls
+for that matter, are bound to fail. You might have a rate limited API, or you
+might just have an unreliable network.&lt;/p&gt;
+&lt;p&gt;I had both these problems and needed to build something that could repeatedly
+try to make a GET request.&lt;/p&gt;
+&lt;p&gt;I was using the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;reqwest&lt;/span&gt;&lt;/code&gt; crate to make these requests and I kept getting
+a &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;reqwest::Error&lt;/span&gt;&lt;/code&gt;. Oddly enough, I was getting this both when the network
+failed, or when the payload didn’t have the expected schema.&lt;/p&gt;
+&lt;p&gt;To understand this, let’s first put together a simple server that will mimic
+unreliable behaviour.&lt;/p&gt;
+&lt;p&gt;For simplicity, I’m going to write this in Flask.&lt;/p&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="linenos"&gt; 1&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;flask&lt;/span&gt;
+&lt;span class="linenos"&gt; 2&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;random&lt;/span&gt;
+&lt;span class="linenos"&gt; 3&lt;/span&gt;
+&lt;span class="linenos"&gt; 4&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;flask&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Flask&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vm"&gt;__name__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="linenos"&gt; 5&lt;/span&gt;
+&lt;span class="linenos"&gt; 6&lt;/span&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"/&amp;lt;int:which&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="linenos"&gt; 7&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;which&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;span class="linenos"&gt; 8&lt;/span&gt;   &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="linenos"&gt; 9&lt;/span&gt;      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{},&lt;/span&gt; &lt;span class="mi"&gt;404&lt;/span&gt;
+&lt;span class="linenos"&gt;10&lt;/span&gt;   &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;which&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="linenos"&gt;11&lt;/span&gt;      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="linenos"&gt;12&lt;/span&gt;         &lt;span class="s2"&gt;"name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"John Doe"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="linenos"&gt;13&lt;/span&gt;         &lt;span class="s2"&gt;"age"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;28&lt;/span&gt;
+&lt;span class="linenos"&gt;14&lt;/span&gt;      &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="linenos"&gt;15&lt;/span&gt;   &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="linenos"&gt;16&lt;/span&gt;      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="linenos"&gt;17&lt;/span&gt;         &lt;span class="s2"&gt;"uuid"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"40fc1511-00ed-4021-9733-41a3ccbcf441"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="linenos"&gt;18&lt;/span&gt;         &lt;span class="s2"&gt;"packet_size"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;523&lt;/span&gt;
+&lt;span class="linenos"&gt;19&lt;/span&gt;      &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Save the above code snippet into a file named &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;app.py&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To run this, create a virtual environment using Python: &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;python3&lt;/span&gt; &lt;span class="pre"&gt;-m&lt;/span&gt; &lt;span class="pre"&gt;venv&lt;/span&gt; &lt;span class="pre"&gt;env&lt;/span&gt;&lt;/code&gt;,
+activate it: &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;source&lt;/span&gt; &lt;span class="pre"&gt;./env/bin/activate&lt;/span&gt;&lt;/code&gt;, and install Flask: &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;python3&lt;/span&gt; &lt;span class="pre"&gt;-m&lt;/span&gt; &lt;span class="pre"&gt;pip&lt;/span&gt;
+&lt;span class="pre"&gt;install&lt;/span&gt; &lt;span class="pre"&gt;flask&lt;/span&gt;&lt;/code&gt;. Then, run the following &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;FLASK_DEBUG=true&lt;/span&gt; &lt;span class="pre"&gt;flask&lt;/span&gt; &lt;span class="pre"&gt;run&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;While you don’t need to understand how this works, all you need to know is that
+this now provides a simple, &lt;em&gt;unreliable&lt;/em&gt; webserver that has only 2 routes:
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;http://127.0.0.1:5000/1&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;http://127.0.0.1:5000/2&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Both these routes have a 51% chance of returning a 404, and the first URL has an
+added 71% chance of returning the wrong response.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;The term &lt;em&gt;“wrong”&lt;/em&gt; is subjective, and for the sake of an example, I’m going
+to pretend that all APIs in the world always return the agreed-upon payload
+for a given route. Such a world doesn’t exist though.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;To get this response, I wrote the following code.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;To get the following code running make sure you add the following lines to
+your &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Cargo.toml&lt;/span&gt;&lt;/code&gt; file’s &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;[dependencies]&lt;/span&gt;&lt;/code&gt; section.&lt;/p&gt;
+&lt;div class="highlight-toml notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;env_logger&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"0.9.0"&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"0.4.17"&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="n"&gt;reqwest&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"0.11.11"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;"blocking"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"serde_json"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"json"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="n"&gt;serde&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"1.0.137"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;"derive"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="n"&gt;serde_json&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"1.0.81"&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="n"&gt;tokio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"1.19.2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;"full"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"rt"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;You will need to setup Rust before you try to run this code.&lt;/p&gt;
+&lt;div class="highlight-rust notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="linenos"&gt; 1&lt;/span&gt;&lt;span class="k"&gt;use&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;::&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;fmt&lt;/span&gt;::&lt;span class="n"&gt;Debug&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;::&lt;span class="n"&gt;Duration&lt;/span&gt;&lt;span class="p"&gt;};&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 2&lt;/span&gt;&lt;span class="k"&gt;use&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;serde&lt;/span&gt;::&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;Serialize&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Deserialize&lt;/span&gt;&lt;span class="p"&gt;};&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 3&lt;/span&gt;
+&lt;span class="linenos"&gt; 4&lt;/span&gt;&lt;span class="cp"&gt;#[derive(Debug, Serialize, Deserialize)]&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 5&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="nc"&gt;ResponseOne&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 6&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;: &lt;span class="nb"&gt;String&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 7&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;age&lt;/span&gt;: &lt;span class="kt"&gt;u8&lt;/span&gt;
+&lt;span class="linenos"&gt; 8&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 9&lt;/span&gt;
+&lt;span class="linenos"&gt;10&lt;/span&gt;&lt;span class="cp"&gt;#[derive(Debug, Serialize, Deserialize)]&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;11&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="nc"&gt;ResponseTwo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;12&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;uuid&lt;/span&gt;: &lt;span class="nb"&gt;String&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;13&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;packet_size&lt;/span&gt;: &lt;span class="kt"&gt;u16&lt;/span&gt;
+&lt;span class="linenos"&gt;14&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;15&lt;/span&gt;
+&lt;span class="linenos"&gt;16&lt;/span&gt;&lt;span class="k"&gt;fn&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;17&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;url_1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"http://127.0.0.1:5000/1"&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_string&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;18&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;resp_1&lt;/span&gt;: &lt;span class="nc"&gt;ResponseOne&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;reqwest&lt;/span&gt;::&lt;span class="n"&gt;blocking&lt;/span&gt;::&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url_1&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;19&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;log&lt;/span&gt;::&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"resp_1 = {resp_1:?}"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;20&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Running this with &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;RUST_LOG=info&lt;/span&gt; &lt;span class="pre"&gt;cargo&lt;/span&gt; &lt;span class="pre"&gt;run&lt;/span&gt;&lt;/code&gt; fails in one of two ways.&lt;/p&gt;
+&lt;p&gt;First, if the server is running, this fails because the payload is not as
+expected.&lt;/p&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: reqwest::Error { kind: Decode, source: Error("missing field `name`", line: 1, column: 2) }', src/main.rs:50:77
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Next, if you kill the flask server, you will get the following response.&lt;/p&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: reqwest::Error { kind: Request, url: Url { scheme: "http", cannot_be_a_base: false, username: "", password: None, host: Some(Ipv4(127.0.0.1)), port: Some(5000), path: "/1", query: None, fragment: None }, source: hyper::Error(Connect, ConnectError("tcp connect error", Os { code: 111, kind: ConnectionRefused, message: "Connection refused" })) }', src/main.rs:50:61
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Both of these are standard errors you will encounter when building a crawler.
+And the answer to both of these is: “just try again”. Rust’s error handling
+isn’t exactly error handling, so you cannot just bypass an error and try again
+for a fixed number of times without being extremely verbose about it. One way to
+handle this is to find a crate that does the job for you.&lt;/p&gt;
+&lt;p&gt;There were several, but only the &lt;a class="reference external" href="https://crates.io/crates/again"&gt;again crate&lt;/a&gt;
+really worked the way I needed it to. I had several requirements.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;I need to be able to retry a query.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I need to be able to wait and retry after some time.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I should be able to introduce some randomness between calls, aka &lt;em&gt;jitter&lt;/em&gt;, so
+that the API doesn’t realize it’s being spammed with programmed calls.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I should stop after a reasonable amount of time because I am not a spammer.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The again crate works for all of these, with one slight caveat. The
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;again::retry&lt;/span&gt;&lt;/code&gt; function, and all of its variants, call &lt;em&gt;async&lt;/em&gt; functions, not
+synchronous ones. In more specific terms, calls that &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;again::retry&lt;/span&gt;&lt;/code&gt; makes need
+to return a &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Future&lt;/span&gt;&lt;/code&gt; object, one that can be waited upon by the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;again&lt;/span&gt;&lt;/code&gt;
+crate itself. So the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;reqwuest::blocking&lt;/span&gt;&lt;/code&gt; calls are out of the question.&lt;/p&gt;
+&lt;p&gt;Thankfully, reqwest by default uses async calls. However, Rust’s &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;main&lt;/span&gt;&lt;/code&gt;
+function is a synchronous one, and cannot &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;await&lt;/span&gt;&lt;/code&gt; on an async call out of the
+box.&lt;/p&gt;
+&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;tokio&lt;/span&gt;&lt;/code&gt; to the rescue!&lt;/p&gt;
+&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;tokio&lt;/span&gt;&lt;/code&gt; comes with a runtime feature that allows us to block upon an async
+call within a non-async function. I won’t dive too much into that right now, but
+that rabbit hole led down to this code.&lt;/p&gt;
+&lt;div class="highlight-rust notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="linenos"&gt; 1&lt;/span&gt;&lt;span class="sd"&gt;/// Get a specific typed response&lt;/span&gt;
+&lt;span class="linenos"&gt; 2&lt;/span&gt;&lt;span class="k"&gt;async&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;fn&lt;/span&gt; &lt;span class="nf"&gt;get_typed_payload&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;: &lt;span class="kp"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nb"&gt;String&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-&amp;gt; &lt;span class="nb"&gt;Result&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;reqwest&lt;/span&gt;::&lt;span class="n"&gt;Error&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;where&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;'&lt;/span&gt;&lt;span class="na"&gt;de&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;: &lt;span class="nc"&gt;serde&lt;/span&gt;::&lt;span class="n"&gt;Deserialize&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;'&lt;/span&gt;&lt;span class="na"&gt;de&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 3&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nb"&gt;Ok&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;reqwest&lt;/span&gt;::&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="k"&gt;await&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="k"&gt;await&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 4&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 5&lt;/span&gt;
+&lt;span class="linenos"&gt; 6&lt;/span&gt;&lt;span class="k"&gt;fn&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 7&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;env_logger&lt;/span&gt;::&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 8&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tokio&lt;/span&gt;::&lt;span class="n"&gt;runtime&lt;/span&gt;::&lt;span class="n"&gt;Runtime&lt;/span&gt;::&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt; 9&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;retry_policy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;again&lt;/span&gt;::&lt;span class="n"&gt;RetryPolicy&lt;/span&gt;::&lt;span class="n"&gt;exponential&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Duration&lt;/span&gt;::&lt;span class="n"&gt;from_secs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;10&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;with_jitter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;11&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;with_max_delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Duration&lt;/span&gt;::&lt;span class="n"&gt;from_secs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;12&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;with_max_retries&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;13&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;url_1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"http://127.0.0.1:5000/1"&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_string&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;14&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;resp_1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;block_on&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;15&lt;/span&gt;&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;retry_policy&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;retry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;||&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;16&lt;/span&gt;&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="n"&gt;get_typed_payload&lt;/span&gt;::&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;ResponseOne&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;url_1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;17&lt;/span&gt;&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;});&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;18&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;19&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;20&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;log&lt;/span&gt;::&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Response 1: {resp_1:?}"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;21&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;url_2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"http://127.0.0.1:5000/2"&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_string&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;22&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;resp_2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;block_on&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;23&lt;/span&gt;&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;retry_policy&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;retry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;||&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;24&lt;/span&gt;&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="n"&gt;get_typed_payload&lt;/span&gt;::&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;ResponseTwo&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;url_2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;25&lt;/span&gt;&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;});&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;26&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;27&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;28&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;log&lt;/span&gt;::&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Response 2: {resp_2:?}"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;span class="linenos"&gt;29&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This above code can be run with &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;RUST_LOG=info,again=trace&lt;/span&gt; &lt;span class="pre"&gt;cargo&lt;/span&gt; &lt;span class="pre"&gt;run&lt;/span&gt;&lt;/code&gt; and will
+repeatedly try the API until it gets a response. The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;retry_policy&lt;/span&gt;&lt;/code&gt; sets a
+starting duration of 1 second, increases it until it reaches 3 seconds, and
+tries at most 10 times before actually giving up on the URL.&lt;/p&gt;
+&lt;p&gt;The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;get_typed_payload&lt;/span&gt;&lt;/code&gt; function is written so as to abstract away the JSON
+payload extraction, and because the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;retry&lt;/span&gt;&lt;/code&gt; function needs an async function
+that returns a result with a very clear Error type. Thankfully reqwest returns
+only one possible error type.&lt;/p&gt;
+&lt;p&gt;Some things I learnt about Rust when writing this was about generics and
+lifetimes.&lt;/p&gt;
+&lt;p&gt;The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;for&amp;lt;'de&amp;gt;&lt;/span&gt; &lt;span class="pre"&gt;T:&lt;/span&gt; &lt;span class="pre"&gt;serde::Deserialize&amp;lt;'de&amp;gt;&lt;/span&gt;&lt;/code&gt; bit denotes that the
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;get_typed_payload&lt;/span&gt;&lt;/code&gt; function can adapt to return any type that implements
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;serde::Deserialize&lt;/span&gt;&lt;/code&gt;. And because the value that it returns &lt;em&gt;should&lt;/em&gt; live for
+the lifetime of the variable it is passed, which in this case is the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;url&lt;/span&gt;&lt;/code&gt;,
+you need to denote that as well with the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;for&lt;/span&gt; &lt;span class="pre"&gt;&amp;lt;'de&amp;gt;&lt;/span&gt;&lt;/code&gt; bit. One thing that this
+also results in is that the actual &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;url&lt;/span&gt;&lt;/code&gt; object should be created outside of
+both the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;retry&lt;/span&gt;&lt;/code&gt; block and the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;block_on&lt;/span&gt;&lt;/code&gt; block, so that it lives beyond
+those confines.&lt;/p&gt;
+&lt;p&gt;This was a fun little exercise of doing something I’ve done a hundred times or
+more in Python in Rust. I’m continuing my journey merely because this way I
+learn how to do things that I’ve taken for granted in a language like Python,
+and I’m learning about Rust along the way.&lt;/p&gt;
+</description><pubDate>Tue, 04 Feb 2025 00:00:00 </pubDate></item><item><title>The Two of Three Rule</title><link>https://stonecharioteer.com/posts/2022/two-of-three-rule.html</link><description>
+&lt;span id="two-of-three"/&gt;&lt;span id="index-0"/&gt; 
+&lt;div class="admonition-meta admonition"&gt;
+&lt;p class="admonition-title"&gt;Meta&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Original Publication Date&lt;/strong&gt;&lt;/p&gt;
+&lt;dl class="field-list simple"&gt;
+&lt;dt class="field-odd"&gt;Date&lt;/dt&gt;
+&lt;dd class="field-odd"&gt;&lt;p&gt;May 19, 2022&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;p&gt;How do you decide when to join a company, when to stay and when to leave?&lt;/p&gt;
+&lt;p&gt;I’ve worked at my fair share of companies, both &lt;em&gt;in&lt;/em&gt; and &lt;em&gt;out&lt;/em&gt; of the computer
+technology space. I don’t think I’m leaving companies because I have a problem
+with consistency; in fact it’s quite the opposite.&lt;/p&gt;
+&lt;p&gt;I’m a trained statistician. I worked on a motorcycle manufacturing shop floor
+for 3 years of my early career, and compared to tech companies, that was &lt;em&gt;hell&lt;/em&gt;.
+However, the lessons I learnt there have moulded me forever.&lt;/p&gt;
+&lt;p&gt;The most important lessons revolved around a statistical quality tool called
+&lt;em&gt;control charts&lt;/em&gt; or &lt;em&gt;Shewart charts&lt;/em&gt;, named after &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Walter_A._Shewhart"&gt;Walter A. Shewart,&lt;/a&gt; who pioneered them.
+Shewart’s name is spoken in the same tones as that of &lt;a class="reference external" href="https://en.wikipedia.org/wiki/W._Edwards_Deming"&gt;Deming,&lt;/a&gt; who is responsible for the
+&lt;a class="reference external" href="https://mitpress.mit.edu/books/out-crisis"&gt;14 Principles of Management.&lt;/a&gt;&lt;/p&gt;
+&lt;section id="an-aside-control-charts"&gt;
+&lt;h2&gt;An Aside - Control Charts&lt;/h2&gt;
+&lt;p&gt;A control chart, in its multiple forms, monitors a process for changes in a
+&lt;em&gt;specific&lt;/em&gt; parameter, designated as the &lt;em&gt;control&lt;/em&gt; parameter. This parameter
+helps us measure a desired outcome of a process. If a factory wishes to produce
+a shaft of diameter 25mm with a tolerance of 1mm on either side, then they
+should strive to make shafts from 24-26mm in size. While that’s a worthwhile
+exercise, it’s better to &lt;em&gt;further&lt;/em&gt; limit the manufacturing process so that while
+the process sticks to the design requirements, it is also consistent within
+itself. This doesn’t mean you’re striving for a better design tolerance, but it
+speaks about &lt;em&gt;whether&lt;/em&gt; your process even &lt;em&gt;allows&lt;/em&gt; for better tolerances.
+The &lt;em&gt;control chart&lt;/em&gt; is a line plot that measures this parameter, or a statistic
+associated with it such as the average of a couple of readings taken at
+consistent timestamps. Control charts are divided into 2 areas, a portion of the
+chart is &lt;em&gt;above&lt;/em&gt; a line called the control limit (CL), and the range of values
+is bounded on either side by an Upper Control Limit (UCL), and a Lower Control
+Limit (LCL), which tell us &lt;em&gt;how&lt;/em&gt; much our process is &lt;em&gt;capable&lt;/em&gt; of fluctuating.&lt;/p&gt;
+&lt;figure class="align-default" id="id2" style="width: 450px"&gt;
+&lt;img alt="../../_images/control-charts.png" src="../../_images/control-charts.png"/&gt;
+&lt;figcaption&gt;
+&lt;p&gt;&lt;span class="caption-text"&gt;A sample control chart, marking the limits and showing how a process is
+slowly deviation from its control limits.&lt;/span&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;These limits aren’t decided by us. Indeed, they have &lt;em&gt;nothing&lt;/em&gt; to do with the
+tolerances that the design engineer has set. Instead, they have everything to do
+with the statistical limits of your process. That means that the last 25
+readings you take in your process decide the UCL, CL and LCL for the next couple
+of readings.&lt;/p&gt;
+&lt;div class="admonition tip"&gt;
+&lt;p class="admonition-title"&gt;Tip&lt;/p&gt;
+&lt;p&gt;25 is an arbitrary number, mind you. It is the &lt;em&gt;bare minimum&lt;/em&gt; that you need
+to start plotting charts. However, it is not even statistically viable to do
+this. Instead start with a 100 readings if you want to do some meaningful
+analytics of process control study.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If 7 consecutive readings on a control chart fall on one side of the limits,
+that’s your chart telling you that you have &lt;em&gt;serious&lt;/em&gt; problems. Your process is
+slowly deviating to one side of your limits. It doesn’t need to be negative by
+the way. Perhaps you &lt;em&gt;want&lt;/em&gt; your process to shift in one direction. This is an
+indication that whatever you’re doing to your process is shifting the metric to
+one side.&lt;/p&gt;
+&lt;p&gt;These shifts are &lt;em&gt;predicatable&lt;/em&gt;, and they also indicate a shift in your process
+that could arise from inherent causes. However, there are sudden shifts that
+could happen because of uncontrollable causes. These problems will not cause
+long-lasting errors in your readings, and they’re usually the sort that need a
+lot of brain-wracking to solve immediately. If they’re not addressed
+immediately, this will indicate that something is really wrong with your process
+management, and not really reflect whether your process is doing well or now.&lt;/p&gt;
+&lt;p&gt;While a control chart is something you can definitely use in technology
+companies – in fact, control charts are strongly associated with LEAN
+manufacturing, but I’m not experienced enough at Software applications in LEAN
+to say whether these are actually used in a tech company – this article is
+&lt;em&gt;not&lt;/em&gt; about the applications of LEAN manufacturing methods in software
+development. Instead, it’s about my career. It’s even about your career.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="when-do-you-join-a-company"&gt;
+&lt;h2&gt;When Do You Join a Company?&lt;/h2&gt;
+&lt;p&gt;I’m dividing this article into two parts. First, think about why you’d join a
+company. You’ve left an older company, and the reasons why are irrelevant – for
+now.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;You’ve interviewed with a company, and this has involved anywhere from a
+couple of hours to weeks of your time. If this company has a lengthy
+interview process that requires a DevOps engineer to know how to invert a
+Binary Tree or how to write a Binary Tree where every node is a Linked List,
+then this process could also have taken months of your time.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You have an offer from them that cites &lt;em&gt;concrete&lt;/em&gt; numbers that you find
+attractive. Let’s not kid ourselves, there’s money involved. Money is
+&lt;em&gt;always&lt;/em&gt; involved.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You spoke to a couple of cool people who you &lt;em&gt;may&lt;/em&gt; work with, or at least
+grab a beer with at the office parties.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You also like what the manager seems to promise that you &lt;em&gt;may&lt;/em&gt; work on.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Think about those four points for a moment.&lt;/p&gt;
+&lt;p&gt;The first one is sunk cost. You’ve invested time into the process. You’ve
+invested your effort. &lt;em&gt;Set this aside for now.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The second is money. Money. &lt;em&gt;Money&lt;/em&gt;. You now have bragging rights on
+teamblind.com and you can leave reviews on Glassdoor.com and levels.fyi,
+improving the sample size for what is obviously a very positively or a very
+negatively skewed chart.&lt;/p&gt;
+&lt;p&gt;The third is people. You have laughed with them during the interview. Perhaps
+they were amazed at your data structures and algorithms prowess. Or perhaps one
+of them told you that your installation of Pi-Hole and Unbound could be
+improved; this happened to me, and I joined Merkle Science because I trust this
+dude. This is an interesting point, but it &lt;em&gt;depends&lt;/em&gt; on what sort of a person
+you are. It might not matter to you. Your colleagues are your colleagues, and
+perhaps they’re not going to be your friends.&lt;/p&gt;
+&lt;p&gt;The fourth is work. Actual work. You are promised a paintbrush and the Sistine
+Chapel. However, it depends on your personal goals. Maybe you wanted to be a
+sculptor and not a painter. Perhaps you wanted to write Rust and not Golang.&lt;/p&gt;
+&lt;p&gt;So when do you join a company? Perhaps, quite simply put, when one of them is so
+convincing that you ignore the others. When I say &lt;em&gt;one of them&lt;/em&gt;, I mean points
+two to five. If you’re joining a company because of the sunk cost fallacy, then
+you have different problems, and you’ll quickly move on to the next part of this
+post.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="when-do-you-leave-a-company"&gt;
+&lt;h2&gt;When Do You Leave A Company?&lt;/h2&gt;
+&lt;p&gt;When you decide to leave a company, what pushes you out the door? There are
+several things.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Internal politics; I know I’ve run away from that a couple of times.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Poor pay; Perhaps your manager cannot fight for your rightful worth.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Horrible work; Nothing pushes me out the door better than SharePoint and
+Oracle SQL.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Horrible boss; Perhaps he’s not promoting you because of some reason you
+think is relevant.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Horrible peers; Perhaps you think your team members are not fun to work with.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Late promotion; You didn’t get that promotion you were promised 18 months
+ago.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You feel like you could go on? Sure, I used to think the same thing.&lt;/p&gt;
+&lt;p&gt;But today I don’t. I think there are only three reasons why you’d want to leave.
+Actually there will only ever be two reasons why you’d want to leave.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Pay&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;People&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Work&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Wherever you go, whatever the company, there will only be these three things
+that you need to decide whether to join the company, whether to stay there, or
+whether to leave.&lt;/p&gt;
+&lt;p&gt;If you’re running your own company, there will only be these three reasons that
+you can use to hire or keep great people at your company.&lt;/p&gt;
+&lt;p&gt;But what about all the other points?&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="the-three-control-parameters-of-a-career"&gt;
+&lt;h2&gt;The Three Control Parameters of a Career&lt;/h2&gt;
+&lt;p&gt;This is where I come full circle with my control chart paradigm. The three
+points that I brought up in the previous section have everything to do with
+control charts. No, I don’t need you to plot statistical charts to monitor them,
+but you’re already plotting such charts in your head, subconsciously.&lt;/p&gt;
+&lt;p&gt;Wherever you go, whichever the company, the only three things you will feel
+changes in, the only three &lt;em&gt;control parameters&lt;/em&gt; you are granted, are pay, people
+and work.&lt;/p&gt;
+&lt;p&gt;And this is a page I’m taking out of distributed programming, and the CAP
+theorem.&lt;/p&gt;
+&lt;div class="tip admonition"&gt;
+&lt;p class="admonition-title"&gt;CAP Theorem&lt;/p&gt;
+&lt;p&gt;The CAP theorem says that for any distributed data store, you will never be
+able to achieve high consistency and high availability when a partition
+occurs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Wherever you work, you will &lt;em&gt;never&lt;/em&gt;, &lt;strong&gt;ever&lt;/strong&gt;, achieve great pay, great people
+and great work.&lt;/p&gt;
+&lt;p&gt;Wherever you go, strive to get &lt;em&gt;one&lt;/em&gt; great thing. Get great pay, great people,
+or great work. &lt;em&gt;Just one&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Of the rest, choose a place where one of them is &lt;em&gt;bearable&lt;/em&gt;. You will find
+places with &lt;strong&gt;great pay and okay work&lt;/strong&gt;, or &lt;strong&gt;great work and okay pay&lt;/strong&gt;, or &lt;strong&gt;great
+work and okay people&lt;/strong&gt;, or &lt;strong&gt;great pay and okay people.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;And the last parameter? Well… it will &lt;em&gt;automatically&lt;/em&gt; be horrible.&lt;/p&gt;
+&lt;p&gt;It doesn’t matter how great you think your company is. One of these three
+features is going to be amazing.&lt;/p&gt;
+&lt;p&gt;You will love your work, you will find your colleagues okay to hang around, and
+you will bemoan your pay.&lt;/p&gt;
+&lt;p&gt;You will love your pay, you will find your work palatable, and you will loathe
+your collegues.&lt;/p&gt;
+&lt;p&gt;You will love your colleagues, you will find your pay acceptable, and you will
+fear signing in every day because your work is pointless.&lt;/p&gt;
+&lt;p&gt;You will love your work, you will find your pay is acceptable, and you will hate
+your colleagues.&lt;/p&gt;
+&lt;p&gt;You will love your pay, you will be able to withstand your colleagues, and your
+work will be ridiculous in your eyes.&lt;/p&gt;
+&lt;p&gt;I could go on.&lt;/p&gt;
+&lt;p&gt;The point is that irrespective of your company – &lt;em&gt;irrespective&lt;/em&gt; of your company
+– this will be true. If you want to join a company, or, if you want to stay at a
+company, you must love one of these three things the company can give you, and
+you must find one of the other two to be acceptable. You will &lt;em&gt;hate&lt;/em&gt; the third
+thing, so make sure it’s something you’re not passionate about.&lt;/p&gt;
+&lt;p&gt;But as a hiring manager, or a CEO or CTO, what can you do? Make pay
+exhorbitantly high and make the work amazing? No. That’ll only attract
+psychopaths who hate working together. Remember that the two things that matter
+to people &lt;em&gt;vary&lt;/em&gt; from person to person. One employee might want amazing work for
+mediocre pay - how do you motivate her to work on database administration if
+what she loves is hardcore engineering? One employee might care about his
+colleagues, he loves to discuss the technical aspects with a team that’s the
+sort you hear from on stage at Goto Conf and KubeConf, and he’s okay as long as
+the work is bearable. Pay doesn’t matter to him. How will you try to attract
+this sort of employee. Then there’s the sociopath who wants amazing pay and
+bearable work. He’s not going to care about what sort of people he works with –
+he’ll be polite to them of course, but then he only cares about delivering
+excellent work himself. What will you offer him?&lt;/p&gt;
+&lt;p&gt;So when do you leave?&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="id1"&gt;
+&lt;h2&gt;The Two Of Three Rule&lt;/h2&gt;
+&lt;p&gt;You must definitely leave when two of the three control parameters are horrible.
+Think of your job as a see-saw. On one side is the “great” control parameter,
+and on the other is the “horrible” parameter. At the center is the fulcrum,
+which can move either to the good side or the bad side. That’s where the third
+parameter is currently concentrated. And that’s the important part, surprisingly.&lt;/p&gt;
+&lt;p&gt;When this parameter is right at the center you realize that it doesn’t really
+make you super happy, but that it’s also not annoying you constantly. It’s a
+fine balance between the great parameter and the horrible parameter.&lt;/p&gt;
+&lt;p&gt;Yes, it’s not the “great” parameter, or the “horrible” parameter that decides
+when you will leave. Instead it’s a shift in the central parameter that you once
+found &lt;em&gt;palpatable&lt;/em&gt;, &lt;em&gt;bearable&lt;/em&gt; or &lt;em&gt;just okay&lt;/em&gt;, when you joined.&lt;/p&gt;
+&lt;p&gt;When &lt;em&gt;that&lt;/em&gt; parameter shifts to the horrible side, it doesn’t matter how &lt;em&gt;great&lt;/em&gt;
+the other parameter is.&lt;/p&gt;
+&lt;p&gt;Your pay could be astounding, but you will not be able to work on a horrible
+project with horrible people.&lt;/p&gt;
+&lt;p&gt;Your colleagues could all be amazing engineers, but nothing will make you work
+on stuff you &lt;em&gt;hate&lt;/em&gt; for peanuts.&lt;/p&gt;
+&lt;p&gt;Your work could be amazing and will revolutionize the world, but you cannot work
+on it with people you do not get along with, for horrendous pay.&lt;/p&gt;
+&lt;p&gt;If two of these parameters are on the horrible side, it doesn’t matter just how
+amazing the other parameter is. Your constant annoyance at the other two will
+upset you constantly. Indeed, the fact that a parameter you found just
+&lt;em&gt;bearable&lt;/em&gt; and not an annoyance is going to annoy you multiple times more than
+the other horrible parameter.&lt;/p&gt;
+&lt;p&gt;At any workplace, no matter how awesome, employees will care only about one
+of three things. People, Pay and Work. One of these things will drive people
+to join you, one of them will be something they don’t really find
+disagreeable, and one of them will be something they would rather not talk
+about with their friends. If the one thing that they don’t really hate tips
+too far to the other end, people will leave, and improving the one thing that
+was the driving factor will no longer make a difference.&lt;/p&gt;
+&lt;div class="info admonition"&gt;
+&lt;p class="admonition-title"&gt;The Two of Three Rule&lt;/p&gt;
+&lt;p&gt;Pay, People, Work. Pick one that you need to be awesome. Pick one that you
+don’t mind being lack-lustre. The third one &lt;em&gt;will&lt;/em&gt; be horrible. This rule
+holds at &lt;strong&gt;every&lt;/strong&gt; company; indeed, it holds at &lt;em&gt;any company&lt;/em&gt; you should and
+would work at. Shift the second factor, and you won’t want to work there, no
+matter how awesome the first factor you picked is.&lt;/p&gt;
+&lt;p&gt;The Two of Three Rule is: &lt;em&gt;Pay, people, work. Two of these three things will
+either make you really love your job, or really hate your job.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It’s funny how this works.&lt;/p&gt;
+&lt;p&gt;When I was at Flipkart, I was paid to write about books. I am a voracious
+reader, or I was at one point. I was being paid to write about J.R.R. Tolkien,
+about Dr. Seuss, and about the Wheel of Time. Sure, there were moments I was
+writing about horrible books that I feel aren’t worth the paper they’re printed
+on, but that didn’t matter to me. So the work was &lt;em&gt;okay&lt;/em&gt;. The pay was &lt;em&gt;bad&lt;/em&gt;. I
+was earning peanuts before, and compared to that, this was okay pay, &lt;em&gt;bearable&lt;/em&gt;
+pay, but it was still &lt;em&gt;peanuts&lt;/em&gt;. The people I worked with were &lt;em&gt;fun&lt;/em&gt; to work
+with. I made several &lt;em&gt;friends&lt;/em&gt; among them, and I opened up to them like I never
+had with others. I was able to have lunch with them and talk about their lives.
+I was able to have heated discussions about comic books, about movies, and I was
+able to be myself.&lt;/p&gt;
+&lt;p&gt;What happened though? Why did I leave?&lt;/p&gt;
+&lt;p&gt;One day, the Catalogue team decided to scrap the books content. The team leads
+and the manager decided to tell me at the last minute. They didn’t even sugar
+coat that fact. That didn’t really matter, but it was the fact that they treated
+it as an afterthought that someone who constantly went on and on about how much
+he loved books would be “relieved” that he didn’t have to write about books
+again. It didn’t help that the news was also given to me by a team lead who was
+hired despite being clearly incompetent. I was doing the job of both team leads
+at that point. I had automated so much of their job, and they were really not
+doing much. The manager didn’t care about how much I was improving things.
+Instead, they chose to pull the rug from under my feet.&lt;/p&gt;
+&lt;p&gt;I left as soon as I found a new job. I wasn’t working with people I loved for
+horrible pay and horrible work.&lt;/p&gt;
+&lt;p&gt;Then I went to GKN.  I worked on some amazing projects, and I didn’t hate the
+people around me. Some of them are friends today, close friends who were there
+for me at hard moments. Here, I got shafted with the pay once again. At one
+stage, my salary was revised because I managed to prove to the HR how underpaid
+I was – this came under the threat of leaving the company. But it was still 30%
+of my market value at that point.&lt;/p&gt;
+&lt;p&gt;But eventually, the people I cared about were making plans to leave, or move
+away. And the people who were left around me became &lt;em&gt;toxic&lt;/em&gt;. The local leaders
+of my division were &lt;em&gt;toxic&lt;/em&gt;, and that made my life hell. I couldn’t hire
+competent team members since I wasn’t given power to do so.&lt;/p&gt;
+&lt;p&gt;I left within 3 months. I couldn’t change their minds. I couldn’t choose the
+people I worked with, I couldn’t build a team to build that amazing project my
+German boss wanted me to build – a project I still think about fondly.&lt;/p&gt;
+&lt;p&gt;Then I joined Visa. Here I got great pay. My colleagues were good people. And
+the work was horrendous. I left in two years because that changed, and it would
+have been sooner if not for The Great Pandemic of 2020.&lt;/p&gt;
+&lt;p&gt;I’m not explaining all of this to say that my workplaces were negative. No. I
+still recommend Visa to all my friends who want a good place to work. Remember,
+the &lt;em&gt;two&lt;/em&gt; things that matter to me out of the three might not be the same for
+you.&lt;/p&gt;
+&lt;p&gt;Control charts tell us that there’s something inherently wrong with a process.
+When a process begins to deviate from its established “norm”, it is slowly
+progressing to a stage where if you want it to go back to how it was, or to
+another &lt;em&gt;acceptable&lt;/em&gt; state, you need to exert considerable effort. Sometimes,
+this won’t be in your hands. This will instead be something you need your upper
+management to step in and change. And, oftentimes, you’ll find that they have no
+horse in this race.&lt;/p&gt;
+&lt;p&gt;If you want to hire good people who will work for you for a long time and
+deliver great things, ask them which of the three things matter to them, and
+ensure that you meet those two things. The definition of a “Great Place to Work”
+is multi-faceted. It is very different to different people, but you will find
+that for a given person, these points are more or less the same unless they have
+a life-changing event.&lt;/p&gt;
+&lt;p&gt;When I was at Visa, I lost my left ear due to circumstances not under my
+control. Indeed, no one at Visa could have helped me. That changed the ball game
+drastically. That’s what is called a random error in a control chart. In such a
+scenario, no one can help you really. In such times, as a leader, the only thing
+you can do is try to be there for your employees. But as an employee, you need
+to decide what matters to you and whether staying at a place will help you
+achieve that sooner.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;So the next time you’re evaluating an offer, or if you’re evaluating whether to
+leave a company or to stay; or if an employee is leaving and you’re trying to
+figure out how to convince her to stay, remember that money isn’t always the
+prime bargaining chip. Sometimes money doesn’t matter. It’s the other two that
+upset the scale.&lt;/p&gt;
+&lt;p&gt;There are always two out of three things that make or break the experience of
+working at a company. To me, today, that’s money and people. Money because of
+the responsibilities I have, and people because I don’t just want a team, but a
+&lt;em&gt;crew&lt;/em&gt;. I want a &lt;em&gt;unit&lt;/em&gt; that functions together. The work is after the fact in
+my opinion. To others, those scales are definitely going to be different.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="references"&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;p&gt;These are a list of books I love recommending if you’re interested in the topic
+of statistics and process control.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;p&gt;Edward Deming - Out of the Crisis&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Walter A. Shewart - Statistical Method From the Viewpoint of Quality Control&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Taiichi Ohno - Toyota Production System: Beyond Large-Scale Production&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Taiichi Ohno - Workplace Management&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These books were written in a time where statistical quality control was applied
+predominantly to manufacturing processes, but I’d recommend looking at them
+through the lens of a general engineer, as opposed to a software engineer. If
+you ever find yourself wanting to discuss these topics, I’m always available.&lt;/p&gt;
+&lt;/section&gt;
+</description><pubDate>Tue, 04 Feb 2025 00:00:00 </pubDate></item><item><title>Resume - Vinay Keerthi K. T.</title><link>https://stonecharioteer.com/resume/resume.html</link><description>
  
 &lt;hr class="docutils"/&gt;
+&lt;section id="key-skills"&gt;
+&lt;h2&gt;Key Skills&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Languages: Python, Rust, Javascript&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Generative AI: Deepseek R1 (locally hosted the distilled model), Llama 3.1, ChatGPT&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;GenAI Tooling: ollama, ChatGPT API Development, LM-Studio&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Web Frameworks: Flask (Python), Axum (Rust), Expressjs (Node/Deno)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Others: Apache Airflow, Dagster, Redis, Jenkins, Github Actions, Docker, K8s&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Have been using Linux for over 20 years (since 2005)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section id="experience"&gt;
+&lt;h2&gt;Experience&lt;/h2&gt;
 &lt;section id="chainsafe"&gt;
-&lt;h2&gt;ChainSafe&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Technical Team Lead&lt;/strong&gt; | &lt;strong&gt;Fully Remote&lt;/strong&gt; | &lt;strong&gt;November 2022 - February 2025&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;ChainSafe&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Engineering Manager / Lead Software Developer&lt;/strong&gt; | &lt;strong&gt;Fully Remote&lt;/strong&gt; | &lt;strong&gt;November 2022 - February 2025&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;Managed a team of 4, providing technical and career-based guidance.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on &lt;strong&gt;Python&lt;/strong&gt;-based tooling for developers, including internal
+&lt;li&gt;&lt;p&gt;Worked on &lt;strong&gt;Python&lt;/strong&gt; and &lt;strong&gt;Rust&lt;/strong&gt; based tooling for developers, including internal
 monitoring scripts, data-quality alerting systems and setup &lt;strong&gt;dagster&lt;/strong&gt; for data pipelines
 for accounting and blockchain event tracking.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on building a &lt;strong&gt;GPT&lt;/strong&gt; that interfaces with internal and external APIs,
+&lt;li&gt;&lt;p&gt;Evaluated &lt;strong&gt;LLM&lt;/strong&gt; based tooling for management, investigating cost vs benefits to automate
+report generation and automated cleanup of github projects and issues.
+Worked with &lt;strong&gt;OpenAI ChatGPT 4&lt;/strong&gt; and &lt;strong&gt;Llama 3.1&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on building a custom &lt;strong&gt;LLM&lt;/strong&gt; that interfaces with internal and external APIs,
 providing a chat-based interface for managers to track and manage their teams’
 OKRs in line with the organization’s goals.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Worked on building an inhouse &lt;strong&gt;GPT&lt;/strong&gt; that uses Solidity audit data to
-provide customers with a bot that can assist them in self-audits.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Worked on building an inhouse &lt;strong&gt;LLM&lt;/strong&gt; that uses Solidity audit data to
+provide customers with a bot that can assist them in self-audits.
+This used Llama 3.1 and stored the training data on Chroma DB.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Created dashboards and metric collectors for EVM wallets to track balances
 and alert cross-chain contract creators when the balance is below the
 threshold.&lt;/p&gt;&lt;/li&gt;
@@ -27,21 +576,20 @@ quality and adherance to the core spirit of the language.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Worked on a &lt;strong&gt;Rust&lt;/strong&gt; networking library integrating &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;libp2p&lt;/span&gt;&lt;/code&gt; with blockchain
 protocols.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Worked on building &lt;strong&gt;solidity&lt;/strong&gt; tooling for &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;foundry&lt;/span&gt;&lt;/code&gt; to deploy to multiple
-chains using the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Sygma&lt;/span&gt;&lt;/code&gt; framework.&lt;/p&gt;&lt;/li&gt;
+chains using the Sygma framework.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Developed tutorials for on-boarding new developers to the company’s technology
 stack, including &lt;strong&gt;Substrate&lt;/strong&gt; and &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
 &lt;section id="merkle-science"&gt;
-&lt;h2&gt;Merkle Science&lt;/h2&gt;
+&lt;h3&gt;Merkle Science&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Lead Software Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; - &lt;strong&gt;Remote&lt;/strong&gt; | &lt;strong&gt;JULY 2021 - November 2022&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;Built a team for internal tooling, managed scouting for talent, hiring and
 interviewing.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for the &lt;strong&gt;Polkadot&lt;/strong&gt; blockchain for internal use, exposed
 via &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyO3&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;maturin&lt;/span&gt;&lt;/code&gt; into &lt;strong&gt;Python.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for &lt;strong&gt;Hedera hashgraph,&lt;/strong&gt; to ingest data from the mainnet
-API into our local data stores.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Created a &lt;strong&gt;Rust&lt;/strong&gt; library for ingesting data from various blockchains with low latency.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Conceptualized and developed the data-engineering toolkit - a multi-faceted
 &lt;strong&gt;CLI&lt;/strong&gt; that facilitates the movement of data across data stores, and opens up
 our data layers for quality and consistency-related metrics, using &lt;strong&gt;Rust&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
@@ -57,78 +605,55 @@ websocket implementions of chains using &lt;strong&gt;Rust.&lt;/strong&gt;&lt;/p
 &lt;li&gt;&lt;p&gt;Developed a central &lt;strong&gt;Python&lt;/strong&gt; library for all utilities and internal code.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
+&lt;/section&gt;
 &lt;section id="visa-inc"&gt;
 &lt;h2&gt;VISA Inc.&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Sr. Software Engineer - Data Platform&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;MAY 2019 - June 2021&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Created dashboards to visualize productivity during the onset of COVID-19
+so that managers could identify the distribution of workload.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Designed and spearheaded the security portal project, a REST layer that
-facilitates automation of Qualys security updates for PCI compliance while
+facilitates automation of security updates for PCI compliance while
 adhering to company-specific rules regarding service availability, using OSS
-and internal APIs to minimize maintenance time. Reduced contractual manpower
-by 75% and downtime by 70 hours a month for 2400 servers.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Developed a library to create concurrent and self-cleaning containerized
-sessions that can be used to automate parallel workflows for testing and
-automation of complex applications: example threat analysis of cross-border
-transactions using a single VISA card.&lt;/p&gt;&lt;/li&gt;
+and internal APIs to minimize maintenance time.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Mentored college graduates to build their first applications, integrating
 native pipelines, helped them craft detailed documentation and tune the performance
 of their apps.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Developed internal tools to orchestrate servers, including a tool to run
 parallel ssh-based connections, like &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ansible&lt;/span&gt;&lt;/code&gt;, but with company-specific requirements.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed and developed a tool that allows developers to quickly get started with
-projects, building pipelines and bootstrapping the initial code for them, while
-setting up quality checks, running automated tests and uploading artifacts to
-the right registry in JFrog Artifactory.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Designed and developed a bootstrapping tool for developers to quicken onboarding.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Conducted Python workshops with a varied audience, training them on how to set up
 Python projects, how to package them and how to build python modules so that they are
 shareable.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Mentored and trained SDE-1s and interns, guiding them in design and implementation details.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/section&gt;
 &lt;section id="gkn-aerospace-india"&gt;
-&lt;h2&gt;GKN Aerospace India&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;DEC 2015 - MAY 2019&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;GKN Aerospace India&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Sofware Engineer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;DEC 2015 - MAY 2019&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;p&gt;Built a company-wide search engine that indexed all files in an Elastic-Search
-server and allowed users to query even the contents of files such as spreadsheets
-&lt;em&gt;and&lt;/em&gt; 3D models of Gearboxes using specific classification criteria.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built wrapper libraries in Python leveraging &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyCuda&lt;/span&gt;&lt;/code&gt; and NVIDIA libraries
-for engineers to use within &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Jupyter&lt;/span&gt;&lt;/code&gt; notebooks.&lt;/p&gt;&lt;/li&gt;
+server and allowed users to query both text and proprietary binary formats.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Built wrapper libraries in &lt;strong&gt;Python&lt;/strong&gt; leveraging &lt;strong&gt;PyCuda&lt;/strong&gt; and &lt;strong&gt;NVIDIA&lt;/strong&gt; libraries
+for engineers to use within &lt;strong&gt;Jupyter&lt;/strong&gt; notebooks.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Managed &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Jenkins&lt;/span&gt;&lt;/code&gt; pipelines and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Subversion&lt;/span&gt;&lt;/code&gt; source code registry singlehandedly.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed and developed a microservice-based application to automate complex
-engineering pipelines involving proprietary software and protocols.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Designed the system interaction and data pipelines for a large-scale
-application that submits HPC jobs to servers placed across the world.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Conducted annual training in Python and Data Analytics for Mechanical Engineers.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Conducted annual training in &lt;strong&gt;Python&lt;/strong&gt; and Data Analytics for Mechanical Engineers.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
 &lt;section id="flipkart-internet-pvt-ltd"&gt;
-&lt;h2&gt;Flipkart Internet Pvt. Ltd.&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Copy Editor / Developer&lt;/strong&gt; | &lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;FEB 2014 - DEC 2015&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;Flipkart Internet Pvt. Ltd.&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bangalore&lt;/strong&gt; | &lt;strong&gt;FEB 2014 - DEC 2015&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Used &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyQt&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Python&lt;/span&gt;&lt;/code&gt; to build a work allocation tool for writers,
+&lt;li&gt;&lt;p&gt;Used &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;PyQt&lt;/span&gt;&lt;/code&gt; and &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;**&lt;/span&gt;&lt;/a&gt;Python* to build a work allocation tool for content writers,
 that allowed them to report their work and set up pipelines for editors
 and content-creators to leverage their output.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Created an application to generate thousands of
 &lt;a class="reference internal" href="../_images/grid-world.png"&gt;&lt;img alt="web" src="../_images/grid-world.png" style="height: 32px;"/&gt;&lt;/a&gt; &lt;a class="reference external" href="https://stonecharioteer.com/posts/2018/leonardo.html"&gt;Infographics on Products for sale during the Big Billion Day&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
-&lt;section id="tech-stack"&gt;
-&lt;h2&gt;Tech Stack&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Programming Languages: Rust, Python, Javascript&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Web Frameworks: Flask, Express, Rocket&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;UI: React, CSS, ES6&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Containers: Docker, Podman, Kubernetes&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Others: RabbitMQ, Elastic Search, Redis, Jenkins, Gitlab CI, pre-commit&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/section&gt;
 &lt;section id="personal-projects-oss"&gt;
 &lt;h2&gt;Personal Projects &amp;amp; OSS&lt;/h2&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;Write regularly about technology and a life as a software engineer at
-&lt;a class="reference external" href="https://stonecharioteer.com"&gt;stonecharioteer.com&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Spoke at IndiaFoss2.0 in a Birds-of-a-feather event - &lt;a class="reference external" href="https://hasgeek.com/rootconf/is-rust-ready-for-enterprise-adoption/sub/is-rust-language-ready-for-enterprise-adoption-sum-54yCDYud7csgx3sbT9GAFd"&gt;Is Rust Ready for
 Enterprise Adoption?&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Spoke at the Bangalore Python Meetup about using Rust as a Python developer -
@@ -140,8 +665,6 @@ Search Engine.&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 developer productivity and project momentum using statistical control charts.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Regularly conduct workshops on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Flask&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Python&lt;/span&gt;&lt;/code&gt; at the Bangalore
 Python meetup group - &lt;a class="reference external" href="https://www.youtube.com/watch?v=xickNijifOs"&gt;Web Application Security with OWASP Principles,&lt;/a&gt; &lt;a class="reference external" href="https://www.youtube.com/watch?v=1C7Oj0KEhgo"&gt;Flask Workshop&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built my own Raspberry Pi Kubernetes Cluster out of 4 Raspberry Pi 4 and 4 Raspberry Pi Zero W boards.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Built my own Mechanical Keyboards using the QMK framework.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Completed the Advanced Kubernetes Training from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;learnk8s.io&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
@@ -151,14 +674,14 @@ Python meetup group - &lt;a class="reference external" href="https://www.youtube
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;FEB 2011 - FEB 2014&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Trained in using statistical control methods for improving quality and production
-at TVS group companies.&lt;/p&gt;&lt;/li&gt;
+at TVS group companies. Used Excel and Python for improvements across the shop floor&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Interned at IISc, Bangalore, used Python to study the strength of airplane wing composites.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr class="docutils"/&gt;
 &lt;/section&gt;
-</description><pubDate>Wed, 29 Jan 2025 00:00:00 </pubDate></item><item><title>No, I won’t open that link</title><link>https://stonecharioteer.com/not-opening-that.html</link><description>
+</description><pubDate>Tue, 04 Feb 2025 00:00:00 </pubDate></item><item><title>No, I won’t open that link</title><link>https://stonecharioteer.com/not-opening-that.html</link><description>
 &lt;span id="not-opening-that"/&gt; 
 &lt;p&gt;&lt;strong&gt;Thursday, 2025-01-23&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Hello!&lt;/p&gt;
@@ -1253,352 +1776,7 @@ Could Not Be Strung&lt;/em&gt;, and how Rama broke it in an attempt to string it
 &lt;p&gt;I needed the &lt;cite&gt;bash -c “”&lt;/cite&gt; bit since this would be within the cinnamon launch options and I’d want to ensure that this is reproducible all the time.&lt;/p&gt;
 &lt;p&gt;If I move to another window manager, I just need to replace &lt;cite&gt;cinnamon-screensave-command&lt;/cite&gt;. I also use &lt;cite&gt;xset dpms force off&lt;/cite&gt; because it takes a while to turn off my laptop screen and sometimes I do this just before sleeping or turning the lights off and I don’t want to wait.&lt;/p&gt;
 &lt;p&gt;I don’t close the lid because I use my current laptop, an Asus RoG X13 Flow in the tent mode, and would have to disconnect my docking station to flip it around and close the lid.&lt;/p&gt;
-</description><pubDate>Mon, 29 Jan 2024 00:00:00 </pubDate></item><item><title>The Two of Three Rule</title><link>https://stonecharioteer.com/posts/2022/two-of-three-rule.html</link><description>
-&lt;span id="two-of-three"/&gt;&lt;span id="index-0"/&gt; 
-&lt;div class="admonition-meta admonition"&gt;
-&lt;p class="admonition-title"&gt;Meta&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Original Publication Date&lt;/strong&gt;&lt;/p&gt;
-&lt;dl class="field-list simple"&gt;
-&lt;dt class="field-odd"&gt;Date&lt;/dt&gt;
-&lt;dd class="field-odd"&gt;&lt;p&gt;May 19, 2022&lt;/p&gt;
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/div&gt;
-&lt;p&gt;How do you decide when to join a company, when to stay and when to leave?&lt;/p&gt;
-&lt;p&gt;I’ve worked at my fair share of companies, both &lt;em&gt;in&lt;/em&gt; and &lt;em&gt;out&lt;/em&gt; of the computer
-technology space. I don’t think I’m leaving companies because I have a problem
-with consistency; in fact it’s quite the opposite.&lt;/p&gt;
-&lt;p&gt;I’m a trained statistician. I worked on a motorcycle manufacturing shop floor
-for 3 years of my early career, and compared to tech companies, that was &lt;em&gt;hell&lt;/em&gt;.
-However, the lessons I learnt there have moulded me forever.&lt;/p&gt;
-&lt;p&gt;The most important lessons revolved around a statistical quality tool called
-&lt;em&gt;control charts&lt;/em&gt; or &lt;em&gt;Shewart charts&lt;/em&gt;, named after &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Walter_A._Shewhart"&gt;Walter A. Shewart,&lt;/a&gt; who pioneered them.
-Shewart’s name is spoken in the same tones as that of &lt;a class="reference external" href="https://en.wikipedia.org/wiki/W._Edwards_Deming"&gt;Deming,&lt;/a&gt; who is responsible for the
-&lt;a class="reference external" href="https://mitpress.mit.edu/books/out-crisis"&gt;14 Principles of Management.&lt;/a&gt;&lt;/p&gt;
-&lt;section id="an-aside-control-charts"&gt;
-&lt;h2&gt;An Aside - Control Charts&lt;/h2&gt;
-&lt;p&gt;A control chart, in its multiple forms, monitors a process for changes in a
-&lt;em&gt;specific&lt;/em&gt; parameter, designated as the &lt;em&gt;control&lt;/em&gt; parameter. This parameter
-helps us measure a desired outcome of a process. If a factory wishes to produce
-a shaft of diameter 25mm with a tolerance of 1mm on either side, then they
-should strive to make shafts from 24-26mm in size. While that’s a worthwhile
-exercise, it’s better to &lt;em&gt;further&lt;/em&gt; limit the manufacturing process so that while
-the process sticks to the design requirements, it is also consistent within
-itself. This doesn’t mean you’re striving for a better design tolerance, but it
-speaks about &lt;em&gt;whether&lt;/em&gt; your process even &lt;em&gt;allows&lt;/em&gt; for better tolerances.
-The &lt;em&gt;control chart&lt;/em&gt; is a line plot that measures this parameter, or a statistic
-associated with it such as the average of a couple of readings taken at
-consistent timestamps. Control charts are divided into 2 areas, a portion of the
-chart is &lt;em&gt;above&lt;/em&gt; a line called the control limit (CL), and the range of values
-is bounded on either side by an Upper Control Limit (UCL), and a Lower Control
-Limit (LCL), which tell us &lt;em&gt;how&lt;/em&gt; much our process is &lt;em&gt;capable&lt;/em&gt; of fluctuating.&lt;/p&gt;
-&lt;figure class="align-default" id="id2" style="width: 450px"&gt;
-&lt;img alt="../../_images/control-charts.png" src="../../_images/control-charts.png"/&gt;
-&lt;figcaption&gt;
-&lt;p&gt;&lt;span class="caption-text"&gt;A sample control chart, marking the limits and showing how a process is
-slowly deviation from its control limits.&lt;/span&gt;&lt;/p&gt;
-&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;These limits aren’t decided by us. Indeed, they have &lt;em&gt;nothing&lt;/em&gt; to do with the
-tolerances that the design engineer has set. Instead, they have everything to do
-with the statistical limits of your process. That means that the last 25
-readings you take in your process decide the UCL, CL and LCL for the next couple
-of readings.&lt;/p&gt;
-&lt;div class="admonition tip"&gt;
-&lt;p class="admonition-title"&gt;Tip&lt;/p&gt;
-&lt;p&gt;25 is an arbitrary number, mind you. It is the &lt;em&gt;bare minimum&lt;/em&gt; that you need
-to start plotting charts. However, it is not even statistically viable to do
-this. Instead start with a 100 readings if you want to do some meaningful
-analytics of process control study.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;If 7 consecutive readings on a control chart fall on one side of the limits,
-that’s your chart telling you that you have &lt;em&gt;serious&lt;/em&gt; problems. Your process is
-slowly deviating to one side of your limits. It doesn’t need to be negative by
-the way. Perhaps you &lt;em&gt;want&lt;/em&gt; your process to shift in one direction. This is an
-indication that whatever you’re doing to your process is shifting the metric to
-one side.&lt;/p&gt;
-&lt;p&gt;These shifts are &lt;em&gt;predicatable&lt;/em&gt;, and they also indicate a shift in your process
-that could arise from inherent causes. However, there are sudden shifts that
-could happen because of uncontrollable causes. These problems will not cause
-long-lasting errors in your readings, and they’re usually the sort that need a
-lot of brain-wracking to solve immediately. If they’re not addressed
-immediately, this will indicate that something is really wrong with your process
-management, and not really reflect whether your process is doing well or now.&lt;/p&gt;
-&lt;p&gt;While a control chart is something you can definitely use in technology
-companies – in fact, control charts are strongly associated with LEAN
-manufacturing, but I’m not experienced enough at Software applications in LEAN
-to say whether these are actually used in a tech company – this article is
-&lt;em&gt;not&lt;/em&gt; about the applications of LEAN manufacturing methods in software
-development. Instead, it’s about my career. It’s even about your career.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="when-do-you-join-a-company"&gt;
-&lt;h2&gt;When Do You Join a Company?&lt;/h2&gt;
-&lt;p&gt;I’m dividing this article into two parts. First, think about why you’d join a
-company. You’ve left an older company, and the reasons why are irrelevant – for
-now.&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;You’ve interviewed with a company, and this has involved anywhere from a
-couple of hours to weeks of your time. If this company has a lengthy
-interview process that requires a DevOps engineer to know how to invert a
-Binary Tree or how to write a Binary Tree where every node is a Linked List,
-then this process could also have taken months of your time.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;You have an offer from them that cites &lt;em&gt;concrete&lt;/em&gt; numbers that you find
-attractive. Let’s not kid ourselves, there’s money involved. Money is
-&lt;em&gt;always&lt;/em&gt; involved.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;You spoke to a couple of cool people who you &lt;em&gt;may&lt;/em&gt; work with, or at least
-grab a beer with at the office parties.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;You also like what the manager seems to promise that you &lt;em&gt;may&lt;/em&gt; work on.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Think about those four points for a moment.&lt;/p&gt;
-&lt;p&gt;The first one is sunk cost. You’ve invested time into the process. You’ve
-invested your effort. &lt;em&gt;Set this aside for now.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The second is money. Money. &lt;em&gt;Money&lt;/em&gt;. You now have bragging rights on
-teamblind.com and you can leave reviews on Glassdoor.com and levels.fyi,
-improving the sample size for what is obviously a very positively or a very
-negatively skewed chart.&lt;/p&gt;
-&lt;p&gt;The third is people. You have laughed with them during the interview. Perhaps
-they were amazed at your data structures and algorithms prowess. Or perhaps one
-of them told you that your installation of Pi-Hole and Unbound could be
-improved; this happened to me, and I joined Merkle Science because I trust this
-dude. This is an interesting point, but it &lt;em&gt;depends&lt;/em&gt; on what sort of a person
-you are. It might not matter to you. Your colleagues are your colleagues, and
-perhaps they’re not going to be your friends.&lt;/p&gt;
-&lt;p&gt;The fourth is work. Actual work. You are promised a paintbrush and the Sistine
-Chapel. However, it depends on your personal goals. Maybe you wanted to be a
-sculptor and not a painter. Perhaps you wanted to write Rust and not Golang.&lt;/p&gt;
-&lt;p&gt;So when do you join a company? Perhaps, quite simply put, when one of them is so
-convincing that you ignore the others. When I say &lt;em&gt;one of them&lt;/em&gt;, I mean points
-two to five. If you’re joining a company because of the sunk cost fallacy, then
-you have different problems, and you’ll quickly move on to the next part of this
-post.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="when-do-you-leave-a-company"&gt;
-&lt;h2&gt;When Do You Leave A Company?&lt;/h2&gt;
-&lt;p&gt;When you decide to leave a company, what pushes you out the door? There are
-several things.&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;Internal politics; I know I’ve run away from that a couple of times.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Poor pay; Perhaps your manager cannot fight for your rightful worth.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Horrible work; Nothing pushes me out the door better than SharePoint and
-Oracle SQL.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Horrible boss; Perhaps he’s not promoting you because of some reason you
-think is relevant.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Horrible peers; Perhaps you think your team members are not fun to work with.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Late promotion; You didn’t get that promotion you were promised 18 months
-ago.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;You feel like you could go on? Sure, I used to think the same thing.&lt;/p&gt;
-&lt;p&gt;But today I don’t. I think there are only three reasons why you’d want to leave.
-Actually there will only ever be two reasons why you’d want to leave.&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;Pay&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;People&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Work&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Wherever you go, whatever the company, there will only be these three things
-that you need to decide whether to join the company, whether to stay there, or
-whether to leave.&lt;/p&gt;
-&lt;p&gt;If you’re running your own company, there will only be these three reasons that
-you can use to hire or keep great people at your company.&lt;/p&gt;
-&lt;p&gt;But what about all the other points?&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="the-three-control-parameters-of-a-career"&gt;
-&lt;h2&gt;The Three Control Parameters of a Career&lt;/h2&gt;
-&lt;p&gt;This is where I come full circle with my control chart paradigm. The three
-points that I brought up in the previous section have everything to do with
-control charts. No, I don’t need you to plot statistical charts to monitor them,
-but you’re already plotting such charts in your head, subconsciously.&lt;/p&gt;
-&lt;p&gt;Wherever you go, whichever the company, the only three things you will feel
-changes in, the only three &lt;em&gt;control parameters&lt;/em&gt; you are granted, are pay, people
-and work.&lt;/p&gt;
-&lt;p&gt;And this is a page I’m taking out of distributed programming, and the CAP
-theorem.&lt;/p&gt;
-&lt;div class="tip admonition"&gt;
-&lt;p class="admonition-title"&gt;CAP Theorem&lt;/p&gt;
-&lt;p&gt;The CAP theorem says that for any distributed data store, you will never be
-able to achieve high consistency and high availability when a partition
-occurs.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Wherever you work, you will &lt;em&gt;never&lt;/em&gt;, &lt;strong&gt;ever&lt;/strong&gt;, achieve great pay, great people
-and great work.&lt;/p&gt;
-&lt;p&gt;Wherever you go, strive to get &lt;em&gt;one&lt;/em&gt; great thing. Get great pay, great people,
-or great work. &lt;em&gt;Just one&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Of the rest, choose a place where one of them is &lt;em&gt;bearable&lt;/em&gt;. You will find
-places with &lt;strong&gt;great pay and okay work&lt;/strong&gt;, or &lt;strong&gt;great work and okay pay&lt;/strong&gt;, or &lt;strong&gt;great
-work and okay people&lt;/strong&gt;, or &lt;strong&gt;great pay and okay people.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;And the last parameter? Well… it will &lt;em&gt;automatically&lt;/em&gt; be horrible.&lt;/p&gt;
-&lt;p&gt;It doesn’t matter how great you think your company is. One of these three
-features is going to be amazing.&lt;/p&gt;
-&lt;p&gt;You will love your work, you will find your colleagues okay to hang around, and
-you will bemoan your pay.&lt;/p&gt;
-&lt;p&gt;You will love your pay, you will find your work palatable, and you will loathe
-your collegues.&lt;/p&gt;
-&lt;p&gt;You will love your colleagues, you will find your pay acceptable, and you will
-fear signing in every day because your work is pointless.&lt;/p&gt;
-&lt;p&gt;You will love your work, you will find your pay is acceptable, and you will hate
-your colleagues.&lt;/p&gt;
-&lt;p&gt;You will love your pay, you will be able to withstand your colleagues, and your
-work will be ridiculous in your eyes.&lt;/p&gt;
-&lt;p&gt;I could go on.&lt;/p&gt;
-&lt;p&gt;The point is that irrespective of your company – &lt;em&gt;irrespective&lt;/em&gt; of your company
-– this will be true. If you want to join a company, or, if you want to stay at a
-company, you must love one of these three things the company can give you, and
-you must find one of the other two to be acceptable. You will &lt;em&gt;hate&lt;/em&gt; the third
-thing, so make sure it’s something you’re not passionate about.&lt;/p&gt;
-&lt;p&gt;But as a hiring manager, or a CEO or CTO, what can you do? Make pay
-exhorbitantly high and make the work amazing? No. That’ll only attract
-psychopaths who hate working together. Remember that the two things that matter
-to people &lt;em&gt;vary&lt;/em&gt; from person to person. One employee might want amazing work for
-mediocre pay - how do you motivate her to work on database administration if
-what she loves is hardcore engineering? One employee might care about his
-colleagues, he loves to discuss the technical aspects with a team that’s the
-sort you hear from on stage at Goto Conf and KubeConf, and he’s okay as long as
-the work is bearable. Pay doesn’t matter to him. How will you try to attract
-this sort of employee. Then there’s the sociopath who wants amazing pay and
-bearable work. He’s not going to care about what sort of people he works with –
-he’ll be polite to them of course, but then he only cares about delivering
-excellent work himself. What will you offer him?&lt;/p&gt;
-&lt;p&gt;So when do you leave?&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="id1"&gt;
-&lt;h2&gt;The Two Of Three Rule&lt;/h2&gt;
-&lt;p&gt;You must definitely leave when two of the three control parameters are horrible.
-Think of your job as a see-saw. On one side is the “great” control parameter,
-and on the other is the “horrible” parameter. At the center is the fulcrum,
-which can move either to the good side or the bad side. That’s where the third
-parameter is currently concentrated. And that’s the important part, surprisingly.&lt;/p&gt;
-&lt;p&gt;When this parameter is right at the center you realize that it doesn’t really
-make you super happy, but that it’s also not annoying you constantly. It’s a
-fine balance between the great parameter and the horrible parameter.&lt;/p&gt;
-&lt;p&gt;Yes, it’s not the “great” parameter, or the “horrible” parameter that decides
-when you will leave. Instead it’s a shift in the central parameter that you once
-found &lt;em&gt;palpatable&lt;/em&gt;, &lt;em&gt;bearable&lt;/em&gt; or &lt;em&gt;just okay&lt;/em&gt;, when you joined.&lt;/p&gt;
-&lt;p&gt;When &lt;em&gt;that&lt;/em&gt; parameter shifts to the horrible side, it doesn’t matter how &lt;em&gt;great&lt;/em&gt;
-the other parameter is.&lt;/p&gt;
-&lt;p&gt;Your pay could be astounding, but you will not be able to work on a horrible
-project with horrible people.&lt;/p&gt;
-&lt;p&gt;Your colleagues could all be amazing engineers, but nothing will make you work
-on stuff you &lt;em&gt;hate&lt;/em&gt; for peanuts.&lt;/p&gt;
-&lt;p&gt;Your work could be amazing and will revolutionize the world, but you cannot work
-on it with people you do not get along with, for horrendous pay.&lt;/p&gt;
-&lt;p&gt;If two of these parameters are on the horrible side, it doesn’t matter just how
-amazing the other parameter is. Your constant annoyance at the other two will
-upset you constantly. Indeed, the fact that a parameter you found just
-&lt;em&gt;bearable&lt;/em&gt; and not an annoyance is going to annoy you multiple times more than
-the other horrible parameter.&lt;/p&gt;
-&lt;p&gt;At any workplace, no matter how awesome, employees will care only about one
-of three things. People, Pay and Work. One of these things will drive people
-to join you, one of them will be something they don’t really find
-disagreeable, and one of them will be something they would rather not talk
-about with their friends. If the one thing that they don’t really hate tips
-too far to the other end, people will leave, and improving the one thing that
-was the driving factor will no longer make a difference.&lt;/p&gt;
-&lt;div class="info admonition"&gt;
-&lt;p class="admonition-title"&gt;The Two of Three Rule&lt;/p&gt;
-&lt;p&gt;Pay, People, Work. Pick one that you need to be awesome. Pick one that you
-don’t mind being lack-lustre. The third one &lt;em&gt;will&lt;/em&gt; be horrible. This rule
-holds at &lt;strong&gt;every&lt;/strong&gt; company; indeed, it holds at &lt;em&gt;any company&lt;/em&gt; you should and
-would work at. Shift the second factor, and you won’t want to work there, no
-matter how awesome the first factor you picked is.&lt;/p&gt;
-&lt;p&gt;The Two of Three Rule is: &lt;em&gt;Pay, people, work. Two of these three things will
-either make you really love your job, or really hate your job.&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;It’s funny how this works.&lt;/p&gt;
-&lt;p&gt;When I was at Flipkart, I was paid to write about books. I am a voracious
-reader, or I was at one point. I was being paid to write about J.R.R. Tolkien,
-about Dr. Seuss, and about the Wheel of Time. Sure, there were moments I was
-writing about horrible books that I feel aren’t worth the paper they’re printed
-on, but that didn’t matter to me. So the work was &lt;em&gt;okay&lt;/em&gt;. The pay was &lt;em&gt;bad&lt;/em&gt;. I
-was earning peanuts before, and compared to that, this was okay pay, &lt;em&gt;bearable&lt;/em&gt;
-pay, but it was still &lt;em&gt;peanuts&lt;/em&gt;. The people I worked with were &lt;em&gt;fun&lt;/em&gt; to work
-with. I made several &lt;em&gt;friends&lt;/em&gt; among them, and I opened up to them like I never
-had with others. I was able to have lunch with them and talk about their lives.
-I was able to have heated discussions about comic books, about movies, and I was
-able to be myself.&lt;/p&gt;
-&lt;p&gt;What happened though? Why did I leave?&lt;/p&gt;
-&lt;p&gt;One day, the Catalogue team decided to scrap the books content. The team leads
-and the manager decided to tell me at the last minute. They didn’t even sugar
-coat that fact. That didn’t really matter, but it was the fact that they treated
-it as an afterthought that someone who constantly went on and on about how much
-he loved books would be “relieved” that he didn’t have to write about books
-again. It didn’t help that the news was also given to me by a team lead who was
-hired despite being clearly incompetent. I was doing the job of both team leads
-at that point. I had automated so much of their job, and they were really not
-doing much. The manager didn’t care about how much I was improving things.
-Instead, they chose to pull the rug from under my feet.&lt;/p&gt;
-&lt;p&gt;I left as soon as I found a new job. I wasn’t working with people I loved for
-horrible pay and horrible work.&lt;/p&gt;
-&lt;p&gt;Then I went to GKN.  I worked on some amazing projects, and I didn’t hate the
-people around me. Some of them are friends today, close friends who were there
-for me at hard moments. Here, I got shafted with the pay once again. At one
-stage, my salary was revised because I managed to prove to the HR how underpaid
-I was – this came under the threat of leaving the company. But it was still 30%
-of my market value at that point.&lt;/p&gt;
-&lt;p&gt;But eventually, the people I cared about were making plans to leave, or move
-away. And the people who were left around me became &lt;em&gt;toxic&lt;/em&gt;. The local leaders
-of my division were &lt;em&gt;toxic&lt;/em&gt;, and that made my life hell. I couldn’t hire
-competent team members since I wasn’t given power to do so.&lt;/p&gt;
-&lt;p&gt;I left within 3 months. I couldn’t change their minds. I couldn’t choose the
-people I worked with, I couldn’t build a team to build that amazing project my
-German boss wanted me to build – a project I still think about fondly.&lt;/p&gt;
-&lt;p&gt;Then I joined Visa. Here I got great pay. My colleagues were good people. And
-the work was horrendous. I left in two years because that changed, and it would
-have been sooner if not for The Great Pandemic of 2020.&lt;/p&gt;
-&lt;p&gt;I’m not explaining all of this to say that my workplaces were negative. No. I
-still recommend Visa to all my friends who want a good place to work. Remember,
-the &lt;em&gt;two&lt;/em&gt; things that matter to me out of the three might not be the same for
-you.&lt;/p&gt;
-&lt;p&gt;Control charts tell us that there’s something inherently wrong with a process.
-When a process begins to deviate from its established “norm”, it is slowly
-progressing to a stage where if you want it to go back to how it was, or to
-another &lt;em&gt;acceptable&lt;/em&gt; state, you need to exert considerable effort. Sometimes,
-this won’t be in your hands. This will instead be something you need your upper
-management to step in and change. And, oftentimes, you’ll find that they have no
-horse in this race.&lt;/p&gt;
-&lt;p&gt;If you want to hire good people who will work for you for a long time and
-deliver great things, ask them which of the three things matter to them, and
-ensure that you meet those two things. The definition of a “Great Place to Work”
-is multi-faceted. It is very different to different people, but you will find
-that for a given person, these points are more or less the same unless they have
-a life-changing event.&lt;/p&gt;
-&lt;p&gt;When I was at Visa, I lost my left ear due to circumstances not under my
-control. Indeed, no one at Visa could have helped me. That changed the ball game
-drastically. That’s what is called a random error in a control chart. In such a
-scenario, no one can help you really. In such times, as a leader, the only thing
-you can do is try to be there for your employees. But as an employee, you need
-to decide what matters to you and whether staying at a place will help you
-achieve that sooner.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="conclusion"&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;So the next time you’re evaluating an offer, or if you’re evaluating whether to
-leave a company or to stay; or if an employee is leaving and you’re trying to
-figure out how to convince her to stay, remember that money isn’t always the
-prime bargaining chip. Sometimes money doesn’t matter. It’s the other two that
-upset the scale.&lt;/p&gt;
-&lt;p&gt;There are always two out of three things that make or break the experience of
-working at a company. To me, today, that’s money and people. Money because of
-the responsibilities I have, and people because I don’t just want a team, but a
-&lt;em&gt;crew&lt;/em&gt;. I want a &lt;em&gt;unit&lt;/em&gt; that functions together. The work is after the fact in
-my opinion. To others, those scales are definitely going to be different.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="references"&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;p&gt;These are a list of books I love recommending if you’re interested in the topic
-of statistics and process control.&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;Edward Deming - Out of the Crisis&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Walter A. Shewart - Statistical Method From the Viewpoint of Quality Control&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Taiichi Ohno - Toyota Production System: Beyond Large-Scale Production&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Taiichi Ohno - Workplace Management&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;These books were written in a time where statistical quality control was applied
-predominantly to manufacturing processes, but I’d recommend looking at them
-through the lens of a general engineer, as opposed to a software engineer. If
-you ever find yourself wanting to discuss these topics, I’m always available.
-Reach out to me &lt;a class="reference external" href="https://twitter.com/stonecharioteer"&gt;on Twitter.&lt;/a&gt;&lt;/p&gt;
-&lt;/section&gt;
-</description><pubDate>Tue, 29 Aug 2023 00:00:00 </pubDate></item><item><title>Learning to Swim</title><link>https://stonecharioteer.com/posts/life/learning-to-swim.html</link><description>
+</description><pubDate>Mon, 29 Jan 2024 00:00:00 </pubDate></item><item><title>Learning to Swim</title><link>https://stonecharioteer.com/posts/life/learning-to-swim.html</link><description>
 &lt;span id="swimming-01"/&gt;&lt;span id="index-0"/&gt; 
 &lt;div class="admonition note"&gt;
 &lt;p class="admonition-title"&gt;Note&lt;/p&gt;
@@ -7986,201 +8164,6 @@ up making my own tool. It’ll end up being like the battle of the Frameworks. A
 for what it’s worth, I still think Flask is better than Django. I’m more attuned
 to doing things explicitly than having an entire framework do things for you.
 Call me old fashioned.&lt;/p&gt;
-</description><pubDate>Thu, 21 Jul 2022 00:00:00 </pubDate></item><item><title>Retrying a HTTP Reqwest with Rust</title><link>https://stonecharioteer.com/posts/2022/rust-reqwest-retry.html</link><description>
-&lt;span id="rust-reqwest-retry"/&gt; 
-&lt;p&gt;How do you retry an HTTP request in Rust?&lt;/p&gt;
-&lt;p&gt;I have been using Rust as my only programming language for a few months now at
-Merkle Science. One of the things I have been building lately has been a crawler
-that looks through a paginated API for responses.&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
-&lt;p&gt;If you’re building something like this and shipping a single light-weight
-binary isn’t your requirement, I’d recommend doing this in Python and using
-the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;tenacity&lt;/span&gt;&lt;/code&gt; package for retrying queries.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;When building one of these, you will definitely need something that incorporates
-a “retry when you fail” mechanism because repeated API calls, or &lt;em&gt;any&lt;/em&gt; API calls
-for that matter, are bound to fail. You might have a rate limited API, or you
-might just have an unreliable network.&lt;/p&gt;
-&lt;p&gt;I had both these problems and needed to build something that could repeatedly
-try to make a GET request.&lt;/p&gt;
-&lt;p&gt;I was using the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;reqwest&lt;/span&gt;&lt;/code&gt; crate to make these requests and I kept getting
-a &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;reqwest::Error&lt;/span&gt;&lt;/code&gt;. Oddly enough, I was getting this both when the network
-failed, or when the payload didn’t have the expected schema.&lt;/p&gt;
-&lt;p&gt;To understand this, let’s first put together a simple server that will mimic
-unreliable behaviour.&lt;/p&gt;
-&lt;p&gt;For simplicity, I’m going to write this in Flask.&lt;/p&gt;
-&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="linenos"&gt; 1&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;flask&lt;/span&gt;
-&lt;span class="linenos"&gt; 2&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;random&lt;/span&gt;
-&lt;span class="linenos"&gt; 3&lt;/span&gt;
-&lt;span class="linenos"&gt; 4&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;flask&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Flask&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vm"&gt;__name__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="linenos"&gt; 5&lt;/span&gt;
-&lt;span class="linenos"&gt; 6&lt;/span&gt;&lt;span class="nd"&gt;@app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"/&amp;lt;int:which&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="linenos"&gt; 7&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;index&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;which&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;span class="linenos"&gt; 8&lt;/span&gt;   &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;span class="linenos"&gt; 9&lt;/span&gt;      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{},&lt;/span&gt; &lt;span class="mi"&gt;404&lt;/span&gt;
-&lt;span class="linenos"&gt;10&lt;/span&gt;   &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;which&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;span class="linenos"&gt;11&lt;/span&gt;      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="linenos"&gt;12&lt;/span&gt;         &lt;span class="s2"&gt;"name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"John Doe"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-&lt;span class="linenos"&gt;13&lt;/span&gt;         &lt;span class="s2"&gt;"age"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;28&lt;/span&gt;
-&lt;span class="linenos"&gt;14&lt;/span&gt;      &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="linenos"&gt;15&lt;/span&gt;   &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;span class="linenos"&gt;16&lt;/span&gt;      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;span class="linenos"&gt;17&lt;/span&gt;         &lt;span class="s2"&gt;"uuid"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"40fc1511-00ed-4021-9733-41a3ccbcf441"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-&lt;span class="linenos"&gt;18&lt;/span&gt;         &lt;span class="s2"&gt;"packet_size"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;523&lt;/span&gt;
-&lt;span class="linenos"&gt;19&lt;/span&gt;      &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Save the above code snippet into a file named &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;app.py&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;To run this, create a virtual environment using Python: &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;python3&lt;/span&gt; &lt;span class="pre"&gt;-m&lt;/span&gt; &lt;span class="pre"&gt;venv&lt;/span&gt; &lt;span class="pre"&gt;env&lt;/span&gt;&lt;/code&gt;,
-activate it: &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;source&lt;/span&gt; &lt;span class="pre"&gt;./env/bin/activate&lt;/span&gt;&lt;/code&gt;, and install Flask: &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;python3&lt;/span&gt; &lt;span class="pre"&gt;-m&lt;/span&gt; &lt;span class="pre"&gt;pip&lt;/span&gt;
-&lt;span class="pre"&gt;install&lt;/span&gt; &lt;span class="pre"&gt;flask&lt;/span&gt;&lt;/code&gt;. Then, run the following &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;FLASK_DEBUG=true&lt;/span&gt; &lt;span class="pre"&gt;flask&lt;/span&gt; &lt;span class="pre"&gt;run&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;While you don’t need to understand how this works, all you need to know is that
-this now provides a simple, &lt;em&gt;unreliable&lt;/em&gt; webserver that has only 2 routes:
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;http://127.0.0.1:5000/1&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;http://127.0.0.1:5000/2&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Both these routes have a 51% chance of returning a 404, and the first URL has an
-added 71% chance of returning the wrong response.&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
-&lt;p&gt;The term &lt;em&gt;“wrong”&lt;/em&gt; is subjective, and for the sake of an example, I’m going
-to pretend that all APIs in the world always return the agreed-upon payload
-for a given route. Such a world doesn’t exist though.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;To get this response, I wrote the following code.&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
-&lt;p&gt;To get the following code running make sure you add the following lines to
-your &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Cargo.toml&lt;/span&gt;&lt;/code&gt; file’s &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;[dependencies]&lt;/span&gt;&lt;/code&gt; section.&lt;/p&gt;
-&lt;div class="highlight-toml notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;env_logger&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"0.9.0"&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"0.4.17"&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="n"&gt;reqwest&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"0.11.11"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;"blocking"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"serde_json"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"json"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="n"&gt;serde&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"1.0.137"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;"derive"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="n"&gt;serde_json&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"1.0.81"&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="n"&gt;tokio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"1.19.2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;"full"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"rt"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;You will need to setup Rust before you try to run this code.&lt;/p&gt;
-&lt;div class="highlight-rust notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="linenos"&gt; 1&lt;/span&gt;&lt;span class="k"&gt;use&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;::&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;fmt&lt;/span&gt;::&lt;span class="n"&gt;Debug&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;::&lt;span class="n"&gt;Duration&lt;/span&gt;&lt;span class="p"&gt;};&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 2&lt;/span&gt;&lt;span class="k"&gt;use&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;serde&lt;/span&gt;::&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;Serialize&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Deserialize&lt;/span&gt;&lt;span class="p"&gt;};&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 3&lt;/span&gt;
-&lt;span class="linenos"&gt; 4&lt;/span&gt;&lt;span class="cp"&gt;#[derive(Debug, Serialize, Deserialize)]&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 5&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="nc"&gt;ResponseOne&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 6&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;: &lt;span class="nb"&gt;String&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 7&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;age&lt;/span&gt;: &lt;span class="kt"&gt;u8&lt;/span&gt;
-&lt;span class="linenos"&gt; 8&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 9&lt;/span&gt;
-&lt;span class="linenos"&gt;10&lt;/span&gt;&lt;span class="cp"&gt;#[derive(Debug, Serialize, Deserialize)]&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;11&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="nc"&gt;ResponseTwo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;12&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;uuid&lt;/span&gt;: &lt;span class="nb"&gt;String&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;13&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;packet_size&lt;/span&gt;: &lt;span class="kt"&gt;u16&lt;/span&gt;
-&lt;span class="linenos"&gt;14&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;15&lt;/span&gt;
-&lt;span class="linenos"&gt;16&lt;/span&gt;&lt;span class="k"&gt;fn&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;17&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;url_1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"http://127.0.0.1:5000/1"&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_string&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;18&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;resp_1&lt;/span&gt;: &lt;span class="nc"&gt;ResponseOne&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;reqwest&lt;/span&gt;::&lt;span class="n"&gt;blocking&lt;/span&gt;::&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url_1&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;19&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;log&lt;/span&gt;::&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"resp_1 = {resp_1:?}"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;20&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Running this with &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;RUST_LOG=info&lt;/span&gt; &lt;span class="pre"&gt;cargo&lt;/span&gt; &lt;span class="pre"&gt;run&lt;/span&gt;&lt;/code&gt; fails in one of two ways.&lt;/p&gt;
-&lt;p&gt;First, if the server is running, this fails because the payload is not as
-expected.&lt;/p&gt;
-&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: reqwest::Error { kind: Decode, source: Error("missing field `name`", line: 1, column: 2) }', src/main.rs:50:77
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Next, if you kill the flask server, you will get the following response.&lt;/p&gt;
-&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: reqwest::Error { kind: Request, url: Url { scheme: "http", cannot_be_a_base: false, username: "", password: None, host: Some(Ipv4(127.0.0.1)), port: Some(5000), path: "/1", query: None, fragment: None }, source: hyper::Error(Connect, ConnectError("tcp connect error", Os { code: 111, kind: ConnectionRefused, message: "Connection refused" })) }', src/main.rs:50:61
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Both of these are standard errors you will encounter when building a crawler.
-And the answer to both of these is: “just try again”. Rust’s error handling
-isn’t exactly error handling, so you cannot just bypass an error and try again
-for a fixed number of times without being extremely verbose about it. One way to
-handle this is to find a crate that does the job for you.&lt;/p&gt;
-&lt;p&gt;There were several, but only the &lt;a class="reference external" href="https://crates.io/crates/again"&gt;again crate&lt;/a&gt;
-really worked the way I needed it to. I had several requirements.&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;p&gt;I need to be able to retry a query.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;I need to be able to wait and retry after some time.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;I should be able to introduce some randomness between calls, aka &lt;em&gt;jitter&lt;/em&gt;, so
-that the API doesn’t realize it’s being spammed with programmed calls.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;I should stop after a reasonable amount of time because I am not a spammer.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The again crate works for all of these, with one slight caveat. The
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;again::retry&lt;/span&gt;&lt;/code&gt; function, and all of its variants, call &lt;em&gt;async&lt;/em&gt; functions, not
-synchronous ones. In more specific terms, calls that &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;again::retry&lt;/span&gt;&lt;/code&gt; makes need
-to return a &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Future&lt;/span&gt;&lt;/code&gt; object, one that can be waited upon by the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;again&lt;/span&gt;&lt;/code&gt;
-crate itself. So the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;reqwuest::blocking&lt;/span&gt;&lt;/code&gt; calls are out of the question.&lt;/p&gt;
-&lt;p&gt;Thankfully, reqwest by default uses async calls. However, Rust’s &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;main&lt;/span&gt;&lt;/code&gt;
-function is a synchronous one, and cannot &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;await&lt;/span&gt;&lt;/code&gt; on an async call out of the
-box.&lt;/p&gt;
-&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;tokio&lt;/span&gt;&lt;/code&gt; to the rescue!&lt;/p&gt;
-&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;tokio&lt;/span&gt;&lt;/code&gt; comes with a runtime feature that allows us to block upon an async
-call within a non-async function. I won’t dive too much into that right now, but
-that rabbit hole led down to this code.&lt;/p&gt;
-&lt;div class="highlight-rust notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="linenos"&gt; 1&lt;/span&gt;&lt;span class="sd"&gt;/// Get a specific typed response&lt;/span&gt;
-&lt;span class="linenos"&gt; 2&lt;/span&gt;&lt;span class="k"&gt;async&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;fn&lt;/span&gt; &lt;span class="nf"&gt;get_typed_payload&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;: &lt;span class="kp"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nb"&gt;String&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-&amp;gt; &lt;span class="nb"&gt;Result&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;reqwest&lt;/span&gt;::&lt;span class="n"&gt;Error&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;where&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;'&lt;/span&gt;&lt;span class="na"&gt;de&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;: &lt;span class="nc"&gt;serde&lt;/span&gt;::&lt;span class="n"&gt;Deserialize&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;'&lt;/span&gt;&lt;span class="na"&gt;de&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 3&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nb"&gt;Ok&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;reqwest&lt;/span&gt;::&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="k"&gt;await&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="k"&gt;await&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 4&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 5&lt;/span&gt;
-&lt;span class="linenos"&gt; 6&lt;/span&gt;&lt;span class="k"&gt;fn&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 7&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;env_logger&lt;/span&gt;::&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 8&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tokio&lt;/span&gt;::&lt;span class="n"&gt;runtime&lt;/span&gt;::&lt;span class="n"&gt;Runtime&lt;/span&gt;::&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt; 9&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;retry_policy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;again&lt;/span&gt;::&lt;span class="n"&gt;RetryPolicy&lt;/span&gt;::&lt;span class="n"&gt;exponential&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Duration&lt;/span&gt;::&lt;span class="n"&gt;from_secs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;10&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;with_jitter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;11&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;with_max_delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Duration&lt;/span&gt;::&lt;span class="n"&gt;from_secs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;12&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;with_max_retries&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;13&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;url_1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"http://127.0.0.1:5000/1"&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_string&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;14&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;resp_1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;block_on&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;15&lt;/span&gt;&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;retry_policy&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;retry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;||&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;16&lt;/span&gt;&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="n"&gt;get_typed_payload&lt;/span&gt;::&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;ResponseOne&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;url_1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;17&lt;/span&gt;&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;});&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;18&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;19&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;20&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;log&lt;/span&gt;::&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Response 1: {resp_1:?}"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;21&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;url_2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;"http://127.0.0.1:5000/2"&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_string&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;22&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;resp_2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;block_on&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;23&lt;/span&gt;&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;retry_policy&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;retry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;||&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;24&lt;/span&gt;&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="n"&gt;get_typed_payload&lt;/span&gt;::&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;ResponseTwo&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;url_2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;25&lt;/span&gt;&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="p"&gt;});&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;26&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;27&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;28&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;log&lt;/span&gt;::&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Response 2: {resp_2:?}"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;span class="linenos"&gt;29&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"/&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;This above code can be run with &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;RUST_LOG=info,again=trace&lt;/span&gt; &lt;span class="pre"&gt;cargo&lt;/span&gt; &lt;span class="pre"&gt;run&lt;/span&gt;&lt;/code&gt; and will
-repeatedly try the API until it gets a response. The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;retry_policy&lt;/span&gt;&lt;/code&gt; sets a
-starting duration of 1 second, increases it until it reaches 3 seconds, and
-tries at most 10 times before actually giving up on the URL.&lt;/p&gt;
-&lt;p&gt;The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;get_typed_payload&lt;/span&gt;&lt;/code&gt; function is written so as to abstract away the JSON
-payload extraction, and because the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;retry&lt;/span&gt;&lt;/code&gt; function needs an async function
-that returns a result with a very clear Error type. Thankfully reqwest returns
-only one possible error type.&lt;/p&gt;
-&lt;p&gt;Some things I learnt about Rust when writing this was about generics and
-lifetimes.&lt;/p&gt;
-&lt;p&gt;The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;for&amp;lt;'de&amp;gt;&lt;/span&gt; &lt;span class="pre"&gt;T:&lt;/span&gt; &lt;span class="pre"&gt;serde::Deserialize&amp;lt;'de&amp;gt;&lt;/span&gt;&lt;/code&gt; bit denotes that the
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;get_typed_payload&lt;/span&gt;&lt;/code&gt; function can adapt to return any type that implements
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;serde::Deserialize&lt;/span&gt;&lt;/code&gt;. And because the value that it returns &lt;em&gt;should&lt;/em&gt; live for
-the lifetime of the variable it is passed, which in this case is the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;url&lt;/span&gt;&lt;/code&gt;,
-you need to denote that as well with the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;for&lt;/span&gt; &lt;span class="pre"&gt;&amp;lt;'de&amp;gt;&lt;/span&gt;&lt;/code&gt; bit. One thing that this
-also results in is that the actual &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;url&lt;/span&gt;&lt;/code&gt; object should be created outside of
-both the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;retry&lt;/span&gt;&lt;/code&gt; block and the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;block_on&lt;/span&gt;&lt;/code&gt; block, so that it lives beyond
-those confines.&lt;/p&gt;
-&lt;p&gt;This was a fun little exercise of doing something I’ve done a hundred times or
-more in Python in Rust. I’m continuing my journey merely because this way I
-learn how to do things that I’ve taken for granted in a language like Python,
-and I’m learning about Rust along the way.&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
-&lt;p&gt;If you enjoy coding in Rust, or are interested enough to learn, and are
-interested in engineering problems in general, I’m hiring. Hit me up on
-Twitter or LinkedIn for a role at Merkle Science. Alternately, send us an
-email at &lt;a class="reference external" href="mailto:careers%40merklescience.com"&gt;careers&lt;span&gt;@&lt;/span&gt;merklescience&lt;span&gt;.&lt;/span&gt;com&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
 </description><pubDate>Thu, 21 Jul 2022 00:00:00 </pubDate></item><item><title>Creating Fixed Length Iterables in Python</title><link>https://stonecharioteer.com/posts/2022/til-python-fixed-length.html</link><description>
  
 &lt;p&gt;If you want to create an iterable of a fixed length in python, use

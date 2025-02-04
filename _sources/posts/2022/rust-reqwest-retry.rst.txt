@@ -233,10 +233,3 @@ This was a fun little exercise of doing something I've done a hundred times or
 more in Python in Rust. I'm continuing my journey merely because this way I
 learn how to do things that I've taken for granted in a language like Python,
 and I'm learning about Rust along the way.
-
-.. note::
-
-   If you enjoy coding in Rust, or are interested enough to learn, and are
-   interested in engineering problems in general, I'm hiring. Hit me up on
-   Twitter or LinkedIn for a role at Merkle Science. Alternately, send us an
-   email at `careers@merklescience.com <mailto:careers@merklescience.com>`_

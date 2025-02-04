@@ -426,4 +426,4 @@ These books were written in a time where statistical quality control was applied
 predominantly to manufacturing processes, but I'd recommend looking at them
 through the lens of a general engineer, as opposed to a software engineer. If
 you ever find yourself wanting to discuss these topics, I'm always available.
-Reach out to me `on Twitter. <https://twitter.com/stonecharioteer>`_
+
