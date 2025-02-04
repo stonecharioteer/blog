@@ -9,7 +9,7 @@ Resume - Vinay Keerthi K. T.
     **BE Mechanical Engineering (2010)**
 
     |mail| `ktvkvinaykeerthi@gmail.com <mailto:ktvkvinaykeerthi@gmail.com>`_ |
-    **Phone:** +91 9019323715|
+    **Phone:** +91 9538689544|
     |github| `stonecharioteer <https://github.com/stonecharioteer>`_ |
     |web| `stonecharioteer.com <https://stonecharioteer.com/>`_ |
 
@@ -17,21 +17,40 @@ Resume - Vinay Keerthi K. T.
 
 -----
 
+---------------------------
+Key Skills
+---------------------------
 
--------------------------------
+* Programming Languages: Python, Rust, Javascript
+* Generative AI: Deepseek R1 (locally hosted the distilled model), Llama 3.1, ChatGPT
+* GenAI Tooling: ollama, ChatGPT API Development, LM-Studio
+* Web Frameworks: Flask (Python), Axum (Rust), Expressjs (Node/Deno)
+* Have been using Linux for over 20 years (since 2005)
+* UI: React, CSS, ES6
+* Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph
+* Containers: Docker, Podman, Kubernetes
+* Others: Apache Airflow, Dagster, RabbitMQ, ElasticSearch, Redis, Jenkins, Github Actions, pre-commit
+
+------------------------------------
+Experience 
+------------------------------------
+
 ChainSafe
 -------------------------------
 
-**Technical Team Lead** | **Fully Remote** | **November 2022 - February 2025**
+**Engineering Manager / Lead Software Developer** | **Fully Remote** | **November 2022 - February 2025**
 
 * Managed a team of 4, providing technical and career-based guidance.
-* Worked on **Python**-based tooling for developers, including internal
+* Worked on **Python** and **Rust** based tooling for developers, including internal
   monitoring scripts, data-quality alerting systems and setup **dagster** for data pipelines
   for accounting and blockchain event tracking.
-* Worked on building a **GPT** that interfaces with internal and external APIs,
+* Evaluated **LLM** based tooling for management, investigating cost vs benefits to automate
+  report generation and automated cleanup of github projects and issues.
+  Worked with **OpenAI ChatGPT 4** and **Llama 3.1**
+* Worked on building a custom **LLM** that interfaces with internal and external APIs,
   providing a chat-based interface for managers to track and manage their teams'
   OKRs in line with the organization's goals.
-* Worked on building an inhouse **GPT** that uses Solidity audit data to
+* Worked on building an inhouse **LLM** that uses Solidity audit data to
   provide customers with a bot that can assist them in self-audits.
 * Created dashboards and metric collectors for EVM wallets to track balances
   and alert cross-chain contract creators when the balance is below the
@@ -45,11 +64,10 @@ ChainSafe
 * Worked on a **Rust** networking library integrating ``libp2p`` with blockchain
   protocols.
 * Worked on building **solidity** tooling for ``foundry`` to deploy to multiple
-  chains using the ``Sygma`` framework.
+  chains using the Sygma framework.
 * Developed tutorials for on-boarding new developers to the company's technology
   stack, including **Substrate** and **Rust**.
 
--------------------------------
 Merkle Science
 -------------------------------
 
@@ -59,8 +77,7 @@ Merkle Science
   interviewing.
 * Created a **Rust** library for the **Polkadot** blockchain for internal use, exposed
   via ``PyO3`` and ``maturin`` into **Python.**
-* Created a **Rust** library for **Hedera hashgraph,** to ingest data from the mainnet
-  API into our local data stores.
+* Created a **Rust** library for ingesting data from various blockchains with low latency.
 * Conceptualized and developed the data-engineering toolkit - a multi-faceted
   **CLI** that facilitates the movement of data across data stores, and opens up
   our data layers for quality and consistency-related metrics, using **Rust**.
@@ -81,15 +98,13 @@ VISA Inc.
 
 **Sr. Software Engineer - Data Platform** | **Bangalore** | **MAY 2019 - June 2021**
 
+* Created dashboards to visualize productivity during the onset of COVID-19
+  so that managers could identify the distribution of workload.
 * Designed and spearheaded the security portal project, a REST layer that
   facilitates automation of Qualys security updates for PCI compliance while
   adhering to company-specific rules regarding service availability, using OSS
   and internal APIs to minimize maintenance time. Reduced contractual manpower
   by 75% and downtime by 70 hours a month for 2400 servers.
-* Developed a library to create concurrent and self-cleaning containerized
-  sessions that can be used to automate parallel workflows for testing and
-  automation of complex applications: example threat analysis of cross-border
-  transactions using a single VISA card.
 * Mentored college graduates to build their first applications, integrating
   native pipelines, helped them craft detailed documentation and tune the performance
   of their apps.
@@ -104,11 +119,10 @@ VISA Inc.
   shareable.
 * Mentored and trained SDE-1s and interns, guiding them in design and implementation details.
 
---------------------
 GKN Aerospace India
 --------------------
 
-**Developer** | **Bangalore** | **DEC 2015 - MAY 2019**
+**Sofware Engineer** | **Bangalore** | **DEC 2015 - MAY 2019**
 
 * Built a company-wide search engine that indexed all files in an Elastic-Search
   server and allowed users to query even the contents of files such as spreadsheets
@@ -122,7 +136,6 @@ GKN Aerospace India
   application that submits HPC jobs to servers placed across the world.
 * Conducted annual training in Python and Data Analytics for Mechanical Engineers.
 
--------------------------------
 Flipkart Internet Pvt. Ltd.
 -------------------------------
 
@@ -139,11 +152,12 @@ Tech Stack
 -------------
 
 * Programming Languages: Rust, Python, Javascript
-* Web Frameworks: Flask, Express, Rocket
+* Web Frameworks: Flask (Python), Axum (Rust), Expressjs (Node/Deno)
 * UI: React, CSS, ES6
 * Databases: PostgreSQL, MariaDB, Clickhouse, Tigergraph
 * Containers: Docker, Podman, Kubernetes
-* Others: RabbitMQ, ElasticSearch, Redis, Jenkins, Gitlab CI, pre-commit
+* Others: Apache Airflow, Dagster, RabbitMQ, ElasticSearch, Redis, Jenkins, Gitlab CI, pre-commit
+* Have been using Linux for over 20 years (since 2005)
 
 ------------------------
 Personal Projects & OSS
