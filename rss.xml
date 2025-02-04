@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Retrying a HTTP Reqwest with Rust</title><link>https://stonecharioteer.com/posts/2022/rust-reqwest-retry.html</link><description>
+<rss version="2.0"><channel><title>stonecharioteer.com</title><link>https://stonecharioteer.com</link><description /><copyright>2022, Vinay Keerthi</copyright><item><title>Leaving ChainSafe Systems</title><link>https://stonecharioteer.com/posts/2025/leaving-chainsafe.html</link><description>
+ 
+&lt;p&gt;I’ve left ChainSafe Systems where I spent 25 months working with some of the best minds in the
+cryptocurrency world. It was a learning period for me, as most of my career stints have been,
+and I’ve enjoyed my time there.&lt;/p&gt;
+&lt;p&gt;I’m looking forward to the next journey, and wish the company the best.&lt;/p&gt;
+&lt;div class="warning admonition"&gt;
+&lt;p class="admonition-title"&gt;Currently Open to Hire&lt;/p&gt;
+&lt;p&gt;I’m currently looking for my next role, and if you’d like to reach out,
+here’s my &lt;a class="reference external" href="https://github.com/stonecharioteer/blog/releases/latest"&gt;resume.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I code in Python, Rust, and some Javascript. I’m looking for challenging
+roles in an architect or lead position where you’re dealing with distributed
+systems that boggle the mind. I’ve also worked with GenAI and Blockchain in
+the last few years. Hit me up if you want to discuss how cool Rust is!&lt;/p&gt;
+&lt;/div&gt;
+</description><pubDate>Wed, 05 Feb 2025 00:00:00 </pubDate></item><item><title>&amp;lt;no title&amp;gt;</title><link>https://stonecharioteer.com/shared/open-to-hire-2025.html</link><description>
+&lt;p class="admonition-title"&gt;Currently Open to Hire&lt;/p&gt;
+&lt;p&gt;I’m currently looking for my next role, and if you’d like to reach out,
+here’s my &lt;a class="reference external" href="https://github.com/stonecharioteer/blog/releases/latest"&gt;resume.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I code in Python, Rust, and some Javascript. I’m looking for challenging
+roles in an architect or lead position where you’re dealing with distributed
+systems that boggle the mind. I’ve also worked with GenAI and Blockchain in
+the last few years. Hit me up if you want to discuss how cool Rust is!&lt;/p&gt;
+</description><pubDate>Wed, 05 Feb 2025 00:00:00 </pubDate></item><item><title>Retrying a HTTP Reqwest with Rust</title><link>https://stonecharioteer.com/posts/2022/rust-reqwest-retry.html</link><description>
 &lt;span id="rust-reqwest-retry"/&gt; 
 &lt;p&gt;How do you retry an HTTP request in Rust?&lt;/p&gt;
 &lt;p&gt;I have been using Rust as my only programming language for a few months now at
