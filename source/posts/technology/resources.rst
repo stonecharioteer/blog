@@ -52,6 +52,7 @@ Organized Links
 * `[RFC] TCP RFCs <https://rfcs.io/tcp>`_
 * `[Resource] Linux from Scratch <https://www.linuxfromscratch.org/>`_
 * `[Tool] Charm.sh - Go based Terminal Tools <https://charm.sh/>`_
+* `[Tool] JSONing.com - Mock REST API <https://jsoning.com/api/>`_
 * `[Whitepaper] An Inside Look at Google BigQuery <https://github.com/tpn/pdfs/blob/master/BigQuery%20Technical%20Whitepaper%20-%20Google.pdf>`_
 * `[Whitepaper] Dremel - Interactive Analysis of Web-Scale Datasets <https://research.google/pubs/pub36632/>`_
 * `[Whitepaper] Storing and Querying Tree-Structured Records in Dremel <https://research.google/pubs/pub43119/>`_
