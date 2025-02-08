@@ -13,13 +13,18 @@ install-python:
 
 # build the blog locally
 build:
-  ./build.sh html
+  rm -rf build
+  docker build -t sphinx-docs .
+  docker rm sphinx-docs-container || echo "Didn't need to cleanup container"
+  docker run --name sphinx-docs-container sphinx-docs
+  docker cp sphinx-docs-container:/app/build ./build
+  docker rm sphinx-docs-container
+
 
 # watch directory for file changes and rebuild. note, you'll have to rerun this command if you add new files/folders to be watched.
 build-watch:
   # fd --type file | entr just build
   watchexec --watch source/ --debounce 2000 --clear --notify -- just build
-
 
 # run github actions runner
 gh-runner:
@@ -35,7 +40,8 @@ build-resume:
   rst2pdf -o source/resume/resume.pdf source/resume/resume.rst
 
 release-resume: build-resume
-  gh release create "v$(date -u +%Y.%m.%d)" source/resume/resume.pdf
+  cp source/resume/resume.pdf "/tmp/vinay-keerthi-resume-v$(date +%F).pdf"
+  gh release create "v$(date -u +%Y.%m.%d)" "/tmp/vinay-keerthi-resume-v$(date +%F).pdf"
 
 # Recipe to call the create_book.sh script with arguments
 create-book *ARGS:

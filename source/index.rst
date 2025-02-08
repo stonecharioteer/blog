@@ -12,6 +12,7 @@ technology, books (fictional and technical), travel, mental and physical health,
 among other things. Opinions posted here are my own and do not reflect those of
 any employer, past or present.
 
+.. include:: /shared/open-to-hire-2025.rst
 
 .. toctree::
    :caption: Meta
@@ -29,6 +30,13 @@ any employer, past or present.
    search
 
 
+.. toctree::
+   :titlesonly:
+   :external:
+   :maxdepth: 1
+
+   RSS </rss.xml>
+
 ----------------
 Posts
 ----------------
@@ -37,6 +45,7 @@ Posts
    :caption: Life
    :maxdepth: 1
 
+   posts/2025/leaving-chainsafe.rst
    not-opening-that.rst
    posts/life/why-do-i-swim.rst
    posts/life/dear-toriyama-sensei.rst

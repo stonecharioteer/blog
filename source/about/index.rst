@@ -10,12 +10,15 @@ Hi! I'm Vinay Keerthi.
 
    This is me. I love to swim!
 
+.. include:: /shared/open-to-hire-2025.rst
+
 I am a software developer based in Bangalore, India. I write about technology,
 Rust, Python, Raspberry Pi, the Internet of Things, and I also speak at Meetups and
 Conferences.
 
-I currently work at **ChainSafe,** where I work on tools and libraries to help further
-web3 and blockchain-related tech.
+I used to work at **ChainSafe,** where I work on tools and libraries to help further
+web3 and blockchain-related tech. I've also worked on some cool LLM projects
+that I'd love to talk about.
 
 Previously, I've worked at **Merkle Science,** where I've built tools and ETL
 pipelines for cryptocurrency-analytics, and at **Visa Inc,** building tools and internal
