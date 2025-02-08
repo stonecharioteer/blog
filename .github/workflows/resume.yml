@@ -1,0 +1,60 @@
+name: Build Resume
+
+on:
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Just and rst2pdf
+        run: |
+          sudo apt update && sudo apt install -y just
+          pip install rst2pdf
+
+      - name: Run Just to generate resume
+        run: just build-resume
+
+      - name: Commit generated resume.pdf
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add source/resume/resume.pdf
+          git commit -m "Update generated resume PDF" || echo "No changes to commit"
+          git push origin || echo "No changes to push"
+
+      - name: Determine release tag
+        id: release_tag
+        run: |
+          DATE_TAG="v$(date +'%Y-%m-%d')"
+          TAG=$DATE_TAG
+          COUNTER=1
+          
+          while git ls-remote --tags origin | grep -q "refs/tags/$TAG"; do
+            TAG="${DATE_TAG}-${COUNTER}"
+            ((COUNTER++))
+          done
+
+          echo "TAG=$TAG" >> $GITHUB_ENV
+          echo "Final release tag: $TAG"
+
+      - name: Rename resume file
+        run: |
+          cp source/resume/resume.pdf vinay-keerthi-resume-${{ env.TAG }}.pdf
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.TAG }}
+          files: vinay-keerthi-resume-${{ env.TAG }}.pdf
+          generate_release_notes: true
